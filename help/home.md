@@ -1,19 +1,19 @@
 ---
 description: 'O Serviço de identidade da Experience Platform fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. '
 keywords: Serviço de ID
-seo-description: O Adobe Experience Platform Identity Service fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
+seo-description: O Adobe Experience Platform Identity Service (serviço de ID) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
 seo-title: Serviço de identidade da plataforma Experience Platform
 title: Serviço de identidade da plataforma Experience Platform
 uuid: b 68194 b 5-e 549-4 f 6 f-bfaf -7744926 aeaac
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
-# Serviço de identidade da plataforma Experience Platform {#experience-cloud-id-service}
+# Adobe Experience Platform Identity Service {#experience-cloud-id-service}
 
-O Serviço de identidade Experience Platform (serviço de ID) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
+O Adobe Experience Platform Identity Service (serviço de identidade) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
