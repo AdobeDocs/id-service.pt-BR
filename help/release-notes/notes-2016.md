@@ -6,7 +6,7 @@ seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
 uuid: 7 a 5 a 314 a -3 ff 8-4561-9 c 64-6 c 10 d 2223887
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -24,9 +24,7 @@ Novembro de 2016
 >[!IMPORTANT]
 >
 >* A versão 1.10 requer [!DNL AppMeasurement] 1.8.0.
->* Usando a Biblioteca de serviços de identidade da Experience Platform 2.0.0 +, a sincronização de ID será iniciada para o Adobe Media Optimizer por padrão. Consulte [Entender sincronização de ID e taxas de correspondência](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html).
->
-
+>* Usando a Biblioteca de serviços de identidade da Experience Platform 2.0.0 +, a sincronização de ID será iniciada para o Adobe Media Optimizer por padrão. Consulte [Entender sincronização de ID e taxas de correspondência](/help/introduction/match-rates.md).
 
 
 **Correções e melhorias**
