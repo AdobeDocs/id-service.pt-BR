@@ -6,7 +6,7 @@ seo-title: Implementação com o Gerenciamento dinâmico de tags
 title: Implementação com o Gerenciamento dinâmico de tags
 uuid: c 4 f 752 c 4-392 e -4909-b 178-911706857064
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ Implementações mais antigas usam o Gerenciamento dinâmico de tags (DTM) para 
 
 >[!NOTE]
 >
->Atualmente [, o Launch da Adobe](https://docs.adobelaunch.com/) é a ferramenta de implementação preferencial e recomendada, pois ajuda a simplificar tarefas complexas do gerenciamento de tags e automatiza a inserção de código além dos recursos do DTM. Consulte [Implementar com o Launch](../implementation-guides/ecid-implement-with-launch.md).
+>Atualmente, [o Adobe Experience Platform Launch](https://docs.adobelaunch.com/) é a ferramenta de implementação preferencial e recomendada, pois ajuda a simplificar tarefas complexas do gerenciamento de tags e automatiza a inserção de código além dos recursos do DTM. Consulte [Implementar com o Launch](../implementation-guides/ecid-implement-with-launch.md).
 
 ## Dynamic Tag Management e o serviço de ID {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
