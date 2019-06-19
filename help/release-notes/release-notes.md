@@ -6,7 +6,7 @@ seo-title: Notas de versão de 2019
 title: Notas de versão de 2019
 uuid: a 5 a 59410-7 f 85-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -21,7 +21,7 @@ Lançamentos, atualizações e alterações de recursos do serviço da [!DNL Exp
 
 ## Versão 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Serviço de opt-in**. O Opt-in é uma extensão da [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) que permite controlar se (e quais) as bibliotecas da Experience Cloud podem criar cookies nas páginas web para os visitantes. Usando o [Launch](https://docs.adobelaunch.com/), você pode simplificar a obtenção dos consentimentos de opt-in dos visitantes para a solução da Experience Cloud habilitado o Analytics, o Target, o Audience Manager e outras ou todas as soluções selecionadas da Experience Cloud no seu sistema de gerenciamento de consentimentos.
+**Serviço de opt-in**. Opt-in é uma extensão da Experience Cloud ID (ECID) que permite controlar se as bibliotecas da Experience Cloud podem criar cookies em páginas da Web para visitantes. Usando [o Experience Platform Launch](https://docs.adobelaunch.com/), você pode simplificar a coleta de atributos de aceitação de visitantes para soluções da Experience Cloud, ativando o Analytics, o Target, o Audience Manager e outras soluções da Experience Cloud para aceitar o sistema de gerenciamento de consentimento.
 
 ## Versão 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
