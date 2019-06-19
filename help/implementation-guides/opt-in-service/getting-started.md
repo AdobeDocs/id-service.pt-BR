@@ -5,7 +5,7 @@ seo-title: Configuração do serviço de aceitação
 title: Configuração do serviço de aceitação
 uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 Implemente o serviço de aceitação como o ponto de referência único usado pelas soluções da Experience Cloud (referido como Categorias na aceitação) para determinar se deseja criar cookies no dispositivo de um visitante.
 
-O serviço de aceitação é uma biblioteca javascript com o Adobe Experience Platform Identity Service e existe no Visitante JS no `adobe` objeto global como `adobe.optIn` objeto. O serviço de aceitação instalado permite especificar se um visitante pode aceitar as soluções da Adobe de uma vez ou para apresentar soluções em sequência para permissão para cada uma. O recurso de gerenciamento de consentimento do serviço de aceitação permite implementar com várias configurações para seus requisitos de privacidade específicos.
+O serviço de aceitação é uma biblioteca javascript com a Experience Cloud ID (ECID) e existe no Visitante JS no `adobe` objeto global como `adobe.optIn` objeto. O serviço de aceitação instalado permite especificar se um visitante pode aceitar as soluções da Adobe de uma vez ou para apresentar soluções em sequência para permissão para cada uma. O recurso de gerenciamento de consentimento do serviço de aceitação permite implementar com várias configurações para seus requisitos de privacidade específicos.
 
 O serviço de aceitação permite especificar se um visitante pode aceitar as soluções da Adobe de uma vez ou para apresentar soluções em sequência para permissão para cada uma. Quando o processo de aprovação é concluído e registrado pelo cliente, as aprovações do visitante da CMP pode ser recuperadas por todas as soluções da Adobe, que respondem com as chamadas de consentimento relacionadas.
 
