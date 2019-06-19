@@ -1,22 +1,22 @@
 ---
-description: Simplifique a ativação da solução da Experience Cloud para Opt-in usando o Launch, da Adobe.
-seo-description: Simplifique a ativação da solução da Experience Cloud para Opt-in usando o Launch, da Adobe.
+description: Simplifique a ativação da solução da Experience Cloud para aceitar usando o Adobe Experience Platform Launch.
+seo-description: Simplifique a ativação da solução da Experience Cloud para aceitar usando o Adobe Experience Platform Launch.
 seo-title: Configuração do Opt-in com o Launch
 title: Configuração do Opt-in com o Launch
 uuid: d 35 ed 917-c 4 bd -4868-9026-1461 f 1 a 8 f 13 e
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
 # Configuração do Opt-in com o Launch {#configuring-opt-in-with-launch}
 
-Simplifique a ativação da solução da Experience Cloud para Opt-in usando o Launch, da Adobe.
+Simplifique a ativação da solução da Experience Cloud para aceitar usando o Adobe Experience Platform Launch.
 
 ## Configurar um cenário de Opt-in com o Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[O Launch, da Adobe](https://docs.adobelaunch.com/), facilita a configuração e a definição de um cenário de opt-in com as soluções da Adobe. Você pode simplificar a obtenção dos consentimentos de opt-in dos visitantes para as soluções da Experience Cloud habilitado o Analytics, o Target, o Audience Manager e outras ou todas as soluções selecionadas da Experience Cloud no seu sistema de gerenciamento de consentimentos.
+[A Adobe Experience Platform Launch](https://docs.adobelaunch.com/) facilita a configuração e configura um cenário de aceitação com soluções da Adobe. Você pode simplificar a obtenção dos consentimentos de opt-in dos visitantes para as soluções da Experience Cloud habilitado o Analytics, o Target, o Audience Manager e outras ou todas as soluções selecionadas da Experience Cloud no seu sistema de gerenciamento de consentimentos.
 
 **Configurar a extensão da Experience Cloud ID**
 
