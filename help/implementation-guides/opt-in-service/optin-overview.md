@@ -5,7 +5,7 @@ seo-title: Serviço de aceitação
 title: Serviço de aceitação
 uuid: aebd 72 ad -4118-471 b -9755-d 08 a 72 caa 0 fd
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 O serviço de aceitação permite configurar protocolos para o visitante determinar se você pode definir um cookie no dispositivo ou no navegador do usuário ao visitar o site.
 
-O serviço de aceitação é uma extensão do serviço [da Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) , projetado para controlar se e quais soluções da Experience Cloud podem criar cookies em páginas da Web para visitantes antes do consentimento do usuário. O serviço de aceitação também permite definir protocolos para integrar com seu CMP (Application Management Platform) e sistemas existentes como parte do seu design maior.
+O serviço de aceitação é uma extensão da Experience Cloud ID (ECID), projetada para controlar se e quais soluções da Experience Cloud podem criar cookies em páginas da Web para visitantes antes do consentimento do usuário. O serviço de aceitação também permite definir protocolos para integrar com seu CMP (Application Management Platform) e sistemas existentes como parte do seu design maior.
 
 Usando o serviço de aceitação, você pode especificar se um visitante pode aceitar as soluções da Adobe de uma vez ou apresentar soluções em sequência para permissões. Quando o processo de aprovação é concluído e registrado pelo cliente, você pode recuperar as aprovações do visitante da CMP para todas as soluções da Adobe.
 
