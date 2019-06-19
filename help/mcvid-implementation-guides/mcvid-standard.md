@@ -6,7 +6,7 @@ seo-title: Implementação com o Gerenciamento dinâmico de tags
 title: Implementação com o Gerenciamento dinâmico de tags
 uuid: c 4 f 752 c 4-392 e -4909-b 178-911706857064
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -94,7 +94,7 @@ mcvid-dtm-implement.xml
    >
    >Esta ação preenche a caixa de ID da organização **[!UICONTROL da Experience]** Cloud com a ID da organização. Se a conta do DTM não estiver vinculada à [!DNL Experience Cloud], é necessário fornecer essa ID. Para vincular a conta, consulte [Vincular contas na Experience Cloud](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html). Consulte os [requisitos](../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26) para obter mais informações sobre como encontrar a ID da organização.
 
-1. Digite o nome do servidor de rastreamento na caixa **[!UICONTROL Servidor]** de rastreamento. Caso não tenha certeza de como encontrar o servidor de rastreamento ver [as Perguntas frequentes](../mcvid-faq-intro/ecid-faq.md) e [preencher corretamente as variáveis trackingserver e trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+1. Digite o nome do servidor de rastreamento na caixa **[!UICONTROL Servidor]** de rastreamento. Caso não tenha certeza de como encontrar o servidor de rastreamento ver [as Perguntas frequentes](../mcvid-faq-intro/mcvid-faq.md) e [preencher corretamente as variáveis trackingserver e trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 1. Clique **[!UICONTROL em Criar ferramenta]** e **[!UICONTROL Salvar alterações]**.
 
    Depois de salvar, o serviço de ID é configurado como uma ferramenta no DTM. No entanto, ainda não está pronto para uso. A ferramenta do DTM ainda precisa passar no processo de publicação/aprovação do DTM e pode ser necessário configurar mais parâmetros. Para obter mais informações sobre o processo de aprovação do DTM, assista ao vídeo [Início rápido dos conceitos básicos do usuário](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html). Para obter mais informações sobre mais parâmetros para adicionar ao DTM, consulte [Configurações do serviço da Experience Cloud ID para DTM](../mcvid-implementation-guides/mcvid-standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
