@@ -1,19 +1,19 @@
 ---
-description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Platform. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do serviço da Experience Cloud ID. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 keywords: Serviço de ID
-seo-description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Platform. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+seo-description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do serviço da Experience Cloud ID. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6 bb 8 ddfc -9 fc 1-4105-b 377-d 9 b 4 d 247 a 0 f 8
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Platform. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do serviço da Experience Cloud ID. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 
 **Sintaxe** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -33,7 +33,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->Se você for [!DNL Analytics] um cliente, verifique e envie [!DNL Analytics] a ID para a sua função. Por exemplo, os dois identificadores são desejados ao passar a ID do visitante em um elemento de formulário oculto para um aplicativo que usa a API de inserção de dados. Nesse caso, você deve coletar e retornar as IDs [!DNL Experience Cloud] de [!DNL Analytics] visitante. Consulte [getmarketingcloudvisitorid](../../library/get-set/getmcvid.md).
+>If you&#39;re an [!DNL Analytics] customer, also check for and send the [!DNL Analytics] ID to your function. Por exemplo, os dois identificadores são desejados ao passar a ID do visitante em um elemento de formulário oculto para um aplicativo que usa a API de inserção de dados. In this case, you should collect and return the [!DNL Experience Cloud] and [!DNL Analytics] visitor IDs. See [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
 
 **O parâmetro “aid” é um valor herdado**
 
@@ -43,12 +43,12 @@ O parâmetro `aid` aparece em uma sequência de consulta em dois conjuntos de co
 
 O parâmetro `aid` é visto em uma sequência de consulta quando:
 
-* O serviço [!DNL Experience Cloud] de ID é implantado corretamente.
+* The [!DNL Experience Cloud] ID service is deployed correctly.
 * O usuário visita um site e tem uma ID do [!DNL Analytics] pré-existente armazenada no [cookie s_vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
 
 **Caso 2**
 
-Você verá o `aid` parâmetro em uma sequência de consulta quando sua organização estiver usando um [período de carência](../../reference/analytics-reference/grace-period.md) antes de implementar totalmente o serviço de ID. Se o usuário visitar seu site é novo e você não estiver usando um período de carência, o visitante obterá o `mid` parâmetro ( [!DNL Experience Cloud] ID).
+You will see the `aid` parameter in a query string when your organization is using a [grace period](../../reference/analytics-reference/grace-period.md) before fully implementing the ID service. If the user visiting your site is new, and you&#39;re not using a grace period, the visitor will get the `mid` ( [!DNL Experience Cloud] ID) parameter.
 
 >[!MORE_ LIKE_ THIS]
 >
