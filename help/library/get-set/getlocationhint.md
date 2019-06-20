@@ -1,19 +1,19 @@
 ---
-description: Retorna a ID da região do Serviço de identidade da Experience Platform. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do servidor para o Audience Manager.
+description: Retorna a ID da região do serviço da Experience Cloud ID. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do servidor para o Audience Manager.
 keywords: Serviço de ID
-seo-description: Retorna a ID da região do Serviço de identidade da Experience Platform. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do servidor para o Audience Manager.
+seo-description: Retorna a ID da região do serviço da Experience Cloud ID. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do servidor para o Audience Manager.
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc 312 b 7-d 270-4 a 5 c-a 2 bb -0 fbb 37 f 1 e 2 f 4
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-Retorna a ID da região do Serviço de identidade da Experience Platform. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do servidor para o Audience Manager.
+Retorna a ID da região do serviço da Experience Cloud ID. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do servidor para o Audience Manager.
 
 **Sintaxe:**` var *`nome da variável`* = visitor.getLocationHint()`
 
