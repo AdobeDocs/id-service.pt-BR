@@ -1,19 +1,19 @@
 ---
-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform para 2017.
+description: Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID para 2017.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform para 2017.
+seo-description: Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID para 2017.
 seo-title: Notas de versão de 2017
 title: Notas de versão de 2017
 uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Notas de versão de 2017 {#release-notes}
 
-Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform para 2017.
+Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID para 2017.
 
 Essas alterações também estão contempladas nas [notas de versão da Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Para consultar as notas de versão antigas do serviço de ID, consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou os links no fim desta página.
 
@@ -51,9 +51,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correção de um erro relacionado ao Chrome que fazia com que o serviço de ID mostrasse um erro ao clicar no botão Voltar no navegador.
 * O serviço de ID agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
-* Adicionada nova documentação, [Políticas de segurança do conteúdo e o Serviço de identidade da Experience Platform](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como fazer chamadas de lista de permissões para domínios da Adobe usados pelo serviço de ID.
+* Adicionada nova documentação, [Políticas de segurança de conteúdo e Serviço da Experience Cloud ID](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como colocar chamadas na lista de permissões para domínios da Adobe usados pelo serviço de ID.
 
-## Versão 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
 Agosto de 2017
 
@@ -76,7 +76,7 @@ Agosto de 2017
 
 Atualização e revisão de [Perguntas frequentes](/help/faq-intro/faq-intro.md) para incluir perguntas frequentes separadas para [!DNL Experience Cloud] diferentes soluções.
 
-## Versão 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
+## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
 Julho de 2017
 
@@ -161,7 +161,7 @@ Data de lançamento: junho de 2017
  </tbody> 
 </table>
 
-## Versão 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
+## Version 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
 
 Data de lançamento: fevereiro de 2017
 
@@ -181,7 +181,7 @@ Data de lançamento: fevereiro de 2017
   </tr> 
   <tr> 
    <td colname="col1"> <p>Método da API do serviço de ID, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>Este método público anexa a <span class="wintitle">ID de Dados Suplementares</span> (SDID) como um parâmetro de sequência de caracteres de consulta a um URL de redirecionamento. Consulte <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendsupplementaldataidto</a>. (MCID-285) </p> </td> 
+   <td colname="col2"> <p>Este método público anexa a <span class="wintitle">ID de Dados Suplementares</span> (SDID) como um parâmetro de sequência de caracteres de consulta a um URL de redirecionamento. See <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,13 +194,13 @@ Corrigida uma falha que causava o serviço de ID a fazer chamadas redundantes pa
 
 [Uso da busca DNS prévia com diferentes soluções e serviços da Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
-## Versão 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
+## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
 Janeiro de 2017
 
 >[!IMPORTANT]
 >
->O código de ID v 2.0 sincroniza IDs automaticamente com o Adobe Media Optimizer por padrão. Isso significa que você verá uma chamada da página para `cm.eversttech.net`, que é um [!DNL Media Optimizer] domínio legado controlado [!DNL Adobe]por. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>O código de ID v 2.0 sincroniza IDs automaticamente com o Adobe Media Optimizer por padrão. This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Correções e melhorias**
 
