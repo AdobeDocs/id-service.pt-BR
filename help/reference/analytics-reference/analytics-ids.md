@@ -1,19 +1,19 @@
 ---
-description: O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+description: O serviço da Experience Cloud ID substitui os métodos herdados de ID de visitante do Analytics.
 keywords: Serviço de ID
-seo-description: O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+seo-description: O serviço da Experience Cloud ID substitui os métodos herdados de ID de visitante do Analytics.
 seo-title: Definição de IDs do Analytics e da Experience Cloud
 title: Definição de IDs do Analytics e da Experience Cloud
 uuid: 421 cf 597-a 3 e 0-4 ca 3-8 ce 8-d 0 c 80 cbb 6 aca
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Definição de IDs do Analytics e da Experience Cloud{#setting-analytics-and-experience-cloud-ids}
 
-O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+O serviço da Experience Cloud ID substitui os métodos herdados de ID de visitante do Analytics.
 
 Após o serviço de ID ser implementado, este código é executado antes do AppMeasurement. O serviço de ID recupera as IDs da Experience Cloud e do Analytics para que esses valores estejam prontos quando o AppMeasurement for carregado.
 
@@ -25,7 +25,7 @@ A mudança principal ao migrar para o serviço de ID da [!DNL Experience Cloud] 
 
 **Cabeçalho HTTP**
 
-Uma resposta HTTP de um servidor da Web define os cookies de um navegador. Esse é o modo como o `s_vi` cookie é definido. O `s_vi` cookie identifica os visitantes do Analytics. Depois que um cookie é configurado, ele é enviado com todas as solicitações HTTP subsequentes para esse servidor.
+Uma resposta HTTP de um servidor da Web define os cookies de um navegador. This is how the `s_vi` cookie is set. The `s_vi` cookie identifies Analytics visitors. Depois que um cookie é configurado, ele é enviado com todas as solicitações HTTP subsequentes para esse servidor.
 
 Quando uma solicitação é enviada para o servidor de coleta de dados da Adobe, o cabeçalho é verificado para procurar um cookie `s_vi`. Se este cookie estiver na solicitação, ele é usado para identificar o visitante. Se o cookie não está na solicitação, o servidor gera uma [!DNL Experience Cloud] ID exclusiva, a configura como um cookie no cabeçalho de resposta HTTP e a envia com a solicitação. O cookie é armazenado no navegador e enviado para o servidor responsável pela coleta de dados durante as visitas subsequentes ao site. Isso permite que o visitante seja identificado quando fizer uma visita.
 
@@ -66,7 +66,7 @@ Depois de implantar o serviço de ID de visitante, há cinco maneiras de identif
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
-   <td colname="col3"> <p>O visitante tinha um cookie s_ vi antes de implantar o serviço <span class="keyword"> da Experience Cloud</span> ID ou um período <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> de cortesia</a> configurado. </p> </td> 
+   <td colname="col3"> <p>The visitor had an existing s_vi cookie before you deployed the <span class="keyword"> Experience Cloud</span> ID service, or you have a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a> configured. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
@@ -76,7 +76,7 @@ Depois de implantar o serviço de ID de visitante, há cinco maneiras de identif
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (cookie de recuperação de falhas no H.25.3 ou posterior, ou AppMeasurement para JavaScript)</a> </p> </td> 
-   <td colname="col3"> <p>Um navegador não aceita cookies de terceiros e o servidor de rastreamento do Analytics está configurado como um servidor de rastreamento de terceiros. </p> <p> <p>Observação: o <span class="codeph">fid</span> é um identificador herdado e não é usado se você implementou o serviço de ID do site. Nesse caso, <span class="codeph"> o fid</span> não é necessário porque o cookie <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV o</a> torna obsoleto. Foi mantido para comportar o código herdado e por motivos históricos. </p> </p> </td> 
+   <td colname="col3"> <p>Um navegador não aceita cookies de terceiros e o servidor de rastreamento do Analytics está configurado como um servidor de rastreamento de terceiros. </p> <p> <p>Observação: o <span class="codeph">fid</span> é um identificador herdado e não é usado se você implementou o serviço de ID do site. In this case, the <span class="codeph"> fid</span> is not needed because the first-party, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> makes it obsolete. Foi mantido para comportar o código herdado e por motivos históricos. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
