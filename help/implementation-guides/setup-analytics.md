@@ -1,19 +1,19 @@
 ---
-description: Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+description: Essas instruções para clientes do Analytics que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 keywords: Serviço de ID
-seo-description: Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
-seo-title: Implementar o Serviço de identidade da plataforma Experience Platform para o Analytics
-title: Implementar o Serviço de identidade da plataforma Experience Platform para o Analytics
+seo-description: Essas instruções para clientes do Analytics que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+seo-title: Implementar o serviço da Experience Cloud ID para Analytics
+title: Implementar o serviço da Experience Cloud ID para Analytics
 uuid: 7 fbd 6 fa 0-1713-4232-868ed -500 ed 62709 d 5
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Implementar o Serviço de identidade da plataforma Experience Platform para o Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implementar o serviço da Experience Cloud ID no Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+Essas instruções para clientes do Analytics que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 
 >[!IMPORTANT]
 >
@@ -34,18 +34,18 @@ Siga estas etapas para implementar o serviço de ID para o Adobe Analytics:
 1. [(Opcional) Configurar um período de carência](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3)
 1. [Testar e implantar o código do serviço de ID](../implementation-guides/setup-analytics.md#section-e9c1764ac21a4ec5be1ff338c0e2e01b)
 
-## Etapa 1: Baixar o código do serviço de ID {#section-ead9403a6b7e45b887f9ac959ef89f7f}
+## Step 1: Download the ID Service code {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-O [!DNL ID Service] código exige a biblioteca `VisitorAPI.js` de códigos. Para baixar a biblioteca de código:
+The [!DNL ID Service] requires the `VisitorAPI.js` code library. Para baixar a biblioteca de código:
 
-1. Vá até **[!UICONTROL Administrador]** &gt; **[!UICONTROL Gerenciador de código]**.
-1. Em [!DNL Code Manager], clique **[!UICONTROL em javascript (Novo)]** ou **[!UICONTROL javascript (Herdado)]**.
+1. Go to **[!UICONTROL Admin]** &gt; **[!UICONTROL Code Manager]**.
+1. In [!DNL Code Manager], click either **[!UICONTROL JavaScript (New)]** or **[!UICONTROL JavaScript (Legacy)]**.
 
    As bibliotecas de código comprimidas serão baixadas.
 
 1. Descomprima o arquivo de código e abra o arquivo `VisitorAPI.js`.
 
-## Etapa 2: Adicionar a função Visitor. getinstance ao código de serviço de ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## Etapa 2: Add the Visitor.getInstance function to the ID Service Code {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -94,9 +94,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-## Etapa 3: Adicionar a ID de empresa da Experience Cloud à Visitor. getinstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
+## Step 3: Add your Experience Cloud Organization ID to Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela ID [!DNL Experience Cloud] da empresa. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da [!DNL Experience Cloud]. Consulte também [Administração - Principais serviços](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
+In the `Visitor.getInstance` function, replace `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` with your [!DNL Experience Cloud] organization ID. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da [!DNL Experience Cloud]. Consulte também [Administração - Principais serviços](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -104,13 +104,13 @@ Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATIO
 >
 >*Não* altere o caso dos caracteres na ID da empresa. A ID diferencia maiúsculas e minúsculas e deve ser usada exatamente como foi fornecida.
 
-## Etapa 4: Adicionar seus servidores de rastreamento a Visitor. getinstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
+## Step 4: Add your tracking servers to Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
 
 Rastreamento dos servidores usados para a coleta de dados do [!DNL Analytics].
 
 **Parte 1: encontrar os URLs do servidor de rastreamento**
 
-Verifique os `s_code.js` urls do servidor `AppMeasurement.js` de rastreamento para encontrar os urls do servidor de rastreamento. Os URLs devem ser especificados pelas variáveis:
+Check your `s_code.js` or `AppMeasurement.js` files to find the tracking server URLs. Os URLs devem ser especificados pelas variáveis:
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
@@ -127,44 +127,44 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 
 >[!NOTE]
 >
->Quando usada, corresponda os [!DNL Experience Cloud] urls do servidor aos urls do servidor de rastreamento correspondentes: &gt;
+>When used, match the [!DNL Experience Cloud] server URLs to their corresponding tracking server URLs like this: &gt;
 >* [!DNL Experience Cloud] URL do servidor = URL do servidor de rastreamento
 >* [!DNL Experience Cloud] URL seguro do servidor = URL seguro do servidor de rastreamento
 >
 
 
 
-Caso não tenha certeza de como encontrar o servidor de rastreamento ver [as Perguntas frequentes](../faq-intro/faq.md) e [preencher corretamente as variáveis trackingserver e trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+If you&#39;re not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
-## Etapa 5: Atualizar o arquivo appmeasurement. js ou s_ code. js {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## Step 5: Update your AppMeasurement.js or s_code.js file {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
-Adicione esta função ao arquivo `AppMeasurement.js` ou `s_code.js` ao arquivo:
+Add this function to your `AppMeasurement.js` or `s_code.js` file:
 
 `s.visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");`
 
-Coloque o código na mesma seção que contém configurações como `linkInternalFilters`, `charSet`etc `trackDownloads`.
+Place the code in the same section that contains configurations such as `linkInternalFilters`, `charSet`, `trackDownloads`, etc.
 
 ***(Opcional, mas recomendado)*Criação de um prop personalizado**
 
-Defina um prop personalizado ou `AppMeasurement.js``s_code.js` para medir a cobertura. Adicione este prop personalizado à `doPlugins` função de seus `AppMeasurement.js``s_code.js` arquivos:
+Set a custom prop in `AppMeasurement.js` or `s_code.js` to measure coverage. Add this custom prop to the `doPlugins` function of your `AppMeasurement.js` or `s_code.js` files:
 
 ```js
 // prop1 is used as an example only. Choose any available prop. 
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Etapa 6: Adicionar o código da API do visitante à página {#section-d46d6aa324c842f2931d901e38d6db1d}
+## Step 6: Add Visitor API code to the page {#section-d46d6aa324c842f2931d901e38d6db1d}
 
-Coloque o `VisitorAPI.js` arquivo nas `<head>` tags em cada página. Ao anexar o arquivo `VisitorAPI.js` à página:
+Place the `VisitorAPI.js` file within the `<head>` tags on each page. Ao anexar o arquivo `VisitorAPI.js` à página:
 
-* Coloque-o no início da `<head>` seção a ele é exibido antes de outras tags de solução.
+* Put it at the beginning of the `<head>` section to it appears before other solution tags.
 * É necessário executar antes do AppMeasurement e do código de outras soluções da [!DNL Experience Cloud].
 
 Transfira esse código para a produção após os testes e a verificação.
 
-## Etapa 7: (Opcional) Configurar um período de carência {#section-7bbb2f72c26e4abeb8881e18366797a3}
+## Step 7: (Optional) Configure a grace period {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-Se algum desses casos de uso se aplicar à sua situação, peça [ao Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para configurar um período [de carência temporário](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -178,17 +178,17 @@ O período de carência será cancelado depois da implantação do serviço de I
 
 A descontinuação do período de carência após sua implementação pode capturar a MID em vez de ler o cookie s_vi.
 
-Consulte [Cookies e o Serviço de identidade da plataforma Experience Platform](../introduction/cookies.md).
+Consulte [Cookies e o serviço de Experience Cloud ID](../introduction/cookies.md).
 
 É necessário ter um período de carência caso envie dados para um sistema interno de um feed de dados de sequência de cliques que processe os usos das colunas `visid_high` e `visid_low`.
 
-Descontinuar o período de carência após seu processo de ingestão de dados pode usar as `post_visid_high``post_visid_low` colunas.
+Discontinue the grace period after your data ingestion process can use the `post_visid_high` and `post_visid_low` columns.
 
 Consulte [Referência da coluna de dados da sequência de cliques](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 **Ingestão de dados da sequência de cliques**
 
-## Etapa 8: Testar e implantar o código do serviço de ID {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
+## Step 8: Test and deploy ID Service code {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
 Você pode testar e implantar como segue.
 
@@ -199,7 +199,7 @@ Para testar a implementação de serviço de ID, verifique:
 * O [cookie AMCV](../introduction/cookies.md) no domínio em que sua página está hospedada.
 * O valor da MID na solicitação de imagem do [!DNL Analytics] com a [ferramenta Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 
-Consulte [Testar e verificar o Serviço de identidade da Experience Platform](../implementation-guides/test-verify.md).
+See, [Test and Verify the Experience Cloud ID Service](../implementation-guides/test-verify.md).
 
 **Implantar código**
 
