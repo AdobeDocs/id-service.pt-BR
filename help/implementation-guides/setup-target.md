@@ -1,19 +1,19 @@
 ---
-description: Essas instruções para clientes do Target que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+description: Essas instruções para clientes do Target que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 keywords: Serviço de ID
-seo-description: Essas instruções para clientes do Target que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
-seo-title: Implementar o Serviço de identidade da plataforma de experiência para o Target
-title: Implementar o Serviço de identidade da plataforma de experiência para o Target
+seo-description: Essas instruções para clientes do Target que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+seo-title: Implementar o serviço da Experience Cloud ID no Target
+title: Implementar o serviço da Experience Cloud ID no Target
 uuid: cb 3581 fa -4 c 4 b -43 aa-bb 8 e -8 db 85 a 6 a 1 ef 2
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Implementar o Serviço de identidade da plataforma de experiência para o Target{#implement-the-experience-cloud-id-service-for-target}
+# Implementar o serviço da Experience Cloud ID no Target{#implement-the-experience-cloud-id-service-for-target}
 
-Essas instruções para clientes do Target que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+Essas instruções para clientes do Target que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 
 >[!IMPORTANT]
 >
@@ -23,11 +23,11 @@ Essas instruções para clientes do Target que desejam usar o Serviço de identi
 
 
 
-## Etapa 1: Obter o código do serviço de ID {#section-b32ba0548aa546a79dd38be59832a53e}
+## Step 1: Get the ID Service code {#section-b32ba0548aa546a79dd38be59832a53e}
 
-O [!DNL ID Service] código exige a biblioteca `VisitorAPI.js` de códigos. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para receber o código.
+The [!DNL ID Service] requires the `VisitorAPI.js` code library. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para receber o código.
 
-## Etapa 2: Adicionar a função Visitor. getinstance ao código do serviço de ID {#section-287ef2958e9f43858fe9d630ae519e22}
+## Step 2: Add the Visitor.getInstance function to the ID Service code {#section-287ef2958e9f43858fe9d630ae519e22}
 
 **Parte 1: copiar a função Visitor.getInstance abaixo**
 
@@ -52,9 +52,9 @@ Version and copyright section
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");
 ```
 
-## Etapa 3: Adicionar a ID de empresa da Experience Cloud à Visitor. getinstance {#section-522b1877be9243c39b222859b821f0ce}
+## Step 3: Add your Experience Cloud Organization ID to Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela ID [!DNL Experience Cloud] da empresa. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da [!DNL Experience Cloud]. Consulte também [Administração - Principais serviços](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
+In the `Visitor.getInstance` function, replace `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` with your [!DNL Experience Cloud] organization ID. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da [!DNL Experience Cloud]. Consulte também [Administração - Principais serviços](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
@@ -62,11 +62,11 @@ Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATIO
 >
 >*Não* altere o caso dos caracteres na ID da empresa. A ID diferencia maiúsculas e minúsculas e deve ser usada exatamente como foi fornecida.
 
-## Etapa 4: Adicionar o código da API do visitante à página {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
+## Step 4: Add Visitor API code to the page {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
-Implante `VisitorAPI.js` o arquivo no site nas `<head>` tags antes da referência ao `mbox.js` arquivo. O serviço [!DNL Experience Cloud] de ID deve ser executado antes da geração da primeira [!DNL Target] chamada de rede. Transfira esse código para a produção após os testes e a verificação.
+Deploy the `VisitorAPI.js` file to your site in the `<head>` tags before the reference to the `mbox.js` file. The [!DNL Experience Cloud] ID service must execute before the first [!DNL Target] network call is generated. Transfira esse código para a produção após os testes e a verificação.
 
-## Etapa 5: Testar e implantar o código do serviço de ID {#section-e81ee439bb8a4c2abea43d76f3112e9c}
+## Step 5: Test and deploy ID Service code {#section-e81ee439bb8a4c2abea43d76f3112e9c}
 
 Você pode testar e implantar como segue.
 
@@ -75,9 +75,9 @@ Você pode testar e implantar como segue.
 Para testar a implementação do serviço de ID:
 
 * Verifique o cookie AMCV no domínio em que sua página está hospedada.
-* Verifique `mboxMCGVID` se ela aparece na [!DNL Target] solicitação e se ela contém [!DNL Experience Cloud] a ID (MID).
+* Verify `mboxMCGVID` appears in your [!DNL Target] request and that it contains the [!DNL Experience Cloud] ID (MID).
 
-Consulte [Cookies e o Serviço de identidade da plataforma Experience Platform](../introduction/cookies.md) para obter informações sobre o cookie AMCV e a MID.
+See [Cookies and the Experience Cloud ID Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
 
 **Implantação**
 
