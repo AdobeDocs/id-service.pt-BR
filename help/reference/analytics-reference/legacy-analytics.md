@@ -1,23 +1,23 @@
 ---
-description: Uma visão geral de como o Serviço de identidade da Experience Platform funciona com a ID do Analytics herdada.
+description: Uma visão geral de como o serviço da Experience Cloud ID funciona com a ID do Analytics herdada.
 keywords: Serviço de ID
-seo-description: Uma visão geral de como o Serviço de identidade da Experience Platform funciona com a ID do Analytics herdada.
+seo-description: Uma visão geral de como o serviço da Experience Cloud ID funciona com a ID do Analytics herdada.
 seo-title: Solicitações do Analytics e da Experience Cloud ID
 title: Solicitações do Analytics e da Experience Cloud ID
 uuid: 28 beed 16-7 ef 9-4824-8 e 82-853930756 eca
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Solicitações do Analytics e da Experience Cloud ID{#analytics-and-experience-cloud-id-requests}
 
-Uma visão geral de como o Serviço de identidade da Experience Platform funciona com a ID do Analytics herdada.
+Uma visão geral de como o serviço da Experience Cloud ID funciona com a ID do Analytics herdada.
 
 ## Resumo {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-Historicamente, o Serviço de identidade da Experience Platform foi integrado fortemente ao Adobe Analytics. Ele ainda é parte integral do Analytics, mas agora executa funções importantes para outras soluções e recursos na [!DNL Experience Cloud]. Devido a este legado histórico, verificar ou gravar uma ID do Analytics é um pouco diferente do processo genérico descrito em [Como o serviço de identidade da plataforma Experiência solicita e define IDs….](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) Para obter mais informações sobre a ordem das operações para verificação de IDs, consulte [Definição do Analytics e IDs da Experience Cloud](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
+Historicamente, o serviço da Experience Cloud ID foi integrado fortemente ao Adobe Analytics. Ele ainda é parte integral do Analytics, mas agora executa funções importantes para outras soluções e recursos na [!DNL Experience Cloud]. Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Cloud ID Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). For additional information on the order of operations for checking IDs, see [Setting Analytics and Experience Cloud IDs](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
 ## O cookie AMCV não está definido no navegador {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
@@ -37,11 +37,11 @@ Se o cookie [!DNL Experience Cloud] (AMCV) não estiver presente, uma chamada de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>O cookie s_vi está definido</b> </p> </td> 
-   <td colname="col2"> <p>Quando um visitante do site com um cookie s_ vi encontra o Serviço de identidade da Experience Platform, este serviço: </p> 
+   <td colname="col2"> <p>Quando um visitante do site com um cookie s_ vi encontra primeiro o serviço da Experience Cloud ID, este serviço: </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
      <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">Grava a ID do <span class="keyword">Analytics</span> armazenada no cookie s_vi para o cookie AMCV. Isso é gravado como a ID do <span class="keyword">Analytics</span> (AID). Essa ação <i>não</i> afeta a contagem de visitantes.  O <span class="keyword">Analytics</span> continua identificando usuários com as IDs herdadas. </li> 
      <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">Grava a MID no cookie AMCV. A MID identifica os usuários em diferentes soluções. </li> 
-    </ul> <p> <p>Observação: Com um período <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> de carência</a>, a resposta do data center sempre inclui uma ID herdada armazenada no cookie s_ vi. Durante o período de carência, a ID herdada é gravada no cookie AMCV como o valor de AID. </p> </p> </td> 
+    </ul> <p> <p>Note: With a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a>, the data center response always includes a legacy ID that is stored in the s_vi cookie. Durante o período de carência, a ID herdada é gravada no cookie AMCV como o valor de AID. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
