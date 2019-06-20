@@ -1,30 +1,30 @@
 ---
-description: Essas instruções foram criadas para clientes do Analytics, do Audience Manager e do Target que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+description: Essas instruções foram criadas para clientes do Analytics, do Audience Manager e do Target que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 keywords: Serviço de ID
-seo-description: Essas instruções foram criadas para clientes do Analytics, do Audience Manager e do Target que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
-seo-title: Implementar o Serviço de identidade da plataforma Experience Platform para Analytics, Audience Manager e Target
-title: Implementar o Serviço de identidade da plataforma Experience Platform para Analytics, Audience Manager e Target
+seo-description: Essas instruções foram criadas para clientes do Analytics, do Audience Manager e do Target que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+seo-title: Implementar o serviço da Experience Cloud ID para o Analytics, o Audience Manager e o Target
+title: Implementar o serviço da Experience Cloud ID para o Analytics, o Audience Manager e o Target
 uuid: 9 d 446 b 77-ca 62-4325-8 bb 0-ff 43 a 52313 c 0
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Implementar o Serviço de identidade da plataforma Experience Platform para Analytics, Audience Manager e Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Implementar o serviço da Experience Cloud ID para o Analytics, o Audience Manager e o Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Essas instruções foram criadas para clientes do Analytics, do Audience Manager e do Target que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+Essas instruções foram criadas para clientes do Analytics, do Audience Manager e do Target que desejam usar o serviço da Experience Cloud ID e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 
 >[!IMPORTANT]
 >
->Leia os requisitos do serviço [de ID](../reference/requirements.md) antes de começar e observe os seguintes requisitos específicos desta implementação: &gt;
+>Read the ID service [requirements](../reference/requirements.md) before you begin and note the following requirements that are specific to this implementation: &gt;
 >* Os clientes que usam s_code não podem concluir esse procedimento. Atualize para o código mbox v61 a fim de concluir o procedimento.
 >* Configure e teste esse código em um ambiente de desenvolvimento *antes* de implementá-lo na produção.
 >
 
 
 
-## Etapa 1: Planejamento do encaminhamento pelo lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
+## Step 1: Plan for server-side forwarding {#section-880797cc992d4755b29cada7b831f1fc}
 
 Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do servidor. O encaminhamento do servidor permite a remoção do DIL (código de coleta de dados do Audience Manager) e a substituição pelo [Módulo de gerenciamento de público-alvo](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Consulte a [documentação de encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) para obter mais informações.
 
@@ -32,11 +32,11 @@ A migração para o encaminhamento do servidor requer planejamento e coordenaç�
 
 1. Trabalhe com os contatos do [!DNL Analytics] e do [!DNL Audience Manager] a fim de planejar a migração do serviço de ID e do encaminhamento do servidor. A seleção do servidor de rastreamento é uma parte importante do plano.
 
-1. For provisionado [!DNL Profiles & Audiences]. Preencha o formulário no [site de integrações e provisionamento](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) para começar.
+1. Get provisioned for [!DNL Profiles & Audiences]. Preencha o formulário no [site de integrações e provisionamento](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) para começar.
 
-1. Implemente o serviço de ID e [!DNL Audience Management Module] ao mesmo tempo. Para funcionar adequadamente, o [!DNL Audience Management Module] (encaminhamento pelo lado do servidor) e o serviço de ID devem ser lançados para o mesmo conjunto de páginas e ao mesmo tempo.
+1. Implement the ID service and the [!DNL Audience Management Module] simultaneously. To work properly, the [!DNL Audience Management Module] (server-side forwarding) and the ID service must be released for the same set of pages and at the same time.
 
-## Etapa 2: Baixar o código do serviço de ID {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
+## Step 2: Download the ID Service code {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
 
 O serviço de ID exige a biblioteca de código `VisitorAPI.js`. Para baixar a biblioteca de código:
 
@@ -45,7 +45,7 @@ O serviço de ID exige a biblioteca de código `VisitorAPI.js`. Para baixar a bi
 
 1. Descomprima o arquivo de código e abra o arquivo `VisitorAPI.js`.
 
-## Etapa 3: Adicionar a função Visitor. getinstance ao código do serviço de ID {#section-9e30838b4d0741658a7a492153c49f27}
+## Step 3: Add the Visitor.getInstance function to the ID Service code {#section-9e30838b4d0741658a7a492153c49f27}
 
 >[!IMPORTANT]
 >
@@ -94,9 +94,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Etapa 4: Adicionar a ID de empresa da Experience Cloud à Visitor. getinstance {#section-e2947313492546789b0c3b2fc3e897d8}
+## Step 4: Add your Experience Cloud Organization ID to Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` com sua ID de empresa da Experience Cloud. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da Experience Cloud. A função editada pode ser parecida com o exemplo abaixo.
+In the `Visitor.getInstance` function, replace `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` with your Experience Cloud organization ID. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da Experience Cloud. A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -104,13 +104,13 @@ Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATIO
 >
 >*Não* altere o caso dos caracteres na ID da empresa. A ID diferencia maiúsculas e minúsculas e deve ser usada exatamente como foi fornecida.
 
-## Etapa 5: Adicionar seus servidores de rastreamento a Visitor. getinstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
+## Step 5: Add your tracking servers to Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
 O Analytics usa servidores de rastreamento para a coleta de dados.
 
 **Parte 1: encontrar os URLs do servidor de rastreamento**
 
-Verifique os `s_code.js` urls do servidor `AppMeasurement.js` de rastreamento para encontrar os urls do servidor de rastreamento. Os URLs devem ser especificados pelas variáveis:
+Check your `s_code.js` or `AppMeasurement.js` files to find the tracking server URLs. Os URLs devem ser especificados pelas variáveis:
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
@@ -134,17 +134,17 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 
 Se você não tiver certeza sobre como encontrar o servidor de rastreamento, consulte as [Perguntas frequentes](../faq-intro/faq.md) e [Preenchimento correto das variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
-## Etapa 6: Atualizar o arquivo appmeasurement. js {#section-5517e94a09bc44dfb492ebca14b43048}
+## Step 6: Update your AppMeasurement.js file {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Essa etapa requer [!DNL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
+This step requires [!DNL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
 
-Adicione `Visitor.getInstance` a função mostrada abaixo ao `AppMeasurement.js` seu arquivo. Coloque-o na seção que contém configurações como `linkInternalFilters`, `charSet`etc `trackDownloads`.:
+Add the `Visitor.getInstance` function shown below to your `AppMeasurement.js` file. Place it in the section that contains configurations such as `linkInternalFilters`, `charSet`, `trackDownloads`, etc. :
 
 `s.visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");`
 
 >[!IMPORTANT]
 >
->Nesse ponto, você deve remover o código [!DNL Audience Manager] DIL e substituí-lo pelo Módulo de gerenciamento de público-alvo. Consulte [Implementar o encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) para obter instruções.
+>At this point, you should remove the [!DNL Audience Manager] DIL code and replace it with the Audience Management Module. Consulte [Implementar o encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) para obter instruções.
 
 ***(Opcional, mas recomendado)*Criar um prop personalizado**
 
@@ -155,16 +155,16 @@ Definir um prop padrão em `AppMeasurement.js` para medir a cobertura. Adicione 
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Etapa 7: Adicionar o código da API do visitante à página {#section-c2bd096a3e484872a72967b6468d3673}
+## Step 7: Add Visitor API code to the page {#section-c2bd096a3e484872a72967b6468d3673}
 
-Coloque o ` [!DNL VisitorAPI.js]` arquivo nas `<head>` tags em cada página. Ao anexar o arquivo `VisitorAPI.js` à página:
+Place the ` [!DNL VisitorAPI.js]` file within the `<head>` tags on each page. Ao anexar o arquivo `VisitorAPI.js` à página:
 
-* Coloque-o no início da `<head>` seção a ele é exibido antes de outras tags de solução.
+* Put it at the beginning of the `<head>` section to it appears before other solution tags.
 * É necessário executar antes do AppMeasurement e do código de outras soluções da [!DNL Experience Cloud].
 
-## Etapa 8: (Opcional) Configurar um período de carência {#section-aceacdb7d5794f25ac6ff46f82e148e1}
+## Step 8: (Optional) Configure a grace period {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se algum desses casos de uso se aplicar à sua situação, peça [ao Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para configurar um período [de carência temporário](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -178,23 +178,23 @@ O período de carência será cancelado depois da implantação do serviço de I
 
 A descontinuação do período de carência após sua implementação pode capturar a MID em vez de ler o cookie s_vi.
 
-Consulte também [Cookies e o Serviço de identidade da Experience Platform](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
 
 **Integração de dados da sequência de cliques**
 
 É necessário ter um período de carência caso envie dados para um sistema interno de um feed de dados de sequência de cliques que processe os usos das colunas `visid_high` e `visid_low`.
 
-Descontinuar o período de carência após seu processo de ingestão de dados pode usar as `post_visid_high``post_visid_low` colunas.
+Discontinue the grace period after your data ingestion process can use the `post_visid_high` and `post_visid_low` columns.
 
 Consulte também, [Referência da coluna de dados da sequência de cliques](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
-## Etapa 9: Teste e verifique {#section-f857542bfc70496dbb9f318d6b3ae110}
+## Step 9: Test and verify {#section-f857542bfc70496dbb9f318d6b3ae110}
 
 As soluções da [!DNL Experience Cloud] nesta implementação retornam IDs na forma de pares de valor chave. Cada solução usa chaves diferentes (por exemplo, a SDID do [!DNL Analytics] em comparação à mboxMCSDID do [!DNL Target]) para a mesma ID. Para testar a implementação, carregue as páginas em um ambiente de desenvolvimento. Use o console do navegador ou o software que monitora solicitações HTTP e respostas para verificar as IDs listadas abaixo. O serviço de ID está implementado corretamente quando os pares de valores chave listados abaixo retornam os mesmos valores da ID.
 
 >[!TIP]
 >
->Você pode usar o [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) ou o proxy HTTP [Charles](https://www.charlesproxy.com/) para verificar essas IDs específicas da solução. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
+>You can use the [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) or the [Charles HTTP proxy](https://www.charlesproxy.com/) to check for these solution-specific IDs. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
 
 **Todas as soluções**
 
@@ -203,7 +203,7 @@ Verifique:
 * [cookie AMCV](../introduction/cookies.md) no domínio em que a página está hospedada.
 * [!DNL Experience Cloud] ID (MID) com o [!DNL Adobe] depurador ou a ferramenta de depuração preferencial.
 
-Para obter verificações adicionais que ajudam a determinar se o serviço de ID está funcionando corretamente, consulte [Testar e verificar o Serviço de identidade da Experience Platform](../implementation-guides/test-verify.md).
+For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Cloud ID Service](../implementation-guides/test-verify.md).
 
 **Analytics**
 
@@ -212,7 +212,7 @@ Verifique se o identificador SDID está na solicitação de JavaScript. A SDID d
 Se os testes retornarem uma AID, isso indica o seguinte:
 
 * Você é um visitante constante no processo de migração de IDs herdadas do [!DNL Analytics].
-* Há um período [de cortesia](../reference/analytics-reference/grace-period.md) ativado.
+* You have a [grace period](../reference/analytics-reference/grace-period.md) enabled.
 
 Ao observar uma AID, compare o valor com a mboxMCAVID do [!DNL Target]. Esses valores são idênticos quando o serviço de ID é implementado corretamente.
 
@@ -239,7 +239,7 @@ Ao observar uma mboxMCAVID, compare o valor à AID do [!DNL Analytics]. Esses va
 
 **Implantação**
 
-## Etapa 10: Implantar {#section-4188fa95e7dc455a986b48a6c517c1c9}
+## Step 10: Deploy {#section-4188fa95e7dc455a986b48a6c517c1c9}
 
 Implanta o código após o teste.
 
