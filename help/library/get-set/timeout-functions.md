@@ -1,19 +1,19 @@
 ---
-description: Chame essas funções do serviço de ID para determinar o status do tempo limite para uma solicitação de Serviço de identidade da Experience Platform, Analytics ou Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+description: Chame essas funções do serviço de ID para determinar o status do tempo limite de uma solicitação de serviço da Experience Cloud ID, do Analytics ou do Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 keywords: Serviço de ID
-seo-description: Chame essas funções do serviço de ID para determinar o status do tempo limite para uma solicitação de Serviço de identidade da Experience Platform, Analytics ou Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+seo-description: Chame essas funções do serviço de ID para determinar o status do tempo limite de uma solicitação de serviço da Experience Cloud ID, do Analytics ou do Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 seo-title: Métodos de callTimeOut
 title: Métodos de callTimeOut
 uuid: e 5047498-11 db -4945-b 356-c 92 b 7 d 447573
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Métodos de callTimeOut{#calltimeout-methods}
 
-Chame essas funções do serviço de ID para determinar o status do tempo limite para uma solicitação de Serviço de identidade da Experience Platform, Analytics ou Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+Chame essas funções do serviço de ID para determinar o status do tempo limite de uma solicitação de serviço da Experience Cloud ID, do Analytics ou do Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 
 ## Funções de tempo limite {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,7 +26,7 @@ Chame essas funções do serviço de ID para determinar o status do tempo limite
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Serviço de identidade da plataforma Experience Platform </p> </td> 
+   <td colname="col1"> <p>Serviço da Experience Cloud ID </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. mcidcalltimedout ()</span> </p> </td> 
   </tr> 
   <tr> 
