@@ -2,22 +2,22 @@
 description: Visão geral do processo de resposta e da solicitação de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
 keywords: Serviço de ID
 seo-description: Visão geral do processo de resposta e da solicitação de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
-seo-title: Como o serviço de identidade da plataforma Experience Platform solicita e define IDs
-title: Como o serviço de identidade da plataforma Experience Platform solicita e define IDs
+seo-title: Como o serviço da Experience Cloud ID solicita e define IDs
+title: Como o serviço da Experience Cloud ID solicita e define IDs
 uuid: ff 7 f 5 b 7 e-e 959-4391-b 75 c-b 7 a 36286 e 0 ea
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Como o serviço de identidade da plataforma Experience Platform solicita e define IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud ID Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Visão geral do processo de resposta e da solicitação de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
 
 >[!NOTE]
 >
->Se você não estiver familiarizado com como o Serviço de identidade da Experience Platform cria a ID de visitante, reveja a [Experience Cloud](../introduction/cookies.md).
+>If you&#39;re not familiar with how the Experience Cloud ID Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **Dica:** consulte também o [vídeo do serviço de ID sobre rastreamento entre domínios](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
@@ -44,7 +44,7 @@ Na resposta, o DCS retorna a [!DNL Experience Cloud] ID (MID) e o cookie demdex.
 
 Como será visto no próximo exemplo, a ID demdex e a ID da organização permitem que o serviço de ID crie e retorne a MID correta quando o visitante for para outro site pertencente à Food Company.
 
-## Solicitação e resposta entre sites {#section-15ea880453af467abd2874b8b4ed6ee9}
+## Cross-site request and response {#section-15ea880453af467abd2874b8b4ed6ee9}
 
 Neste exemplo, o visitante da Food Company navega do site de pizza para o site de tacos. A Food Company tem o código do serviço de ID do site de tacos. O visitante nunca foi ao site de tacos.
 
@@ -56,7 +56,7 @@ Após o DCS receber a ID da organização e a ID demdex, ele cria e retorna a MI
 
 ![](assets/response2.png)
 
-## Solicitações de ID de outros sites {#section-ba9a929e50d64b0aba080630fd83b6f1}
+## ID requests from other sites {#section-ba9a929e50d64b0aba080630fd83b6f1}
 
 Neste exemplo, o visitante deixa os sites da Food Company e navega para o site de futebol pertencente à Sports Company. Quando o visitante vai ao site de futebol, o processo de solicitação e verificação de ID funciona da mesma forma descrita nos exemplos anteriores. No entanto, como a Sports Company tem a sua própria ID da organização, o serviço de ID retorna uma MID diferente. A nova MID é exclusiva ao domínio controlado pela Sports Company e permite que a empresa rastreie e compartilhe os dados do visitante em todas as soluções da [!DNL Experience Cloud]. A ID demdex permanece a mesma para esse visitante porque ela está contida no cookie de terceiros e continua por diferentes domínios.
 
