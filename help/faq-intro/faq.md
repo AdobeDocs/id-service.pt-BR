@@ -6,7 +6,7 @@ seo-title: Perguntas frequentes do serviço de ID
 title: Perguntas frequentes do serviço de ID
 uuid: e 8 d 8 f 819-3 d 73-4 fa 2-864 c -4867071 c 14 ee
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -23,21 +23,21 @@ Consulte a [Visão geral](../introduction/overview.md).
 
 **Por que o serviço de ID não faz uma chamada para recuperar a Experience Cloud ID?**
 
-Esse pode ser um problema difícil de diagnosticar. Você pode verificar os cabeçalhos da política de segurança do conteúdo do seu site. Caso tenha uma política de segurança estrita, essas configurações podem bloquear as chamadas de terceiros efetuadas pelo serviço de ID. Consulte [Políticas de segurança de conteúdo e o Serviço de identidade da Experience Platform](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Esse pode ser um problema difícil de diagnosticar. Você pode verificar os cabeçalhos da política de segurança do conteúdo do seu site. Caso tenha uma política de segurança estrita, essas configurações podem bloquear as chamadas de terceiros efetuadas pelo serviço de ID. Consulte [Políticas de segurança de conteúdo e o serviço da Experience Cloud ID](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Armazenamento do arquivo VisitorAPI.js**
 
 Você pode ter problemas se hospedar o arquivo VisitorAPI.js como um arquivo local em aplicativos para dispositivos móveis. Recomendamos hospedar o arquivo em um servidor da web.
 
-## Tempo de carregamento de página e latência {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **Como a biblioteca VisitorAPI.js do serviço de ID afeta o tempo de carregamento da página?**
 
-Coloque a biblioteca visitorapi. js na parte superior da página na `<head>` seção do seu código. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
+Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
 
 A chamada do serviço de ID é assíncrona e é a única para o [domínio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). A chamada do serviço de ID não impede o carregamento de outros elementos na página.
 
-Para [!DNL Target] clientes, colocar o código de serviço de ID na `<body>` página pode aumentar a probabilidade de que ele possa bloquear uma [!DNL Target] chamada. Se você precisar colocar o código de serviço de ID no corpo da página, ele deverá ser colocado após a `<body>` tag aberta.
+For [!DNL Target] customers, placing ID service code in the `<body>` of the page may increase the odds that it could block a [!DNL Target] call. If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
 
 **O serviço de ID faz uma chamada de servidor a cada carregamento de página?**
 
@@ -67,13 +67,13 @@ Essa alteração aprimora o desempenho para clientes usando Visitor 2.3.0+ e DIL
 
 Em geral, as solicitações de recursos com CORS são preferenciais em relação a JSONP. Com JSONP, alguns navegadores consultam e despriorizam as solicitações em relação a outras chamadas síncronas e assíncronas na página. O CORS ajuda a garantir que essas solicitações sejam tratadas com uma prioridade mais alta na pilha de chamadas do navegador.
 
-Consulte [Suporte CORS no Serviço de identidade da plataforma Experience Platform](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Consulte [Suporte para CORS no serviço de Experience Cloud ID](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Segurança {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **O serviço de ID oferece suporte ao CORS?**
 
-Sim. Consulte [Suporte CORS no Serviço de identidade da plataforma Experience Platform](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Sim. See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **O que é o CORS?**
 
