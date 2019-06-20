@@ -6,7 +6,7 @@ seo-title: Obter as IDs de região e do usuário do cookie AMCV ou do serviço d
 title: Obter as IDs de região e do usuário do cookie AMCV ou do serviço de ID
 uuid: bdd 9 d 001-f 29 f -4 ff 0-800 b -8182243 da 218
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -15,8 +15,8 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 O cookie AMCV contém a Experience Cloud ID (MID) e uma ID de região dos visitantes do site. Essas IDs são armazenadas como pares de valores chave. A ID mid:user contém a Experience Cloud ID do visitante. A ID aamlh:region contém a ID de região dos visitantes do site. É possível recuperar essas informações ao analisar o cookie AMCV.
 
-Para obter mais informações, consulte [Obter IDs de usuário e Regiões por meio do Serviço de identidade da plataforma Experience Platform](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
+Para obter mais informações, consulte [Obter IDs de usuário e regiões pelo serviço da Experience Cloud ID](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
 
 Se você for um cliente do [!DNL Audience Manager], é possível obter a ID da região da resposta enviada pelo Servidor de coleta de dados (DCS). Consulte [Obter IDs de usuário e regiões de uma resposta do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-aam-ids.html).
 
-Também é possível obter a ID da região com um método `GET` fornecido pelo serviço de ID. Consulte [Obter IDs de região (Dica de localização)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
+Também é possível obter a ID da região com um método `GET` fornecido pelo serviço de ID. See [Get Region IDs (Location Hint)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
