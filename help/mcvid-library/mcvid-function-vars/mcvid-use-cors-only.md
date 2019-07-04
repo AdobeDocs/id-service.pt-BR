@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Um sinalizador booleano opcional que controla como o navegador solicita recursos do serviço da Experience Cloud ID.
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607 dc 035-dffc -4 f 4 d-be 51-08 ef 6 c 0 a 8 fad
-translation-type: tm+mt
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Um sinalizador booleano opcional que controla como o navegador solicita recursos do serviço da Experience Cloud ID.
 
-** Sintaxe: ** `useCORSOnly: true|false` (padrão é `false`.)
+**Sintaxe: ** `useCORSOnly: true|false` (o padrão é `false`.)
 
 **Visão geral**
 
@@ -23,7 +23,7 @@ Quando está definido como `false`, o navegador executa verificações de recurs
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` se você tiver requisitos de segurança rígidos. Esse modo deve ser habilitado somente se você tiver certeza de que os visitantes usam navegadores com suporte para CORS. A experiência do usuário não é afetada por navegadores sem suporte para CORS. No entanto, os navegadores sem suporte para CORS não podem solicitar dados de recursos ou troca com a [!DNL Adobe Experience Cloud].
+>`Set useCORSOnly: true` se você tiver requisitos de segurança rigorosos. Esse modo deve ser habilitado somente se você tiver certeza de que os visitantes usam navegadores com suporte para CORS. A experiência do usuário não é afetada por navegadores sem suporte para CORS. No entanto, os navegadores sem suporte para CORS não podem solicitar dados de recursos ou troca com a [!DNL Adobe Experience Cloud].
 
 **Amostra de código**
 
