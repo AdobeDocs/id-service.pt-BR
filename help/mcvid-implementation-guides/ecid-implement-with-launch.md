@@ -3,8 +3,8 @@ description: O Launch, da Adobe, é a ferramenta principal usada para configurar
 seo-description: O Launch, da Adobe, é a ferramenta principal usada para configurar, implantar e integrar o serviço da Experience Cloud ID às outras soluções da Experience Cloud.
 seo-title: Implementação com o Launch
 title: Implementação com o Launch
-uuid: b 3282 f 8 e -82 b 8-4c 35-8 c 80-1 b 365 e 8 a 9693
-translation-type: tm+mt
+uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
