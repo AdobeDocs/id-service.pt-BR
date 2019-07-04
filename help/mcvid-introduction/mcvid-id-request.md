@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Visão geral do processo de resposta e da solicitação de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
 seo-title: Como o serviço da Experience Cloud ID solicita e define IDs
 title: Como o serviço da Experience Cloud ID solicita e define IDs
-uuid: ff 7 f 5 b 7 e-e 959-4391-b 75 c-b 7 a 36286 e 0 ea
-translation-type: tm+mt
+uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,13 +17,13 @@ Visão geral do processo de resposta e da solicitação de ID. Esses exemplos co
 
 >[!NOTE]
 >
->Se você não estiver familiarizado com como o serviço da Experience Cloud ID cria a ID de visitante, reveja [a Experience Cloud](../mcvid-introduction/mcvid-cookies.md).
+>Se não estiver familiarizado com a forma como o serviço da Experience Cloud ID cria a ID de visitante, consulte [Experience Cloud](../mcvid-introduction/mcvid-cookies.md).
 
-**Dica:** consulte também o [vídeo do serviço de ID sobre rastreamento entre domínios](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
+**Dica:** consulte também nosso [vídeo de serviço de ID no rastreamento entre domínios](https://helpx.adobe.com/br/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Solicitar uma Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
-Os exemplos a seguir demonstram como o serviço de ID solicita e recebe a ID de visitante da Experience Cloud. Estes exemplos usam duas empresas fictícias, a Food Company e a Sports Company, para demonstrar os fluxos de dados das solicitações e respostas da ID. A duas empresas têm uma ID da organização da Experience Cloud exclusiva e implementaram o código do serviço de ID em seus sites. Esses casos de uso representam os fluxos de dados de uma implementação genérica do serviço de ID sem o Analytics, IDs herdadas ou navegadores que bloqueiem cookies de terceiros.
+Os exemplos a seguir demonstram como o serviço de ID solicita e recebe a ID de visitante da Experience Cloud. Esses exemplos usam duas empresas fictícias, a Food Company e a Sports Company, para demonstrar os fluxos de dados das solicitações e respostas da ID. A duas empresas têm uma ID da organização da Experience Cloud exclusiva e implementaram o código do serviço de ID em seus sites. Esses casos de uso representam os fluxos de dados de uma implementação genérica do serviço de ID sem o Analytics, IDs herdadas ou navegadores que bloqueiem cookies de terceiros.
 
 ![](assets/sample_sites.png)
 
@@ -32,7 +32,7 @@ Os exemplos a seguir demonstram como o serviço de ID solicita e recebe a ID de 
 Nesse exemplo, um novo visitante acessa o site de pizza gerenciado pela Food Company. A Food Company tem o código do serviço de ID do site de pizza. Quando o site de pizza é carregado, o código do serviço de ID verifica o cookie AMCV no domínio do site de pizza.
 
 * Se o cookie AMCV estiver definido, o visitante do site tem uma Experience Cloud ID. Nesse caso, o cookie rastreia o visitante e compartilha dados com outras soluções da Experience Cloud.
-* Se o cookie AMCV não estiver definido, o código do serviço de ID chama um [servidor de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) regional em `dpm.demdex.net/id` (consulte também, [Entender chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). A chamada inclui a ID da organização da Food Company. A ID da organização está definida na função `Visitor.getInstance` do código do serviço de ID.
+* Se o cookie AMCV não foi definido, o código do serviço de ID chama um [servidor de coleta de dados regional](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) em `dpm.demdex.net/id` (consulte também [Compreender as chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). A chamada inclui a ID da organização da Food Company. A ID da organização está definida na função `Visitor.getInstance` do código do serviço de ID.
 
 ![](assets/request1.png)
 
@@ -44,7 +44,7 @@ Na resposta, o DCS retorna a [!DNL Experience Cloud] ID (MID) e o cookie demdex.
 
 Como será visto no próximo exemplo, a ID demdex e a ID da organização permitem que o serviço de ID crie e retorne a MID correta quando o visitante for para outro site pertencente à Food Company.
 
-## Solicitação e resposta entre sites {#section-15ea880453af467abd2874b8b4ed6ee9}
+## Respostas e solicitações entre sites {#section-15ea880453af467abd2874b8b4ed6ee9}
 
 Neste exemplo, o visitante da Food Company navega do site de pizza para o site de tacos. A Food Company tem o código do serviço de ID do site de tacos. O visitante nunca foi ao site de tacos.
 
