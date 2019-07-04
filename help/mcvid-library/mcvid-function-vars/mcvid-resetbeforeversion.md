@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Essa configuração permite limpar Experience Cloud IDs (ECIDs) órfãs ou desatualizadas com base na versão do Serviço de ID que está sendo atualizado.
 seo-title: resetBeforeVersion
 title: resetBeforeVersion
-uuid: b 00 d 18 b 8-6720-42 f 9-9 c 83-bd 306184 cc 0 c
-translation-type: tm+mt
+uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
