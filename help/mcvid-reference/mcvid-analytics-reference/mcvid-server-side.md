@@ -1,11 +1,11 @@
 ---
 description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
 keywords: Serviço de ID
-seo-description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados pelo servidor.
+seo-description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
 seo-title: Implementação do lado do servidor combinada com JavaScript
 title: Implementação do lado do servidor combinada com JavaScript
-uuid: 256 ea 0 e 7-1 eb 4-4 c 92-9 a 7 e-f 61 cb 1 ed 13 c 7
-translation-type: tm+mt
+uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -21,15 +21,15 @@ Certifique-se de marcar a ID de visitante da Experience Cloud e a ID de visitant
 
 >[!IMPORTANT]
 >
->No momento, o appmeasurement para Java não oferece suporte ao serviço da Experience Cloud ID.
+>No momento, o AppMeasurement para Java não é compatível com o serviço da Experience Cloud ID.
 
 ## API de inserção de dados {#section-955ce7664a4646d38b3005cb2df40baf}
 
-Inclua a ID de visitante do Analytics (se definido) no `<visitorID>` elemento.
+Inclua a ID de visitante do Analytics (se configurada) no elemento `<visitorID>`.
 
-Inclua a ID de visitante da Experience Cloud no `<marketingCloudVisitorID>` elemento.
+Inclua a ID de visitante da Experience Cloud no elemento `<marketingCloudVisitorID>`.
 
-Consulte [Tags XML suportadas](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
+Consulte [Tags XML compatíveis](https://marketing.adobe.com/developer/pt_BR/documentation/data-insertion/r-supported-tags).
 
 ## AppMeasurement para Java {#section-d664b94934924d048300d9c2b6560085}
 
