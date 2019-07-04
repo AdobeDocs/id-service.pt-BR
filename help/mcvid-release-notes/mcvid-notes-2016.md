@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Lançamentos, atualizações e alterações de recursos do serviço da Experience Cloud ID para 2016.
 seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
-uuid: 7 a 5 a 314 a -3 ff 8-4561-9 c 64-6 c 10 d 2223887
-translation-type: tm+mt
+uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Lançamentos, atualizações e alterações de recursos do serviço da Experience Cloud ID para 2016.
 
-Essas alterações também estão contempladas nas [notas de versão da Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) para ver anúncios anteriores.[!DNL Experience Cloud]
+Essas alterações também são capturadas nas notas de versão da [Experience Cloud](https://marketing.adobe.com/resources/help/pt_BR/whatsnew/). Consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/pt_BR/whatsnew/?f=c_legacy_releases.html) para [!DNL Experience Cloud] anúncios mais antigos.
 
 ## Versão 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -24,19 +24,19 @@ Novembro de 2016
 >[!IMPORTANT]
 >
 >* A versão 1.10 requer [!DNL AppMeasurement] 1.8.0.
->* Por padrão, a sincronização de ID começa para o Adobe Media Optimizer ao usar a Biblioteca Library 2.0.0+ do serviço da Experience Cloud ID. Consulte [Entender sincronização de ID e taxas de correspondência](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html).
+>* Por padrão, a sincronização de ID começa para o Adobe Media Optimizer ao usar a Biblioteca Library 2.0.0+ do serviço da Experience Cloud ID. Consulte [Entendendo a sincronização de ID e as taxas de correspondência](https://marketing.adobe.com/resources/help/pt_BR/mcvid/mcvid-match-rates.html).
 >
 
 
 
 **Correções e melhorias**
 
-* Adicionadas instruções sobre como implementar o serviço de ID em um ambiente do servidor.
-* Adicionada `Visitor.overwriteCrossDomainMCIDAndAID`, uma função booleana que permite substituir as IDs da Experience Cloud e Analytics em outros domínios pertencentes a você. Consulte [Substituir ID do visitante](../mcvid-library/mcvid-function-vars/mcvid-overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
+* Adicionadas instruções sobre como implementar o serviço de ID em um ambiente do lado do servidor.
+* Adicionada `Visitor.overwriteCrossDomainMCIDAndAID`, uma função booleana que permite substituir as IDs da Experience Cloud e Analytics em outros domínios pertencentes a você. Consulte [Substituir a ID do visitante](../mcvid-library/mcvid-function-vars/mcvid-overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
 
-* Adição do `TS = UTC`carimbo de data e hora   como a propriedade da função `visitor.appendVisitorIDsTo`. O serviço de ID usa o carimbo de data e hora para determinar se é preciso usar as IDs no URL de redirecionamento com base em um intervalo de 5 minutos. Consulte [Função Anexar ID do visitante](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* Adição do `TS = UTC`carimbo de data e hora como a propriedade da função `visitor.appendVisitorIDsTo`. O serviço de ID usa o carimbo de data e hora para determinar se é preciso usar as IDs no URL de redirecionamento com base em um intervalo de 5 minutos. Consulte [Função Anexar ID do visitante](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* Adicionada `Visitor.getLocationHint,` uma nova função que retorna uma ID de região. Consulte [Obter IDs de região (Dica de localização)](../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
+* Adição de uma nova função `Visitor.getLocationHint,` que retorna uma ID de região. Consulte [Obter IDs de região (Dica de localização)](../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 
 * Adicionadas `idSyncByURL` e `idSyncByDataSource`, 2 funções que permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Consulte [Sincronização de ID por URL ou Fonte de dados](../mcvid-library/mcvid-get-set/mcvid-idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48).
 
@@ -55,7 +55,7 @@ Outubro de 2016
 
 **Documentação nova e revisada**
 
-**Novo:**[Obter as IDs de região e de usuário do cookie AMCV](../mcvid-reference/mcvid-regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**Novo:** [Obter IDs de região e usuário do Cookie AMCV](../mcvid-reference/mcvid-regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## Versão 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
@@ -71,19 +71,19 @@ Agosto de 2016
 
 **Correções e melhorias**
 
-* Adicionado `idSyncAttachIframeOnWindowLoad` como um sinalizador booleano que pode ser definido na função `Visitor.getInstance`. Quando `idSyncAttachIframeOnWindowLoad= true`, o serviço de ID carrega o iFrame de sincronização de ID na janela. Por padrão, o serviço de ID carrega o iFrame o mais rápido possível. Esse sinalizador *substitui* `idSyncAttachIframeASAP`, que está obsoleto. Consulte [Variáveis de função Visitor. getinstance](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md).
+* Adicionado `idSyncAttachIframeOnWindowLoad` como um sinalizador booleano que pode ser definido na função `Visitor.getInstance`. Quando `idSyncAttachIframeOnWindowLoad= true`, o serviço de ID carrega o iFrame de sincronização de ID na janela. Por padrão, o serviço de ID carrega o iFrame o mais rápido possível. Esse sinalizador *substitui* `idSyncAttachIframeASAP`, que está obsoleto. Consulte as [Variáveis de função de Visitor.getInstance](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md).
 
 * Adicionado o recuso compatível com o rastreamento de [!DNL Experience Cloud] IDs por domínios, aplicativos nativos e híbridos em transições da Web. Consulte [Função de ajuda Anexar ID do visitante](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* Adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante ou de servidor, ou se as chamadas atingirem o tempo limite. See [Funções de rastreamento de tempo limite](../mcvid-library/mcvid-get-set/mcvid-timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do cliente](../mcvid-library/mcvid-get-set/mcvid-client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
+* Adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante do lado do cliente ou do lado do servidor, ou se as chamadas atingiram o tempo limite. See [Funções de rastreamento de tempo limite](../mcvid-library/mcvid-get-set/mcvid-timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../mcvid-library/mcvid-get-set/mcvid-client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
 
 **Documentação nova e revisada**
 
-Revisado: [Requisitos para o serviço da Experience Cloud ID](../mcvid-reference/mcvid-requirements.md)
+Revisão: [Requisitos do serviço da Experience Cloud ID](../mcvid-reference/mcvid-requirements.md)
 
 **Problemas conhecidos**
 
-Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html).
+Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://marketing.adobe.com/resources/help/pt_BR/aam/?f=dil-secure-data-collection.html).
 
 ## Versão 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -91,7 +91,7 @@ Julho de 2016
 
 >[!IMPORTANT]
 >
->A versão 1.6.0 do serviço [!DNL Experience Cloud] de ID *exige* o appmeasurement para javascript versão 1.6.2. Se você atualizar para o serviço de ID versão 1.6.0, certifique-se de estar usando a versão correta do código appmeasurement.
+>A versão 1.6.0 do serviço de [!DNL Experience Cloud] ID *exige* o AppMeasurement para JavaScript versão 1.6.2. Se você atualizar para o serviço de ID versão 1.6.0, use a versão adequada do código do AppMeasurement.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -116,10 +116,10 @@ Julho de 2016
 * Adição de um parâmetro `d_fieldgroup` para chamadas de sincronização de ID para `dpm.demdex.net`. O novo parâmetro é usado para solucionar problemas internos e realizar a depuração.
 
 * Adicionado um atributo de título ao iFrame do serviço de ID. Um título de iFrame ajuda os leitores de tela a fornecerem informações de página aos usuários que precisam de auxílio em interações com conteúdos online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
-* Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando definido como `true`, o serviço de ID carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi criado para ajudar a melhorar as taxas de correspondência de sincronização de ID. Por padrão, o serviço de ID carrega o iFrame na janela. Consulte [Variáveis de função Visitor. getinstance](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md).
+* Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando definido como `true`, o serviço de ID carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi criado para ajudar a melhorar as taxas de correspondência de sincronização de ID. Por padrão, o serviço de ID carrega o iFrame na janela. Consulte as [Variáveis de função de Visitor.getInstance](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md).
 
 * Corrigido um bug com uma função de retorno de chamada que provocava um loop infinito no AppMeasurement.
-* Alterado o intervalo padrão de `loadTimeout` de 500 milissegundos para 30.000 milissegundos. Consulte [Variáveis de função Visitor. getinstance](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md).
+* Alterado o intervalo padrão de `loadTimeout` de 500 milissegundos para 30.000 milissegundos. Consulte as [Variáveis de função de Visitor.getInstance](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md).
 
 **Documentação nova e revisada**
 
@@ -147,11 +147,11 @@ Junho de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Alterações no atributo <span class="codeph">iframe.sandbox</span> </p> </td> 
-   <td colname="col2"> <p>Agora, o iFrame fica configurado da seguinte maneira: <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>A permissão de apenas estes dois tokens ajuda a melhorar a segurança, além de oferecer o serviço de ID com o recurso básico necessário para a sincronização de ID. </p> <p>O atributo sandbox não é compatível com o Internet Explorer versão 9 ou anterior. Para obter mais informações, consulte a seção Atributos na <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">Documentação do iFrame </a>. </p> </td> 
+   <td colname="col2"> <p>Agora, o iFrame fica configurado da seguinte maneira: <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>A permissão de apenas estes dois tokens ajuda a melhorar a segurança, além de oferecer o serviço de ID com o recurso básico necessário para a sincronização de ID. </p> <p>O atributo sandbox não é compatível com o Internet Explorer versão 9 ou anterior. Para obter mais informações, consulte a seção Atributos na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe" format="https" scope="external">Documentação do iFrame </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codificação da Experience Cloud ID (MID) </p> </td> 
-   <td colname="col2"> <p>O serviço de ID codifica o valor MID originado do servidor ou quando ele está configurado pela função <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Para obter mais informações sobre a MID, consulte <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookies e a Experience Cloud ID </a>. </p> </td> 
+   <td colname="col2"> <p>O serviço de ID codifica o valor MID originado do servidor ou quando ele está configurado pela função <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Para obter mais informações sobre o MID, consulte <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookies e Experience Cloud ID</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
