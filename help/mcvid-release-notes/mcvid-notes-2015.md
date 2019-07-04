@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Notas de versão e atualizações de 2015.
 seo-title: Notas de versão de 2015
 title: Notas de versão de 2015
-uuid: 49423699-1 e 0 f -49 e 4-9135-2 ae 84 b 4 f 92 df
-translation-type: tm+mt
+uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -19,14 +19,14 @@ Notas de versão e atualizações de 2015.
 
 Novembro de 2015
 
-A lei americana de privacidade infantil Children&#39;s Online Privacy Protection Act (COPPA) proíbe a coleta online de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. Consulte [Suporte à lei COPPA no serviço da Experience Cloud ID](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
+A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. Consulte [Suporte para COPPA no serviço da Experience Cloud ID](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
 
 ## Versão 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Setembro de 2015
 
 * Correção de um bug no Safari que impedia o funcionamento dos serviços de sincronização quando os usuários bloqueavam cookies de terceiros. (AAM-20764)
-* As chamadas para o serviço de ID agora incluem a ID da versão no `d_visid_ver=` parâmetro. A ID retornada ajuda as equipes internas a solucionarem problemas e questões de suporte. (AAM-20824)
+* As chamadas ao serviço de ID agora incluem a ID da versão no parâmetro `d_visid_ver=`. A ID retornada ajuda as equipes internas a solucionarem problemas e questões de suporte. (AAM-20824)
 
 ## Versão 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
@@ -44,14 +44,14 @@ Agosto de 2015
 
 As revisões de documentação dessa versão incluem:
 
-* [Métodos de API e Biblioteca de código](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97): Conteúdo e texto reorganizados. Na maior parte dos casos, cada método recebe sua própria página.
+* [Métodos de API e Biblioteca de código](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97): Reorganização de conteúdo e texto. Na maior parte dos casos, cada método recebe sua própria página.
 * [Requisitos do serviço da Experience Cloud ID](../mcvid-reference/mcvid-requirements.md): conteúdo revisado e texto reorganizado.
 
 ## Versão 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Julho de 2015
 
-O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação. Essa alteração também remove o suporte obsoleto para o mapeamento DPID do [!DNL Audience Manager] às IDs de usuários usadas pela função `setCustomerIDs`. Consulte [Estados de autenticação e IDs do cliente](../mcvid-reference/mcvid-authenticated-state.md)
+O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação. Essa alteração também remove o suporte obsoleto para o mapeamento [!DNL Audience Manager] DPID do às IDs de usuários usadas pela `setCustomerIDs`função. Consulte [IDs do cliente e Estados de autenticação](../mcvid-reference/mcvid-authenticated-state.md)
 
 ## Versão 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
@@ -79,4 +79,4 @@ Foi corrigido o tratamento do limite de tempo em solicitações para AAM Blob e 
 
 Janeiro de 2015
 
-A pesquisa `<head>/<body>` de tag retrabalhada para o contêiner `<script>` de tag da solicitação JSONP, bem como a criação da `<script>` tag para cuidar de diferentes implantações DOM (HTML vs. XHTML), com a possibilidade de diferentes configurações sensíveis a caracteres maiúsculos e minúsculos. (AN-9355)
+A `<head>/<body>` pesquisa de tag retrabalhada para o contêiner de tag da solicitação JSONP `<script>`, assim como a criação da tag `<script>` para cuidar de diferentes implantações DOM (HTML vs. XHTML), com a possibilidade de diferentes configurações que diferenciam caracteres maiúsculos e minúsculos. (AN-9355)
