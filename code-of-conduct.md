@@ -1,6 +1,6 @@
 ---
 source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Código de conduta da Adobe
@@ -57,7 +57,7 @@ definida e esclarecida posteriormente por promovedores de projeto.
 Instâncias de comportamento abusivo, assédio ou de outro comportamento inaceitável podem ser
 reportadas entrando em contato com a equipe do projeto em Grp-opensourceoffice@adobe.com. Todas
 as reclamações serão analisadas e investigadas e resultará em uma resposta considerada necessária e adequada às circunstâncias. A equipe do projeto é
-obrigada a manter a confidencialidade em relação ao relator de um incidente.
+obrigada a manter a confidencialidade em relação ao relator de um incidente. 
 Mais detalhes sobre políticas de aplicação específicas podem ser postados separadamente.
 
 Os administradores de projeto que não seguirem ou aplicarem o Código de Conduta de boa
@@ -66,5 +66,5 @@ membros da liderança do projeto.
 
 ## Atribuição
 
-Este Código de conduta é adaptado do [Contributor Covenant](https://contributor-covenant.org), versão 1.4,
+Este Código de conduta é adaptado a partir do [Contrato do colaborador](https://contributor-covenant.org), versão 1.4,
 disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
