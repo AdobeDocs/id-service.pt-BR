@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Um sinalizador booleano opcional que desativa a sincronização de ID.
 seo-title: disableIdSyncs
 title: disableIdSyncs
-uuid: 8 bea 1 de 8-53 c 8-4 a 15-bcf 5-f 0869763 a 32 e
-translation-type: tm+mt
+uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,9 +17,9 @@ Um sinalizador booleano opcional que desativa a sincronização de ID.
 
 >[!NOTE]
 >
->Esta configuração foi `idSyncDisableSyncs` e renomeada `disableIdSyncs` para a versão de January 8 de janeiro de 28 18 da versão v 3.0.
+>Essa configuração era `idSyncDisableSyncs` e foi renomeada para `disableIdSyncs` na versão v3.0 de 18 de janeiro de 2018.
 
-**Sintaxe:**`disableIdSyncs: true|false` (padrão é `false`.)
+**Sintaxe:**`disableIdSyncs: true|false` (o padrão é `false`.)
 
 **Amostra de código**
 
