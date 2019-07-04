@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: A função do serviço da Experience Cloud ID na Adobe Experience Cloud.
 seo-title: Sobre o serviço de ID
 title: Visão geral
-uuid: c 52 d 6155-00 a 0-4 fc 5-9 d 8 e -5 ce 00 b 8 d 01 e 6
-translation-type: tm+mt
+uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -25,9 +25,9 @@ O serviço da Experience Cloud ID possibilita uma estrutura de identificação c
 
 ![](assets/ecid.png)
 
-Além disso, o serviço de ID pode substituir diferentes IDs específicas da solução (por exemplo, Analytics AID). E, por meio da [funcionalidade IDs do cliente e estados](../mcvid-reference/mcvid-authenticated-state.md) de autenticação, o serviço de ID permite que você passe suas próprias IDs do cliente para o [!DNL Experience Cloud]. No entanto, lembre-se de que o serviço de ID funciona apenas com as soluções nas quais você já está inscrito. Ele não fornecerá acesso a outros produtos se você não tiver feito uma assinatura deles.
+Além disso, o serviço de ID pode substituir diferentes IDs específicas da solução (por exemplo, Analytics AID). E, através da funcionalidade de [IDs de cliente e Estados de autenticação](../mcvid-reference/mcvid-authenticated-state.md), o serviço de ID permite que você passe suas próprias IDs de cliente para a [!DNL Experience Cloud]. No entanto, lembre-se de que o serviço de ID funciona apenas com as soluções nas quais você já está inscrito. Ele não fornecerá acesso a outros produtos se você não tiver feito uma assinatura deles.
 
-O serviço de ID é um componente integral de diversos recursos, aprimoramentos e serviços atuais e futuros da [!DNL Experience Cloud]. No momento, o serviço de ID oferece suporte ao [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), ao [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html) e ao [Target](http://www.adobe.com/marketing-cloud/testing-targeting.html). É obrigatório se você deseja participar do [!DNL Adobe Experience Cloud] Device Co-op. Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. Para obter mais informações sobre a importância e a função do serviço de ID, consulte [Por que você deve prestar atenção no serviço da Experience Cloud ID](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
+O serviço de ID é um componente integral de diversos recursos, aprimoramentos e serviços atuais e [!DNL Experience Cloud] futuros da. Atualmente, o serviço de ID é compatível com [Analytics](https://www.adobe.com/br/analytics/web-analytics.html), [Audience Manager](https://www.adobe.com/br/analytics/audience-manager.html) e [Target](https://www.adobe.com/br/marketing/target.html). É obrigatório se você deseja participar do [!DNL Adobe Experience Cloud] Device Co-op. Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. Para obter mais informações sobre a importância e a função do serviço de ID, consulte [Por que você deve prestar atenção no serviço da Experience Cloud ID](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
 
 ## Resumo dos recursos {#section-96555473455c4bf8924c2d56ff4f3255}
 
@@ -36,6 +36,6 @@ Resumindo, o serviço de ID:
 * Cria uma chave ou ID comum que pode ser usada para vincular perfis e identidades.
 * Identifica exclusivamente um dispositivo em várias soluções.
 * Define um cookie primário no domínio do cliente para garantir o rastreamento no mesmo domínio. Consulte [Experience Cloud](../mcvid-introduction/mcvid-cookies.md).
-* Recebe aliases e mapeamentos de ID de clientes e parceiros da [!DNL Experience Cloud].
-* Gerencia a sincronização de ID dentro [!DNL Experience Cloud]do.
+* Recebe aliases e mapeamentos de ID de [!DNL Experience Cloud] clientes e parceiros da
+* Gerencia a sincronização de ID na [!DNL Experience Cloud].
 * Oferece suporte à sincronização de ID com terceiros diferentes no ecossistema de tecnologia de anúncios.
