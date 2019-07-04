@@ -1,10 +1,10 @@
 ---
-description: Exemplos de casos de uso e soluções para gerenciar o serviço de aceitação.
-seo-description: Exemplos de casos de uso e soluções para gerenciar o serviço de aceitação.
+description: Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
+seo-description: Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
 seo-title: Casos de uso de opt-in
 title: Casos de uso de opt-in
-uuid: d 75 a 44 d 5-b 713-43 d 1-b 5 b 6-95 d 1 d 0 d 213 a 7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 # Casos de uso de opt-in {#opt-in-use-cases}
 
-Exemplos de casos de uso e soluções para gerenciar o serviço de aceitação.
+Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
 
 ## Dicas e solução de problemas {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -22,7 +22,7 @@ Exemplos de casos de uso e soluções para gerenciar o serviço de aceitação.
 
 ## Cenários de opt-in {#section-1178053c065c430bba26f82ef383a71c}
 
-Esses casos de uso são ideias de uso do serviço de aceitação.
+Esses casos de uso são exemplos para usar o serviço de Opt-in.
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
