@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Lançamentos, atualizações ou alterações de recursos do serviço da Experience Cloud ID para 2018.
 seo-title: Notas de versão de 2018
 title: Notas de versão de 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ace
-translation-type: tm+mt
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,7 +27,7 @@ Lançamentos, atualizações ou alterações de recursos do serviço da Experien
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Mais segurança para cookies AMCV </p> </td> 
-   <td colname="col2"> <p>Durante uma verificação de segurança interna, foi descoberto que, ao usar a biblioteca DTM, os cookies usados para o gerenciamento da sessão não especificavam atributos adequados. Isso pode resultar no compartilhamento indevido das informações do cookie. Para resolver esse problema, introduzimos uma configuração que permite ao Cliente definir o cookie AMCV como seguro. Consulte <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Durante uma verificação de segurança interna, foi descoberto que, ao usar a biblioteca DTM, os cookies usados para o gerenciamento da sessão não especificavam atributos adequados. Isso pode resultar no compartilhamento indevido das informações do cookie. Para resolver esse problema, introduzimos uma configuração que permite ao Cliente definir o cookie AMCV como seguro. Consulte <a href="https://marketing.adobe.com/resources/help/pt_BR/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Lançamentos, atualizações ou alterações de recursos do serviço da Experien
 
 >[!NOTE]
 >
->Recomenda-se atualizar da versão 3.1.0 para a versão mais recente no momento mais rápido conveniente. Consulte a descrição da versão 3.1.2. O pacote mais recente está disponível no Adobe Launch, DTM e AppMeasurement.
+>É recomendado atualizar da versão 3.1.0 para a versão mais recente assim que possível. Consulte a descrição da versão 3.1.2. O pacote mais recente está disponível no Adobe Launch, DTM e AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -114,7 +114,7 @@ Lançamentos, atualizações ou alterações de recursos do serviço da Experien
    <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>A Adobe renomeou as seguintes configurações para permitir a desativação de chamadas sincronizadas de terceiros. </p> <p>idSyncDisableSyncs para disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing para disableThirdPartyCookies </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Suporte ao Internet Explorer  </p> </td> 
+   <td colname="col1"> <p>Suporte ao Internet Explorer </p> </td> 
    <td colname="col2"> <p>O serviço de ID não possui mais suporte para Internet Explorer 6, 7, 8, e 9. </p> </td> 
   </tr> 
   <tr> 
