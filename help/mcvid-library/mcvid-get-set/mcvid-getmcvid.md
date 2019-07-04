@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: getMarketingCloudVisitorID retorna a ID de visitante da Experience Cloud.
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
-uuid: 93 e 16220-b 5 b 3-4 d 81-9189-30031 bc 15129
-translation-type: tm+mt
+uuid: 93e16220-b5b3-4d81-9189-30031bc15129
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,7 +17,7 @@ getMarketingCloudVisitorID retorna a ID de visitante da Experience Cloud.
 
 **Sintaxe:**` var *`nome da variável`* = visitor.getMarketingCloudVisitorID()`
 
-Normalmente, esse método é usado com as soluções personalizadas que exigem a leitura da ID de visitante. Ele não é usado em uma implementação padrão. `getMarketingCloudVisitorID` também funciona com funções de retorno de chamada para ler as IDs do [!DNL Analytics] e trazê-las para o sistema ou aplicativo.
+Normalmente, esse método é usado com as soluções personalizadas que exigem a leitura da ID de visitante. Ela não é usada em uma implementação padrão. `getMarketingCloudVisitorID` também funciona com funções de retorno de chamada para ler as [!DNL Analytics] IDs do e trazê-las para o sistema ou aplicativo.
 
 ```js
 //callback function 
@@ -31,5 +31,5 @@ var mcID = visitor.getMarketingCloudVisitorID(useMarketingClouidID)
 
 >[!TIP]
 >
->Se você for [!DNL Analytics] um cliente, verifique e envie [!DNL Analytics] a ID para a sua função. Por exemplo, os dois identificadores são desejados ao passar a ID do visitante em um elemento de formulário oculto para um aplicativo que usa a API de inserção de dados. Nesse caso, você deve coletar e retornar as IDs [!DNL Experience Cloud] de [!DNL Analytics] visitante. Consulte [Obter ID de visitante do Analytics](../../mcvid-library/mcvid-get-set/mcvid-getanalyticsvisitorid.md).
+>Caso você seja um [!DNL Analytics] cliente do, verifique também e envie a [!DNL Analytics] ID do para sua função. Por exemplo, os dois identificadores são desejados ao passar a ID do visitante em um elemento de formulário oculto para um aplicativo do lado do servidor que usa a API de inserção de dados. Nesse caso, é necessário coletar e retornar as IDs do visitante da [!DNL Experience Cloud] e do [!DNL Analytics]. Consulte [Obter uma ID de visitante do Analytics](../../mcvid-library/mcvid-get-set/mcvid-getanalyticsvisitorid.md).
 
