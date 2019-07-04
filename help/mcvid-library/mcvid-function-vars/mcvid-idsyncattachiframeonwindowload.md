@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Um sinalizador booleano opcional que controla como o serviço da Experience Cloud ID carrega o iFrame de sincronização de ID.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
-uuid: aa 2 c 2 fa 4-2 cab -4 e 08-8 d 35-729 a 6 c 3 e 459 a
-translation-type: tm+mt
+uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Um sinalizador booleano opcional que controla como o serviço da Experience Cloud ID carrega o iFrame de sincronização de ID.
 
-**Sintaxe:**` `Idsyncattachiframeonwindowload = true | false «(padrão é `false`.)
+**Sintaxe:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (o padrão é `false`.)
 
 Quando `idSyncAttachIframeOnWindowLoad: true` o serviço de ID carrega o iFrame de sincronização de ID no carregamento da janela. Por padrão, o serviço de ID carrega o iFrame de sincronização de ID o mais rápido possível em vez de carregar na janela.
 
