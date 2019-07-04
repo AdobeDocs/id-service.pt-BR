@@ -1,20 +1,20 @@
 ---
-description: Depois de ativar o Opt-in no seu site, use os métodos de validação para testar se o serviço está funcionando como esperado usando as ferramentas do desenvolvedor em seu navegador.
-seo-description: Depois de ativar o Opt-in no seu site, use os métodos de validação para testar se o serviço está funcionando como esperado usando as ferramentas do desenvolvedor em seu navegador.
-seo-title: Validação do serviço de aceitação
-title: Validação do serviço de aceitação
-uuid: 1743360 a-d 757-4 e 50-8697-0 fa 92 b 302 cbc
-translation-type: tm+mt
+description: Depois de ativar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
+seo-description: Depois de ativar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
+seo-title: Validação do serviço de Opt-in
+title: Validação do serviço de Opt-in
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Validação do serviço de aceitação{#validating-opt-in-service}
+# Validação do serviço de Opt-in{#validating-opt-in-service}
 
-Depois de ativar o Opt-in no seu site, use os métodos de validação para testar se o serviço está funcionando como esperado usando as ferramentas do desenvolvedor em seu navegador.
+Depois de ativar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
 
-## Caso de uso 1: Ativar aceitação {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Caso de uso 1: Ativar o Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ No Chrome, clique com o botão direito na página da web e selecione Inspecionar
 
 No exemplo acima, temos as seguintes tags JS da Adobe instaladas na página: ECID, AAM, Analytics e Target.
 
-**Como provar que o Opt-in está funcionando como esperado:**
+**Como comprovar que o Opt-in está funcionando conforme o esperado:**
 
 Você não deve ver nenhuma solicitação aos servidores da Adobe:
 
@@ -42,7 +42,7 @@ Você não deve ver nenhuma solicitação aos servidores da Adobe:
 
 >[!NOTE]
 >
->Você pode ver uma chamada para `http://dpm.demdex.net/optOutStatus`, que é um terminal SOMENTE LEITURA usado para recuperar o status de opção de não participação do visitante. Esse ponto de extremidade não resultará na criação de um cookie de terceiros e não coletará informações da página.
+>Você poderá ver uma chamada para `http://dpm.demdex.net/optOutStatus`, que é um ponto de extremidade SOMENTE LEITURA usado para recuperar o status de Opt-in do visitante. Esse ponto de extremidade não resultará na criação de um cookie de terceiros e não coletará informações da página.
 
 Você não deve ver cookies criados pelas tags da Adobe: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
