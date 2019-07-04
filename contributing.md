@@ -1,6 +1,6 @@
 ---
 source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Contribuição
@@ -17,7 +17,7 @@ deve seguir esse código. Denuncie qualquer comportamento inaceitável para
 
 ## Documentação do Guia do colaborador
 
-Consulte o Guia [](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)de Colaborador.
+Consulte o [Guia do colaborador](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 ## Dúvidas?
 
@@ -55,4 +55,4 @@ entre em contato com os responsáveis existentes para conversar sobre isso.
 
 ## Problemas de segurança
 
-Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [envie o problema para nossos especialistas em segurança](https://helpx.adobe.com/security/alertus.html)
+Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [envie o problema para nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html)
