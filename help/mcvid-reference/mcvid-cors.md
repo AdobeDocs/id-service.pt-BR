@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O serviço da Experience Cloud ID oferece suporte aos padrões CORS que permitem solicitações de recursos do lado do cliente e entre pontos de origem. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
 seo-title: Suporte para CORS no serviço de Experience Cloud ID
 title: Suporte para CORS no serviço de Experience Cloud ID
-uuid: e 656 b 573-72 a 8-4312-a 7 d 5-5 cc 3818 f 0 a 9 e
-translation-type: tm+mt
+uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -29,8 +29,8 @@ O navegador permite a solicitação se ambas as páginas compartilham essas cara
 
 O CORS fornece um modo seguro e eficaz de solicitar recursos de vários domínios. A especificação do CORS inclui um conjunto de cabeçalhos HTTP que os navegadores podem usar para enviar, receber e avaliar solicitações de recursos. A avaliação de uma solicitação de recursos é chamada de *`preflight check`*. Essa verificação permite que os navegadores e servidores determinem quais solicitações são permitidas ou bloqueadas. A verificação é transparente para o aplicativo, a API ou o script que solicita um recurso. Dois cabeçalhos importantes no processo de solicitação de recursos incluem:
 
-* `Origin`: Um cabeçalho de solicitação que identifica a origem de uma solicitação.
-* `Access-Control-Allow-Origin`: Um cabeçalho de resposta que indica se um recurso pode ser compartilhado com o solicitante.
+* `Origin`: um cabeçalho de solicitação que identifica a origem de uma solicitação.
+* `Access-Control-Allow-Origin`: um cabeçalho de resposta que indica se um recurso pode ser compartilhado com o solicitante.
 
 Vamos analisar como esses cabeçalhos funcionam. Neste exemplo, considere uma empresa de serviços financeiros que implementou o serviço da [!DNL Experience Cloud] ID no seu site, www.finance-website.com. A tabela a seguir define como os cabeçalhos de solicitação e resposta do CORS verificam o acesso a um recurso.
 
@@ -60,7 +60,7 @@ Vamos analisar como esses cabeçalhos funcionam. Neste exemplo, considere uma em
  </tbody> 
 </table>
 
-Consulte [também usecorsonly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Consulte também [useCORSOnly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 ## Outros benefícios de uso do CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
 
@@ -76,7 +76,7 @@ A tabela abaixo descreve algumas das vantagens do CORS para os clientes que usam
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Aumento da segurança</b> </p> </td> 
-   <td colname="col2"> <p>O CORS usa a <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> para solicitar e transferir dados. Esse método é mais seguro do que uma solicitação JSONP. Ele garante que não existe uma maneira de executar um JavaScript arbitrário, que pode estar contido na resposta do DCS. A carga de resposta XMLHttpRequest do CORS é analisada pelo JavaScript do serviço de ID e não é executada em uma função de retorno de chamada. </p> <p> <p>Observação: para aceitar cookies, o objeto <span class="codeph">XMLHttpRequest</span> precisa ter a propriedade <span class="codeph">withCredentials</span> definida como <span class="codeph">true</span>. Essa propriedade é compatível com Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
+   <td colname="col2"> <p>O CORS usa a <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> para solicitar e transferir dados. Esse método é mais seguro do que uma solicitação JSONP. Ele garante que não existe uma maneira de executar um JavaScript arbitrário, que pode estar contido na resposta do DCS. A carga de resposta XMLHttpRequest do CORS é analisada pelo JavaScript do serviço de ID e não é executada em uma função de retorno de chamada. </p> <p> <p>Observação: para aceitar cookies, o objeto <span class="codeph">XMLHttpRequest</span> precisa ter a propriedade <span class="codeph">withCredentials</span> definida como <span class="codeph">true</span>. Essa propriedade é compatível com Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Melhorias de desempenho</b> </p> </td> 
