@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional visitor.FIELDS.
 seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7 fb 831 b 3-cf 7 e -40 e 2-a 219-07 fec 28 ad 49 c
-translation-type: tm+mt
+uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,12 +26,12 @@ Conteúdo:
 
 ## Sintaxe {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-This function uses the following syntax (italics represents a placeholder for a variable): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
+Essa função usa a seguinte sintaxe (itálico representa um espaço reservado para uma variável): ` var *`valores`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`tipo de ID`*, visitor.FIELDS. *`tipo de ID`*]);`
 
 Nos parâmetros da função
 
-* ` *`chamada de retorno`*` representa seu próprio código de retorno de chamada que recebe as IDs retornadas.
-* *(Opcional)* ` visitor.FIELDS. *`O tipo de ID`*` é uma enumeração que permite especificar quais [valores de ID](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja retornar para essa função.
+* O ` *`retorno de chamada`*` representa seu próprio código de retorno de chamada que recebe as IDs retornadas.
+* *(Opcional)*` visitor.FIELDS. *`Tipo de ID`*` é um enum que permite especificar quais [valores de ID](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja que a função retorne.
 
 Consulte os casos de uso e as definições a seguir para obter mais informações.
 
@@ -62,7 +62,7 @@ Na resposta de exemplo padrão, alguns valores foram reduzidos para fins de demo
 
 ## Caso de uso 2: solicitar um conjunto de dados personalizado {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Esse código usa uma matriz para retornar um conjunto específico de IDs usando o enum `visitor.FIELDS` . Nesse caso, queremos apenas a Experience Cloud ID (MCID) e a Analytics ID (MCAID) do visitante. Sua solicitação e a resposta podem ser semelhantes aos seguintes exemplos.
+Esse código usa uma matriz para retornar um conjunto específico de IDs usando o `visitor.FIELDS` enum. Nesse caso, queremos apenas a Experience Cloud ID (MCID) e a Analytics ID (MCAID) do visitante. Sua solicitação e a resposta podem ser semelhantes aos seguintes exemplos.
 
 ```js
 //Call the ID service 
@@ -84,7 +84,7 @@ A resposta da amostra personalizada retorna somente as IDs especificadas na soli
 
 ## Parâmetros de resposta definidos {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no enum `visitor.FIELDS`. Observe que esse método retorna uma sequência de caracteres vazia se não existirem valores para uma variável específica.
+A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no `visitor.FIELDS` enum Observe que esse método retorna uma sequência de caracteres vazia se não existirem valores para uma variável específica.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +100,7 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>A ID de região para coleta de dados. É um identificador numérico da localização geográfica de um data center do serviço de ID específico. </p> <p>Consulte <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> IDs de região DCS, Locais e Nomes de host </a> e <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getlocationhint </a>. </p> </td> 
+   <td colname="col2"> <p>A ID de região para coleta de dados. É um identificador numérico da localização geográfica de um data center do serviço de ID específico. </p> <p>Consulte <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
