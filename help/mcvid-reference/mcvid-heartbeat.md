@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: A pulsação de vídeo exige o serviço da Experience Cloud ID. Ao medir o vídeo no JavaScript ou Flash, a implementação do serviço de ID nas páginas do seu site e na reprodução de vídeo assegura que os visitantes não sejam contados de forma diferente quando visualizarem o vídeo.
 seo-title: Pulsação de vídeo e o serviço da Experience Cloud ID
 title: Pulsação de vídeo e o serviço da Experience Cloud ID
-uuid: 07986 a 78-23 ac -4 fd 4-ab 8 f-be 9275616 a 29
-translation-type: tm+mt
+uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 A pulsação de vídeo exige o serviço da Experience Cloud ID. Ao medir o vídeo no JavaScript ou Flash, a implementação do serviço de ID nas páginas do seu site e na reprodução de vídeo assegura que os visitantes não sejam contados de forma diferente quando visualizarem o vídeo.
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [Medir vídeos no Analytics usando a pulsação de vídeo](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
+>* [Medição de vídeo no Analytics usando a pulsação de vídeo](https://marketing.adobe.com/resources/help/pt_BR/sc/appmeasurement/hbvideo/)
 
