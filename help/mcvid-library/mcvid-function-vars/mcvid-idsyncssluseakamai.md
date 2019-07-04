@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Especifica se o modelo de publicação de destino deve usar Akamai para as conexões HTTPS.
 seo-title: idSyncSSLUseAkamai
 title: idSyncSSLUseAkamai
-uuid: 501 ccc 37-c 3 ab -4454-bfcf -3 e 3 c 3 e 8 b 5 ca 3
-translation-type: tm+mt
+uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Especifica se o modelo de publicação de destino deve usar Akamai para as conexões HTTPS.
 
-A configuração `idSyncSSLUseAkamai` é ativada com base no parceiro.
+A `idSyncSSLUseAkamai` configuração é ativada com base no parceiro.
 
 **Sintaxe: ** `idSyncSSLUseAkamai: true`
 
