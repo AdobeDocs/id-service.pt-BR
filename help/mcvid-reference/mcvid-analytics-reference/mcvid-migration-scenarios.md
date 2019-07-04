@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Contém as configurações de exemplo do servidor e as etapas de migração necessárias.
 seo-title: Cenários de migração do serviço da Experience Cloud ID
 title: Cenários de migração do serviço da Experience Cloud ID
-uuid: 9 e 229045-6508-48 c 4-ae 39-9537 b 4941853
-translation-type: tm+mt
+uuid: 9e229045-6508-48c4-ae39-9537b4941853
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -23,7 +23,7 @@ Contém as configurações de exemplo do servidor e as etapas de migração nece
 * **Servidores de coleta de dados**: metrics.example.com, smetrics.example.com
 * **Arquivo JavaScript do Analytics**: um único arquivo para todas as páginas do site
 
-Primeiro, este cliente deve ser habilitado para a Experience Cloud (consulte [exigências](../../mcvid-reference/mcvid-requirements.md)). E, como ele tem um único arquivo JavaScript, esse cliente não precisa de um período de carência. Esse cliente também irá configurar a migração do visitante e sair de sua coleta de dados CNAME, que não é necessária.
+Primeiro, este cliente deve ser habilitado para a Experience Cloud (consulte [requisitos](../../mcvid-reference/mcvid-requirements.md)). E, como ele tem um único arquivo JavaScript, esse cliente não precisa de um período de carência. Esse cliente também irá configurar a migração do visitante e sair de sua coleta de dados CNAME, que não é necessária.
 
 ## Vários arquivos JavaScript, tags de imagem embutidas {#section-a665f6ee202940449198e4e7a5dcac54}
 
@@ -34,7 +34,7 @@ Primeiro, este cliente deve ser habilitado para a Experience Cloud (consulte [ex
 * **Arquivo JavaScript do Analytics**: vários arquivos JavaScript. Um arquivo para o site principal, outro arquivo para a seção de suporte que é mantida em um CMS diferente.
 * **Outros métodos de coleta de dados**: tags de imagem embutidas em uma seção do site
 
-Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [exigências](../../mcvid-reference/mcvid-requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Este cliente também definirá a migração do visitante e a migração `*.2o7.net``*.sc.omtrdc.net`para.
+Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [requisitos](../../mcvid-reference/mcvid-requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Este cliente também irá configurar a migração do visitante e migrar do `*.2o7.net` para o `*.sc.omtrdc.net`.
 
 Quando esse cliente atualizar para a versão mais recente do código JavaScript do Analytics em preparação para a distribuição do serviço da [!DNL Experience Cloud] ID, também será necessário atualizar todas as tags de imagem embutidas em código para usar o JavaScript.
 
@@ -47,6 +47,6 @@ Quando esse cliente atualizar para a versão mais recente do código JavaScript 
 * **Arquivo JavaScript do Analytics**: vários arquivos JavaScript. Um arquivo para cada propriedade da Web.
 * **Outros métodos de coleta de dados**: um reprodutor de vídeo baseado em Flash
 
-Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [exigências](../../mcvid-reference/mcvid-requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Como o cliente rastreia os visitantes entre o domínio primário e os subdomínios, ele continuará usando sua coleta de dados CNAME com o serviço de ID de visitante.
+Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [requisitos](../../mcvid-reference/mcvid-requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Como o cliente rastreia os visitantes entre o domínio primário e os subdomínios, ele continuará usando sua coleta de dados CNAME com o serviço de ID de visitante.
 
 Quando esse cliente atualiza para a versão mais recente do código JavaScript do Analytics em preparação para a distribuição do serviço da [!DNL Experience Cloud] ID, também será necessário atualizar o player com base em Flash para versão mais recente do AppMeasurement para o Flash.
