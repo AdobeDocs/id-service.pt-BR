@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Essa propriedade substitui as Experience Cloud e Analytics IDs dos visitantes durante a navegação de um domínio para outro. Para substituir uma ID, é necessário possuir e implementar o serviço de ID em cada domínio. Esse código não permite a substituição de IDs em domínios fora de seu controle.
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8 e 48127 a-ac 62-4 ea 0-9756-2 a 27 b 20 ecbcf
-translation-type: tm+mt
+uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Essa propriedade substitui as Experience Cloud e Analytics IDs dos visitantes durante a navegação de um domínio para outro. Para substituir uma ID, é necessário possuir e implementar o serviço de ID em cada domínio. Esse código não permite a substituição de IDs em domínios fora de seu controle.
 
-**Sintaxe:**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (padrão é `false`)
+**Sintaxe:**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (o padrão é `false`)
 
 **Amostra de código**
 
@@ -58,7 +58,7 @@ Para rastrear visitantes do site, o serviço de ID grava uma [!DNL Experience Cl
     <ul id="ul_7BEBFD523A2F47AFB6963536E43692D0"> 
      <li id="li_71586080489340E2A6C0B263F231E3DE">O domínio A é a página de aterrissagem. </li> 
      <li id="li_4E3D3CB380EE4F1BAC4CD752194AE8DE">O domínio B é uma página de conversão, agendamento ou outro fluxo de trabalho final à parte. </li> 
-     <li id="li_FB393B16CFAC4D2D9B2328EBA4573C1A">Um visitante já tem um cookie (e um MID) definido a partir de uma visita anterior ao Domínio B, e você sabe que essas são MIDs menos desejáveis do cliente em vez de MIDs do servidor. </li> 
+     <li id="li_FB393B16CFAC4D2D9B2328EBA4573C1A">Um visitante já tem um cookie (e um MID) definido a partir de uma visita anterior ao Domínio B, e você sabe que essas são MIDs menos desejáveis do lado do cliente em vez de MIDs do lado do servidor. </li> 
      <li id="li_36FC138530A4476A995C0F9FD73C41DE">Você deseja identificar de modo consistente um visitante quando chega ao Domínio B vindo de A. </li> 
     </ul> </td> 
   </tr> 
