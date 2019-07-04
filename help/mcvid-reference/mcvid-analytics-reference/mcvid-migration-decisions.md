@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Antes de implantar o serviço da Experience Cloud ID, você deve entender como esse serviço afeta o rastreamento de visitantes em diversos domínios e os problemas em potencial se estiver coletando dados com métodos diferentes ou pelos arquivos JavaScript.
 seo-title: Pontos de decisão da migração do serviço da Experience Cloud ID
 title: Pontos de decisão da migração do serviço da Experience Cloud ID
-uuid: ee 56 b 5 de-fcf 3-4 cfb -9 e 53-762 af 7 c 4 ff 2 ff
-translation-type: tm+mt
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -60,10 +60,10 @@ Se você tem vários domínios que enviam dados para o *mesmo conjunto de relat�
    <td colname="col1"> <p>Domínio único </p> </td> 
    <td colname="col2"> <p>Trabalhar com um domínio único significa poder migrar de um CNAME de coleta de dados se não desejar mais gerenciá-lo. No entanto, não há necessidade de realizar essa alteração se o CNAME estiver funcionando. </p> <p>Caso remova o CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Certifique-se de que o novo servidor de rastreamento é <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatível com o RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Certifique-se de que o novo servidor de rastreamento é <a href="https://marketing.adobe.com/resources/help/pt_BR/whitepapers/rdc/" format="https" scope="external">compatível com o RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Mude de CNAME para um servidor de rastreamento de RDC alguns meses antes da migração para o serviço da <span class="keyword">Experience Cloud</span> ID. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Não</i> use um servidor de rastreamento <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Entre em contato com o <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">Atendimento ao cliente</a> para configurar uma migração de visitante. Isso ajuda a garantir contagens consistentes dos visitantes. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Entre em contato com o <a href="https://helpx.adobe.com/br/marketing-cloud/contact-support.html" format="https" scope="external">Atendimento ao cliente</a> para configurar uma migração de visitante. Isso ajuda a garantir contagens consistentes dos visitantes. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -87,7 +87,7 @@ Se você tiver diversos arquivos JavaScript do Analytics, ou aplicativos Flash o
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Vários arquivos JavaScript do Analytics </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Outros métodos de coleta de dados </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Configure um período de carência do serviço de ID de visitante para que possa executar o serviço de ID de visitante em cada arquivo JavaScript e em outras bibliotecas de coleta de dados. Consulte <a href="../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md" format="dita" scope="local"> Período de carência do serviço de ID</a>. </p> </td> 
+   <td colname="col2"> <p>Configure um período de carência do serviço de ID de visitante para que possa executar o serviço de ID de visitante em cada arquivo JavaScript e em outras bibliotecas de coleta de dados. Consulte <a href="../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md" format="dita" scope="local">Período de carência do serviço de ID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Arquivo único JavaScript do Analytics </p> </td> 
