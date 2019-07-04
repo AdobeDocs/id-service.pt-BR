@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou o SDK. Isso inclui dispositivos como consoles de jogos, smart TVs ou outros dispositivos que se conectam à Internet. Consulte esta seção para saber mais sobre a sintaxe, os exemplos de código e as definições.
 seo-title: Integração direta com o serviço da Experience Cloud ID
 title: Integração direta com o serviço da Experience Cloud ID
-uuid: de 502 f 7 e-cffd -4130-b 3 ca -7 d 6 b 9 a 9 caae 9
-translation-type: tm+mt
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -21,17 +21,17 @@ Os dispositivos que não podem usar VisitorAPI.js ou as bibliotecas de código d
 
 ![](assets/directSyntax.png)
 
-Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável no nível do sistema. É possível passar alguns `d_` parâmetros para o serviço de ID, mas permanecer foco nos pares de valores chave, como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API DCS ](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 O serviço de ID oferece suporte às chamadas HTTP e HTTPS. Use HTTPS para passar dados de uma página segura.
 
-## Solicitação de amostra {#section-26302b8851704888b6f8e6b2071bcdb0}
+## Solicitação de exemplo {#section-26302b8851704888b6f8e6b2071bcdb0}
 
 Sua solicitação pode ser semelhante ao exemplo mostrado abaixo. As variáveis longas foram reduzidas.
 
 ![](assets/directExample.png)
 
-## Resposta da amostra {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## Resposta de exemplo {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resposta pode ser diferente.
 
@@ -73,7 +73,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resp
    <td colname="col2"> <p>Um parâmetro opcional que passa a ID do provedor de dados (DPID), a ID de usuário exclusiva (DPUUID) e uma <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> ID de estado autenticada</a> para o serviço de ID. Como mostrado na amostra de código, separe a DPID e a DPUUID com o caractere de controle não imprimível, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>No parâmetro <span class="codeph">d_cid</span>, atribua cada combinação de DPID e DPUUID relacionada ao mesmo parâmetro <span class="codeph">d_cid</span>. Isso permite que você retorne diversos conjuntos de IDs em uma única solicitação. Além disso, separe a DPID, a DPUUID e o sinalizador de autenticação opcional com o caractere de controle não imprimível, <span class="codeph">%01</span>. Nos exemplos abaixo, o provedor e as IDs do usuário são destacadas com texto em <b>negrito</b>. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Sintaxe: <span class="codeph">...d_cid=DPID%01DPUUID%01estado de autenticação...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemplo: <span class="codeph">… d_ cid = 123% 01456% 011…</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemplo: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>Estado de autenticação</b> </p> <p>Essa é uma ID opcional no parâmetro <span class="codeph">d_cid</span>. Expressa como um inteiro, identifica os usuários de acordo com o status de autenticação como mostrado abaixo: </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (Desconhecido) </li> 
