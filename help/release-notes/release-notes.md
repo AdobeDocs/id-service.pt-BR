@@ -1,19 +1,19 @@
 ---
-description: Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID.
+description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID.
+seo-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform.
 seo-title: Notas de versão de 2019
 title: Notas de versão de 2019
-uuid: a 5 a 59410-7 f 85-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
+uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Notas de versão de 2019 {#release-notes}
 
-Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID.
+Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform.
 
 ## Notas de versão de 2019 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -27,6 +27,6 @@ Lançamentos, atualizações e alterações de recursos do serviço da [!DNL Exp
 
 | Item | Descrição |
 |---|---|
-| O sinalizador `disableIdSyncs` não está funcionando ao passar uma string. | Correção. Values set on `disableidSyncs` parameter for `getInstance` function are now being honored. |
+| O sinalizador `disableIdSyncs` não está funcionando ao passar uma string. | Fixo. Os valores definidos no `disableidSyncs` parâmetro para a `getInstance` função agora são honrados. |
 | iFrames de terceiros não recebem uma ECID | Correção da ECID no Safari Mobile e de ECIDs em vários iFrames que não funcionavam. |
 
