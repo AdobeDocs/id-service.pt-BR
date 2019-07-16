@@ -1,21 +1,21 @@
 ---
-description: Um sinalizador booleano opcional que controla como o navegador solicita recursos do serviço da Experience Cloud ID.
+description: Um sinalizador booleano opcional que controla como o navegador solicita recursos do Serviço de identidade da Experience Platform.
 keywords: Serviço de ID
-seo-description: Um sinalizador booleano opcional que controla como o navegador solicita recursos do serviço da Experience Cloud ID.
+seo-description: Um sinalizador booleano opcional que controla como o navegador solicita recursos do Serviço de identidade da Experience Platform.
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607 dc 035-dffc -4 f 4 d-be 51-08 ef 6 c 0 a 8 fad
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-Um sinalizador booleano opcional que controla como o navegador solicita recursos do serviço da Experience Cloud ID.
+Um sinalizador booleano opcional que controla como o navegador solicita recursos do Serviço de identidade da Experience Platform.
 
-**Sintaxe:**`useCORSOnly: true|false` (padrão é `false`.)
+**Sintaxe:**`useCORSOnly: true|false` (o padrão é `false`.)
 
 **Visão geral**
 
@@ -23,7 +23,7 @@ Quando está definido como `false`, o navegador executa verificações de recurs
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` se você tiver requisitos de segurança rígidos. Esse modo deve ser habilitado somente se você tiver certeza de que os visitantes usam navegadores com suporte para CORS. A experiência do usuário não é afetada por navegadores sem suporte para CORS. No entanto, os navegadores sem suporte para CORS não podem solicitar dados de recursos ou troca com a [!DNL Adobe Experience Cloud].
+>`Set useCORSOnly: true` se você tiver requisitos de segurança rigorosos. Esse modo deve ser habilitado somente se você tiver certeza de que os visitantes usam navegadores com suporte para CORS. A experiência do usuário não é afetada por navegadores sem suporte para CORS. No entanto, os navegadores sem suporte para CORS não podem solicitar dados de recursos ou troca com a [!DNL Adobe Experience Cloud].
 
 **Amostra de código**
 
