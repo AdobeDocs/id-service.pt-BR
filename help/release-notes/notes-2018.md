@@ -4,9 +4,9 @@ keywords: Serviço de ID
 seo-description: Lançamentos, atualizações ou alterações de recursos no serviço da Experience Cloud ID para 2018.
 seo-title: Notas de versão de 2018
 title: Notas de versão de 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ace
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -78,7 +78,7 @@ Lançamentos, atualizações ou alterações de recursos no serviço da Experien
 
 >[!NOTE]
 >
->Recomenda-se atualizar da versão 3.1.0 para a versão mais recente no momento mais rápido conveniente. Consulte a descrição da versão 3.1.2. O pacote mais recente está disponível no Adobe Launch, DTM e AppMeasurement.
+>É recomendado atualizar da versão 3.1.0 para a versão mais recente assim que possível. Consulte a descrição da versão 3.1.2. O pacote mais recente está disponível no Adobe Experience Platform Launch, DTM e appmeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -114,7 +114,7 @@ Lançamentos, atualizações ou alterações de recursos no serviço da Experien
    <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>A Adobe renomeou as seguintes configurações para permitir a desativação de chamadas sincronizadas de terceiros. </p> <p>idSyncDisableSyncs para disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing para disableThirdPartyCookies </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Suporte ao Internet Explorer  </p> </td> 
+   <td colname="col1"> <p>Suporte ao Internet Explorer </p> </td> 
    <td colname="col2"> <p>O serviço de ID não possui mais suporte para Internet Explorer 6, 7, 8, e 9. </p> </td> 
   </tr> 
   <tr> 
