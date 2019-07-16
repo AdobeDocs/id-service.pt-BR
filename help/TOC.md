@@ -2,15 +2,15 @@
 cloud: platform-cloud
 product: Serviço de ID
 audience: usuário final
-user-guide-title: Ajuda do serviço da Experience Cloud ID
+user-guide-title: Ajuda do Serviço de identidade da Experience Platform
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID Service Help {#using}
+# Experience Platform Identity Service Help {#using}
 
 + [Ajuda do serviço de ID](home.md)
 + Visão geral {#intro}
