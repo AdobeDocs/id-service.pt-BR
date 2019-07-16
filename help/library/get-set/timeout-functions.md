@@ -1,19 +1,19 @@
 ---
-description: Chame essas funções do serviço de ID para determinar o status do tempo limite de uma solicitação de serviço da Experience Cloud ID, do Analytics ou do Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+description: Chame essas funções do serviço de ID para determinar o status do tempo limite para uma solicitação de Serviço de identidade da Experience Platform, Analytics ou Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 keywords: Serviço de ID
-seo-description: Chame essas funções do serviço de ID para determinar o status do tempo limite de uma solicitação de serviço da Experience Cloud ID, do Analytics ou do Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+seo-description: Chame essas funções do serviço de ID para determinar o status do tempo limite para uma solicitação de Serviço de identidade da Experience Platform, Analytics ou Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 seo-title: Métodos de callTimeOut
 title: Métodos de callTimeOut
-uuid: e 5047498-11 db -4945-b 356-c 92 b 7 d 447573
+uuid: e5047498-11db-4945-b356-c92b7d447573
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Métodos de callTimeOut{#calltimeout-methods}
 
-Chame essas funções do serviço de ID para determinar o status do tempo limite de uma solicitação de serviço da Experience Cloud ID, do Analytics ou do Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+Chame essas funções do serviço de ID para determinar o status do tempo limite para uma solicitação de Serviço de identidade da Experience Platform, Analytics ou Audience Manager ID. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 
 ## Funções de tempo limite {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,16 +26,16 @@ Chame essas funções do serviço de ID para determinar o status do tempo limite
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Serviço da Experience Cloud ID </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. mcidcalltimedout ()</span> </p> </td> 
+   <td colname="col1"> <p>Serviço de identidade da plataforma Experience Platform </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. analyticsidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. aamidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
