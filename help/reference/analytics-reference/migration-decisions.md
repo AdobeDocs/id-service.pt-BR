@@ -1,19 +1,19 @@
 ---
-description: Antes de implantar o serviço da Experience Cloud ID, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+description: Antes de implantar o Serviço de identidade da Experience Platform, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
 keywords: Serviço de ID
-seo-description: Antes de implantar o serviço da Experience Cloud ID, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
-seo-title: Pontos de decisão da migração do serviço da Experience Cloud ID
-title: Pontos de decisão da migração do serviço da Experience Cloud ID
-uuid: ee 56 b 5 de-fcf 3-4 cfb -9 e 53-762 af 7 c 4 ff 2 ff
+seo-description: Antes de implantar o Serviço de identidade da Experience Platform, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+seo-title: Pontos de decisão de migração do serviço de identidade da plataforma Experiência
+title: Pontos de decisão de migração do serviço de identidade da plataforma Experiência
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Pontos de decisão da migração do serviço da Experience Cloud ID
+# Pontos de decisão de migração do serviço de identidade da plataforma Experiência
 
-Antes de implantar o serviço da Experience Cloud ID, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+Antes de implantar o Serviço de identidade da Experience Platform, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
 
 As respostas às perguntas desta seção ajudam a determinar as etapas de migração adicionais que devem ser realizadas.
 
@@ -87,7 +87,7 @@ Se você tiver diversos arquivos JavaScript do Analytics, ou aplicativos Flash o
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Vários arquivos JavaScript do Analytics </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Outros métodos de coleta de dados </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Configure um período de carência do serviço de ID de visitante para que possa executar o serviço de ID de visitante em cada arquivo JavaScript e em outras bibliotecas de coleta de dados. See <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> ID Service Grace Period</a>. </p> </td> 
+   <td colname="col2"> <p>Configure um período de carência do serviço de ID de visitante para que possa executar o serviço de ID de visitante em cada arquivo JavaScript e em outras bibliotecas de coleta de dados. Consulte <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">Período de carência do serviço de ID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Arquivo único JavaScript do Analytics </p> </td> 
