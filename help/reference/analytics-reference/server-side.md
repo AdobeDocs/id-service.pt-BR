@@ -1,12 +1,12 @@
 ---
 description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
 keywords: Serviço de ID
-seo-description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados pelo servidor.
+seo-description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
 seo-title: Implementação do lado do servidor combinada com JavaScript
 title: Implementação do lado do servidor combinada com JavaScript
-uuid: 256 ea 0 e 7-1 eb 4-4 c 92-9 a 7 e-f 61 cb 1 ed 13 c 7
+uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -21,16 +21,16 @@ Certifique-se de marcar a ID de visitante da Experience Cloud e a ID de visitant
 
 >[!IMPORTANT]
 >
->No momento, o appmeasurement para Java não oferece suporte ao serviço da Experience Cloud ID.
+>No momento, o appmeasurement para Java não suporta o Serviço de identidade da plataforma Experience Platform.
 
 ## API de inserção de dados {#section-955ce7664a4646d38b3005cb2df40baf}
 
-Include the Analytics visitor ID (if set) in the `<visitorID>` element.
+Inclua a ID de visitante do Analytics (se configurada) no elemento `<visitorID>`.
 
-Include the Experience Cloud visitor ID in the `<marketingCloudVisitorID>` element.
+Inclua a ID de visitante da Experience Cloud no elemento `<marketingCloudVisitorID>`.
 
 Consulte [Tags XML suportadas](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
 
 ## AppMeasurement para Java {#section-d664b94934924d048300d9c2b6560085}
 
-No momento, o serviço da Experience Cloud ID não é compatível com o appmeasurement para Java.
+No momento, o Serviço de identidade da plataforma Experience Platform não é compatível com o appmeasurement para Java.
