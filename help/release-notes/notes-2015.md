@@ -4,9 +4,9 @@ keywords: Serviço de ID
 seo-description: Notas de versão e atualizações de 2015.
 seo-title: Notas de versão de 2015
 title: Notas de versão de 2015
-uuid: 49423699-1 e 0 f -49 e 4-9135-2 ae 84 b 4 f 92 df
+uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -19,16 +19,16 @@ Notas de versão e atualizações de 2015.
 
 Novembro de 2015
 
-A lei americana de privacidade infantil Children&#39;s Online Privacy Protection Act (COPPA) proíbe a coleta online de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. See [COPPA Support in the Experience Cloud ID Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
+A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. See [COPPA Support in the Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
 
 ## Versão 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Setembro de 2015
 
 * Correção de um bug no Safari que impedia o funcionamento dos serviços de sincronização quando os usuários bloqueavam cookies de terceiros. (AAM-20764)
-* Calls to the ID service now include the version ID in the `d_visid_ver=` parameter. A ID retornada ajuda as equipes internas a solucionarem problemas e questões de suporte. (AAM-20824)
+* As chamadas ao serviço de ID agora incluem a ID da versão no parâmetro `d_visid_ver=`. A ID retornada ajuda as equipes internas a solucionarem problemas e questões de suporte. (AAM-20824)
 
-## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
+## Versão 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Agosto de 2015
 
@@ -44,16 +44,16 @@ Agosto de 2015
 
 As revisões de documentação dessa versão incluem:
 
-* [Métodos de API e Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Conteúdo e texto reorganizados. Na maior parte dos casos, cada método recebe sua própria página.
-* [Requisitos do serviço da Experience Cloud ID](../reference/requirements.md): conteúdo revisado e texto reorganizado.
+* [Métodos de API e Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganização de conteúdo e texto. Na maior parte dos casos, cada método recebe sua própria página.
+* [Requisitos para o Serviço de identidade da Experience Platform](../reference/requirements.md): Conteúdo revisado e texto reorganizado.
 
-## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
+## Versão 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Julho de 2015
 
-O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação. Essa alteração também remove o suporte obsoleto para o mapeamento DPID do [!DNL Audience Manager] às IDs de usuários usadas pela função `setCustomerIDs`. See [Customer IDs and Authentication States](../reference/authenticated-state.md)
+O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação. Essa alteração também remove o suporte obsoleto para o mapeamento [!DNL Audience Manager] DPID do às IDs de usuários usadas pela `setCustomerIDs`função. Consulte [IDs do cliente e Estados de autenticação](../reference/authenticated-state.md)
 
-## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
+## Versão 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
 Maio de 2015
 
@@ -69,14 +69,14 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 Consulte [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd).
 
-## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
+## Versão 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
 Fevereiro de 2015
 
 Foi corrigido o tratamento do limite de tempo em solicitações para AAM Blob e Dica de local. Agora, quando o limite de tempo for atingido, o sistema deixará esse campo em branco para a página atual e fará os retornos de chamada. O limite de tempo é tratado como uma condição de erro para que ocorra uma nova tentativa na próxima página. (AN-94473, AN-94474)
 
-## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
+## Versão 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
 Janeiro de 2015
 
-Reworked `<head>/<body>` tag finding for JSONP request `<script>` tag container, as well as the creation of the `<script>` tag to account for different DOM implementations (HTML vs XHTML) with possibly different case sensitivity settings. (AN-9355)
+A `<head>/<body>` pesquisa de tag retrabalhada para o contêiner de tag da solicitação JSONP `<script>`, assim como a criação da tag `<script>` para cuidar de diferentes implantações DOM (HTML vs. XHTML), com a possibilidade de diferentes configurações que diferenciam caracteres maiúsculos e minúsculos. (AN-9355)
