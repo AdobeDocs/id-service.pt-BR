@@ -4,9 +4,9 @@ keywords: Serviço de ID
 seo-description: Essa função permite que você compartilhe a Experience Cloud ID de um visitante entre domínios quando os navegadores bloqueiam cookies de terceiros. Para usar essa função, é necessário implementar o serviço de ID, bem como ser o proprietário dos domínios de origem e destino. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 seo-title: appendVisitorIDsTo (rastreamento entre domínios)
 title: appendVisitorIDsTo (rastreamento entre domínios)
-uuid: 06 b 453 ee -73 c 5-4625-82 d 9-82 7 ad 2 b 4 f 702
+uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -25,14 +25,14 @@ Conteúdo:
 
 ## Rastrear visitantes nos domínios quando os navegadores bloqueiam cookies de terceiros {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud ID Service](../../introduction/cookies.md) ). O cookie primário contém a MID, uma ID exclusiva do visitante. O cookie de terceiros contém outra ID usada pelo serviço de ID para gerar a MID. Quando um navegador bloqueia esse cookie de terceiros, o serviço de ID não consegue:
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). O cookie primário contém a MID, uma ID exclusiva do visitante. O cookie de terceiros contém outra ID usada pelo serviço de ID para gerar a MID. Quando um navegador bloqueia esse cookie de terceiros, o serviço de ID não consegue:
 
 * Gerar novamente a ID exclusiva desse visitante do site ao navegar para outro domínio.
 * Acompanhar visitantes em domínios diferentes da sua empresa.
 
-To help solve this problem, implement ` Visitor.appendVisitorIDsTo( *`url`*)`. Essa propriedade permite que o serviço de ID rastreie visitantes em diversos domínios, mesmo quando o navegador bloqueia cookies de terceiros. Funciona deste modo:
+Para ajudar a resolver esse problema, implemente ` Visitor.appendVisitorIDsTo( *`URL`*)`. Essa propriedade permite que o serviço de ID rastreie visitantes em diversos domínios, mesmo quando o navegador bloqueia cookies de terceiros. Funciona deste modo:
 
-* As a visitor browses to your other domains, the ` Visitor.appendVisitorIDsTo( *`url`*)` appends the MID as a query parameter in the URL redirect from the original domain to the destination domain.
+* À medida que um visitante navega em outros domínios, o ` Visitor.appendVisitorIDsTo( *`URL`*)` anexa a MID como um parâmetro de consulta no redirecionamento de URL do domínio original para o domínio de destino.
 * O código do serviço de ID no domínio de destino extrai a MID do URL em vez de enviar uma solicitação da ID de visitante para a Adobe. Essa solicitação inclui a ID do cookie de terceiros, que não está disponível nesse caso.
 * O código do serviço de ID na página de destino usa a MID passada para rastrear o visitante.
 
@@ -40,7 +40,7 @@ Consulte a amostra de código para obter mais detalhes.
 
 ## Anexar a amostra de código da ID de visitante {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. Quando implementado adequadamente, o código JavaScript pode ser semelhante ao seguinte exemplo.
+O exemplo a seguir pode ajudar você a começar a trabalhar com ` Visitor.appendVisitorIDsTo( *`URL`*)`. Quando implementado adequadamente, o código JavaScript pode ser semelhante ao seguinte exemplo.
 
 ```js
 //Code on Domain A 
