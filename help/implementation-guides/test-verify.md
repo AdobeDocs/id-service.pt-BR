@@ -2,22 +2,22 @@
 description: Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
 keywords: Serviço de ID
 seo-description: Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
-seo-title: Testar e verificar o serviço da Experience Cloud ID
-title: Testar e verificar o serviço da Experience Cloud ID
-uuid: 442 de 9 c 3-c 265-4412-89 bd-aeaa 286 ddad 6
+seo-title: Testar e verificar o Serviço de identidade da Experience Platform
+title: Testar e verificar o Serviço de identidade da Experience Platform
+uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Test and verify the Experience Cloud ID Service{#test-and-verify-the-experience-cloud-id-service}
+# Test and verify the Experience Platform Identity Service{#test-and-verify-the-experience-cloud-id-service}
 
 Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
 
 ## Antes de começar {#section-b1e76ad552ed4eb793b6e521a55127d4}
 
-Informações importantes para saber antes de começar a testar e verificar o serviço de ID.
+Informações importantes a saber antes de iniciar o teste e a verificação do serviço de ID.
 
 **Ambientes do navegador**
 
@@ -31,18 +31,18 @@ O [depurador da Adobe](https://marketing.adobe.com/resources/help/en_US/sc/imple
 
 ## Teste com o Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-Your service integration is configured properly when you see a [!DNL Experience Cloud ID] (MID) in the [!DNL Adobe] debugger response. See [Cookies and the Experience Cloud ID Service](../introduction/cookies.md) for more information about the MID.
+A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for more information about the MID.
 
 To verify the status of the ID service with the [!DNL Adobe] [debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
 
 1. Apague os cookies do navegador ou abra uma sessão de navegação anônima.
 1. Carregue a página de teste com o código do serviço de ID.
-1. Open the [!DNL Adobe] debugger.
+1. Abra o depurador da [!DNL Adobe].
 1. Verifique se nos resultados há uma MID.
 
-## Understanding Adobe Debugger results {#section-bd2caa6643d54d41a476d747b41e7e25}
+## Compreender os resultados do Adobe Debugger {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-The MID is stored in a key-value pair that uses this syntax: `MID= *`Experience Cloud ID`*`. O depurador exibe essas informações, como mostrado abaixo.
+A MID é armazenada em um par de valores chave que usa a sintaxe: `MID= *`Experience Cloud ID`*`. O depurador exibe essas informações, como mostrado abaixo.
 
 **Sucesso**
 
@@ -64,7 +64,7 @@ Entre em contato com o [atendimento ao cliente](https://helpx.adobe.com/marketin
 * Não retornar uma MID.
 * Retornar uma mensagem de erro indicando que a ID do parceiro não foi fornecida.
 
-## Testing with the Charles HTTP proxy {#section-d9e91f24984146b2b527fe059d7c9355}
+## Teste com o Charles HTTP proxy {#section-d9e91f24984146b2b527fe059d7c9355}
 
 Para verificar o status do serviço de ID com Charles:
 
@@ -73,25 +73,25 @@ Para verificar o status do serviço de ID com Charles:
 1. Carregue a página de teste com o código do serviço de ID.
 1. Verifique as chamadas de solicitação e resposta, além dos dados descritos abaixo.
 
-## Understanding Charles results {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
+## Como entender os resultados do Charles {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
 Consulte esta seção para obter informações sobre o que e onde procurar, ao usar o Charles para monitorar chamadas HTTP.
 
-**Solicitações de serviço de ID com êxito no Charles**
+**Solicitações de serviço de ID com sucesso no Charles**
 
-O código do serviço de ID está funcionando adequadamente quando a função `Visitor.getInstance` efetua uma chamada de JavaScript para `dpm.demdex.net`. Uma solicitação bem sucedida inclui a [ID da organização](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). The Organization ID is passed as a key-value pair that uses this syntax: `d_orgid= *`organization ID`*`. Look for the `dpm.demdex.net` and the JavaScript calls under the [!DNL Structure] tab. Look for your Organization ID under the [!DNL Request] tab.
+O código do serviço de ID está funcionando adequadamente quando a função `Visitor.getInstance` efetua uma chamada de JavaScript para `dpm.demdex.net`. Uma solicitação bem sucedida inclui a [ID da organização](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). A ID da empresa é passada como um par de valores chave que utiliza a sintaxe: `d_orgid= *`ID da organização`*`. Procure o `dpm.demdex.net` e as chamadas de JavaScript na guia [!DNL Structure]. Procure a ID da organização na guia [!DNL Request].
 
 ![](assets/charles_request.png)
 
-**Respostas do serviço de ID com êxito no Charles**
+**Solicitações do serviço de ID com sucesso no Charles**
 
-Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) retornar uma MID. The MID is returned as a key-value pair that uses this syntax: `d_mid: *`visitor Experience Cloud ID`*`. Look for the MID in the [!DNL Response] tab as shown below.
+Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) retornar uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Procure a MID na guia [!DNL Response], como mostrado abaixo.
 
 ![](assets/charles_response_success.png)
 
-**Falha nas respostas do serviço de ID no Charles**
+**Falha de resposta do serviço de ID no Charles**
 
-A conta não foi provisionada adequadamente se a MID estiver faltando na resposta do DCS. An unsuccessful response returns an error code and message in the [!DNL Response] tab as shown below. Entre em contato com o atendimento ao cliente se você visualizar essa mensagem de erro na resposta do DCS.
+A conta não foi provisionada adequadamente se a MID estiver faltando na resposta do DCS. Uma resposta sem sucesso retorna um código de erro e a mensagem na guia [!DNL Response], como mostrado abaixo. Entre em contato com o atendimento ao cliente se você visualizar essa mensagem de erro na resposta do DCS.
 
 ![](assets/charles_response_unsuccessful.png)
 
