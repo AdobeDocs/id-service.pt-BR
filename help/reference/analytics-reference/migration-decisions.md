@@ -1,19 +1,19 @@
 ---
-description: Antes de implantar o Serviço de identidade da Experience Platform, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
 keywords: Serviço de ID
-seo-description: Antes de implantar o Serviço de identidade da Experience Platform, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
-seo-title: Pontos de decisão de migração do serviço de identidade da plataforma Experiência
-title: Pontos de decisão de migração do serviço de identidade da plataforma Experiência
+seo-description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+seo-title: Pontos de decisão de migração do serviço de identidade da Experience Cloud
+title: Pontos de decisão de migração do serviço de identidade da Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Pontos de decisão de migração do serviço de identidade da plataforma Experiência
+# Pontos de decisão de migração do serviço de identidade da Experience Cloud
 
-Antes de implantar o Serviço de identidade da Experience Platform, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
 
 As respostas às perguntas desta seção ajudam a determinar as etapas de migração adicionais que devem ser realizadas.
 
