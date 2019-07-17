@@ -1,19 +1,19 @@
 ---
-description: Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da plataforma Experience Platform, incluindo o Adobe Media Optimizer e o serviço de ID.
+description: Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o serviço de ID.
 keywords: Serviço de ID
-seo-description: Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da plataforma Experience Platform, incluindo o Adobe Media Optimizer e o serviço de ID.
+seo-description: Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o serviço de ID.
 seo-title: Como entender a sincronização de ID e taxas de correspondência
 title: Como entender a sincronização de ID e taxas de correspondência
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Como entender a sincronização de ID e as taxas de correspondência {#understanding-id-synchronization-and-match-rates}
 
-Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da plataforma Experience Platform, incluindo o Adobe Media Optimizer e o serviço de ID.
+Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o serviço de ID.
 
 ## Sincronização de ID e taxas de correspondência {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ O serviço de ID sincroniza as IDs em tempo real. Esse processo funciona no nave
 
 **Etapa 1: carregar a página**
 
-Quando um visitante entra no site e carrega uma página, a função `Visitor.getInstance` faz uma chamada [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P para o serviço de ID. O serviço de ID responde com um cookie que inclui a [!DNL Experience Cloud] ID (MID) do visitante. A MID é uma ID exclusiva atribuída a cada visitante do site. Consulte também a seção [Cookies e o Serviço de identidade da plataforma Experience Platform](../introduction/cookies.md).
+Quando um visitante entra no site e carrega uma página, a função `Visitor.getInstance` faz uma chamada [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P para o serviço de ID. O serviço de ID responde com um cookie que inclui a [!DNL Experience Cloud] ID (MID) do visitante. A MID é uma ID exclusiva atribuída a cada visitante do site. Consulte também a seção [Cookies e Serviço de identidade da Experience Cloud](../introduction/cookies.md).
 
 **Etapa 2: carregar iFrame**
 
@@ -43,7 +43,7 @@ Enquanto o corpo da página é carregado, o serviço de ID carrega um iFrame cha
 * Carrega o mais rápido possível. Se for muito rápido, é possível carregar o iFrame depois do evento de carregamento de janela (não recomendado). Consulte [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) para obter mais detalhes.
 * Impede que o código no iFrame acesse ou afete a página pai.
 
-Consulte também a seção [Como o serviço de identidade da plataforma Experiência solicita e define IDs….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+Consulte também a seção [Como o serviço de identidade da Experience Cloud solicita e define IDs….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **Etapa 3: acionar sincronizações de ID**
 
