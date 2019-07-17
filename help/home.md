@@ -1,19 +1,19 @@
 ---
-description: 'O Serviço de identidade da Experience Platform fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. '
+description: 'O Serviço de identidade da Experience Cloud fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. '
 keywords: Serviço de ID
-seo-description: O Adobe Experience Platform Identity Service (serviço de ID) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
-seo-title: Serviço de identidade da plataforma Experience Platform
-title: Serviço de identidade da plataforma Experience Platform
+seo-description: O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
+seo-title: Serviço de identidade da Experience Cloud
+title: Serviço de identidade da Experience Cloud
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Adobe Experience Platform Identity Service {#experience-cloud-id-service}
+# Adobe Experience Cloud Identity Service {#experience-cloud-id-service}
 
-O Adobe Experience Platform Identity Service (serviço de ID) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
+O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
@@ -21,9 +21,9 @@ O Adobe Experience Platform Identity Service (serviço de ID) fornece uma ID con
    <td colname="col1"> <p> <b>Introdução</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> Visão geral </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisitos para o Serviço de identidade da plataforma Experience Platform </a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisitos para o serviço de identidade da Experience Cloud </a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Implementação padrão com DTM </a> </li> 
-     </ul> </p> <p><b>Bibliotecas Javascript da Experience Cloud ID</b> </p> <p>JavaScript for the Experience Platform Identity Service is located at: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Itens novos ou especiais</b> </p> <p> 
+     </ul> </p> <p><b>Bibliotecas Javascript da Experience Cloud ID</b> </p> <p>JavaScript for the Experience Cloud Identity Service is located at: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Itens novos ou especiais</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Serviço de opt-in</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
