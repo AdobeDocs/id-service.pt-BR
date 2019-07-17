@@ -1,19 +1,19 @@
 ---
-description: Retorna a ID da região do Serviço de identidade da Experience Platform. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do lado do servidor para o Audience Manager.
+description: Retorna a ID da região do Serviço de identidade da Experience Cloud. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do lado do servidor para o Audience Manager.
 keywords: Serviço de ID
-seo-description: Retorna a ID da região do Serviço de identidade da Experience Platform. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do lado do servidor para o Audience Manager.
+seo-description: Retorna a ID da região do Serviço de identidade da Experience Cloud. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do lado do servidor para o Audience Manager.
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-Retorna a ID da região do Serviço de identidade da Experience Platform. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do lado do servidor para o Audience Manager.
+Retorna a ID da região do Serviço de identidade da Experience Cloud. Uma ID de região (ou dica de localização), é um identificador numérico da localização geográfica de um data center de serviços de ID específico. Você precisar da ID da região para fazer chamadas de API do lado do servidor para o Audience Manager.
 
 **Sintaxe:**` var *`nome da variável`* = visitor.getLocationHint()`
 
