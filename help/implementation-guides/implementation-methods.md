@@ -1,19 +1,19 @@
 ---
-description: Instruções e amostras de código para implementações padrão e não padrão do Serviço de identidade da plataforma Experience Platform.
+description: Instruções e amostras de código para implementações padrão e não padrão do Serviço de identidade da Experience Cloud.
 keywords: Serviço de ID
-seo-description: Instruções e amostras de código para implementações padrão e não padrão do Serviço de identidade da plataforma Experience Platform.
+seo-description: Instruções e amostras de código para implementações padrão e não padrão do Serviço de identidade da Experience Cloud.
 seo-title: Guias de implementação
 title: Guias de implementação
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Métodos de implementação
 
-Instruções e amostras de código para implementações padrão e não padrão do Serviço de identidade da plataforma Experience Platform.
+Instruções e amostras de código para implementações padrão e não padrão do Serviço de identidade da Experience Cloud.
 
 >[!IMPORTANT]
 >
