@@ -1,24 +1,24 @@
 ---
-description: A função do Serviço de identidade da Experience Platform na Adobe Experience Cloud.
-seo-description: O Serviço de identidade da Experience Platform permite a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente da Experience Cloud no serviço principal Pessoas.
+description: A função do Serviço de identidade da Experience Cloud na Adobe Experience Cloud.
+seo-description: O Serviço de identidade da Experience Cloud permite a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente da Experience Cloud no serviço principal de Pessoas.
 seo-title: Visão geral do serviço de ID
 title: Visão geral
 uuid: null
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Visão geral
 
-O Serviço de identidade da Experience Platform permite a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente da Experience Cloud no serviço principal Pessoas. Isso funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
+O Serviço de identidade da Experience Cloud permite a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente da Experience Cloud no serviço principal de Pessoas. Isso funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
 
 ![](assets/ecid.png)
 
 Além disso, o serviço de ID pode substituir diferentes IDs específicas da solução (por exemplo, Analytics AID). E, através da funcionalidade de [IDs de cliente e Estados de autenticação](/help/reference/authenticated-state.md), o serviço de ID permite que você passe suas próprias IDs de cliente para a Experience Cloud. No entanto, lembre-se de que o serviço de ID funciona apenas com as soluções nas quais você já está inscrito. Ele não fornecerá acesso a outros produtos se você não tiver feito uma assinatura deles.
 
-O serviço de ID é um componente integral de diversos recursos, aprimoramentos e serviços atuais e futuros da Experience Cloud. No momento, o serviço de ID oferece suporte ao [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), ao [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html) e ao [Target](http://www.adobe.com/marketing-cloud/testing-targeting.html). É obrigatório se você deseja participar do Adobe Experience Cloud Device Co-op. Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. For more information about the importance and role of the ID service, see [Why the Experience Platform Identity Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
+O serviço de ID é um componente integral de diversos recursos, aprimoramentos e serviços atuais e futuros da Experience Cloud. No momento, o serviço de ID oferece suporte ao [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), ao [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html) e ao [Target](http://www.adobe.com/marketing-cloud/testing-targeting.html). É obrigatório se você deseja participar do Adobe Experience Cloud Device Co-op. Se você ainda não implementou o serviço de ID, agora é o momento de começar a pensar em uma estratégia de migração. For more information about the importance and role of the ID service, see [Why the Experience Cloud Identity Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
 
 ## Resumo dos recursos
 
@@ -35,6 +35,6 @@ Resumindo, o serviço de ID:
 
 A solução e outras bibliotecas de código da Adobe devem atender a [determinados requisitos](/help/reference/requirements.md) antes de poder usar o serviço de ID.
 
-* [Cookies e o Serviço de identidade da plataforma Experience Platform](cookies.md): O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e um cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
-* [Como o serviço de identidade da plataforma Experience Platform solicita e define IDs](id-request.md): Uma visão geral do processo de resposta e solicitação de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
-* [Noções básicas sobre sincronização de ID e taxas de correspondência](match-rates.md): Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da plataforma Experience Platform, incluindo o Adobe Media Optimizer e o serviço de ID.
+* [Cookies e o Serviço de identidade da Experience Cloud](cookies.md): O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e um cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
+* [Como o serviço de identidade da Experience Cloud solicita e define IDs](id-request.md): Uma visão geral do processo de resposta e solicitação de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
+* [Noções básicas sobre sincronização de ID e taxas de correspondência](match-rates.md): Uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o serviço de ID.
