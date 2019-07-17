@@ -1,19 +1,19 @@
 ---
-description: Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código corretos exigidos pelo Serviço de identidade da Experience Platform.
+description: Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código corretos exigidos pelo Serviço de identidade da Experience Cloud.
 keywords: Serviço de ID
-seo-description: Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código corretos exigidos pelo Serviço de identidade da Experience Platform.
-seo-title: Requisitos para o Serviço de identidade da plataforma Experience Platform
-title: Requisitos para o Serviço de identidade da plataforma Experience Platform
+seo-description: Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código corretos exigidos pelo Serviço de identidade da Experience Cloud.
+seo-title: Requisitos para o serviço de identidade da Experience Cloud
+title: Requisitos para o serviço de identidade da Experience Cloud
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Requirements for the Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
+# Requirements for the Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código corretos exigidos pelo Serviço de identidade da Experience Platform.
+Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código corretos exigidos pelo Serviço de identidade da Experience Cloud.
 
 ## Requisitos garantem o sucesso e o suporte da implementação {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
