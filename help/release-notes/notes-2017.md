@@ -1,19 +1,19 @@
 ---
-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform para 2017.
+description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Cloud para 2017.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform para 2017.
+seo-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Cloud para 2017.
 seo-title: Notas de versão de 2017
 title: Notas de versão de 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Notas de versão de 2017 {#release-notes}
 
-Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Platform para 2017.
+Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Cloud para 2017.
 
 Essas alterações também estão contempladas nas [notas de versão da Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Para consultar as notas de versão antigas do serviço de ID, consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou os links no fim desta página.
 
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correção de um erro relacionado ao Chrome que fazia com que o serviço de ID mostrasse um erro ao clicar no botão Voltar no navegador.
 * O serviço de ID agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
-* Adicionada nova documentação, [Políticas de segurança do conteúdo e o Serviço de identidade da Experience Platform](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como fazer chamadas de lista de permissões para domínios da Adobe usados pelo serviço de ID.
+* Adicionada nova documentação, [Políticas de segurança de conteúdo e serviço](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)de identidade da Experience Cloud, que explica como fazer chamadas de lista de permissões para domínios da Adobe usados pelo serviço de ID.
 
 ## Versão 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
