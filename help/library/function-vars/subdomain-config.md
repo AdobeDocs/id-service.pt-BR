@@ -1,19 +1,19 @@
 ---
-description: Altere o nome de domínio padrão usado por chamadas para o Serviço de identidade da plataforma Experience Platform com o seu próprio nome de subdomínio nessas configurações.
+description: Altere o nome de domínio padrão usado por chamadas para o Serviço de identidade da Experience Cloud para seu próprio nome de subdomínio com essas configurações.
 keywords: Serviço de ID
-seo-description: Altere o nome de domínio padrão usado por chamadas para o Serviço de identidade da plataforma Experience Platform com o seu próprio nome de subdomínio nessas configurações.
+seo-description: Altere o nome de domínio padrão usado por chamadas para o Serviço de identidade da Experience Cloud para seu próprio nome de subdomínio com essas configurações.
 seo-title: audienceManagerServer e audienceManagerServerSecure
 title: audienceManagerServer e audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # audienceManagerServer e audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Altere o nome de domínio padrão usado por chamadas para o Serviço de identidade da plataforma Experience Platform com o seu próprio nome de subdomínio nessas configurações.
+Altere o nome de domínio padrão usado por chamadas para o Serviço de identidade da Experience Cloud para seu próprio nome de subdomínio com essas configurações.
 
 **Sintaxe:**
 
