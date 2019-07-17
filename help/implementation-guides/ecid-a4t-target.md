@@ -6,7 +6,7 @@ seo-title: Uso do Serviço de ID com A4T e uma implementação do lado do servid
 title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -166,7 +166,7 @@ As configurações definidas devem ser:
 
 ![](assets/server_side_dtm.png)
 
-Consulte também a seção [Configurações do serviço de identidade da plataforma de experiência para DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Consulte também a seção [Configurações do serviço de identidade da Experience Cloud para o DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Obter o estado do servidor sem o DTM**
 
