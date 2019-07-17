@@ -1,19 +1,19 @@
 ---
-description: A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código do Serviço de identidade da Experience Platform que impede a definição de cookies no domínio de terceiros de um navegador.
+description: A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço de identidade da Experience Cloud que impede a definição de cookies no domínio de terceiros de um navegador.
 keywords: Serviço de ID
-seo-description: A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código do Serviço de identidade da Experience Platform que impede a definição de cookies no domínio de terceiros de um navegador.
-seo-title: Suporte à lei COPPA no Serviço de identidade da Experience Platform
-title: Suporte à lei COPPA no Serviço de identidade da Experience Platform
+seo-description: A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço de identidade da Experience Cloud que impede a definição de cookies no domínio de terceiros de um navegador.
+seo-title: Suporte à lei COPPA no serviço de identidade da Experience Cloud
+title: Suporte à lei COPPA no serviço de identidade da Experience Cloud
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# COPPA Support in the Experience Platform Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
 
-A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código do Serviço de identidade da Experience Platform que impede a definição de cookies no domínio de terceiros de um navegador.
+A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço de identidade da Experience Cloud que impede a definição de cookies no domínio de terceiros de um navegador.
 
 >[!NOTE]
 >
