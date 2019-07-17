@@ -1,19 +1,19 @@
 ---
-description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Platform. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 keywords: Serviço de ID
-seo-description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Platform. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+seo-description: Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Platform. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+Retorna a ID do Analytics herdada (se houver) que foi armazenada no cookie s_ vi antes da implementação do Serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 
 **Sintaxe** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
