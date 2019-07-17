@@ -1,19 +1,19 @@
 ---
-description: O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+description: O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
 keywords: Serviço de ID
-seo-description: O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+seo-description: O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
 seo-title: Definir Analytics e Experience Cloud IDs
 title: Definir Analytics e Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Definir Analytics e Experience Cloud IDs{#setting-analytics-and-experience-cloud-ids}
 
-O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
 
 Após o serviço de ID ser implementado, este código é executado antes do AppMeasurement. O serviço de ID recupera as IDs da Experience Cloud e do Analytics para que esses valores estejam prontos quando o AppMeasurement for carregado.
 
@@ -86,7 +86,7 @@ Depois de implantar o serviço de ID de visitante, há cinco maneiras de identif
  </tbody> 
 </table>
 
-Em muitos casos, você verá duas ou três IDs diferentes em uma chamada, mas o Analytics usará a primeira ID apresentada na lista como a [!DNL Experience Cloud] oficial. Por exemplo, se você estiver enviando uma ID de visitante personalizada (incluída no parâmetro de consulta &quot;vid&quot;), essa ID será usada antes de outras IDs que possam estar presentes nessa mesma ocorrência.
+Em muitos casos, você verá duas ou três IDs diferentes em uma chamada, mas o Analytics usará a primeira ID apresentada na lista como a [!DNL Experience Cloud] oficial. Por exemplo, se você estiver enviando uma ID de visitante personalizada (incluída no parâmetro de consulta "vid"), essa ID será usada antes de outras IDs que possam estar presentes nessa mesma ocorrência.
 
 >[!MORE_LIKE_THIS]
 >
