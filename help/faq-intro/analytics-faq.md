@@ -1,12 +1,12 @@
 ---
-description: Perguntas frequentes sobre recursos, funcionalidade e problemas relacionados ao uso do Analytics com o Serviço de identidade da Experience Platform.
-keywords: Serviço de identidade da plataforma Experience Platform
+description: Perguntas frequentes sobre recursos, funcionalidade e problemas relacionados ao uso do Analytics com o Serviço de identidade da Experience Cloud.
+keywords: Serviço de identidade da Experience Cloud
 seo-description: Perguntas frequentes sobre recursos, funcionalidade e problemas relacionados ao uso do Analytics com o Serviço de identidade.
 seo-title: Perguntas frequentes sobre o serviço de identidade e do Analytics
 title: Perguntas frequentes sobre o serviço de identidade e do Analytics
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -41,7 +41,7 @@ Se o site principal não for visitado primeiro, os visitantes serão identificad
 
 **Por que o parâmetro Experience Cloud ID (MID) não está na solicitação do Analytics?**
 
-If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you&#39;ve upgraded to a supported version of AppMeasurement.
+If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you've upgraded to a supported version of AppMeasurement.
 
 **Meu site pode usar o código H e o appmeasurement para javascript com o Serviço de identidade?**
 
