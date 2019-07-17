@@ -2,16 +2,16 @@
 description: Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
 keywords: Serviço de ID
 seo-description: Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
-seo-title: Testar e verificar o Serviço de identidade da Experience Platform
-title: Testar e verificar o Serviço de identidade da Experience Platform
+seo-title: Testar e verificar o serviço de identidade da Experience Cloud
+title: Testar e verificar o serviço de identidade da Experience Cloud
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Test and verify the Experience Platform Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# Test and verify the Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
 
 Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
 
@@ -31,7 +31,7 @@ O [depurador da Adobe](https://marketing.adobe.com/resources/help/en_US/sc/imple
 
 ## Teste com o Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for more information about the MID.
+A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
 
 To verify the status of the ID service with the [!DNL Adobe] [debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
 
