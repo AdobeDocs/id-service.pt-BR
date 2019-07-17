@@ -1,19 +1,19 @@
 ---
-description: Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+description: Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 keywords: Serviço de ID
-seo-description: Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
-seo-title: Implementar o Serviço de identidade da plataforma Experience Platform para o Analytics
-title: Implementar o Serviço de identidade da plataforma Experience Platform para o Analytics
+seo-description: Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+seo-title: Implementação do serviço de identidade da Experience Cloud para o Analytics
+title: Implementação do serviço de identidade da Experience Cloud para o Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implement the Experience Cloud Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+Essas instruções para clientes do Analytics que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 
 >[!IMPORTANT]
 >
@@ -134,7 +134,7 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 
 
 
-If you&#39;re not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Etapa 5: atualizar o arquivo AppMeasurement.js ou s_code.js {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -178,7 +178,7 @@ O período de carência será cancelado depois da implantação do serviço de I
 
 A descontinuação do período de carência após sua implementação pode capturar a MID em vez de ler o cookie s_vi.
 
-Consulte [Cookies e o Serviço de identidade da plataforma Experience Platform](../introduction/cookies.md).
+Consulte [Cookies e Serviço de identidade da Experience Cloud](../introduction/cookies.md).
 
 É necessário ter um período de carência caso envie dados para um sistema interno de um feed de dados de sequência de cliques que processe os usos das colunas `visid_high` e `visid_low`.
 
@@ -199,7 +199,7 @@ Para testar a implementação do serviço de ID, verifique:
 * O [cookie AMCV](../introduction/cookies.md) no domínio em que sua página está hospedada.
 * O valor da MID na solicitação de imagem do [!DNL Analytics] com a [ferramenta Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 
-See, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+See, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 **Implantar código**
 
