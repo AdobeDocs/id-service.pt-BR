@@ -2,16 +2,16 @@
 description: O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 keywords: playstation, serviço de ID
 seo-description: O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
-seo-title: Cookies e o Serviço de identidade da plataforma Experience Platform
-title: Cookies e o Serviço de identidade da plataforma Experience Platform
+seo-title: Cookies e o serviço de identidade da Experience Cloud
+title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Cookies and the Experience Platform Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 
@@ -124,4 +124,4 @@ O serviço de ID começa a criar uma MID enquanto a página carrega. Durante ess
 
 ## Próximas etapas {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Platform Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
