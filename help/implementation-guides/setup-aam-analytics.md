@@ -1,19 +1,19 @@
 ---
-description: Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+description: Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 keywords: Serviço de ID
-seo-description: Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
-seo-title: Implementação do Serviço de identidade da plataforma Experience Platform para Analytics e Audience Manager
-title: Implementação do Serviço de identidade da plataforma Experience Platform para Analytics e Audience Manager
+seo-description: Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+seo-title: Implementação do serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
+title: Implementação do serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Platform e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 
 >[!IMPORTANT]
 >
@@ -179,7 +179,7 @@ O período de carência será cancelado depois da implantação do serviço de I
 
 A descontinuação do período de carência após sua implementação pode capturar a MID em vez de ler o cookie s_vi.
 
-See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **Integração de dados da sequência de cliques**
 
@@ -199,7 +199,7 @@ Para testar a implementação do serviço de ID, verifique:
 
 * [Cookie AMCV](../introduction/cookies.md) no domínio em que as páginas estão hospedadas.
 * O valor da MID na solicitação de imagem do Analytics com o [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
-* See also, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 Para verificar o encaminhamento do servidor, consulte [Como verificar a implementação de encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html).
 
