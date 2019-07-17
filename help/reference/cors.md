@@ -1,19 +1,19 @@
 ---
-description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O Serviço de identidade da Experience Platform é compatível com padrões CORS que permitem solicitações de recursos entre origens do cliente. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
+description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O Serviço de identidade da Experience Cloud é compatível com os padrões CORS que permitem solicitações de recursos entre origens do cliente. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
 keywords: Serviço de ID
-seo-description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O Serviço de identidade da Experience Platform é compatível com padrões CORS que permitem solicitações de recursos entre origens do cliente. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
-seo-title: Suporte CORS no Serviço de identidade da plataforma Experience Platform
-title: Suporte CORS no Serviço de identidade da plataforma Experience Platform
+seo-description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O Serviço de identidade da Experience Cloud é compatível com os padrões CORS que permitem solicitações de recursos entre origens do cliente. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
+seo-title: Suporte ao CORS no serviço de identidade da Experience Cloud
+title: Suporte ao CORS no serviço de identidade da Experience Cloud
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# CORS Support in the Experience Platform Identity Service {#cors-support-in-the-experience-cloud-id-service}
+# CORS Support in the Experience Cloud Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O Serviço de identidade da Experience Platform é compatível com padrões CORS que permitem solicitações de recursos entre origens do cliente. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
+Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O Serviço de identidade da Experience Cloud é compatível com os padrões CORS que permitem solicitações de recursos entre origens do cliente. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
 
 ## Problemas com políticas de mesma origem e solicitações do serviço de ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
