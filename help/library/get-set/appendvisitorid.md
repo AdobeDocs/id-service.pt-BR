@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo (rastreamento entre domínios)
 title: appendVisitorIDsTo (rastreamento entre domínios)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ Conteúdo:
 
 ## Rastrear visitantes nos domínios quando os navegadores bloqueiam cookies de terceiros {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). O cookie primário contém a MID, uma ID exclusiva do visitante. O cookie de terceiros contém outra ID usada pelo serviço de ID para gerar a MID. Quando um navegador bloqueia esse cookie de terceiros, o serviço de ID não consegue:
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). O cookie primário contém a MID, uma ID exclusiva do visitante. O cookie de terceiros contém outra ID usada pelo serviço de ID para gerar a MID. Quando um navegador bloqueia esse cookie de terceiros, o serviço de ID não consegue:
 
 * Gerar novamente a ID exclusiva desse visitante do site ao navegar para outro domínio.
 * Acompanhar visitantes em domínios diferentes da sua empresa.
