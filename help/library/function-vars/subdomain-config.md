@@ -6,7 +6,7 @@ seo-title: audienceManagerServer e audienceManagerServerSecure
 title: audienceManagerServer e audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -29,7 +29,7 @@ Normalmente, o serviço da [!DNL Experience Cloud] ID faz chamadas para a [!DNL 
 Essas configurações exigem que você use:
 
 * O nome do [!DNL Audience Manager] subdomínio do registrado da sua empresa. Verifique ou obtenha esse nome de seu consultor.
-* O nome do subdomínio associado à [!DNL Organization ID]
+* O nome do subdomínio associado à [!UICONTROL ID da organização].
 * *Ambos* os parâmetros de configuração com o mesmo nome do subdomínio.
 
 **Amostra de código**
