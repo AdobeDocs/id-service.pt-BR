@@ -6,7 +6,7 @@ seo-title: Implementação do serviço de identidade da Experience Cloud para o 
 title: Implementação do serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -32,7 +32,7 @@ A migração para o encaminhamento do lado do servidor requer planejamento e coo
 
 1. Trabalhe com os contatos do [!DNL Analytics] e do [!DNL Audience Manager] a fim de planejar a migração do serviço de ID e do encaminhamento do lado do servidor. A seleção do servidor de rastreamento é uma parte importante do plano.
 
-1. Receba o provisionamento do [!DNL Profiles & Audiences]. Preencha o formulário no [site de integrações e provisionamento](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) para começar.
+1. Preencha o formulário no [site de integrações e provisionamento](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) para começar.
 
 1. Implemente o serviço de ID e o [!DNL Audience Management Module] ao mesmo tempo. Para funcionar adequadamente, o [!DNL Audience Management Module] (encaminhamento do lado do servidor) e o serviço de ID devem ser lançados para o mesmo conjunto de páginas e ao mesmo tempo.
 
@@ -137,7 +137,7 @@ Se você não tiver certeza sobre como encontrar o servidor de rastreamento, con
 
 ## Etapa 6: atualizar o arquivo AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Essa etapa requer o [!DNL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
+Essa etapa requer o [!UICONTROL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
 
 Adicione a `Visitor.getInstance` função mostrada abaixo ao `AppMeasurement.js` arquivo. Insira-o na seção que contém configurações, como `linkInternalFilters`, `charSet`, `trackDownloads`, etc. :
 
@@ -158,7 +158,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Etapa 7: adicionar o código da API do visitante à página {#section-c2bd096a3e484872a72967b6468d3673}
 
-Insira o ` [!DNL VisitorAPI.js]` arquivo nas tags `<head>` de cada página. Ao anexar o `VisitorAPI.js` arquivo à página:
+Insira o ` [!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página. Ao anexar o `VisitorAPI.js` arquivo à página:
 
 * Coloque-o no início da `<head>` seção para que apareça antes de outras tags de solução.
 * É necessário executar antes do AppMeasurement e do código de outras [!DNL Experience Cloud] soluções da.
