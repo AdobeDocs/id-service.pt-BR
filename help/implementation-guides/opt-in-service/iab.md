@@ -5,7 +5,7 @@ seo-title: (beta) Uso dos serviços de Opt-in com a Estrutura IAB
 title: (beta) Uso dos serviços de Opt-in com a Estrutura IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -46,9 +46,9 @@ Depois de configurar corretamente, as bibliotecas da ECID e DIL serão ativadas/
 
 >[!IMPORTANT]
 >
->O Audience Manager exige consentimento para as *finalidades 1,2 e 5, além do consentimento do fornecedor* para implantar cookies e iniciar ou honrar as sincronizações de ID. Read more about the IAB plugin in Audience Manager documentation ** [here](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)**.
+>O Audience Manager exige consentimento para as *finalidades 1,2 e 5, além do consentimento do fornecedor* para implantar cookies e iniciar ou honrar as sincronizações de ID. Leia mais sobre o plugin IAB na documentação do Audience Manager [aqui](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html).
 
-Para obter mais informações sobre como validar o plugin de Opt-in e do IAB, confira o caso de uso 4 no guia de validação [**aqui** ](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
+Para obter mais informações sobre como validar o plugin de Opt-in e do IAB, confira o caso de uso 4 no guia de validação [aqui](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
 ## Documentação relacionada {#section-55da1110051a4b39b1037803f4a7b264}
 
