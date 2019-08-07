@@ -1,12 +1,12 @@
 ---
-description: A função do Serviço de identidade da Experience Cloud na Adobe Experience Cloud.
+description: A função do Serviço de identidade da Experience Platform na Adobe Experience Cloud.
 keywords: Serviço de ID
-seo-description: A função do Serviço de identidade da Experience Cloud na Adobe Experience Cloud.
+seo-description: A função do Serviço de identidade da Experience Platform na Adobe Experience Cloud.
 seo-title: Sobre o serviço de ID
 title: Visão geral
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -21,7 +21,7 @@ mcvid-functionality.xml
 
 ## The Experience Cloud Identity Service: A Foundational Element of Core Services {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-O Serviço de identidade da Experience Cloud permite a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente da Experience Cloud no serviço principal de Pessoas. Isso funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
+O Serviço de identidade da Experience Cloud permite a estrutura de identificação comum dos principais serviços, soluções e atributos do cliente e públicos-alvo da Experience Cloud. Isso funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
 
 ![](assets/ecid.png)
 
