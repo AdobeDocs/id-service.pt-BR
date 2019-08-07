@@ -6,7 +6,7 @@ seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -23,7 +23,7 @@ Novembro de 2016
 
 >[!IMPORTANT]
 >
->* A versão 1.10 requer [!DNL AppMeasurement] 1.8.0.
+>* A versão 1.10 exige o [!UICONTROL AppMeasurement] 1.8.0.
 >* Usando a Biblioteca de serviço de identidade da Experience Cloud Identity .0.0 +, a sincronização de ID será iniciada para o Adobe Media Optimizer por padrão. Consulte [Entender sincronização de ID e taxas de correspondência](/help/introduction/match-rates.md).
 
 
