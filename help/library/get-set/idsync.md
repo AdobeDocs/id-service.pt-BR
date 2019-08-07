@@ -4,9 +4,9 @@ keywords: Serviço de ID
 seo-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem que você implemente manualmente uma sincronização de ID no iFrame de publicação de destino. Elas estão disponíveis no VisitorAPI.js versão 1.10 ou posterior.
 seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
-uuid: ff 83 d 910-8375-4295-9 f 2 a-e 14 c 15 eee 09 a
+uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -38,7 +38,7 @@ Conteúdo:
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
    <td colname="col2"> <p>Entre os diferentes parceiros de dados e o <span class="keyword">Audience Manager</span> ao usar o URL de sincronização de ID personalizado. </p> <p> 
      <draft-comment>
-       Entre parceiros de dados diferentes e Audience Manager. Por exemplo, o parceiro x usaria essa opção para sincronizar uma ID de usuário com o parceiro y e enviá-la para o Audience Manager. 
+       Entre diferentes parceiros de dados e o Audience Manager. Por exemplo, o parceiro x usaria essa opção para sincronizar uma ID de usuário com o parceiro y e enviá-la para o Audience Manager. 
      </draft-comment> </p> </td> 
   </tr> 
   <tr valign="top"> 
@@ -91,9 +91,9 @@ A tabela a seguir lista e define as propriedades disponíveis para ambas as fun�
 
 Ambas as funções aceitam as seguintes macros:
 
-* ** `%TIMESTAMP%`: ** Gera um carimbo de data e hora (em milissegundos). Usado para eliminação de cache.
-* ** `%DID%`: **insere a ID do Audience Manager para o usuário.
-* ** `%HTTP_PROTO%`: ** Define o protocolo de comunicação ( `http` ou `https`).
+* `%TIMESTAMP%`: gera um carimbo de data e hora (em milissegundos). Usado para eliminação de cache.
+* `%DID%`: insere a ID do Audience Manager para o usuário.
+* `%HTTP_PROTO%`: define o protocolo de comunicação (`http` ou `https`).
 
 ## Código e saída de exemplo {#section-0115615c37584a19a2ab11e917c4e7e9}
 
@@ -111,14 +111,14 @@ Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrári
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
- var visitor = Visitor. getinstance ("MARKETING-CLOUD-ORG-ID-HERE", {});
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    // &amp; amp; nbsp; Acionador e amp; nbsp; url &amp; amp; nbsp; com &amp; amp; nbsp; macros e amp; nbsp; replacedvisitor
-    . idsyncbyurl ({
-    &amp; amp; nbsp; dpid: &amp; amp; nbsp; &#39; 24 &#39;, &amp; amp; nbsp; // &amp; amp; nbsp; must &amp; amp; nbsp; be &amp; amp; nbsp; a &amp; amp; nbsp; string
-    &amp; amp; nbsp; url: &amp; amp; nbsp; &#39;//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D&#39;,&amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp
-    ;
-    }); &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
+    //&amp;nbsp;Fires&amp;nbsp;url&amp;nbsp;with&amp;nbsp;macros&amp;nbsp;replaced
+    visitor.idSyncByURL({
+    &amp;nbsp;dpid:&amp;nbsp;'24',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;url:&amp;nbsp;'//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D',
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
   </tr> 
  </tbody> 
@@ -136,20 +136,20 @@ Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrári
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
- var visitor = Visitor. getinstance ("MARKETING-CLOUD-ORG-ID-HERE", {});
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    // &amp; amp; nbsp; Acionador e amp; nbsp; &#39; http:/https:&#39;&amp;nbsp;+&amp;nbsp;&#39;//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;&#39;visitor.idSyncByDataSource(
-    {
-    &amp; amp; nbsp; dpid: &amp; amp; nbsp; &#39; 24 &#39;, &amp; amp; nbsp; // &amp; amp; nbsp; must &amp; amp; nbsp; be &amp; amp; nbsp; a &amp; amp; nbsp; string
-    &amp; amp; nbsp; dpuuid: &amp; amp; nbsp; &#39; 98765 &#39;, &amp; amp; nbsp; // &amp; amp; nbsp; must &amp; amp; nbsp; be &amp; amp; nbsp; a &amp; amp; nbsp; string
-    &amp; amp; nbsp; Minutestolive: &amp; amp; nbsp; 20160 &amp; amp; nbsp; // &amp; amp; nbsp; opcional, &amp; amp; nbsp; padrões e amp; nbsp; para &amp; amp; nbsp; 20160 &amp; amp; nbsp; minutos e amp; nbsp; (14 &amp; amp; nbsp; dias) e amp; nbsp;
-    }); &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
+    //&amp;nbsp;Fires&amp;nbsp;'http:/https:'&amp;nbsp;+&amp;nbsp;'//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;'
+    visitor.idSyncByDataSource({
+    &amp;nbsp;dpid:&amp;nbsp;'24',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;dpuuid:&amp;nbsp;'98765',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
 
