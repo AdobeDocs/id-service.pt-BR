@@ -4,9 +4,9 @@ keywords: Serviço de ID
 seo-description: Essas configurações permitem que diferentes instâncias do código do serviço de ID que foram implementados em um iFrame e na página principal comuniquem-se entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Elas estão disponíveis no código da versão 2.2 ou posterior de VisitorAPI.js.
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
-uuid: 6 b 66 a 4 d 0-fea 2-4 d 98-963 e -0 c 4 f 4 ab 1 efb 6
+uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -38,11 +38,11 @@ Os elementos de configuração são necessários ao usar esse código.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Whitelistparentdomain: " <span class="varname"> Nome de domínio da página pai </span>" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: " <span class="varname"> Nome do domínio da página principal </span>" </span> </p> </td> 
    <td colname="col2"> <p>Aceita um único nome de domínio passado como uma sequência de caracteres. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Whitelistiframedomains: [ <span class="varname"> «domínio iframe», «domínio iframe», «domínio iframe» </span>] </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "Domínio do iFrame","Domínio do iFrame", "Domínio do iFrame" </span>] </span> </p> </td> 
    <td colname="col2"> <p>Aceita um ou mais nomes de domínio do iFrame passados como um array. </p> </td> 
   </tr> 
  </tbody> 
@@ -50,7 +50,7 @@ Os elementos de configuração são necessários ao usar esse código.
 
 ## Amostra de código {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-O código configurado [!DNL ID service] pode ser semelhante a esse exemplo.
+O código do [!UICONTROL serviço de ID] configurado é semelhante ao deste exemplo.
 
 ```js
 //Instantiate Visitor 
@@ -73,7 +73,7 @@ Essas configurações ajudam a solucionar o problema de configuração de um coo
 
 >[!TIP]
 >
->Você também pode implementar essas configurações quando estiver disponibilizando vídeo em um iframe com [o Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). A Pulsação de vídeo exige que a ID do serviço de ID (a MID) funcione adequadamente.
+>You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). A Pulsação de vídeo exige que a ID do serviço de ID (a MID) funcione adequadamente.
 
 **Caso de uso 1: o navegador bloqueia os cookies de terceiros e o serviço de ID é implementado no iFrame e na página principal**
 
