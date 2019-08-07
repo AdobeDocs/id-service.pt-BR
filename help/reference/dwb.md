@@ -6,7 +6,7 @@ seo-title: Análise de big data e serviço de identidade da Experience Cloud
 title: Análise de big data e serviço de identidade da Experience Cloud
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -19,7 +19,7 @@ Para atualizar o [Data Workbench](https://marketing.adobe.com/resources/help/en_
 
 1. Localize o arquivo de configuração atual do [Grupo decodificador.](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)
 
-   Normalmente, o [!DNL Decoder Group] está localizado em um [!DNL Profile Manager] neste caminho: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copie o formato do decodificador atual do arquivo de configuração.
+   Typically, the [!DNL Decoder Group] is located in a [!UICONTROL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copie o formato do decodificador atual do arquivo de configuração.
 1. Cole o formato do decodificador abaixo do original.
 1. Abra o formato do decodificador e adicione essas novas posições de campo ao final da lista:
 
