@@ -6,7 +6,7 @@ seo-title: Implementar o serviço de identidade da Experience Cloud para o Targe
 title: Implementar o serviço de identidade da Experience Cloud para o Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -25,7 +25,7 @@ Essas instruções para clientes do Target que desejam usar o Serviço de identi
 
 ## Etapa 1: obter o código do serviço de ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-O [!DNL ID Service] exige a `VisitorAPI.js` biblioteca de códigos. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para receber o código.
+O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para receber o código.
 
 ## Etapa 2: adicionar a função Visitor.getInstance ao código do serviço de ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
