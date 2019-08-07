@@ -1,12 +1,12 @@
 ---
 description: O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
 keywords: Serviço de ID
-seo-description: O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
+seo-description: O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
 seo-title: Definir Analytics e Experience Cloud IDs
 title: Definir Analytics e Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
