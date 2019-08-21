@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Métodos públicos que permitem a você interagir com o serviço de ID.
 seo-title: Métodos
 title: Métodos
-uuid: 184 d 0 a 62-0 c 8 d -481 b -9 afe-b 7 a 67 bdafdce
-translation-type: tm+mt
+uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ Métodos públicos que permitem a você interagir com o serviço de ID.
 
 >[!NOTE]
 >
->As Bibliotecas Javascript da *Experience Cloud ID* foram movidas recentemente. A última versão das bibliotecas JS da ECID pode ser encontrada em [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>As *bibliotecas JavaScript da Experience Cloud ID* foram movidas recentemente. A última versão das bibliotecas JS da ECID pode ser encontrada em [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Artigos relacionados:
 
