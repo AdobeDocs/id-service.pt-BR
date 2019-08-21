@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Essa variável permite que você substitua o intervalo padrão do cookie AMCV.
 seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd 945 db 3-429 a -4625-ac 3 f -69 ac 259377 a 3
-translation-type: tm+mt
+uuid: cd945db3-429a-4625-ac3f-69ac259377a3
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Essa variável permite que você substitua o intervalo padrão do cookie AMCV.
 
-Por padrão, [!DNL Experience Cloud] os cookies do serviço de ID expiram após 24 meses. Defina o intervalo em segundos.
+Por padrão, os cookies do serviço da [!DNL Experience Cloud] ID expiram após 24 meses. Defina o intervalo em segundos.
 
 **Sintaxe:**` cookieLifetime: *`duração em segundos`*`
 
