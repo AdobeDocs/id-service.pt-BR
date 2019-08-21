@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Este método auxiliar anexa a ID de dados suplementares (SDID) como um parâmetro de sequência de caracteres de consulta a um URL de redirecionamento. Isso é útil ao usar A4T e é necessário manter a SDID de uma página para outra, além de unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
-uuid: f 3504 d 82-8 da 3-4971-818 b -3 df 57 df 4 ec 2 d
-translation-type: tm+mt
+uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -26,7 +26,7 @@ Conteúdo:
 
 ## Sintaxe e amostra de código {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Sintaxe:**` appendSupplementalDataIDTo( *`URLSDID`*, *``*)`
+**Sintaxe:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Amostra de código**
 
@@ -50,9 +50,9 @@ Como mostrado abaixo, o redirecionamento do URL contém a SDID do visitante, a I
 
 ## Alterar o tempo limite da SDID com sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-A configuração [sdidparamexpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) permite alterar o intervalo de expiração SDID padrão ao passar essa ID de uma página para outra usando a função `appendSupplementalDataIDTo` de ajuda. Por padrão, o código do serviço de ID na página de destino tem 30 segundos para obter a SDID do URL enviada pela página de referência. Se o código do serviço de ID na página de destino não conseguir recuperar a SDID em menos de 30, é necessário solicitar uma nova SDID. Essa funcionalidade serve principalmente para clientes A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo limite.
+A configuração de [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) permite que você substitua o intervalo de expiração da ID de dados suplementares (SDID) padrão ao passá-la de uma página para outra usando a função auxiliar `appendSupplementalDataIDTo`. Por padrão, o código do serviço de ID na página de destino tem 30 segundos para obter a SDID do URL enviada pela página de referência. Se o código do serviço de ID na página de destino não conseguir recuperar a SDID em menos de 30, é necessário solicitar uma nova SDID. Essa funcionalidade serve principalmente para clientes A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo limite.
 
-Se for necessário alterar o tempo limite da SDID padrão, adicione `sdidParamExpiry` à função `Visitor.getInstance` com a seguinte sintaxe:
+Se for necessário alterar o tempo limite da SDID padrão, adicione `sdidParamExpiry` à `Visitor.getInstance` função com a seguinte sintaxe:
 
 **Sintaxe:**` sdidParamExpiry: *`tempo em segundos`*`
 
