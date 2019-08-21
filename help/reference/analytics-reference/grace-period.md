@@ -4,14 +4,14 @@ keywords: Serviço de ID
 seo-description: Caso tenha vários arquivos JavaScript que enviam dados para o mesmo conjunto de relatórios, ou se estiver usando outras tecnologias no seu site, como a medição de vídeo Flash, recomendamos configurar um período de carência.
 seo-title: Período de carência do serviço de ID
 title: Período de carência do serviço de ID
-uuid: 10 a 7 db 7 d-de 32-4379-914 f-edaf 929 efa 32
-translation-type: tm+mt
+uuid: 10a7db7d-de32-4379-914f-edaf929efa32
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
 
 
-# Período de carência do serviço de ID{#the-id-service-grace-period} 
+# Período de carência do serviço de ID{#the-id-service-grace-period}
 
 Caso tenha vários arquivos JavaScript que enviam dados para o mesmo conjunto de relatórios, ou se estiver usando outras tecnologias no seu site, como a medição de vídeo Flash, recomendamos configurar um período de carência.
 
@@ -23,14 +23,14 @@ A implantação do serviço da [!DNL Experience Cloud] ID nos sites que usam div
 
 >[!NOTE]
 >
->O suporte do período de carência requer a versão 1.3 ou posterior do [!DNL Experience Cloud] serviço de ID.
+>O suporte do período de carência exige a versão 1.3 ou posterior do serviço de ID [!DNL Experience Cloud].
 
 ## Eu preciso de um período de carência? {#section-fd34c7ff697348a39f49258b7d39eb42}
 
-Se você possuir um único arquivo JavaScript do Analytics e não estiver usando outras bibliotecas do AppMeasurement, não precisará de um período de carência. Você pode efetuar a atualização no único arquivo JavaScript, e os novos visitantes serão continuamente identificados usando a Marketing Cloud ID durante a visita.
+Se você possuir um único arquivo JavaScript do Analytics e não estiver usando outras bibliotecas do AppMeasurement, não precisará de um período de carência. Você pode efetuar a atualização no único arquivo JavaScript, e os novos visitantes serão continuamente identificados usando a Experience Cloud ID durante a visita.
 
 Se você possuir vários arquivos JavaScript que enviam dados para o *mesmo conjunto de relatórios*, ou se estiver usando outras tecnologias no seu site como a medição de vídeo Flash, recomendamos configurar um período de carência.
 
-## Como ativar o período de carência? {#section-512d5cd8570e483cbdd8b04457a16ced}
+## Como ativar o período de carência?  {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Entre em contato [com o Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html).
