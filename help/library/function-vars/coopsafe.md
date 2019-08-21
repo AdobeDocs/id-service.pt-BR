@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Uma configuração booleana opcional que determina se o serviço de ID envia (ou não) dados ao Adobe Experience Cloud Device Co-op.
 seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4 dfa 1 f 35-0 a 88-48 d 1-9484-d 88 cb 53 ad 461
-translation-type: tm+mt
+uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -27,10 +27,10 @@ Conteúdo:
 
 ## Exigências {#section-4883eda6beb8437182bcc82bb58fae41}
 
-Para usar `isCoopSafe` você deve:
+Para usar o `isCoopSafe` é necessário:
 
 * Usar o código do serviço de ID versão 2.4 ou posterior.
-* Participar do [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/). Os membros em potencial também devem consultar essa documentação para determinar se `isCoopSafe` responde possíveis dúvidas sobre como os dados são usados para criar o gráfico do dispositivo.
+* Participe da [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/pt_BR/mcdc/). Os membros em potencial também devem consultar essa documentação para determinar se `isCoopSafe` responde possíveis dúvidas sobre como os dados são usados para criar o gráfico do dispositivo.
 
 * Trabalhe com seu consultor da [!DNL Adobe] para definir um sinalizador de lista de permissões ou lista de bloqueios na conta do Device Co-op. Não há um caminho de autoatendimento para habilitar esses sinalizadores.
 
@@ -137,7 +137,7 @@ Essas APIs permitem que você substitua o status de `isCoopSafe`. Elas são nece
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 -->
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
 
