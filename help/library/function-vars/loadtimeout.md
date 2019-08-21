@@ -4,8 +4,8 @@ keywords: Serviço de ID
 seo-description: Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar por uma resposta do serviço de ID.
 seo-title: loadTimeout
 title: loadTimeout
-uuid: f 627 e 044-bd 73-49 a 4-8 a 90-6 d 19 aa 566751
-translation-type: tm+mt
+uuid: f627e044-bd73-49a4-8a90-6d19aa566751
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -21,7 +21,7 @@ O valor padrão é de 30.000 milissegundos (30 segundos). Recomendamos que você
 
 >[!NOTE]
 >
->As chamadas para o serviço de ID são assíncronas em relação a outros códigos não pertencentes à Adobe na página. Como resultado, o aumento ou a diminuição do intervalo de tempo limite não altera a taxa na qual a página processa o conteúdo. No entanto, longos intervalos de limite de tempo podem afetar o tempo de carregamento conforme a medição feita por ferramentas de monitoramento de rede comuns, mas o tempo de processamento não é afetado.
+>As chamadas para o serviço de ID são assíncronas em relação ao código que não seja da Adobe na página. Como resultado, o aumento ou a diminuição do intervalo de tempo limite não altera a taxa na qual a página processa o conteúdo. No entanto, longos intervalos de limite de tempo podem afetar o tempo de carregamento conforme a medição feita por ferramentas de monitoramento de rede comuns, mas o tempo de processamento não é afetado.
 
 **Amostra de código**
 
