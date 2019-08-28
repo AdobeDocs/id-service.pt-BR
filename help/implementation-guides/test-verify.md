@@ -6,7 +6,7 @@ seo-title: Testar e verificar o serviço de identidade da Experience Cloud
 title: Testar e verificar o serviço de identidade da Experience Cloud
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: ef3169f8928f337d4f2d17922b44a7421d225e51
 
 ---
 
@@ -29,7 +29,7 @@ Como alternativa, você pode testar o serviço de ID em uma sessão de navegador
 
 O [depurador da Adobe](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) e o [proxy HTTP Charles](https://www.charlesproxy.com/) podem ajudar você a determinar se o serviço de ID foi configurado adequadamente para funcionar com o Analytics. As informações nesta seção têm por base os resultados retornados pelo depurador da Adobe e o Charles. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
 
-## Teste com o Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
+## Teste com o Adobe Debugger  {#section-861365abc24b498e925b3837ea81d469}
 
 A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
 
@@ -79,19 +79,19 @@ Consulte esta seção para obter informações sobre o que e onde procurar, ao u
 
 **Solicitações de serviço de ID com sucesso no Charles**
 
-O código do serviço de ID está funcionando adequadamente quando a função `Visitor.getInstance` efetua uma chamada de JavaScript para `dpm.demdex.net`. Uma solicitação bem sucedida inclui a [ID da organização](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). A ID da empresa é passada como um par de valores chave que utiliza a sintaxe: `d_orgid= *`ID da organização`*`. Look for the `dpm.demdex.net` and the JavaScript calls under the [!UICONTROLStructure] tab. Look for your Organization ID under the [!UICONTROLRequest] tab.
+O código do serviço de ID está funcionando adequadamente quando a função `Visitor.getInstance` efetua uma chamada de JavaScript para `dpm.demdex.net`. Uma solicitação bem sucedida inclui a [ID da organização](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). A ID da empresa é passada como um par de valores chave que utiliza a sintaxe: `d_orgid= *`ID da organização`*`. Procure `dpm.demdex.net` e as chamadas de JavaScript na guia [!UICONTROL Estrutura]. Procure pela ID da organização na guia [!UICONTROL Solicitação].
 
 ![](assets/charles_request.png)
 
 **Solicitações do serviço de ID com sucesso no Charles**
 
-Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) retornar uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Look for the MID in the [!UICONTROLResponse] tab as shown below.
+Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) retornar uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Procure a MID na guia [!UICONTROL Resposta], como mostrado abaixo.
 
 ![](assets/charles_response_success.png)
 
 **Falha de resposta do serviço de ID no Charles**
 
-A conta não foi provisionada adequadamente se a MID estiver faltando na resposta do DCS. An unsuccessful response returns an error code and message in the [!UICONTROLResponse] tab as shown below. Entre em contato com o atendimento ao cliente se você visualizar essa mensagem de erro na resposta do DCS.
+A conta não foi provisionada adequadamente se a MID estiver faltando na resposta do DCS. Uma resposta sem sucesso retorna um código de erro e a mensagem na guia [!UICONTROL Resposta], como mostrado abaixo. Entre em contato com o atendimento ao cliente se você visualizar essa mensagem de erro na resposta do DCS.
 
 ![](assets/charles_response_unsuccessful.png)
 
