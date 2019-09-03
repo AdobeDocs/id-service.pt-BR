@@ -5,13 +5,13 @@ seo-description: O serviço de ID usa a ID da empresa, o cookie AMCV da Experien
 seo-title: Cookies e o serviço de identidade da Experience Cloud
 title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookies e o serviço de identidade da Experience Cloud{#cookies-and-the-experience-cloud-id-service}
 
 O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 
@@ -25,7 +25,7 @@ O serviço de ID depende dos cookies AMCV, AMCVS e demdex para funcionar correta
 * Continuar com essa ID exclusiva para que o serviço de ID possa coletar e compartilhar dados com outras soluções da Experience Cloud.
 * Rastrear usuários nos seus domínios. No entanto, isso exige que você seja o proprietário desses domínios e que o código do serviço de ID seja implantado neles.
 
-### O que os ookies do serviço de ID não podem fazer
+### O que os cookies do serviço de identidade não podem fazer
 
 * Armazenar, transmitir ou executar vírus de computador.
 * Acessar ou armazenar informações pessoais identificáveis (PII), como seu endereço de email.
@@ -114,7 +114,7 @@ A tabela a seguir lista e define alguns atributos importantes do cookie demdex.
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Para obter informações relacionadas, consulte [Compreender as chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Gerar a Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ O serviço de ID começa a criar uma MID enquanto a página carrega. Durante ess
 
 ## Próximas etapas {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consulte [Como o serviço de identidade da Experience Cloud solicita e define IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
