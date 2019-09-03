@@ -5,7 +5,7 @@ seo-description: Notas de versão e atualizações de 2015.
 seo-title: Notas de versão de 2015
 title: Notas de versão de 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ Notas de versão e atualizações de 2015.
 
 Novembro de 2015
 
-A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
+A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. Consulte [Suporte ao COPPA no serviço de identidade da Experience Cloud](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
 
 ## Versão 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -45,7 +45,7 @@ Agosto de 2015
 As revisões de documentação dessa versão incluem:
 
 * [Métodos de API e Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganização de conteúdo e texto. Na maior parte dos casos, cada método recebe sua própria página.
-* [Requisitos para o serviço de identidade da Experience Cloud](../reference/requirements.md): Conteúdo revisado e texto reorganizado.
+* [Requisitos do serviço de identidade da Experience Cloud](../reference/requirements.md): Conteúdo revisado e texto reorganizado.
 
 ## Versão 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
