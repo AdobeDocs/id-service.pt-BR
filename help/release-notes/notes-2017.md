@@ -1,11 +1,11 @@
 ---
-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Cloud para 2017.
+description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Cloud para 2017.
+seo-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 seo-title: Notas de versão de 2017
 title: Notas de versão de 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Notas de versão de 2017 {#release-notes}
 
-Lançamentos, atualizações ou alterações de recursos no Serviço de identidade da Experience Cloud para 2017.
+Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 
-Essas alterações também estão contempladas nas [notas de versão da Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Para consultar as notas de versão antigas do serviço de ID, consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou os links no fim desta página.
+Essas alterações também são capturadas nas notas de versão da [Experience Cloud](https://marketing.adobe.com/resources/help/pt_BR/whatsnew/). Para obter as notas de versão mais antigas do serviço de ID, consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/pt_BR/whatsnew/?f=c_legacy_releases.html) ou os links na parte inferior desta página.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional <span class="codeph">visitor.FIELDS</span>. See <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional <span class="codeph">visitor.FIELDS</span>. Consulte <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correção de um erro relacionado ao Chrome que fazia com que o serviço de ID mostrasse um erro ao clicar no botão Voltar no navegador.
 * O serviço de ID agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
-* Adicionada nova documentação, [Políticas de segurança de conteúdo e serviço](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)de identidade da Experience Cloud, que explica como fazer chamadas de lista de permissões para domínios da Adobe usados pelo serviço de ID.
+* Adicionada nova documentação, [Políticas de segurança de conteúdo e Serviço de identidade da Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como colocar chamadas na lista de permissões para domínios da Adobe usados pelo serviço de ID.
 
 ## Versão 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -118,7 +118,7 @@ Data de lançamento: de junho de 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain e whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Essas configurações permitem que diferentes instâncias do código do serviço de ID que foram implementados em um iFrame e na página principal comuniquem-se entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle.  </p> </td> 
+   <td colname="col2"> <p>Essas configurações permitem que diferentes instâncias do código do serviço de ID que foram implementados em um iFrame e na página principal comuniquem-se entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -192,7 +192,7 @@ Corrigida uma falha que causava o serviço de ID a fazer chamadas redundantes pa
 
 **Nova documentação**
 
-[Uso da busca DNS prévia com diferentes soluções e serviços da Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[Uso da pré-busca DNS com Diferentes soluções e serviços da Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/pt_BR/mcloud/dns-prefetch.html)
 
 ## Versão 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
