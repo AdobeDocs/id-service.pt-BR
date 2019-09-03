@@ -5,13 +5,13 @@ seo-description: Essa implementação permite que os clientes usem o serviço de
 seo-title: Integração direta com o serviço de identidade da Experience Cloud
 title: Integração direta com o serviço de identidade da Experience Cloud
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Integração direta com o serviço de identidade da Experience Cloud {#direct-integration-with-the-experience-cloud-id-service}
 
 Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou o SDK. Isso inclui dispositivos como consoles de jogos, smart TVs ou outros dispositivos que se conectam à Internet. Consulte esta seção para saber mais sobre a sintaxe, os exemplos de código e as definições.
 
@@ -21,7 +21,7 @@ Os dispositivos que não podem usar VisitorAPI.js ou as bibliotecas de código d
 
 ![](assets/directSyntax.png)
 
-Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API DCS ](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 O serviço de ID oferece suporte às chamadas HTTP e HTTPS. Use HTTPS para passar dados de uma página segura.
 
@@ -62,11 +62,11 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resp
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>A ID de visitante da Experience Cloud. Consulte <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies e Serviço de identidade da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>A ID de visitante da Experience Cloud. Consulte <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies e o serviço de identidade da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda e encontrar essa ID, consulte <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos para o serviço de identidade da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda e encontrar essa ID, consulte  <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
