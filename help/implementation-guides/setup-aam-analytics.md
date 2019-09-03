@@ -1,19 +1,19 @@
 ---
-description: Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+description: Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 keywords: Serviço de ID
-seo-description: Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
-seo-title: Implementação do serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
-title: Implementação do serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
+seo-description: Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+seo-title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
+title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Essas instruções para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam o Gerenciamento dinâmico de tags (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
+Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). Entretanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código.
 
 >[!IMPORTANT]
 >
@@ -26,13 +26,13 @@ Essas instruções para clientes do Analytics e do Audience Manager que desejam 
 
 ## Etapa 1: plano de encaminhamento do lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
 
-Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do servidor permite a remoção do DIL (código de coleta de dados do Audience Manager) e a substituição pelo [Módulo de gerenciamento de público-alvo](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Consulte a [documentação de encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html) para obter mais informações.
+Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Consulte a [documentação de encaminhamento do lado do servidor](https://marketing.adobe.com/resources/help/pt_BR/analytics/audiences/ssf.html) para obter mais informações.
 
 A migração para o encaminhamento do lado do servidor requer planejamento e coordenação. Esse processo envolve mudanças externas do código do site e das etapas internas que a Adobe deve executar para provisionar sua conta. Na verdade, muitos desses procedimentos de migração devem ocorrer simultaneamente e ser lançados juntos. O caminho de implementação deve seguir esta sequência de eventos:
 
 1. Trabalhe com os contatos do [!DNL Analytics] e do [!DNL Audience Manager] a fim de planejar a migração do serviço de ID e do encaminhamento do lado do servidor. A seleção do servidor de rastreamento é uma parte importante do plano.
 
-1. Preencha o formulário no [site de integrações e provisionamento](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) para começar.
+1. Preencha o formulário no [local de integrações e provisionamento](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) para começar.
 
 1. Implemente o serviço de ID e o [!DNL Audience Management Module] ao mesmo tempo. Para funcionar adequadamente, o [!DNL Audience Management Module] (encaminhamento do lado do servidor) e o serviço de ID devem ser lançados para o mesmo conjunto de páginas e ao mesmo tempo.
 
@@ -133,19 +133,19 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 * URL do servidor da Experience Cloud = URL do servidor de rastreamento
 * URL seguro do servidor da Experience Cloud = URL seguro do servidor de rastreamento
 
-Se você não tiver certeza sobre como encontrar o servidor de rastreamento, consulte as [Perguntas frequentes](../faq-intro/faq.md) e [Preenchimento correto das variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Caso não tenha certeza de como encontrar o servidor de rastreamento, consulte as [Perguntas frequentes](../faq-intro/faq.md) e [Preencher corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
 
 ## Etapa 6: atualizar o arquivo AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
 Essa etapa requer o [!UICONTROL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
 
-Adicione a `Visitor.getInstance` função mostrada abaixo ao `AppMeasurement.js` arquivo. Insira-o na seção que contém configurações, como `linkInternalFilters`, `charSet`, `trackDownloads`, etc. :
+Adicione a `Visitor.getInstance` função mostrada abaixo ao `AppMeasurement.js` arquivo. Insira-o na seção que contém configurações, como `linkInternalFilters`, `charSet`, `trackDownloads`, etc.:
 
 `s.visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");`
 
 >[!IMPORTANT]
 >
->Nesse momento, é necessário remover o código [!DNL Audience Manager] DIL do e substituí-lo pelo Módulo de gerenciamento de público-alvo. Consulte [Implementar o encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) para obter instruções.
+>Nesse momento, é necessário remover o código [!DNL Audience Manager] DIL do e substituí-lo pelo Módulo de gerenciamento de público-alvo. Consulte [Implementar o encaminhamento do lado do servidor](https://marketing.adobe.com/resources/help/pt_BR/reference/ssf.html) para obter instruções.
 
 ***(Opcional, mas recomendado)*Criar um prop personalizado****
 
@@ -161,11 +161,11 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 Insira o ` [!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página. Ao anexar o `VisitorAPI.js` arquivo à página:
 
 * Coloque-o no início da `<head>` seção para que apareça antes de outras tags de solução.
-* É necessário executar antes do AppMeasurement e do código de outras [!DNL Experience Cloud] soluções da.
+* É necessário executar antes do AppMeasurement e do código de outras soluções da[!DNL Experience Cloud].
 
 ## Etapa 8: (opcional) configurar um período de carência {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
+Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](../reference/analytics-reference/grace-period.md) temporário. Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -179,7 +179,7 @@ O período de carência será cancelado depois da implantação do serviço de I
 
 A descontinuação do período de carência após sua implementação pode capturar a MID em vez de ler o cookie s_vi.
 
-See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+Consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md).
 
 **Integração de dados da sequência de cliques**
 
@@ -187,7 +187,7 @@ See also, [Cookies and the Experience Cloud Identity Service](../introduction/co
 
 Faça a descontinuação do período de carência se o processo de ingestão de dados conseguir usar as colunas `post_visid_high` e `post_visid_low`.
 
-Consulte também, [Referência da coluna de dados da sequência de cliques](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
+Consulte também [Referência da coluna de dados da sequência de cliques](https://marketing.adobe.com/resources/help/pt_BR/sc/clickstream/datafeeds_reference.html).
 
 ## Etapa 9: testar e implantar o código de serviço de ID {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -198,10 +198,10 @@ Consulte também, [Referência da coluna de dados da sequência de cliques](http
 Para testar a implementação do serviço de ID, verifique:
 
 * [Cookie AMCV](../introduction/cookies.md) no domínio em que as páginas estão hospedadas.
-* O valor da MID na solicitação de imagem do Analytics com o [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
-* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+* Valor da MID na solicitação de imagem do Analytics com o [Adobe Debugger](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/debugger.html).
+* Consulte [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md).
 
-Para verificar o encaminhamento do servidor, consulte [Como verificar a implementação de encaminhamento do servidor](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html).
+Para verificar o encaminhamento do lado do servidor, consulte [Como verificar a implementação de encaminhamento do lado do servidor](https://marketing.adobe.com/resources/help/pt_BR/reference/ssf-verify.html).
 
 **Implantação**
 
