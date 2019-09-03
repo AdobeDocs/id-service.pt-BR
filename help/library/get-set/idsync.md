@@ -5,7 +5,7 @@ seo-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID
 seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
