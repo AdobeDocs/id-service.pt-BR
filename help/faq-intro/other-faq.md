@@ -5,7 +5,7 @@ seo-description: Perguntas frequentes sobre recursos, funcionalidades e problema
 seo-title: Perguntas frequentes de outras soluções da Experience Cloud
 title: Perguntas frequentes de outras soluções da Experience Cloud
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -25,7 +25,7 @@ Consulte [Implementação padrão com DTM](../implementation-guides/standard.md#
 
 ## Analytics e Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**O histórico visitante de um usuário será exportado de[!DNL Adobe Analytics]para[!DNL Audience Manager]depois de implementar o Serviço de identidade da Experience Cloud?**
+**O histórico de visitas de um usuário poderá ser exportado do[!DNL Adobe Analytics]para o[!DNL Audience Manager]depois que eu implementar o serviço de identidade da Experience Cloud?**
 
 Existem duas opções aqui:
 
