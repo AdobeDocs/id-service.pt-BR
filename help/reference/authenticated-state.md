@@ -5,7 +5,7 @@ seo-description: É possível associar outras IDs do cliente e um status de aute
 seo-title: Estados de autenticação e IDs do cliente
 title: Estados de autenticação e IDs do cliente
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
@@ -17,13 +17,13 @@ source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ## Estados de autenticação {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer o upload dessas IDs como [atributos do cliente](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=attributes.html) para a [!DNL Experience Cloud] e acessar esses dados em soluções diferentes.
+O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer upload dessas IDs como [atributos do cliente](https://marketing.adobe.com/resources/help/pt_BR/mcloud/?f=attributes.html) para o [!DNL Experience Cloud] e acessar esses dados em diferentes soluções.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (sincronização de ID do cliente) é exigida pelos atributos do cliente e pela funcionalidade dos serviços principais. Sincronização das IDs do cliente em um método de identificação opcional do [!DNL Analytics]. O [!DNL Target] requer `Visitor.AuthState.AUTHENTICATED` para que os Atributos do cliente funcionem. Consulte [Principais serviços - Ativação das soluções](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services) para ver exemplos.
+>`setCustomerIDs` (sincronização de ID do cliente) é exigida pelos atributos do cliente e pela funcionalidade dos serviços principais. Sincronização das IDs do cliente em um método de identificação opcional do [!DNL Analytics]. O [!DNL Target] requer `Visitor.AuthState.AUTHENTICATED` para que os Atributos do cliente funcionem. Consulte [Serviços principais - Como ativar as soluções](https://marketing.adobe.com/resources/help/pt_BR/mcloud/?f=core_services) para obter exemplos.
 
-Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. O `AuthState` identifica versões de acordo com seu status de autenticação (por exemplo, logon, logout). Você define o estado da autenticação com um valor de status listado na tabela. O status de autenticação é retornado como um número inteiro.
+A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` inclui o objeto opcional `AuthState`. O `AuthState` identifica versões de acordo com seu status de autenticação (por exemplo, logon, logout). Você define o estado da autenticação com um valor de status listado na tabela. O status de autenticação é retornado como um número inteiro.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -52,7 +52,7 @@ Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` include
  </tbody> 
 </table>
 
-## Casos de uso para estados de autenticação {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Casos de uso para esados de autenticação {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 É possível atribuir estados autenticação aos usuários, dependendo das ações que eles realizam nas suas propriedades da web e se estão autenticados ou não. Confira alguns exemplos na tabela abaixo:
 
@@ -92,7 +92,7 @@ As IDs do cliente podem incluir combinações de IDs e estados de autenticação
 >* As IDs fazem distinção entre maiúsculas e minúsculas.
 >* Use somente valores não codificados para as IDs.
 >* Os estados de autenticação e as IDs de cliente não são armazenadas no cookie da ID do visitante. Eles devem ser definidos para cada página ou contexto de aplicativo.
->* Não inclua informações pessoais identificáveis (PII) nas IDs de cliente. Se você estiver usando PII para identificar um visitante (como um endereço de email), é recomendado armazenar uma versão com hash ou criptografada das informações. A biblioteca ECID fornece suporte para a hash identificadores de usuários. Consulte [SHA 256 Hashing Support para setcustomerids](/help/reference/hashing-support.md).
+>* Não inclua informações pessoais identificáveis (PII) nas IDs de cliente. Se você estiver usando PII para identificar um visitante (como um endereço de email), é recomendado armazenar uma versão com hash ou criptografada das informações. A biblioteca ECID fornece suporte para hash de identificadores de usuários. Consulte [Suporte a hash SHA 256 para setCustomerIDs](/help/reference/hashing-support.md).
 >
 
 
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação do cliente em nosso código de SDK para Android e iOS. Consulte as seguintes bibliotecas de códigos:
 
-* [Métodos do SDK para Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_marketing_cloud.html)
-* [Métodos do SDK para iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=marketing_cloud.html)
+* [Métodos do SDK para Android](https://marketing.adobe.com/resources/help/pt_BR/mobile/android/?f=c_marketing_cloud.html)
+* [iOS SDK methods](https://marketing.adobe.com/resources/help/pt_BR/mobile/ios/?f=marketing_cloud.html)
 
 ## Aviso aos clientes do Analytics e do Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Caso esteja passando IDs declaradas para o [!DNL Audience Manager], o objeto `userid` precisa corresponder ao código de integração associado à fonte de dados. Para obter mais informações, consulte a seção [!UICONTROL Serviço de ID do visitante] na documentação [Configuração da fusão do código de regras](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html).
+Caso esteja passando IDs declaradas para o [!DNL Audience Manager], o objeto `userid` precisa corresponder ao código de integração associado à fonte de dados. Para obter mais informações, consulte a seção [!UICONTROL Serviço de ID de visitante] na documentação [Configurar código regras de mesclagem](https://marketing.adobe.com/resources/help/pt_BR/aam/?f=merge-rules-configure-code.html).
