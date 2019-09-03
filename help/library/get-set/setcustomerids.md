@@ -5,7 +5,7 @@ seo-description: setCustomerIDs define um ou mais pares de valor chave que defin
 seo-title: setCustomerIDs
 title: setCustomerIDs
 uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
@@ -17,7 +17,7 @@ setCustomerIDs define um ou mais pares de valor chave que definem as IDs do clie
 
 **Sintaxe:** `visitor.setCustomerIDs()`
 
-É possível definir IDs múltiplas ou únicas conforme exemplificado na amostra de código abaixo. See [Customer IDs and Authentication States](../../reference/authenticated-state.md) for more information and examples.
+É possível definir IDs múltiplas ou únicas conforme exemplificado na amostra de código abaixo. Consulte [IDs do cliente e estados de autenticação](../../reference/authenticated-state.md) para obter mais informações e exemplos.
 
 ```js
 // Single ID with a single authentication state 
