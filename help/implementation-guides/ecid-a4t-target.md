@@ -5,7 +5,7 @@ seo-description: Essas instruções se aplicam aos clientes da A4T com implement
 seo-title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
 title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -36,7 +36,7 @@ O diagrama e as seções abaixo descrevem o que ocorre e o que é necessário co
 
 ## Etapa 1: solicitar página {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-A atividade do servidor começa quando um visitante faz uma solicitação HTTP para carregar uma página da Web. Durante essa etapa, o servidor recebe essa solicitação e verifica o [cookie AMCV](../introduction/cookies.md). O cookie AMCV contém a [!DNL Experience Cloud] ID (MID) do visitante.
+A atividade do lado do servidor começa quando um visitante faz uma solicitação HTTP para carregar uma página da Web. Durante essa etapa, o servidor recebe essa solicitação e verifica o [cookie AMCV](../introduction/cookies.md). O cookie AMCV contém a [!DNL Experience Cloud] ID (MID) do visitante.
 
 ## Etapa 2: gerar carga do serviço de ID {#section-c86531863db24bd9a5b761c1a2e0d964}
 
@@ -47,7 +47,7 @@ Em seguida, é necessário criar um *`payload request`* do lado do servidor para
 
 >[!NOTE]
 >
->Esse método solicita uma única mbox do [!DNL Target]. Se for necessário solicitar diversas mboxes em uma única chamada, consulte [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Esse método solicita uma única mbox do [!DNL Target]. Se precisar solicitar várias mboxes em uma única chamada, consulte [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 A solicitação de carga deve ser semelhante ao seguinte exemplo de código. No exemplo de código, a função `visitor.setCustomerIDs` é opcional. Consulte [IDs do cliente e Estados de autenticação](../reference/authenticated-state.md) para obter mais informações.
 
@@ -166,7 +166,7 @@ As configurações definidas devem ser:
 
 ![](assets/server_side_dtm.png)
 
-Consulte também a seção [Configurações do serviço de identidade da Experience Cloud para o DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Consulte também a seção [Configurações do serviço de identidade da Experience Cloud para DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Obter o estado do servidor sem o DTM**
 
@@ -199,5 +199,5 @@ Nesse ponto, o servidor da Web envia conteúdo da página para o navegador do vi
 
 >[!MORE_LIKE_THIS]
 >
->* [Pacote do serviço de ID do servidor do Gerenciador de pacote de nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Pacote de serviços de ID do lado do servidor no Gerenciador de pacotes de nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
