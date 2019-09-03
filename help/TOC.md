@@ -1,16 +1,16 @@
 ---
-cloud: platform-cloud
+cloud: nuvem de plataforma
 product: Serviço de ID
 audience: usuário final
 user-guide-title: Ajuda do serviço de identidade da Experience Cloud
-user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+user-guide-url: /content/help/pt-BR/id-service/using/home.html
+translation-type: ht
 source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
 
-# Experience Cloud Identity Service Help {#using}
+# Ajuda do serviço de identidade da Experience Cloud {#using}
 
 + [Ajuda do serviço de ID](home.md)
 + Visão geral {#intro}
@@ -18,25 +18,25 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
    + [Sobre o serviço de ID](introduction/about-id-service.md)
    + [Cookies e o serviço de ID](introduction/cookies.md)
    + [Como o serviço da ID solicita e define IDs](introduction/id-request.md)
-   + [Como entender a sincronização de e as taxas de correspondência ](introduction/match-rates.md)
+   + [Como entender a sincronização de e as taxas de correspondência](introduction/match-rates.md)
 + Guias de implementação {#implementation-guides}
    + [Guias de implementação](implementation-guides/implementation-guides.md)
    + [Métodos de implementação](implementation-guides/implementation-methods.md)
-   + [Implementar com o lançamento da Experience Platform](implementation-guides/ecid-implement-with-launch.md)
+   + [Implementar com Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementação com DTM](implementation-guides/standard.md)
    + [Implementação do Analytics](implementation-guides/setup-analytics.md)
-   + [Implementar para o Target](implementation-guides/setup-target.md)
+   + [Implementação do Target](implementation-guides/setup-target.md)
    + [Implementação do Analytics e do Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementação do Analytics, do Audience Manager e do Target](implementation-guides/setup-aam-analytics-target.md)
    + [Uso do Serviço de ID da com A4T e uma implementação do lado do servidor do Target](implementation-guides/ecid-a4t-target.md)
-   + [Integração direta com o serviço de ID](implementation-guides/direct-integration.md)
+   + [Integração direta com o serviço da ID](implementation-guides/direct-integration.md)
    + [Casos de uso da integração direta](implementation-guides/direct-integration-examples.md)
-   + [Testar e verificar o serviço de ID](implementation-guides/test-verify.md)
+   + [Teste e verifique o serviço da ID](implementation-guides/test-verify.md)
    + Documentação de Opt-in {#opt-in-service}
       + [Visão geral do serviço de Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configuração do serviço de Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Validação do serviço de Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configuração de aceitação com o Launch Platform Launch](implementation-guides/opt-in-service/launch.md)
+      + [Configuração de aceitação com a Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configuração do Opt-in com o DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Casos de uso de opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Referência de opt-in](implementation-guides/opt-in-service/api.md)
@@ -83,22 +83,22 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
       + [Visão geral da referência do Analytics](reference/analytics-reference/analytics-reference.md)
       + [Definir Analytics e Experience Cloud IDs](reference/analytics-reference/analytics-ids.md)
       + [Ordem de operação das IDs do Analytics](reference/analytics-reference/analytics-order-of-operations.md)
-      + [Pontos de decisão de migração do serviço de ID](reference/analytics-reference/migration-decisions.md)
-      + [Cenários de migração do serviço de ID](reference/analytics-reference/migration-scenarios.md)
-      + [Análises e solicitações de identidade](reference/analytics-reference/legacy-analytics.md)
+      + [Pontos de decisão da migração do serviço da ID](reference/analytics-reference/migration-decisions.md)
+      + [Cenários de migração do serviço da ID](reference/analytics-reference/migration-scenarios.md)
+      + [Solicitações do A e de identidade](reference/analytics-reference/legacy-analytics.md)
       + [Coletas de dados CNAMEs e Rastreamento entre domínios](reference/analytics-reference/cname.md)
       + [Implementação do lado do servidor combinada com JavaScript](reference/analytics-reference/server-side.md)
       + [Período de carência do serviço de ID](reference/analytics-reference/grace-period.md)
-   + [Políticas de segurança de conteúdo e o serviço de ID](reference/csp.md)
-   + [Suporte à lei COPPA no serviço de ID](reference/coppa.md)
-   + [Suporte CORS no serviço de ID](reference/cors.md)
+   + [Políticas de segurança de conteúdo e o serviço da ID](reference/csp.md)
+   + [Suporte para COPPA no serviço de ID](reference/coppa.md)
+   + [Suporte para CORS no serviço de ID](reference/cors.md)
    + [Estados de autenticação e IDs do cliente](reference/authenticated-state.md)
-   + [Métodos de biblioteca ECID em um world do Safari ITP](reference/ecid-library-methods.md)
+   + [Métodos de biblioteca da ECID em um mundo da ITP Safari](reference/ecid-library-methods.md)
    + [Obter IDs de região e usuário do cookie AMCV ou do serviço de ID](reference/regions.md)
    + [Requisitos para o serviço de ID](reference/requirements.md)
-   + [Video Heartbeat e o serviço de ID](reference/heartbeat.md)
-   + [Análise de big data e serviço de ID](reference/dwb.md)
-   + [SHA 256 Hashing Support for setcustomerids](reference/hashing-support.md)
+   + [Pulsação de vídeo e o serviço da ID](reference/heartbeat.md)
+   + [Data Workbench e o serviço da ID](reference/dwb.md)
+   + [Suporte a hash SHA 256 para setCustomerIDs](reference/hashing-support.md)
 + Perguntas frequentes {#faqs}
    + [Visão geral das perguntas frequentes](faq-intro/faq-intro.md)
    + [Perguntas frequentes do serviço de ID](faq-intro/faq.md)
