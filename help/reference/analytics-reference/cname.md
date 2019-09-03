@@ -5,7 +5,7 @@ seo-description: 'null'
 seo-title: Coletas de dados CNAMEs e Rastreamento entre domínios
 title: Coletas de dados CNAMEs e Rastreamento entre domínios
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ O cookie demdex.net possibilita que o serviço de ID de visitante ofereça o mes
 
 ## Coletas de dados CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-Quando o cookie do Analytics foi definido pelo servidor de coleta de dados, muitos clientes configuraram os registros do servidor de coleta de dados CNAME como parte de uma [implementação de cookie original](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) para evitar problemas com os navegadores que rejeitam cookies de terceiros. Esse processo configura o domínio do servidor da coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID de visitante seja definido como um cookie original.
+Quando o cookie do Analytics foi definido pelo servidor de coleta de dados, muitos clientes configuraram os registros do servidor de coleta de dados CNAME como parte de uma [implementação de cookie próprio](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) para evitar problemas com os navegadores que rejeitam cookies de terceiros. Esse processo configura o domínio do servidor da coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID de visitante seja definido como um cookie original.
 
 Como o serviço de ID de visitante define o cookie de visitante diretamente no domínio do site atual usando o JavaScript, esta configuração não é mais necessária para definir cookies originais.
 
@@ -45,6 +45,6 @@ Se você também está usando os mesmos servidores de coleta de dados em outros 
 
 Assim, seu domínio de coleta deve ser um domínio que as pessoas costumam visitar, para que um visitante seja identificado em domínios. Se não há um domínio *comum* para usar no domínio de coleta de dados, não há benefício entre domínios para manter um CNAME do domínio de coleta de dados. Se o site de entrada principal não for visitado primeiro, os visitantes serão identificados de maneiras diferentes no site secundário e no site principal.
 
-## Enable CNAME support with the Experience Cloud Identity Service {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Habilitar o suporte para CNAME com o serviço de identidade da Experience Cloud {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
 O suporte do servidor de coleta de dados CNAME é ativado ao configurar as `visitor.marketingCloudServerSecure` variáveis.
