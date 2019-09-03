@@ -1,11 +1,11 @@
 ---
-description: O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
+description: O serviço de identidade da Experience Cloud substitui os métodos de ID de visitante herdados do Analytics.
 keywords: Serviço de ID
-seo-description: O Serviço de identidade da plataforma Experience Platform substitui os métodos herdados de ID de visitante do Analytics.
+seo-description: O serviço de identidade da Experience Platform substitui os métodos de ID de visitante herdados do Analytics.
 seo-title: Definir Analytics e Experience Cloud IDs
 title: Definir Analytics e Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Definir Analytics e Experience Cloud IDs{#setting-analytics-and-experience-cloud-ids}
 
-O Serviço de identidade da Experience Cloud substitui os métodos herdados de ID de visitante do Analytics.
+O serviço de identidade da Experience Cloud substitui os métodos de ID de visitante herdados do Analytics.
 
 Após o serviço de ID ser implementado, este código é executado antes do AppMeasurement. O serviço de ID recupera as IDs da Experience Cloud e do Analytics para que esses valores estejam prontos quando o AppMeasurement for carregado.
 
@@ -31,7 +31,7 @@ Quando uma solicitação é enviada para o servidor de coleta de dados da Adobe,
 
 No entanto, alguns navegadores, como o Apple Safari, não aceitam cookies de terceiros. Esses cookies são definidos no navegador por domínios diferentes daqueles do site atual. Além disso, o Safari bloqueia cookies em domínios de terceiros se um visitante estiver naquele domínio pela primeira vez. Por exemplo, se você está em `mysite.com` e o servidor de coleta de dados for `mysite.omtrdc.net`, o cookie retornado no cabeçalho HTTP de `mysite.omtrdc.net` pode ser rejeitado pelo navegador.
 
-Para evitar isso, vários clientes implementaram registros CNAME para os servidores responsáveis pela coleta de dados. Essa pode ser uma parte eficiente de uma estratégia de [implementação de cookies próprios](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Se um registro CNAME estiver configurado para mapear um nome de host no domínio do cliente para o servidor de coleta de dados (por exemplo, mapear `metrics.mysite.com` para `mysite.omtrdc.net`), o cookie da [!DNL Experience Cloud] é armazenado, pois o domínio de coleta de dados agora corresponde ao domínio do site. Isso aumenta a probabilidade dos cookies do serviço de ID serem armazenados. No entanto, isso apresenta alguma sobrecarga porque é necessário configurar os registros CNAME e manter os certificados SSL dos servidores responsáveis pela coleta de dados.
+Para evitar isso, vários clientes implementaram registros CNAME para os servidores responsáveis pela coleta de dados. Esta pode ser uma parte eficiente de uma estratégia de [implementação de cookies próprios](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Se um registro CNAME estiver configurado para mapear um nome de host no domínio do cliente para o servidor de coleta de dados (por exemplo, mapear `metrics.mysite.com` para `mysite.omtrdc.net`), o cookie da [!DNL Experience Cloud] é armazenado, pois o domínio de coleta de dados agora corresponde ao domínio do site. Isso aumenta a probabilidade dos cookies do serviço de ID serem armazenados. No entanto, isso apresenta alguma sobrecarga porque é necessário configurar os registros CNAME e manter os certificados SSL dos servidores responsáveis pela coleta de dados.
 
 **JavaScript**
 
@@ -60,12 +60,12 @@ Depois de implantar o serviço de ID de visitante, há cinco maneiras de identif
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/pt_BR/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>s.visitorID está definido </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/pt_BR/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
    <td colname="col3"> <p>O visitante tinha um s_vi cookie antes de você implantar o serviço de ID da <span class="keyword">Experience Cloud</span> ou você tem um <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> período de carência</a> configurado. </p> </td> 
   </tr> 
   <tr> 
@@ -75,12 +75,12 @@ Depois de implantar o serviço de ID de visitante, há cinco maneiras de identif
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (cookie de recuperação de falhas no H.25.3 ou posterior, ou AppMeasurement para JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/pt_BR/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (cookie de recuperação de falhas no H.25.3 ou posterior, ou AppMeasurement para JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Um navegador não aceita cookies de terceiros e o servidor de rastreamento do Analytics está configurado como um servidor de rastreamento de terceiros. </p> <p> <p>Observação: o <span class="codeph">fid</span> é um identificador herdado e não é usado se você implementou o serviço de ID do site. Nesse caso, o <span class="codeph"> fid</span> não é necessário porque o <a href="../../introduction/cookies.md" format="dita" scope="local">cookie próprio AMCV</a> o torna obsoleto. Foi mantido para comportar o código herdado e por motivos históricos. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> Endereço IP, Agente do usuário, Endereço IP de gateway</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/pt_BR/sc/implement/?f=visid_fallback" format="http" scope="external"> Endereço IP, Agente do usuário, Endereço IP de gateway</a> </p> </td> 
    <td colname="col3"> <p>O navegador do visitante não aceita cookies. </p> </td> 
   </tr> 
  </tbody> 
