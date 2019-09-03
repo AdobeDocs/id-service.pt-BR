@@ -5,13 +5,13 @@ seo-description: Contém as configurações de exemplo do servidor e as etapas d
 seo-title: Cenários de migração do serviço de identidade da Experience Cloud
 title: Cenários de migração do serviço de identidade da Experience Cloud
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
+# Cenários de migração do serviço de identidade da Experience Cloud{#experience-cloud-id-service-migration-scenarios}
 
 Contém as configurações de exemplo do servidor e as etapas de migração necessárias.
 
