@@ -5,7 +5,7 @@ seo-description: Esses exemplos abordam dois casos de uso comuns relacionados à
 seo-title: Casos de uso da integração direta
 title: Casos de uso da integração direta
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -18,12 +18,12 @@ Esses exemplos abordam dois casos de uso comuns relacionados à integração dir
 >[!TIP]
 >
 >* Analise e entenda a [sintaxe de código e as variáveis](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) antes de mergulhar nos casos de uso.
->* For more information about the MID, see [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+>* Para obter mais informações sobre a MID, consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md).
 >
 
 
 
-## Use case 1: I have an Experience Cloud ID (MID) but want to pass my visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso de uso 1: tenho uma Experience Cloud ID (MID), mas quero passar minhas IDs de visitante e definir um estado de autenticação {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
