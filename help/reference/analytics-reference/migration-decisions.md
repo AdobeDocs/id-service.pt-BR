@@ -1,19 +1,19 @@
 ---
-description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento de visitantes em diversos domínios e os problemas em potencial se estiver coletando dados com métodos diferentes ou pelos arquivos JavaScript.
 keywords: Serviço de ID
-seo-description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
-seo-title: Pontos de decisão de migração do serviço de identidade da Experience Cloud
-title: Pontos de decisão de migração do serviço de identidade da Experience Cloud
+seo-description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento de visitantes em diversos domínios e os problemas em potencial se estiver coletando dados com métodos diferentes ou pelos arquivos JavaScript.
+seo-title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
+title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Pontos de decisão de migração do serviço de identidade da Experience Cloud
+# Pontos de decisão da migração do serviço de identidade da Experience Cloud
 
-Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento do visitante em vários domínios e problemas potenciais se você estiver coletando dados com métodos diferentes ou por meio de arquivos javascript.
+Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento de visitantes em diversos domínios e os problemas em potencial se estiver coletando dados com métodos diferentes ou pelos arquivos JavaScript.
 
 As respostas às perguntas desta seção ajudam a determinar as etapas de migração adicionais que devem ser realizadas.
 
@@ -60,10 +60,10 @@ Se você tem vários domínios que enviam dados para o *mesmo conjunto de relat�
    <td colname="col1"> <p>Domínio único </p> </td> 
    <td colname="col2"> <p>Trabalhar com um domínio único significa poder migrar de um CNAME de coleta de dados se não desejar mais gerenciá-lo. No entanto, não há necessidade de realizar essa alteração se o CNAME estiver funcionando. </p> <p>Caso remova o CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Certifique-se de que o novo servidor de rastreamento é <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatível com o RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Certifique-se de que o novo servidor de rastreamento é <a href="https://marketing.adobe.com/resources/help/pt_BR/whitepapers/rdc/" format="https" scope="external">compatível com o RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Mude de CNAME para um servidor de rastreamento de RDC alguns meses antes da migração para o serviço da <span class="keyword">Experience Cloud</span> ID. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Não</i> use um servidor de rastreamento <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Entre em contato com o <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">Atendimento ao cliente</a> para configurar uma migração de visitante. Isso ajuda a garantir contagens consistentes dos visitantes. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Entre em contato com o <a href="https://helpx.adobe.com/br/marketing-cloud/contact-support.html" format="https" scope="external">Atendimento ao cliente</a> para configurar uma migração de visitante. Isso ajuda a garantir contagens consistentes dos visitantes. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
