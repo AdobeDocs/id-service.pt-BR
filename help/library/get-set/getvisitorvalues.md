@@ -5,7 +5,7 @@ seo-description: Esta é uma API assíncrona que retorna os identificadores para
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -28,7 +28,7 @@ Conteúdo:
 
 Essa função usa a seguinte sintaxe (itálico representa um espaço reservado para uma variável): ` var *`valores`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`tipo de ID`*, visitor.FIELDS. *`tipo de ID`*]);`
 
-Nos parâmetros da função
+Nos parâmetros da função:
 
 * O ` *`retorno de chamada`*` representa seu próprio código de retorno de chamada que recebe as IDs retornadas.
 * *(Opcional)*` visitor.FIELDS. *`Tipo de ID`*` é um enum que permite especificar quais [valores de ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja que a função retorne.
@@ -84,7 +84,7 @@ A resposta da amostra personalizada retorna somente as IDs especificadas na soli
 
 ## Parâmetros de resposta definidos {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no `visitor.FIELDS` enum Observe que esse método retorna uma sequência de caracteres vazia se não existirem valores para uma variável específica.
+A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no `visitor.FIELDS` enum. Observe que esse método retorna uma sequência de caracteres vazia se não existirem valores para uma variável específica.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -108,7 +108,7 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>A Experience Cloud ID do visitante. </p> <p>Consulte <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies e Serviço de identidade da Experience Cloud </a>. </p> </td> 
+   <td colname="col2"> <p>A Experience Cloud ID do visitante. </p> <p>Consulte <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies e o serviço de identidade da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
