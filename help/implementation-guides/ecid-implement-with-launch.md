@@ -1,10 +1,10 @@
 ---
-description: A Adobe Experience Platform Launch é a principal ferramenta usada para configurar, implantar e integrar o Serviço de identidade da Experience Cloud com suas outras soluções da Experience Cloud.
-seo-description: A Adobe Experience Platform Launch é a principal ferramenta usada para configurar, implantar e integrar o Serviço de identidade da Experience Cloud com suas outras soluções da Experience Cloud.
+description: A Adobe Experience Platform Launch é a ferramenta principal usada para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
+seo-description: A Adobe Experience Platform Launch é a ferramenta principal usada para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
 seo-title: Implementar com o Launch
 title: Implementar com o Launch
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Implementar com o Launch{#implement-with-launch}
 
-A Adobe Experience Platform Launch é a principal ferramenta usada para configurar, implantar e integrar o Serviço de identidade da Experience Cloud com suas outras soluções da Experience Cloud.
+A Adobe Experience Platform Launch é a ferramenta principal usada para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
 
 ## Sobre o Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[O Adobe Experience Platform Launch](https://docs.adobelaunch.com/) é a próxima geração do recurso de gerenciamento de tags da Adobe integrado à Adobe Experience Cloud. O Launch permite ao clientes:
+O [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) é a próxima geração do recurso de gerenciamento de tags da Adobe e está integrado à Adobe Experience Cloud. O Launch permite ao clientes:
 
 * Implantar produtos da web do lado do cliente usando integrações chamadas de extensões
 * Captura, definir, gerenciar e compartilhar de maneira consistente os dados entre produtos de marketing e publicidade de outros fornecedores e da Adobe
