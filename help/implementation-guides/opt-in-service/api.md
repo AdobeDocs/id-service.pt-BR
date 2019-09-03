@@ -4,7 +4,7 @@ seo-description: Referência de ajustes da API da biblioteca de Opt-in e das con
 seo-title: Referência de opt-in
 title: Referência de opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -27,7 +27,7 @@ adobe.OptInCategories = {
 
 ## Parâmetros de configuração de opt-in {#section-d66018342baf401389f248bb381becbf}
 
-Essa seção discute o uso da API para configurar o Opt-in. Grande parte da configuração e implementação pode ser feita usando a extensão Launch Platform Launch.
+Essa seção discute o uso da API para configurar o Opt-in. A maior parte da configuração e implementação pode ser feita usando a extensão da Experience Platform Launch.
 
 As configurações de Opt-in são fornecidas na função `getInstance()` do JavaScript do visitante, que instancia o objeto global `adobe`. Abaixo encontram-se as configurações do JS do Visitante relacionadas ao serviço de Opt-in.
 
