@@ -6,7 +6,7 @@ seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: e949edbd231b9c085d897153359b3cb442195888
+source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
 
@@ -107,7 +107,9 @@ Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrári
 
 **Saída de exemplo**
 
-`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
+```
+http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D
+```
 
 ### visitor.idSyncByDataSource
 
@@ -126,7 +128,9 @@ Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrári
 
 **Saída de exemplo**
 
-`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
+```
+http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
+```
 
 >[!MORE_LIKE_THIS]
 >
