@@ -5,7 +5,7 @@ seo-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID
 seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
@@ -87,7 +87,7 @@ Ambas as funções aceitam as seguintes macros:
 
 ## Código e saída de exemplo {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrário, elas retornam uma sequência de mensagem de erro.
+Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrário, elas devolvem uma sequência de mensagem de erro.
 
 ### visitor.idSyncByURL
 
@@ -134,5 +134,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
