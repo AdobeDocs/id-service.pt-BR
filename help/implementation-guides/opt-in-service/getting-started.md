@@ -4,7 +4,7 @@ seo-description: Implemente o serviço de Opt-in como o único ponto de referên
 seo-title: Configuração do serviço de Opt-in
 title: Configuração do serviço de Opt-in
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
@@ -22,7 +22,7 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
 
 1. ECID versão 4.0.
 
-   [Download](https://github.com/Adobe-Marketing-Cloud/id-service/releases) a versão mais recente do ECID.
+   [Baixe](https://github.com/Adobe-Marketing-Cloud/id-service/releases) a versão mais recente da ECID.
 
 1. Bibliotecas compatíveis:
 
@@ -42,7 +42,7 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
 
 1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado pré-consentimento.
 
-Se estiver usando o [Adobe Launch](https://docs.adobelaunch.com/), aproveite a [extensão de Opt-in](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de Opt-in.
+Se estiver usando o [Adobe Launch](https://docs.adobelaunch.com/), aproveite a [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## Categorias de Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
