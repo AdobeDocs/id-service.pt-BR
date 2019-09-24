@@ -5,7 +5,7 @@ seo-description: Uma visão geral dos processos de sincronização de ID e taxas
 seo-title: Como entender a sincronização de ID e taxas de correspondência
 title: Como entender a sincronização de ID e taxas de correspondência
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,11 +51,11 @@ A sincronização de ID é um URL acionado no iFrame de publicação de destino.
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Consulte também [Sincronização de ID para transferências de dados de entrada](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
+Consulte também, [Sincronização de ID para transferências de dados de entrada](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
 
 **Etapa 4: armazenamento de IDs**
 
-As IDs sincronizadas são armazenadas na [borda e nos servidores de dados principais](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
+IDs sincronizadas são armazenadas nos [servidores de borda e dados principais](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
 
 ## Serviços de sincronização gerenciam a sincronização da ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ O termo *`Sync Services`* se refere às [!DNL Experience Cloud] tecnologias inte
 
 ## Sincronização de ID com o Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-O [!DNL Adobe Media Optimizer] é uma exceção no processo de sincronização de ID com base em quadros. Como o [!DNL Media Optimizer] é um domínio confiável, as sincronizações de ID ocorrem de uma página principal em vez de um [!UICONTROL iFrame de publicação de destino]. Durante a sincronização, o serviço de ID chama o [!DNL Media Optimizer] em `cm.eversttech.net`, que é um nome de domínio herdado usado pelo [!DNL Media Optimizer] antes da aquisição pela Adobe. O envio de dados para o [!DNL Media Optimizer] ajuda a melhorar as taxas de correspondência e é automático para clientes do serviço de ID que usam a versão 2.0 (ou posterior). Consulte também [Cookies do Media Optimizer](https://marketing.adobe.com/resources/help/pt_BR/whitepapers/cookies/cookies_media_optimizer.html).
+O [!DNL Adobe Media Optimizer] é uma exceção no processo de sincronização de ID com base em quadros. Como o [!DNL Media Optimizer] é um domínio confiável, as sincronizações de ID ocorrem de uma página principal em vez de um [!UICONTROL iFrame de publicação de destino]. Durante a sincronização, o serviço de ID chama o [!DNL Media Optimizer] em `cm.eversttech.net`, que é um nome de domínio herdado usado pelo [!DNL Media Optimizer] antes da aquisição pela Adobe. O envio de dados para o [!DNL Media Optimizer] ajuda a melhorar as taxas de correspondência e é automático para clientes do serviço de ID que usam a versão 2.0 (ou posterior). Consulte também, [Cookies do Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
 >[!MORE_LIKE_THIS]
 >
->* [Compreender as chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [Compreender as chamadas ao domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
