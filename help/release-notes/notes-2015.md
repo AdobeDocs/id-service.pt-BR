@@ -5,7 +5,7 @@ seo-description: Notas de versão e atualizações de 2015.
 seo-title: Notas de versão de 2015
 title: Notas de versão de 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
