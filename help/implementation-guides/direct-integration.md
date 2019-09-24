@@ -5,7 +5,7 @@ seo-description: Essa implementação permite que os clientes usem o serviço de
 seo-title: Integração direta com o serviço de identidade da Experience Cloud
 title: Integração direta com o serviço de identidade da Experience Cloud
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ Os dispositivos que não podem usar VisitorAPI.js ou as bibliotecas de código d
 
 ![](assets/directSyntax.png)
 
-Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API DCS ](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 O serviço de ID oferece suporte às chamadas HTTP e HTTPS. Use HTTPS para passar dados de uma página segura.
 
@@ -66,7 +66,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resp
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda e encontrar essa ID, consulte  <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda e encontrar essa ID, consulte <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
