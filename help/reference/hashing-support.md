@@ -4,7 +4,7 @@ keywords: Serviço de ID
 seo-description: O serviço de Experience Cloud ID (ECID) é compatível com o algoritmo de hash SHA -256 que permite transmitir IDs do cliente ou endereços de email e enviar IDs com hash. Este é um método opcional Javascript para enviar identificadores com hash à Experience Cloud. Você pode continuar a usar seus próprios métodos de hash antes de enviar IDs do cliente.
 seo-title: Suporte a hash SHA 256 para setCustomerIDs
 title: Suporte a hash SHA 256 para setCustomerIDs
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
@@ -35,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Juntamente com a ID de visitante da Experience Cloud, é possível associar mais IDs do cliente, um status de autenticação e um tipo de hash (SHA-256) com cada visitante. Se não fornecer nenhum tipo de hash, será considerado como nenhum hash.
 
-O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer upload dessas IDs como [atributos do cliente](https://docs.adobe.com/content/help/pt-BR/core-services/interface/customer-attributes/attributes.html) para a Experience Cloud e acessar esses dados em diferentes soluções.
+O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer o upload dessas IDs como [atributos do cliente](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) para a Experience Cloud e acessar esses dados em soluções diferentes.
 
 As IDs do cliente, os estados autenticados e o tipo de hash *não são* armazenados em um cookie a ser usado posteriormente. Em vez disso, as IDs do cliente, os estados autenticados e o tipo de hash devem ser armazenados em uma variável de instância, a ser recuperada usando [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), como mostrado abaixo:
 
@@ -68,9 +68,9 @@ Consulte a tabela abaixo para obter uma descrição do parâmetro `d_cid_ic` e d
 
 ## Adicionar uma ação na Adobe Experience Platform Launch {#add-action-launch}
 
-A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Launch na [documentação do produto do Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html).
+A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Launch na documentação [do produto](https://docs.adobe.com/content/help/en/launch/using/overview.html)Launch.
 
-Para adicionar uma ação no Launch, leia a [documentação de regras](https://docs.adobe.com/help/pt-BR/launch/using/reference/manage-resources/rules.html) no Adobe Launch e veja a captura de tela abaixo:
+Para adicionar uma ação no Launch, leia a documentação [das](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) regras no Adobe Launch e veja a captura de tela abaixo:
 
 ![](/help/reference/assets/hashing-support.png)
 
