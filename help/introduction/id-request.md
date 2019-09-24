@@ -5,7 +5,7 @@ seo-description: Visão geral do processo de resposta e da solicitação de ID. 
 seo-title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ Visão geral do processo de resposta e da solicitação de ID. Esses exemplos co
 >
 >Se não estiver familiarizado com a forma como o serviço de identidade da Experience Cloud cria a ID de visitante, consulte [Experience Cloud](../introduction/cookies.md).
 
-**Dica:** consulte também nosso [vídeo de serviço de ID no rastreamento entre domínios](https://helpx.adobe.com/br/marketing-cloud-core/kb/MCID/CrossDomain.html).
+**Dica:** consulte também o [vídeo do serviço de ID sobre rastreamento entre domínios](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Solicitar uma Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -32,7 +32,7 @@ Os exemplos a seguir demonstram como o serviço de ID solicita e recebe a ID de 
 Nesse exemplo, um novo visitante acessa o site de pizza gerenciado pela Food Company. A Food Company tem o código do serviço de ID do site de pizza. Quando o site de pizza é carregado, o código do serviço de ID verifica o cookie AMCV no domínio do site de pizza.
 
 * Se o cookie AMCV estiver definido, o visitante do site tem uma Experience Cloud ID. Nesse caso, o cookie rastreia o visitante e compartilha dados com outras soluções da Experience Cloud.
-* Se o cookie AMCV não foi definido, o código do serviço de ID chama um [servidor de coleta de dados regional](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) em `dpm.demdex.net/id` (consulte também [Compreender as chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). A chamada inclui a ID da organização da Food Company. A ID da organização está definida na função `Visitor.getInstance` do código do serviço de ID.
+* Se o cookie AMCV não estiver definido, o código do serviço de ID chama um [servidor de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) regional em `dpm.demdex.net/id` (consulte também, [Entender chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). A chamada inclui a ID da organização da Food Company. A ID da organização está definida na função `Visitor.getInstance` do código do serviço de ID.
 
 ![](assets/request1.png)
 
