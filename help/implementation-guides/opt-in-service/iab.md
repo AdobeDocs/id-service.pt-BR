@@ -4,7 +4,7 @@ seo-description: Conecte a Plataforma de gerenciamento de consentimento (CMP) co
 seo-title: (beta) Uso dos serviços de Opt-in com a Estrutura IAB
 title: (beta) Uso dos serviços de Opt-in com a Estrutura IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 Conecte a Plataforma de gerenciamento de consentimento (CMP) com o plugin IAB de Opt-in.
 
-Os clientes do Audience Manager que usam a [Estrutura de transparência e consentimento (TCF) do IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) podem conectar a Plataforma de gerenciamento de consentimento (CMP) com o plugin IAB de Opt-in. Opt-in é um recurso integrado à biblioteca JavaScript da ECID que pode desativar bibliotecas de soluções individuais da Adobe, dependendo das preferências do visitante definidas em uma CMP. Quando o plugin IAB é implementado com a biblioteca ECID, as preferências do visitante do CMP compatível com IAB são mapeadas automaticamente ao Opt-in. Essas preferências habilitarão as bibliotecas do Audience Manager (DIL e ECID) e as chamadas associadas ao receber o consentimento.
+Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. Opt-in é um recurso integrado à biblioteca JavaScript da ECID que pode desativar bibliotecas de soluções individuais da Adobe, dependendo das preferências do visitante definidas em uma CMP. Quando o plugin IAB é implementado com a biblioteca ECID, as preferências do visitante do CMP compatível com IAB são mapeadas automaticamente ao Opt-in. Essas preferências habilitarão as bibliotecas do Audience Manager (DIL e ECID) e as chamadas associadas ao receber o consentimento.
 
 ## Implementar uma CMP compatível com IAB {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
@@ -23,7 +23,7 @@ Para integrar o Opt-In ao consentimento do IAB, é necessário fazer o seguinte:
 1. Implemente uma CMP que seja compatível com IAB e seja [registrada como um fornecer de IAB](https://vendorlist.consensu.org/vendorlist.json) ou desenvolva uma CMP interna que implemente a especificação do IAB e seja registrada como uma CMP com IAB na Europa.
 1. Defina/carregue `__cmp` antes de carregar o Adobe JS.
 
-Para obter mais detalhes, leia os documentos  [Interactive Advertising Bureau](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md).
+Para obter mais detalhes, leia os [documentos do Interactive Advertising Bureau](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md).
 
 ## Ativar o plugin IAB na sua biblioteca JavaScript da ECID {#section-77bf1b9ed67241a59e56c21ab752e82f}
 
@@ -31,7 +31,7 @@ Para obter mais detalhes, leia os documentos  [Interactive Advertising Bureau]
 >
 >O Opt-in está disponível somente na ECID 4.0+
 
-Use a Adobe Experience Platform Launch para implementar a aceitação e o plugin IAB no seu site. Leia a [documentação da extensão de aceitação ECID](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) para saber como configurar a extensão da Experience Platform Launch.
+Use a Adobe Experience Platform Launch para implementar a aceitação e o plugin IAB no seu site. Read the [documentation for the ECID Opt-in extension](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) to learn how to set up the Experience Platform Launch extension.
 
 Ao ativar o IAB para Opt-in manualmente, verifique se as seguintes configurações estão definidas como verdadeiro no objeto Visitante:
 
@@ -55,5 +55,5 @@ Para obter mais informações sobre como validar o plugin de Opt-in e do IAB, co
 * [Estrutura de transparência e consentimento (TCF) do IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - Para obter mais informações sobre o padrão IAB
 * [Opt-in da Adobe](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - Para obter mais informações sobre Opt-in, um componente obrigatório do gerenciamento de consentimento nas soluções de plataforma
 * Suporte da Estrutura de transparência e consentimento (TCF) do IAB [no Audience Manager](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)
-* [Suas opções de privacidade](https://www.adobe.com/br/privacy/opt-out.html#customeruse) - Outra opção de privacidade à disposição dos usuários é a capacidade de não aderir à coleta de dados usando outras ferramentas de opt-out global. O Opt-out global tem precedência sobre a verificação de Opt-in e IAB
+* [Suas opções de privacidade](https://www.adobe.com/privacy/opt-out.html#customeruse) - Outra opção de privacidade à disposição dos usuários é a capacidade de não aderir à coleta de dados usando outras ferramentas de opt-out global. O Opt-out global tem precedência sobre a verificação de Opt-in e IAB
 
