@@ -5,7 +5,7 @@ seo-description: Essas instruções se aplicam aos clientes da A4T com implement
 seo-title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
 title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -47,7 +47,7 @@ Em seguida, é necessário criar um *`payload request`* do lado do servidor para
 
 >[!NOTE]
 >
->Esse método solicita uma única mbox do [!DNL Target]. Se precisar solicitar várias mboxes em uma única chamada, consulte [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Esse método solicita uma única mbox do [!DNL Target]. Se for necessário solicitar diversas mboxes em uma única chamada, consulte [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 A solicitação de carga deve ser semelhante ao seguinte exemplo de código. No exemplo de código, a função `visitor.setCustomerIDs` é opcional. Consulte [IDs do cliente e Estados de autenticação](../reference/authenticated-state.md) para obter mais informações.
 
@@ -199,5 +199,5 @@ Nesse ponto, o servidor da Web envia conteúdo da página para o navegador do vi
 
 >[!MORE_LIKE_THIS]
 >
->* [Pacote de serviços de ID do lado do servidor no Gerenciador de pacotes de nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Pacote do serviço de ID do servidor do Gerenciador de pacote de nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
