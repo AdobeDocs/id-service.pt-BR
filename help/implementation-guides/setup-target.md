@@ -5,7 +5,7 @@ seo-description: Estas instruções são para clientes do Target que desejam usa
 seo-title: Implementar o serviço de identidade da Experience Cloud para Target
 title: Implementar o serviço de identidade da Experience Cloud para Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -25,7 +25,7 @@ Estas instruções são para clientes do Target que desejam usar o serviço de i
 
 ## Etapa 1: obter o código do serviço de ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para obter este código.
+O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para receber o código.
 
 ## Etapa 2: adicionar a função Visitor.getInstance ao código do serviço de ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Etapa 3: adicionar a ID da organização da Experience Cloud ao Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud]administração. Consulte também [Administração - Serviços principais](https://marketing.adobe.com/resources/help/pt_BR/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
+Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud]administração. Consulte também [Administração - Principais serviços](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
