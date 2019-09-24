@@ -5,7 +5,7 @@ seo-description: Estas instruções são para clientes do Analytics que desejam 
 seo-title: Implementar o serviço de identidade da Experience Cloud para Analytics
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Etapa 3: adicionar a ID da organização da Experience Cloud ao Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud]administração. Consulte também [Administração - Serviços principais](https://marketing.adobe.com/resources/help/pt_BR/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
+Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud]administração. Consulte também [Administração - Principais serviços](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 
 
 
-Caso não tenha certeza de como encontrar o servidor de rastreamento, consulte as [Perguntas frequentes](../faq-intro/faq.md) e [Preencher corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
+If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Etapa 5: atualizar o arquivo AppMeasurement.js ou s_code.js {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -164,7 +164,7 @@ Transfira esse código para a produção após os testes e a verificação.
 
 ## Etapa 7: (ppcional) configurar um período de carência {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](../reference/analytics-reference/grace-period.md) temporário. Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. É possível renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -184,7 +184,7 @@ Consulte [Cookies e o serviço de identidade da Experience Cloud](../introductio
 
 Faça a descontinuação do período de carência se o processo de ingestão de dados conseguir usar as colunas `post_visid_high` e `post_visid_low`.
 
-Consulte [Referência da coluna de dados da sequência de cliques](https://marketing.adobe.com/resources/help/pt_BR/sc/clickstream/datafeeds_reference.html).
+Consulte [Referência da coluna de dados da sequência de cliques](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 **Ingestão de dados da sequência de cliques**
 
@@ -197,7 +197,7 @@ Consulte [Referência da coluna de dados da sequência de cliques](https://marke
 Para testar a implementação do serviço de ID, verifique:
 
 * O [cookie AMCV](../introduction/cookies.md) no domínio em que sua página está hospedada.
-* Valor da MID na [!DNL Analytics] solicitação de imagem com a [ferramenta do Adobe Debugger](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/debugger.html).
+* O valor da MID na solicitação de imagem do [!DNL Analytics] com a [ferramenta Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 
 Consulte [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md).
 
