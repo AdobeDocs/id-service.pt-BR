@@ -5,7 +5,7 @@ seo-description: O heartbeat de vídeo exige o serviço de identidade da Experie
 seo-title: Heartbeat de vídeo e o serviço de identidade da Experience Cloud
 title: Heartbeat de vídeo e o serviço de identidade da Experience Cloud
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -17,5 +17,5 @@ O heartbeat de vídeo exige o serviço de identidade da Experience Cloud. Ao med
 
 >[!MORE_LIKE_THIS]
 >
->* [Medição de vídeo no Analytics usando a pulsação de vídeo](https://marketing.adobe.com/resources/help/pt_BR/sc/appmeasurement/hbvideo/)
+>* [Medir vídeos no Analytics usando a pulsação de vídeo](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
 
