@@ -5,7 +5,7 @@ seo-description: Essas configurações permitem que diferentes instâncias do c�
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -73,7 +73,7 @@ Essas configurações ajudam a solucionar o problema de configuração de um coo
 
 >[!TIP]
 >
->Além disso, é possível implementar essas configurações ao veicular vídeos em um iFrame com [Pulsação de vídeo](https://marketing.adobe.com/resources/help/pt_BR/sc/appmeasurement/hbvideo/). A Pulsação de vídeo exige que a ID do serviço de ID (a MID) funcione adequadamente.
+>You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). A Pulsação de vídeo exige que a ID do serviço de ID (a MID) funcione adequadamente.
 
 **Caso de uso 1: o navegador bloqueia os cookies de terceiros e o serviço de ID é implementado no iFrame e na página principal**
 
