@@ -5,7 +5,7 @@ seo-description: Lançamentos, atualizações ou alterações de recursos do ser
 seo-title: Notas de versão de 2018
 title: Notas de versão de 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
