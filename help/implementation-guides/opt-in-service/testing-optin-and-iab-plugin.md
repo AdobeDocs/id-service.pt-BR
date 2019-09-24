@@ -4,7 +4,7 @@ seo-description: Depois de ativar o Opt-in no site, use os métodos de validaç�
 seo-title: Validação do serviço de Opt-in
 title: Validação do serviço de Opt-in
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
