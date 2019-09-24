@@ -5,7 +5,7 @@ seo-description: Essas instruções, ferramentas e procedimentos ajudam você a 
 seo-title: Testar e verificar o serviço de identidade da Experience Cloud
 title: Testar e verificar o serviço de identidade da Experience Cloud
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ef3169f8928f337d4f2d17922b44a7421d225e51
 
 ---
@@ -27,13 +27,13 @@ Como alternativa, você pode testar o serviço de ID em uma sessão de navegador
 
 **Ferramentas**
 
-O [Adobe Debugger](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/debugger.html) e o [Charles HTTP proxy](https://www.charlesproxy.com/) podem ajudar a determinar se o serviço de ID foi configurado para funcionar corretamente com o Analytics. As informações nesta seção têm por base os resultados retornados pelo depurador da Adobe e o Charles. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
+O [depurador da Adobe](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) e o [proxy HTTP Charles](https://www.charlesproxy.com/) podem ajudar você a determinar se o serviço de ID foi configurado adequadamente para funcionar com o Analytics. As informações nesta seção têm por base os resultados retornados pelo depurador da Adobe e o Charles. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
 
 ## Teste com o Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
 A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. Consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md) para obter mais informações sobre a MID.
 
-Para verificar o status do serviço de ID com o [!DNL Adobe] [depurador](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/debugger.html):
+To verify the status of the ID service with the [!DNL Adobe] [debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
 
 1. Apague os cookies do navegador ou abra uma sessão de navegação anônima.
 1. Carregue a página de teste com o código do serviço de ID.
@@ -59,7 +59,7 @@ Se você for um cliente do [!DNL Analytics], é possível visualizar uma ID do [
 
 **Falha**
 
-Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) se o depurador:
+Entre em contato com o [atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) se o depurador:
 
 * Não retornar uma MID.
 * Retornar uma mensagem de erro indicando que a ID do parceiro não foi fornecida.
@@ -85,7 +85,7 @@ O código do serviço de ID está funcionando adequadamente quando a função `V
 
 **Solicitações do serviço de ID com sucesso no Charles**
 
-A conta foi provisionada corretamente para o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) retornou uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Procure a MID na guia [!UICONTROL Resposta], como mostrado abaixo.
+Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) retornar uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Procure a MID na guia [!UICONTROL Resposta], como mostrado abaixo.
 
 ![](assets/charles_response_success.png)
 
@@ -95,4 +95,4 @@ A conta não foi provisionada adequadamente se a MID estiver faltando na respost
 
 ![](assets/charles_response_unsuccessful.png)
 
-Para obter mais informações sobre os códigos de erro, consulte [Códigos de erro, mensagens e exemplos de DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
+Para obter mais informações sobre os códigos de erro, consulte [Códigos, mensagens e exemplos de erro do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
