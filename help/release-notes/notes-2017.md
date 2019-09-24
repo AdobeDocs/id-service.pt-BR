@@ -5,7 +5,7 @@ seo-description: Lançamentos, atualizações ou alterações de recursos do ser
 seo-title: Notas de versão de 2017
 title: Notas de versão de 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 
-Essas alterações também são capturadas nas notas de versão da [Experience Cloud](https://marketing.adobe.com/resources/help/pt_BR/whatsnew/). Para obter as notas de versão mais antigas do serviço de ID, consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/pt_BR/whatsnew/?f=c_legacy_releases.html) ou os links na parte inferior desta página.
+Essas alterações também estão contempladas nas [notas de versão da Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Para consultar as notas de versão antigas do serviço de ID, consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou os links no fim desta página.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Corrigida uma falha que causava o serviço de ID a fazer chamadas redundantes pa
 
 **Nova documentação**
 
-[Uso da pré-busca DNS com Diferentes soluções e serviços da Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/pt_BR/mcloud/dns-prefetch.html)
+[Uso da busca DNS prévia com diferentes soluções e serviços da Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## Versão 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
