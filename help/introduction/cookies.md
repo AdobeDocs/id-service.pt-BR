@@ -5,7 +5,7 @@ seo-description: O serviço de ID usa a ID da empresa, o cookie AMCV da Experien
 seo-title: Cookies e o serviço de identidade da Experience Cloud
 title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -114,7 +114,7 @@ A tabela a seguir lista e define alguns atributos importantes do cookie demdex.
  </tbody> 
 </table>
 
-Para obter informações relacionadas, consulte [Compreender as chamadas para o domínio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Gerar a Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
