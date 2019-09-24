@@ -5,7 +5,7 @@ seo-description: Uma Política de segurança de conteúdo (CSP) é um recurso de
 seo-title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -61,6 +61,6 @@ Adicione esses nomes de domínio ou URLs à sua CSP para cada lista da solução
 >[!MORE_LIKE_THIS]
 >
 >* [Referência da política de segurança de conteúdo](https://content-security-policy.com/)
->* [MDN: Política de segurança de conteúdo](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CSP)
->* [Wikipedia: Política de segurança de conteúdo](https://pt.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN: política de segurança de conteúdo](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipedia: política de segurança de conteúdo](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
