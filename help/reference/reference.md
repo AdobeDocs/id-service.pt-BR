@@ -5,7 +5,7 @@ seo-description: Informações sobre outros recursos e funções do serviço de 
 seo-title: Referência
 title: Referência
 uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
