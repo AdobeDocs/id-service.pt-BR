@@ -5,7 +5,7 @@ seo-description: Caso tenha vários arquivos JavaScript que enviam dados para o 
 seo-title: Período de carência do serviço de ID
 title: Período de carência do serviço de ID
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -33,4 +33,4 @@ Se você possuir vários arquivos JavaScript que enviam dados para o *mesmo conj
 
 ## Como ativar o período de carência?  {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html).
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
