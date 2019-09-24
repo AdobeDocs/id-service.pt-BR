@@ -5,7 +5,7 @@ seo-description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Comp
 seo-title: Suporte ao CORS no serviço de identidade da Experience Cloud
 title: Suporte ao CORS no serviço de identidade da Experience Cloud
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -76,7 +76,7 @@ A tabela abaixo descreve algumas das vantagens do CORS para os clientes que usam
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Aumento da segurança</b> </p> </td> 
-   <td colname="col2"> <p>O CORS usa a <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> para solicitar e transferir dados. Esse método é mais seguro do que uma solicitação JSONP. Ele garante que não existe uma maneira de executar um JavaScript arbitrário, que pode estar contido na resposta do DCS. A carga de resposta XMLHttpRequest do CORS é analisada pelo JavaScript do serviço de ID e não é executada em uma função de retorno de chamada. </p> <p> <p>Observação: para aceitar cookies, o objeto <span class="codeph">XMLHttpRequest</span> precisa ter a propriedade <span class="codeph">withCredentials</span> definida como <span class="codeph">true</span>. Essa propriedade é compatível com Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
+   <td colname="col2"> <p>O CORS usa a <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> para solicitar e transferir dados. Esse método é mais seguro do que uma solicitação JSONP. Ele garante que não existe uma maneira de executar um JavaScript arbitrário, que pode estar contido na resposta do DCS. A carga de resposta XMLHttpRequest do CORS é analisada pelo JavaScript do serviço de ID e não é executada em uma função de retorno de chamada. </p> <p> <p>Observação: para aceitar cookies, o objeto <span class="codeph">XMLHttpRequest</span> precisa ter a propriedade <span class="codeph">withCredentials</span> definida como <span class="codeph">true</span>. Essa propriedade é compatível com Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Melhorias de desempenho</b> </p> </td> 
