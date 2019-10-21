@@ -6,7 +6,7 @@ seo-title: Cookies e o serviço de identidade da Experience Cloud
 title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 57161205bb48a82db223a733f384ea8338596b7e
+source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
@@ -122,15 +122,15 @@ A Experience Cloud ID (MID) é derivada matematicamente da ID da organização e
 
 O serviço de ID começa a criar uma MID enquanto a página carrega. Durante esse processo, o código fornecido pela `visitorAPI.js` biblioteca de códigos enviar a ID da organização em uma chamada de evento para o serviço de ID. O serviço de ID cria e retorna a MID, além de uma ID demdex nos cookies AMCV e demdex, respectivamente.
 
-## Sinalizadores de segurança para cookies
+## Sinalizadores de cookies
 
-As tabelas a seguir descrevem como os Cookies da Experience Cloud operam com sinalizadores de segurança:
+A tabela a seguir descreve os sinalizadores para Cookies da Experience Cloud:
 
 | Cookie (definido por) | httpOnly | Seguro | SameSite |
 |--- |--- |--- |--- |
 | demdex (resposta http) | Não | Sim | "Nenhum" |
-| AMCV (Javascript) | Não | Configurável | Unset (padrão para Lax) |
-| AMCVS (Javascript) | Não | Configurável | Unset (padrão para Lax) |
+| AMCV (Javascript) | Não | Configurável | Unset (o padrão é Lax) |
+| AMCVS (Javascript) | Não | Configurável | Unset (o padrão é Lax) |
 
 *Observação: Para obter informações sobre como configurar o cookie AMCV e AMCVS com atributos seguros, consulte o tópico para[secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
 
