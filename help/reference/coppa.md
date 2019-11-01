@@ -6,7 +6,7 @@ seo-title: Suporte para COPPA no serviço de identidade da Experience Cloud
 title: Suporte para COPPA no serviço de identidade da Experience Cloud
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -43,7 +43,7 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 Quando definido como `true`, o `disableThirdPartyCookies` objeto impede o DCS de retornar o cookie demdex.net de terceiros. Se o visitante já apresentar esse cookie no navegador, o serviço de ID não o usará para criar uma nova [!DNL Experience Cloud] ID ou para retornar uma ID existente. Em vez disso, o serviço da [!DNL Experience Cloud] ID cria uma ID nova e aleatória no cookie primário. Após a ativação, é possível coletar dados com o serviço de ID e compartilhá-los em diferentes [!DNL Experience Cloud] soluções da, incluindo outras operações internas permitidas pela COPPA.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Centro de privacidade da Adobe](http://www.adobe.com/privacy.html)
 >* [O que é a COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
