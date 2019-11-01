@@ -6,7 +6,7 @@ seo-title: Perguntas frequentes do serviço de ID
 title: Perguntas frequentes do serviço de ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -85,7 +85,7 @@ Se você tiver requisitos de segurança estritos, defina a configuração da API
 
 Consulte [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
