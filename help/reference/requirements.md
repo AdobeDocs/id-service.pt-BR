@@ -6,7 +6,7 @@ seo-title: Requisitos do serviço de identidade da Experience Cloud
 title: Requisitos do serviço de identidade da Experience Cloud
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -156,7 +156,7 @@ O código do SDK deve ser habilitado para o serviço de ID. Habilite e baixe o c
 * [Métodos do SDK para Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
 * [Métodos de SDK do iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
 
