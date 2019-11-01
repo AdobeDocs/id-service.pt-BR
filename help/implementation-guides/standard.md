@@ -6,7 +6,7 @@ seo-title: Implementação com o Dynamic Tag Management
 title: Implementação com o Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -98,11 +98,6 @@ mcvid-dtm-implement.xml
 1. Clique em **[!UICONTROL Criar ferramentas]** e **[!UICONTROL Salvar alterações]**.
 
    Depois de salvar, o serviço de ID é configurado como uma ferramenta no DTM. No entanto, ainda não está pronto para uso. A ferramenta do DTM ainda precisa passar no processo de publicação/aprovação do DTM e pode ser necessário configurar mais parâmetros. Para obter mais informações sobre o processo de aprovação do DTM, assista ao vídeo [Início rápido dos conceitos básicos do usuário](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html). Para obter informações sobre os parâmetros adicionais que podem ser incluídos no DTM, consulte [Configurações do serviço de identidade da Experience Cloud para DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
-
->[!MORE_LIKE_THIS]
->
->* [Propriedades da Web](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
-
 
 ## Configurações do serviço de identidade da Experience Cloud para DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -285,3 +280,8 @@ A conta não foi provisionada adequadamente se a MID estiver faltando na respost
 ![](assets/charles_response_unsuccessful.png)
 
 Para obter mais informações sobre os códigos de erro, consulte [Códigos, mensagens e exemplos de erro do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
+
+>[!MORELIKETHIS]
+>
+>* [Propriedades da Web](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+
