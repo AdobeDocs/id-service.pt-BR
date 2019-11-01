@@ -6,7 +6,7 @@ seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -56,12 +56,12 @@ A tabela a seguir lista e define as propriedades disponíveis para ambas as fun�
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
-   <td colname="col2"> Sequência de caracteres </td> 
+   <td colname="col2"> String </td> 
    <td colname="col3"> <p>A ID do provedor de dados atribuída pelo Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
-   <td colname="col2"> Sequência de caracteres </td> 
+   <td colname="col2"> String </td> 
    <td colname="col3"> <p>A ID exclusiva do provedor de dados para o usuário. </p> </td> 
   </tr> 
   <tr valign="top"> 
@@ -71,7 +71,7 @@ A tabela a seguir lista e define as propriedades disponíveis para ambas as fun�
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
-   <td colname="col2"> Sequência de caracteres </td> 
+   <td colname="col2"> String </td> 
    <td colname="col3"> <p>URL de Destino. </p> </td> 
   </tr> 
  </tbody> 
@@ -132,7 +132,7 @@ http://su.addthis.com/red/usync?pid=16&puid=287778064591810036707992191851784938
 http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
