@@ -5,7 +5,7 @@ seo-description: Perguntas frequentes sobre recursos, funcionalidades e problema
 seo-title: Perguntas frequentes do Analytics e do serviço de identidade
 title: Perguntas frequentes do Analytics e do serviço de identidade
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -23,7 +23,7 @@ Cada parte devidamente configurada do código do AppMeasurement contém as infor
 
 Entretanto, às vezes, os clientes podem separar os arquivos do AppMeasurement do Analytics. Por exemplo, alguns clientes podem colocar variáveis de configuração em um arquivo, usar um segundo arquivo para plugins e colocar o código do AppMeasurement em um terceiro arquivo. Isso não é recomendado.
 
-Se você não conseguir encontrar as informações do servidor de rastreamento, sua instância do Analytics pode não estar configurada adequadamente. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) se não for possível encontrar as informações do servidor de rastreamento.
+Se você não conseguir encontrar as informações do servidor de rastreamento, sua instância do Analytics pode não estar configurada adequadamente. Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) se não for possível encontrar as informações do servidor de rastreamento.
 
 **O que acontece se eu usar um serviço de identidade e alterar o servidor de rastreamento?**
 
@@ -35,7 +35,7 @@ Não há mudanças para os usuários já identificados pelo serviço de identida
 
 Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
 
-Nos navegadores que aceitam cookies de terceiros, um é definido pelo [domínio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) durante a solicitação para recuperar uma ID de visitante. Esse cookie permite que o serviço de identidade retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID da organização. Nos navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud será atribuída para cada domínio.
+Nos navegadores que aceitam cookies de terceiros, um é definido pelo [domínio demdex.net](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.translate.html) durante a solicitação para recuperar uma ID de visitante. Esse cookie permite que o serviço de identidade retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID da organização. Nos navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud será atribuída para cada domínio.
 
 Se o site principal não for visitado primeiro, os visitantes serão identificados de diferentes maneiras no site secundário e no site principal nos navegadores que não aceitam cookies de terceiros mesmo quando um CNAME estiver configurado.
 
@@ -51,7 +51,7 @@ No entanto, o código H não é suportado pelo código da versão 1.6 ou posteri
 
 **O que é um período de carência e como faço para configurá-lo?**
 
-Consulte [O Período](../reference/analytics-reference/grace-period.md) de carência do serviço de identidade e entre em contato com o [Atendimento](https://helpx.adobe.com/marketing-cloud/contact-support.html)ao cliente.
+Consulte [Período de carência do serviço de identidade](../reference/analytics-reference/grace-period.md) e entre em contato com o [Atendimentoao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html).
 
 **Por que é necessário migrar para a Coleta de dados em tempo real (RDC) a fim de mudar o serviço de identidade?**
 
@@ -90,5 +90,5 @@ Existem três cenários em potencial em que isso afeta os dados do Analytics par
 
 >[!MORELIKETHIS]
 >
->* [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
