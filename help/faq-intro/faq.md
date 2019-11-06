@@ -5,7 +5,7 @@ seo-description: Perguntas frequentes sobre recursos, funcionalidades e problema
 seo-title: Perguntas frequentes do serviço de ID
 title: Perguntas frequentes do serviço de ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -35,7 +35,7 @@ Você pode ter problemas se hospedar o arquivo VisitorAPI.js como um arquivo loc
 
 Coloque a biblioteca VisitorAPI.js no início da página na `<head>` seção do código. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
 
-A chamada do serviço de ID é assíncrona e é a única para o [domínio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). A chamada do serviço de ID não impede o carregamento de outros elementos na página.
+A chamada do serviço de ID é assíncrona e é a única para o [domínio demdex.net](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.translate.html). A chamada do serviço de ID não impede o carregamento de outros elementos na página.
 
 Para [!DNL Target] clientes do, ao inserir o código do serviço de ID no `<body>` da página é possível aumentar a probabilidade de bloquear uma chamada do [!DNL Target]. É necessário inserir o código do serviço de ID no corpo na página. Ele deve ser inserido após a tag aberta `<body>`.
 
@@ -87,5 +87,5 @@ Consulte [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da1
 
 >[!MORELIKETHIS]
 >
->* [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
