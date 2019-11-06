@@ -5,7 +5,7 @@ seo-description: A lei americana de privacidade infantil Children’s Online Pri
 seo-title: Suporte para COPPA no serviço de identidade da Experience Cloud
 title: Suporte para COPPA no serviço de identidade da Experience Cloud
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -45,6 +45,6 @@ Quando definido como `true`, o `disableThirdPartyCookies` objeto impede o DCS de
 
 >[!MORELIKETHIS]
 >
->* [Centro de privacidade da Adobe](http://www.adobe.com/privacy.html)
+>* [Centro de privacidade da Adobe](http://www.adobe.com/br/privacy.html)
 >* [O que é a COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
