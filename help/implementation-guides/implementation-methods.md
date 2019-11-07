@@ -1,19 +1,19 @@
 ---
-description: Instruções e exemplos de código para implementações padrão e não padrão do serviço de identidade da Experience Cloud.
+description: Métodos de implementação padrão ou não padrão do Serviço de identidade da Experience Cloud.
 keywords: Serviço de ID
-seo-description: Instruções e exemplos de código para implementações padrão e não padrão do serviço de identidade da Experience Cloud.
-seo-title: Guias de implementação
-title: Guias de implementação
+seo-description: Métodos de implementação padrão ou não padrão do Serviço de identidade da Experience Cloud.
+seo-title: Métodos de implementação
+title: Métodos de implementação
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
 
 # Métodos de implementação
 
-Instruções e exemplos de código para implementações padrão e não padrão do serviço de identidade da Experience Cloud.
+Você pode escolher um método de [!DNL Experience Cloud ID Service] implementação padrão usando [!DNL Experience Platform Launch], [!DNL Dynamic Tag Manager] (DTM) ou um método não padrão.
 
 >[!IMPORTANT]
 >
@@ -21,13 +21,12 @@ Instruções e exemplos de código para implementações padrão e não padrão 
 
 ## Implementação padrão {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Uma implementação padrão usa o [!DNL Dyanamic Tag Manager] (DTM) para ajudar você a começar a usar o serviço de ID e integrá-lo a outras soluções da [!DNL Experience Cloud]. Recomendamos que você use o DTM ao implementar o serviço de ID. Para começar, consulte [Implementação padrão com DTM](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445).
+A Adobe recomenda usar [!DNL Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) para implementar o serviço de ID. Esse método garante a integração com outras [!DNL Experience Cloud] soluções, simplifica os fluxos de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 
 ## Implementações não padrão {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
-Esses procedimentos e amostras de códigos podem ajudar você a configurar o serviço da [!DNL Experience Cloud] ID de forma manual e não padrão. Observe que essas implementações são frequentemente tecnicamente desafiadoras e complexas. Elas podem exigir recursos de engenharia ou consumir tempo de suporte contratado do consultor da Adobe.
+The procedures and code samples in this guide can help you set up the [!DNL Experience Cloud] ID service in a manual, or non-standard manner. Observe que essas implementações são frequentemente tecnicamente desafiadoras e complexas. Elas podem exigir recursos de engenharia ou consumir tempo de suporte contratado do consultor da Adobe.
 
 >[!TIP]
 >
->Como alternativa, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação, além de garantir automaticamente a inserção e o sequenciamento correto do código. Além disso, o DTM coloca você no caminho de implementação recomendado do serviço de ID e das integrações subsequentes com outras soluções da Experience Cloud.
-
+>Como alternativa, você pode implementar o serviço de ID usando [!DNL Dynamic Tag Manager](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html). No entanto, novos clientes devem usar [!DNL Experience Platform Launch]. Para atualizar [!DNL Experience Platform Launch] de [!DNL Dynamic Tag Manager], consulte [Atualizar do DTM para o Launch](https://docs.adobe.com/content/help/en/launch/using/reference/upgrade/overview.html)).
