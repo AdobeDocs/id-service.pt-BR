@@ -1,11 +1,11 @@
 ---
-cloud: nuvem de plataforma
-product: Serviço de ID
-audience: usuário final
-user-guide-title: Ajuda do serviço de identidade da Experience Cloud
-user-guide-url: /content/help/pt-BR/id-service/using/home.html
-translation-type: ht
-source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
+cloud: platform-cloud
+product: ID Service
+audience: end-user
+user-guide-title: Experience Cloud Identity Service Help
+user-guide-url: /content/help/en/id-service/using/home.html
+translation-type: tm+mt
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
    + [Integração direta com o serviço da ID](implementation-guides/direct-integration.md)
    + [Casos de uso da integração direta](implementation-guides/direct-integration-examples.md)
    + [Teste e verifique o serviço da ID](implementation-guides/test-verify.md)
-   + Documentação de Opt-in {#opt-in-service}
+   + Serviço de Opt-in {#opt-in-service}
       + [Visão geral do serviço de Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configuração do serviço de Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Validação do serviço de Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
