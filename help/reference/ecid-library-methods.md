@@ -4,7 +4,7 @@ seo-title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 51abd7b0f38da4c3375c0d2fe48d8bf96bdfb387
 
 ---
 
@@ -28,10 +28,6 @@ As regras de ITP focalizam em devolver o controle aos desenvolvedores. As implem
 **Por que a Adobe focaliza na biblioteca da ECID quando outros métodos de rastreamento de visitantes do Analytics são usados com CNAMEs atualmente?**
 
 A biblioteca da ECID, o cookie AMCV e a ECID (também conhecida como MID) começaram como o método de integração de todas as soluções da Adobe em uma única ID. Essa ID continuará a ser a ID de nível de cookie prioritária no roteiro de produtos da Adobe, além de ser a ID de cookie padrão da Adobe Experience Platform.
-
-**Os CNAMEs ajudam os clientes a ativar o rastreamento de vários domínios?**
-
-As mesmas regras e avisos já existentes com CNAMEs ainda existem. Em alguns casos, os CNAMEs podem ajudar em um cenário de vários domínios. Se você possuir um site de entrada principal em que os usuários possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento de vários domínios nos navegadores que não aceitam cookies de terceiros. No entanto, embora os CNAMEs possam ajudar com vários domínios em alguns cenários, o motivo da mudança de implementações ECID para CNAME é a identificação persistente do visitante, e não o rastreamento de vários domínios. Para obter mais informações sobre CNAME e vários domínios, consulte [Coletas de dados CNAMEs e rastreamento entre domínios](/help/reference/analytics-reference/cname.md).
 
 Mais Perguntas frequentes serão adicionadas aqui, à medida que outras alterações de ITP forem lançadas. For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
