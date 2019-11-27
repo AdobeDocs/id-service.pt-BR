@@ -3,51 +3,48 @@ description: 'null'
 keywords: order of operations;ID Service
 seo-description: 'null'
 seo-title: Coletas de dados CNAMEs e Rastreamento entre domínios
-title: Coletas de dados CNAME e rastreamento entre domínios
+title: Coletas de dados CNAMEs e Rastreamento entre domínios
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 989b5f537848a7506a96e2eac17409f8b0307217
+source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# Coleta e identidade de dados{#data-collection-and-identity}
+# Coletas de dados CNAMEs e Rastreamento entre domínios{#data-collection-cnames-and-cross-domain-tracking}
 
-No Analytics há três maneiras de usar a ID de visitantes.
+Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
 
-- Usar o serviço de ID de [visitante](https://docs.adobe.com/content/help/en/id-service/using/home.md)
-- Usar a ID de visitante [herdada do Analytics](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-overview.md)
-- Fornecer sua própria identidade
+Nos navegadores que aceitam cookies de terceiros, um cookie é definido pelos servidores de coleta de dados durante a solicitação de uma ID de visitante. Esse cookie permite que o serviço de ID do visitante retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID da organização da Experience Cloud.
 
-## Uso do Serviço de ID do visitante{#using-the-visitor-id-service}
+Nos navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud será atribuída para cada domínio.
 
-O serviço de ID de visitante é a maneira recomendada para identificar os visitantes. Ele é baseado em dois componentes
+O cookie demdex.net possibilita que o serviço de ID de visitante ofereça o mesmo nível de rastreamento entre domínios que o cookie s_vi do Analytics, onde o cookie é aceito em alguns navegadores e usado entre domínios, mas rejeitado por outros navegadores.
 
-- ID primária - uma ID primária que pode ser usada para medir visitantes ao seu próprio site. Essa ID é armazenada na primeira ID de parte e é armazenada em um cookie do lado do cliente e em um cookie do lado do servidor (com um CNAME).
-- ID de terceiros (opcional) - uma ID de terceiros separada armazenada em demdex.net que pode ser usada para medir visitantes em vários domínios (por exemplo, example.com e example.net)
+## Coletas de dados CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-O Analytics usará a ID de terceiros, a menos que as IDs de terceiros estejam ativadas e os navegadores permitam o uso. A ID de terceiros é nomeada por cliente para que um cliente não possa combinar dados com outro cliente no Analytics.
+Quando o cookie do Analytics foi definido pelo servidor de coleta de dados, muitos clientes configuraram os registros do servidor de coleta de dados CNAME como parte de uma [implementação de cookie original](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) para evitar problemas com os navegadores que rejeitam cookies de terceiros. Esse processo configura o domínio do servidor da coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID de visitante seja definido como um cookie original.
 
-## Domínios herdados do Analytics
+Como o serviço de ID de visitante define o cookie de visitante diretamente no domínio do site atual usando o JavaScript, esta configuração não é mais necessária para definir cookies originais.
 
-Antes do lançamento do serviço de ID de visitante da Adobe, muitos clientes usavam os domínios nativos de análise para definir os cookies de ID. Isso inclui `omtrdc.net`, `2o7.net` ou um domínio CNAME. `omtrdc.net`, `2o7.net`, em alguns casos, um domínio CNAME foi usado para armazenar cookies de terceiros. Os cookies definidos dessa forma eram restritos a um único cliente para que os clientes não pudessem combinar seus dados com dados de outros clientes. Domínios CNAMED de terceiros, às vezes chamados de domínios amigáveis de terceiros, eram usados quando os clientes queriam rastrear usuários em sites que eles possuíam (por exemplo, example.com, example.co.jp). Este método ou o uso de CNAME para suportar domínios amigáveis de terceiros está obsoleto para permitir o serviço de ID de visitante mais robusto e com reconhecimento de privacidade. Os clientes devem mudar para o serviço de ID de visitante com um CNAME por domínio assim que possível.
+Os clientes que possuem uma única propriedade da Web (um único domínio) podem sair das coletas de dados CNAME e usar seu nome de host da coleta de dados padrão no lugar (`omtrdc.net` ou `2o7.net`).
 
-## Forneça sua própria identidade
+Contudo, existe outro benefício em usar um CNAME para a coleta de dados, que permite rastrear os visitantes entre um domínio inicial principal e outros domínios em navegadores que não aceitam cookies de terceiros. Os clientes que possuem várias propriedades da Web (vários domínios) se beneficiarão com a possibilidade de manter uma coleta de dados CNAME. A seção a seguir explica como o rastreamento de visitantes funciona entre domínios.
 
-Se um cliente escolher, poderá ignorar completamente o sistema de identificação da Adobe e implementar uma sua própria ID de visitante [personalizada](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-custom.md). Há algumas coisas para se ter em mente se escolhermos esta rota.
+## Como os CNAMEs permitem o rastreamento entre domínios {#section-78925af798e24917b9abed79de290ad9}
 
-- Você precisará implementar a opção de não participação e os controles de privacidade apropriados
-- Essa ID se aplica somente ao Analytics
-- Você é responsável por persistir nessa ID
+Devido ao modo como os cookies originais podem ser usados em um contexto de terceiros no Apple Safari e em alguns outros navegadores, um CNAME permite rastrear os clientes entre um domínio primário e outros domínios que usaram o mesmo servidor de rastreamento.
 
-## CNAMES de coleta de dados
+Por exemplo, você tem um site primário em `mymainsite.com`. Você configurou o registro CNAME para apontar para o servidor de coleta de dados seguro: `smetrics.mymainsite.com`.
 
-A Adobe ainda recomenda o uso de um CNAME em conjunto com o serviço de ID de visitante. Isso permite que a ID de visitante primária persista usando cookies HTTP, o que torna os cookies mais duráveis.
+Quando um usuário visita `mymainsite.com`, o cookie do serviço de ID é definido pelo servidor de coleta de dados. Isso é permitido, pois o domínio do servidor de coleta de dados corresponde ao domínio do site e o que é conhecido como usar um cookie em um *contexto próprio* ou apenas um *cookie próprio*.
 
-## OPTOUT
+Se você também está usando os mesmos servidores de coleta de dados em outros sites (por exemplo, `myothersiteA.com` e `myothersiteB.com`) e um visitante entrar posteriormente nesses sites, o cookie definido durante a visita ao `mymainsite.com` é enviado na solicitação HTTP para o servidor de coleta de dados (lembre-se que os navegadores enviam todos os cookies para um domínio com todas as solicitações HTTP para esse domínio, mesmo que o domínio não corresponda ao domínio do site atual). Isso é conhecido como usar um cookie em um *contexto de terceiros* ou apenas um *cookie de terceiros* e permite que a mesma ID de visitante seja usada em outros domínios. Observe que os navegadores tratam os cookies em contextos de terceiros de forma diferente dos cookies próprios.
 
-A Adobe fornece aos clientes as APIs para compartilhar sinais de recusa com nossos sistemas, de modo que os clientes, por sua vez, possam permitir que os usuários optem pelo rastreamento. Fornecemos instruções detalhadas sobre como o cliente pode implementar os controles adequados para suportar a escolha do usuário; a API [de](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) opção de não participação ou as opções para [impedir que o cookie seja acionado](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md) até que o consentimento seja obtido
+*Observação: o Safari bloqueia todos os cookies no contexto de terceiros, independentemente de como foram definidos.*
+
+Assim, seu domínio de coleta deve ser um domínio que as pessoas costumam visitar, para que um visitante seja identificado em domínios. Se não há um domínio *comum* para usar no domínio de coleta de dados, não há benefício entre domínios para manter um CNAME do domínio de coleta de dados. Se o site de entrada principal não for visitado primeiro, os visitantes serão identificados de maneiras diferentes no site secundário e no site principal.
 
 ## Habilitar o suporte para CNAME com o serviço de identidade da Experience Cloud {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-O suporte ao CNAME do servidor de coleta de dados é [ativado ao configurar um CNAME](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.md) e ao configurar a `visitor.marketingCloudServerSecure` variável no Serviço de identidade da Experience Cloud e ao configurar `s.trackingServerSecure` no AppMeasurement.
+O suporte do servidor de coleta de dados CNAME é ativado ao configurar as `visitor.marketingCloudServerSecure` variáveis.
