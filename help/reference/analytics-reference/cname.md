@@ -5,13 +5,13 @@ seo-description: 'null'
 seo-title: Coletas de dados CNAMEs e Rastreamento entre domínios
 title: Coletas de dados CNAMEs e Rastreamento entre domínios
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# Coletas de dados CNAMEs e Rastreamento entre domínios{#data-collection-cnames-and-cross-domain-tracking}
+# Coletas de dados CNAMEs e Rastreamento entre domínios {#data-collection-cnames-and-cross-domain-tracking}
 
 Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
 
@@ -23,7 +23,7 @@ O cookie demdex.net possibilita que o serviço de ID de visitante ofereça o mes
 
 ## Coletas de dados CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-Quando o cookie do Analytics foi definido pelo servidor de coleta de dados, muitos clientes configuraram os registros do servidor de coleta de dados CNAME como parte de uma [implementação de cookie original](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) para evitar problemas com os navegadores que rejeitam cookies de terceiros. Esse processo configura o domínio do servidor da coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID de visitante seja definido como um cookie original.
+Quando o cookie do Analytics foi definido pelo servidor de coleta de dados, muitos clientes configuraram os registros do servidor de coleta de dados CNAME como parte de uma [implementação de cookie original](https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-first-party.translate.html) para evitar problemas com os navegadores que rejeitam cookies de terceiros. Esse processo configura o domínio do servidor da coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID de visitante seja definido como um cookie original.
 
 Como o serviço de ID de visitante define o cookie de visitante diretamente no domínio do site atual usando o JavaScript, esta configuração não é mais necessária para definir cookies originais.
 
