@@ -5,16 +5,16 @@ seo-title: (beta) Uso dos serviços de Opt-in com a Estrutura IAB
 title: (beta) Uso dos serviços de Opt-in com a Estrutura IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 65947bf4078222561060501178bf28b3c6cfed7c
+source-git-commit: ab85467ad0f9f661c472eb373809c699c4b9130f
 
 ---
 
 
 # (beta) Uso dos serviços de Opt-in com a Estrutura IAB {#beta-using-opt-in-services-with-iab-framework}
 
-Conecte o CMP (Consent Management Platform) com o Plug-in de Audience Manager da Opt-in para IAB TCF.
+Conecte a Plataforma de gerenciamento de consentimento (CMP) com o plug-in Audience Manager da Opt-in para IAB TCF.
 
-Os clientes do Audience Manager que usam o [TCF da IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) podem conectar o Consent Management Platform (CMP) ao plug-in do Audience Manager de aceitação para TCF da IAB. Opt-in é um recurso integrado à biblioteca JavaScript da ECID que pode desativar bibliotecas de soluções individuais da Adobe, dependendo das preferências do visitante definidas em uma CMP. Quando o plug-in do Audience Manager para IAB TCF é implementado com a biblioteca ECID, as preferências do visitante do CMP compatível com IAB são mapeadas automaticamente para Aceitação. Essas preferências habilitarão as bibliotecas do Audience Manager (DIL e ECID) e as chamadas associadas ao receber o consentimento.
+Os clientes do Audience Manager que usam o [TCF da IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) podem conectar o Consent Management Platform (CMP) ao plug-in do Audience Manager de aceitação para TCF da IAB. Opt-in é um recurso integrado à biblioteca JavaScript da ECID que pode desativar bibliotecas de soluções individuais da Adobe, dependendo das preferências do visitante definidas em uma CMP. Quando o plug-in do Audience Manager para IAB TCF é implementado com a biblioteca ECID, as preferências do visitante do CMP compatível com IAB são mapeadas automaticamente ao Opt-in. Essas preferências habilitarão as bibliotecas do Audience Manager (DIL e ECID) e as chamadas associadas ao receber o consentimento.
 
 ## Implementar uma CMP compatível com IAB {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
@@ -25,13 +25,13 @@ Para integrar o Opt-In ao consentimento do IAB, é necessário fazer o seguinte:
 
 Para obter mais detalhes, leia os [documentos do Interactive Advertising Bureau](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md).
 
-## Ative o plug-in do Audience Manager para IAB na sua Biblioteca Javascript ECID {#section-77bf1b9ed67241a59e56c21ab752e82f}
+## Enable the Audience Manager plug-in for IAB TCF within your ECID Javascript Library {#section-77bf1b9ed67241a59e56c21ab752e82f}
 
 >[!NOTE]
 >
 >O Opt-in está disponível somente na ECID 4.0+
 
-Use o Adobe Experience Platform Launch para implementar o Opt-in e o plug-in do Audience Manager para o IAB TCF do site. Ao ativar o IAB para Opt-in manualmente, verifique se as seguintes configurações estão definidas como verdadeiro no objeto Visitante:
+Use o Adobe Experience Platform Launch para implementar o plug-in do Opt-in e do Audience Manager para IAB TCF no site. Ao ativar o IAB para Opt-in manualmente, verifique se as seguintes configurações estão definidas como verdadeiro no objeto Visitante:
 
 ```
 Visitor.getInstance("YOUR_ORG_ID", {  
@@ -46,7 +46,7 @@ Depois de configurar corretamente, as bibliotecas da ECID e DIL serão ativadas/
 >
 >O Audience Manager exige consentimento para as *finalidades 1,2 e 5, além do consentimento do fornecedor* para implantar cookies e iniciar ou honrar as sincronizações de ID. Leia mais sobre o Plug-in do Audience Manager para IAB TCF na documentação do Audience Manager [aqui](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html).
 
-For more information on how to validate both Opt-in and the Audience Manager plug-in for IAB, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
+For more information on how to validate both Opt-in and the Audience Manager plug-in for IAB TCF, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
 ## Documentação relacionada {#section-55da1110051a4b39b1037803f4a7b264}
 
