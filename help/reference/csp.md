@@ -5,7 +5,7 @@ seo-description: Uma Política de segurança de conteúdo (CSP) é um recurso de
 seo-title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
 
 ---
@@ -53,16 +53,16 @@ Adicione esses nomes de domínio ou URLs à sua CSP para cada lista da solução
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Serviço de ID de visitante</b> </p> </td> 
-   <td colname="col2"> <p>Modifique sua CSP para incluir <span class="codeph">*.demdex.net</span>. </p> <p>As chamadas para o domínio <span class="codeph"> demdex.net</span> são usadas para gerar os <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o Serviço de identidade da Experience Cloud</a> e para sincronizações de ID. Consulte, <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> </tr> 
+   <td colname="col2"> <p>Modifique sua CSP para incluir <span class="codeph">*.demdex.net</span>. </p> <p>As chamadas para o domínio <span class="codeph"> demdex.net</span> são usadas para gerar os <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o Serviço de identidade da Experience Cloud</a> e para sincronizações de ID. Consulte, <a href="https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.translate.html" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Plug-in do Activity Map</b> </p> </td> 
- <td colname="col2"> <p>Modifique o CSP para incluir *.adobe.com. **Nota**: Se você já tiver o Activity Map instalado antes de janeiro de 2020, seu navegador ainda verá uma solicitação inicial para *.omniture.com, mas será redirecionado para *.adobe.com. </p></td> 
+ <td colname="col2"> <p>Modifique sua CSP para incluir *.adobe.com. **Nota**: Se você já tiver o Activity Map instalado antes de janeiro de 2020, seu navegador ainda verá uma solicitação inicial para *.omniture.com, mas será redirecionado para *.adobe.com. </p></td> 
  </tr>
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >* [Referência da política de segurança de conteúdo](https://content-security-policy.com/)
->* [MDN: política de segurança de conteúdo](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [MDN: política de segurança de conteúdo](https://developer.mozilla.org/pt/docs/Web/HTTP/CSP)
 >* [Wikipedia: política de segurança de conteúdo](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
