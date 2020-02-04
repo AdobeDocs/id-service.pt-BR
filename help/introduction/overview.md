@@ -1,18 +1,18 @@
 ---
-description: A função do serviço de identidade da Experience Platform na Adobe Experience Cloud.
-seo-description: O serviço de identidade da Experience Platform permite a estrutura de identificação comum para os serviços, as soluções e os atributos e públicos-alvo do cliente da Experience Cloud.
+description: A função do serviço de identidade da Experience Cloud na Adobe Experience Cloud.
+seo-description: O serviço de identidade da Experience Cloud permite a estrutura de identificação comum para os serviços, as soluções e os atributos e públicos-alvo do cliente da Experience Cloud.
 seo-title: Visão geral do serviço de ID
 title: Visão geral
 uuid: null
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
 
 # Visão geral
 
-O serviço de identidade da Experience Platform permite a estrutura de identificação comum para os serviços principais da Experience Cloud, as soluções e os atributos e públicos-alvo do cliente no serviço de identidade da Platform. (Você pode ver referências a nomes ou acrônicos antigos, como Serviço da Experience Cloud ID, ECID, Serviço da Marketing Cloud ID, MID e Serviço de ID de visitante). O serviço de identidade funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
+O Serviço de identidade da Experience Cloud permite a estrutura de identificação comum para os principais serviços, soluções e atributos e públicos-alvo do cliente da Experience Cloud no Serviço de identificação da plataforma. (Você pode ver referências a nomes ou acrônicos antigos, como Serviço da Experience Cloud ID, ECID, Serviço da Marketing Cloud ID, MID e Serviço de ID de visitante). O serviço de identidade funciona ao atribuir uma ID exclusiva e persistente para um visitante do site. Quando a organização implementa o serviço de ID, isso permite que você identifique o mesmo visitante do site e os dados em soluções diferentes da Experience Cloud.
 
 ![](assets/ecid.png)
 
