@@ -4,7 +4,7 @@ seo-description: O Serviço de identificação da Experience Cloud (antigo servi
 seo-title: Visão geral do Serviço da Experience Cloud ID
 title: Visão geral do Serviço da Experience Cloud ID
 translation-type: tm+mt
-source-git-commit: 9e020c3292a7c9f14ec77615a54ec61a37762eec
+source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
 
 ---
 
@@ -15,7 +15,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 >[!NOTE]
 >
-> Você pode ver referências a nomes antigos ou acrônimos, como ECID, Serviço da Marketing Cloud ID (MID) e Serviço de ID de visitante. Elas se referem ao Serviço [!UICONTROL de identidade da]Experience Cloud. Você também pode ver o Serviço [!UICONTROL de identidade da plataforma]Experience. Para clarificar:
+> Você pode ver referências ao serviço de ID como acrônimos ou nomes antigos, como ECID, Serviço da Marketing Cloud ID (MID) e Serviço de ID de visitante. Elas se referem ao Serviço [!UICONTROL de identidade da]Experience Cloud. Você também pode ver o Serviço [!UICONTROL de identidade da plataforma]Experience. Para clarificar:
 
 * [!UICONTROL Serviço]de identidade da plataforma de experiência: O serviço que vincula identidades. É o serviço de vinculação de dispositivos para o gerenciamento de experiências baseado em pessoas.
 * [!UICONTROL Serviço] da Experience Cloud ID (ECID): A ID exclusiva e persistente atribuída a um visitante do site. É uma entidade específica que pode ser usada pelo Serviço de identidade de plataforma.
@@ -34,7 +34,7 @@ Resumindo, o serviço de ID:
 
 * Cria uma chave ou ID comum que pode ser usada para vincular perfis e identidades.
 * Identifica exclusivamente um dispositivo em várias soluções.
-* Define um cookie primário no domínio do cliente para garantir o rastreamento no mesmo domínio. Consulte Experience Cloud.
+* Define um cookie primário no domínio do cliente para garantir o rastreamento no mesmo domínio. Consulte o documento sobre [cookies e o Serviço](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html) de identidade da Experience Cloud para obter mais informações.
 * Recebe aliases e mapeamentos de ID de clientes e parceiros da Experience Cloud.
 * Gerencia a sincronização de ID na Experience Cloud.
 * Oferece suporte à sincronização de ID com terceiros diferentes no ecossistema de tecnologia de anúncios.
