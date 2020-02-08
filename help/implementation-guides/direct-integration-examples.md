@@ -1,19 +1,19 @@
 ---
 description: Esses exemplos abordam dois casos de uso comuns relacionados à integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Esses exemplos abordam dois casos de uso comuns relacionados à integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
 seo-title: Casos de uso da integração direta
 title: Casos de uso da integração direta
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
 
 ---
 
 
 # Casos de uso da integração direta {#direct-integration-use-cases}
 
-Esses exemplos abordam dois casos de uso comuns relacionados à integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
+Esses exemplos abrangem dois casos de uso comuns relacionados a uma integração direta e a Experience Cloud ID (ECID ou MID). Essa ID é exclusiva e persistente para os visitantes do site.
 
 >[!TIP]
 >
