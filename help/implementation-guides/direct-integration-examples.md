@@ -6,7 +6,7 @@ seo-title: Casos de uso da integração direta
 title: Casos de uso da integração direta
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
+source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
 
