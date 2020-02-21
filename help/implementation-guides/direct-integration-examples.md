@@ -1,11 +1,11 @@
 ---
-description: Esses exemplos abordam dois casos de uso comuns relacionados à integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
+description: Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
 keywords: ID Service
-seo-description: Esses exemplos abordam dois casos de uso comuns relacionados à integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
+seo-description: Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à Experience Cloud ID (MID). A MID é uma ID exclusiva e contínua para os visitantes de seu site.
 seo-title: Casos de uso da integração direta
 title: Casos de uso da integração direta
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 # Casos de uso da integração direta {#direct-integration-use-cases}
 
-Esses exemplos abrangem dois casos de uso comuns relacionados a uma integração direta e a Experience Cloud ID (ECID ou MID). Essa ID é exclusiva e persistente para os visitantes do site.
+Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à Experience Cloud ID (ECID ou MID). Esta é uma ID exclusiva e contínua para os visitantes de seu site.
 
 >[!TIP]
 >
@@ -51,7 +51,7 @@ Esses exemplos abrangem dois casos de uso comuns relacionados a uma integração
      <li id="li_4869572B40E54C54B88A2474DAC475A8">A ID do seu provedor de dados. Essa é uma ID exclusiva atribuída para sua empresa. Chamaremos essa ID de 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Sua ID para o visitante (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Opcional)</i> Uma ID de status para definir o estado de autenticação desse visitante. </li> 
-    </ul> <p>Se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo,<span class="codeph"> d_blob</span> ou <span class="codeph">dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
+    </ul> <p>Se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guia de integração direta</a> (por exemplo, <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
@@ -86,7 +86,7 @@ Esses exemplos abrangem dois casos de uso comuns relacionados a uma integração
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ações</b> </p> </td> 
-   <td colname="col2"> <p>Nessa condições, faça uma chamada para o serviço de ID que inclui sua ID da organização. </p> <p>Se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo,<span class="codeph"> d_blob</span> ou <span class="codeph">dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
+   <td colname="col2"> <p>Nessa condições, faça uma chamada para o serviço de ID que inclui sua ID da organização. </p> <p>Se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guia de integração direta</a> (por exemplo, <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
