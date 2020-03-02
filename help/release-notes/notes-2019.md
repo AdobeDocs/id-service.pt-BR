@@ -5,24 +5,24 @@ seo-description: Lançamentos, atualizações ou mudanças futuras do serviço d
 seo-title: Notas de versão de 2019
 title: Notas de versão de 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
 
-# Experience Cloud release notes - 2019 {#release-notes}
+# Notas de versão da Experience Cloud - 2019 {#release-notes}
 
 Lançamentos, atualizações ou mudanças futuras do serviço de identidade da Experience Cloud.
 
 ## Versão 4.4.1
 
-Adicionar caixa de seleção de aprovação prévia para análise de mídia na extensão de inicialização de ECID (CORE-33185)
+Adicionar caixa de seleção de aprovação prévia de análise de mídia na Extensão de Launch  ECID (CORE-33185)
 
 **Correções**
 
-* Problema com a extensão de lançamento de ECID preOptInAprovals análise da cadeia de entrada (CORE-34041)
-* Queda de desempenho ao usar o trackingServer (CORE-32387)
+* Problema com o processamento da string de entrada preOptInApprovals da extensão de lançamento (CORE-34041)
+* Queda de desempenho quando trackingServer está em uso (CORE-32387)
 
 ## Versão 4.4 {#version-4point4}
 
@@ -46,25 +46,25 @@ Adicionar caixa de seleção de aprovação prévia para análise de mídia na e
 
 ## Versão 4.1
 
-Atualização `publishDestinations` por nova alteração da API. Com essa atualização, as informações do referenciador da página podem ser expostas durante a sincronização de ID, se desejado. (CORE-23693)
+Atualização `publishDestinations` de acordo com alteração da nova API. Com essa atualização, as informações do referenciador da página podem ser expostas durante a sincronização de ID, se desejado. (CORE-23693)
 
 ## Versão 4.2
 
-Suporte para o plug-in do Audience Manager para IAB TCF, disponível por meio do objeto de aceitação ECID.
+Suporte para o plug-in do Audience Manager para IAB TCF, disponível por meio do objeto ECID Opt-in.
 
 **Correções**
 
-* Falha do IAB + OptIn ao obter a MID para clientes revisitados (CORE-26022)
-* Corrigido o erro na configuração do opt-in doOptInApply no DTM (DTM-12958)
+* Falha do IAB + OptIn em obter o MID para clientes retornantes (CORE-26022)
+* Corrigido o erro na configuração doesOptInApply de opt-in no DTM (DTM-12958)
 * A opção de não participação ECID desativa sincronizações de ID (CORE-23814)
 
 ## Versão 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Serviço de opt-in**. O Opt-in é uma extensão da Experience Cloud ID (ECID) que permite controlar se (e quais) as bibliotecas da Experience Cloud podem criar cookies nas páginas da Web dos visitantes. Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**Serviço de opt-in**. O Opt-in é uma extensão da Experience Cloud ID (ECID) que permite controlar se (e quais) as bibliotecas da Experience Cloud podem criar cookies nas páginas da Web dos visitantes. Usando o [Experience Platform Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html), é possível simplificar a obtenção dos consentimentos de Opt-in dos visitantes da solução da Experience Cloud, permitindo que o Analytics, o Target, o Audience Manager e outras ou todas as soluções da Experience Cloud sejam aceitos no seu sistema de gerenciamento de consentimento.
 
 ## Versão 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
 | Item | Descrição |
 |---|---|
-| O sinalizador`disableIdSyncs` não está funcionando ao passar uma string. | Fixo. Os valores definidos no `disableidSyncs` parâmetro para a `getInstance` função agora são honrados. |
+| O sinalizador `disableIdSyncs` não está funcionando ao passar uma string. | Fixo. Os valores definidos no `disableidSyncs` parâmetro para a `getInstance` função agora são honrados. |
 | iFrames de terceiros não recebem uma ECID | Correção da ECID no Safari Mobile e de ECIDs em vários iFrames que não funcionavam. |
