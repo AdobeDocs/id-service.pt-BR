@@ -5,7 +5,7 @@ seo-description: Lançamentos, atualizações ou mudanças futuras do serviço d
 seo-title: Notas de versão de 2019
 title: Notas de versão de 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -17,12 +17,12 @@ Lançamentos, atualizações ou mudanças futuras do serviço de identidade da E
 
 ## Versão 4.4.1
 
-Adicionar caixa de seleção de aprovação prévia de análise de mídia na Extensão de Launch  ECID.
+Adicionar caixa de seleção de aprovação prévia de análise de mídia na Extensão de Launch ECID.
 
 **Correções**
 
-* Problema com a análise da cadeia de entrada de extensão de inicialização de ECID preOptInAprovals.
-* Descarte de desempenho quando trackingServer está sendo usado.
+* Problema com a análise de sequência de caracteres de entrada da extensão de ativação preOptInApprovals da ECID.
+* Queda de desempenho quando o trackingServer está em uso.
 
 ## Versão 4.4 {#version-4point4}
 
@@ -55,7 +55,7 @@ Suporte para o plug-in do Audience Manager para IAB TCF, disponível por meio do
 **Correções**
 
 * Falha do IAB + OptIn em obter o MID para clientes retornantes.
-* Corrigido o bug na configuração do opt-in doOptInApply no DTM.
+* Corrigido o erro na configuração de aceitação do doesOptInApply no DTM.
 * A opção de não participação ECID desativa sincronizações de ID.
 
 ## Versão 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
@@ -67,4 +67,4 @@ Suporte para o plug-in do Audience Manager para IAB TCF, disponível por meio do
 | Item | Descrição |
 |---|---|
 | O sinalizador `disableIdSyncs` não está funcionando ao passar uma string. | Fixo. Os valores definidos no `disableidSyncs` parâmetro para a `getInstance` função agora são honrados. |
-| iFrames de terceiros que não recebem ECID | Correção de ECID na Safari Mobile e ECIDs em vários iFrames que não funcionavam. |
+| IFrames de terceiros não obtêm a ECID | Correção da ECID no Safari Mobile e ACIDs em vários iFrames que não estavam funcionando. |
