@@ -1,12 +1,12 @@
 ---
 description: Uma configuração booleana opcional que determina se o serviço de ID envia (ou não) dados ao Adobe Experience Cloud Device Co-op.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Uma configuração booleana opcional que determina se o serviço de ID envia (ou não) dados ao Adobe Experience Cloud Device Co-op.
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -30,7 +30,7 @@ Conteúdo:
 Para usar o `isCoopSafe` é necessário:
 
 * Usar o código do serviço de ID versão 2.4 ou posterior.
-* Participar do [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/pt_BR/mcdc/). Os membros em potencial também devem consultar essa documentação para determinar se `isCoopSafe` responde possíveis dúvidas sobre como os dados são usados para criar o gráfico do dispositivo.
+* Participe do Device Co-op da [Experience Cloud](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html). Os membros em potencial também devem consultar essa documentação para determinar se `isCoopSafe` responde possíveis dúvidas sobre como os dados são usados para criar o gráfico do dispositivo.
 
 * Trabalhe com seu consultor da [!DNL Adobe] para definir um sinalizador de lista de permissões ou lista de bloqueios na conta do Device Co-op. Não há um caminho de autoatendimento para habilitar esses sinalizadores.
 
@@ -54,8 +54,8 @@ Para usar o `isCoopSafe` é necessário:
    <td colname="col1"> <p> <b>DIL em sites de terceiros</b> </p> </td> 
    <td colname="col2"> <p>Adicione <span class="codeph">isCoopSafe</span> ao seu código do serviço de ID para uso em sites de terceiros nos quais você: </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
-      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Não pode garantir que os visitantes autenticados aceitaram ou não os contratos de termos de uso. </li> 
-      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Precisa controlar como os dados são usados pelo Device Co-op para criar o gráfico do dispositivo. </li> 
+      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Não é possível garantir que visitantes autenticados tenham ou não aceitos contratos de termo de uso. </li> 
+      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">É necessário controlar como esses dados são usados pelo Device Co-op para criar o gráfico do dispositivo. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -112,7 +112,7 @@ Os parâmetros de POST informam o [!DNL Experience Cloud] Device Co-op se é pos
 
 ## APIs pós-instanciamento {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-Essas APIs permitem que você substitua o status de `isCoopSafe`. Elas são necessárias, pois permitem que você altere um status de pós-instanciamento/pós-login de um visitante em um site ou em um aplicativo de página simples no qual a página não é atualizada. Por exemplo, é necessário chamar essas APIs se um usuário se autentica no seu site ou aplicativo e, posteriormente, aceita uma política de termos de uso que permite ao Device Co-op usar seus dados.
+Essas APIs permitem que você substitua o status de `isCoopSafe`. Elas são necessárias porque permitem alterar o status de pós-instanciação/pós-login de um visitante em um site ou em um aplicativo de página única no qual a página não é atualizada. Por exemplo, você precisará chamar essas APIs se um usuário se autenticar em seu site ou aplicativo e, posteriormente, aceitar uma política de termos de uso que permita que o Device Co-op use seus dados.
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
