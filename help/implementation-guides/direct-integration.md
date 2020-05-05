@@ -1,19 +1,19 @@
 ---
-description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou o SDK. Isso inclui dispositivos como consoles de jogos, smart TVs ou outros dispositivos que se conectam à Internet. Consulte esta seção para saber mais sobre a sintaxe, os exemplos de código e as definições.
-keywords: Serviço de ID
-seo-description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou o SDK. Isso inclui dispositivos como consoles de jogos, smart TVs ou outros dispositivos que se conectam à Internet. Consulte esta seção para saber mais sobre a sintaxe, os exemplos de código e as definições.
+description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
+keywords: ID Service
+seo-description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
 seo-title: Integração direta com o serviço de identidade da Experience Cloud
 title: Integração direta com o serviço de identidade da Experience Cloud
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Integração direta com o serviço de identidade da Experience Cloud {#direct-integration-with-the-experience-cloud-id-service}
 
-Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou o SDK. Isso inclui dispositivos como consoles de jogos, smart TVs ou outros dispositivos que se conectam à Internet. Consulte esta seção para saber mais sobre a sintaxe, os exemplos de código e as definições.
+Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
 
 ## Sintaxe {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,19 +21,19 @@ Os dispositivos que não podem usar VisitorAPI.js ou as bibliotecas de código d
 
 ![](assets/directSyntax.png)
 
-Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API do DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-O serviço de ID oferece suporte às chamadas HTTP e HTTPS. Use HTTPS para passar dados de uma página segura.
+O serviço de ID suporta chamadas HTTP e HTTPS. Use HTTPS para enviar dados de uma página segura.
 
 ## Solicitação de exemplo {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-Sua solicitação pode ser semelhante ao exemplo mostrado abaixo. As variáveis longas foram reduzidas.
+Sua solicitação pode ser semelhante à amostra mostrada abaixo. Variáveis longas foram encurtadas.
 
 ![](assets/directExample.png)
 
 ## Resposta de exemplo {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resposta pode ser diferente.
+O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua resposta pode ser diferente.
 
 ```js
 {
@@ -58,15 +58,15 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resp
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Um domínio herdado controlado pela <span class="keyword">Adobe</span>. Consulte <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Um domínio herdado controlado pela <span class="keyword">Adobe</span>. Consulte <a href="https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>A ID de visitante da Experience Cloud. Consulte <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies e o serviço de identidade da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>A ID do visitante da Experience Cloud. See <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda e encontrar essa ID, consulte <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda para encontrar essa ID, consulte <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos do Serviço</a>de identidade da Experience Cloud. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +88,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resp
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>O serviço de ID é um sistema de carga balanceada distribuído geograficamente. A ID identifica a região do data center que processa a chamada. Consulte <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">IDs da região do DCS, locais e nomes de host</a>. </p> </td> 
+   <td colname="col2"> <p>O serviço de ID é um sistema distribuído geograficamente e com balanceamento de carga. A ID identifica a região do data center que manipula a chamada. Consulte <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">IDs da região do DCS, locais e nomes de host</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,7 +96,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. Sua resp
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Uma parte criptografada dos metadados do JavaScript. As restrições de tamanho limitam a bolha a 512 bytes ou menos. </p> </td> 
+   <td colname="col2"> <p>Um pedaço criptografado de metadados JavaScript. As restrições de tamanho limitam o blob a 512 bytes ou menos. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
@@ -119,7 +119,7 @@ Alguns parâmetros de resposta fazem parte da solicitação e foram definidos na
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>O intervalo da nova sincronização, especificado em segundos. O intervalo padrão é de 604.800 segundos (7 dias). </p> </td> 
+   <td colname="col2"> <p>O intervalo de re-sincronização, especificado em segundos. O intervalo padrão é de 604.800 segundos (7 dias). </p> </td> 
   </tr> 
  </tbody> 
 </table>
