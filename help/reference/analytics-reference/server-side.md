@@ -1,12 +1,12 @@
 ---
 description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
 seo-title: Implementação do lado do servidor combinada com JavaScript
 title: Implementação do lado do servidor combinada com JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Em algumas implementações as IDs de visitante são passadas do JavaScript para um servidor, de modo que outros eventos do Analytics (como uma compra) possam ser enviados ao servidor.
 
-A API de serviço de ID fornece métodos, [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) e [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md) para recuperar os valores de ID que podem ser passados para o servidor.
+A API do serviço de ID fornece os métodos [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) e [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md)para recuperar os valores de ID que podem ser passados para o servidor.
 
 Certifique-se de marcar a ID de visitante da Experience Cloud e a ID de visitante do Analytics, além de enviar ambas as IDs (quando presentes) para verificar se os dados enviados estão associados ao perfil de visitante atual do Analytics.
 
@@ -29,7 +29,7 @@ Inclua a ID de visitante do Analytics (se configurada) no elemento `<visitorID>`
 
 Inclua a ID de visitante da Experience Cloud no elemento `<marketingCloudVisitorID>`.
 
-Consulte [Tags XML suportadas](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
+Consulte Tags [XML](https://www.adobe.io)suportadas.
 
 ## AppMeasurement para Java {#section-d664b94934924d048300d9c2b6560085}
 
