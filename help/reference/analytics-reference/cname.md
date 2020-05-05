@@ -5,8 +5,8 @@ seo-description: 'null'
 seo-title: Coletas de dados CNAMEs e Rastreamento entre domínios
 title: Coletas de dados CNAMEs e Rastreamento entre domínios
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,21 +15,21 @@ source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
 
-Nos navegadores que aceitam cookies de terceiros, um cookie é definido pelos servidores de coleta de dados durante a solicitação de uma ID de visitante. Esse cookie permite que o serviço de ID do visitante retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID da organização da Experience Cloud.
+Em navegadores que aceitam cookies de terceiros, um cookie é definido pelos servidores de coleta de dados durante a solicitação de uma ID de visitante. Esse cookie permite que o serviço de ID de visitante retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID de empresa da Experience Cloud.
 
-Nos navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud será atribuída para cada domínio.
+Em navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud é atribuída para cada domínio.
 
-O cookie demdex.net possibilita que o serviço de ID de visitante ofereça o mesmo nível de rastreamento entre domínios que o cookie s_vi do Analytics, onde o cookie é aceito em alguns navegadores e usado entre domínios, mas rejeitado por outros navegadores.
+O cookie demdex.net permite que o serviço de ID de visitante forneça o mesmo nível de rastreamento entre domínios que o cookie s_vi no Analytics, onde o cookie é aceito em alguns navegadores e usado em domínios, mas rejeitado por outros navegadores.
 
 ## Coletas de dados CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-Quando o cookie do Analytics foi definido pelo servidor de coleta de dados, muitos clientes configuraram os registros do servidor de coleta de dados CNAME como parte de uma [implementação de cookie original](https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-first-party.translate.html) para evitar problemas com os navegadores que rejeitam cookies de terceiros. Esse processo configura o domínio do servidor da coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID de visitante seja definido como um cookie original.
+When the Analytics cookie was set by the data collection server, many customers have configured data collection server CNAME records as part of a [first-party cookie implementation](https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-first-party.html) to avoid issues with browsers that reject third-party cookies. Esse processo configura o domínio do servidor de coleta de dados para corresponder ao domínio do site, de modo que o cookie da ID do visitante seja definido como um cookie primário.
 
-Como o serviço de ID de visitante define o cookie de visitante diretamente no domínio do site atual usando o JavaScript, esta configuração não é mais necessária para definir cookies originais.
+Como o serviço de ID do visitante define o cookie do visitante diretamente no domínio do site atual usando JavaScript, essa configuração não é mais necessária para definir cookies primários.
 
 Os clientes que possuem uma única propriedade da Web (um único domínio) podem sair das coletas de dados CNAME e usar seu nome de host da coleta de dados padrão no lugar (`omtrdc.net` ou `2o7.net`).
 
-Contudo, existe outro benefício em usar um CNAME para a coleta de dados, que permite rastrear os visitantes entre um domínio inicial principal e outros domínios em navegadores que não aceitam cookies de terceiros. Os clientes que possuem várias propriedades da Web (vários domínios) se beneficiarão com a possibilidade de manter uma coleta de dados CNAME. A seção a seguir explica como o rastreamento de visitantes funciona entre domínios.
+No entanto, há um benefício adicional em usar um CNAME para coleta de dados que permite rastrear visitantes entre um domínio de aterrissagem principal e outros domínios em navegadores que não aceitam cookies de terceiros. Os clientes que têm várias propriedades da Web (vários domínios) podem se beneficiar com a manutenção de uma coleta de dados CNAME. A seção a seguir explica como o rastreamento de visitantes entre domínios funciona.
 
 ## Como os CNAMEs permitem o rastreamento entre domínios {#section-78925af798e24917b9abed79de290ad9}
 
