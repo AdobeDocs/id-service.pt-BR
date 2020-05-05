@@ -1,12 +1,12 @@
 ---
 description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
 seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
 
-Essas alterações também estão contempladas nas [notas de versão da Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Consulte as [notas de versão anteriores](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) para ver anúncios anteriores.[!DNL Experience Cloud]
+Essas alterações também são capturadas nas notas [de versão da](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html)Experience Cloud.
 
 ## Versão 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -47,9 +47,9 @@ Outubro de 2016
 
 **Correções e melhorias**
 
-* Corrigido um bug que passava as IDs exclusivas do usuário do Audience Manager (AAMUUIDs) como Experience Cloud IDs para o serviço de ID.
-* Se a vida útil (TTL) de um cookie AMCV tiver expirado, o serviço de ID retornará essa informação ao servidor, desde que o cookie contenha uma Experience Cloud ID. Após esta chamada, o serviço de ID faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a aprimorar o desempenho, pois o serviço de ID não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
-* O serviço de ID sincroniza automaticamente as Experience Cloud IDs (MIDs) com o Adobe Media Optimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a aumentar as taxas de correspondência no Media Optimizer. Aplicável ao VisitorAPI.js versão 1.8 ou mais recente. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+* Correção de um bug que transmitia IDs de usuário exclusivas (AAMUUIDs) do Audiência Manager como Experience Cloud IDs ao serviço de ID.
+* Se o TTL (time-to-live) de um cookie AMCV tiver expirado, o serviço de ID ainda retornará essas informações ao servidor, contanto que o cookie contenha uma Experience Cloud ID. Após esta chamada, o serviço de ID faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a melhorar o desempenho, pois o serviço de ID não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
+* O serviço de ID sincroniza automaticamente as Experience Cloud IDs (MIDs) com o Adobe Media Otimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a melhorar as taxas de correspondência do Media Otimizer. Aplicável ao VisitorAPI.js versão 1.8 ou mais recente. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Documentação nova e revisada**
 
@@ -81,7 +81,7 @@ Revisão: [Requisitos do serviço de identidade da Experience Cloud](../referenc
 
 **Problemas conhecidos**
 
-Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html).
+Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versão 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,8 +100,8 @@ Julho de 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>CORS (Cross-Origin Resource Sharing, ou Compartilhamento de recursos de várias origens) </p> </td> 
-   <td colname="col2"> <p>O CORS permite que os navegadores solicitem recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte às normas da CORS para permitir solicitações entre origens e do lado do cliente. O serviço de ID reverte solicitações JSONP em navegadores incompatíveis com CORS. </p> <p>Consulte: </p> 
+   <td colname="col1"> <p>CORS (Cross-Origem Resource Sharing, compartilhamento de recursos em várias áreas) </p> </td> 
+   <td colname="col2"> <p>O CORS permite que os navegadores solicitem recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte às normas da CORS para permitir solicitações entre origens e do lado do cliente. O serviço de ID reverte solicitações JSONP em navegadores que não suportam CORS. </p> <p>Consulte: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Suporte ao CORS no serviço de identidade da Experience Cloud</a> </li> 
     </ul> </td> 
@@ -111,10 +111,10 @@ Julho de 2016
 
 **Correções e melhorias**
 
-* Adição de um parâmetro `d_fieldgroup` para chamadas de sincronização de ID para `dpm.demdex.net`. O novo parâmetro é usado para solucionar problemas internos e realizar a depuração.
+* Adição de um parâmetro `d_fieldgroup` para chamadas de sincronização de ID para `dpm.demdex.net`. Esse novo parâmetro é usado para fins internos de solução de problemas e depuração.
 
-* Adicionado um atributo de título ao iFrame do serviço de ID. Um título de iFrame ajuda os leitores de tela a fornecerem informações de página aos usuários que precisam de auxílio em interações com conteúdos online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
-* Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando definido como `true`, o serviço de ID carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi criado para ajudar a melhorar as taxas de correspondência de sincronização de ID. Por padrão, o serviço de ID carrega o iFrame na janela. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
+* Adicionado um atributo de título ao iFrame do serviço de ID. O título de um iFrame ajuda os leitores de tela a fornecerem informações de página para os usuários que precisam de assistência ao interagirem com o conteúdo online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
+* Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando definido como `true`, o serviço de ID carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi projetado para ajudar a melhorar as taxas de correspondência da sincronização de ID. Por padrão, o serviço de ID carrega o iFrame na janela. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * Corrigido um bug com uma função de retorno de chamada que provocava um loop infinito no AppMeasurement.
 * Alterado o intervalo padrão de `loadTimeout` de 500 milissegundos para 30.000 milissegundos. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
@@ -145,7 +145,7 @@ Junho de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Alterações no atributo <span class="codeph">iframe.sandbox</span> </p> </td> 
-   <td colname="col2"> <p>Agora, o iFrame fica configurado da seguinte maneira: <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>A permissão de apenas estes dois tokens ajuda a melhorar a segurança, além de oferecer o serviço de ID com o recurso básico necessário para a sincronização de ID. </p> <p>O atributo sandbox não é compatível com o Internet Explorer versão 9 ou anterior. Para obter mais informações, consulte a seção Atributos na <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">Documentação do iFrame</a>. </p> </td> 
+   <td colname="col2"> <p>Agora, o iFrame fica configurado da seguinte maneira: <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>A permissão de apenas estes dois tokens ajuda a melhorar a segurança, além de oferecer o serviço de ID com o recurso básico necessário para a sincronização de ID. </p> <p>O atributo sandbox não é compatível com o Internet Explorer versão 9 ou anterior. Para obter mais informações, consulte a seção Atributos na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe" format="https" scope="external">Documentação do iFrame</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codificação da Experience Cloud ID (MID) </p> </td> 
@@ -156,7 +156,7 @@ Junho de 2016
 
 **Correções**
 
-A API de visitante deixou de forçar uma chamada extra de re-sincronização com o Audience Manager quando não há uma ID antiga de visitante do Analytics.
+A API do visitante não força mais uma chamada de re-sincronização extra com o Audiência Manager quando não há uma ID de visitante herdada do Analytics.
 
 ## Versão 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -189,7 +189,7 @@ Março de 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Suporte para cancelamento </p> </td> 
+   <td colname="col1"> <p>Suporte para recusa </p> </td> 
    <td colname="col2"> <p>O serviço da <span class="keyword">Experience Cloud</span> ID é compatível com solicitações de recusa do visitante. </p> </td> 
   </tr> 
   <tr> 
@@ -203,7 +203,7 @@ Março de 2016
 
 * [Implementar o serviço de identidade da Experience Cloud para](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): novo procedimento que descreve como configurar o serviço de ID com o Analytics [!DNL Analytics].
 
-* [Pontos de decisão de migração do serviço de identidade da Experience Cloud](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): texto revisado para esclarecer alguns pontos. Trabalhar com um domínio único significa poder migrar de um CNAME de coleta de dados se não desejar mais gerenciá-lo. No entanto, não há necessidade de realizar essa alteração se o CNAME estiver funcionando.
+* [Pontos de decisão de migração do serviço de identidade da Experience Cloud](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): texto revisado para esclarecer alguns pontos. Trabalhar com um único domínio significa que você pode sair de uma coleta de dados CNAME se não quiser mais gerenciá-la. No entanto, não há necessidade de alterar se o CNAME estiver funcionando.
 
 ## Versão 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
@@ -221,7 +221,7 @@ Janeiro de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> Estados de autenticação e IDs do cliente </a> </p> </td> 
-   <td colname="col2"> <p>Texto revisado. As IDs do cliente devem ser passadas apenas como valores não codificados. A codificação das IDs cria identificadores duplamente codificados. </p> </td> 
+   <td colname="col2"> <p>Texto revisado. As IDs do cliente devem ser passadas somente como valores não codificados. As IDs de codificação criarão identificadores codificados por duplo. </p> </td> 
   </tr> 
  </tbody> 
 </table>
