@@ -3,8 +3,8 @@ title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 seo-title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
-translation-type: ht
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -47,7 +47,7 @@ Veja abaixo os esforços relacionados ao uso da biblioteca ITP e ECID.
 
 O ITP 2.1 dificulta a capacidade de gravar cookies do lado do cliente, o que prejudica a capacidade de fornecer informações precisas de rastreamento do visitante para os clientes. Dessa forma, uma alteração está sendo introduzida nos servidores de rastreamento CNAME da Adobe, para armazenar a Experience Cloud ID (ECID) do visitante em um cookie próprio.
 
-Essa alteração é útil apenas para clientes da ECID que utilizam um CNAME do Analytics no contexto próprio. Se você for um cliente do Analytics que não utiliza CNAME ou até mesmo se não for um cliente do Analytics, ainda é possível se qualificar para um registro CNAME. Entre em contato com o Atendimento ao cliente ou seu representante de conta para iniciar o processo de registro em um [CNAME](https://marketing.adobe.com/resources/help/pt_BR/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).
+Essa alteração é útil apenas para clientes da ECID que utilizam um CNAME do Analytics no contexto próprio. Se você for um cliente do Analytics que não utiliza CNAME ou até mesmo se não for um cliente do Analytics, ainda é possível se qualificar para um registro CNAME. Entre em contato com o Atendimento ao cliente ou seu representante de conta para iniciar o processo de registro em um [CNAME](https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-first-party.html).
 
 Atualize para a biblioteca da ECID v. 4.3.0 + para aproveitar essa alteração.
 
@@ -57,7 +57,7 @@ Depois que uma solicitação de ID é feita para demdex.net e uma ECID é recupe
 
 Esse novo `s_ecid` cookie segue o mesmo status de Opt-out do cookie AMCV. Se a ECID for lida a partir do `s_ecid` cookie, o demdex será sempre chamado imediatamente para recuperar o status de Opt-out mais recente para essa ID e armazenado no cookie AMCV.
 
-Além disso, se o consumidor recusou o rastreamento do Analytics por meio deste [método](https://marketing.adobe.com/resources/help/pt_BR/sc/implement/opt_out_link.html), esse `s_ecid` cookie será excluído.
+Além disso, se o consumidor recusou o rastreamento do Analytics por meio deste [método](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html), esse `s_ecid` cookie será excluído.
 
 O nome do servidor de rastreamento deve ser fornecido à biblioteca VisitorJS ao inicializar a biblioteca usando o trackingServer ou trackingServerSecure. Isso deve corresponder à configuração trackingServer nas configurações do Analytics.
 
