@@ -1,12 +1,12 @@
 ---
 description: Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional visitor.FIELDS.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional visitor.FIELDS.
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -37,7 +37,7 @@ Consulte os casos de uso e as definições a seguir para obter mais informaçõe
 
 ## Caso de uso 1: solicitar o conjunto de dados padrão {#section-36a31683558742a5915db3a391e09f7b}
 
-Esse código retorna o conjunto de dados padrão. Sua solicitação e a resposta podem ser semelhantes aos seguintes exemplos.
+Esse código retorna o conjunto de dados padrão. Sua solicitação e resposta podem ser semelhantes aos exemplos a seguir.
 
 ```js
 //Call the ID service 
@@ -47,7 +47,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 visitor.getVisitorValues(visitorIdsCallback);
 ```
 
-Na resposta de exemplo padrão, alguns valores foram reduzidos para fins de demonstração.
+Na resposta de amostra padrão, alguns valores foram encurtados para fins de demonstração.
 
 ```js
 //Formatted IDs in JSON response 
@@ -62,7 +62,7 @@ Na resposta de exemplo padrão, alguns valores foram reduzidos para fins de demo
 
 ## Caso de uso 2: solicitar um conjunto de dados personalizado {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Esse código usa uma matriz para retornar um conjunto específico de IDs usando o `visitor.FIELDS` enum. Nesse caso, queremos apenas a Experience Cloud ID (MCID) e a Analytics ID (MCAID) do visitante. Sua solicitação e a resposta podem ser semelhantes aos seguintes exemplos.
+Esse código usa uma matriz para retornar um conjunto específico de IDs usando o `visitor.FIELDS` enum. Nesse caso, desejamos apenas a Experience Cloud ID (MCID) e a Analytics ID (MCAID) do visitante. Sua solicitação e resposta podem ser semelhantes aos exemplos a seguir.
 
 ```js
 //Call the ID service 
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
 ```
 
-A resposta da amostra personalizada retorna somente as IDs especificadas na solicitação.
+A resposta de amostra personalizada retorna somente as IDs especificadas na solicitação.
 
 ```js
 //Formatted IDs in JSON response 
@@ -84,7 +84,7 @@ A resposta da amostra personalizada retorna somente as IDs especificadas na soli
 
 ## Parâmetros de resposta definidos {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no `visitor.FIELDS` enum. Observe que esse método retorna uma sequência de caracteres vazia se não existirem valores para uma variável específica.
+A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no `visitor.FIELDS` enum. Observe que esse método retornará uma string vazia se não houver valores para uma variável específica.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +100,7 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>A ID de região para coleta de dados. É um identificador numérico da localização geográfica de um data center do serviço de ID específico. </p> <p>Consulte <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
+   <td colname="col2"> <p>A ID da região de coleta de dados. Este é um identificador numérico para a localização geográfica de um centro de dados de serviço de ID específico. </p> <p>Consulte <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,11 +108,11 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>A Experience Cloud ID do visitante. </p> <p>Consulte <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies e o serviço de identidade da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>A Experience Cloud ID do visitante. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
-   <td colname="col2"> <p>Um sinalizador que indica se um visitante recusou a coleta de dados. </p> <p>Os valores incluem: </p> <p> 
+   <td colname="col2"> <p>Um sinalizador que indica se um visitante opt out da coleta de dados. </p> <p>Os valores incluem: </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
       <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true'</span>: um visitante recusou a coleta de dados. </li> 
       <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-false'</span>: um visitante não recusou a coleta de dados. </li> 
