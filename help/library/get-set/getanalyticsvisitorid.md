@@ -1,12 +1,12 @@
 ---
 description: Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -44,7 +44,7 @@ O `aid` parâmetro aparece em uma sequência de consulta em dois conjuntos de co
 O parâmetro `aid` é visto em uma sequência de consulta quando:
 
 * O serviço da [!DNL Experience Cloud] ID é implantado corretamente.
-* O usuário visita um site e tem uma ID do [!DNL Analytics] pré-existente armazenada no [cookie s_vi](https://marketing.adobe.com/resources/help/pt_BR/whitepapers/cookies/cookies_analytics.html).
+* O usuário visita um site e tem uma ID do [!DNL Analytics] pré-existente armazenada no [cookie s_vi](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
 
 **Caso 2**
 
@@ -52,5 +52,5 @@ Você verá o `aid` parâmetro em uma sequência de consulta quando a empresa es
 
 >[!MORELIKETHIS]
 >
->* [Cookies do Analytics](https://marketing.adobe.com/resources/help/pt_BR/whitepapers/cookies/cookies_analytics.html)
+>* [Cookies do Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
 
