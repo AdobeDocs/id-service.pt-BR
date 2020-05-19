@@ -5,8 +5,11 @@ seo-description: Essa implementação permite que os clientes usem o serviço de
 seo-title: Integração direta com o serviço de identidade da Experience Cloud
 title: Integração direta com o serviço de identidade da Experience Cloud
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '712'
+ht-degree: 100%
 
 ---
 
@@ -21,13 +24,13 @@ Os dispositivos que não podem usar VisitorAPI.js ou as bibliotecas de código d
 
 ![](assets/directSyntax.png)
 
-Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API DCS](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 O serviço de ID suporta chamadas HTTP e HTTPS. Use HTTPS para enviar dados de uma página segura.
 
 ## Solicitação de exemplo {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-Sua solicitação pode ser semelhante à amostra mostrada abaixo. Variáveis longas foram encurtadas.
+Sua solicitação pode ser semelhante à amostra exibida abaixo. Variáveis longas foram encurtadas.
 
 ![](assets/directExample.png)
 
@@ -62,11 +65,11 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua re
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>A ID do visitante da Experience Cloud. See <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>A ID do visitante da Experience Cloud. Consulte <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o serviço de identidade da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda para encontrar essa ID, consulte <a href="../reference/requirements.md" format="dita" scope="local"> Requisitos do Serviço</a>de identidade da Experience Cloud. </p> </td> 
+   <td colname="col2"> <p>Sua ID da organização da Experience Cloud. Para obter ajuda para encontrar essa ID, consulte <a href="../reference/requirements.md" format="dita" scope="local">Requisitos do serviço de identidade da Experience Cloud.</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +91,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua re
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>O serviço de ID é um sistema distribuído geograficamente e com balanceamento de carga. A ID identifica a região do data center que manipula a chamada. Consulte <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">IDs da região do DCS, locais e nomes de host</a>. </p> </td> 
+   <td colname="col2"> <p>O serviço de ID é um sistema distribuído geograficamente e com balanceamento de carga. A ID identifica a região do data center que manipula a chamada. Consulte <a href="https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">IDs da região do DCS, locais e nomes de host</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
