@@ -5,8 +5,11 @@ seo-description: O serviço de identidade da Adobe Experience Cloud (serviço de
 seo-title: Serviço de identidade da Experience Cloud
 title: Serviço de identidade da Experience Cloud
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '322'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> Visão geral </a> </li> 
       <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud</a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Implementação padrão com DTM </a> </li> 
-     </ul> </p> <p><b>Bibliotecas Javascript da Experience Cloud ID</b> </p> <p>O JavaScript para o serviço de identidade da Experience Cloud está localizado em: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Itens novos ou especiais</b> </p> <p> 
+     </ul> </p> <p><b>Bibliotecas Javascript da Experience Cloud ID</b> </p> <p>O JavaScript para o serviço de identidade da Experience Cloud está localizado em: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Itens novos ou especiais</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Serviço de opt-in</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
@@ -38,7 +41,7 @@ O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma 
    <td colname="col2"> <p> <b>Notas de versão</b> </p> <p><b>A versão 4.4</b> de 17 de julho 2019 inclui suporte para o <a href="reference/hashing-support.md" format="dita" scope="local">algoritmo de hash SHA-256</a> que permite a transmissão de IDs do cliente ou endereços de email e de IDs com hash.</p><p><b>A Versão 4.0 de</b> 12 de fevereiro de 2019 inclui o <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">serviço de Opt-in</a> usado para identificar se você pode colocar um cookie no dispositivo ou no navegador de um usuário ao visitar o site. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Consulte as <a href="https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html" format="https" scope="external">Notas de versão da Experience Cloud</a> para obter novos recursos e correções. </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">See the <a href="https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html" format="html" scope="external"> Previous Release Notes</a> section for older releases. </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Consulte a seção <a href="https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html" format="html" scope="external"> Notas de versão anteriores</a> para ver as seções mais antigas. </li> 
      </ul> </p> <p> <b>Recursos da Experience Cloud</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/br/privacy.html" format="http" scope="external"> Centro de privacidade da Adobe</a> </li> 
