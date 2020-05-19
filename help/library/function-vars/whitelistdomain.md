@@ -1,19 +1,22 @@
 ---
-description: Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
+description: Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
 keywords: ID Service
-seo-description: Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
+seo-description: Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '932'
+ht-degree: 100%
 
 ---
 
 
-# whitelistParentDomain e whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
+# whitelistParentDomain e whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
 
-Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
+Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
 
 Conteúdo:
 
@@ -73,7 +76,7 @@ Essas configurações ajudam a resolver o problema de configuração de um cooki
 
 >[!TIP]
 >
->Você também pode implementar essas configurações quando estiver disponibilizando vídeo em um iFrame com pulsação [de vídeo](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/media-overview.html). O Video Heartbeat precisa de uma ID de serviço de ID (a MID) para funcionar corretamente.
+>Você também pode implementar essas configurações quando estiver disponibilizando vídeo em um iFrame com o [Video Heartbeat](https://docs.adobe.com/content/help/pt-BR/media-analytics/using/media-overview.html). O Video Heartbeat precisa de uma ID de serviço de ID (a MID) para funcionar corretamente.
 
 **Caso de uso 1: O navegador bloqueia cookies de terceiros e o serviço de ID é implementado no iFrame e na página pai**
 
@@ -89,8 +92,8 @@ Essas configurações ajudam a resolver o problema de configuração de um cooki
    <td colname="col1"> <p> <b>Condições</b> </p> </td> 
    <td colname="col2"> <p>Este caso de uso inclui as seguintes condições: </p> <p> 
      <ul id="ul_DC748846585745B0AB74398D82BDA53A"> 
-      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">A Empresa A implementa o serviço de ID em seus homes page. </li> 
-      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">A Empresa A implementa o serviço de ID no iFrame em seu home page. </li> 
+      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">A Empresa A implementa o serviço de ID em suas home pages. </li> 
+      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">A Empresa A implementa o serviço de ID no iFrame na sua home page. </li> 
       <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">A Empresa A é proprietária da página pai e do iFrame e implementou o serviço de ID em ambos os locais. </li> 
       <li id="li_76967BD69DDB40A8A9C915DADC58AC62">Um cliente carrega a página pai em um navegador que bloqueia cookies de terceiros. </li> 
      </ul> </p> </td> 
