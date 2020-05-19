@@ -5,8 +5,11 @@ seo-description: As implementações mais antigas usam o Dynamic Tag Management 
 seo-title: Implementação com o Dynamic Tag Management
 title: Implementação com o Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '2056'
+ht-degree: 100%
 
 ---
 
@@ -27,15 +30,15 @@ As implementações mais antigas usam o Dynamic Tag Management (DTM) para config
 
 O [Dynamic Tag Management](https://docs.adobe.com/content/help/pt-BR/dtm/using/dtm-home.html) permite configurar, implantar e gerenciar a instância do serviço de ID e as integrações de soluções [!DNL Experience Cloud] relacionadas. O DTM ajuda a simplificar o processo de implementação, pois está profundamente integrado ao serviço de ID e a outras soluções da Experience Cloud. Basta adicionar e configurar a ferramenta da Experience Cloud ID e especificar informações, como:
 
-* ID de empresa da Experience Cloud (preenchida automaticamente se vinculada à Experience Cloud)
+* ID de organização da Experience Cloud (preenchida automaticamente se vinculada à Experience Cloud)
 * Servidor de rastreamento do Analytics (protegido e não protegido)
-* Servidor da Experience Cloud (para servidores de rastreamento primários)
+* Servidor da Experience Cloud (para servidores de rastreamento próprios)
 
 O DTM está disponível sem custo para qualquer cliente da[!DNL Experience Cloud].
 
 **Introdução ao DTM**
 
-O DTM é uma ferramenta simples, mas poderosa. Se você ainda não estiver usando, nós encorajamos você a fazer isso. Consulte a documentação [do](https://docs.adobe.com/content/help/pt-BR/dtm/using/c-overview.html) DTM para começar a usar esse serviço. Para obter instruções sobre como configurar o serviço de ID com DTM, consulte as informações e os procedimentos nas seções abaixo.
+O DTM é uma ferramenta simples, mas eficiente. Se você ainda não estiver usando, nós incentivamos você a usá-la. Consulte a [Documentação do DTM](https://docs.adobe.com/content/help/pt-BR/dtm/using/c-overview.html) para começar a usar esse serviço. Para obter instruções sobre como configurar o serviço de ID com DTM, consulte as informações e os procedimentos nas seções abaixo.
 
 ## Diretrizes de implantação {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
@@ -50,7 +53,7 @@ mcvid-dtm-deployment.xml
 Antes de começar, verifique se a organização e as soluções foram provisionadas para a [!DNL Experience Cloud] e se você está familiarizado com o [!DNL Dyanamic Tag Management]. Esta documentação pode ajudar você a começar a usar o serviço:
 
 * [Ativar as soluções para os serviços principais](https://docs.adobe.com/content/help/pt-BR/core-services/interface/about-core-services/core-services.html): implemente a Experience Cloud e torne-se um administrador. Esse processo moderniza suas soluções para os principais serviços, como atributos do cliente e público-alvo da Experience Cloud.
-* [Introdução ao Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/getting-started/get-started.html)
+* [Introdução ao Dynamic Tag Management](https://docs.adobe.com/content/help/pt-BR/dtm/using/getting-started/get-started.html).
 
 **Inserção de código do serviço de ID e ordem de carregamento**
 
@@ -63,7 +66,7 @@ Enquanto você tiver soluções e bibliotecas de código da [!DNL Adobe] no DTM,
 
 **Validar a coleta de dados regionais**
 
-Os clientes devem fornecer um CNAME ou usar `*.sc.omtrdc` para a [coleta de dados regional](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html) (RDC). Obtenhas as configurações específicas de RDC do consultor da [!DNL Adobe].
+Os clientes devem fornecer um CNAME ou usar `*.sc.omtrdc` para a [coleta de dados regional](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/rdc/regional-data-collection.html) (RDC). Obtenhas as configurações específicas de RDC do consultor da [!DNL Adobe].
 
 **Configurar conjuntos de relatórios do Analytics**
 
@@ -71,13 +74,13 @@ Os novos clientes do [!DNL Analytics] devem [criar um conjunto de relatórios](h
 
 ## Implementar o serviço de identidade da Experience Cloud com DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
-Siga estas etapas para implementar o serviço de ID com o Gerenciamento dinâmico de tags (DTM).
+Siga estas etapas para implementar o serviço de ID com o Dynamic Tag Management (DTM).
 
 **Pré-requisitos**
 
 * Ative as soluções na [!DNL Experience Cloud] e verifique se você tem permissões de administrador. Consulte [Ativar as soluções dos serviços principais](https://docs.adobe.com/content/help/pt-BR/core-services/interface/about-core-services/core-services.html).
 
-* Crie uma propriedade da Web no DTM. Consulte a documentação do DTM [Create a Web Property](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html) .
+* Crie uma propriedade da Web no DTM. Consulte a documentação [Criar uma propriedade da Web no DTM](https://docs.adobe.com/content/help/pt-BR/dtm/using/admin/web-property.html).
 
 <!--
 mcvid-dtm-implement.xml
@@ -96,7 +99,7 @@ mcvid-dtm-implement.xml
 1. Digite o nome do servidor de rastreamento na caixa **[!UICONTROL Servidor de rastreamento]**. Caso não tenha certeza de como encontrar o servidor de rastreamento, consulte [Perguntas frequentes](../faq-intro/faq.md) e [Preencher corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
 1. Clique em **[!UICONTROL Criar ferramentas]** e **[!UICONTROL Salvar alterações]**.
 
-   Após salvar, o serviço de ID é configurado como uma ferramenta no DTM. Mas ainda não está pronto para uso. Sua ferramenta DTM ainda precisa passar pelo processo de publicação/aprovação do DTM e talvez você queira configurar parâmetros adicionais. Para obter informações sobre os parâmetros adicionais que podem ser incluídos no DTM, consulte [Configurações do serviço de identidade da Experience Cloud para DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+   Após salvar, o serviço de ID é configurado como uma ferramenta no DTM. Mas ainda não está pronto para uso. A ferramenta de DTM ainda precisa passar pelo processo de publicação/aprovação do DTM e talvez você queira configurar parâmetros adicionais. Para obter informações sobre os parâmetros adicionais que podem ser incluídos no DTM, consulte [Configurações do serviço de identidade da Experience Cloud para DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 ## Configurações do serviço de identidade da Experience Cloud para DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -108,7 +111,7 @@ mcvid-dtm-settings.xml
 
 ## Como descobrir essas configurações? {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
-Essas configurações estão disponíveis depois de adicionar e salvar o serviço de ID como uma ferramenta no Dynamic Tag Management (DTM). You can also access these settings by clicking the gear icon from the [!UICONTROL Installed Tools] section of your DTM web property.
+Essas configurações estão disponíveis depois de adicionar e salvar o serviço de ID como uma ferramenta no Dynamic Tag Management (DTM). Também é possível acessar essas configuração ao clicar no ícone de engrenagem da seção [!UICONTROL Ferramentas instaladas] da propriedade da Web do DTM.
 
 ![](assets/installedTools.png)
 
@@ -126,7 +129,7 @@ Essas configurações permitem que você especifique servidores de rastreamento,
 
 ![](assets/generalSettings.png)
 
-The following table lists and defines the [!UICONTROL General] settings.
+A tabela a seguir lista e define as configurações [!UICONTROL Gerais].
 
 **Solicitar ID de visitante automaticamente**
 
@@ -170,7 +173,7 @@ Esses campos permitem que você adicione [variáveis de função](../library/fun
 
 >[!IMPORTANT]
 >
->Defina a `cookieDomain` variável aqui. É necessário para domínios de alto nível e com várias partes, nos quais qualquer uma das duas últimas partes do URL é > dois caracteres. Consulte a documentação Variáveis de configuração vinculada acima.
+>Defina a `cookieDomain` variável aqui. É necessário para domínios de alto nível e com várias partes, em que qualquer uma das duas últimas partes do URL tem mais de dois caracteres. Consulte a documentação Variáveis de configuração vinculada acima.
 
 ## Configurações do cliente {#section-238d1272c1504d148fe38fb0ae5d71c2}
 
@@ -184,7 +187,7 @@ Um código de integração é uma ID exclusiva fornecida pelo cliente. O código
 
 **Valor**
 
-O valor deve ser um elemento de dados contendo a ID do usuário. Os elementos de dados são container adequados para valores dinâmicos, como IDs de um sistema interno específico do cliente.
+O valor deve ser um elemento de dados contendo a ID do usuário. Os elementos de dados são contêineres adequados para valores dinâmicos, como IDs de um sistema interno específico do cliente.
 
 **Estado de autenticação**
 
@@ -210,13 +213,13 @@ Como alternativa, você pode testar o serviço de ID em uma sessão anônima ou 
 
 **Ferramentas**
 
-O [depurador da Adobe](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) e o [proxy HTTP Charles](https://www.charlesproxy.com/) podem ajudar você a determinar se o serviço de ID foi configurado adequadamente para funcionar com o Analytics. As informações nesta seção baseiam-se nos resultados retornados pelo depurador da Adobe e Charles. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
+O [depurador da Adobe](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/validate/debugger.html) e o [proxy HTTP Charles](https://www.charlesproxy.com/) podem ajudar você a determinar se o serviço de ID foi configurado adequadamente para funcionar com o Analytics. As informações nesta seção baseiam-se nos resultados retornados pelo Adobe Debugger e Charles. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
 
 ## Teste com o Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
 A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. Consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md) para obter mais informações sobre a MID.
 
-Para verificar o status do serviço de ID com o [depurador](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) da [!DNL Adobe]:
+Para verificar o status do serviço de ID com o [depurador](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/validate/debugger.html) da [!DNL Adobe]:
 
 1. Limpe os cookies do navegador ou abra uma sessão de navegação anônima.
 1. Carregue a página de teste que contém o código do serviço de ID.
@@ -237,22 +240,22 @@ mid=20265673158980419722735089753036633573
 
 Se você for um cliente do [!DNL Analytics], é possível visualizar uma ID do [!DNL Analytics] (AID) além da MID. Isso acontece:
 
-* Com alguns de seus visitantes de site precoces ou de longa data.
-* Se você tiver um período de carência ativado.
+* Com alguns de seus visitantes do site precoces ou de longa data.
+* Se você tiver um período de carência habilitado.
 
 **Falha**
 
-Entre em contato com o Atendimento [ao](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) cliente se o depurador:
+Entre em contato com o [atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) se o depurador:
 
-* Não retorna uma MID.
-* Retorna uma mensagem de erro indicando que a ID do parceiro não foi fornecida.
+* Não retornar uma MID.
+* Retornar uma mensagem de erro indicando que a ID do parceiro não foi fornecida.
 
 ## Teste com o Charles HTTP proxy {#section-d9e91f24984146b2b527fe059d7c9355}
 
-Para verificar o status do serviço de ID com Charles:
+Para verificar o status do serviço de ID com o Charles:
 
 1. Limpe os cookies do navegador ou abra uma sessão de navegação anônima.
-1. Start Charles.
+1. Iniciar o Charles.
 1. Carregue a página de teste que contém o código do serviço de ID.
 1. Verifique as chamadas de solicitação e resposta e os dados descritos abaixo.
 
@@ -268,19 +271,19 @@ O código do serviço de ID está funcionando adequadamente quando a função `V
 
 ### Solicitações do serviço de ID com sucesso no Charles
 
-Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) retornar uma MID. A MID é retornada como um par de valores chave que usa a sintaxe: `d_mid: visitor Experience Cloud ID`. Procure a MID na guia [!UICONTROL Resposta], como mostrado abaixo.
+Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) retornar uma MID. A MID é retornada como um par de valores chave que usa a sintaxe: `d_mid: visitor Experience Cloud ID`. Procure a MID na guia [!UICONTROL Resposta], como mostrado abaixo.
 
 ![](assets/charles_response_success.png)
 
 ### Falha de resposta do serviço de ID no Charles
 
-A conta não foi provisionada adequadamente se a MID estiver faltando na resposta do DCS. An unsuccessful response returns an error code and message in the [!UICONTROL Response] tab as shown below. Entre em contato com o atendimento ao cliente se você visualizar essa mensagem de erro na resposta do DCS.
+A conta não foi provisionada adequadamente se a MID estiver faltando na resposta do DCS. Uma resposta sem sucesso retorna um código de erro e a mensagem na guia [!UICONTROL Response], como mostrado abaixo. Entre em contato com o atendimento ao cliente se você visualizar essa mensagem de erro na resposta do DCS.
 
 ![](assets/charles_response_unsuccessful.png)
 
-For more information about error codes, see [DCS Error Codes, Messages, and Examples](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
+Para obter mais informações sobre os códigos de erro, consulte [Códigos de erro, mensagens e exemplos de DCS](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
 
 >[!MORELIKETHIS]
 >
->* [Propriedades da Web](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
+>* [Propriedades da Web](https://docs.adobe.com/content/help/pt-BR/dtm/using/admin/web-property.html)
 
