@@ -5,8 +5,11 @@ seo-description: Lançamentos, atualizações ou alterações de recursos do ser
 seo-title: Notas de versão de 2017
 title: Notas de versão de 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 
-Essas alterações também são capturadas nas notas [de versão da](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html)Experience Cloud.
+Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -49,9 +52,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **Correções de erros e outras alterações**
 
-* Corrigido um erro relacionado ao Chrome que fazia com que o serviço de ID exibisse um erro ao clicar no botão Voltar nesse navegador.
+* Correção de um erro relacionado ao Chrome que fazia com que o serviço de ID exibisse um erro ao clicar no botão Voltar nesse navegador.
 * O serviço de ID agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
-* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
+* Adição de nova documentação, [Políticas de segurança de conteúdo e Serviço de identidade da Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como colocar chamadas na lista de permissões para domínios da Adobe usados pelo serviço de ID.
 
 ## Versão 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -101,8 +104,8 @@ Julho de 2017
 
 **Correções de erros e outras alterações**
 
-* Correção de um bug no VisitorAPI.js v2.2 que impedia o serviço de ID e o Público alvo de trabalharem juntos no Internet Explorer.
-* Código revisado para ajudar a melhorar como o serviço de ID envia dados para o iFrame de publicação de destino. Isso ajuda a reduzir o uso da CPU.
+* Correção de um bug no VisitorAPI.js v2.2 que impedia o serviço de ID e o Target de trabalharem juntos no Internet Explorer.
+* Código revisado para ajudar a melhorar como o serviço de ID envia dados para o Destination Publishing iFrame. Isso ajuda a reduzir o uso da CPU.
 
 ## Versão 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -118,7 +121,7 @@ Data de lançamento: de junho de 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain e whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. </p> </td> 
+   <td colname="col2"> <p>Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -155,7 +158,7 @@ Data de lançamento: de junho de 2017
    <td colname="col2"> <p>Adicionados links para a documentação do <span class="keyword">Audience Manager</span> descrevendo as chamadas para o domínio <span class="codeph">demdex.net</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Como entender a sincronização de ID e as taxas de correspondência </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Como entender a sincronização de ID e taxas de correspondência </a> </p> </td> 
    <td colname="col2"> <p>Seção <span class="keyword">Media Optimizer</span> revisada para descrever a chamada para <span class="codeph">cm.eversttech.net</span>. Essa é a sincronização de ID automática que o serviço de ID executa com o <span class="keyword">Media Optimizer</span>. Esse recurso foi lançado em janeiro de 2017. Consulte a <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">Versão 2.0</a> abaixo. </p> </td> 
   </tr> 
  </tbody> 
@@ -180,7 +183,7 @@ Data de lançamento: de fevereiro de 2017
    <td colname="col2"> <p>Essa propriedade configura a ID de contêiner usada pelo <span class="keyword">Audience Manager</span> para sincronizações de ID. Consulte <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID service API method, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>Método API de serviço de ID, <span class="codeph">appendSupplementalDataIDTo (<span class="varname">URL</span>, <span class="varname">SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Este método público anexa a <span class="wintitle">ID de Dados Suplementares</span> (SDID) como um parâmetro de sequência de caracteres de consulta a um URL de redirecionamento. Consulte <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -192,7 +195,7 @@ Correção de um bug que fazia com que o serviço de ID fizesse chamadas redunda
 
 **Nova documentação**
 
-[Uso da pré-busca DNS com diferentes soluções e serviços da Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
+[Uso da pré-busca DNS com diferentes Soluções e Serviços da Experience Cloud](https://docs.adobe.com/content/help/pt-BR/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versão 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -205,7 +208,7 @@ Janeiro de 2017
 **Correções e melhorias**
 
 * Correção de um bug que impedia o AppMeasurement de fazer chamadas de rastreamento para o Analytics. (MCID-254, MCID-256, MCID-286)
-* Correção de um bug que impedia o serviço de ID de falhar imediatamente se um visitante ativasse um bloqueador de anúncios e esse bloqueador fosse configurado para excluir o domínio demdex.net. Este é um bug raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
+* Correção de um bug que prevenia a falha imediata do serviço de ID caso o bloqueador de anúncios do visitante estivesse ativado e configurado para excluir o domínio demdex.net. Esse bug é raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
 * Correção de um erro causado pelas interações entre o código do serviço de ID e um script personalizado no site de um cliente. Esse problema impedia que o Internet Explorer 9 carregasse páginas da Web. (MCID-206)
 
 ## Anos anteriores {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
