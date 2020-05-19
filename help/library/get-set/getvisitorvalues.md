@@ -5,13 +5,16 @@ seo-description: Esta é uma API assíncrona que retorna os identificadores para
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '447'
+ht-degree: 100%
 
 ---
 
 
-# getVisitorValues{#getvisitorvalues}
+# getVisitorValues {#getvisitorvalues}
 
 Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional visitor.FIELDS.
 
@@ -100,7 +103,7 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>A ID da região de coleta de dados. Este é um identificador numérico para a localização geográfica de um centro de dados de serviço de ID específico. </p> <p>Consulte <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
+   <td colname="col2"> <p>A ID da região de coleta de dados. Este é um identificador numérico para a localização geográfica de um data center de serviço de ID específico. </p> <p>Consulte <a href="https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,11 +111,11 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>A Experience Cloud ID do visitante. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>A Experience Cloud ID do visitante. </p> <p>Consulte <a href="../../introduction/cookies.md" format="dita" scope="local">Cookies e o serviço de identidade da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
-   <td colname="col2"> <p>Um sinalizador que indica se um visitante opt out da coleta de dados. </p> <p>Os valores incluem: </p> <p> 
+   <td colname="col2"> <p>Um sinalizador que indica se um visitante recusou a coleta de dados. </p> <p>Os valores incluem: </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
       <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true'</span>: um visitante recusou a coleta de dados. </li> 
       <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-false'</span>: um visitante não recusou a coleta de dados. </li> 
