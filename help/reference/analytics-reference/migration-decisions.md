@@ -5,8 +5,11 @@ seo-description: Antes de implantar o serviço de identidade da Experience Cloud
 seo-title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '689'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Muitos clientes podem sair de uma coleta de dados CNAME como parte da migração
  </tbody> 
 </table>
 
-## Se você tiver uma coleta de dados CNAME, tem vários domínios?
+## Se você tiver uma coleta de dados CNAME, você tem vários domínios?
 
 Se você tiver vários domínios que enviam dados para o *mesmo conjunto* de relatórios, recomendamos a coleta de dados com um CNAME. Isso ajuda a rastrear visitantes em domínios. Se você estiver coletando dados em um único domínio, não há vantagem em manter uma coleta de dados CNAME.
 
@@ -54,13 +57,13 @@ Se você tiver vários domínios que enviam dados para o *mesmo conjunto* de rel
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Vários domínios </p> </td> 
-   <td colname="col2"> <p>Se você estiver rastreando visitantes em vários domínios e também tiver um site de entrada principal no qual os clientes possam ser identificados antes de visitarem outros domínios, então você deve continuar usando a coleta de dados CNAME. Consulte <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">Coletas de dados CNAME e rastreamento entre domínios</a> para obter uma explicação detalhada. </p> <p>Observe que você deve especificar mais dois parâmetros de servidor de rastreamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>, para configurar um CNAME com o serviço de ID. </p> </td> 
+   <td colname="col2"> <p>Se você estiver rastreando visitantes em vários domínios e também tiver um site de entrada principal no qual os clientes possam ser identificados antes de visitarem outros domínios, você deve continuar usando a coleta de dados CNAME. Consulte <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">Coletas de dados CNAME e rastreamento entre domínios</a> para obter uma explicação detalhada. </p> <p>Observe que você deve especificar mais dois parâmetros de servidor de rastreamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>, para configurar um CNAME com o serviço de ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Um único domínio </p> </td> 
    <td colname="col2"> <p>Trabalhar com um único domínio significa que você pode sair de uma coleta de dados CNAME se não quiser mais gerenciá-la. No entanto, não há necessidade de alterar se o CNAME estiver funcionando. </p> <p>Se você remover o CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Certifique-se de que o novo servidor de rastreamento é <a href="https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatível com o RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Certifique-se de que o novo servidor de rastreamento é <a href="https://docs.adobe.com/content/help/pt-BR/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatível com o RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Mude de CNAME para um servidor de rastreamento de RDC alguns meses antes da migração para o serviço da <span class="keyword">Experience Cloud</span> ID. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Não</i> use um servidor de rastreamento <span class="codeph">*.2o7.net</span>. </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Entre em contato com o <a href="https://helpx.adobe.com/br/marketing-cloud/contact-support.html" format="https" scope="external">Atendimento ao cliente</a> para configurar uma migração de visitante. Isso ajuda a garantir contagens consistentes dos visitantes. </li> 
@@ -96,7 +99,7 @@ Se você tiver diversos arquivos JavaScript do Analytics, ou aplicativos Flash o
  </tbody> 
 </table>
 
-## Você está usando métodos de coleta de dados não suportados?
+## Você está usando métodos de coleta de dados não compatíveis?
 
 Talvez seja necessário atualizar a maneira de rastrear links ou sair do Sliverlight.
 
@@ -114,7 +117,7 @@ Talvez seja necessário atualizar a maneira de rastrear links ou sair do Sliverl
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
-   <td colname="col2"> <p>É necessário migrar do Silverlight se os visitantes conseguirem acessar o conteúdo do Silverlight e outras seções do seu site que usam o serviço da <span class="keyword">Experience Cloud</span> ID. O Silverlight não é suportado pelo serviço de ID. </p> <p> Se você estiver rastreando um player de vídeo baseado no Silverlight, o fornecedor provavelmente fornece APIs JavaScript que você pode usar. </p> </td> 
+   <td colname="col2"> <p>É necessário migrar do Silverlight se os visitantes conseguirem acessar o conteúdo do Silverlight e outras seções do seu site que usam o serviço da <span class="keyword">Experience Cloud</span> ID. O Silverlight não é compatível com o serviço de ID. </p> <p> Se você estiver rastreando um player de vídeo baseado no Silverlight, o fornecedor provavelmente fornece APIs JavaScript que você pode usar. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tags de imagem codificadas permanentemente </p> </td> 
