@@ -3,8 +3,11 @@ title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 seo-title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -57,7 +60,7 @@ Depois que uma solicitação de ID é feita para demdex.net e uma ECID é recupe
 
 Esse novo `s_ecid` cookie segue o mesmo status de Opt-out do cookie AMCV. Se a ECID for lida a partir do `s_ecid` cookie, o demdex será sempre chamado imediatamente para recuperar o status de Opt-out mais recente para essa ID e armazenado no cookie AMCV.
 
-Além disso, se o consumidor recusou o rastreamento do Analytics por meio deste [método](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html), esse `s_ecid` cookie será excluído.
+Além disso, se o consumidor recusou o rastreamento do Analytics por meio deste [método](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/js/opt-out.html), esse `s_ecid` cookie será excluído.
 
 O nome do servidor de rastreamento deve ser fornecido à biblioteca VisitorJS ao inicializar a biblioteca usando o trackingServer ou trackingServerSecure. Isso deve corresponder à configuração trackingServer nas configurações do Analytics.
 
