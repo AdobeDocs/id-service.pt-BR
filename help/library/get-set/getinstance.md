@@ -1,19 +1,22 @@
 ---
-description: getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitante.
+description: getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitor.
 keywords: ID Service
-seo-description: getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitante.
+seo-description: getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitor.
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
 
 
-# getInstance{#getinstance}
+# getInstance {#getinstance}
 
-getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitante.
+getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitor.
 
 **Sintaxe**
 
@@ -33,7 +36,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*Não* instancie a função Visitante com `var visitor = new Visitor`. Você deve usar a chamada de função adequada descrita aqui. Applies to [!UICONTROL VisitorAPI.js] code library v3.0 or higher.
+>*Não* instancie a função Visitante com `var visitor = new Visitor`. Você deve usar a chamada de função adequada descrita aqui. Aplicável a biblioteca de códigos [!UICONTROL VisitorAPI.js] v3.0 ou posterior.
 
 **ActionScript/Flash**
 
@@ -51,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isso é semelhante à [`s_gi()` função ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html) em [!DNL AppMeasurement].
+Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isso é semelhante à [ `s_gi()` função ](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/vars/functions/s-gi.html) no [!DNL AppMeasurement].
 
 **Uso comum**
 
