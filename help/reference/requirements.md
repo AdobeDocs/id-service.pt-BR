@@ -5,8 +5,11 @@ seo-description: Consulte esta seção para verificar se você está usando as s
 seo-title: Requisitos do serviço de identidade da Experience Cloud
 title: Requisitos do serviço de identidade da Experience Cloud
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '783'
+ht-degree: 100%
 
 ---
 
@@ -33,11 +36,11 @@ Uma implementação de sucesso e com suporte atende (ou excede) os requisitos de
     <ul id="ul_59CDE179566844B494F3068FF6333809"> 
      <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Inserir o código de cabeçalho incorporado na seção <span class="codeph">&lt;head&gt;</span> da página. </li> 
      <li id="li_13962F2CB1764091A84863BE499675A2">Inserir o código de rodapé incorporado antes de fechar a tag <span class="codeph">&lt;/body&gt;</span>. </li> 
-    </ul> <p>Uma implementação padrão não é suportada quando você: </p> 
+    </ul> <p>Uma implementação padrão não é suportada ao: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Coloque qualquer um desses códigos incorporados do DTM em outro lugar da marcação e/ou código da página. </li> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> Colocar qualquer um desses códigos incorporados do DTM em outro lugar da marcação e/ou código da página. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> Anexar, adicionar ou carregar o código do DTM com métodos assíncronos, métodos de chamada/retorno de chamada ou wrappers. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">Inclua várias instâncias do código incorporado na mesma página. </li> 
+     <li id="li_B2137DFF627B473FA876580449026D2B">Incluir várias instâncias do código integrado na mesma página. </li> 
     </ul> <p>Consulte também, <a href="https://docs.adobe.com/content/help/pt-BR/dtm/using/client-side/deployment.html" format="https" scope="external">Incorporar código e opções de hospedagem</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -80,7 +83,7 @@ Para usar o serviço de ID, a empresa deve estar habilitada para a [!DNL Experie
 
 ## Exigências do Analytics: coleta de dados regionais (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Todos os servidores de rastreamento foram convertidos para RDC, portanto, não há necessidade de alterar o servidor de rastreamento do Analytics. [Mais informações...](https://docs.adobe.com/content/help/pt-BR/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Todos os servidores de rastreamento foram convertidos para RDC, portanto, não há necessidade de alterar o servidor de rastreamento do Analytics. [Mais informações...](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/rdc/regional-data-collection.translate.html)
 
 ## Exigências de versão e código de bibliotecas {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -121,7 +124,7 @@ As seções a seguir listam as versões mínimas do código necessárias para us
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Consulte <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Biblioteca de integração de dados</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Consulte <a href="https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Biblioteca de integração de dados</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        atualizado de 4.9 
@@ -129,11 +132,11 @@ As seções a seguir listam as versões mínimas do código necessárias para us
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Consulte <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">código mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Consulte <a href="https://docs.adobe.com/content/help/pt-BR/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">código mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Consulte <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementação de at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Consulte <a href="https://docs.adobe.com/content/help/pt-BR/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementação de at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -143,18 +146,18 @@ As seções a seguir listam as versões mínimas do código necessárias para us
 
 No mínimo, o serviço de ID exige as versões do SDK listadas abaixo.
 
-* Android: 4,11,0
-* iOS: 4,11,0
+* Android: 4.11.0
+* iOS: 4.11.0
 
 >[!TIP]
 >
 >É recomendado usar as versões mais recentes do código em vez do mínimo exigido.
 
-O código do SDK deve ser habilitado para o serviço de ID. Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. Consulte também:
+O código do SDK deve ser habilitado para o serviço de ID. Habilite e baixe o código do SDK mais recente para cada aplicativo da conta do [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Consulte também:
 
-* [Configuração das opções do SDK do serviço de ID do visitante](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Métodos do SDK para Android](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [Métodos do iOS SKD](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Configuração das opções do SDK do serviço de ID do visitante](https://docs.adobe.com/content/help/pt-BR/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Métodos do SDK para Android](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [Métodos do SDK para iOS](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
