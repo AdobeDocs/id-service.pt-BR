@@ -1,19 +1,22 @@
 ---
-description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho da implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 keywords: ID Service
-seo-description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho da implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+seo-description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 seo-title: Implementar o serviço de identidade da Experience Cloud para Analytics
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1087'
+ht-degree: 100%
 
 ---
 
 
-# Implementar o serviço de identidade da Experience Cloud para Analytics{#implement-the-experience-cloud-id-service-for-analytics}
+# Implementar o serviço de identidade da Experience Cloud para Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM para implementar o serviço de ID. O DTM simplifica o fluxo de trabalho da implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
@@ -38,7 +41,7 @@ Siga estas etapas para implementar o serviço de ID do Adobe Analytics:
 
 O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Para baixar a biblioteca de código:
 
-1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
+1. Acesse **[!UICONTROL Administração]** > **[!UICONTROL Gerenciamento de código]**.
 1. Em [!UICONTROL Gerenciamento de código], clique em **[!UICONTROL JavaScript (Novo)]** ou **[!UICONTROL JavaScript (Herdado)]**.
 
    As bibliotecas de código comprimidas serão baixadas.
@@ -49,13 +52,13 @@ O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Par
 
 >[!IMPORTANT]
 >
->* As versões anteriores da API de serviço de ID colocavam essa função em um local diferente e exigiam uma sintaxe diferente. Se você estiver migrando de uma versão anterior à [versão 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), observe a nova disposição e sintaxe documentadas aqui.
+>* As versões anteriores da API de serviço de ID colocavam essa função em um local diferente e exigiam uma sintaxe distinta. Se você estiver migrando de uma versão anterior à [versão 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), observe a nova disposição e sintaxe documentadas aqui.
 >* O código em ALL CAPS é um espaço reservado para valores reais. Substitua esse texto pela ID da organização, URL do servidor de rastreamento ou outro valor nomeado.
 >
 
 
 
-**Parte 1: Copie a função Visitante.getInstance abaixo**
+**Parte 1: Copie a função Visitor.getInstance abaixo**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE", { 
@@ -96,7 +99,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Etapa 3: adicionar a ID da organização da Experience Cloud ao Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud]administração. Consulte também, [Administração - Principais serviços](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html). A função editada pode ser parecida com o exemplo abaixo.
+Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud]administração. Consulte também, [Administração - Serviços principais](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html). A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -144,7 +147,7 @@ Adicione esta função ao arquivo `AppMeasurement.js` ou `s_code.js`:
 
 Coloque o código na mesma seção que contém configurações como `linkInternalFilters`, `charSet`, `trackDownloads`, etc.
 
-***(Opcional, mas recomendado)*Criação de um prop personalizado ****
+***(Opcional, mas recomendado)* Criar um prop personalizado.**
 
 Defina um prop personalizado em `AppMeasurement.js` ou `s_code.js` para medir a cobertura. Adicione este prop personalizado à `doPlugins` função dos arquivos `AppMeasurement.js` ou `s_code.js`:
 
@@ -162,9 +165,9 @@ Insira o `VisitorAPI.js` arquivo nas tags `<head>` de cada página. Ao anexar o 
 
 Transfira esse código para a produção após os testes e a verificação.
 
-## Etapa 7: (ppcional) configurar um período de carência {#section-7bbb2f72c26e4abeb8881e18366797a3}
+## Etapa 7: (opcional) configurar um período de carência {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
+Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](../reference/analytics-reference/grace-period.md) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -174,17 +177,17 @@ Descontinue o período de carência depois que o serviço de ID é implantado em
 
 **Requisitos de cookie s_vi**
 
-Você precisa de um período de carência se precisar que os novos visitantes tenham um cookie s_vi após migrar para o serviço de ID. Isso é comum se sua implementação ler o cookie s_vi e armazená-lo em uma variável.
+É necessário um período de carência se você precisar que os novos visitantes tenham um cookie s_vi após migrar para o serviço de ID. Isso é comum se sua implementação ler o cookie s_vi e armazená-lo em uma variável.
 
-A descontinuação do período de carência após sua implementação pode capturar a MID em vez de ler o cookie s_vi.
+A descontinuação do período de carência após a implementação pode capturar a MID em vez de ler o cookie s_vi.
 
-See, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+Consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md).
 
 É necessário ter um período de carência caso envie dados para um sistema interno de um feed de dados de sequência de cliques que processe os usos das colunas `visid_high` e `visid_low`.
 
 Faça a descontinuação do período de carência se o processo de ingestão de dados conseguir usar as colunas `post_visid_high` e `post_visid_low`.
 
-Consulte, Referência [da coluna de dados da sequência de](https://docs.adobe.com/content/help/pt-BR/analytics/export/analytics-data-feed/data-feed-overview.html)cliques.
+Consulte [Referência da coluna de dados de sequência de cliques](https://docs.adobe.com/content/help/pt-BR/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 **Ingestão de dados da sequência de cliques**
 
@@ -196,14 +199,14 @@ Consulte, Referência [da coluna de dados da sequência de](https://docs.adobe.c
 
 Para testar a implementação do serviço de ID, verifique:
 
-* [cookie](../introduction/cookies.md) AMCV no domínio em que sua página está hospedada.
-* O valor da MID na solicitação de [!DNL Analytics] imagem com a ferramenta [](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)Adobe Debugger.
+* [Cookie AMCV](../introduction/cookies.md) no domínio em que a página está hospedada.
+* O valor da MID na [!DNL Analytics]solicitação de imagem com a [ferramenta Adobe Debugger](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/validate/debugger.html).
 
 Consulte [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md).
 
 **Implantar código**
 
-Implante seu código depois que ele passar no teste.
+Implante o código depois que ele passar no teste.
 
 Se você ativou um período de carência na [Etapa 7](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3):
 
