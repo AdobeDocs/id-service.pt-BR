@@ -5,8 +5,11 @@ seo-description: Lançamentos, atualizações ou alterações de recursos do ser
 seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1162'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
 
-Essas alterações também são capturadas nas notas [de versão da](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html)Experience Cloud.
+Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html).
 
 ## Versão 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -47,9 +50,9 @@ Outubro de 2016
 
 **Correções e melhorias**
 
-* Correção de um bug que transmitia IDs de usuário exclusivas (AAMUUIDs) do Audiência Manager como Experience Cloud IDs ao serviço de ID.
-* Se o TTL (time-to-live) de um cookie AMCV tiver expirado, o serviço de ID ainda retornará essas informações ao servidor, contanto que o cookie contenha uma Experience Cloud ID. Após esta chamada, o serviço de ID faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a melhorar o desempenho, pois o serviço de ID não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
-* O serviço de ID sincroniza automaticamente as Experience Cloud IDs (MIDs) com o Adobe Media Otimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a melhorar as taxas de correspondência do Media Otimizer. Aplicável ao VisitorAPI.js versão 1.8 ou mais recente. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+* Correção de um bug que transmitia IDs de usuário exclusivas do Audience Manager (AAMUUIDs) como Experience Cloud IDs para o serviço de ID.
+* Se a vida útil (TTL) de um cookie AMCV tiver expirado, o serviço de ID retornará essa informação ao servidor, desde que o cookie contenha uma Experience Cloud ID. Após esta chamada, o serviço de ID faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a melhorar o desempenho, pois o serviço de ID não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
+* O serviço de ID sincroniza automaticamente as Experience Cloud IDs (MIDs) com o Adobe Media Optimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a melhorar as taxas de correspondência do Media Optimizer. Aplicável ao VisitorAPI.js versão 1.8 ou mais recente. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Documentação nova e revisada**
 
@@ -81,7 +84,7 @@ Revisão: [Requisitos do serviço de identidade da Experience Cloud](../referenc
 
 **Problemas conhecidos**
 
-Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
+Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versão 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,8 +103,8 @@ Julho de 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>CORS (Cross-Origem Resource Sharing, compartilhamento de recursos em várias áreas) </p> </td> 
-   <td colname="col2"> <p>O CORS permite que os navegadores solicitem recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte às normas da CORS para permitir solicitações entre origens e do lado do cliente. O serviço de ID reverte solicitações JSONP em navegadores que não suportam CORS. </p> <p>Consulte: </p> 
+   <td colname="col1"> <p>Compartilhamento de recursos entre origens (CORS) </p> </td> 
+   <td colname="col2"> <p>O CORS permite que os navegadores solicitem recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte às normas da CORS para permitir solicitações entre origens e do lado do cliente. O serviço de ID reverte solicitações JSONP em navegadores incompatíveis com CORS. </p> <p>Consulte: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Suporte ao CORS no serviço de identidade da Experience Cloud</a> </li> 
     </ul> </td> 
@@ -113,7 +116,7 @@ Julho de 2016
 
 * Adição de um parâmetro `d_fieldgroup` para chamadas de sincronização de ID para `dpm.demdex.net`. Esse novo parâmetro é usado para fins internos de solução de problemas e depuração.
 
-* Adicionado um atributo de título ao iFrame do serviço de ID. O título de um iFrame ajuda os leitores de tela a fornecerem informações de página para os usuários que precisam de assistência ao interagirem com o conteúdo online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
+* Adição de um atributo de título ao iFrame do serviço de ID. O título de um iFrame ajuda os leitores de tela a fornecerem informações de página para os usuários que precisam de assistência ao interagirem com o conteúdo online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
 * Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando definido como `true`, o serviço de ID carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi projetado para ajudar a melhorar as taxas de correspondência da sincronização de ID. Por padrão, o serviço de ID carrega o iFrame na janela. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * Corrigido um bug com uma função de retorno de chamada que provocava um loop infinito no AppMeasurement.
@@ -156,7 +159,7 @@ Junho de 2016
 
 **Correções**
 
-A API do visitante não força mais uma chamada de re-sincronização extra com o Audiência Manager quando não há uma ID de visitante herdada do Analytics.
+A API de visitante deixou de forçar uma chamada extra de re-sincronização com o Audience Manager quando não há uma ID antiga de visitante do Analytics.
 
 ## Versão 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -221,7 +224,7 @@ Janeiro de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> Estados de autenticação e IDs do cliente </a> </p> </td> 
-   <td colname="col2"> <p>Texto revisado. As IDs do cliente devem ser passadas somente como valores não codificados. As IDs de codificação criarão identificadores codificados por duplo. </p> </td> 
+   <td colname="col2"> <p>Texto revisado. As IDs do cliente devem ser passadas somente como valores não codificados. As IDs de codificação criarão identificadores com codificação dupla. </p> </td> 
   </tr> 
  </tbody> 
 </table>
