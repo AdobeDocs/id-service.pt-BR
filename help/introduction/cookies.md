@@ -1,19 +1,22 @@
 ---
-description: O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e um cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
+description: O serviço de ID usa a ID da organização, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 keywords: playstation;ID Service
-seo-description: O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e um cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
+seo-description: O serviço de ID usa a ID da organização, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 seo-title: Cookies e o serviço de identidade da Experience Cloud
 title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '994'
+ht-degree: 100%
 
 ---
 
 
 # Cookies e o serviço de identidade da Experience Cloud {#cookies-and-the-experience-cloud-id-service}
 
-O serviço de ID usa a ID da empresa, o cookie AMCV da Experience Cloud e um cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
+O serviço de ID usa a ID da organização, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 
 ## Como entender os cookies do serviço de ID {#section-f438168beaec409ab8b2cc58bd021e26}
 
@@ -31,7 +34,7 @@ O serviço de ID depende dos cookies AMCV, AMCVS e demdex para funcionar correta
 * Acesse ou armazene informações de identificação pessoal (PII) como seu endereço de email.
 * Controle o hardware ou software do computador.
 * Torne os computadores instáveis ou cause problemas de desempenho.
-* Rastrear usuários em sites que não usam o serviço de ID.
+* Rastreie usuários em sites que não usam o serviço de ID.
 
 ## cookie AMCV {#section-c55af54828dc4cce89f6118655d694c8}
 
@@ -49,7 +52,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Conteúdo**
 
-O cookie AMCV contém a ID do visitante da Experience Cloud ou a MID. A MID é armazenada em um par de valores chave que segue a sintaxe `mid|<Experience Cloud ID>`.
+O cookie AMCV contém a ID de visitante da Experience Cloud ou a MID. A MID é armazenada em um par de valores chave que segue a sintaxe `mid|<Experience Cloud ID>`.
 
 Um par de valor principal completamente formado seria parecido com:
 
@@ -101,7 +104,7 @@ A tabela a seguir lista e define alguns atributos importantes do cookie demdex.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Nome</b> </p> </td> 
-   <td colname="col2"> <p>O nome do cookie é "demdex". </p> </td> 
+   <td colname="col2"> <p>O nome do cookie é "demdex." </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Conteúdo</b> </p> </td> 
@@ -120,7 +123,7 @@ Para obter informações relacionadas, consulte [Compreender as chamadas para o 
 
 A Experience Cloud ID (MID) é derivada matematicamente da ID da organização e da ID demdex. Desde que essas IDs permaneçam constantes, gerar a MID certa para um usuário específico é simplesmente um problema matemático. Com a mesma ID de empresa e ID demdex, você obtém o mesmo valor de MID sempre. Isso permite que o serviço de ID rastreie visitantes em domínios que você controla e configurados com o código do serviço de ID.
 
-Os start do serviço de ID para criar uma MID à medida que sua página é carregada. Durante esse processo, o código fornecido pela `visitorAPI.js` biblioteca de códigos enviar a ID da organização em uma chamada de evento para o serviço de ID. O serviço de ID cria e retorna a MID, além de uma ID demdex nos cookies AMCV e demdex, respectivamente.
+O serviço de ID começa a criar uma MID à medida que a página é carregada. Durante esse processo, o código fornecido pela `visitorAPI.js` biblioteca de códigos enviar a ID da organização em uma chamada de evento para o serviço de ID. O serviço de ID cria e retorna a MID, além de uma ID demdex nos cookies AMCV e demdex, respectivamente.
 
 ## Sinalizadores de cookies
 
