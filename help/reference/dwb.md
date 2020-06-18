@@ -5,9 +5,9 @@ seo-description: Siga estas instruções para integrar o campo da Experience Clo
 seo-title: Data Workbench e o serviço de identidade da Experience Cloud
 title: Data Workbench e o serviço de identidade da Experience Cloud
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -28,6 +28,7 @@ Para atualizar o [Data Workbench](https://docs.adobe.com/content/help/pt-BR/data
 
    * `x-mcvisid`
    * `x-tnt-action`
+
    Deixe os campos vazios caso não esteja pronto para usá-los ou defini-los.  **Instruções de decodificação**
 
 Consulte o conteúdo completo do decodificador abaixo, incluindo os novos campos anotados acima.
