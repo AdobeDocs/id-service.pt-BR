@@ -1,12 +1,15 @@
 ---
 description: É possível associar outras IDs do cliente e um status de autenticação com cada visitante, juntamente com a ID de visitante da Experience Cloud.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: É possível associar outras IDs do cliente e um status de autenticação com cada visitante, juntamente com a ID de visitante da Experience Cloud.
 seo-title: Estados de autenticação e IDs do cliente
 title: Estados de autenticação e IDs do cliente
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: ht
-source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +26,7 @@ O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante.
 >
 >`setCustomerIDs` (sincronização de ID do cliente) é exigida pelos atributos do cliente e pela funcionalidade dos serviços principais. Sincronização das IDs do cliente em um método de identificação opcional do [!DNL Analytics]. O [!DNL Target] requer `Visitor.AuthState.AUTHENTICATED` para que os Atributos do cliente funcionem. Consulte [Principais serviços - Ativação das soluções](https://docs.adobe.com/content/help/pt-BR/core-services/interface/about-core-services/core-services.html) para ver exemplos.
 
-A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` inclui o objeto opcional `AuthState`. O `AuthState` identifica versões de acordo com seu status de autenticação (por exemplo, logon, logout). Você define o estado da autenticação com um valor de status listado na tabela. O status de autenticação é retornado como um número inteiro.
+A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` inclui o objeto opcional `AuthState`. O `AuthState` identifica versões de acordo com seu status de autenticação (por exemplo, logon, logout). Você define o estado de autenticação com um valor de status listado na tabela. O status de autenticação é retornado como um número inteiro.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -54,7 +57,7 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
 
 ## Casos de uso para esados de autenticação {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-É possível atribuir estados autenticação aos usuários, dependendo das ações que eles realizam nas suas propriedades da web e se estão autenticados ou não. Confira alguns exemplos na tabela abaixo:
+É possível atribuir estados autenticação aos usuários, dependendo das ações que eles realizam nas suas propriedades da web e se estão autenticados ou não. Consulte alguns exemplos na tabela abaixo:
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -66,10 +69,10 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>Esse estado não pode ser usada para cenários como: </p> <p> 
+   <td colname="col2"> <p>Esse estado pode ser usado para cenários como: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Ler um email (essa ação geralmente significa que o leitor é o destinatário pretendido, mas o email também poderia ter sido encaminhado). </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Clicar de um email para uma página de destino. </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Ler um email (essa ação provavelmente significa que o leitor é o recipient pretendido, mas o email também pode ter sido encaminhado). </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Ao clicar de um email para uma landing page. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -91,10 +94,8 @@ As IDs do cliente podem incluir combinações de IDs e estados de autenticação
 >
 >* As IDs fazem distinção entre maiúsculas e minúsculas.
 >* Use apenas valores não codificados para seus IDs.
->* Os estados de autenticação e as IDs de cliente não são armazenadas no cookie da ID do visitante. Eles devem ser definidos para cada página ou contexto de aplicativo.
->* Não inclua informações pessoais identificáveis (PII) nas IDs de cliente. Se você estiver usando PII para identificar um visitante (como um endereço de email), é recomendado armazenar uma versão com hash ou criptografada das informações. A biblioteca ECID fornece suporte para hash de identificadores de usuários. Consulte [Suporte a hash SHA 256 para setCustomerIDs](/help/reference/hashing-support.md).
->
-
+>* As IDs do cliente e os estados de autenticação não são armazenados no cookie da ID do visitante. Eles devem ser definidos para cada página ou contexto de aplicativo.
+>* Não inclua informações pessoais identificáveis (PII) nas IDs do cliente. Se você estiver usando PII para identificar um visitante (como um endereço de email), é recomendado armazenar uma versão com hash ou criptografada das informações. A biblioteca ECID fornece suporte para hash de identificadores de usuários. Consulte [Suporte a hash SHA 256 para setCustomerIDs](/help/reference/hashing-support.md).
 
 
 ```js
@@ -146,7 +147,7 @@ visitor.setCustomerIDs({
 
 ## Retorno das IDs do cliente e dos estados de autenticação {#section-71a610546188478fa9a3185a01d6e83b}
 
-Use `getCustomerIDs` para retornar as IDs do cliente e os estados autenticados relacionados. Esse método retorna um estado autenticado do visitante como um número inteiro.
+Use `getCustomerIDs` para retornar as IDs do cliente e os estados autenticados relacionados. Este método retorna um estado autenticado do visitante como um número inteiro.
 
 **Sintaxe**
 
@@ -168,7 +169,7 @@ Use `getCustomerIDs` para retornar as IDs do cliente e os estados autenticados r
 
 **Exemplos**
 
-Os dados de estados de autenticação e IDs do cliente retornados devem parecer com os exemplos a seguir.
+As IDs do cliente retornadas e os dados de estado de autenticação devem ser semelhantes aos exemplos a seguir.
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -213,10 +214,10 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Suporte do SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação do cliente em nosso código de SDK para Android e iOS. Consulte as seguintes bibliotecas de códigos:
+O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação do cliente em nosso código de SDK para Android e iOS. Consulte as seguintes bibliotecas de código:
 
 * [Métodos do SDK para Android](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/overview.html)
-* [Métodos do SDK para iOS](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/overview.html)
+* [Métodos do iOS SDK](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/overview.html)
 
 ## Aviso aos clientes do Analytics e do Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
