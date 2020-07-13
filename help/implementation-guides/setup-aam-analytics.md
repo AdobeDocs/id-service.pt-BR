@@ -5,9 +5,9 @@ seo-description: Estas instruções são para clientes do Analytics e do Audienc
 seo-title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -23,8 +23,6 @@ Estas instruções são para clientes do Analytics e do Audience Manager que des
 >* [Leia as exigências](../reference/requirements.md) antes de começar.
 >* Este procedimento requer o AppMeasurement. Os clientes que usam s_code não podem concluir esse procedimento.
 >* Configure e teste esse código em um ambiente de desenvolvimento antes de implantá-lo na produção.
->
-
 
 
 ## Etapa 1: plano de encaminhamento do lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
@@ -55,8 +53,6 @@ O serviço de ID exige a `VisitorAPI.js` biblioteca de código. Para baixar a bi
 >
 >* As versões anteriores da API de serviço de ID colocavam essa função em um local diferente e exigiam uma sintaxe distinta. Se você estiver migrando de uma versão anterior à [versão 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), observe a nova disposição e sintaxe documentadas aqui.
 >* O código em ALL CAPS é um espaço reservado para valores reais. Substitua esse texto pela ID da organização, URL do servidor de rastreamento ou outro valor nomeado.
->
-
 
 
 **Parte 1: Copie a função Visitor.getInstance abaixo**
