@@ -5,9 +5,9 @@ seo-description: Estas instruções são para clientes do Analytics que desejam 
 seo-title: Implementar o serviço de identidade da Experience Cloud para Analytics
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -22,8 +22,6 @@ Estas instruções são para clientes do Analytics que desejam usar o serviço d
 >
 >* [Leia as exigências](../reference/requirements.md) antes de começar.
 >* Configure e teste esse código em um ambiente de desenvolvimento antes de implantá-lo na produção.
->
-
 
 
 Siga estas etapas para implementar o serviço de ID do Adobe Analytics:
@@ -54,8 +52,6 @@ O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Par
 >
 >* As versões anteriores da API de serviço de ID colocavam essa função em um local diferente e exigiam uma sintaxe distinta. Se você estiver migrando de uma versão anterior à [versão 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), observe a nova disposição e sintaxe documentadas aqui.
 >* O código em ALL CAPS é um espaço reservado para valores reais. Substitua esse texto pela ID da organização, URL do servidor de rastreamento ou outro valor nomeado.
->
-
 
 
 **Parte 1: Copie a função Visitor.getInstance abaixo**
@@ -130,11 +126,10 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 
 >[!NOTE]
 >
->Quando usados, associe os [!DNL Experience Cloud] URLs do servidor da aos URLs do servidor de rastreamento correspondentes, desta forma: >
+>Quando usados, associe os [!DNL Experience Cloud] URLs do servidor da aos URLs do servidor de rastreamento correspondentes, desta forma:
+>
 >* [!DNL Experience Cloud] URL do servidor da = URL do servidor de rastreamento
 >* [!DNL Experience Cloud] URL seguro do servidor da = URL seguro do servidor de rastreamento
->
-
 
 
 Caso não tenha certeza de como encontrar o servidor de rastreamento, consulte [Perguntas frequentes](../faq-intro/faq.md) e [Preencher corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
