@@ -5,11 +5,11 @@ seo-description: É possível associar outras IDs do cliente e um status de aute
 seo-title: Estados de autenticação e IDs do cliente
 title: Estados de autenticação e IDs do cliente
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
  </tbody> 
 </table>
 
-## Casos de uso para esados de autenticação {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Casos de uso para estados de autenticação {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 É possível atribuir estados autenticação aos usuários, dependendo das ações que eles realizam nas suas propriedades da web e se estão autenticados ou não. Consulte alguns exemplos na tabela abaixo:
 
@@ -217,7 +217,7 @@ Object customerIDs = visitor.getCustomerIDs();
 O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação do cliente em nosso código de SDK para Android e iOS. Consulte as seguintes bibliotecas de código:
 
 * [Métodos do SDK para Android](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/overview.html)
-* [Métodos do iOS SDK](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/overview.html)
+* [Métodos do SDK para iOS](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/overview.html)
 
 ## Aviso aos clientes do Analytics e do Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
