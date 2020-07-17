@@ -4,9 +4,9 @@ seo-description: Conecte o Consent Management Platform (CMP) com o plug-in Audie
 seo-title: Uso dos serviços de Opt-in com a Estrutura IAB
 title: Uso dos serviços de Opt-in com a Estrutura IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->O documento a seguir se aplica somente ao IAB 2.0. Os usuários precisam usar o Visitante.js versão 5.0 para trabalhar com o IAB 2.0.
+>O documento a seguir se aplica somente ao IAB 2.0. Os usuários precisam usar o Visitor.js versão 5.0 para trabalhar com o IAB 2.0.
 
 Conecte a Plataforma de gestão de consentimento (CMP) com o plug-in da Estrutura de transparência e consentimento (TCF) do IAB de Opt-in..
 
