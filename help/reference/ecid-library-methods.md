@@ -3,9 +3,9 @@ title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 seo-title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1090'
 ht-degree: 100%
 
