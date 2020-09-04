@@ -1,19 +1,22 @@
 ---
-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem que você implemente manualmente uma sincronização de ID no iFrame de publicação de destino. Elas estão disponíveis no VisitorAPI.js versão 1.10 ou posterior.
-keywords: Serviço de ID
-seo-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem que você implemente manualmente uma sincronização de ID no iFrame de publicação de destino. Elas estão disponíveis no VisitorAPI.js versão 1.10 ou posterior.
+description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Eles estão disponíveis na VisitorAPI.js versão 1.10 ou superior.
+keywords: ID Service
+seo-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Eles estão disponíveis na VisitorAPI.js versão 1.10 ou superior.
 seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 51%
 
 ---
 
 
 # Sincronização de ID por URL ou fonte de dados{#id-synchronization-by-url-or-data-source}
 
-As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem que você implemente manualmente uma sincronização de ID no iFrame de publicação de destino. Elas estão disponíveis no VisitorAPI.js versão 1.10 ou posterior.
+As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Eles estão disponíveis na VisitorAPI.js versão 1.10 ou superior.
 
 ## Sintaxe, propriedades e macros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -23,7 +26,7 @@ As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem que voc
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Código </th> 
-   <th colname="col2" class="entry"> Sincroniza as IDs do usuário </th> 
+   <th colname="col2" class="entry"> Sincroniza IDs de usuário </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,10 +36,7 @@ As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem que voc
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>Quando você já conhece o DPID e DPUUID e deseja enviá-los para o <span class="keyword">Audience Manager</span> no formato de URL de sincronização de ID padrão. </p> <p> 
-     <draft-comment>
-       Quando você já conhece a ID de usuário e deseja enviá-la para o Audience Manager. 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>Quando você já conhece o DPID e DPUUID e deseja enviá-los para o <span class="keyword">Audience Manager</span> no formato de URL de sincronização de ID padrão. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -57,7 +57,7 @@ A tabela a seguir lista e define as propriedades disponíveis para ambas as fun�
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> String </td> 
-   <td colname="col3"> <p>A ID do provedor de dados atribuída pelo Audience Manager. </p> </td> 
+   <td colname="col3"> <p>ID do provedor de dados atribuída pelo Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
@@ -67,12 +67,12 @@ A tabela a seguir lista e define as propriedades disponíveis para ambas as fun�
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> Número </td> 
-   <td colname="col3"> <p> <i>(Opcional)</i> Define o tempo de expiração do cookie. Deve ser um inteiro. O padrão é de 20160 minutos (14 dias). </p> </td> 
+   <td colname="col3"> <p> <i>(Opcional)</i> Define a hora de expiração do cookie. Deve ser um número inteiro. O padrão é 20160 minutos (14 dias). </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
    <td colname="col2"> String </td> 
-   <td colname="col3"> <p>URL de Destino. </p> </td> 
+   <td colname="col3"> <p>URL de destino. </p> </td> 
   </tr> 
  </tbody> 
 </table>
