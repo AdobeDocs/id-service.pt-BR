@@ -5,10 +5,10 @@ seo-description: Consulte esta seção para verificar se você está usando as s
 seo-title: Requisitos do serviço de identidade da Experience Cloud
 title: Requisitos do serviço de identidade da Experience Cloud
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '783'
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -125,10 +125,7 @@ As seções a seguir listam as versões mínimas do código necessárias para us
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Consulte <a href="https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Biblioteca de integração de dados</a> (DIL). </p> </td> 
-   <td colname="col4"> <p>5.0 </p> <p> 
-     <draft-comment>
-       atualizado de 4.9 
-     </draft-comment> </p> </td> 
+   <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
