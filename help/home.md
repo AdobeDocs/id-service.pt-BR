@@ -5,9 +5,9 @@ seo-description: O serviço de identidade da Adobe Experience Cloud (serviço de
 seo-title: Serviço de identidade da Experience Cloud
 title: Serviço de identidade da Experience Cloud
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma 
    <td colname="col1"> <p> <b>Introdução</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> Visão geral </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud</a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisitos do serviço de identidade da Experience Cloud </a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Implementação padrão com DTM </a> </li> 
      </ul> </p> <p><b>Bibliotecas Javascript da Experience Cloud ID</b> </p> <p>O JavaScript para o serviço de identidade da Experience Cloud está localizado em: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Itens novos ou especiais</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
