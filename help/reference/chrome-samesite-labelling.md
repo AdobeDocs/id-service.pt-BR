@@ -4,7 +4,7 @@ seo-title: Alterações na rotulagem do Google Chrome SameSite
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 translation-type: tm+mt
-source-git-commit: f74a028532e95ab17f5d2e64697d69eb64e03391
+source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 4%
@@ -64,7 +64,9 @@ Com `lax` a nova configuração padrão SameSite no Chrome, o CNAME não fica ma
 
 Para acomodar a alteração, o Analytics agora está definindo explicitamente o valor de `s_vi` cookie para SameSite `lax`. Para usar esse cookie em um contexto amigável de terceiros, defina o valor de SameSite como `none`, o que significa que você sempre deve usar HTTPS. Entre em contato com o Atendimento ao cliente para alterar o valor de SameSite para seus CNAMEs protegidos.
 
-> [!IMPORTANT] Essa ação não é necessária para clientes do Analytics que usam ECID, clientes que usam um CNAME separado para cada um de seus domínios ou clientes que usam somente a coleta de dados de terceiros do Analytics.
+>[!IMPORTANT]
+>
+>Essa ação não é necessária para clientes do Analytics que usam ECID, clientes que usam um CNAME separado para cada um de seus domínios ou clientes que usam somente a coleta de dados de terceiros do Analytics.
 
 ## Cookies de Visitante padrão do Adobe
 
