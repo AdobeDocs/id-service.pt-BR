@@ -6,11 +6,11 @@ user-guide-title: Ajuda do serviço de identidade da Experience Cloud
 breadcrumb-title: Identity Service Guide
 user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 47a32f41de23391cf24529c32a5d1098aa010c07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,29 +22,29 @@ ht-degree: 98%
    + [Visão geral](introduction/overview.md)
    + [Sobre o serviço de ID](introduction/about-id-service.md)
    + [Cookies e o serviço de ID](introduction/cookies.md)
-   + [Como o serviço da ID solicita e define IDs](introduction/id-request.md)
-   + [Como entender a sincronização de e as taxas de correspondência](introduction/match-rates.md)
+   + [Como o serviço de ID solicita e define IDs](introduction/id-request.md)
+   + [Como entender sincronização e taxas de correspondência](introduction/match-rates.md)
 + Implementação {#implementation}
    + [Métodos de implementação](implementation-guides/implementation-methods.md)
    + [Guias de implementação](implementation-guides/implementation-guides.md)
    + [Implementar com Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementação com DTM](implementation-guides/standard.md)
-   + [Implementação do Analytics](implementation-guides/setup-analytics.md)
-   + [Implementação do Target](implementation-guides/setup-target.md)
-   + [Implementação do Analytics e do Audience Manager](implementation-guides/setup-aam-analytics.md)
-   + [Implementação do Analytics, do Audience Manager e do Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Uso do Serviço de ID da com A4T e uma implementação do lado do servidor do Target](implementation-guides/ecid-a4t-target.md)
-   + [Integração direta com o serviço da ID](implementation-guides/direct-integration.md)
+   + [Implementar para o Analytics](implementation-guides/setup-analytics.md)
+   + [Implementar para o Target](implementation-guides/setup-target.md)
+   + [Implementar para o Analytics e o Audience Manager](implementation-guides/setup-aam-analytics.md)
+   + [Implementar para o Analytics, Audience Manager e Target](implementation-guides/setup-aam-analytics-target.md)
+   + [Usar o Serviço de ID com A4T e uma implementação do lado do servidor do Target](implementation-guides/ecid-a4t-target.md)
+   + [Integração direta com o serviço de ID](implementation-guides/direct-integration.md)
    + [Casos de uso da integração direta](implementation-guides/direct-integration-examples.md)
-   + [Teste e verifique o serviço da ID](implementation-guides/test-verify.md)
+   + [Teste e verificação do serviço de ID](implementation-guides/test-verify.md)
    + Serviço de Opt-in {#opt-in-service}
       + [Visão geral do serviço de Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configuração do serviço de Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Validação do serviço de Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configuração de aceitação com a Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
+      + [Configuração do Opt-in com a Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configuração do Opt-in com o DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Casos de uso de opt-in](implementation-guides/opt-in-service/use-cases.md)
-      + [Referência de opt-in](implementation-guides/opt-in-service/api.md)
+      + [Casos de uso do opt-in](implementation-guides/opt-in-service/use-cases.md)
+      + [Referência do opt-in](implementation-guides/opt-in-service/api.md)
       + [Uso dos serviços de Opt-in com a Estrutura IAB](implementation-guides/opt-in-service/iab.md)
 + API do serviço de ID {#id-service-api}
    + [Visão geral da API do serviço de ID](library/library.md)
@@ -83,19 +83,19 @@ ht-degree: 98%
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + Referência {#reference}
-   + [Visão geral de referência](reference/reference.md)
+   + [Visão geral da referência](reference/reference.md)
    + Referência do Analytics {#analytics-reference}
       + [Visão geral da referência do Analytics](reference/analytics-reference/analytics-reference.md)
-      + [Definir Analytics e Experience Cloud IDs](reference/analytics-reference/analytics-ids.md)
-      + [Ordem de operação das IDs do Analytics](reference/analytics-reference/analytics-order-of-operations.md)
-      + [Pontos de decisão da migração do serviço da ID](reference/analytics-reference/migration-decisions.md)
-      + [Cenários de migração do serviço da ID](reference/analytics-reference/migration-scenarios.md)
+      + [Definir IDs do Analytics e Experience Cloud](reference/analytics-reference/analytics-ids.md)
+      + [Ordem de operação das IDs para o Analytics](reference/analytics-reference/analytics-order-of-operations.md)
+      + [Pontos de decisão da migração do serviço de ID](reference/analytics-reference/migration-decisions.md)
+      + [Cenários de migração do serviço de ID](reference/analytics-reference/migration-scenarios.md)
       + [Solicitações do Analytics e de identidade](reference/analytics-reference/legacy-analytics.md)
       + [Coletas de dados CNAMEs e Rastreamento entre domínios](reference/analytics-reference/cname.md)
       + [Implementação do lado do servidor combinada com JavaScript](reference/analytics-reference/server-side.md)
       + [Período de carência do serviço de ID](reference/analytics-reference/grace-period.md)
    + [Alterações na rotulagem do Google Chrome SameSite](reference/chrome-samesite-labelling.md)
-   + [Políticas de segurança de conteúdo e o serviço da ID](reference/csp.md)
+   + [Políticas de segurança de conteúdo e do serviço de ID](reference/csp.md)
    + [Suporte para COPPA no serviço de ID](reference/coppa.md)
    + [Suporte para CORS no serviço de ID](reference/cors.md)
    + [Estados de autenticação e IDs do cliente](reference/authenticated-state.md)
@@ -103,8 +103,8 @@ ht-degree: 98%
    + [Identificação dos visitantes únicos](reference/unique-vis-method.md)
    + [Obter IDs de região e usuário do cookie AMCV ou do serviço de ID](reference/regions.md)
    + [Requisitos para o serviço de ID](reference/requirements.md)
-   + [Pulsação de vídeo e o serviço da ID](reference/heartbeat.md)
-   + [Data Workbench e o serviço da ID](reference/dwb.md)
+   + [Video Heartbeat e o serviço de ID](reference/heartbeat.md)
+   + [Data Workbench e o serviço de ID](reference/dwb.md)
    + [Suporte a hash SHA 256 para setCustomerIDs](reference/hashing-support.md)
 + Perguntas frequentes {#faqs}
    + [Visão geral das perguntas frequentes](faq-intro/faq-intro.md)
@@ -112,9 +112,9 @@ ht-degree: 98%
    + [Perguntas frequentes do Analytics e do serviço de ID](faq-intro/analytics-faq.md)
    + [Perguntas frequentes de outras soluções da Experience Cloud](faq-intro/other-faq.md)
 + Notas de versão do serviço de ID {#release-notes}
-   + [Notas de versão de 2020](release-notes/release-notes.md)
-   + [Notas de versão de 2019](release-notes/notes-2019.md)
-   + [Notas de versão de 2018](release-notes/notes-2018.md)
-   + [Notas de versão de 2017](release-notes/notes-2017.md)
-   + [Notas de versão de 2016](release-notes/notes-2016.md)
-   + [Notas de versão de 2015](release-notes/notes-2015.md)
+   + [Notas de versão 2020](release-notes/release-notes.md)
+   + [Notas de versão 2019](release-notes/notes-2019.md)
+   + [Notas de versão 2018](release-notes/notes-2018.md)
+   + [Notas de versão 2017](release-notes/notes-2017.md)
+   + [Notas de versão 2016](release-notes/notes-2016.md)
+   + [Notas de versão 2015](release-notes/notes-2015.md)
