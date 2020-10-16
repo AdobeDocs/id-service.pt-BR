@@ -3,9 +3,9 @@ title: Alterações na rotulagem do Google Chrome SameSite
 seo-title: Alterações na rotulagem do Google Chrome SameSite
 description: Documentação da biblioteca do Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca do Adobe ECID (serviço de ID).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
