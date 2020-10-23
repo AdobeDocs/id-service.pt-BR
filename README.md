@@ -1,16 +1,16 @@
 ---
 source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '520'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 # Contribuir com o artigo
 
 | EXL-PR | EXL | Visualização | Ativar | Publicado | Ajuda |
 |--- |--- |--- |--- |--- |--- |
-| [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [URL de pré-visualização](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [ativate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Guia de criação](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
+| [![Status da build](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Status da build](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [URL de pré-visualização](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL ativo](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Guia de criação](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Agradecemos as contribuições de conteúdo da nossa comunidade e dos funcionários da Adobe que não fazem parte das equipes de documentação.
 
@@ -24,7 +24,7 @@ Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/
 
 A maneira como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
-### Pequenas alterações ou solicitações
+### Pequenas alterações  ou solicitações
 
 Para enviar uma solicitação, clique no link **Registrar um problema** em um artigo, o que abrirá um problema no GitHub. Especifique um título e uma descrição e clique em **Enviar novo problema**.
 
@@ -42,7 +42,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Grandes alterações dos funcionários da Adobe
 
-Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos para uma solução da [!UICONTROL Adobe Experience Cloud] e seu trabalho for criar artigos técnicos, deverá usar o repositório privado em `https://git.corp.adobe.com/AdobeDocs`. Consulte o Guia [de colaboração](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)interna.
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos para uma solução da [!UICONTROL Adobe Experience Cloud] e seu trabalho for criar artigos técnicos, deverá usar o repositório privado em `https://git.corp.adobe.com/AdobeDocs`. Consulte o [Guia de colaboração interna](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
