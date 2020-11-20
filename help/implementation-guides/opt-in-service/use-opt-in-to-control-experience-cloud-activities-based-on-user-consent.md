@@ -1,56 +1,56 @@
 ---
-title: Usar a aceitação para controlar Atividades Experience Cloud com base no consentimento do usuário
-description: O Adobe Opt-in Object é uma extensão do Adobe Experience Platform Identity Service, projetado para ajudá-lo a controlar se e quais soluções de Experience Cloud podem criar cookies em páginas da Web ou iniciar beacons, com base no consentimento do usuário final.
-translation-type: tm+mt
+title: Usar o Opt-in para controlar atividades da Experience Cloud com base no consentimento do usuário
+description: O Adobe Opt-in Object é uma extensão do Adobe Experience Platform Identity Service, projetado para ajudá-lo a controlar se e quais soluções da Experience Cloud podem criar cookies em páginas da Web ou iniciar beacons, com base no consentimento do usuário final.
+translation-type: ht
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Controlar Atividades Experience Cloud com base no consentimento do usuário
+# Controlar atividades da Experience Cloud com base no consentimento do usuário
 
-O Adobe [!UICONTROL Opt-in] Object é uma extensão do Adobe [!UICONTROL Experience Platform Identity Service], projetada para ajudá-lo a controlar se e quais soluções de Experience Cloud podem criar cookies em páginas da Web ou iniciar beacons, com base no consentimento do usuário final.
+O Adobe [!UICONTROL Opt-in] Object é uma extensão do Adobe [!UICONTROL Experience Platform Identity Service], projetada para ajudá-lo a controlar se e quais soluções da Experience Cloud podem criar cookies em páginas da Web ou iniciar beacons, com base no consentimento do usuário final.
 
-## Noções básicas da [!UICONTROL aceitação]
+## Noções básicas do [!UICONTROL Opt-in]
 
-Um aspecto importante das regras de privacidade é a aquisição e a transmissão do consentimento dos utilizadores sobre a forma como os seus dados pessoais podem ser utilizados e por quem. A versão mais recente do Serviço [!UICONTROL de] identidade inclui funcionalidade, que se situa entre o usuário (a interface do usuário) e as soluções de Adobe e fornece o acionamento condicional (por exemplo, consentimento prévio e posterior) das tags de solução Adobe Experience Cloud com base no consentimento do usuário final. Isso é mostrado na seguinte imagem:
+Um aspecto importante das regras de privacidade é a aquisição e a transmissão do consentimento dos utilizadores sobre a forma como os seus dados pessoais podem ser utilizados e por quem. A versão mais recente do [!UICONTROL Identitiy Service] inclui uma funcionalidade, que se situa entre o usuário (a interface do usuário) e as soluções da Adobe e fornece o acionamento condicional (por exemplo, consentimento prévio e posterior) das tags de solução da Adobe Experience Cloud com base no consentimento do usuário final. Isso é mostrado na imagem a seguir:
 
-![Diagrama de como a [!UICONTROL aceitação] funciona](assets/opt-in.png)
+![Diagrama de como o [!UICONTROL Opt-in] funciona](assets/opt-in.png)
 
-[!UICONTROL A aceitação] é basicamente o porteiro... ou é o mestre-chave? Você decide.
+O [!UICONTROL Opt-in] é basicamente o porteiro... ou é o guardião das chaves? Você decide.
 
-Resume-se a isto:
+Ela se resume em:
 
-**Se a opção [!UICONTROL Aceitação] estiver ativada no Serviço de identidade (por meio de uma variável Booliana), ela atrasará as bibliotecas da solução Experience Cloud de disparar tags ou definir cookies até que o consentimento seja dado para essa solução.**
+**Se o [!UICONTROL Opt-in] estiver ativado no Identity Service (por meio de uma variável Booliana), ele faz com que as bibliotecas de soluções da Experience Cloud atrasem o disparo de tags ou a definição de cookies até que o consentimento seja dado para essa solução.**
 
-[!UICONTROL A aceitação] também permite decidir se as tags são acionadas *antes* do consentimento do usuário, e então essas informações de consentimento (junto com o consentimento dado pelo usuário final) são armazenadas, para que possam ser usadas em ocorrências subsequentes. A armazenamento do consentimento está disponível nas opções de [!UICONTROL aceitação] , ou você pode se integrar com um CMP e fazer com que ele armazene seleções de consentimento.
+O [!UICONTROL Opt-in] também permite decidir se as tags são acionadas *antes* do consentimento do usuário. Depois, essas informações de consentimento (junto com o consentimento dado pelo usuário final) são armazenadas para que possam ser usadas em ocorrências subsequentes. O armazenamento do consentimento está disponível nas opções do [!UICONTROL Opt-in], ou você pode se integrar a um CMP e fazer com que ele armazene seleções de consentimento.
 
-## Ativar e configurar a [!UICONTROL aceitação]
+## Ativar e configurar o [!UICONTROL Opt-in]
 
-[!UICONTROL A aceitação] também é mais facilmente configurável com o Adobe Experience Platform Launch. Visualização o vídeo curto a seguir para ver como.
+O [!UICONTROL Opt-in] também é configurado mais facilmente com o Adobe Experience Platform Launch. Assista ao vídeo a seguir para saber como.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12&captions=por_br)
 
-Se você não estiver usando o Experience Platform Launch, poderá definir a configuração da [!UICONTROL opção]na inicialização do objeto de Visitante global, como mostrado na [documentação](https://marketing.adobe.com/resources/help/en_US/mcvid/getting-started.html).
+Se você não estiver usando o Experience Platform Launch, poderá definir a configuração do [!UICONTROL Opt-in] na inicialização do objeto de Visitante global, como mostrado na [documentação](https://marketing.adobe.com/resources/help/pt_BR/mcvid/getting-started.html).
 
-## Implementação da [!UICONTROL aceitação] na página
+## Implementação do [!UICONTROL Opt-in] na página
 
-Toda esta configuração e material de backend está apenas em preparação para fornecer uma interface para que os visitantes do site sejam apresentados com opções de consentimento. Essa interface pode ser criada por você ou você pode usar um parceiro CMP (Plataforma de gerenciamento de consentimento) para criar a interface.
+Toda essa configuração e material de backend estão sendo preparados para fornecer uma interface para que os visitantes do site tenham opções de consentimento. Essa interface pode ser criada por você ou você pode usar um parceiro CMP (Plataforma de gerenciamento de consentimento) para criar a interface.
 
-Ao configurar uma interface para usar o [!UICONTROL Opt-in] para coletar consentimento, ele deve ser configurado para chamar APIs que entrarão em [!UICONTROL Opt-in] e informá-la para dar consentimento a algumas ou todas as soluções da Adobe Experience Cloud. Informações detalhadas sobre essas APIs podem ser encontradas na documentação [de Referência de](https://marketing.adobe.com/resources/help/en_US/mcvid/api.html)aceitação. Informações adicionais sobre a aceitação também estão nas páginas de documentação adjacentes.
+Ao configurar uma interface para usar o [!UICONTROL Opt-in] para coletar o consentimento, ela deve ser configurada para chamar APIs que entrarão no [!UICONTROL Opt-in] e informá-la para dar consentimento a algumas ou todas as soluções da Adobe Experience Cloud. Informações detalhadas sobre essas APIs podem ser encontradas na [documentação de Referência do Opt-in](https://marketing.adobe.com/resources/help/pt_BR/mcvid/api.html). Informações adicionais sobre o Opt-in também podem ser encontradas nas páginas de documentação adjacentes.
 
-## [!UICONTROL Demonstração de aceitação]
+## Demonstração do [!UICONTROL Opt-in]
 
-No vídeo a seguir, assista uma rápida demonstração do [!UICONTROL Opt-in] trabalhando na página e como isso pode afetar se as soluções do Experience Cloud podem ou não definir cookies, iniciar beacons etc.
+No vídeo a seguir, assista uma rápida demonstração do [!UICONTROL Opt-in] funcionando na página e como isso pode afetar se as soluções da Experience Cloud podem ou não definir cookies, iniciar beacons etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12&captions=por_br)
 
-**NOTA:** É importante observar que, no momento da redação deste artigo, a [!UICONTROL opção] Opt-in não foi integrada nas bibliotecas para todas as soluções de Experience Cloud. As bibliotecas atualmente compatíveis com o [!UICONTROL Opt-in] são:
+**NOTA:** é importante observar que, no momento da redação deste artigo, o [!UICONTROL Opt-in] não foi integrado nas bibliotecas para todas as soluções da Experience Cloud. As bibliotecas atualmente compatíveis com o [!UICONTROL Opt-in] são:
 
-* Serviço de identidade
+* Identity Service
 * Analytics
 * Audience Manager
 * [!DNL Target]
