@@ -1,12 +1,15 @@
 ---
 description: Essa função foi projetada principalmente para clientes do A4T e tem como objetivo ajudar a solucionar problemas que podem surgir ao trabalhar com IDs em sites/telas ou aplicativos de uma única página.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Essa função foi projetada principalmente para clientes do A4T e tem como objetivo ajudar a solucionar problemas que podem surgir ao trabalhar com IDs em sites/telas ou aplicativos de uma única página.
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 66%
 
 ---
 
@@ -19,8 +22,8 @@ Essa função foi projetada principalmente para clientes do A4T e tem como objet
 
 Como um cliente A4T que usa o serviço de ID, você pode desejar usar a função `visitor.resetState()` quando precisar:
 
-* Passar uma ID de dados suplementares (SDID) ou qualquer outra ID de uma página ou tela para outra por um redirecionamento. Em geral, o serviço de ID não passará essa ID sem essa função.
-* Use o código que atualiza somente seções específicas de uma página ou um aplicativo por chamadas do Ajax e você deseja rastrear essas ações. Por exemplo, considere que há uma página em que clicar em um objeto carrega ou altera apenas uma seção especial. Nesse caso, o serviço de ID não pode solicitar uma ID diferente exceto quando a página é recarregada. Entretanto, com `visitor.resetState()`, você pode solicitar uma nova ID sob essas condições.
+* Para passar uma ID de dados complementares (SDID), ou qualquer outra ID, de uma página ou tela para outra por meio de um redirecionamento. Normalmente, o serviço de ID não passa essa ID sem essa função.
+* Use o código que atualiza somente seções específicas de uma página ou aplicativo por meio de chamadas Ajax e você deseja rastrear essas ações. Por exemplo, digamos que você tenha uma página na qual clicar em um objeto carrega apenas uma seção especial ou altera essa seção. Nesse caso, o serviço de ID não pode solicitar uma ID diferente, a menos que a página seja recarregada. Entretanto, com `visitor.resetState()`, você pode solicitar uma nova ID sob essas condições.
 
 Consulte as amostras de código abaixo.
 
@@ -30,7 +33,7 @@ Consulte as amostras de código abaixo.
 
 ## Amostras de código {#section-d75b211bb4ea473887eb284de2ad838b}
 
-A implementação do serviço de ID afeta como você usaria essa função. Consulte a tabela abaixo para obter mais exemplos.
+A implementação do serviço de ID afeta a forma como você usaria essa função. Consulte a tabela abaixo para obter exemplos.
 
 **Implementação do lado do servidor**
 
@@ -63,7 +66,7 @@ visitor.resetState(serverState);
 
 **Implementação não padrão** (sem passar uma ID)
 
-Nesse caso, `visitor.resetState()` pode ser usada para gerar uma nova ID. Isso pode ser útil em um aplicativo de página única quando um usuário navega para uma nova tela sem atualizar a página e você precisar de uma nova ID.
+Nesse caso, `visitor.resetState()` pode ser usada para gerar uma nova ID. Isso pode ser útil em um aplicativo de página única quando um usuário navega até uma nova tela sem atualizar a página e você precisa de uma nova ID.
 
 ```js
  
