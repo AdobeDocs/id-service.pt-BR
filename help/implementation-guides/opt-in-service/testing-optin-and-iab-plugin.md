@@ -6,6 +6,9 @@ title: Validação do serviço de Opt-in
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 35%
 
 ---
 
@@ -26,13 +29,13 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Antes de carregar a página, limpe o cache e os cookies.
 
-No Chrome, clique com o botão direito na página da web e selecione Inspecionar. Como mostrado na captura de tela acima, selecione a guia *Rede* para ver as solicitações feitas do navegador.
+No Chrome, clique com o botão direito na página da web e selecione Inspecionar. Como na captura de tela acima, selecione a guia *Rede* para visualização das solicitações feitas do navegador.
 
-No exemplo acima, temos as seguintes tags JS da Adobe instaladas na página: ECID, AAM, Analytics e Target.
+No exemplo acima, temos as seguintes tags Adobe JS instaladas na página: ECID, AAM, Analytics e Público alvo.
 
 **Como comprovar que o Opt-in está funcionando conforme o esperado:**
 
-Você não deve ver nenhuma solicitação aos servidores da Adobe:
+Você não deve ver solicitações para servidores Adobe:
 
 * demdex.net/id
 * demdex.net/event
@@ -42,11 +45,11 @@ Você não deve ver nenhuma solicitação aos servidores da Adobe:
 
 >[!NOTE]
 >
->Você poderá ver uma chamada para `http://dpm.demdex.net/optOutStatus`, que é um ponto de extremidade SOMENTE LEITURA usado para recuperar o status de Opt-in do visitante. Esse ponto de extremidade não resultará na criação de um cookie de terceiros e não coletará informações da página.
+>Você poderá ver uma chamada para `http://dpm.demdex.net/optOutStatus`, que é um ponto de extremidade SOMENTE LEITURA usado para recuperar o status de Opt-in do visitante. Esse terminal não resultará na criação de cookies de terceiros e não coletará informações da página.
 
-Você não deve ver cookies criados pelas tags da Adobe: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+Você não deve ver nenhum cookie criado pelas tags Adobe: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
-No Chrome, acesse a guia *Aplicativos*, expanda a seção *Cookies* em *Armazenamento* e selecione o nome do domínio do seu site:
+No Chrome, vá para a guia *Aplicativo* , expanda a seção *Cookies* em *Armazenamento* e selecione o nome do domínio do seu site:
 
 ![](assets/use_case_1_2.png)
 
@@ -59,7 +62,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-A única diferença no caso de uso 2 é que você verá *um novo cookie* contendo as permissões de Opt-in fornecidas pelo visitante: **adobeujs-optin**
+A única diferença no caso de uso 2 é que você verá *um novo cookie* que conterá as permissões de aceitação fornecidas pelo seu visitante: **adobeujs-optin**
 
 ## Caso de uso 3: Ativar o Opt-in e pré-aprovar o Adobe Analytics  {#section-257fe582b425496cbf986d0ec12d3692}
 
@@ -73,11 +76,11 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-Como o Adobe Analytics tem Opt-in pré-aprovado, você verá solicitações ao servidor de rastreamento na guia Rede:
+Como a Adobe Analytics é aprovada antes da aceitação, você verá solicitações na guia Rede para o servidor de rastreamento:
 
 ![](assets/use_case_3_1.png)
 
-e verá cookies do Analytics na guia Aplicativo:
+e você verá os cookies do Analytics na guia Aplicativo:
 
 ![](assets/use_case_3_2.png)
 
@@ -90,9 +93,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-**Como visualizar o consentimento atual do IAB na página:**
+**Como visualização seu consentimento IAB atual na página:**
 
-Abra as ferramentas do desenvolvedor e selecione a guia *Console*. Cole o seguinte fragmento de código e pressione Enter:
+Abra as ferramentas do desenvolvedor e selecione a guia *Console*. Cole o seguinte trecho de código e pressione Enter:
 
 ```
 <codeblock>
@@ -102,15 +105,15 @@ Abra as ferramentas do desenvolvedor e selecione a guia *Console*. Cole o seguin
   
 ```
 
-Este é um exemplo de quando as finalidades 1, 2 e 5 e a ID do fornecedor do Audience Manager estão aprovadas:
+Este é um exemplo de saída quando os propósitos 1, 2 e 5 são aprovados e a ID do fornecedor do Audience Manager é aprovada:
 
-* demdex.net/id: a presença dessa chamada comprova que a ECID solicitou uma ID do demdex.net
-* demdex.net/event: a presença dessa chamada comprova que a chamada de coleta de dados DIL está funcionando conforme o esperado.
-* demdex.net/dest5.html: a presença dessa chamada comprova que as Sincronizações de ID estão sendo disparadas.
+* demdex.net/id: A presença desta chamada prova que a ECID solicitou uma ID de demdex.net
+* demdex.net/event: A presença desta chamada prova que a chamada de coleta de dados do DIL está funcionando como esperado.
+* demdex.net/dest5.html: A presença desta chamada prova que as sincronizações de ID estão sendo acionadas.
 
 ![](assets/use_case_4_1.png)
 
-Se um dos seguintes não for válido, você não verá solicitações para os servidores da Adobe, nem cookies da Adobe:
+Se uma das seguintes opções não for válida, você não verá nenhuma solicitação para os servidores de Adobe e nenhum cookie de Adobe:
 
-* Finalidades 1, 2 OU 5 não estão aprovadas.
-* A ID do fornecedor do Audience Manager não está aprovada.
+* Os propósitos 1, 2 OU 5 não são aprovados.
+* A ID do fornecedor do Audience Manager não é aprovada.
