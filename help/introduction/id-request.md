@@ -5,9 +5,9 @@ seo-description: Uma visão geral da solicitação de ID e do processo de respos
 seo-title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
 
