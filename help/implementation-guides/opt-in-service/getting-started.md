@@ -6,6 +6,9 @@ title: Configuração do serviço de Opt-in
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 88%
 
 ---
 
@@ -22,27 +25,27 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
 
 1. ECID versão 4.0.
 
-   [Baixe](https://github.com/Adobe-Marketing-Cloud/id-service/releases) a versão mais recente da ECID.
+   [Baixe](https://github.com/Adobe-Marketing-Cloud/id-service/releases) a versão mais recente do ECID.
 
-1. Bibliotecas compatíveis:
+1. Bibliotecas de suporte:
 
    * ECID 4.0 ou posterior
    * AppMeasurement 2.11 ou posterior
    * DIL 9.0
    * AT.js versão 1.7.0
-   * Extensão AT.js do Launch versão 9.0
-   * Para o Analytics, AppMeasurement 2.11 com extensão 1.6
-   * Para o Target, a extensão 0.9.1
+   * AT.js Launch versão 9.0
+   * Para o Analytics, App Measurement 2.11 com extensão 1.6
+   * Para o Público alvo, extensão 0.9.1
 
-1. Familiarize-se bem com a estrutura de gerenciamento de consentimento que você usará com o Opt-in e entenda qualquer pré-requisito adicional.
+1. Conheça bem a estrutura de gerenciamento de consentimento que você usará com a opção Aceitar e entenda quaisquer pré-requisitos adicionais.
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado pré-consentimento.
+1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Esteja ciente de quais bibliotecas suas equipes de privacidade de empresa estão em condições de usar em um estado de pré-consentimento.
 
-Se estiver usando o [Adobe Launch](https://docs.adobelaunch.com/), aproveite a [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+If using [Adobe Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## Categorias de Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -65,7 +68,7 @@ Todas as bibliotecas do lado do cliente das soluções da Adobe dependem do serv
 
 As configurações do serviço de Opt-in são fornecidas na `getInstance()` função do JS do visitante, que instancia o `adobe` objeto global. Abaixo encontram-se as [configurações](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) do JS do visitante para o serviço de Opt-in.
 
-**Exemplo de configuração de Opt-in na inicialização do`Visitor`objeto global**
+**Exemplo de configuração de Opt-in na inicialização do `Visitor` objeto global**
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
@@ -88,7 +91,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**Lida com as alterações de consentimento**
+**Tratar alterações para consentimento**
 
 A qualquer momento durante a experiência de um visitante no site, ele pode definir preferências pela primeira vez ou alterar suas preferências usando o CMP. Quando o JS do Visitante é inicializado com as configurações iniciais, as permissões do visitante podem ser alteradas. Consulte [Alterações no consentimento](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) para obter uma lista das funções de consentimento gerenciadas.
 
@@ -110,9 +113,9 @@ Consulte as [configurações do fluxo de trabalho](../../implementation-guides/o
 
 ## Inspecionar as permissões de Opt-in do visitante {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Conforme os visitantes fazem alterações em suas permissões, será necessário obter informações sobre as permissões resultantes para sincronizar o armazenamento de consentimentos com as alterações feitas no serviço de Opt-in. Inspecione as preferências do visitante usando as [funções de permissões](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), por exemplo:
+Conforme os visitantes fazem alterações em suas permissões, será necessário obter informações sobre as permissões resultantes para sincronizar o armazenamento de consentimentos com as alterações feitas no serviço de Opt-in. Inspect suas preferências de visitante usando as funções [de](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)permissões, por exemplo:
 
-**Exemplo de fetchPermissions**
+**amostra fetchPermissions**
 
 ```
 optIn.fetchPermissions(function (permissions) { 
@@ -134,7 +137,7 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-Consulte  [Documentação da API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) para obter mais informações sobre essas e outras funções, propriedades ou configurações mencionadas neste documento.
+See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
 
 ## Armazenando as preferências do visitante {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
