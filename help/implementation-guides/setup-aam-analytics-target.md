@@ -5,9 +5,9 @@ seo-description: Estas instruções são para clientes do Analytics, do Audience
 seo-title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 100%
 
