@@ -5,9 +5,9 @@ seo-description: Em algumas implementações as IDs de visitante são passadas d
 seo-title: Implementação do lado do servidor combinada com JavaScript
 title: Implementação do lado do servidor combinada com JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 100%
 
