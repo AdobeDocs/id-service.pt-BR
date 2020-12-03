@@ -6,6 +6,9 @@ title: Referência de opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
 translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+workflow-type: tm+mt
+source-wordcount: '897'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +36,7 @@ As configurações de Opt-in são fornecidas na função `getInstance()` do Java
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
-Se falso, indica que os visitantes não precisam aceitar (opt-in). Resulta na criação de cookies pela Experience Cloud, independentemente das categorias aderidas ou não. Essa configuração ativa ou desativa o Opt-in de maneira holística.
+Se falso, indica que os visitantes não precisam opt in. Resulta na criação de cookies pela Experience Cloud, independentemente das categorias aderidas ou não. Essa configuração ativa ou desativa a opção Aceitar de forma holística.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -47,21 +50,21 @@ As preferências definidas explicitamente pelo visitante. As permissões dessa c
 
 Permita que o Opt-in armazene as permissões em um cookie próprio (no domínio do cliente atual)
 
-(Opcional)**`optInCookiesDomain (string)`**
+(Opcional) **`optInCookiesDomain (string)`**
 
 Domínio ou subdomínio próprio usado para o cookie Opt-in (se `isOptInStorageEnabled` for verdadeiro)
 
-(Opcional)**`optInStorageExpiry (integer)`**
+(Opcional) **`optInStorageExpiry (integer)`**
 
 Número de segundos para substituir a expiração padrão de 13 meses
 
 ## Alterações nos parâmetros de Consentimento {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-A qualquer momento durante sua experiência no site, um visitante pode definir preferências pela primeira vez ou alterar suas preferências usando o CMP. Quando o JS do Visitante é inicializado com as configurações iniciais, as permissões do visitante podem ser alteradas usando as seguintes funções:
+A qualquer momento durante sua experiência no site, um visitante pode definir preferências pela primeira vez ou alterar suas preferências usando o CMP. Depois que o Visitante JS é inicializado com as configurações iniciais, as permissões do visitante podem ser alteradas usando as seguintes funções:
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Função que aprova ou faz opt-in do visitante a todas as categorias de uma lista. Para obter mais informações sobre o parâmetro shouldWaitForComplete, consulte [Fluxo de trabalho de Opt-in](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
+Função que aprova ou faz opt-in do visitante a todas as categorias de uma lista. Para obter mais informações sobre o parâmetro shouldWaitForComplete, consulte Fluxo de trabalho de [aceitação](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -114,7 +117,7 @@ Um objeto que lista todas as soluções da Experience Cloud, como categorias, qu
 **`status`**
 
 * pendente
-* alterado
+* changed
 * conclúido
 
 **`doesOptInApply`**
@@ -123,11 +126,11 @@ Verdadeiro ou falso, representando a configuração fornecida na inicialização
 
 **`isPending`**
 
-Verdadeiro ou falso, dependendo do valor de status. O Opt-in relata essa propriedade como verdadeira para um visitante que ainda não aceitou ou negou a permissão
+Verdadeiro ou falso, dependendo do valor de status. Relatórios de aceitação são verdadeiros para esta propriedade para um visitante que ainda não aceitou ou negou permissão explicitamente
 
 **`isComplete`**
 
-Verdadeiro ou falso, dependendo do valor de status. O Opt-in pode relatar essa propriedade como falsa quando um consentimento de estilo de fluxo de trabalho foi iniciado, mas não concluído.
+Verdadeiro ou falso, dependendo do valor de status. A aceitação pode reportar um falso para essa propriedade quando um consentimento do estilo de fluxo de trabalho é iniciado, mas não concluído.
 
 ## Métodos do objeto Opt-in {#section-e0417801a82548d199d833010033e433}
 
@@ -146,8 +149,8 @@ Verdadeiro ou falso, dependendo do valor de status. O Opt-in pode relatar essa p
 
 **`deny(categories, shouldWaitForComplete)`**
 
-* Passe uma ou mais categorias para verificar se estão aprovadas.
-* Se nenhuma categoria for passada, TODAS as categorias disponíveis serão verificadas.
+* Transmita 1 ou mais categorias para verificar se estão aprovadas.
+* Se nenhuma categoria for enviada, TODAS as categorias disponíveis serão verificadas.
 
 **`isApproved(categories)`**
 
@@ -159,7 +162,7 @@ Verifique se uma ou mais categorias foram aprovadas pelo cliente. (Se foram tran
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-A API assíncrona recupera a lista de permissões. A chamada de retorno é recebida com a lista de permissões após a conclusão do processo de concessão/negação de permissões. **`shouldAutoSubscribe`:** um utilitário assistente inscreverá automaticamente essa chamada de retorno a todos os eventos futuros. Isso significa que a chamada de retorno será recebido sempre que uma aprovação ou negação for disparada no Opt-in. Dessa maneira, você estará sempre atualizado, sem precisar se inscrever nos eventos.
+A API assíncrona recupera a lista de permissões. A chamada de retorno é recebida com a lista de permissões após a conclusão do processo de concessão/negação de permissões. **`shouldAutoSubscribe`:** um utilitário assistente inscreverá automaticamente essa chamada de retorno a todos os eventos futuros. Isso significa que a chamada de retorno será recebido sempre que uma aprovação ou negação for disparada no Opt-in. Desta forma, você sempre é atualizado, sem se inscrever nos eventos.
 
 **Exemplo**
 
