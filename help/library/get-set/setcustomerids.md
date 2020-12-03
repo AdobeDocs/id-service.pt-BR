@@ -1,12 +1,15 @@
 ---
 description: setCustomerIDs define um ou mais pares de valor chave que definem as IDs do cliente e os estados de autenticação.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: setCustomerIDs define um ou mais pares de valor chave que definem as IDs do cliente e os estados de autenticação.
 seo-title: setCustomerIDs
 title: setCustomerIDs
 uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
 translation-type: tm+mt
 source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 100%
 
 ---
 
