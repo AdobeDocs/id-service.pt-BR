@@ -1,12 +1,15 @@
 ---
 description: getMarketingCloudVisitorID retorna a ID de visitante da Experience Cloud.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: getMarketingCloudVisitorID retorna a ID de visitante da Experience Cloud.
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +20,7 @@ getMarketingCloudVisitorID retorna a ID de visitante da Experience Cloud.
 
 **Sintaxe:**` var *`nome da variável`* = visitor.getMarketingCloudVisitorID()`
 
-Normalmente, esse método é usado com as soluções personalizadas que exigem a leitura da ID de visitante. Ela não é usada em uma implementação padrão. `getMarketingCloudVisitorID` também funciona com funções de retorno de chamada para ler as [!DNL Analytics] IDs do e trazê-las para o sistema ou aplicativo.
+Normalmente, esse método é usado com soluções personalizadas que exigem a leitura da ID do visitante. Ela não é usada em uma implementação padrão. `getMarketingCloudVisitorID` também funciona com funções de retorno de chamada para ler as [!DNL Analytics] IDs do e trazê-las para o sistema ou aplicativo.
 
 ```js
 //callback function 
