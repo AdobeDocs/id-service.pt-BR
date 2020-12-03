@@ -1,12 +1,15 @@
 ---
 description: Notas de versão e atualizações de 2015.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Notas de versão e atualizações de 2015.
 seo-title: Notas de versão de 2015
 title: Notas de versão de 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 65%
 
 ---
 
@@ -25,24 +28,24 @@ A lei americana de privacidade infantil Children’s Online Privacy Protection A
 
 Setembro de 2015
 
-* Correção de um bug no Safari que impedia o funcionamento dos serviços de sincronização quando os usuários bloqueavam cookies de terceiros. (AAM-20764)
-* As chamadas ao serviço de ID agora incluem a ID da versão no parâmetro `d_visid_ver=`. A ID retornada ajuda as equipes internas a solucionarem problemas e questões de suporte. (AAM-20824)
+* Correção de um bug no navegador Safari que impedia o funcionamento dos serviços de sincronização quando os usuários bloqueavam cookies de terceiros. (AAM-20764)
+* As chamadas ao serviço de ID agora incluem a ID da versão no parâmetro `d_visid_ver=`. A ID retornada ajuda as equipes internas a solucionar problemas e questões de suporte. (AAM-20824)
 
 ## Versão 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Agosto de 2015
 
-* Correção de um bug que impedia o serviço de ID de solicitar um iframe quando não havia dados para sincronizar ou acionar. (AAM-20164)
-* Correção de um bug que impedia o serviço de ID de configurar apropriadamente um cookie de domínio de várias partes e de nível superior. Por exemplo, se você tem um domínio como `my_company.co.uk`, em determinadas circunstâncias o serviço de ID definiria um cookie somente em `co.uk`. (AN-104683)
+* Correção de um erro que impedia o serviço de ID de solicitar um iframe se não houvesse dados para sincronizar ou acionar. (AAM-20164)
+* Correção de um bug que impedia o serviço de ID de configurar corretamente um cookie de domínio multiparte e de nível superior. Por exemplo, se você tem um domínio como `my_company.co.uk`, em determinadas circunstâncias o serviço de ID definiria um cookie somente em `co.uk`. (AN-104683)
 
-   Isto afetou apenas alguns clientes que atendiam *todos* os seguintes critérios:
+   Isso afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
    * Uso do serviço de ID.
-   * Ativação de um [período de carência](../reference/analytics-reference/grace-period.md) *ou* utilização de cookies primários, além de usuários que bloquearam os cookies de terceiros.
+   * Ativação de um [período de carência ](../reference/analytics-reference/grace-period.md)*ou* utilização de cookies primários, além de usuários que bloquearam os cookies de terceiros.
 
    * Páginas com domínios multiparte e nível superior.
 
-As revisões de documentação dessa versão incluem:
+As revisões de documentação nesta versão incluem:
 
 * [Métodos de API e Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganização de conteúdo e texto. Na maior parte dos casos, cada método recebe sua própria página.
 * [Requisitos do serviço de identidade da Experience Cloud](../reference/requirements.md): Conteúdo revisado e texto reorganizado.
@@ -73,7 +76,7 @@ Consulte [Experience Cloud](../implementation-guides/setup-analytics.md#concept-
 
 Fevereiro de 2015
 
-Foi corrigido o tratamento do limite de tempo em solicitações para AAM Blob e Dica de local. Agora, quando o limite de tempo for atingido, o sistema deixará esse campo em branco para a página atual e fará os retornos de chamada. O limite de tempo é tratado como uma condição de erro para que ocorra uma nova tentativa na próxima página. (AN-94473, AN-94474)
+Correção do tratamento do tempo limite em solicitações para AAM Blob e Dica de localização. Agora, com um tempo limite, o sistema deixará esses campos em branco para a página atual e fará todos os retornos de chamada. O tempo limite é tratado como uma condição de erro, portanto, ele tentará novamente na próxima página. (AN-94473, AN-94474)
 
 ## Versão 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
