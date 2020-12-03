@@ -6,6 +6,9 @@ title: Serviço de Opt-in
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
 translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ O serviço de Opt-in é uma extensão da Experience Cloud ID (ECID) desenvolvida
 
 Usando o serviço de Opt-in, você pode especificar se um visitante pode aderir às soluções da Adobe de uma só vez ou apresentar as soluções em sequência para fornecer permissões. Quando o processo de aprovação é concluído e registrado pelo cliente, você pode recuperar as aprovações do visitante da CMP para todas as soluções da Adobe.
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Também pode ser implementado e configurado usando o [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Também pode ser implementado e configurado usando o [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Consulte a [Configuração do serviço de Opt-in](../../implementation-guides/opt-in-service/getting-started.md) para começar.
 
@@ -36,12 +39,12 @@ O serviço de Opt-in é uma ferramenta usada para criar um fluxo de trabalho de 
 
 O serviço de Opt-In permite definir práticas de gerenciamento de consentimento para as soluções da Adobe para:
 
-* Indicar se os requisitos de obtenção de consentimento se aplicam no geral para um usuário.
-* Especificar quais soluções podem gerar cookies.
-* Aplicar preferências padrão às soluções cujas categorias não estão explicitamente consentidas ou negadas pelo usuário.
-* Disparar respostas personalizadas com base em alterações nas configurações de consentimento de um usuário, permitindo persistir ou atualizar as configurações do usuário.
+* Indique se os requisitos de coleta de consentimento se aplicam em geral a um usuário.
+* Especifique quais soluções têm permissão para gerar cookies.
+* Aplique as preferências padrão para qualquer solução cuja categoria não seja explicitamente consentida ou recusada pelo usuário.
+* Acionar a resposta personalizada com base em alterações nas configurações de consentimento de um usuário, permitindo que você persista ou atualize as configurações do usuário.
 
-Usando o serviço de Opt-in, você pode configurar o site para permitir que alguns cookies sejam carregados com pré-consentimento antes da escolha do usuário. Você pode definir serviços de Opt-in para novos clientes para permitir o carregamento de cookies após a obtenção do consentimento do usuário ou após a disponibilização de uma escolha. Você também pode armazenar e recuperar consentimentos da sua Plataforma de gerenciamento de consentimento ou simplesmente armazenar as permissões de adesão em um cookie.
+Usando o serviço de Opt-in, você pode configurar o site para permitir que alguns cookies sejam carregados com pré-consentimento antes da escolha do usuário. Você pode definir serviços de Opt-in para novos clientes para permitir o carregamento de cookies após a obtenção do consentimento do usuário ou após a disponibilização de uma escolha. Você também pode armazenar e recuperar o consentimento do opt in de sua Plataforma de Gerenciamento de Consentimento existente ou simplesmente armazenar permissões de opt in em um cookie.
 
 ![](assets/Opt-in-approval.png)
 
