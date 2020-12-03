@@ -1,13 +1,16 @@
 ---
 description: Instruções e exemplos de código para implementações padrão e não padrão do serviço de identidade da Experience Cloud.
-keywords: Serviço de ID
+keywords: ID Service
 seo-description: Instruções e exemplos de código para implementações padrão e não padrão do serviço de identidade da Experience Cloud.
 seo-title: Guias de implementação para o serviço de ID
 solution: Experience Cloud
 title: Guias de implementação
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 100%
 
 ---
 
