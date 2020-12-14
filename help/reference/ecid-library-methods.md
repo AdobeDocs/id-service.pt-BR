@@ -4,41 +4,25 @@ seo-title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 100%
+source-wordcount: '810'
+ht-degree: 74%
 
 ---
 
 
 # Métodos de biblioteca da ECID em um mundo da ITP Safari
 
+>[!NOTE]
+>
+>Foram feitas atualizações para refletir as últimas alterações no ITP, lançadas em 12 de novembro de 2020 como parte da versão do Big Sur OS.
+
 À medida que o Safari reforça o rastreamento entre domínios por meio do ITP, a Adobe deve manter as práticas recomendadas para as bibliotecas que oferecem suporte aos clientes, além da privacidade e escolha do consumidor.
 
-Em 21 de fevereiro de 2019, a Apple anunciou a última atualização para ITP (Intelligent Tracking Prevention). Ao contrário das versões anteriores focadas em cookies de terceiros, essa versão apresenta novas medidas de prevenção de rastreamento para cookies próprios. A validade de todos os cookies próprios persistentes definidos pela API document.cookie, geralmente conhecidos como cookies “do lado do cliente”, é limitada a 7 dias. Os cookies de terceiros continuarão bloqueados conforme indicado nas versões anteriores da ITP. Para obter mais detalhes sobre a ITP 2.1 e o impacto das soluções da Adobe, leia [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+A partir de 10 de novembro de 2020, todos os cookies persistentes primários definidos pela API documento.cookie, geralmente conhecidos como cookies &quot;do lado do cliente&quot;, e os cookies configurados por meio de implementações CNAME primárias em navegadores Safari e iOS móveis têm sua expiração limitada a sete dias. Cookies de terceiros continuarão bloqueados, como declarado em versões anteriores do ITP. Para obter mais detalhes sobre a ITP 2.1 e o impacto das soluções da Adobe, leia [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
-## Perguntas frequentes sobre a Adobe ECID para Safari ITP
-
-**Por que o cookie AMCV, definido pela biblioteca da Experience Cloud ID (ECID) em um domínio próprio dos clientes, é afetado pela ITP 2.1?**
-
-No momento, o cookie AMCV conta com a API document.cookie e é definido pelo “lado do cliente”. O Safari favorece cookies definidos pelo servidor de um cliente.
-
-**Por que um cookie definido por um servidor de rastreamento CNAME é uma opção melhor para rastrear no Safari?**
-
-As regras de ITP focalizam em devolver o controle aos desenvolvedores. As implementações por meio de certificados CNAME não podem ser feitas somente por JavaScript. O programa de certificação CNAME da Adobe (rastreamento do lado do servidor) está em conformidade com a ITP e faz parte da estratégia da Adobe há muitos anos. A biblioteca da ECID está lançando métodos que focalizam em levar a funcionalidade de biblioteca da ECID para uma implementação CNAME.
-
-**Por que a Adobe focaliza na biblioteca da ECID quando outros métodos de rastreamento de visitantes do Analytics são usados com CNAMEs atualmente?**
-
-A biblioteca da ECID, o cookie AMCV e a ECID (também conhecida como MID) começaram como o método de integração de todas as soluções da Adobe em uma única ID. Essa ID continuará a ser a ID de nível de cookie prioritária no roteiro de produtos da Adobe, além de ser a ID de cookie padrão da Adobe Experience Platform.
-
-**Os CNAMEs ajudam os clientes a ativar o rastreamento de vários domínios?**
-
-As mesmas regras e avisos já existentes com CNAMEs ainda existem. Em alguns casos, os CNAMEs podem ajudar em um cenário de vários domínios. Se você possuir um site de entrada principal em que os usuários possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento de vários domínios nos navegadores que não aceitam cookies de terceiros. No entanto, embora os CNAMEs possam ajudar com vários domínios em alguns cenários, o motivo da mudança de implementações ECID para CNAME é a identificação persistente do visitante, e não o rastreamento de vários domínios. Para obter mais informações sobre CNAME e vários domínios, consulte [Coletas de dados CNAMEs e rastreamento entre domínios](/help/reference/analytics-reference/cname.md).
-
-Mais Perguntas frequentes serão adicionadas aqui, à medida que outras alterações de ITP forem lançadas. Para obter mais consultas, visite [Adobe Experience League](https://experienceleague.adobe.com/?lang=pt-BR/#recommended/solutions/analytics).
-
-## Alterações, métodos e configurações relacionadas à ITP
+## Alterações, métodos e configurações relacionadas ao ITP
 
 À medida que métodos adicionais são criados para rastreamento no Safari, eles são adicionados como referência nesta página.
 
@@ -48,25 +32,31 @@ Mais Perguntas frequentes serão adicionadas aqui, à medida que outras alteraç
 
 Veja abaixo os esforços relacionados ao uso da biblioteca ITP e ECID.
 
-## Use a biblioteca da ECID e o rastreamento CNAME para aumentar a validade da ID do visitante.
+## Comportamento atual da biblioteca ECID com o ITP e o WebKit da Apple
 
-O ITP 2.1 dificulta a capacidade de gravar cookies do lado do cliente, o que prejudica a capacidade de fornecer informações precisas de rastreamento do visitante para os clientes. Dessa forma, uma alteração está sendo introduzida nos servidores de rastreamento CNAME da Adobe, para armazenar a Experience Cloud ID (ECID) do visitante em um cookie próprio.
+O ITP 2.1 dificulta a capacidade de gravar cookies do lado do cliente, o que prejudica a capacidade de fornecer informações precisas de rastreamento do visitante para os clientes. Dessa forma, uma alteração está sendo introduzida nos servidores de rastreamento CNAME do Adobe para armazenar a ID do Experience Cloud do visitante (ECID) em um cookie primário.
 
 Essa alteração é útil apenas para clientes da ECID que utilizam um CNAME do Analytics no contexto próprio. Se você for um cliente do Analytics que não utiliza CNAME ou até mesmo se não for um cliente do Analytics, ainda é possível se qualificar para um registro CNAME. Entre em contato com o Atendimento ao cliente ou seu representante de conta para iniciar o processo de registro em um [CNAME](https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-first-party.html).
 
 Atualize para a biblioteca da ECID v. 4.3.0 + para aproveitar essa alteração.
 
+A seguir, é mostrado como a biblioteca ECID se comporta com o ITP 2.1 e as alterações mais recentes feitas pela Apple como parte da versão Big Sur
+
 **Projeto**
 
 Depois que uma solicitação de ID é feita para demdex.net e uma ECID é recuperada, se um servidor de rastreamento for definido em sua biblioteca ECID, uma solicitação de ID será feita ao domínio do cliente. Esse ponto de extremidade lê o parâmetro de ECID da sequência de consulta e define um novo [cookie](/help/introduction/cookies.md) que abrange apenas a ECID e uma data de validade de dois anos. Sempre que esse ponto de extremidade é chamado dessa forma, o `s_ecid` cookie é regravado com uma data de validade de dois anos a partir da hora da chamada. A biblioteca da ECID precisa ser atualizada para v 4.3.0 para que o valor desse cookie possa ser recuperado.
+
+>[!IMPORTANT]
+>
+>Como parte das atualizações do Big Sur, um `s_ecid` cookie definido via CNAME também é mantido com uma expiração de sete dias.
 
 Esse novo `s_ecid` cookie segue o mesmo status de Opt-out do cookie AMCV. Se a ECID for lida a partir do `s_ecid` cookie, o demdex será sempre chamado imediatamente para recuperar o status de Opt-out mais recente para essa ID e armazenado no cookie AMCV.
 
 Além disso, se o consumidor recusou o rastreamento do Analytics por meio deste [método](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/js/opt-out.html), esse `s_ecid` cookie será excluído.
 
-O nome do servidor de rastreamento deve ser fornecido à biblioteca VisitorJS ao inicializar a biblioteca usando o trackingServer ou trackingServerSecure. Isso deve corresponder à configuração trackingServer nas configurações do Analytics.
+The tracking server name should be supplied to the VisitorJS library when initializing the library using `trackingServer` or `trackingServerSecure`. This should match the `trackingServer` config in the Analytics configs.
 
-Se você optar por não aproveitar esse método, adicione a seguinte configuração à implementação da biblioteca da ECID: discardtrackingServerECID. Quando essa configuração é definida como true, a biblioteca de Visitante não lê a MID definida pelo servidor de rastreamento próprio.
+Se você optar por não aproveitar esse método, adicione a seguinte configuração à implementação da biblioteca da ECID: `discardtrackingServerECID`. Quando essa configuração é definida como true, a biblioteca de Visitantes não lê a MID definida pelo servidor de rastreamento primário.
 
 ![](assets/itp-proposal-v1.png)
 
