@@ -1,14 +1,14 @@
 ---
 description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento de visitantes em diversos domínios e os problemas em potencial se estiver coletando dados com métodos diferentes ou pelos arquivos JavaScript.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Antes de implantar o serviço de identidade da Experience Cloud, você deve entender como esse serviço afeta o rastreamento de visitantes em diversos domínios e os problemas em potencial se estiver coletando dados com métodos diferentes ou pelos arquivos JavaScript.
 seo-title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Se você tiver vários domínios que enviam dados para o *mesmo conjunto* de rel
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Vários domínios </p> </td> 
-   <td colname="col2"> <p>Se você estiver rastreando visitantes em vários domínios e também tiver um site de entrada principal no qual os clientes possam ser identificados antes de visitarem outros domínios, você deve continuar usando a coleta de dados CNAME. Consulte <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">Coletas de dados CNAME e rastreamento entre domínios</a> para obter uma explicação detalhada. </p> <p>Observe que você deve especificar mais dois parâmetros de servidor de rastreamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>, para configurar um CNAME com o serviço de ID. </p> </td> 
+   <td colname="col2"> <p>Se você estiver rastreando visitantes em vários domínios e também tiver um site de entrada principal no qual os clientes possam ser identificados antes de visitarem outros domínios, você deve continuar usando a coleta de dados CNAME. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Observe que você deve especificar mais dois parâmetros de servidor de rastreamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>, para configurar um CNAME com o serviço de ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Um único domínio </p> </td> 
