@@ -5,9 +5,9 @@ seo-description: Antes de implantar o serviço de identidade da Experience Cloud
 seo-title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
