@@ -1,8 +1,8 @@
 ---
 cloud: Experience Cloud
-product: ID Service
+product: id service
 solution: Experience Cloud Services
-type: Documentação
+type: Documentation
 audience: end-user
 solution-title: Aprendizagem e suporte
 solution-hub-url: https://helpx.adobe.com/br/support/experience-cloud/core-services.html
@@ -14,10 +14,10 @@ tutorials-url: https://docs.adobe.com/content/help/pt-BR/core-services-learn/tut
 git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.pt-BR
 description: Identity Service
 index: true
-translation-type: ht
-source-git-commit: 26e76f846623e9a78f784816bec5acc970ed30f0
-workflow-type: ht
-source-wordcount: '39'
+translation-type: tm+mt
+source-git-commit: 6fa0d2eafa06878d8d4778ac7d45f7737b86d5a4
+workflow-type: tm+mt
+source-wordcount: '38'
 ht-degree: 100%
 
 ---
