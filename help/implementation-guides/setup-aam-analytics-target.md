@@ -1,18 +1,18 @@
 ---
 description: Estas instruções são para clientes do Analytics, do Audience Manager e do Target que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Estas instruções são para clientes do Analytics, do Audience Manager e do Target que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 seo-title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '1572'
+exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
-
 
 # Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
@@ -244,4 +244,3 @@ Se você ativou um período de carência:
 
 * Garanta que a ID do Analytics (AID) e a MID estejam presentes na solicitação de imagem.
 * Lembre-se de desabilitar o período de carência após atender os [critérios para a descontinuação](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).
-
