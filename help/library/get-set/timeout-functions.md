@@ -1,20 +1,20 @@
 ---
 description: Chame essas funções do serviço de ID para determinar o status do tempo limite do serviço de identidade da Experience Cloud, do Analytics ou de uma solicitação do Audience Manager. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Chame essas funções do serviço de ID para determinar o status do tempo limite do serviço de identidade da Experience Cloud, do Analytics ou de uma solicitação do Audience Manager. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 seo-title: Métodos de callTimeOut
 title: Métodos de callTimeOut
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 96%
+exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '155'
+ht-degree: 100%
 
 ---
 
-
-# Métodos de callTimeOut{#calltimeout-methods}
+# Métodos de callTimeOut {#calltimeout-methods}
 
 Chame essas funções do serviço de ID para determinar o status do tempo limite do serviço de identidade da Experience Cloud, do Analytics ou de uma solicitação do Audience Manager. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 
@@ -67,4 +67,3 @@ Chame essas funções do serviço de ID para determinar o status do tempo limite
   </tr> 
  </tbody> 
 </table>
-
