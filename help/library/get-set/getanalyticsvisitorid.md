@@ -1,18 +1,18 @@
 ---
 description: Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '338'
+exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
-
 
 # getAnalyticsVisitorID {#getanalyticsvisitorid}
 
