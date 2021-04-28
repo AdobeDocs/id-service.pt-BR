@@ -1,22 +1,22 @@
 ---
-description: Chame essa função de serviço de ID para determinar se o serviço de ID gerou uma ID de visitante (MID) do cliente. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
-keywords: ID Service
-seo-description: Chame essa função de serviço de ID para determinar se o serviço de ID gerou uma ID de visitante (MID) do cliente. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+description: Chame essa função do serviço de ID para determinar se o serviço de ID gerou uma ID de visitante da Experience Cloud (MID) do lado do cliente. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+keywords: Serviço de ID
+seo-description: Chame essa função do serviço de ID para determinar se o serviço de ID gerou uma ID de visitante da Experience Cloud (MID) do lado do cliente. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
 uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 52%
+exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '148'
+ht-degree: 100%
 
 ---
 
+# isClientSideMarketingCloudVisitorID {#isclientsidemarketingcloudvisitorid}
 
-# isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
-
-Chame essa função de serviço de ID para determinar se o serviço de ID gerou uma ID de visitante (MID) do cliente. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
+Chame essa função do serviço de ID para determinar se o serviço de ID gerou uma ID de visitante da Experience Cloud (MID) do lado do cliente. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 
 **Sintaxe**
 
@@ -46,4 +46,3 @@ A tabela a seguir lista e descreve as respostas retornadas por essa função.
   </tr> 
  </tbody> 
 </table>
-
