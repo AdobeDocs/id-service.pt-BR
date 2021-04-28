@@ -5,14 +5,14 @@ seo-description: Antes de implantar o serviço de identidade da Experience Cloud
 seo-title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 title: Pontos de decisão da migração do serviço de identidade da Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Pontos de decisão da migração do serviço de identidade da Experience Cloud
 
@@ -125,4 +125,3 @@ Talvez seja necessário atualizar a maneira de rastrear links ou sair do Sliverl
   </tr> 
  </tbody> 
 </table>
-
