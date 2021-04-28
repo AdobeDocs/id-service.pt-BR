@@ -1,18 +1,18 @@
 ---
 description: Uma visão geral da solicitação de ID e do processo de resposta. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Uma visão geral da solicitação de ID e do processo de resposta. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
 seo-title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '804'
+exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Como o serviço de identidade da Experience Cloud solicita e define IDs {#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
@@ -41,7 +41,7 @@ Neste exemplo, um novo visitante chega ao site de pizza gerenciado pela Food Com
 
 **Primeira resposta**
 
-Na resposta, o DCS retorna a [!DNL Experience Cloud] ID (MID) e o cookie demdex. O código do serviço de ID grava o valor MID no cookie AMCV. Por exemplo, digamos que o DCS retorne um valor MID de 1234. Ele estaria armazenado no cookie AMCV como `mid|1234` e definido no domínio principal do site de pizza. O cookie demdex também contém uma ID exclusiva (vamos chamá-la de 5678). Este cookie é definido no domínio demdex.net de terceiros, que é separado do domínio do site de pizza.
+Na resposta, o DCS retorna a [!DNL Experience Cloud] ID (MID) e o cookie demdex. O código do serviço de ID grava o valor MID no cookie AMCV. Por exemplo, digamos que o DCS retorne um valor MID de 1234. Ele estaria armazenado no cookie AMCV como `mid|1234` e definido no domínio principal do site de pizza. O cookie demdex também contém um identificador exclusivo (vamos chamá-lo de 5678). Este cookie é definido no domínio demdex.net de terceiros, que é separado do domínio do site de pizza.
 
 ![](assets/response1.png)
 
@@ -64,4 +64,3 @@ Depois que o DCS recebe a ID de organização e a ID demdex, ele cria e retorna 
 Neste exemplo, nosso visitante deixa os sites da Food Company e navega até o site de futebol pertencente à Sports Company. Quando o visitante chega ao site de futebol, o processo de solicitação e verificação de ID funciona da mesma forma descrita nos exemplos anteriores. No entanto, como a Sports Company tem sua própria ID de empresa, o serviço de ID retorna uma MID diferente. A nova MID é exclusiva ao domínio controlado pela Sports Company e permite que a empresa rastreie e compartilhe os dados do visitante em todas as soluções da [!DNL Experience Cloud]. A ID demdex permanece a mesma para esse visitante porque ela está contida no cookie de terceiros e continua por diferentes domínios.
 
 ![](assets/req_resp.png)
-
