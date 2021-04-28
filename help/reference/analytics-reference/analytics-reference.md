@@ -5,14 +5,14 @@ seo-description: Recursos ou funcionalidade do serviço de ID exclusivos do Adob
 seo-title: Referência do Analytics
 title: Referência do Analytics
 uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
+exl-id: bfa13677-77e4-4201-94e4-31328523c421
 translation-type: ht
-source-git-commit: 73465dcdab8b8316e0e9d41c5780ff0231270058
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '76'
 ht-degree: 100%
 
 ---
-
 
 # Referência do Analytics {#analytics-reference}
 
