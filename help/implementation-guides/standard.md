@@ -1,18 +1,18 @@
 ---
 description: As implementações mais antigas usam o Dynamic Tag Management (DTM) para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: As implementações mais antigas usam o Dynamic Tag Management (DTM) para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
 seo-title: Implementação com o Dynamic Tag Management
 title: Implementação com o Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '2056'
+exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '2058'
 ht-degree: 100%
 
 ---
-
 
 # Implementação com o Dynamic Tag Management {#implementation-with-dynamic-tag-management}
 
@@ -57,7 +57,7 @@ Antes de começar, verifique se a organização e as soluções foram provisiona
 
 **Inserção de código do serviço de ID e ordem de carregamento**
 
-O serviço de ID funciona ao solicitar e receber uma ID exclusiva dos servidores de coleta de dados da [!DNL Adobe]. Para funcionar adequadamente, o código do serviço de ID deve ser:
+O serviço de ID funciona ao solicitar e receber um identificador exclusivo dos servidores de coleta de dados da [!DNL Adobe]. Para funcionar adequadamente, o código do serviço de ID deve ser:
 
 * O primeiro bloco do [!DNL Adobe] código da que é executado na página.
 * Inserido o mais alto possível na página, normalmente, no `<head>` bloco de código de.
