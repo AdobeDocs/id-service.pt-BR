@@ -1,18 +1,18 @@
 ---
 description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam listas de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios da Adobe listados aqui às suas listas brancas de CSP.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam listas de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios da Adobe listados aqui às suas listas brancas de CSP.
 seo-title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '619'
+exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '621'
 ht-degree: 100%
 
 ---
-
 
 # Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud {#content-security-policies-and-the-experience-cloud-id-service}
 
@@ -69,7 +69,7 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Se você tiver controles dos parâmetros da sequência de consulta, adicione os parâmetros "s_kwcid" e "ef_id" à lista de permissões. Tecnicamente, o Advertising Analytics usa somente "s_kwcid", mas se você coletar a Pesquisa da Ad Cloud ou o DSP, ele também usará "ef_id". Esses parâmetros de sequência de consulta são alfanuméricos. O parâmetro `s_kwcid` usa o caractere "!" e o parâmetro `ef_id' usa o caractere ":". Se você estiver bloqueando o caractere "!" no URL, é necessário incluí-lo na lista de permissões.</p></td> 
+ <td colname="col2"> <p>Se você tiver controles dos parâmetros da sequência de consulta, adicione os parâmetros "s_kwcid" e "ef_id" à lista de permissões. Tecnicamente, o Advertising Analytics usa somente "s_kwcid", mas se você coletar a Pesquisa da Ad Cloud ou o DSP, ele também usará "ef_id". Esses parâmetros de sequência de consulta são alfanuméricos. O parâmetro `s_kwcid` usa o caractere "!" e o parâmetro "ef_id" usa o caractere ":". Se você estiver bloqueando o caractere "!" no URL, é necessário incluí-lo na lista de permissões.</p></td> 
  </tr>
  </tbody> 
 </table>
