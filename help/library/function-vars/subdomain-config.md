@@ -1,18 +1,18 @@
 ---
 description: Altere o nome de domínio padrão usado pelas chamadas do serviço de identidade da Experience Cloud para o nome do seu subdomínio com essas configurações.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Altere o nome de domínio padrão usado pelas chamadas do serviço de identidade da Experience Cloud para o nome do seu subdomínio com essas configurações.
 seo-title: audienceManagerServer e audienceManagerServerSecure
 title: audienceManagerServer e audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '243'
+exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # audienceManagerServer e audienceManagerServerSecure {#audiencemanagerserver-and-audiencemanagerserversecure}
 
@@ -49,4 +49,3 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
      } 
 );
 ```
-
