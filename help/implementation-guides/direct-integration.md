@@ -1,18 +1,18 @@
 ---
 description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
 seo-title: Integração direta com o serviço de identidade da Experience Cloud
 title: Integração direta com o serviço de identidade da Experience Cloud
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '712'
+exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
-
 
 # Integração direta com o serviço de identidade da Experience Cloud {#direct-integration-with-the-experience-cloud-id-service}
 
@@ -73,7 +73,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua re
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Um parâmetro opcional que passa a ID do provedor de dados (DPID), a ID de usuário exclusiva (DPUUID) e uma <a href="../reference/authenticated-state.md" format="dita" scope="local"> ID de estado autenticada</a> para o serviço de ID. Como mostrado na amostra de código, separe a DPID e a DPUUID com o caractere de controle não imprimível, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>No parâmetro <span class="codeph">d_cid</span>, atribua cada combinação de DPID e DPUUID relacionada ao mesmo parâmetro <span class="codeph">d_cid</span>. Isso permite que você retorne diversos conjuntos de IDs em uma única solicitação. Além disso, separe a DPID, a DPUUID e o sinalizador de autenticação opcional com o caractere de controle não imprimível, <span class="codeph">%01</span>. Nos exemplos abaixo, o provedor e as IDs do usuário são destacadas com texto em <b>negrito</b>. </p> 
+   <td colname="col2"> <p>Um parâmetro opcional que passa a ID do provedor de dados (DPID), o identificador de usuário único (DPUUID) e uma <a href="../reference/authenticated-state.md" format="dita" scope="local"> ID de estado autenticada</a> para o serviço de ID. Como mostrado na amostra de código, separe a DPID e a DPUUID com o caractere de controle não imprimível, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>No parâmetro <span class="codeph">d_cid</span>, atribua cada combinação de DPID e DPUUID relacionada ao mesmo parâmetro <span class="codeph">d_cid</span>. Isso permite que você retorne diversos conjuntos de IDs em uma única solicitação. Além disso, separe a DPID, a DPUUID e o sinalizador de autenticação opcional com o caractere de controle não imprimível, <span class="codeph">%01</span>. Nos exemplos abaixo, o provedor e as IDs do usuário são destacadas com texto em <b>negrito</b>. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Sintaxe: <span class="codeph">...d_cid=DPID%01DPUUID%01estado de autenticação...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemplo: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
@@ -126,4 +126,3 @@ Alguns parâmetros de resposta fazem parte da solicitação e foram definidos na
   </tr> 
  </tbody> 
 </table>
-
