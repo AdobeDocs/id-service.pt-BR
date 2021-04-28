@@ -1,18 +1,18 @@
 ---
 description: Essa função permite que você compartilhe a Experience Cloud ID de um visitante entre domínios quando os navegadores bloqueiam cookies de terceiros. Para usar essa função, é necessário implementar o serviço de ID, bem como ser o proprietário dos domínios de origem e destino. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Essa função permite que você compartilhe a Experience Cloud ID de um visitante entre domínios quando os navegadores bloqueiam cookies de terceiros. Para usar essa função, é necessário implementar o serviço de ID, bem como ser o proprietário dos domínios de origem e destino. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 seo-title: appendVisitorIDsTo (rastreamento entre domínios)
 title: appendVisitorIDsTo (rastreamento entre domínios)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '446'
+exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
-
 
 # appendVisitorIDsTo (rastreamento entre domínios) {#appendvisitoridsto-cross-domain-tracking}
 
@@ -28,9 +28,9 @@ Conteúdo:
 
 ## Rastrear visitantes nos domínios quando os navegadores bloqueiam cookies de terceiros {#section-7251d88befd440b4b79520e33c5aa44a}
 
-O serviço de ID grava cookies próprios e de terceiros no navegador quando uma pessoa visita seu site (consulte [Cookies e o serviço de identidade da Experience Cloud](../../introduction/cookies.md)). O cookie primário contém a MID, uma ID exclusiva para esse visitante. O cookie de terceiros contém outra ID usada pelo serviço de ID para gerar a MID. Quando um navegador bloqueia esse cookie de terceiros, o serviço de ID não pode:
+O serviço de ID grava cookies próprios e de terceiros no navegador quando uma pessoa visita seu site (consulte [Cookies e o serviço de identidade da Experience Cloud](../../introduction/cookies.md)). O cookie primário contém a MID, um identificador exclusivo para esse visitante. O cookie de terceiros contém outra ID usada pelo serviço de ID para gerar a MID. Quando um navegador bloqueia esse cookie de terceiros, o serviço de ID não pode:
 
-* Gerar novamente a ID exclusiva do visitante do site quando eles navegarem para outro domínio.
+* Gerar novamente o identificador exclusivo do visitante do site quando eles navegarem para outro domínio.
 * Rastrear visitantes em diferentes domínios pertencentes à sua organização.
 
 Para ajudar a resolver esse problema, implemente ` Visitor.appendVisitorIDsTo( *`URL`*)`. Essa propriedade permite que o serviço de ID rastreie visitantes do site em vários domínios, mesmo quando os navegadores bloqueiam cookies de terceiros. Funciona assim:
@@ -83,4 +83,3 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
   </tr> 
  </tbody> 
 </table>
-
