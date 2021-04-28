@@ -1,18 +1,18 @@
 ---
 description: O serviço de ID usa a ID da organização, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
-keywords: playstation;ID Service
+keywords: playstation, serviço de ID
 seo-description: O serviço de ID usa a ID da organização, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o serviço de ID acompanhe os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 seo-title: Cookies e o serviço de identidade da Experience Cloud
 title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '994'
+exl-id: 727c6381-56b9-44b8-8e59-355d072769be
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
-
 
 # Cookies e o serviço de identidade da Experience Cloud {#cookies-and-the-experience-cloud-id-service}
 
@@ -24,8 +24,8 @@ O serviço de ID depende dos cookies AMCV, AMCVS e demdex para funcionar correta
 
 ### O que os cookies do serviço de ID podem fazer
 
-* Defina e armazene uma ID exclusiva para os visitantes do site (a MID).
-* Mantenha essa ID exclusiva para que o serviço de ID possa coletar e compartilhar dados com outras soluções da Experience Cloud.
+* Defina e armazene um identificador exclusivo para os visitantes do site (a MID).
+* Mantenha esse identificador exclusivo para que o serviço de ID possa coletar e compartilhar dados com outras soluções da Experience Cloud.
 * Rastrear usuários em seus domínios. No entanto, isso requer que você seja o proprietário desses outros domínios e tenha o código do serviço de ID implantado neles.
 
 ### O que os cookies do serviço de identidade não podem fazer
