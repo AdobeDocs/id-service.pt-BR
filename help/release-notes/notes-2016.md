@@ -1,18 +1,18 @@
 ---
 description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
 seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '1162'
+exl-id: f96b9869-6282-4090-b392-797608e25a51
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1164'
 ht-degree: 100%
 
 ---
-
 
 # Notas de versão de 2016 {#release-notes}
 
@@ -50,7 +50,7 @@ Outubro de 2016
 
 **Correções e melhorias**
 
-* Correção de um bug que transmitia IDs de usuário exclusivas do Audience Manager (AAMUUIDs) como Experience Cloud IDs para o serviço de ID.
+* Correção de um bug que transmitia identificadores de usuário único do Audience Manager (AAMUUIDs) como Experience Cloud IDs para o serviço de ID.
 * Se a vida útil (TTL) de um cookie AMCV tiver expirado, o serviço de ID retornará essa informação ao servidor, desde que o cookie contenha uma Experience Cloud ID. Após esta chamada, o serviço de ID faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a melhorar o desempenho, pois o serviço de ID não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
 * O serviço de ID sincroniza automaticamente as Experience Cloud IDs (MIDs) com o Adobe Media Optimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a melhorar as taxas de correspondência do Media Optimizer. Aplicável ao VisitorAPI.js versão 1.8 ou mais recente. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
@@ -228,4 +228,3 @@ Janeiro de 2016
   </tr> 
  </tbody> 
 </table>
-
