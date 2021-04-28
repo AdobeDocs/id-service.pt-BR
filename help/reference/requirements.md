@@ -1,18 +1,18 @@
 ---
 description: Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código adequadas exigidas pelo serviço de identidade da Experience Cloud.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Consulte esta seção para verificar se você está usando as soluções, os serviços e as versões de código adequadas exigidas pelo serviço de identidade da Experience Cloud.
 seo-title: Requisitos do serviço de identidade da Experience Cloud
 title: Requisitos do serviço de identidade da Experience Cloud
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '781'
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '783'
 ht-degree: 100%
 
 ---
-
 
 # Requisitos do serviço de identidade da Experience Cloud {#requirements-for-the-experience-cloud-id-service}
 
@@ -83,7 +83,7 @@ Para usar o serviço de ID, a empresa deve estar habilitada para a [!DNL Experie
 
 ## Exigências do Analytics: coleta de dados regionais (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Todos os servidores de rastreamento foram convertidos para RDC, portanto, não há necessidade de alterar o servidor de rastreamento do Analytics. [Mais informações...](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/rdc/regional-data-collection.translate.html)
+Todos os servidores de rastreamento foram convertidos para RDC, portanto, não há necessidade de alterar o servidor de rastreamento do Analytics. [Mais informações...](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/rdc/regional-data-collection.html)
 
 ## Exigências de versão e código de bibliotecas {#section-ad7542a4317d430fa79fc6b095beb84d}
 
