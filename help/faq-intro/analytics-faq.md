@@ -1,18 +1,18 @@
 ---
 description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Analytics com o serviço de identidade da Experience Cloud.
-keywords: Experience Cloud Identity Service
+keywords: Serviço de identidade da Experience Cloud
 seo-description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Analytics com o serviço de identidade.
 seo-title: Perguntas frequentes do Analytics e do serviço de identidade
 title: Perguntas frequentes do Analytics e do serviço de identidade
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '989'
+exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '993'
 ht-degree: 100%
 
 ---
-
 
 # Perguntas frequentes do Analytics e do serviço de identidade {#analytics-and-id-service-faqs}
 
