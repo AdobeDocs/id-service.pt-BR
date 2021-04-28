@@ -1,18 +1,18 @@
 ---
 description: Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. Eles estão disponíveis no código VisitorAPI.js versão 2.2 ou superior.
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '932'
+exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # whitelistParentDomain e whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
 
@@ -102,7 +102,7 @@ Essas configurações ajudam a resolver o problema de configuração de um cooki
    <td colname="col1"> <p> <b>Resultados</b> </p> </td> 
    <td colname="col2"> <p>Dadas essas condições, o serviço de ID: </p> <p> 
      <ul id="ul_12356701501E40DFA57903494FFE58F7"> 
-      <li id="li_B57EDF1B0762486F95FA6526C047390C">Funciona corretamente na página principal. Ele solicita e define o cookie AMCV e atribui uma ID exclusiva ao visitante do site. </li> 
+      <li id="li_B57EDF1B0762486F95FA6526C047390C">Funciona corretamente na página principal. Ele solicita e define o cookie AMCV e atribui um identificador exclusivo ao visitante do site. </li> 
       <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">Não funciona no iFrame. Isso ocorre porque o navegador vê o iFrame como um domínio de terceiros e impede que o serviço de ID defina o cookie AMCV. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -188,4 +188,3 @@ O serviço de ID oferece suporte a um conjunto limitado de métodos de API públ
   </tr> 
  </tbody> 
 </table>
-
