@@ -1,41 +1,41 @@
 ---
 description: Contém as configurações de exemplo do servidor e as etapas de migração necessárias.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Contém as configurações de exemplo do servidor e as etapas de migração necessárias.
 seo-title: Cenários de migração do serviço de identidade da Experience Cloud
 title: Cenários de migração do serviço de identidade da Experience Cloud
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 57%
+exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
-
-# Cenários de migração do serviço de identidade da Experience Cloud{#experience-cloud-id-service-migration-scenarios}
+# Cenários de migração do serviço de identidade da Experience Cloud {#experience-cloud-id-service-migration-scenarios}
 
 Contém as configurações de exemplo do servidor e as etapas de migração necessárias.
 
 ## Propriedade da Web única {#section-6ccfea84628d46c99507cb124e7f5445}
 
 * **Cliente**: Example Company Inc.
-* **Experience Cloud ativado**: Não
-* **Propriedades** da Web: example.com
-* **Servidores** de coleta de dados: metrics.example.com, smetrics.example.com
-* **Arquivo** JavaScript do Analytics: Um único arquivo para todas as páginas do site
+* **Experience Cloud ativada**: Não
+* **Propriedades da web**: example.com
+* **Servidores de coleção de dados**: metrics.example.com, smetrics.example.com
+* **Arquivo JavaScript do Analytics**: um único arquivo para todas as páginas do site
 
-Primeiro, este cliente deve ser habilitado para a Experience Cloud (consulte [requisitos](../../reference/requirements.md)). E, como eles têm um único arquivo JavaScript, este cliente não precisa de um período de carência. Esse cliente também irá configurar a migração de visitantes e sair de sua coleta de dados CNAME, o que não é necessário.
+Primeiro, este cliente deve ser habilitado para a Experience Cloud (consulte [requisitos](../../reference/requirements.md)). E, como ele tem um único arquivo JavaScript, esse cliente não precisa de um período de carência. Esse cliente também configurará a migração do visitante e sairá de sua coleção de dados CNAME, que não é necessária.
 
 ## Vários arquivos JavaScript, tags de imagem embutidas {#section-a665f6ee202940449198e4e7a5dcac54}
 
 * **Cliente**: Another Example Company Inc.
-* **Experience Cloud ativado**: Sim
-* **Propriedades** da Web: anotherexample.com
-* **Servidores** de coleta de dados: anotherexampleco.112.2o7.net
-* **Arquivo** JavaScript do Analytics: Vários arquivos JavaScript. Um arquivo para o site principal, outro arquivo para a seção de suporte que é mantida em um CMS separado.
-* **Outros métodos** de coleta de dados: Tags de imagem codificadas permanentemente em uma seção do site
+* **Experience Cloud ativada**: Sim
+* **Propriedades da web**: anotherexample.com
+* **Servidores de coleção de dados**: anotherexampleco.112.2o7.net
+* **Arquivo JavaScript do Analytics**: vários arquivos JavaScript. Um arquivo para o site principal, outro arquivo para a seção de suporte que é mantida em um CMS separado.
+* **Outros métodos de coleção de dados**: tags de imagem codificadas permanentemente em uma seção do site
 
 Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [requisitos](../../reference/requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Este cliente também irá configurar a migração do visitante e migrar do `*.2o7.net` para o `*.sc.omtrdc.net`.
 
@@ -44,12 +44,12 @@ Quando esse cliente atualizar para a versão mais recente do código JavaScript 
 ## Várias propriedades da Web, vários arquivos JavaScript e um reprodutor de vídeo baseado em Flash {#section-34647995ff3740b999fdee22d885e515}
 
 * **Cliente**: A Good Customer LLC
-* **Experience Cloud ativado**: Sim
-* **Propriedades** da Web: mymainsite.com, myothersiteA.com, myothersiteB.com
-* **Servidores** de coleta de dados: metrics.mymainsite.com, smetrics.mymainsite.com
-* **Arquivo** JavaScript do Analytics: Vários arquivos JavaScript. Um arquivo para cada propriedade da Web.
-* **Outros métodos** de coleta de dados: Um reprodutor de vídeo baseado em Flashes
+* **Experience Cloud ativada**: Sim
+* **Propriedades da web**: mymainsite.com, myothersiteA.com, myothersiteB.com
+* **Servidores de coleção de dados**: metrics.mymainsite.com, smetrics.mymainsite.com
+* **Arquivo JavaScript do Analytics**: vários arquivos JavaScript. Um arquivo para cada propriedade da web.
+* **Outros métodos de coleção de dados**: um reprodutor de vídeo baseado em Flash
 
-Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [requisitos](../../reference/requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Esse cliente rastreia visitantes entre seu domínio primário e seus subdomínios, de modo que continuará usando sua coleta de dados CNAME com o serviço de ID do visitante.
+Primeiro, esse cliente deve encontrar sua ID da organização da Adobe Experience Cloud (consulte [requisitos](../../reference/requirements.md)). Depois, é necessário configurar um período de carência de migração devido ao uso de vários arquivos JavaScript. Esse cliente rastreia os visitantes entre o domínio principal e os subdomínios, portanto, continuará usando o CNAME da coleção de dados com o serviço de ID de visitante.
 
 Quando esse cliente atualiza para a versão mais recente do código JavaScript do Analytics em preparação para a distribuição do serviço da [!DNL Experience Cloud] ID, também será necessário atualizar o player com base em Flash para versão mais recente do AppMeasurement para o Flash.
