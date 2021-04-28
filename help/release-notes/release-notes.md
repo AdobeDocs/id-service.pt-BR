@@ -1,17 +1,17 @@
 ---
 description: Lançamentos, atualizações ou mudanças futuras do serviço de identidade da Experience Cloud.
-keywords: ID Service
+keywords: Serviço de ID
 seo-description: Lançamentos, atualizações ou mudanças futuras do serviço de identidade da Experience Cloud.
 seo-title: Notas de versão de 2020
 title: Notas de versão de 2020
-translation-type: tm+mt
-source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: tm+mt
-source-wordcount: '145'
+exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '147'
 ht-degree: 100%
 
 ---
-
 
 # Notas de versão da Experience Cloud - 2020 {#release-notes}
 
