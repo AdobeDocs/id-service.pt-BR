@@ -7,9 +7,9 @@ title: Cookies e o serviço de identidade da Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ O serviço de ID depende dos cookies AMCV, AMCVS e demdex para funcionar correta
 * Mantenha esse identificador exclusivo para que o serviço de ID possa coletar e compartilhar dados com outras soluções da Experience Cloud.
 * Rastrear usuários em seus domínios. No entanto, isso requer que você seja o proprietário desses outros domínios e tenha o código do serviço de ID implantado neles.
 
-### O que os cookies do serviço de ID não podem fazer
+### O que os cookies do serviço de identidade não podem fazer
 
 * Armazene, transmita ou execute vírus de computador.
 * Acesse ou armazene informações de identificação pessoal (PII) como seu endereço de email.
