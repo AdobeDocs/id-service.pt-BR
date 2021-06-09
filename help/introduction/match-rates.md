@@ -6,11 +6,10 @@ seo-title: Como entender a sincronização de ID e taxas de correspondência
 title: Como entender a sincronização de ID e taxas de correspondência
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +53,11 @@ A sincronização de ID é um URL acionado no Destination Publishing iFrame. Com
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Consulte também, [Sincronização de ID para transferências de dados de entrada](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html).
+Consulte também, [Sincronização de ID para transferências de dados de entrada](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en).
 
 **Etapa 4: armazenamento de IDs**
 
-As IDs sincronizadas são armazenadas na [borda e nos servidores de dados principais](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/system-components/components-edge.html).
+As IDs sincronizadas são armazenadas na [borda e nos servidores de dados principais](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en).
 
 ## Serviços de sincronização gerenciam a sincronização da ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -73,9 +72,9 @@ O termo *`Sync Services`* se refere às [!DNL Experience Cloud] tecnologias inte
 
 ## Sincronização de ID com a Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-O [!DNL Adobe Advertising Cloud] (chamado anteriormente de [!DNL Adobe Media Optimizer]) é uma exceção no processo de sincronização de ID com base no iFrame. Como o [!DNL Advertising Cloud] é um domínio confiável, as sincronizações de ID ocorrem de uma página principal em vez de um [!UICONTROL iFrame de publicação de destino]. Durante a sincronização, o serviço de ID chama o [!DNL Advertising Cloud] em `cm.eversttech.net`, que é um nome de domínio herdado usado pelo [!DNL Advertising Cloud] antes da aquisição pela Adobe. O envio de dados para o [!DNL Advertising Cloud] ajuda a melhorar as taxas de correspondência e é automático para clientes do serviço de ID que usam a versão 2.0 (ou posterior). Consulte também [Cookies da Advertising Cloud](https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-advertising-cloud.html).
+O [!DNL Adobe Advertising Cloud] (chamado anteriormente de [!DNL Adobe Media Optimizer]) é uma exceção no processo de sincronização de ID com base no iFrame. Como o [!DNL Advertising Cloud] é um domínio confiável, as sincronizações de ID ocorrem de uma página principal em vez de um [!UICONTROL iFrame de publicação de destino]. Durante a sincronização, o serviço de ID chama o [!DNL Advertising Cloud] em `cm.eversttech.net`, que é um nome de domínio herdado usado pelo [!DNL Advertising Cloud] antes da aquisição pela Adobe. O envio de dados para o [!DNL Advertising Cloud] ajuda a melhorar as taxas de correspondência e é automático para clientes do serviço de ID que usam a versão 2.0 (ou posterior). Consulte também [Cookies da Advertising Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en).
 
 >[!MORELIKETHIS]
 >
->* [Compreender as chamadas ao domínio Demdex](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.html)
+>* [Compreender as chamadas ao domínio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
 
