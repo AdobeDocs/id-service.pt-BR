@@ -6,11 +6,10 @@ seo-title: Como o serviço de identidade da Experience Cloud solicita e define I
 title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +34,7 @@ Os exemplos a seguir demonstram como o serviço de ID solicita e recebe a ID de 
 Neste exemplo, um novo visitante chega ao site de pizza gerenciado pela Food Company. A Food Company tem o código do serviço de ID no site de pizza. Quando o site de pizza é carregado, o código do serviço de ID verifica o cookie AMCV no domínio do site de pizza.
 
 * Se o cookie AMCV estiver definido, o visitante do site terá uma Experience Cloud ID. Nesse caso, o cookie rastreia o visitante e compartilha dados com outras soluções da Experience Cloud.
-* Se o cookie AMCV não foi definido, o código do serviço de ID chama um [servidor de coleta de dados regional](https://docs.adobe.com/content/help/pt-BR/analytics/technotes/rdc/regional-data-collection.html) (DCS) em `dpm.demdex.net/id` (consulte também [Compreender as chamadas para o domínio Demdex](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.html)). A chamada inclui a ID da organização da Food Company. A ID da organização está definida na função `Visitor.getInstance` do código do serviço de ID.
+* Se o cookie AMCV não foi definido, o código do serviço de ID chama um [servidor de coleta de dados regional](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en) (DCS) em `dpm.demdex.net/id` (consulte também [Compreender as chamadas para o domínio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). A chamada inclui a ID da organização da Food Company. A ID da organização está definida na função `Visitor.getInstance` do código do serviço de ID.
 
 ![](assets/request1.png)
 
