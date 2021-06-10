@@ -1,14 +1,10 @@
 ---
 description: Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
 keywords: ordem de operações, serviço de ID
-seo-description: Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
-seo-title: Visão geral da implementação CNAME
 title: Visão geral da implementação CNAME
-uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
-workflow-type: ht
-source-wordcount: '259'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '221'
 ht-degree: 100%
 
 ---
