@@ -1,16 +1,12 @@
 ---
 description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
-seo-title: Notas de versão de 2017
 title: Notas de versão de 2017
-uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '762'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +14,7 @@ ht-degree: 100%
 
 Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
 
-Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html).
+Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR).
 
 >[!NOTE]
 >
@@ -126,7 +122,7 @@ Data de lançamento: de junho de 2017
  </tbody> 
 </table>
 
-## Atualizações da documentação de maio {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## Atualizações da documentação de maio  {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -195,7 +191,7 @@ Correção de um bug que fazia com que o serviço de ID fizesse chamadas redunda
 
 **Nova documentação**
 
-[Uso da pré-busca DNS com diferentes Soluções e Serviços da Experience Cloud](https://docs.adobe.com/content/help/pt-BR/core-services/interface/more-resources/dns-prefetch.html)
+[Uso da pré-busca DNS com diferentes Soluções e Serviços da Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versão 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -211,6 +207,6 @@ Janeiro de 2017
 * Correção de um bug que prevenia a falha imediata do serviço de ID caso o bloqueador de anúncios do visitante estivesse ativado e configurado para excluir o domínio demdex.net. Esse bug é raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
 * Correção de um erro causado pelas interações entre o código do serviço de ID e um script personalizado no site de um cliente. Esse problema impedia que o Internet Explorer 9 carregasse páginas da Web. (MCID-206)
 
-## Anos anteriores {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## Anos anteriores  {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Notas de versão antigas do serviço de ID.
