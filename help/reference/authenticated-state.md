@@ -1,16 +1,12 @@
 ---
 description: É possível associar outras IDs do cliente e um status de autenticação com cada visitante, juntamente com a ID de visitante da Experience Cloud.
 keywords: Serviço de ID
-seo-description: É possível associar outras IDs do cliente e um status de autenticação com cada visitante, juntamente com a ID de visitante da Experience Cloud.
-seo-title: Estados de autenticação e IDs do cliente
 title: Estados de autenticação e IDs do cliente
-uuid: 643df363-224a-463e-a332-be59926b47e7
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '661'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 98%
 
 ---
 
@@ -20,11 +16,11 @@ ht-degree: 100%
 
 ## Estados de autenticação {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer o upload dessas IDs como [atributos do cliente](https://docs.adobe.com/content/help/pt-BR/core-services/interface/customer-attributes/attributes.html) para a [!DNL Experience Cloud] e acessar esses dados em soluções diferentes.
+O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer o upload dessas IDs como [atributos do cliente](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) para a [!DNL Experience Cloud] e acessar esses dados em soluções diferentes.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (sincronização de ID do cliente) é exigida pelos atributos do cliente e pela funcionalidade dos serviços principais. Sincronização das IDs do cliente em um método de identificação opcional do [!DNL Analytics]. O [!DNL Target] requer `Visitor.AuthState.AUTHENTICATED` para que os Atributos do cliente funcionem. Consulte [Principais serviços - Ativação das soluções](https://docs.adobe.com/content/help/pt-BR/core-services/interface/about-core-services/core-services.html) para ver exemplos.
+>`setCustomerIDs` (sincronização de ID do cliente) é exigida pelos atributos do cliente e pela funcionalidade dos serviços principais. Sincronização das IDs do cliente em um método de identificação opcional do [!DNL Analytics]. O [!DNL Target] requer `Visitor.AuthState.AUTHENTICATED` para que os Atributos do cliente funcionem. Consulte [Principais serviços - Ativação das soluções](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=pt-BR) para ver exemplos.
 
 A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` inclui o objeto opcional `AuthState`. O `AuthState` identifica versões de acordo com seu status de autenticação (por exemplo, logon, logout). Você define o estado de autenticação com um valor de status listado na tabela. O status de autenticação é retornado como um número inteiro.
 
@@ -55,7 +51,7 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
  </tbody> 
 </table>
 
-## Casos de uso para estados de autenticação {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Casos de uso para estados de autenticação  {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 É possível atribuir estados autenticação aos usuários, dependendo das ações que eles realizam nas suas propriedades da web e se estão autenticados ou não. Consulte alguns exemplos na tabela abaixo:
 
@@ -68,7 +64,7 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
    <td colname="col2"> <p>Esse estado pode ser usado para cenários como: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Ler um email (essa ação provavelmente significa que o leitor é o recipient pretendido, mas o email também pode ter sido encaminhado). </li> 
@@ -76,11 +72,11 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
    <td colname="col2"> <p>O usuário está autenticado no momento com uma sessão ativa no seu site ou aplicativo. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
    <td colname="col2"> <p>O usuário foi autenticado, mas fez logout ativamente. O usuário quis se desconectar do estado autenticado. O usuário não deseja mais ser tratado como autenticado. </p> </td> 
   </tr> 
  </tbody> 
@@ -212,12 +208,12 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## Suporte do SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## Suporte do SDK  {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
 O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação do cliente em nosso código de SDK para Android e iOS. Consulte as seguintes bibliotecas de código:
 
-* [Métodos do SDK para Android](https://docs.adobe.com/content/help/pt-BR/mobile-services/android/overview.html)
-* [Métodos do SDK para iOS](https://docs.adobe.com/content/help/pt-BR/mobile-services/ios/overview.html)
+* [Métodos do SDK para Android](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
+* [Métodos do SDK para iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
 ## Aviso aos clientes do Analytics e do Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
