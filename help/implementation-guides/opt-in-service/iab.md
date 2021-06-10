@@ -1,14 +1,10 @@
 ---
 description: Conecte o CMP (Consent Management Platform) ao plug-in do Audience Manager de aceitação para a TCF (Transparency and Consent Framework, Estrutura de transparência e consentimento) da IAB.
-seo-description: Conecte o Consent Management Platform (CMP) com o plug-in Audience Manager para a TCF da IAB.
-seo-title: Uso dos serviços de Opt-in com a Estrutura IAB
 title: Uso dos serviços de Opt-in com a Estrutura IAB
-uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '493'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
