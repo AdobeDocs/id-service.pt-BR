@@ -1,15 +1,11 @@
 ---
 description: Notas de versão e atualizações de 2015.
 keywords: Serviço de ID
-seo-description: Notas de versão e atualizações de 2015.
-seo-title: Notas de versão de 2015
 title: Notas de versão de 2015
-uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '415'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '408'
 ht-degree: 100%
 
 ---
