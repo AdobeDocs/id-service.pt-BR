@@ -1,20 +1,16 @@
 ---
 description: getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitor.
 keywords: Serviço de ID
-seo-description: getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitor.
-seo-title: getInstance
 title: getInstance
-uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 96%
 
 ---
 
-# getInstance {#getinstance}
+# getInstance{#getinstance}
 
 getInstance retorna um objeto de ID de visitante para a ID de empresa da Experience Cloud especificada. Isso é necessário para inicializar o objeto de ID de visitante fornecido para o AppMeasurement por meio do s.visitor.
 
@@ -54,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isso é semelhante à [`s_gi()` função ](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/vars/functions/s-gi.html) no [!DNL AppMeasurement].
+Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isso é semelhante à [`s_gi()` função ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html) no [!DNL AppMeasurement].
 
 **Uso comum**
 
