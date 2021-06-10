@@ -1,16 +1,12 @@
 ---
 description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 keywords: Serviço de ID
-seo-description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
-seo-title: Implementar o serviço de identidade da Experience Cloud para Analytics
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
-uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1089'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +91,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Etapa 3: adicionar a ID da organização da Experience Cloud ao Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud] administração. Consulte também, [Administração - Serviços principais](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html). A função editada pode ser parecida com o exemplo abaixo.
+Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela [!DNL Experience Cloud] ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de [!DNL Experience Cloud] administração. Consulte também, [Administração - Serviços principais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=pt-BR). A função editada pode ser parecida com o exemplo abaixo.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -182,7 +178,7 @@ Consulte [Cookies e o serviço de identidade da Experience Cloud](../introductio
 
 Faça a descontinuação do período de carência se o processo de ingestão de dados conseguir usar as colunas `post_visid_high` e `post_visid_low`.
 
-Consulte [Referência da coluna de dados de sequência de cliques](https://docs.adobe.com/content/help/pt-BR/analytics/export/analytics-data-feed/data-feed-overview.html).
+Consulte [Referência da coluna de dados de sequência de cliques](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 **Ingestão de dados da sequência de cliques**
 
@@ -195,7 +191,7 @@ Consulte [Referência da coluna de dados de sequência de cliques](https://docs.
 Para testar a implementação do serviço de ID, verifique:
 
 * [Cookie AMCV](../introduction/cookies.md) no domínio em que a página está hospedada.
-* O valor da MID na [!DNL Analytics]solicitação de imagem com a [ferramenta Adobe Debugger](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/validate/debugger.html).
+* O valor da MID na [!DNL Analytics]solicitação de imagem com a [ferramenta Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
 
 Consulte [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md).
 
