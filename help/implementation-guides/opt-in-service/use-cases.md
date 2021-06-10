@@ -1,14 +1,10 @@
 ---
 description: Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
-seo-description: Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
-seo-title: Casos de uso de opt-in
 title: Casos de uso de opt-in
-uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '437'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
@@ -23,7 +19,7 @@ Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
 * O Opt-in é uma implementação por domínio. Ele não lidará com implementações entre domínios.
 * Para desativar chamadas de terceiros para uma biblioteca específica, será necessário configurar essa preferência em cada biblioteca separadamente.
 
-## Cenários de opt-in  {#section-1178053c065c430bba26f82ef383a71c}
+## Cenários de opt-in   {#section-1178053c065c430bba26f82ef383a71c}
 
 Esses casos de uso são exemplos para usar o serviço de Opt-in.
 
