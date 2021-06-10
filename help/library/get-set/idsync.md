@@ -1,16 +1,12 @@
 ---
 description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Eles estão disponíveis na VisitorAPI.js versão 1.10 ou superior.
 keywords: Serviço de ID
-seo-description: As funções idSyncByURL e idSyncByDataSource do serviço de ID permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Eles estão disponíveis na VisitorAPI.js versão 1.10 ou superior.
-seo-title: Sincronização de ID por URL ou fonte de dados
 title: Sincronização de ID por URL ou fonte de dados
-uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '275'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 96%
 
 ---
 
@@ -122,8 +118,7 @@ http://su.addthis.com/red/usync?pid=16&puid=287778064591810036707992191851784938
   // Fires 'http:/https:' + '//dpm.demdex.net/ibs:dpid=&dpuuid='
    visitor.idSyncByDataSource({ 
      dpid: '24', // must be a string
-     dpuuid: '98765', // must be a string 
-     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+     dp     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
 ```
 
 **Saída de exemplo**
@@ -134,5 +129,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORELIKETHIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
