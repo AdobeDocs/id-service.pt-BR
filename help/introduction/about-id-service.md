@@ -1,20 +1,16 @@
 ---
 description: A função do serviço de identidade da Experience Cloud na Adobe Experience Cloud.
 keywords: Serviço de ID
-seo-description: A função do serviço de identidade da Experience Cloud na Adobe Experience Cloud.
-seo-title: Sobre o serviço de ID
 title: Visão geral
-uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '356'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
 
-# Sobre o serviço de ID {#aboutidservice}
+# Sobre o serviço de ID{#aboutidservice}
 
 A função do serviço de identidade da Experience Cloud na Adobe Experience Cloud.
 
