@@ -1,15 +1,11 @@
 ---
 description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2018.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2018.
-seo-title: Notas de versão de 2018
 title: Notas de versão de 2018
-uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '491'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '477'
 ht-degree: 100%
 
 ---
