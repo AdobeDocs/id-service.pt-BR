@@ -1,14 +1,11 @@
 ---
 title: Alterações na rotulagem do Google Chrome SameSite
-seo-title: Alterações na rotulagem do Google Chrome SameSite
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
-seo-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1079'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 99%
 
 ---
 
@@ -122,4 +119,4 @@ Somente os cookies padrão comuns de visitante estão listados na tabela abaixo.
 
 > !![IMPORTANT] Cookies de terceiros da Adobe são definidos no lado do servidor
 
-Para mais informações, consulte o documento sobre as [Políticas do SameSite do Google Chrome no Target](https://docs.adobe.com/content/help/pt-BR/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html).
+Para mais informações, consulte o documento sobre as [Políticas do SameSite do Google Chrome no Target](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html).
