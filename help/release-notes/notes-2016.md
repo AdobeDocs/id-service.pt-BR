@@ -1,16 +1,12 @@
 ---
 description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
 keywords: Serviço de ID
-seo-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
-seo-title: Notas de versão de 2016
 title: Notas de versão de 2016
-uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '1146'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +14,7 @@ ht-degree: 100%
 
 Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
 
-Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://docs.adobe.com/content/help/pt-BR/release-notes/experience-cloud/current.html).
+Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR).
 
 ## Versão 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -84,7 +80,7 @@ Revisão: [Requisitos do serviço de identidade da Experience Cloud](../referenc
 
 **Problemas conhecidos**
 
-Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/dil-api/dil-overview.html).
+Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versão 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
