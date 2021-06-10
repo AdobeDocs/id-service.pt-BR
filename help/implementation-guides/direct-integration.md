@@ -1,15 +1,11 @@
 ---
 description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
 keywords: Serviço de ID
-seo-description: Essa implementação permite que os clientes usem o serviço de ID em dispositivos que não podem aceitar ou trabalhar com nosso código JavaScript ou SDK. Isso inclui dispositivos como consoles de jogos, TVs inteligentes ou outros dispositivos habilitados para a Internet. Consulte esta seção para obter sintaxe, exemplos de código e definições.
-seo-title: Integração direta com o serviço de identidade da Experience Cloud
 title: Integração direta com o serviço de identidade da Experience Cloud
-uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '714'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '662'
 ht-degree: 100%
 
 ---
