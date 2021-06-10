@@ -5,9 +5,8 @@ seo-title: Configuração do Opt-in com o Launch
 title: Configuração do Opt-in com o Launch
 uuid: d35ed917-c4bd-4868-9026-1461f1a8f13e
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
-translation-type: ht
 source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 100%
 
