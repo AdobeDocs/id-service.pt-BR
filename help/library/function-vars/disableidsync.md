@@ -1,20 +1,16 @@
 ---
 description: Um sinalizador booleano opcional que desativa a sincronização de ID.
 keywords: Serviço de ID
-seo-description: Um sinalizador booleano opcional que desativa a sincronização de ID.
-seo-title: disableIdSyncs
 title: disableIdSyncs
-uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
 exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '46'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '37'
 ht-degree: 100%
 
 ---
 
-# disableIdSyncs {#disableidsyncs}
+# disableIdSyncs{#disableidsyncs}
 
 Um sinalizador booleano opcional que desativa a sincronização de ID.
 
