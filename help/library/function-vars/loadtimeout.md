@@ -1,20 +1,16 @@
 ---
 description: Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
 keywords: Serviço de ID
-seo-description: Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
-seo-title: loadTimeout
 title: loadTimeout
-uuid: f627e044-bd73-49a4-8a90-6d19aa566751
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '169'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '140'
 ht-degree: 100%
 
 ---
 
-# loadTimeout {#loadtimeout}
+# loadTimeout{#loadtimeout}
 
 Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
 
