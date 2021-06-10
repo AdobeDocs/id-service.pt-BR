@@ -1,16 +1,12 @@
 ---
 description: Depois de implantar o serviço de ID do visitante, existem 5 maneiras de identificar o visitante no Analytics.
 keywords: Serviço de ID
-seo-description: Depois de implantar o serviço de ID do visitante, existem 5 maneiras de identificar o visitante no Analytics.
-seo-title: Ordem de operação das IDs do Analytics
 title: Ordem de operação das IDs do Analytics
-uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
 exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 90%
 
 ---
 
@@ -31,12 +27,12 @@ Em muitos casos, você verá duas ou três IDs diferentes em uma chamada, mas o 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>1<sup>º</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/pt-BR/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>A <span class="codeph">s.visitorID</span> está definida. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2<sup>º</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/pt-BR/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
    <td colname="col3"> <p>O visitante tinha um s_vi cookie antes de você implantar o serviço de ID da <span class="keyword">Experience Cloud</span> ou você tem um <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> período de carência</a> configurado. </p> </td> 
   </tr> 
   <tr> 
@@ -46,12 +42,12 @@ Em muitos casos, você verá duas ou três IDs diferentes em uma chamada, mas o 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4<sup>º</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/pt-BR/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (cookie de recuperação de falhas no H.25.3 ou posterior, ou AppMeasurement para JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (cookie de recuperação de falhas no H.25.3 ou posterior, ou AppMeasurement para JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Um navegador não aceita cookies de terceiros e o servidor de rastreamento do Analytics está configurado como um servidor de rastreamento de terceiros. </p> <p> <p>Observação: o <span class="codeph">fid</span> é um identificador herdado e não é usado se você implementou o serviço de ID do site. Nesse caso, o <span class="codeph"> fid</span> não é necessário porque o <a href="../../introduction/cookies.md" format="dita" scope="local">cookie próprio AMCV</a> o torna obsoleto. Foi mantido para comportar o código herdado e por motivos históricos. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup>º</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/pt-BR/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> Endereço IP, Agente do usuário, Endereço IP de gateway</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> Endereço IP, Agente do usuário, Endereço IP de gateway</a> </p> </td> 
    <td colname="col3"> <p>O navegador do visitante não aceita cookies. </p> </td> 
   </tr> 
  </tbody> 
