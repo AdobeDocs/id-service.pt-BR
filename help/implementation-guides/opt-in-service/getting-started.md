@@ -1,15 +1,11 @@
 ---
 description: Implemente o serviço de Opt-in como o único ponto de referência usado pelas soluções da Experience Cloud (referido como Categorias no Opt-in) para determinar se os cookies devem ser criados no dispositivo de um visitante.
-seo-description: Implemente o serviço de Opt-in como o único ponto de referência usado pelas soluções da Experience Cloud (referido como Categorias no Opt-in) para determinar se os cookies devem ser criados no dispositivo de um visitante.
-seo-title: Configuração do serviço de Opt-in
 title: Configuração do serviço de Opt-in
-uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '941'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '908'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +41,7 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
 
 1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado de pré-consentimento.
 
-Se stiver usando o [Adobe Launch](https://docs.adobe.com/content/help/pt-BR/launch/using/overview.html), aproveite a [Extensão de aceitação](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de aceitação.
+Se stiver usando o [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), aproveite a [Extensão de aceitação](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de aceitação.
 
 ## Categorias de Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
