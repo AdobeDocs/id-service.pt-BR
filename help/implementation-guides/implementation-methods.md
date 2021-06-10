@@ -1,16 +1,12 @@
 ---
 description: Métodos de implementação padrão versus não padrão do Serviço de identidade da Experience Cloud.
 keywords: Serviço de ID
-seo-description: Métodos de implementação padrão versus não padrão do Serviço de identidade da Experience Cloud.
-seo-title: Métodos de implementação
 title: Métodos de implementação
-uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '151'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +20,7 @@ Você pode escolher um método de implementação [!DNL Experience Cloud ID Serv
 
 ## Implementação padrão {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-A Adobe recomenda usar o [[!DNL Experience Platform Launch] para implementar o serviço de ID. ](https://docs.adobe.com/content/help/pt-BR/launch/using/implement/solutions/idservice-save.html) Esse método garante a integração com outras [!DNL Experience Cloud] soluções, simplifica os fluxos de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+A Adobe recomenda usar o [[!DNL Experience Platform Launch] para implementar o serviço de ID. ](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html) Esse método garante a integração com outras [!DNL Experience Cloud] soluções, simplifica os fluxos de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 
 ## Implementações não padrão {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
