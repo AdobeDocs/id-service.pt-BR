@@ -2,10 +2,10 @@
 description: Conecte o CMP (Consent Management Platform) ao plug-in do Audience Manager de aceitação para a TCF (Transparency and Consent Framework, Estrutura de transparência e consentimento) da IAB.
 title: Uso dos serviços de Opt-in com a Estrutura IAB
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 98%
 
 ---
 
@@ -55,5 +55,5 @@ Para obter mais informações sobre como validar o plugin da TCF do IAB de Opt-i
 
 * [Estrutura de transparência e consentimento (TCF) do IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - Para obter mais informações sobre o padrão IAB
 * [Opt-in da Adobe](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - Para obter mais informações sobre Opt-in, um componente obrigatório do gerenciamento de consentimento nas soluções de plataforma
-* Suporte da Estrutura de transparência e consentimento (TCF) do IAB [no Audience Manager](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
+* Suporte da Estrutura de transparência e consentimento (TCF) do IAB [no Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
 * [Suas opções de privacidade](https://www.adobe.com/br/privacy/opt-out.html#customeruse) - Outra opção de privacidade à disposição dos usuários é a capacidade de não aderir à coleta de dados usando outras ferramentas de opt-out global. O Opt-out global tem precedência sobre a verificação de Opt-in e IAB TCF
