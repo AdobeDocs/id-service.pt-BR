@@ -1,16 +1,12 @@
 ---
 description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Analytics com o serviço de identidade da Experience Cloud.
 keywords: Serviço de identidade da Experience Cloud
-seo-description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Analytics com o serviço de identidade.
-seo-title: Perguntas frequentes do Analytics e do serviço de identidade
 title: Perguntas frequentes do Analytics e do serviço de identidade
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +34,7 @@ Não há mudanças para os usuários já identificados pelo serviço de identida
 
 Se você possuir um site de entrada principal em que os clientes possam ser identificados antes que visitem outros domínios, um CNAME poderá ativar o rastreamento entre domínios nos navegadores que não aceitam cookies de terceiros (como o Safari).
 
-Nos navegadores que aceitam cookies de terceiros, um cookie é definido no [domínio demdex.net](https://docs.adobe.com/content/help/pt-BR/audience-manager/user-guide/reference/demdex-calls.html) durante a solicitação para recuperar uma ID de visitante. Esse cookie permite que o serviço de identidade retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID da organização. Em navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud é atribuída para cada domínio.
+Nos navegadores que aceitam cookies de terceiros, um cookie é definido no [domínio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) durante a solicitação para recuperar uma ID de visitante. Esse cookie permite que o serviço de identidade retorne a mesma ID de visitante da Experience Cloud em todos os domínios configurados usando a mesma ID da organização. Em navegadores que rejeitam cookies de terceiros, uma nova ID de visitante da Experience Cloud é atribuída para cada domínio.
 
 Mesmo quando um CNAME é configurado, se o site de entrada principal não for visitado primeiro, os visitantes são identificados de forma diferente no site secundário e no site principal em navegadores que não aceitam cookies de terceiros.
 
@@ -54,7 +50,7 @@ No entanto, o código H não é compatível com a versão 1.6 ou superior do có
 
 **O que é um período de carência e como configurá-lo?**
 
-Consulte [Período de carência do serviço de identidade](../reference/analytics-reference/grace-period.md) e entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html).
+Consulte [Período de carência do serviço de identidade](../reference/analytics-reference/grace-period.md) e entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Por que é necessário migrar para a Coleta de dados em tempo real (RDC) a fim de mudar o serviço de identidade?**
 
@@ -69,7 +65,7 @@ Causas comuns de discrepâncias ao usar o serviço de identidade:
 * Uso continuado do cookie s_vi herdado. Isso contribui para discrepâncias na coleta de dados.
 * Contagem dupla de visitantes quando eles navegam de uma pesquisa para um pop-up.
 
-## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
+## Cookies  {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **O que acontece no Analytics quando o serviço de identidade não consegue definir o cookie AMCV?**
 
@@ -93,5 +89,5 @@ Há três cenários possíveis em que isso afeta os dados do Analytics para novo
 
 >[!MORELIKETHIS]
 >
->* [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
+>* [Atendimento ao cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
