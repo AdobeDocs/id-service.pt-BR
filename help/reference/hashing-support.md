@@ -1,13 +1,11 @@
 ---
 description: O serviço de Experience Cloud ID (ECID) é compatível com o algoritmo de hash SHA -256 que permite transmitir IDs do cliente ou endereços de email e enviar IDs com hash. Este é um método opcional Javascript para enviar identificadores com hash à Experience Cloud. Você pode continuar a usar seus próprios métodos de hash antes de enviar IDs do cliente.
 keywords: Serviço de ID
-seo-description: O serviço de Experience Cloud ID (ECID) é compatível com o algoritmo de hash SHA -256 que permite transmitir IDs do cliente ou endereços de email e enviar IDs com hash. Este é um método opcional Javascript para enviar identificadores com hash à Experience Cloud. Você pode continuar a usar seus próprios métodos de hash antes de enviar IDs do cliente.
-seo-title: Suporte a hash SHA 256 para setCustomerIDs
 title: Suporte a hash SHA 256 para setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '606'
 ht-degree: 97%
 
 ---
@@ -37,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Juntamente com a ID de visitante da Experience Cloud, é possível associar mais IDs do cliente, um status de autenticação e um tipo de hash (SHA-256) com cada visitante. Se não fornecer nenhum tipo de hash, será considerado como nenhum hash.
 
-O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer o upload dessas IDs como [atributos do cliente](https://docs.adobe.com/content/help/pt-BR/core-services/interface/customer-attributes/attributes.html) para a Experience Cloud e acessar esses dados em diferentes soluções.
+O `setCustomerIDs` método aceita várias IDs do cliente para o mesmo visitante. Isso ajuda a identificar ou direcionar um usuário individual em diferentes dispositivos. Por exemplo, você pode fazer o upload dessas IDs como [atributos do cliente](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) para a Experience Cloud e acessar esses dados em diferentes soluções.
 
 As IDs do cliente, os estados autenticados e o tipo de hash *não são* armazenados em um cookie a ser usado posteriormente. Em vez disso, as IDs do cliente, os estados autenticados e o tipo de hash devem ser armazenados em uma variável de instância, a ser recuperada usando [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), como mostrado abaixo:
 
