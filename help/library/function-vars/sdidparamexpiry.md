@@ -1,20 +1,16 @@
 ---
 description: Essa configuração permite substituir o intervalo de expiração padrão da ID de dados suplementares (SDID) ao passá-la de uma página para outra usando a função auxiliar appendSupplementalDataIDTo. Por padrão, o código do serviço de ID na página de recebimento tem 30 segundos para obter a SDID do URL enviado pela página de referência. Se o código do serviço de ID na página de recebimento não conseguir recuperar a SDID em menos de 30 segundos, ele solicitará uma nova SDID. Essa funcionalidade destina-se principalmente a clientes do A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo limite.
 keywords: Serviço de ID
-seo-description: Essa configuração permite substituir o intervalo de expiração padrão da ID de dados suplementares (SDID) ao passá-la de uma página para outra usando a função auxiliar appendSupplementalDataIDTo. Por padrão, o código do serviço de ID na página de recebimento tem 30 segundos para obter a SDID do URL enviado pela página de referência. Se o código do serviço de ID na página de recebimento não conseguir recuperar a SDID em menos de 30 segundos, ele solicitará uma nova SDID. Essa funcionalidade destina-se principalmente a clientes do A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo limite.
-seo-title: sdidParamExpiry
 title: sdidParamExpiry
-uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
 
-# sdidParamExpiry {#sdidparamexpiry}
+# sdidParamExpiry{#sdidparamexpiry}
 
 Essa configuração permite substituir o intervalo de expiração padrão da ID de dados suplementares (SDID) ao passá-la de uma página para outra usando a função auxiliar appendSupplementalDataIDTo. Por padrão, o código do serviço de ID na página de recebimento tem 30 segundos para obter a SDID do URL enviado pela página de referência. Se o código do serviço de ID na página de recebimento não conseguir recuperar a SDID em menos de 30 segundos, ele solicitará uma nova SDID. Essa funcionalidade destina-se principalmente a clientes do A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo limite.
 
