@@ -1,15 +1,11 @@
 ---
 description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte aos padrões CORS que permitem solicitações de recursos do lado do cliente e entre pontos de origem. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
 keywords: Serviço de ID
-seo-description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de recursos de várias origens) para solicitar recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte aos padrões CORS que permitem solicitações de recursos do lado do cliente e entre pontos de origem. O serviço de ID reverte solicitações JSONP em navegadores antigos ou incompatíveis com CORS.
-seo-title: Suporte ao CORS no serviço de identidade da Experience Cloud
 title: Suporte ao CORS no serviço de identidade da Experience Cloud
-uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '674'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
@@ -28,7 +24,7 @@ As políticas de mesma origem são controles ou restrições de segurança aplic
 
 O navegador permite que uma solicitação seja bem-sucedida se ambas as páginas compartilharem essas características e bloquearem solicitações de recursos.
 
-## O CORS soluciona problemas com políticas de mesma origem {#section-76c87ec3295d447bab220c84f138c235}
+## O CORS soluciona problemas com políticas de mesma origem  {#section-76c87ec3295d447bab220c84f138c235}
 
 O CORS fornece uma maneira segura e eficaz de solicitar recursos em diferentes domínios. A especificação do CORS inclui um conjunto de cabeçalhos HTTP que os navegadores usam para enviar, receber e avaliar solicitações de recursos. A avaliação de uma solicitação de recursos é chamada de *`preflight check`*. Essa verificação permite que navegadores e servidores determinem quais solicitações são permitidas ou bloqueadas. A verificação de comprovação é transparente para o aplicativo, a API ou o script que solicita um recurso. Dois cabeçalhos importantes no processo de solicitação de recursos incluem:
 
