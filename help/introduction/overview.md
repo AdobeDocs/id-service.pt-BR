@@ -18,7 +18,7 @@ O [!UICONTROL serviço de identidade da Experience Cloud] permite a estrutura de
 > Você pode ver referências ao serviço de ID como acrônimos ou nomes antigos, como ECID, Serviço da Experience Cloud ID (MID) e Serviço de ID de visitante. Elas se referem ao [!UICONTROL serviço de identidade da Experience Cloud]. Você também pode ver o [!UICONTROL serviço de identidade da Experience Platform]. Para esclarecer:
 
 * [!UICONTROL Serviço de identidade da Experience Platform]: o serviço que vincula as identidades. É o serviço de vinculação de dispositivos para o gerenciamento de experiências baseado em pessoas.
-* [!UICONTROL Serviço de ID da Experience Cloud ID] (ECID): ID exclusiva e contínua designada a um visitante do site. É uma entidade específica que pode ser usada pelo Serviço de identidade de plataforma.
+* [!UICONTROL Serviço de ID da Experience Cloud ID] (ECID): ID exclusiva e contínua designada a um visitante do site. É uma entidade específica que pode ser usada pelo Platform Identity Service.
 
 Quando sua organização implementa o serviço de ID, essa ID permite identificar o mesmo visitante do site e seus dados em diferentes soluções da Experience Cloud.
 
