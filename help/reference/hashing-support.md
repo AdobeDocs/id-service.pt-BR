@@ -6,7 +6,7 @@ exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Há duas maneiras de implementar o suporte de hash com setCustomerIDs, conforme 
 
 O primeiro método aproveita o uso do método [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
 
-Antes do hash, a biblioteca ECID realiza normalização de dados nas customerIDs. Esse processo elimina os espaços em branco das customerIDs e converte todos os caracteres em minúsculas. Por exemplo, no caso de endereços de email: &quot; ecid@adobe.com &quot; torna-se &quot;ecid@adobe.com&quot;
+Antes do hash, a biblioteca ECID realiza normalização de dados nas customerIDs. Esse processo elimina os espaços em branco das customerIDs e converte todos os caracteres em minúsculas. Por exemplo, no caso de endereços de email: &quot;ecid@adobe.com&quot; torna-se &quot;ecid@adobe.com&quot;
 
 Consulte abaixo um exemplo de código de como você define uma única ID do cliente (o endereço de email mencionado acima) com hash SHA -256.
 
@@ -68,7 +68,7 @@ Consulte a tabela abaixo para obter uma descrição do parâmetro `d_cid_ic` e d
 
 ## Adicionar uma ação na Adobe Experience Platform Launch {#add-action-launch}
 
-A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Platform launch na [Documentação do produto do Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
+A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Platform Launch na [documentação do produto do Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=pt-BR).
 
 Para adicionar uma ação no Launch, leia a [documentação de regras](https://docs.adobe.com/help/pt-BR/launch/using/reference/manage-resources/rules.html) no Adobe Launch e veja a captura de tela abaixo:
 
