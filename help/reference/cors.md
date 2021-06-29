@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Suporte ao CORS no serviço de identidade da Experience Cloud
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ As políticas de mesma origem são controles ou restrições de segurança aplic
 
 O navegador permite que uma solicitação seja bem-sucedida se ambas as páginas compartilharem essas características e bloquearem solicitações de recursos.
 
-## O CORS soluciona problemas com políticas de mesma origem  {#section-76c87ec3295d447bab220c84f138c235}
+## O CORS soluciona problemas com políticas de mesma origem {#section-76c87ec3295d447bab220c84f138c235}
 
 O CORS fornece uma maneira segura e eficaz de solicitar recursos em diferentes domínios. A especificação do CORS inclui um conjunto de cabeçalhos HTTP que os navegadores usam para enviar, receber e avaliar solicitações de recursos. A avaliação de uma solicitação de recursos é chamada de *`preflight check`*. Essa verificação permite que navegadores e servidores determinem quais solicitações são permitidas ou bloqueadas. A verificação de comprovação é transparente para o aplicativo, a API ou o script que solicita um recurso. Dois cabeçalhos importantes no processo de solicitação de recursos incluem:
 
