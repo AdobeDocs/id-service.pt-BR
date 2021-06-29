@@ -3,9 +3,9 @@ description: Implemente o serviço de Opt-in como o único ponto de referência 
 title: Configuração do serviço de Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
 
 1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado de pré-consentimento.
 
-Se stiver usando o [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), aproveite a [Extensão de aceitação](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de aceitação.
+Se stiver usando o [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=pt-BR), aproveite a [Extensão de aceitação](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de aceitação.
 
 ## Categorias de Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
