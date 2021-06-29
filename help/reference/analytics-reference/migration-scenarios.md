@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Cenários de migração do serviço de identidade da Experience Cloud
 exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
 ht-degree: 100%
 
