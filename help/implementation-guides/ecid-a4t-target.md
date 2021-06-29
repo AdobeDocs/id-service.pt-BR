@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
 ht-degree: 100%
 
