@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam listas de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios da Adobe listados aqui às suas listas brancas de CSP.
 
-## Análise da CSP  {#section-5fde5c00a678455c914b8307a8caab82}
+## Análise da CSP {#section-5fde5c00a678455c914b8307a8caab82}
 
 As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo de recursos que os navegadores aceitam ou carregam em uma página. A aplicação de um CSP pode ajudá-lo a evitar:
 
@@ -58,7 +58,7 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Se você usar o Adobe Launch para implantar tags, também precisará adicionar <code>https://assets.adobedtm.com</code> à lista de domínios.</li></ul></p> <p>As chamadas para o domínio <span class="codeph">demdex.net</span> são usadas para gerar os <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o Serviço de identidade da Experience Cloud</a> e para sincronizações de ID. Consulte, <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> </tr> 
+   <li>Se você usar o Adobe Launch para implantar tags, também precisará adicionar <code>https://assets.adobedtm.com</code> à lista de domínios.</li></ul></p> <p>As chamadas para o domínio <span class="codeph">demdex.net</span> são usadas para gerar os <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o Serviço de identidade da Experience Cloud</a> e para sincronizações de ID. Consulte, <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Plug-in do Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifique sua CSP para incluir *.adobe.com. **Nota**: Se você já tiver o Activity Map instalado antes de janeiro de 2020, seu navegador ainda verá uma solicitação inicial para *.omniture.com, mas será redirecionado para *.adobe.com. </p></td> 
