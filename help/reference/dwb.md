@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Data Workbench e o serviço de identidade da Experience Cloud
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 92%
 
 Siga estas instruções para integrar o campo da Experience Cloud ID ao Data Workbench. Esse processo permite usar a Experience Cloud ID persistente no feed de dados, o que permite uma integração mais forte com outros produtos na Adobe Experience Cloud e fornece um rastreamento avançado de visitantes.
 
-Para atualizar o [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) para usar o serviço de ID:
+Para atualizar o [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=pt-BR) para usar o serviço de ID:
 
-1. Localize o arquivo de configuração atual do [Grupo decodificador](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html).
+1. Localize o arquivo de configuração atual do [Grupo decodificador](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html?lang=pt-BR).
 
    Normalmente, o [!DNL Decoder Group] está localizado em um [!UICONTROL Gerenciador de perfis] neste caminho: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copie o formato do decodificador atual do arquivo de configuração.
 1. Cole o formato do decodificador abaixo do original.
