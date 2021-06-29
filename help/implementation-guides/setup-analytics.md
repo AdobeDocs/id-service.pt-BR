@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ Consulte [Cookies e o serviço de identidade da Experience Cloud](../introductio
 
 Faça a descontinuação do período de carência se o processo de ingestão de dados conseguir usar as colunas `post_visid_high` e `post_visid_low`.
 
-Consulte [Referência da coluna de dados de sequência de cliques](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Consulte [Referência da coluna de dados de sequência de cliques](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=pt-BR).
 
 **Ingestão de dados da sequência de cliques**
 
@@ -191,7 +191,7 @@ Consulte [Referência da coluna de dados de sequência de cliques](https://exper
 Para testar a implementação do serviço de ID, verifique:
 
 * [Cookie AMCV](../introduction/cookies.md) no domínio em que a página está hospedada.
-* O valor da MID na [!DNL Analytics]solicitação de imagem com a [ferramenta Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* O valor da MID na [!DNL Analytics]solicitação de imagem com a [ferramenta Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=pt-BR).
 
 Consulte [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md).
 
