@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: sdidParamExpiry
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Se for necessário alterar o tempo limite da SDID padrão, adicione `sdidParamEx
 
 **Amostra de código**
 
-Quando configurado, o código do serviço de ID pode ser semelhante a este exemplo. Essa amostra define o tempo limite de SDID como 15 segundos. Essa configuração funciona com o método auxiliar  [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
+Quando configurado, o código do serviço de ID pode ser semelhante a este exemplo. Essa amostra define o tempo limite de SDID como 15 segundos. Essa configuração funciona com o método auxiliar [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
