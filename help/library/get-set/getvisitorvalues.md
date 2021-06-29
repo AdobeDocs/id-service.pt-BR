@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Essa função usa a seguinte sintaxe (itálico representa um espaço reservado p
 Nos parâmetros da função:
 
 * O ` *`retorno de chamada`*` representa seu próprio código de retorno de chamada que recebe as IDs retornadas.
-* *(Opcional)*` visitor.FIELDS. *`Tipo de ID`*` é um enum que permite especificar quais [valores de ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja que a função retorne.
+* *(Opcional)* ` visitor.FIELDS. *`Tipo de ID`*` é um enum que permite especificar quais [valores de ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja que a função retorne.
 
 Consulte os casos de uso e as definições a seguir para obter mais informações.
 
@@ -99,7 +99,7 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>A ID da região de coleta de dados. Este é um identificador numérico para a localização geográfica de um data center de serviço de ID específico. </p> <p>Consulte <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
+   <td colname="col2"> <p>A ID da região de coleta de dados. Este é um identificador numérico para a localização geográfica de um data center de serviço de ID específico. </p> <p>Consulte <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=pt-BR" format="https" scope="external"> IDs de região, locais e nomes de host do DCS </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local">getLocationHint</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
