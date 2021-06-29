@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Integração direta com o serviço de identidade da Experience Cloud
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Os dispositivos que não podem usar VisitorAPI.js ou as bibliotecas de código d
 
 ![](assets/directSyntax.png)
 
-Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na chamada como uma variável do sistema. Você pode passar alguns `d_` parâmetros para o serviço de ID, mas manter o foco nos pares de valores chave como mostrado no código acima. Para obter mais informações sobre outras variáveis, consulte [Atributos compatíveis para chamadas de API DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=pt-BR).
 
 O serviço de ID suporta chamadas HTTP e HTTPS. Use HTTPS para enviar dados de uma página segura.
 
@@ -57,7 +57,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua re
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Um domínio herdado controlado pela <span class="keyword">Adobe</span>. Consulte <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Um domínio herdado controlado pela <span class="keyword">Adobe</span>. Consulte <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -87,7 +87,7 @@ O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua re
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>O serviço de ID é um sistema distribuído geograficamente e com balanceamento de carga. A ID identifica a região do data center que manipula a chamada. Consulte <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">IDs da região do DCS, locais e nomes de host</a>. </p> </td> 
+   <td colname="col2"> <p>O serviço de ID é um sistema distribuído geograficamente e com balanceamento de carga. A ID identifica a região do data center que manipula a chamada. Consulte <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=pt-BR" format="https" scope="external">IDs da região do DCS, locais e nomes de host</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
