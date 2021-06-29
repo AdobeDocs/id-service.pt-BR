@@ -3,7 +3,7 @@ description: A função do serviço de identidade da Experience Cloud na Adobe E
 title: Visão geral do serviço da Experience Cloud ID
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
 ht-degree: 100%
 
