@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Essas configurações ajudam a resolver o problema de configuração de um cooki
 
 >[!TIP]
 >
->Você também pode implementar essas configurações quando estiver disponibilizando vídeo em um iFrame com o [Video Heartbeat](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html). O Video Heartbeat precisa de uma ID de serviço de ID (a MID) para funcionar corretamente.
+>Você também pode implementar essas configurações quando estiver disponibilizando vídeo em um iFrame com o [Video Heartbeat](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=pt-BR). O Video Heartbeat precisa de uma ID de serviço de ID (a MID) para funcionar corretamente.
 
 **Caso de uso 1: O navegador bloqueia cookies de terceiros e o serviço de ID é implementado no iFrame e na página pai**
 
@@ -178,7 +178,7 @@ O serviço de ID oferece suporte a um conjunto limitado de métodos de API públ
    <td colname="col1"> <p> <b>Caso 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
