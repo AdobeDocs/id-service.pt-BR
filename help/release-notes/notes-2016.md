@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Notas de versão de 2016
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Revisão: [Requisitos do serviço de identidade da Experience Cloud](../referenc
 
 **Problemas conhecidos**
 
-Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html).
+Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=pt-BR).
 
 ## Versão 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
