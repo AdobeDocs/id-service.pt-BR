@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1498'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Estas instruções são para clientes do Analytics, do Audience Manager e do Tar
 
 ## Etapa 1: plano de encaminhamento do lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
 
-Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Consulte a [documentação de encaminhamento do lado do servidor](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-tools/server-side-forwarding/ssf.html) para obter mais informações.
+Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=pt-BR). Consulte a [documentação de encaminhamento do lado do servidor](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-tools/server-side-forwarding/ssf.html) para obter mais informações.
 
 A migração para o encaminhamento do lado do servidor requer planejamento e coordenação. Esse processo envolve alterações externas ao código do site e etapas internas que a Adobe deve tomar para provisionar sua conta. Na verdade, muitos desses procedimentos de migração precisam acontecer em paralelo e ser lançados juntos. Seu caminho de implementação deve seguir esta sequência de eventos:
 
@@ -140,7 +140,7 @@ Adicione a `Visitor.getInstance` função mostrada abaixo ao `AppMeasurement.js`
 
 >[!IMPORTANT]
 >
->Nesse momento, é necessário remover o código [!DNL Audience Manager] DIL do e substituí-lo pelo Módulo de gerenciamento de público-alvo. Consulte [Implementar o encaminhamento do lado do servidor](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) para obter instruções.
+>Nesse momento, é necessário remover o código [!DNL Audience Manager] DIL do e substituí-lo pelo Módulo de gerenciamento de público-alvo. Consulte [Implementar o encaminhamento do lado do servidor](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=pt-BR) para obter instruções.
 
 ***(Opcional, mas recomendado)* Criar um prop personalizado.**
 
@@ -182,7 +182,7 @@ Consulte [Cookies e o serviço de identidade da Experience Cloud](../introductio
 
 Faça a descontinuação do período de carência se o processo de ingestão de dados conseguir usar as colunas `post_visid_high` e `post_visid_low`.
 
-Consulte também, [Referência da coluna de dados de sequência de cliques](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Consulte também, [Referência da coluna de dados de sequência de cliques](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=pt-BR).
 
 ## Etapa 9: testar e verificar {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -190,7 +190,7 @@ As soluções da [!DNL Experience Cloud] nesta implementação retornam IDs na f
 
 >[!TIP]
 >
->Você pode usar o [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) ou o [proxy HTTP Charles](https://www.charlesproxy.com/) para verificar essas IDs específicas da solução. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
+>Você pode usar o [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=pt-BR) ou o [proxy HTTP Charles](https://www.charlesproxy.com/) para verificar essas IDs específicas da solução. Entretanto, você pode usar qualquer ferramenta ou depurador adequado para suas necessidades.
 
 **Todas as soluções**
 
@@ -214,7 +214,7 @@ Ao observar uma AID, compare o valor com a mboxMCAVID do [!DNL Target]. Esses va
 
 **Audience Manager**
 
-Para testar o encaminhamento do lado do servidor, consulte [Como verificar a implementação do encaminhamento do lado do servidor.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)
+Para testar o encaminhamento do lado do servidor, consulte [Como verificar a implementação do encaminhamento do lado do servidor.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html?lang=pt-BR)
 
 **Target**
 
