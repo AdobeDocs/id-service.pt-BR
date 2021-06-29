@@ -3,9 +3,9 @@ description: A Adobe Experience Platform Launch é a ferramenta principal usada 
 title: Implementar com o Launch
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ A Adobe Experience Platform Launch é a ferramenta principal usada para configur
 
 ## Sobre o Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[O Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) é a próxima geração do recurso de gerenciamento de tags da Adobe e está integrado à Adobe Experience Cloud. Com o Launch, os clientes podem:
+[O Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=pt-BR) é a próxima geração do recurso de gerenciamento de tags da Adobe e está integrado à Adobe Experience Cloud. Com o Launch, os clientes podem:
 
 * Implantar produtos da Web do lado do cliente usando integrações chamadas de extensões
 * Capturar, definir, gerenciar e compartilhar dados de maneira consistente entre os produtos de marketing e publicidade de outros fornecedores e da Adobe
