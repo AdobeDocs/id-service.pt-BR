@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Solicitações do Analytics e da Experience Cloud ID
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Historicamente, o serviço de identidade da Experience Cloud está integrado ao 
 
 ## O cookie AMCV não está definido no navegador {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-Se o cookie [!DNL Experience Cloud] (AMCV) não estiver presente, uma chamada de serviço de ID [!DNL Adobe] gera uma resposta que varia dependendo da presença ou da ausência de uma ID do Analytics herdada. A ID [!DNL Analytics] herdada é armazenada no [cookie s_vi](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html). A tabela abaixo descreve como as IDs são gravadas no cookie AMCV com base no estado do cookie s_ vi.
+Se o cookie [!DNL Experience Cloud] (AMCV) não estiver presente, uma chamada de serviço de ID [!DNL Adobe] gera uma resposta que varia dependendo da presença ou da ausência de uma ID do Analytics herdada. A ID [!DNL Analytics] herdada é armazenada no [cookie s_vi](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=pt-BR). A tabela abaixo descreve como as IDs são gravadas no cookie AMCV com base no estado do cookie s_ vi.
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -47,7 +47,7 @@ Se o cookie [!DNL Experience Cloud] (AMCV) não estiver presente, uma chamada de
 
 >[!NOTE]
 >
->Os usuários identificados pelo cookie s_fid não terão o valor de FID herdado migrado para o cookie AMCV. Com um cookie s_fid, os usuários são migrados como se nenhum cookie s_fid estivesse presente (veja abaixo) e são exibidos como novos visitantes do seu site. Consulte [Cookies do Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) para obter mais informações.
+>Os usuários identificados pelo cookie s_fid não terão o valor de FID herdado migrado para o cookie AMCV. Com um cookie s_fid, os usuários são migrados como se nenhum cookie s_fid estivesse presente (veja abaixo) e são exibidos como novos visitantes do seu site. Consulte [Cookies do Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=pt-BR) para obter mais informações.
 
 ## O cookie AMCV está definido no navegador {#section-01c088fc565c4b24ba1722c7cc240310}
 
