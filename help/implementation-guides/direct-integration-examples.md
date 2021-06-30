@@ -18,7 +18,6 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
 >
 >* Analise e entenda a [sintaxe de código e as variáveis](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) antes de mergulhar nos casos de uso.
 >* Para obter mais informações sobre a MID, consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md).
-
 >
 
 
