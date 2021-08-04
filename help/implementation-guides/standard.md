@@ -3,10 +3,10 @@ description: As implementações mais antigas usam o Dynamic Tag Management (DTM
 keywords: Serviço de ID
 title: Implementação com o Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '1999'
-ht-degree: 100%
+source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
+workflow-type: tm+mt
+source-wordcount: '2008'
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ Siga estas etapas para implementar o serviço de ID com o Dynamic Tag Management
 
 **Pré-requisitos**
 
-* Ative as soluções na [!DNL Experience Cloud] e verifique se você tem permissões de administrador. Consulte [Ativar as soluções dos serviços principais](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=pt-BR).
+* Ative as soluções na [!DNL Experience Cloud] e verifique se você tem permissões de administrador. Consulte [Ativar as soluções dos serviços principais](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
 
 * Crie uma propriedade da Web no DTM. Consulte a documentação [Criar uma propriedade da Web no DTM](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=pt-BR).
 
@@ -139,7 +139,7 @@ O nome do servidor de rastreamento usado para a coleta de dados do Analytics. Es
 
 Se você não souber os URLs do servidor de rastreamento, verifique os arquivos `s_code.js` ou `AppMeasurement.js`. O ideal é que o URL seja definido pela `s.trackingServer` variável.
 
-Consulte [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) e [preencha corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
+Consulte [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) e [preencha corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Servidor de rastreamento seguro**
 
@@ -147,7 +147,7 @@ O nome do servidor de rastreamento seguro usado para a coleta de dados do Analyt
 
 Se você não souber os URLs do servidor de rastreamento, verifique os arquivos `s_code.js` ou `AppMeasurement.js`. O ideal é que o URL seja definido pela `s.trackingServerSecure` variável.
 
-Consulte [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) e [preencha corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
+Consulte [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) e [preencha corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Servidor da Experience Cloud**
 
@@ -179,7 +179,7 @@ Campos adicionais que permitem adicionar um código de integração ou status de
 
 **Código de integração**
 
-Um código de integração é uma ID exclusiva fornecida pelo cliente. O código de integração deve conter o valor usado para [criar uma fonte de dados](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) no [!DNL Audience Manager].
+Um código de integração é uma ID exclusiva fornecida pelo cliente. O código de integração deve conter o valor usado para [criar uma fonte de dados](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) no [!DNL Audience Manager].
 
 **Valor**
 
@@ -215,7 +215,7 @@ O [depurador da Adobe](https://experienceleague.adobe.com/docs/analytics/impleme
 
 A integração de serviço é configurada adequadamente ao visualizar uma [!DNL Experience Cloud ID] (MID) na resposta do depurador da [!DNL Adobe]. Consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md) para obter mais informações sobre a MID.
 
-Para verificar o status do serviço de ID com o [depurador](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=pt-BR) da [!DNL Adobe]:
+Para verificar o status do serviço de ID com o [depurador](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) da [!DNL Adobe]:
 
 1. Limpe os cookies do navegador ou abra uma sessão de navegação anônima.
 1. Carregue a página de teste que contém o código do serviço de ID.
@@ -281,5 +281,5 @@ Para obter mais informações sobre os códigos de erro, consulte [Códigos de e
 
 >[!MORELIKETHIS]
 >
->* [Propriedades da Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=pt-BR)
+>* [Propriedades da Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
 
