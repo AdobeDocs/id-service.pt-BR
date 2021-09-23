@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Requisitos do serviço de identidade da Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '731'
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ As seções a seguir listam as versões mínimas do código necessárias para us
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"> Serviço da</span> Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Serviço da</span> Experience Cloud ID</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 ou posterior </p> </td> 
   </tr> 
