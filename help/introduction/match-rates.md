@@ -3,14 +3,14 @@ description: Uma visão geral dos processos de sincronização de ID e taxas de 
 keywords: Serviço de ID
 title: Como entender a sincronização de ID e taxas de correspondência
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '805'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# Como entender a sincronização de ID e taxas de correspondência {#understanding-id-synchronization-and-match-rates}
+# Como entender a sincronização de ID e taxas de correspondência{#understanding-id-synchronization-and-match-rates}
 
 Uma visão geral dos processos de sincronização de ID e taxas de correspondência no serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o serviço de ID.
 
@@ -24,7 +24,7 @@ As taxas de correspondência avaliam e validam a eficácia do processo de sincro
 
 **Garantia de altas taxas de correspondência**
 
-Para gerar altas taxas de correspondência, é importante configurar o serviço de ID adequadamente (consulte [o guia de implementação padrão](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Uma implementação adequada ajuda a garantir altas taxas de correspondência, pois permite que o serviço de ID defina os cookies necessários para funcionar e sincronizar IDs com parceiros de dados habilitados. No entanto, fatores como conexões lentas com a Internet, coleta de dados de dispositivos móveis ou redes sem fio podem afetar o modo como o serviço de ID coleta, sincroniza e corresponde IDs. Essas variáveis do lado do cliente estão além do controle do serviço de ID ou da [!DNL Adobe].
+Uma implementação adequada ajuda a garantir altas taxas de correspondência, pois permite que o serviço de ID defina os cookies necessários para funcionar e sincronizar IDs com parceiros de dados habilitados. No entanto, fatores como conexões lentas com a Internet, coleta de dados de dispositivos móveis ou redes sem fio podem afetar o modo como o serviço de ID coleta, sincroniza e corresponde IDs. Essas variáveis do lado do cliente estão além do controle do serviço de ID ou da [!DNL Adobe].
 
 ## Descrição do processo de sincronização de ID {#section-a541a85cbbc74f5682824b1a2ee2a657}
 

@@ -3,10 +3,10 @@ description: Consulte esta seção para verificar se você está usando as solu�
 keywords: Serviço de ID
 title: Requisitos do serviço de identidade da Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -18,33 +18,13 @@ Consulte esta seção para verificar se você está usando as soluções, os ser
 
 Uma implementação de sucesso e com suporte atende (ou excede) os requisitos de código, além de seguir as instruções à medida que aparecem na ajuda da [!DNL Adobe]. Uma implementação não suportada produzirá resultados inesperados e impedirá que o Atendimento ao cliente e nossas equipes de engenharia ajudem nos esforços para solucionar ou resolver seus problemas com o serviço de ID.
 
-<table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Tipo de implementação </th> 
-   <th colname="col2" class="entry"> Descrição </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Padrão</a> </p> </td> 
-   <td colname="col2"> <p>Para uma implementação padrão com o Dynamic Tag Management (DTM), você deve: </p> 
-    <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Inserir o código de cabeçalho incorporado na seção <span class="codeph">&lt;head&gt;</span> da página. </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2">Inserir o código de rodapé incorporado antes de fechar a tag <span class="codeph">&lt;/body&gt;</span>. </li> 
-    </ul> <p>Uma implementação padrão não é suportada ao: </p> 
-    <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Colocar qualquer um desses códigos incorporados do DTM em outro lugar da marcação e/ou código da página. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> Anexar, adicionar ou carregar o código do DTM com métodos assíncronos, métodos de chamada/retorno de chamada ou wrappers. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">Incluir várias instâncias do código integrado na mesma página. </li> 
-    </ul> <p>Consulte também, <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=pt-BR" format="https" scope="external">Incorporar código e opções de hospedagem</a>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Implementações não padrão </a> </p> </td> 
-   <td colname="col2"> <p>Para implementações não padrão ou manuais, você deve configurar o serviço de ID conforme descrito pelos procedimentos deste guia. Assim como nas diretrizes do DTM acima, a inserção e o carregamento inadequados do código criarão uma implementação sem suporte. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### Implementações padrão
+
+Consulte [Tags de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) para sua implementação padrão.
+
+### Implementações não padrão
+
+Para implementações não padrão ou manuais, você deve configurar o serviço de ID conforme descrito pelos procedimentos deste guia. Assim como nas diretrizes do DTM acima, a inserção e o carregamento inadequados do código criarão uma implementação sem suporte.
 
 ## Requisitos da Experience Cloud: ID da organização {#section-a02f537129a64ffbb690d5738d360c26}
 

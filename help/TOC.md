@@ -5,16 +5,15 @@ user-guide-title: Ajuda do Experience Cloud Identity Service
 breadcrumb-title: Guia do Identity Service
 user-guide-description: O serviço de ID fornece uma ID contínua e universal que identifica os visitantes por todas as soluções na Experience Cloud. Permite substituir o código de geração de ID para serviços como o Analytics, Audience Manager, Target e outros recursos e soluções da Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
 
-# Ajuda do serviço de identidade da Experience Cloud {#using}
+# Ajuda do Experience Cloud Identity Service {#using}
 
 + [Ajuda do serviço de ID](home.md)
 + Visão geral {#intro}
@@ -26,8 +25,7 @@ ht-degree: 100%
 + Implementação {#implementation}
    + [Métodos de implementação](implementation-guides/implementation-methods.md)
    + [Guias de implementação](implementation-guides/implementation-guides.md)
-   + [Implementar com Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementação com DTM](implementation-guides/standard.md)
+   + [Implementar com tags Experience Platform](implementation-guides/ecid-implement-with-launch.md)
    + [Implementar para o Analytics](implementation-guides/setup-analytics.md)
    + [Implementar para o Target](implementation-guides/setup-target.md)
    + [Implementar para o Analytics e o Audience Manager](implementation-guides/setup-aam-analytics.md)
@@ -43,8 +41,8 @@ ht-degree: 100%
       + [Configuração do Opt-in com a Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configuração do Opt-in com o DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Controlar atividades da Experience Cloud com base no consentimento do usuário](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
-      + [Casos de uso do opt-in](implementation-guides/opt-in-service/use-cases.md)
-      + [Referência do opt-in](implementation-guides/opt-in-service/api.md)
+      + [Casos de uso de opt-in](implementation-guides/opt-in-service/use-cases.md)
+      + [Referência de opt-in](implementation-guides/opt-in-service/api.md)
       + [Uso dos serviços de Opt-in com a Estrutura IAB](implementation-guides/opt-in-service/iab.md)
 + API do serviço de ID {#id-service-api}
    + [Visão geral da API do serviço de ID](library/library.md)
@@ -89,7 +87,7 @@ ht-degree: 100%
       + [Visão geral da referência do Analytics](reference/analytics-reference/analytics-reference.md)
       + [Visão geral da implementação de CNAME](reference/analytics-reference/cname.md)
       + [Definir Analytics e Experience Cloud IDs](reference/analytics-reference/analytics-ids.md)
-      + [Ordem de operação das IDs para o Analytics](reference/analytics-reference/analytics-order-of-operations.md)
+      + [Ordem de operação das IDs do Analytics](reference/analytics-reference/analytics-order-of-operations.md)
       + [Pontos de decisão da migração do serviço de ID](reference/analytics-reference/migration-decisions.md)
       + [Cenários de migração do serviço de ID](reference/analytics-reference/migration-scenarios.md)
       + [Solicitações do Analytics e de identidade](reference/analytics-reference/legacy-analytics.md)
@@ -102,7 +100,7 @@ ht-degree: 100%
    + [Estados de autenticação e IDs do cliente](reference/authenticated-state.md)
    + [Métodos de biblioteca da ECID em um mundo da ITP Safari](reference/ecid-library-methods.md)
    + [Identificação dos visitantes únicos](reference/unique-vis-method.md)
-   + [Obter IDs de região e usuário do cookie AMCV ou do serviço de ID](reference/regions.md)
+   + [Obter as IDs de região e usuário do cookie AMCV ou do serviço de ID](reference/regions.md)
    + [Requisitos para o serviço de ID](reference/requirements.md)
    + [Video Heartbeat e o serviço de ID](reference/heartbeat.md)
    + [Data Workbench e o serviço de ID](reference/dwb.md)
@@ -113,9 +111,9 @@ ht-degree: 100%
    + [Perguntas frequentes do Analytics e do serviço de ID](faq-intro/analytics-faq.md)
    + [Perguntas frequentes de outras soluções da Experience Cloud](faq-intro/other-faq.md)
 + Notas de versão do serviço de ID {#release-notes}
-   + [Notas de versão 2020](release-notes/release-notes.md)
-   + [Notas de versão 2019](release-notes/notes-2019.md)
-   + [Notas de versão 2018](release-notes/notes-2018.md)
-   + [Notas de versão 2017](release-notes/notes-2017.md)
-   + [Notas de versão 2016](release-notes/notes-2016.md)
-   + [Notas de versão 2015](release-notes/notes-2015.md)
+   + [Notas de versão de 2020](release-notes/release-notes.md)
+   + [Notas de versão de 2019](release-notes/notes-2019.md)
+   + [Notas de versão de 2018](release-notes/notes-2018.md)
+   + [Notas de versão de 2017](release-notes/notes-2017.md)
+   + [Notas de versão de 2016](release-notes/notes-2016.md)
+   + [Notas de versão de 2015](release-notes/notes-2015.md)
