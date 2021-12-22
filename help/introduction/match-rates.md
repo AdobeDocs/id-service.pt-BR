@@ -4,13 +4,13 @@ keywords: Serviço de ID
 title: Como entender a sincronização de ID e taxas de correspondência
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# Como entender a sincronização de ID e taxas de correspondência{#understanding-id-synchronization-and-match-rates}
+# Como entender a sincronização de ID e taxas de correspondência {#understanding-id-synchronization-and-match-rates}
 
 Uma visão geral dos processos de sincronização de ID e taxas de correspondência no serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o serviço de ID.
 
