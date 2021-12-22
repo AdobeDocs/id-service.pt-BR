@@ -1,16 +1,16 @@
 ---
 description: Essas instruções se aplicam aos clientes da A4T com implementações mistas do lado do servidor e do lado cliente para o Target, o Analytics e o serviço de ID. Os clientes que precisam executar o serviço de ID em um ambiente NodeJS ou Rhino também devem consultar essas informações. Essa instância do serviço de ID usa uma versão reduzida da biblioteca de códigos VisitorAPI.js, que você pode baixar e instalar no NPM (Gerenciador de pacotes de nós). Consulte esta seção para obter instruções de instalação e outros requisitos de configuração.
 keywords: Serviço de ID
-title: Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target
+title: Usar o serviço de ID com o A4T e uma implementação do lado do servidor do Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
 ht-degree: 100%
 
 ---
 
-# Uso do Serviço de ID com A4T e uma implementação do lado do servidor do Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
+# Usar o serviço de ID com o A4T e uma implementação do lado do servidor do Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
 Essas instruções se aplicam aos clientes da A4T com implementações mistas do lado do servidor e do lado cliente para o Target, o Analytics e o serviço de ID. Os clientes que precisam executar o serviço de ID em um ambiente NodeJS ou Rhino também devem consultar essas informações. Essa instância do serviço de ID usa uma versão reduzida da biblioteca de códigos VisitorAPI.js, que você pode baixar e instalar no NPM (Gerenciador de pacotes de nós). Consulte esta seção para obter instruções de instalação e outros requisitos de configuração.
 
@@ -23,13 +23,13 @@ O A4T (e outros clientes) pode usar essa versão do serviço de ID quando for ne
 * Efetuar chamadas do lado do cliente (no navegador) para o [!DNL Analytics].
 * Sincronizar IDs separadas do [!DNL Target] e do [!DNL Analytics] para determinar se um visitante visualizado por uma solução é a mesma pessoa visualizada por outra solução.
 
-## Download do código e das interfaces fornecidas {#section-32d75561438b4c3dba8861be6557be8a}
+## Download do código e interfaces fornecidas {#section-32d75561438b4c3dba8861be6557be8a}
 
-Consulte o [repositório NPM do serviço de ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server) para baixar o pacote de códigos do lado do servidor e consultar as interfaces incluídas na versão atual.
+Consulte o [repositório NPM do serviço de ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server) para baixar o pacote de códigos do lado do servidor e verificar as interfaces incluídas na versão atual.
 
 ## Fluxo de trabalho {#section-56b01017922046ed96536404239a272b}
 
-O diagrama e as seções abaixo descrevem o que ocorre e o que é necessário configurar em cada etapa do processo de implementação do lado do servidor.
+O diagrama e as seções abaixo descrevem o que ocorre e o que é necessário configurar em cada etapa do processo de implementação no lado do servidor.
 
 ![](assets/serverside.png)
 
