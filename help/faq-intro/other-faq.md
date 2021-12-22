@@ -1,18 +1,18 @@
 ---
-description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso das soluções da Experience Cloud com o serviço de ID.
+description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso de outras soluções da Experience Cloud com o serviço de ID.
 keywords: Serviço de ID
 title: Perguntas frequentes de outras soluções da Experience Cloud
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Perguntas frequentes de outras soluções da Experience Cloud{#faqs-for-other-experience-cloud-solutions}
+# Perguntas frequentes de outras soluções da Experience Cloud {#faqs-for-other-experience-cloud-solutions}
 
-Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso das soluções da Experience Cloud com o serviço de ID.
+Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso de outras soluções da Experience Cloud com o serviço de ID.
 
 ## Analytics e Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
