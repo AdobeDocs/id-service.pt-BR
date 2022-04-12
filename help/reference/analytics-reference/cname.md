@@ -3,10 +3,10 @@ description: Se você possuir um site de entrada principal em que os clientes po
 keywords: ordem de operações, serviço de ID
 title: Visão geral da implementação CNAME
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
-source-git-commit: 61f9f1888430ff0fdbb90a8cf6561bf23d204a45
-workflow-type: ht
-source-wordcount: '266'
-ht-degree: 100%
+source-git-commit: d2586fc722be25df1b82caaf2cc6de6a2a6c31bf
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 92%
 
 ---
 
@@ -16,4 +16,4 @@ Implementações CNAME permitem personalizar o domínio de coleção usado pelo 
 
 Embora uma implementação CNAME não forneça benefícios em termos de duração do cookie, ela pode oferecer outros benefícios. Esses benefícios incluem bloqueadores de anúncios e navegadores menos comuns que impedem o envio de dados para domínios que eles classificam como rastreadores. Nesses casos, o uso de um CNAME pode impedir que a coleção de dados seja interrompida para usuários que utilizam essas ferramentas.
 
-Além disso, as implementações CNAME permitem a especificação **[!UICONTROL Escolher tipo de RDC personalizado]**, que controla para onde as ocorrências dos usuários são encaminhadas inicialmente. A maioria dos clientes não usa tipos personalizados de RDC.
+Além disso, as implementações CNAME permitem [escolha um tipo RDC personalizado](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=pt-BR) que controla onde as ocorrências dos usuários são encaminhadas inicialmente. A maioria dos clientes não usa tipos personalizados de RDC.
