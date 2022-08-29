@@ -3,9 +3,9 @@ description: 'O serviço de identidade da Experience Cloud fornece uma ID persis
 keywords: Serviço de ID
 title: Serviço de identidade da Experience Cloud
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
-workflow-type: ht
-source-wordcount: '262'
+source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+workflow-type: tm+mt
+source-wordcount: '261'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,6 @@ O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Serviço de opt-in</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
       <li id="li_9E512C6DD15C46C3ABD06ACD60D97E4A"> <a href="faq-intro/faq-intro.md" format="dita" scope="local"> Perguntas frequentes </a> </li> 
-      <li id="li_B28082F3D075413D89E5AFB718657E17"> <a href="library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
      <!-- 
@@ -37,7 +36,7 @@ O serviço de identidade da Adobe Experience Cloud (serviço de ID) fornece uma 
    <td colname="col2"> <p> <b>Notas de versão</b> </p> <p><b>A versão 4.4</b> de 17 de julho 2019 inclui suporte para o <a href="reference/hashing-support.md" format="dita" scope="local">algoritmo de hash SHA-256</a> que permite a transmissão de IDs do cliente ou endereços de email e de IDs com hash.</p><p><b>A Versão 4.0 de</b> 12 de fevereiro de 2019 inclui o <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">serviço de Opt-in</a> usado para identificar se você pode colocar um cookie no dispositivo ou no navegador de um usuário ao visitar o site. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Consulte as <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR" format="https" scope="external">Notas de versão da Experience Cloud</a> para obter novos recursos e correções. </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Consulte a seção <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR" format="html" scope="external"> Notas de versão anteriores</a> para ver as seções mais antigas. </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Consulte a seção <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="html" scope="external"> Notas de versão anteriores</a> para ver as seções mais antigas. </li> 
      </ul> </p> <p> <b>Recursos da Experience Cloud</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/br/privacy.html" format="http" scope="external"> Centro de privacidade da Adobe</a> </li> 
