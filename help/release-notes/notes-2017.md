@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Notas de versão de 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '700'
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Data de lançamento: de fevereiro de 2017
    <td colname="col2"> <p>Essa propriedade configura a ID de contêiner usada pelo <span class="keyword">Audience Manager</span> para sincronizações de ID. Consulte <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Método API de serviço de ID, <span class="codeph">appendSupplementalDataIDTo (<span class="varname">URL</span>, <span class="varname">SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>Método API de serviço de ID, <span class="codeph">appendSupplementalDataIDTo(<span class="varname">URL</span>, <span class="varname">SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Este método público anexa a <span class="wintitle">ID de Dados Suplementares</span> (SDID) como um parâmetro de sequência de caracteres de consulta a um URL de redirecionamento. Consulte <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
