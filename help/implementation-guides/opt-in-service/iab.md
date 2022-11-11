@@ -1,15 +1,15 @@
 ---
-description: Conecte o CMP (Consent Management Platform) ao plug-in do Audience Manager de aceitação para a TCF (Transparency and Consent Framework, Estrutura de transparência e consentimento) da IAB.
+description: Conecte o Consent Management Platform (CMP) ao plug-in do Audience Manager de Opt-in para a TCF (Transparency and Consent Framework, Estrutura de transparência e consentimento) do IAB.
 title: Uso dos serviços de Opt-in com a Estrutura IAB
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Uso dos serviços de Opt-in com a Estrutura IAB {#using-opt-in-services-with-iab-framework}
+# Uso dos serviços de Opt-in com a Estrutura IAB{#using-opt-in-services-with-iab-framework}
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ Os clientes do Adobe Audience Manager que usam a [TCF do IAB](https://iabtechlab
 
 Para integrar o Opt-In ao IAB TCF, é necessário fazer o seguinte:
 
-1. Implementar uma CMP que seja compatível com IAB e seja [registrada como um fornecer de IAB](https://vendorlist.consensu.org/vendorlist.json) ou desenvolver uma CMP interna que implemente a especificação do IAB TCF e seja registrada como uma CMP com IAB TCF.
+1. Implemente uma CMP que seja compatível com IAB e seja registrada como um fornecer de IAB ou desenvolva uma CMP interna que implemente a especificação do IAB TCF e seja registrada como uma CMP com IAB TCF.
 1. Defina/carregue `__tcfapi` antes de carregar o Adobe JS.
 
 Para obter mais detalhes, leia os [documentos do Interactive Advertising Bureau](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md).
