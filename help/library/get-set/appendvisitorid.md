@@ -3,10 +3,10 @@ description: Essa função permite que você compartilhe a Experience Cloud ID d
 keywords: Serviço de ID
 title: appendVisitorIDsTo (rastreamento entre domínios)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -38,6 +38,10 @@ Para ajudar a resolver esse problema, implemente ` Visitor.appendVisitorIDsTo( *
 Consulte a amostra de código para obter detalhes.
 
 ## Anexar a amostra de código da ID de visitante {#section-62d55f7f986542b0b9238e483d50d7b0}
+
+>[!IMPORTANT]
+>
+>Para que os valores passados no URL via appendVisitorsIDsTo sejam coletados, a variável [ovwriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) deve ser definida como true.
 
 O exemplo a seguir pode ajudar você a começar a trabalhar com ` Visitor.appendVisitorIDsTo( *`URL`*)`. Quando implementado adequadamente, o código JavaScript pode ser semelhante ao seguinte exemplo.
 
