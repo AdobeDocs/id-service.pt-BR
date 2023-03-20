@@ -4,9 +4,9 @@ keywords: playstation, serviço de ID
 title: Cookies e o serviço de identidade da Experience Cloud
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ O serviço de ID depende dos cookies AMCV, AMCVS e demdex para funcionar correta
 * Torne os computadores instáveis ou cause problemas de desempenho.
 * Rastreie usuários em sites que não usam o serviço de ID.
 
-## cookie AMCV {#section-c55af54828dc4cce89f6118655d694c8}
+## Cookie AMCV {#section-c55af54828dc4cce89f6118655d694c8}
 
 Os seguintes atributos do cookie definido pelo serviço de ID.
 
@@ -86,7 +86,7 @@ O cookie AMCVS é definido no domínio próprio de um navegador. Isso significa 
 
 ![](assets/AMCVS-cookie.png)
 
-## Cookie demdex {#section-7ff7d96d6e4141b08a84a75a63d7814c}
+## Cookie Demdex {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
 A tabela a seguir lista e define alguns atributos importantes do cookie demdex.
 
@@ -113,9 +113,9 @@ A tabela a seguir lista e define alguns atributos importantes do cookie demdex.
  </tbody> 
 </table>
 
-Para obter informações sobre divulgações relacionadas ao Demdex, visite o [Divulgações de armazenamento de dispositivos Audience Manager](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+Para obter informações sobre divulgações relacionadas ao Demdex, consulte as [Divulgações de armazenamento de dispositivos do Audience Manager](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
 
-Para obter informações relacionadas, leia a documentação em [Compreender as chamadas para o domínio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR).
+Para obter informações relacionadas, leia a documentação [Como entender as chamadas para o domínio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR).
 
 ## Gerar a Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -133,7 +133,7 @@ A tabela a seguir descreve os sinalizadores para Cookies da Experience Cloud:
 | AMCV (JavaScript) | Não | Configurável | Unset (padrões para Lax) |
 | AMCVS (JavaScript) | Não | Configurável | Unset (padrões para Lax) |
 
-*Observação: Para obter informações sobre como configurar o cookie AMCV e AMCVS com atributos seguros, consulte o tópico para [secureCookie](../library/function-vars/securecookie.md).*
+*Observação: para obter informações sobre como configurar o cookie AMCV e AMCVS com atributos seguros, consulte o tópico do [secureCookie](../library/function-vars/securecookie.md).*
 
 ## Próximas etapas {#section-8db1727a63bc4ff68b495f270315d453}
 
