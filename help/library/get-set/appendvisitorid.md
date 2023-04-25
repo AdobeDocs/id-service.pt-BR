@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: appendVisitorIDsTo (rastreamento entre domínios)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Consulte a amostra de código para obter detalhes.
 
 ## Anexar a amostra de código da ID de visitante {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-O código de exemplo a seguir pode ajudar você a começar a usar o `appendVisitorIDsTo` função:
+O código de exemplo a seguir pode ajudar você a começar a usar a função `appendVisitorIDsTo`:
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
