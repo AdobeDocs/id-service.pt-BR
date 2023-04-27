@@ -2,14 +2,14 @@
 description: O serviço de Opt-in permite configurar os protocolos para o visitante a fim de determinar se você pode adicionar um cookie no dispositivo ou no navegador do usuário quando ele visitar o site.
 title: Serviço de Opt-in
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '507'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 96%
 
 ---
 
-# Serviço de Opt-in {#opt-in-service}
+# Serviço de Opt-in{#opt-in-service}
 
 O serviço de Opt-in permite configurar os protocolos para o visitante a fim de determinar se você pode adicionar um cookie no dispositivo ou no navegador do usuário quando ele visitar o site.
 
@@ -17,7 +17,7 @@ O serviço de Opt-in é uma extensão da Experience Cloud ID (ECID) desenvolvida
 
 Usando o serviço de Opt-in, você pode especificar se um visitante pode aderir às soluções da Adobe de uma só vez ou apresentar as soluções em sequência para fornecer permissões. Quando o processo de aprovação é concluído e registrado pelo cliente, você pode recuperar as aprovações do visitante da CMP para todas as soluções da Adobe.
 
-O serviço de aceitação é implementado e configurado facilmente usando o [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=pt-BR) com a [Extensão de aceitação](../../implementation-guides/opt-in-service/launch.md). Também pode ser implementado e configurado usando o [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+O serviço de Opt-in é implementado e configurado facilmente usando [Tags no Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) com o [Extensão de Opt-in](../../implementation-guides/opt-in-service/launch.md). Também pode ser implementado e configurado usando o [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Consulte a [Configuração do serviço de Opt-in](../../implementation-guides/opt-in-service/getting-started.md) para começar.
 

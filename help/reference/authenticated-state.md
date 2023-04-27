@@ -3,10 +3,10 @@ description: É possível associar outras IDs do cliente e um status de autentic
 keywords: Serviço de ID
 title: Estados de autenticação e IDs do cliente
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
    <td colname="col2"> <p>Esse estado pode ser usado para cenários como: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Ler um email (essa ação provavelmente significa que o leitor é o recipient pretendido, mas o email também pode ter sido encaminhado). </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Ao clicar de um email para uma landing page. </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Ao clicar de um email para uma página de destino. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -217,4 +217,4 @@ O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estado
 
 ## Aviso aos clientes do Analytics e do Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Caso esteja passando IDs declaradas para o [!DNL Audience Manager], o objeto `userid` precisa corresponder ao código de integração associado à fonte de dados. Para obter mais informações, consulte a seção [!UICONTROL Serviço de ID do visitante] na documentação [Configuração do código de regras de fusão](https://docs.adobe.com/help/pt-BR/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
+Caso esteja passando IDs declaradas para o [!DNL Audience Manager], o objeto `userid` precisa corresponder ao código de integração associado à fonte de dados. Para obter mais informações, consulte a seção [!UICONTROL Serviço de ID do visitante] na documentação [Configuração do código de regras de fusão](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code).

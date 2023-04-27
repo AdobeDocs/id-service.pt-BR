@@ -3,14 +3,14 @@ description: Estas instruções são para clientes do Analytics e do Audience Ma
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '1231'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '1232'
+ht-degree: 99%
 
 ---
 
-# Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager {#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
 Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 
@@ -23,7 +23,7 @@ Estas instruções são para clientes do Analytics e do Audience Manager que des
 
 ## Etapa 1: plano de encaminhamento do lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
 
-Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=pt-BR). Consulte a [documentação de encaminhamento do lado do servidor](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-tools/server-side-forwarding/ssf.html) para obter mais informações.
+Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=pt-BR). Consulte a [documentação de encaminhamento do lado do servidor](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html) para obter mais informações.
 
 A migração para o encaminhamento do lado do servidor requer planejamento e coordenação. Esse processo envolve alterações externas ao código do site e etapas internas que a Adobe deve tomar para provisionar sua conta. Na verdade, muitos desses procedimentos de migração precisam acontecer em paralelo e ser lançados juntos. Seu caminho de implementação deve seguir esta sequência de eventos:
 
@@ -43,7 +43,7 @@ O serviço de ID exige a `VisitorAPI.js` biblioteca de código. Para baixar a bi
 
 1. Descomprima o arquivo de código e abra o `VisitorAPI.js` arquivo.
 
-## Etapa 3: adicionar a função Visitor.getInstance ao código de serviço de ID {#section-9e30838b4d0741658a7a492153c49f27}
+## Etapa 3: adicionar a função Visitor.getInstance ao código do serviço de ID {#section-9e30838b4d0741658a7a492153c49f27}
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Etapa 4: adicionar a ID da organização da Experience Cloud à Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
+## Etapa 4: adicionar a ID da organização da Experience Cloud ao Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
 Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` pela Experience Cloud ID da organização. Caso não saiba a ID da organização, é possível encontrá-la na página de administração da Experience Cloud. A função editada pode ser parecida com o exemplo abaixo.
 
@@ -184,7 +184,7 @@ Faça a descontinuação do período de carência se o processo de ingestão de 
 
 Consulte também, [Referência da coluna de dados de sequência de cliques](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=pt-BR).
 
-## Etapa 9: testar e implantar o código de serviço de ID {#section-f857542bfc70496dbb9f318d6b3ae110}
+## Etapa 9: testar e implantar o código do serviço de ID {#section-f857542bfc70496dbb9f318d6b3ae110}
 
 É possível testar e implantar da seguinte maneira.
 

@@ -3,10 +3,10 @@ description: Essa função permite que você compartilhe a Experience Cloud ID d
 keywords: Serviço de ID
 title: appendVisitorIDsTo (rastreamento entre domínios)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 
@@ -42,6 +42,10 @@ Consulte a amostra de código para obter detalhes.
 ## Anexar a amostra de código da ID de visitante {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 O código de exemplo a seguir pode ajudar você a começar a usar a função `appendVisitorIDsTo`:
+
+>[!TIP]
+>
+>Esse código pode ser colocado no editor de Código personalizado que faz parte da extensão do Adobe Analytics ou na parte superior do [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

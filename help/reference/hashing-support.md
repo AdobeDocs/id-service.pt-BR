@@ -1,11 +1,11 @@
 ---
 description: O serviço de Experience Cloud ID (ECID) é compatível com o algoritmo de hash SHA -256 que permite transmitir IDs do cliente ou endereços de email e enviar IDs com hash. Este é um método opcional Javascript para enviar identificadores com hash à Experience Cloud. Você pode continuar a usar seus próprios métodos de hash antes de enviar IDs do cliente.
 keywords: Serviço de ID
-title: Suporte a hash SHA 256 para setCustomerIDs
+title: Suporte a hash SHA-256 para setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '606'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '602'
 ht-degree: 100%
 
 ---
@@ -68,9 +68,9 @@ Consulte a tabela abaixo para obter uma descrição do parâmetro `d_cid_ic` e d
 
 ## Adicionar uma ação na Adobe Experience Platform Launch {#add-action-launch}
 
-A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Platform Launch na [documentação do produto do Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=pt-BR).
+A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Platform Launch na [documentação do produto do Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR).
 
-Para adicionar uma ação no Launch, leia a [documentação de regras](https://docs.adobe.com/help/pt-BR/launch/using/reference/manage-resources/rules.html) no Adobe Launch e veja a captura de tela abaixo:
+Para adicionar uma ação no Launch, leia a [documentação de regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR) no Adobe Launch e veja a captura de tela abaixo:
 
 ![](/help/reference/assets/hashing-support.png)
 

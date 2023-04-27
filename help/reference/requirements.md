@@ -3,9 +3,9 @@ description: Consulte esta seção para verificar se você está usando as solu�
 keywords: Serviço de ID
 title: Requisitos do serviço de identidade da Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
-source-wordcount: '649'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Para usar o serviço de ID, a empresa deve estar habilitada para a [!DNL Experie
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Não tenho certeza</b> </p> </td> 
-   <td colname="col2"> <p> Se não souber ao certo o status da empresa na <span class="keyword">Experience Cloud</span>, pergunte para quem gerencia a conta da Adobe se os membros da empresa podem fazer logon em <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> com uma Adobe ID. Se sim, você está habilitado e um administrador poderá exibir sua ID da organização. Para descobrir a ID da organização, consulte a seção “Página do administrador” na <a href="https://docs.adobe.com/help/pt-BR/core-services/interface/experience-cloud.html" format="https" scope="external">Administração da Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p> Se não souber ao certo o status da empresa na <span class="keyword">Experience Cloud</span>, pergunte para quem gerencia a conta da Adobe se os membros da empresa podem fazer logon em <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> com uma Adobe ID. Se sim, você está habilitado e um administrador poderá exibir sua ID da organização. Para descobrir a ID da organização, consulte a seção “Página do administrador” na <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=pt-BR" format="https" scope="external">Administração da Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Não habilitada</b> </p> </td> 

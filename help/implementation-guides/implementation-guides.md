@@ -5,8 +5,8 @@ solution: Experience Cloud
 title: Guias de implementação
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
-workflow-type: ht
+source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Instruções e exemplos de código para implementações padrão e não padrão 
 
 ## Implementação padrão
 
-Uma implementação padrão usa o [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=pt-BR) para ajudar você a começar a usar o serviço de ID e integrá-lo a outras soluções da Experience Cloud. Recomendamos que você use o Experience Platform Launch ao implementar o serviço de ID.
+Uma implementação padrão usa o [Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) para ajudar você a começar a usar o serviço de ID e integrá-lo a outras soluções da Experience Cloud. Recomendamos que você use o Experience Platform Launch ao implementar o serviço de ID.
 
 ## Recursos de implementação
 
