@@ -4,36 +4,36 @@ keywords: Serviço de ID
 title: Notas de versão de 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Notas de versão do Experience Cloud - 2020 {#release-notes}
+# Notas de versão da Experience Cloud - 2020 {#release-notes}
 
-Lançamentos, atualizações ou mudanças futuras do serviço de identidade da Experience Cloud.
+Lançamentos, atualizações ou mudanças futuras do Serviço de identidade da Experience Cloud.
 
 ## Versão 5.1.1
 
-* Correção de patch para configuração do cookie AMCV com `SameSite=None` quando VisitorJS é carregado em um iFrame.
+* Patch de correção para a configuração do cookie AMCV com `SameSite=None` quando VisitorJS é carregado em um iFrame.
 
 ## Versão 5.1.0
 
-* Adição de `sameSiteCookie` configuração para especificar o `SameSite` para o cookie AMCV. Essa configuração aceita os seguintes valores para a variável `SameSite` atributo:
+* Adicionar configuração de `sameSiteCookie` para especificar o atributo `SameSite` do cookie AMCV. Essa configuração aceita os seguintes valores para o atributo `SameSite`:
    * `Strict`
    * `Lax`
    * `None`
 
-Para obter mais informações sobre esses valores de atributos, visite [web.dev](https://web.dev/samesite-cookies-explained/) e [Atualizações do SameSite por projetos Chromium](https://www.chromium.org/updates/same-site/).
+Para obter mais informações sobre esses valores de atributos, visite [web.dev](https://web.dev/samesite-cookies-explained/) e [Atualizações do SameSite por The Chromium Projects](https://www.chromium.org/updates/same-site/).
 
 ## Versão 5.0.1
 
-* Correção de patch para incluir `d_cf` sinalizador quando uma nova cadeia de consentimento IAB é enviada para as bordas da Coleta de dados do Adobe.
+* Patch de correção para incluir o sinalizador `d_cf` quando uma nova string de consentimento IAB é enviada para as bordas da Coleção de dados da Adobe.
 
 ## Versão 5.0.0
 
-* Versão 5.0.0 do visitante com suporte para `IAB 2.0`.
+* Versão 5.0.0 do Visitor com suporte para `IAB 2.0`.
 
 ## Versão 4.6
 
