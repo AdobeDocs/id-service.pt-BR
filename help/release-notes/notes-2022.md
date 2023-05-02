@@ -2,27 +2,28 @@
 description: Lançamentos, atualizações ou mudanças futuras do serviço de identidade da Experience Cloud.
 keywords: Serviço de ID
 title: Notas de versão de 2022
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+exl-id: 1550f43f-81be-447e-904c-b408785965fe
+source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
-# Notas de versão do serviço de identidade do Experience Cloud - 2022
+# Notas de versão do Serviço de identidade da Experience Cloud - 2022
 
-Lançamentos, atualizações ou mudanças futuras do serviço de identidade da Experience Cloud.
+Lançamentos, atualizações ou mudanças futuras do Serviço de identidade da Experience Cloud.
 
-## Visitante 5.5.0
+## Visitor 5.5.0
 
-As atualizações a seguir foram incluídas na versão 5.5.0 do Visitante:
+As atualizações a seguir foram incluídas na versão 5.5.0 do Visitor:
 
-* Correção de patch para obter `sameSite` e `secure` atributos para cookie de privacidade.
-* Correção de correção para obter a ECID quando um iFrame com o mesmo domínio que o domínio pai é carregado.
+* Patch de correção para obter os atributos `sameSite` e `secure` para cookies de privacidade.
+* Patch de correção para obter a ECID quando um iFrame com o mesmo domínio que o domínio principal é carregado.
 
-## Visitante 5.4.0
+## Visitor 5.4.0
 
-As atualizações a seguir foram incluídas na versão 5.4.0 do Visitante:
+As atualizações a seguir foram incluídas na versão 5.4.0 do Visitor:
 
-* Suporte para a capacidade de configurar a duração de `s_ecid` cookie usando `cookieLifetime` configuração.
-* Correção de patch para o navegador Firefox quando uma página é carregada em um iFrame secundário.
+* Suporte para a capacidade de configurar a duração de cookies `s_ecid` usando a configuração de `cookieLifetime`.
+* Patch de correção para o problema do navegador Firefox quando uma página é carregada em um iFrame secundário.
