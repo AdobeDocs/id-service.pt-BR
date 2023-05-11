@@ -1,16 +1,16 @@
 ---
 description: O serviço de Experience Cloud ID (ECID) é compatível com o algoritmo de hash SHA -256 que permite transmitir IDs do cliente ou endereços de email e enviar IDs com hash. Este é um método opcional Javascript para enviar identificadores com hash à Experience Cloud. Você pode continuar a usar seus próprios métodos de hash antes de enviar IDs do cliente.
 keywords: Serviço de ID
-title: Suporte a hash SHA-256 para setCustomerIDs
+title: Suporte a hash SHA256 para setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
 ht-degree: 100%
 
 ---
 
-# Suporte a hash SHA 256 para `setCustomerIDs` {#hashing-support}
+# Suporte a hash SHA256 para `setCustomerIDs` {#hashing-support}
 
 O serviço de Experience Cloud ID (ECID) é compatível com o algoritmo de hash SHA -256 que permite transmitir IDs do cliente ou endereços de email e enviar IDs com hash. Este é um método opcional Javascript para enviar identificadores com hash à Experience Cloud. Você pode continuar a usar seus próprios métodos de hash antes de enviar IDs do cliente.
 Há duas maneiras de implementar o suporte de hash com setCustomerIDs, conforme descrito nas seções abaixo:
@@ -66,9 +66,9 @@ Consulte a tabela abaixo para obter uma descrição do parâmetro `d_cid_ic` e d
 |------------|----------|
 | `d_cid_ic` | Transmite o Código de integração, o identificador de usuário único (DPUUID) e uma ID de estado autenticada para o serviço de ID. Separe o Código de integração e a DPUUID com o caractere de controle não imprimível, %01</code>: <br> Exemplo: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Estado de autenticação</b> <br> Essa é uma ID opcional no parâmetro d_cid_ic. Expressa como um inteiro, identifica os usuários de acordo com o status de autenticação como mostrado abaixo: <br> <ul><li>0 (Desconhecido ou nunca autenticado)</li><li>1 (Atualmente autenticado para esta instância/página/contexto de aplicativo)</li><li>2 (Logout realizado)</li></ul> <br> Exemplos: <br> <ul><li>Desconhecido: ...d_cid=123%01456%01<b>0</b></li><li>Autenticado: ...d_cid=123%01456%01<b>1</b></li><li>Logout: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
-## Adicionar uma ação na Adobe Experience Platform Launch {#add-action-launch}
+## Adicionar uma ação no Adobe Experience Platform Launch {#add-action-launch}
 
-A Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Platform Launch na [documentação do produto do Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR).
+O Experience Platform Launch reúne os recursos de gerenciamento de tags de última geração da Adobe. Leia mais sobre o Platform Launch na [documentação do produto do Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR).
 
 Para adicionar uma ação no Launch, leia a [documentação de regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR) no Adobe Launch e veja a captura de tela abaixo:
 
