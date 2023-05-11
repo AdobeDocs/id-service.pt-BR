@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: appendVisitorIDsTo (rastreamento entre domínios)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ O código de exemplo a seguir pode ajudar você a começar a usar a função `ap
 
 >[!TIP]
 >
->Esse código pode ser colocado no editor de Código personalizado que faz parte da extensão do Adobe Analytics ou na parte superior do [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR).
+>Esse código pode ser colocado no editor de código personalizado que faz parte da extensão do Adobe Analytics ou na parte superior do [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
