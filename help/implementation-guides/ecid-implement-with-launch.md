@@ -3,19 +3,19 @@ description: A Adobe Experience Platform Launch é a ferramenta principal usada 
 title: Implementar com o Launch
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
 source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # Implementar com as tags da Experience Platform {#implement-with-launch}
 
-As tags no Adobe Experience Platform são a principal ferramenta usada para configurar, implantar e integrar o serviço de identidade do Experience Cloud às outras soluções de Experience Cloud.
+As tags da Adobe Experience Platform são a principal ferramenta usada para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
 
 ## Sobre as tags da Experience Platform {#section-611711602854464ea351a4af80a8dafe}
 
-[Tags no Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) O é a próxima geração do recurso de gerenciamento de tags do Adobe e está integrado à Adobe Experience Cloud. As tags da Platform permitem que o cliente:
+As [tags da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) são a próxima geração do recurso de gerenciamento de tags da Adobe que está integrado à Adobe Experience Cloud. As tags da Platform permitem que o cliente:
 
 * Implante produtos da web do lado do cliente usando integrações chamadas de _extensões_.
 * Capture, defina, gerencie e compartilhe dados de maneira consistente entre os produtos de marketing e publicidade de outros fornecedores e da Adobe.
