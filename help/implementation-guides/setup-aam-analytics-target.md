@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1499'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Estas instruções são para clientes do Analytics, do Audience Manager e do Tar
 
 ## Etapa 1: plano de encaminhamento do lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
 
-Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=pt-BR). Consulte a [documentação de encaminhamento do lado do servidor](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html) para obter mais informações.
+Além das etapas descritas, os clientes que usam o [!DNL Analytics] e o [!DNL Audience Manager] devem migrar para o encaminhamento do lado do servidor. O encaminhamento do lado do servidor permite remover o DIL (código de coleta de dados do Audience Manager) e substituí-lo pelo [Módulo de gerenciamento de público-alvo](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=pt-BR). Consulte a [documentação de encaminhamento do lado do servidor](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=pt-BR) para obter mais informações.
 
 A migração para o encaminhamento do lado do servidor requer planejamento e coordenação. Esse processo envolve alterações externas ao código do site e etapas internas que a Adobe deve tomar para provisionar sua conta. Na verdade, muitos desses procedimentos de migração precisam acontecer em paralelo e ser lançados juntos. Seu caminho de implementação deve seguir esta sequência de eventos:
 
@@ -158,7 +158,7 @@ Insira o ` [!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página
 * Coloque-o no início da `<head>` seção para que apareça antes de outras tags de solução.
 * É necessário executar antes do AppMeasurement e do código de outras soluções da [!DNL Experience Cloud].
 
-## Etapa 8: (opcional) configurar um período de carência {#section-aceacdb7d5794f25ac6ff46f82e148e1}
+## Etapa 8: configurar um período de carência (opcional) {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
 Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](../reference/analytics-reference/grace-period.md) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
 
