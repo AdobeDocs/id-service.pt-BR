@@ -3,15 +3,15 @@ description: Implemente o serviço de Opt-in como o único ponto de referência 
 title: Configuração do serviço de Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Configuração do serviço de Opt-in{#setting-up-opt-in-service}
 
-Implemente o serviço de Opt-in como o único ponto de referência usado pelas soluções da Experience Cloud (referido como Categorias no Opt-in) para determinar se os cookies devem ser criados no dispositivo de um visitante.
+Implemente o serviço de aceitação como o único ponto de referência usado pelas soluções da Experience Cloud (chamado de Categorias no serviço de aceitação) para determinar se os cookies devem ou não ser criados no dispositivo de um visitante.
 
 O serviço de Opt-in é uma biblioteca JavaScript fornecida com a Experience Cloud ID (ECID) e existe no Visitor JS no `adobe` objeto global como o `adobe.optIn` objeto. O serviço de Opt-in instalado permite especificar se um visitante pode aderir às soluções da Adobe de uma só vez ou apresentar as soluções em sequência para fornecer permissões para cada uma delas. O recurso de gerenciamento de consentimento do serviço de Opt-in permite implementar com várias configurações para suas necessidades de privacidade específicas.
 
@@ -41,9 +41,9 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
 
 1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado de pré-consentimento.
 
-Se estiver usando [Tags no Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR), aproveite o [Extensão de Opt-in](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de Opt-in.
+Se estiver usando as [tags da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR), utilize a [extensão de aceitação](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de aceitação.
 
-## Categorias de Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
+## Categorias de aceitação {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
 As preferências de Opt-in de um visitante são relativas a uma solução da Adobe Experience Cloud, sendo que cada solução é representada como uma categoria. As categorias são fornecidas pelo `adobe.OptInCategories` objeto, no qual, por exemplo, o componente ECID é referido como `adobe.OptInCategories`. `ECID`. Esta é a definição de `adobe.OptInCategories`:
 
@@ -95,7 +95,7 @@ A qualquer momento durante a experiência de um visitante no site, ele pode defi
 <p> *** <b>sample code block </b>*** </p>
 -->
 
-## Fluxos de trabalho de Opt-in {#section-70cd243dec834c8ea096488640ae20a5}
+## Fluxos de trabalho de aceitação {#section-70cd243dec834c8ea096488640ae20a5}
 
 O serviço de Opt-in é compatível com um fluxo de trabalho no qual as permissões podem ser coletadas por mais de um ciclo de solicitação e as preferências são fornecidas uma a uma. Usando as seguintes funções e fornecendo *true* para `shouldWaitForComplete`, a solução poderá coletar o consentimento para uma ou para um subconjunto do total de categorias e, em seguida, coletar o consentimento para a próxima categoria ou subconjunto de categorias. Começando na primeira chamada, a propriedade `adobe.optIn.status` estará *pendente* até que `adobe.optIn.complete()` seja chamado no fim do fluxo. Uma vez coletado, o status é definido para *complete*.
 
@@ -107,7 +107,7 @@ adobe.optIn.complete();
 
 Consulte as [configurações do fluxo de trabalho](../../implementation-guides/opt-in-service/api.md#section-2c5adfa5459c4e72b96d2693123a53c2).
 
-## Inspecionar as permissões de Opt-in do visitante {#section-f136a9024e054d84881e6667fb7c94eb}
+## Inspecionar as permissões de aceitação do visitante {#section-f136a9024e054d84881e6667fb7c94eb}
 
 Conforme os visitantes fazem alterações em suas permissões, será necessário obter informações sobre as permissões resultantes para sincronizar o armazenamento de consentimentos com as alterações feitas no serviço de Opt-in. Inspecione as preferências do visitante usando as [funções de permissões](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), por exemplo:
 
@@ -135,7 +135,7 @@ optIn.fetchPermissions(callback, true);
 
 Consulte a [documentação da API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) para obter mais informações sobre essas e outras funções, propriedades ou configurações mencionadas neste documento.
 
-## Armazenando as preferências do visitante {#section-ef2884ae67e34879bf7c7c3372706c9f}
+## Armazenar as preferências do visitante {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 O serviço de Opt-in fornece uma opção para armazenar as preferências de consentimento adequadas a um ambiente de desenvolvimento ou a um ambiente em que não seja viável usar um CRM. Especificar a propriedade de configuração `isOptInStorageEnabled` como *true* aciona o serviço de Opt-in para criar um cookie no sistema do visitante no seu domínio.
 
