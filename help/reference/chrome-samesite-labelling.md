@@ -3,13 +3,13 @@ title: Alterações na rotulagem do Google Chrome SameSite
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 100%
 
 ---
 
-# Alterações na rotulagem do Google Chrome SameSite {#google-chrome-samesite-labelling-changes}
+# Alterações na rotulagem do SameSite no Google Chrome {#google-chrome-samesite-labelling-changes}
 
 O atributo SameSite informa aos navegadores quando e como acionar cookies em cenários originais e de terceiros. O atributo SameSite pode ter um de três valores: `strict`, `lax`ou `none`. Chrome, Firefox, Edge, Safari e Opera são compatíveis com `strict` e com `lax` desde novembro de 2017, enquanto `none` foi introduzido em 2018. No entanto, alguns navegadores mais antigos não são compatíveis com essa configuração.
 
@@ -23,7 +23,7 @@ Visite o [documento padrão de cookie](https://tools.ietf.org/html/draft-ietf-ht
 
 | Valor de atributo do SameSite | Descrições |
 | ------ | ------------ |
-| `strict` | Os cookies com essa configuração só são enviados quando a página de referência e a página de aterrissagem fazem parte do mesmo domínio que o cookie. |
+| `strict` | Os cookies com essa configuração só são enviados quando a página de referência e a página de destino fazem parte do mesmo domínio que o cookie. |
 | `lax` | Os cookies com essa configuração só são enviados quando o domínio exibido no URL do navegador corresponde ao domínio do cookie. Este é o novo padrão para cookies no Chrome. |
 | `none` | Os cookies com essa configuração estão disponíveis para acesso externo ou de terceiros, como “entre sites”. Antes dessa alteração, `none` era a configuração padrão do SameSite para cookies, ou seja, usar essa configuração faz com que um cookie se comporte de forma mais semelhante à forma tradicional. No entanto, o Google exige que qualquer cookie com essa configuração agora especifique o sinalizador seguro, significando que o cookie só será criado e enviado com solicitações em HTTPS. Todos os cookies entre sites sem o sinalizador seguro serão rejeitados pelo Google. |
 

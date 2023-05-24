@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Conteúdo:
  <li> <a href="../../library/function-vars/coopsafe.md#section-9281c39c8b6249d7864100b5cbca7dc6" format="dita" scope="local"> APIs pós-instanciamento </a> </li> 
 </ul>
 
-## Requisitos {#section-4883eda6beb8437182bcc82bb58fae41}
+## Exigências {#section-4883eda6beb8437182bcc82bb58fae41}
 
 Para usar o `isCoopSafe` é necessário:
 

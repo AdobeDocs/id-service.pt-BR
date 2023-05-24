@@ -3,7 +3,7 @@ description: O serviço de Opt-in permite configurar os protocolos para o visita
 title: Serviço de Opt-in
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 

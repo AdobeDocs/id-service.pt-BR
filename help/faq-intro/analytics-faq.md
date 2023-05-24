@@ -4,13 +4,13 @@ keywords: Serviço de identidade da Experience Cloud
 title: Perguntas frequentes do Analytics e do serviço de identidade
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 100%
 
 ---
 
-# Perguntas frequentes do Analytics e do serviço de identidade {#analytics-and-id-service-faqs}
+# Perguntas frequentes do Analytics e do serviço de identidade{#analytics-and-id-service-faqs}
 
 Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Analytics com o serviço de identidade.
 
@@ -56,7 +56,7 @@ Consulte [Período de carência do serviço de identidade](../reference/analytic
 
 A RDC adiciona benefícios de desempenho globais e é necessária para garantir que sua implementação esteja pronta para recursos futuros que usam a rede global de notas de borda da Adobe. Consulte [Requisitos do Analytics: Coleta de dados regionais (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
 
-## Relatório {#section-123cd55a32e54a45a23beb140becfa8f}
+## Relatórios {#section-123cd55a32e54a45a23beb140becfa8f}
 
 **Quais são algumas das causas possíveis das discrepâncias ao usar o Analytics com o serviço de identidade?**
 

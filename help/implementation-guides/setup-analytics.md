@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Par
 
 1. Descomprima o arquivo de código e abra o `VisitorAPI.js` arquivo.
 
-## Etapa 2: Adicionar a função Visitor.getInstance ao código do serviço de ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## Etapa 2. Adicionar a função Visitor.getInstance ao código do serviço de ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -156,7 +156,7 @@ Insira o `VisitorAPI.js` arquivo nas tags `<head>` de cada página. Ao anexar o 
 
 Transfira esse código para a produção após os testes e a verificação.
 
-## Etapa 7: (opcional) configurar um período de carência {#section-7bbb2f72c26e4abeb8881e18366797a3}
+## Etapa 7: configurar um período de carência (opcional) {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
 Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](../reference/analytics-reference/grace-period.md) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
 

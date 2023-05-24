@@ -1,6 +1,6 @@
 ---
 source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -58,5 +58,5 @@ Todos os artigos deste repositório usam GitHub Flavored Markdown. Se você não
 
 No repositório público, os rótulos automatizados são atribuídos a solicitações de pull para nos ajudar a gerenciar o fluxo de trabalho da solicitação de pull e saber o que está acontecendo com sua solicitação de pull:
 
-* **Alteração enviada para o autor**: o autor foi notificado sobre a solicitação de pull pendente.
-* **Pronto para mesclar**: pronto para ser revisado pela equipe de revisão da solicitação de pull.
+* **Change sent to author**: o autor foi notificado sobre a solicitação de pull pendente.
+* **ready-to-merge**: pronto para ser revisado pela equipe de revisão da solicitação de pull.

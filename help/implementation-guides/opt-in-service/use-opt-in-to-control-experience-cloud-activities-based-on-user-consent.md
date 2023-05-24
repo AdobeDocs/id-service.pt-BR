@@ -3,7 +3,7 @@ title: Usar o Opt-in para controlar atividades da Experience Cloud com base no c
 description: O Adobe Opt-in Object é uma extensão do serviço de identidade da Adobe Experience Platform, projetada para ajudá-lo a controlar se e quais soluções da Experience Cloud podem criar cookies em páginas da Web ou iniciar beacons, com base no consentimento do usuário final.
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 

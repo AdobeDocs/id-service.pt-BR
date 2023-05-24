@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Notas de versão de 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Lançamentos, atualizações ou alterações de recursos do serviço de identida
    <td colname="col2"> <p>Durante uma verificação de segurança interna, foi descoberto que, ao usar a biblioteca DTM, os cookies usados para o gerenciamento da sessão não especificavam atributos adequados. Isso pode resultar no compartilhamento indevido das informações do cookie. Para resolver esse problema, introduzimos uma configuração que permite ao Cliente definir o cookie AMCV como seguro. Consulte secureCookie. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>O código de integração e a id devem ser números ou sequências de caracteres não vazias </p> </td> 
+   <td colname="col1"> <p>O código de integração e a id devem ser números ou strings não vazias </p> </td> 
    <td colname="col2"> <p>Correção de um erro que ocorria ao validar `setCustomerIDs` quando os dados continham uma integração `code` ou `id` que não era um número nem uma sequência de caracteres não vazia. </p> </td> 
   </tr> 
   <tr> 

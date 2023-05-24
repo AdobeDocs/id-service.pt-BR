@@ -4,13 +4,13 @@ keywords: Serviço de ID
 title: Definir Analytics e Experience Cloud IDs
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 100%
 
 ---
 
-# Definir Analytics e Experience Cloud IDs {#setting-analytics-and-experience-cloud-ids}
+# Definir Analytics e Experience Cloud IDs{#setting-analytics-and-experience-cloud-ids}
 
 O serviço de identidade da Experience Cloud substitui os métodos de ID de visitante herdados do Analytics.
 

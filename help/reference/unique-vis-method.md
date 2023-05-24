@@ -3,8 +3,8 @@ title: Identificação dos visitantes únicos
 description: Documentação para Adobe ECID (serviço de ID)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,6 @@ O método para identificar visitantes únicos entre vários contextos inclui uma
 |  5  |  [Cabeçalho do assinante do HTTP Mobile](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR)  |  2  |  O dispositivo é reconhecido como um dispositivo móvel.  |
 |  6  |  [Endereço IP, Agente do usuário, Endereço IP de gateway](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR)  |  1  |  O navegador do visitante não aceita cookies. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Para obter informações sobre como os visitantes únicos são relatados, consulte [Visitantes únicos no Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR).

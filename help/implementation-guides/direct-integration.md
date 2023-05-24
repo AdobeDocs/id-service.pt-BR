@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Integração direta com o serviço de identidade da Experience Cloud
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 

@@ -4,13 +4,13 @@ keywords: Serviço de ID
 title: Testar e verificar o serviço de identidade da Experience Cloud
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
 
 ---
 
-# Testar e verificar o serviço de identidade da Experience Cloud {#test-and-verify-the-experience-cloud-id-service}
+# Testar e verificar o serviço de identidade da Experience Cloud{#test-and-verify-the-experience-cloud-id-service}
 
 Essas instruções, ferramentas e procedimentos ajudam você a determinar se o serviço de ID está funcionando adequadamente. Os testes se aplicam ao serviço de ID em geral, bem como para combinações diferentes do serviço de ID e soluções da Experience Cloud.
 

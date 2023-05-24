@@ -4,17 +4,17 @@ keywords: Serviço de ID
 title: Perguntas frequentes do serviço de ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 100%
 
 ---
 
-# Perguntas frequentes do serviço de ID {#id-service-faqs}
+# Perguntas frequentes do serviço de ID{#id-service-faqs}
 
 Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do serviço de ID.
 
-## Recurso {#section-659e89f8b9a74cb8afff35587dc96836}
+## Funcionalidade {#section-659e89f8b9a74cb8afff35587dc96836}
 
 **Qual tipo de funcionalidade ou capacidade o serviço de ID fornece?**
 

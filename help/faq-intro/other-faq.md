@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Perguntas frequentes de outras soluções da Experience Cloud
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 100%
 

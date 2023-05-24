@@ -4,13 +4,13 @@ keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
 
 ---
 
-# Implementar o serviço de identidade da Experience Cloud para Target {#implement-the-experience-cloud-id-service-for-target}
+# Implementar o serviço de identidade da Experience Cloud para Target{#implement-the-experience-cloud-id-service-for-target}
 
 Estas instruções são para clientes do Target que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
 

@@ -4,13 +4,13 @@ keywords: Serviço de ID
 title: Métodos de callTimeOut
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 100%
 
 ---
 
-# Métodos de callTimeOut {#calltimeout-methods}
+# Métodos de callTimeOut{#calltimeout-methods}
 
 Chame essas funções do serviço de ID para determinar o status do tempo limite do serviço de identidade da Experience Cloud, do Analytics ou de uma solicitação do Audience Manager. Disponível na versão 1.7.0 ou posterior de VisitorAPI.js.
 

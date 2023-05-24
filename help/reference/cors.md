@@ -4,9 +4,9 @@ keywords: Serviço de ID
 title: Suporte ao CORS no serviço de identidade da Experience Cloud
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Vamos analisar como esses cabeçalhos funcionam. Neste exemplo, considere uma em
    <td colname="col1"> <p> <b>Solicitação</b> </p> </td> 
    <td colname="col2"> <p>Enquanto a página da empresa de finanças é carregada, o navegador faz uma solicitação para <span class="codeph">dpm.demdex.net</span>. Essa é uma chamada para o domínio dos servidores de coleção de dados (DCS) usados pelo serviço de ID. Essa solicitação entre domínios inclui o cabeçalho: </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin: https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> Origem:https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
