@@ -3,10 +3,10 @@ description: Consulte esta seção para verificar se você está usando as solu�
 keywords: Serviço de ID
 title: Requisitos do serviço de identidade da Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 100%
+source-wordcount: '653'
+ht-degree: 96%
 
 ---
 
@@ -105,11 +105,11 @@ As seções a seguir listam as versões mínimas do código necessárias para us
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Consulte <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html?lang=pt-BR" format="https" scope="external">código mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Consulte <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=en" format="https" scope="external">código mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Consulte <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html?lang=pt-BR" format="https" scope="external">Implementação de at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Consulte <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=en" format="https" scope="external">Implementação de at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
