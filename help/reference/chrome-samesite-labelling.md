@@ -2,10 +2,10 @@
 title: Alterações na rotulagem do Google Chrome SameSite
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 100%
+source-wordcount: '1064'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Visite o [documento padrão de cookie](https://tools.ietf.org/html/draft-ietf-ht
 | ------ | ------------ |
 | `strict` | Os cookies com essa configuração só são enviados quando a página de referência e a página de destino fazem parte do mesmo domínio que o cookie. |
 | `lax` | Os cookies com essa configuração só são enviados quando o domínio exibido no URL do navegador corresponde ao domínio do cookie. Este é o novo padrão para cookies no Chrome. |
-| `none` | Os cookies com essa configuração estão disponíveis para acesso externo ou de terceiros, como “entre sites”. Antes dessa alteração, `none` era a configuração padrão do SameSite para cookies, ou seja, usar essa configuração faz com que um cookie se comporte de forma mais semelhante à forma tradicional. No entanto, o Google exige que qualquer cookie com essa configuração agora especifique o sinalizador seguro, significando que o cookie só será criado e enviado com solicitações em HTTPS. Todos os cookies entre sites sem o sinalizador seguro serão rejeitados pelo Google. |
+| `none` | Os cookies com essa configuração estão disponíveis para acesso externo ou de terceiros, como &quot;entre sites&quot;. Antes dessa alteração, `none` era a configuração padrão do SameSite para cookies, ou seja, usar essa configuração faz com que um cookie se comporte de forma mais semelhante à forma tradicional. No entanto, o Google exige que qualquer cookie com essa configuração agora especifique o sinalizador seguro, significando que o cookie só será criado e enviado com solicitações em HTTPS. Todos os cookies entre sites sem o sinalizador seguro serão rejeitados pelo Google. |
 
 ## O que você precisa saber como cliente da Adobe Experience Cloud
 
@@ -51,7 +51,7 @@ A maioria dos produtos da Adobe já tem os sinalizadores apropriados atribuídos
 
 **Possível diminuição da correspondência de cookies para parceiros de destino e de marketplace (somente Audience Manager)**
 
-Embora a Adobe tenha controle sobre a atualização de seus cookies, não pode forçar os parceiros a fazer as alterações necessárias. A correspondência de cookies pode diminuir para clientes do Audience Manager que usam parceiros de destino ou parceiros de marketplace que não fizeram essas atualizações.
+Embora o Adobe tenha controle sobre a atualização de seus cookies, o Adobe não pode forçar os parceiros a fazer as alterações necessárias. A correspondência de cookies pode diminuir para clientes do Audience Manager que usam parceiros de destino ou parceiros de marketplace que não fizeram essas atualizações.
 
 **Cookies de terceiros compatíveis com o Analytics (somente cookies `s_vi` do Analytics)**
 
@@ -117,6 +117,6 @@ Somente os cookies padrão comuns de visitante estão listados na tabela abaixo.
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Primário do lado do cliente | Sem valor adicionado *O padrão do Chrome é a configuração `lax` | Configurável para páginas externas |
 
-> !![IMPORTANT] Cookies de terceiros da Adobe são definidos no lado do servidor
+>  Cookies de terceiros da Adobe são definidos no lado do servidor.
 
-Para mais informações, consulte o documento sobre as [Políticas do SameSite do Google Chrome no Target](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html?lang=pt-BR).
+Para mais informações, consulte o documento sobre as [Políticas do SameSite do Google Chrome no Target](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).
