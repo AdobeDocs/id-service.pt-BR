@@ -1,25 +1,24 @@
 ---
-description: Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade do Experience Cloud e não usam as tags de coleção de dados. No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 91%
 
 ---
 
 # Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade do Experience Cloud e não usam [Tags de coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
 >* [Leia as exigências](../reference/requirements.md) antes de começar.
 >* Este procedimento requer o AppMeasurement. Os clientes que usam s_code não podem concluir esse procedimento.
 >* Configure e teste esse código em um ambiente de desenvolvimento antes de implantá-lo na produção.
-
 
 ## Etapa 1: plano de encaminhamento do lado do servidor {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ O serviço de ID exige a `VisitorAPI.js` biblioteca de código. Para baixar a bi
 >
 >* As versões anteriores da API de serviço de ID colocavam essa função em um local diferente e exigiam uma sintaxe distinta. Se você estiver migrando de uma versão anterior à [versão 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), observe a nova disposição e sintaxe documentadas aqui.
 >* O código em ALL CAPS é um espaço reservado para valores reais. Substitua esse texto pela ID da organização, URL do servidor de rastreamento ou outro valor nomeado.
-
 
 **Parte 1: Copie a função Visitor.getInstance abaixo**
 
