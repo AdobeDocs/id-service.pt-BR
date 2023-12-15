@@ -1,24 +1,23 @@
 ---
-description: Estas instruções são para clientes do Target que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Target que desejam usar o Serviço de identidade do Experience Cloud e não usam as tags de Coleção de dados. No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 73%
 
 ---
 
 # Implementar o serviço de identidade da Experience Cloud para Target{#implement-the-experience-cloud-id-service-for-target}
 
-Estas instruções são para clientes do Target que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são para clientes do Target que desejam usar o serviço de identidade do Experience Cloud e não usam [Tags de coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
 >* [Leia as exigências](../reference/requirements.md) antes de começar.
 >* Configure e teste esse código em um ambiente de desenvolvimento antes de implantá-lo na produção.
-
 
 ## Etapa 1: obter o código do serviço de ID {#section-b32ba0548aa546a79dd38be59832a53e}
 

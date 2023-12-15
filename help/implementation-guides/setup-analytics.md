@@ -1,24 +1,23 @@
 ---
-description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade do Experience Cloud e não usam as tags de coleção de dados. No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 99%
+source-wordcount: '1007'
+ht-degree: 88%
 
 ---
 
 # Implementar o serviço de identidade da Experience Cloud para Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não usam o Dynamic Tag Management (DTM). No entanto, recomendamos que você use o DTM ao implementar o serviço de ID. O DTM simplifica o fluxo de trabalho de implementação e garante automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade Experience Cloud e não usam [Tags de coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
 >* [Leia as exigências](../reference/requirements.md) antes de começar.
 >* Configure e teste esse código em um ambiente de desenvolvimento antes de implantá-lo na produção.
-
 
 Siga estas etapas para implementar o serviço de ID do Adobe Analytics:
 
@@ -42,13 +41,12 @@ O [!UICONTROL serviço de ID] exige a biblioteca de código `VisitorAPI.js`. Par
 
 1. Descomprima o arquivo de código e abra o `VisitorAPI.js` arquivo.
 
-## Etapa 2. Adicionar a função Visitor.getInstance ao código do serviço de ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## Etapa 2: Adicionar a função Visitor.getInstance ao código do serviço de ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
 >* As versões anteriores da API de serviço de ID colocavam essa função em um local diferente e exigiam uma sintaxe distinta. Se você estiver migrando de uma versão anterior à [versão 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), observe a nova disposição e sintaxe documentadas aqui.
 >* O código em ALL CAPS é um espaço reservado para valores reais. Substitua esse texto pela ID da organização, URL do servidor de rastreamento ou outro valor nomeado.
-
 
 **Parte 1: Copie a função Visitor.getInstance abaixo**
 
@@ -126,7 +124,6 @@ Para determinar quais variáveis do servidor de rastreamento usar:
 >
 >* [!DNL Experience Cloud] URL do servidor da = URL do servidor de rastreamento
 >* [!DNL Experience Cloud] URL seguro do servidor da = URL seguro do servidor de rastreamento
-
 
 Caso não tenha certeza de como encontrar o servidor de rastreamento, consulte [Perguntas frequentes](../faq-intro/faq.md) e [Preencher corretamente as variáveis trackingServer e trackingServerSecure](https://helpx.adobe.com/br/analytics/kb/determining-data-center.html#).
 
