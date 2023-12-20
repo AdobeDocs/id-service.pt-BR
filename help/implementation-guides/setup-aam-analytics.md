@@ -1,18 +1,18 @@
 ---
-description: Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade do Experience Cloud e não usam as tags de coleção de dados. No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o Serviço de identidade da Experience Cloud e não usam tags de coleção de dados. No entanto, recomendamos fortemente o uso de tags ao implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e automaticamente garante o posicionamento e sequenciamento corretos do código.
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o serviço de identidade do Experience Cloud e não usam [Tags de coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são para clientes do Analytics e do Audience Manager que desejam usar o Experience Cloud Identity Service e que não utilizam [tags de coleta de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos fortemente o uso de tags ao implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e automaticamente garante o posicionamento e sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
