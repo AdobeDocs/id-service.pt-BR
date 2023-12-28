@@ -1,18 +1,18 @@
 ---
-description: Estas instruções são para clientes do Target que desejam usar o Serviço de identidade do Experience Cloud e não usam as tags de Coleção de dados. No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Target que desejam usar o serviço de identidade da Experience Cloud e não uitilizam as tags da coleção de dados. No entanto, recomendamos fortemente o uso de tags ao implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e automaticamente garante o posicionamento e sequenciamento corretos do código.
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Implementar o serviço de identidade da Experience Cloud para Target{#implement-the-experience-cloud-id-service-for-target}
 
-Estas instruções são para clientes do Target que desejam usar o serviço de identidade do Experience Cloud e não usam [Tags de coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são destinadas a clientes do Target que desejam usar o serviço de identidade da Experience Cloud e não utilizam as [tags da coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos fortemente o uso de tags ao implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e automaticamente garante o posicionamento e sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ Na `Visitor.getInstance` função, substitua `INSERT-MARKETING-CLOUD-ORGANIZATIO
 >
 >*Não* altere a caixa dos caracteres na ID da organização. A ID diferencia maiúsculas e minúsculas e deve ser usada exatamente como foi fornecida.
 
-## Etapa 4: adicionar o código da API do visitante à página {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
+## Etapa 4: adicionar o código da API de visitante à página {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
 Implante o arquivo `VisitorAPI.js` para o site nas tags `<head>` antes da referência ao arquivo `mbox.js`. O serviço da [!DNL Experience Cloud] ID deve ser executado antes da geração da primeira chamada de rede do [!DNL Target]. Transfira esse código para a produção após os testes e a verificação.
 
