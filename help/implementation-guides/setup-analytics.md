@@ -1,18 +1,18 @@
 ---
-description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade do Experience Cloud e não usam as tags de coleção de dados. No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
+description: Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não utilizam as tags da coleção de dados. No entanto, recomendamos fortemente o uso de tags ao implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e automaticamente garante o posicionamento e sequenciamento corretos do código.
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1007'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Implementar o serviço de identidade da Experience Cloud para Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade Experience Cloud e não usam [Tags de coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos que você use tags para implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e garantem automaticamente a inserção e o sequenciamento corretos do código.
+Estas instruções são para clientes do Analytics que desejam usar o serviço de identidade da Experience Cloud e não utilizam as [tags da coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). No entanto, recomendamos fortemente o uso de tags ao implementar o serviço de ID. As tags simplificam o fluxo de trabalho de implementação e automaticamente garante o posicionamento e sequenciamento corretos do código.
 
 >[!IMPORTANT]
 >
@@ -144,7 +144,7 @@ Defina um prop personalizado em `AppMeasurement.js` ou `s_code.js` para medir a 
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Etapa 6: adicionar o código da API do visitante à página {#section-d46d6aa324c842f2931d901e38d6db1d}
+## Etapa 6: adicionar o código da API de visitante à página {#section-d46d6aa324c842f2931d901e38d6db1d}
 
 Insira o `VisitorAPI.js` arquivo nas tags `<head>` de cada página. Ao anexar o `VisitorAPI.js` arquivo à página:
 
