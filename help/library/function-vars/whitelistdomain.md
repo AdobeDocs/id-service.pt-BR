@@ -5,8 +5,8 @@ title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Ambos os elementos de configuração são necessários ao usar esse código.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: " <span class="varname"> Nome do domínio da página principal </span>" </span> </p> </td> 
-   <td colname="col2"> <p>Aceita um único nome de domínio passado como uma sequência de caracteres. </p> </td> 
+   <td colname="col2"> <p>Aceita um único nome de domínio passado como uma string. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "Domínio do iFrame","Domínio do iFrame", "Domínio do iFrame" </span>] </span> </p> </td> 

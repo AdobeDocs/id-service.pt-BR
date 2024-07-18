@@ -5,7 +5,7 @@ title: Estados de autenticação e IDs do cliente
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ A partir do serviço de identidade da Experience Cloud v1.5+, `setCustomerIDs` i
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
    <td colname="col2"> <p>Esse estado pode ser usado para cenários como: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Ler um email (essa ação provavelmente significa que o leitor é o recipient pretendido, mas o email também pode ter sido encaminhado). </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Ler um email (essa ação provavelmente significa que o leitor é o destinatário pretendido, mas o email também pode ter sido encaminhado). </li> 
       <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Ao clicar de um email para uma página de destino. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -92,7 +92,6 @@ As IDs do cliente podem incluir combinações de IDs e estados de autenticação
 >* Use apenas valores não codificados para seus IDs.
 >* As IDs do cliente e os estados de autenticação não são armazenados no cookie da ID do visitante. Eles devem ser definidos para cada página ou contexto de aplicativo.
 >* Não inclua informações pessoais identificáveis (PII) nas IDs do cliente. Se você estiver usando PII para identificar um visitante (como um endereço de email), é recomendado armazenar uma versão com hash ou criptografada das informações. A biblioteca ECID fornece suporte para hash de identificadores de usuários. Consulte [Suporte a hash SHA 256 para setCustomerIDs](/help/reference/hashing-support.md).
-
 
 ```js
 // Single ID with a single authentication state 

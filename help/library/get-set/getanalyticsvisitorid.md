@@ -1,18 +1,18 @@
 ---
-description: Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+description: Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma string vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 keywords: Serviço de ID
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '276'
 ht-degree: 100%
 
 ---
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma sequência vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
+Retorna a Analytics ID herdada (se houver) que estava armazenada no cookie s_vi antes da implementação do serviço de identidade da Experience Cloud. Ele retorna uma string vazia se um visitante não possuir uma Analytics ID atribuída anteriormente.
 
 **Sintaxe** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -36,20 +36,19 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **O parâmetro “aid” é um valor herdado**
 
-O `aid` parâmetro aparece em uma sequência de consulta em dois conjuntos de condições diferentes.
+O `aid` parâmetro aparece em uma string de consulta em dois conjuntos de condições diferentes.
 
 **Caso 1**
 
-O parâmetro `aid` é visto em uma sequência de consulta quando:
+O parâmetro `aid` é visto em uma string de consulta quando:
 
 * O serviço da [!DNL Experience Cloud] ID é implantado corretamente.
 * O usuário visita um site e tem uma ID do [!DNL Analytics] pré-existente armazenada no [cookie s_vi](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=pt-BR#section-5d50a078de444d12b7d927d68ff3b679).
 
 **Caso 2**
 
-Você verá o `aid` parâmetro em uma sequência de consulta quando a empresa estiver usando um [período de carência](../../reference/analytics-reference/grace-period.md) antes de implementar totalmente o serviço de ID. Se um novo usuário visitar seu site e você não usar um período de carência, ele receberá o parâmetro `mid`([!DNL Experience Cloud] ID).
+Você verá o `aid` parâmetro em uma string de consulta quando a empresa estiver usando um [período de carência](../../reference/analytics-reference/grace-period.md) antes de implementar totalmente o serviço de ID. Se um novo usuário visitar seu site e você não usar um período de carência, ele receberá o parâmetro `mid`([!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >
 >* [Cookies do Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=pt-BR)
-

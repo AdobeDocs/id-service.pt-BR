@@ -4,7 +4,7 @@ title: Uso dos serviços de Opt-in com a Estrutura IAB
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '438'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Conecte a Plataforma de gestão de consentimento (CMP) com o plug-in da Estrutura de transparência e consentimento (TCF) do IAB de Opt-in..
 
-Os clientes do Adobe Audience Manager que usam a [TCF do IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) podem conectar sua Plataforma de gerenciamento de consentimento (CMP) com o plug-in da TCF do IAB de Opt-in. Opt-in é um recurso integrado à biblioteca JavaScript da ECID que pode desativar bibliotecas de soluções individuais da Adobe, dependendo das preferências do visitante definidas em uma CMP. Quando o plug-in da TCF do IAB de Opt-in é implementado com a biblioteca ECID, as preferências do visitante da CMP compatíveis com a TCF do IAB são mapeadas automaticamente para Opt-in. Essas preferências habilitarão as bibliotecas do Audience Manager (DIL e ECID) e as chamadas associadas ao receber o consentimento.
+Os clientes do Adobe Audience Manager que usam a [TCF do IAB](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) podem conectar sua Plataforma de gerenciamento de consentimento (CMP) com o plug-in da TCF do IAB de Opt-in. Opt-in é um recurso integrado à biblioteca JavaScript da ECID que pode desabilitar bibliotecas de soluções individuais da Adobe, dependendo das preferências do visitante definidas em uma CMP. Quando o plug-in da TCF do IAB de Opt-in é implementado com a biblioteca ECID, as preferências do visitante da CMP compatíveis com a TCF do IAB são mapeadas automaticamente para Opt-in. Essas preferências habilitarão as bibliotecas do Audience Manager (DIL e ECID) e as chamadas associadas ao receber o consentimento.
 
 ## Implementar uma CMP compatível com IAB {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
@@ -43,7 +43,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-Depois que as configurações forem definidas corretamente, as bibliotecas ECID e DIL serão ativadas/desativadas, dependendo dos critérios de consentimento do CMP e do IAB TCF.
+Depois que as configurações forem definidas corretamente, as bibliotecas ECID e DIL serão habilitadas/desabilitadas, dependendo dos critérios de consentimento do CMP e do IAB TCF.
 
 >[!IMPORTANT]
 >

@@ -5,8 +5,8 @@ title: Políticas de segurança de conteúdo e o serviço de identidade da Exper
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo d
 
 A utilização de documentos de estratégia por país é comum e bem compreendida. Não é objetivo desta documentação explicar em detalhes os documentos de estratégia por país (para mais informações, consulte os links de informação relacionadas abaixo). É importante saber quais nomes de domínio da Adobe você deve adicionar a uma CSP se você os utilizar e tiver políticas de segurança restritas. A adição desses domínios permite que os navegadores de visitantes que acessam seu site façam essas chamadas importantes para os recursos da Experience Cloud que você usa.
 
-## Domínios da Experience Cloud para listas de permissões {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domínios Experience Cloud para listas de permissões {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço da lista da Experience Cloud que você usa.
 
@@ -65,7 +65,7 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Se você tiver controles dos parâmetros da sequência de consulta, adicione os parâmetros "s_kwcid" e "ef_id" à lista de permissões. Tecnicamente, o Advertising Analytics usa somente "s_kwcid", mas se você coletar a Pesquisa da Ad Cloud ou o DSP, ele também usará "ef_id". Esses parâmetros de sequência de consulta são alfanuméricos. O parâmetro `s_kwcid` usa o caractere "!" e o parâmetro "ef_id" usa o caractere ":". Se você estiver bloqueando o caractere "!" no URL, é necessário incluí-lo na lista de permissões.</p></td> 
+ <td colname="col2"> <p>Se você tiver controles dos parâmetros da string de consulta, adicione os parâmetros "s_kwcid" e "ef_id" à lista de permissões. Tecnicamente, o Advertising Analytics usa somente "s_kwcid", mas se você coletar a Pesquisa da Ad Cloud ou o DSP, ele também usará "ef_id". Esses parâmetros de string de consulta são alfanuméricos. O parâmetro `s_kwcid` usa o caractere "!" e o parâmetro "ef_id" usa o caractere ":". Se você estiver bloqueando o caractere "!" no URL, é necessário incluí-lo na lista de permissões.</p></td> 
  </tr>
  </tbody> 
 </table>
@@ -75,4 +75,3 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
 >* [Referência da política de segurança de conteúdo](https://content-security-policy.com/)
 >* [MDN: política de segurança de conteúdo](https://developer.mozilla.org/pt/docs/Web/HTTP/CSP)
 >* [Wikipedia: política de segurança de conteúdo](https://en.wikipedia.org/wiki/Content_Security_Policy)
-

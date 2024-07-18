@@ -7,7 +7,7 @@ feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1175'
 ht-degree: 100%
 
 ---
@@ -25,8 +25,7 @@ Novembro de 2016
 >[!IMPORTANT]
 >
 >* A versão 1.10 exige o [!UICONTROL AppMeasurement] 1.8.0.
->* Por padrão, a sincronização de ID começa para o Adobe Media Optimizer ao usar a Biblioteca 2.0.0+ do serviço de identificação da Experience Cloud. Consulte [Entender sincronização de ID e taxas de correspondência](/help/introduction/match-rates.md).
-
+>* Por padrão, a sincronização de ID começa para o Adobe Media Optimizer ao usar a Biblioteca 2.0.0+ do Serviço de identidade da Experience Cloud. Consulte [Entender sincronização de ID e taxas de correspondência](/help/introduction/match-rates.md).
 
 **Correções e melhorias**
 

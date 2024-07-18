@@ -5,7 +5,7 @@ title: Suporte para COPPA no serviço de identidade da Experience Cloud
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 100%
 
 ---
@@ -46,4 +46,3 @@ Quando definido como `true`, o `disableThirdPartyCookies` objeto impede o DCS de
 >
 >* [Centro de privacidade da Adobe](http://www.adobe.com/br/privacy.html)
 >* [O que é a COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
-

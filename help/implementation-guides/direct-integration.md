@@ -5,8 +5,8 @@ title: Integração direta com o serviço de identidade da Experience Cloud
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 98%
 
 ---
 
@@ -24,13 +24,13 @@ Neste exemplo de sintaxe, o `d_` prefixo identifica os pares de valores chave na
 
 O serviço de ID suporta chamadas HTTP e HTTPS. Use HTTPS para enviar dados de uma página segura.
 
-## Solicitação de exemplo {#section-26302b8851704888b6f8e6b2071bcdb0}
+## Exemplo de solicitação {#section-26302b8851704888b6f8e6b2071bcdb0}
 
 Sua solicitação pode ser semelhante à amostra exibida abaixo. Variáveis longas foram encurtadas.
 
 ![](assets/directExample.png)
 
-## Resposta de exemplo {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## Exemplo de resposta {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 O serviço de ID retorna dados em um objeto JSON, como mostrado abaixo. A sua resposta pode ser diferente.
 

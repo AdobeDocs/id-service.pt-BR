@@ -5,8 +5,8 @@ title: Como entender a sincronização de ID e taxas de correspondência
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 96%
 
 ---
 
@@ -58,7 +58,7 @@ As IDs sincronizadas são armazenadas na [borda e nos servidores de dados princi
 
 ## Serviços de sincronização gerenciam a sincronização da ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-O termo *`Sync Services`* se refere às [!DNL Experience Cloud] tecnologias internas responsáveis pela sincronização de ID. Esse serviço está ativado por padrão. Para desativá-lo, adicione uma [variável opcional](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) à função `Visitor.getInstance` do serviço de ID. Os Serviços de sincronização corresponde diferentes [!DNL Experience Cloud] IDs como:
+O termo *`Sync Services`* se refere às [!DNL Experience Cloud] tecnologias internas responsáveis pela sincronização de ID. Esse serviço está ativado por padrão. Para desabilitá-la, adicione uma [variável opcional](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) à função do serviço de ID `Visitor.getInstance`. Os Serviços de sincronização corresponde diferentes [!DNL Experience Cloud] IDs como:
 
 * IDs de [!DNL Experience Cloud] cookies de terceiros da para [!DNL Experience Cloud] IDs primárias.
 
@@ -74,4 +74,3 @@ O [!DNL Adobe Advertising Cloud] (chamado anteriormente de [!DNL Adobe Media Opt
 >[!MORELIKETHIS]
 >
 >* [Compreender as chamadas ao domínio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR)
-

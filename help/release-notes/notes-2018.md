@@ -5,7 +5,7 @@ title: Notas de versão de 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '500'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ Lançamentos, atualizações ou alterações de recursos do serviço de identida
   </tr> 
   <tr> 
    <td colname="col1"> <p>O código de integração e a id devem ser números ou strings não vazias </p> </td> 
-   <td colname="col2"> <p>Correção de um erro que ocorria ao validar `setCustomerIDs` quando os dados continham uma integração `code` ou `id` que não era um número nem uma sequência de caracteres não vazia. </p> </td> 
+   <td colname="col2"> <p>Correção de um erro que ocorria ao validar `setCustomerIDs` quando os dados continham uma integração `code` ou `id` que não era um número nem uma string não vazia. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> O JS da ECID está disponível no repositório Git público </td> 
@@ -109,8 +109,8 @@ Lançamentos, atualizações ou alterações de recursos do serviço de identida
    <td colname="col2"> <p><b>Iframe</b> </p> <p>Para clientes executando sincronizações de várias IDs, devido a computações contínuas de CPU sendo executadas, a interface do usuário às vezes é bloqueada. Estamos introduzindo a concessão de encadeamento para separar as solicitações de sincronização de ID por 100 ms cada. </p> <p>Essa alteração melhora o desempenho para clientes que usam o Visitor 2.3.0+ e o DIL 6.10+. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Adicionou a capacidade de desativar chamadas de terceiros </td> 
-   <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>A Adobe renomeou as seguintes configurações para permitir a desativação de chamadas sincronizadas de terceiros. </p> <p>idSyncDisableSyncs para disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing para disableThirdPartyCookies </p> </td> 
+   <td colname="col1"> Adicionou a capacidade de desabilitar chamadas de terceiros </td> 
+   <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>A Adobe renomeou as seguintes configurações para permitir desabilitar chamadas sincronizadas de terceiros. </p> <p>idSyncDisableSyncs para disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing para disableThirdPartyCookies </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Suporte ao Internet Explorer </p> </td> 

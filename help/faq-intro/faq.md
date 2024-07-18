@@ -5,8 +5,8 @@ title: Perguntas frequentes do serviço de ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Você pode ter problemas se hospedar o arquivo VisitorAPI.js como um arquivo loc
 
 **Como a biblioteca VisitorAPI.js do serviço de ID afeta o tempo de carregamento da página?**
 
-Coloque a biblioteca VisitorAPI.js no início da página na `<head>` seção do código. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
+Coloque a biblioteca VisitorAPI.js na parte superior da página na `<head>` seção do código. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
 
 A chamada do serviço de ID é assíncrona e é a única chamada para o [domínio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR). A chamada do serviço de ID não impede o carregamento de outros elementos na página.
 
@@ -87,4 +87,3 @@ Consulte [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da1
 >[!MORELIKETHIS]
 >
 >* [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
-

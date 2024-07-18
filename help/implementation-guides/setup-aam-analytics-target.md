@@ -4,7 +4,7 @@ keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 

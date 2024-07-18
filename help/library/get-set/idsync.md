@@ -5,8 +5,8 @@ title: Sincronização de ID por URL ou fonte de dados
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 96%
 
 ---
 
@@ -83,7 +83,7 @@ Ambas as funções aceitam as seguintes macros:
 
 ## Código e saída de exemplo {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrário, elas devolvem uma sequência de mensagem de erro.
+Ambas as funções retornam `Successfully queued` se bem-sucedidas. Do contrário, elas devolvem uma string de mensagem de erro.
 
 ### visitor.idSyncByURL
 
@@ -130,4 +130,3 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 >[!MORELIKETHIS]
 >
 >* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html?lang=pt-BR#idsync)
-

@@ -5,8 +5,8 @@ title: Suporte a hash SHA256 para setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Consulte a tabela abaixo para obter uma descrição do parâmetro `d_cid_ic` e d
 
 | Parâmetro | Descrição |
 |------------|----------|
-| `d_cid_ic` | Transmite o Código de integração, o identificador de usuário único (DPUUID) e uma ID de estado autenticada para o serviço de ID. Separe o Código de integração e a DPUUID com o caractere de controle não imprimível, %01</code>: <br> Exemplo: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Estado de autenticação</b> <br> Essa é uma ID opcional no parâmetro d_cid_ic. Expressa como um inteiro, identifica os usuários de acordo com o status de autenticação como mostrado abaixo: <br> <ul><li>0 (Desconhecido ou nunca autenticado)</li><li>1 (Atualmente autenticado para esta instância/página/contexto de aplicativo)</li><li>2 (Logout realizado)</li></ul> <br> Exemplos: <br> <ul><li>Desconhecido: ...d_cid=123%01456%01<b>0</b></li><li>Autenticado: ...d_cid=123%01456%01<b>1</b></li><li>Logout: ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Transmite o Código de integração, o identificador de usuário único (DPUUID) e uma ID de estado autenticada para o serviço de ID. Separe o Código de Integração e a DPUUID com o caractere de controle não imprimível, <code>%01</code>: <br> Exemplo: <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Estado de autenticação</b> <br> Essa é uma ID opcional no parâmetro d_cid_ic. Expressa como um inteiro, identifica os usuários de acordo com o status de autenticação como mostrado abaixo: <br> <ul><li>0 (Desconhecido ou nunca autenticado)</li><li>1 (Atualmente autenticado para esta instância/página/contexto de aplicativo)</li><li>2 (Logout realizado)</li></ul> <br> Exemplos: <br> <ul><li>Desconhecido: ...d_cid=123%01456%01<b>0</b></li><li>Autenticado: ...d_cid=123%01456%01<b>1</b></li><li>Logout: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Adicionar uma ação no Adobe Experience Platform Launch {#add-action-launch}
 

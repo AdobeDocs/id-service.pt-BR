@@ -5,8 +5,8 @@ title: Usar o serviço de ID com o A4T e uma implementação do lado do servidor
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '807'
+ht-degree: 98%
 
 ---
 
@@ -157,9 +157,9 @@ Adicione esses pares de valor de nome à seção **[!UICONTROL Geral > Configura
 * **[!UICONTROL Nome:]** serverState
 * **[!UICONTROL Valor:]** %serverState%
 
-   >[!IMPORTANT]
-   >
-   >O nome do valor deve corresponder ao nome da variável definido para `serverState` no código da página.
+  >[!IMPORTANT]
+  >
+  >O nome do valor deve corresponder ao nome da variável definido para `serverState` no código da página.
 
 As configurações definidas devem ter esta aparência:
 
@@ -197,4 +197,3 @@ Nesse ponto, o servidor da Web envia conteúdo da página para o navegador do vi
 >[!MORELIKETHIS]
 >
 >* [Pacote de serviço de ID do lado do servidor do Gerenciador de pacote de nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
-

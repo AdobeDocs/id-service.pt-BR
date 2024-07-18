@@ -1,5 +1,5 @@
 ---
-description: Um sinalizador booleano opcional que desativa a sincronização de ID.
+description: Um sinalizador booleano opcional que desabilita a sincronização de ID.
 keywords: Serviço de ID
 title: disableIdSyncs
 exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # disableIdSyncs{#disableidsyncs}
 
-Um sinalizador booleano opcional que desativa a sincronização de ID.
+Um sinalizador booleano opcional que desabilita a sincronização de ID.
 
 >[!NOTE]
 >

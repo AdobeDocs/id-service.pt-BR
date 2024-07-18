@@ -5,14 +5,14 @@ title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '58'
 ht-degree: 100%
 
 ---
 
 # cookieDomain{#cookiedomain}
 
-Necessário para domínios de alto nível e com muitas partes, em que qualquer uma das duas últimas partes do URL é maior do que dois caracteres.
+Necessário para domínios de nível superior e com muitas partes, em que qualquer uma das duas últimas partes do URL é maior do que dois caracteres.
 
 **Sintaxe:** ` cookieDomain: " *`URL`*"` (O `www` prefixo não é necessário.)
 

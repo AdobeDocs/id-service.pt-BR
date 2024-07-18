@@ -5,8 +5,8 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '563'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## Parâmetros POST da chamada de evento {#section-fcd441933506493faefaa6b51f194a17}
+## Parâmetros de POST da chamada de evento {#section-fcd441933506493faefaa6b51f194a17}
 
 Dependendo do sinalizador definido (`true` ou `false`), o serviço de ID converte `isCoopSafe` nesses parâmetros de POST e os envia para a [!DNL Adobe] em uma chamada de evento:
 
@@ -109,7 +109,7 @@ Os parâmetros de POST informam o [!DNL Experience Cloud] Device Co-op se é pos
  </tbody> 
 </table>
 
-## APIs pós-instanciamento {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## Post-APIs de instanciação {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Essas APIs permitem que você substitua o status de `isCoopSafe`. Elas são necessárias porque permitem alterar o status de pós-instanciação/pós-login de um visitante em um site ou em um aplicativo de página única no qual a página não é atualizada. Por exemplo, você precisará chamar essas APIs se um usuário se autenticar em seu site ou aplicativo e, posteriormente, aceitar uma política de termos de uso que permita que o Device Co-op use seus dados.
 
@@ -139,4 +139,3 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 >[!MORELIKETHIS]
 >
 >* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html?lang=pt-BR)
-

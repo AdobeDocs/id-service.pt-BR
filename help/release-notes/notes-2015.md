@@ -5,7 +5,7 @@ title: Notas de versão de 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Agosto de 2015
 * Correção de um bug que impedia o serviço de ID de solicitar um iframe quando não havia dados para sincronizar ou acionar. (AAM-20164)
 * Correção de um bug que impedia o serviço de ID de configurar apropriadamente um cookie de domínio multiparte e de nível superior. Por exemplo, se você tem um domínio como `my_company.co.uk`, em determinadas circunstâncias o serviço de ID definiria um cookie somente em `co.uk`. (AN-104683)
 
-   Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
+  Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
    * Utilização do serviço de ID.
    * Ativação de um [período de carência ](../reference/analytics-reference/grace-period.md)*ou* utilização de cookies primários, além de usuários que bloquearam os cookies de terceiros.

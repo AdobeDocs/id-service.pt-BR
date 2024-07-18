@@ -4,7 +4,7 @@ description: O Adobe Opt-in Object é uma extensão do serviço de identidade da
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '508'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ No vídeo a seguir, assista uma rápida demonstração do funcionamento do [!UIC
 
 **OBSERVAÇÃO:** é importante observar que, no momento da redação deste artigo, o [!UICONTROL Opt-in] não havia sido integrado nas bibliotecas de todos os aplicativos da Experience Cloud. As bibliotecas atualmente compatíveis com o [!UICONTROL Opt-in] são:
 
-* Identity Service
+* Serviço de identidade
 * Analytics
 * Audience Manager
 * [!DNL Target]

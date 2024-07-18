@@ -4,8 +4,8 @@ keywords: Serviço de ID
 title: Requisitos do serviço de identidade da Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: ht
-source-wordcount: '653'
+workflow-type: tm+mt
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
@@ -135,4 +135,3 @@ O código do SDK deve ser habilitado para o serviço de ID. Habilite e baixe o c
 >[!MORELIKETHIS]
 >
 >* [Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

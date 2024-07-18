@@ -4,8 +4,8 @@ title: Referência de opt-in
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '888'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ As configurações de Opt-in são fornecidas na função `getInstance()` do Java
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
-Se falso, indica que os visitantes não precisam aceitar. Resulta na criação de cookies pela Experience Cloud, independentemente das categorias aderidas ou não. Essa configuração ativa ou desativa a aceitação de forma holística.
+Se falso, indica que os visitantes não precisam aceitar. Resulta na criação de cookies pela Experience Cloud, independentemente das categorias aderidas ou não. Essa configuração habilita ou desabilita a aceitação de forma holística.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -90,7 +90,7 @@ Função que nega ou faz opt-out do visitante de todas as categoria especificada
 
 Função que dispara a agregação das chamadas procedentes para approve() e deny() em uma única solicitação para definir as preferências de um visitante. Ao se inscrever nas alterações de Opt-in (consulte `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) abaixo, o retorno de chamada será disparado somente quando essa função for chamada.
 
-## Parâmetros das permissões de Opt-in do visitante {#section-7fe57279b5b44b4f8fe47e336df60155}
+## Parâmetros de permissões de Opt-in do visitante {#section-7fe57279b5b44b4f8fe47e336df60155}
 
 Colete as permissões de Opt-in para um visitante a qualquer momento usando uma das funções de permissões:
 

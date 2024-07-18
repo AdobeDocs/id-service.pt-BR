@@ -1,18 +1,18 @@
 ---
-description: Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de sequência de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
+description: Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
 keywords: Serviço de ID
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '344'
 ht-degree: 100%
 
 ---
 
 # appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
-Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de sequência de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
+Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
 
 Conteúdo:
 

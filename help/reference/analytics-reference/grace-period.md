@@ -5,8 +5,8 @@ title: Período de carência do serviço de ID
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 98%
 
 ---
 

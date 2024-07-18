@@ -5,7 +5,7 @@ title: Notas de versão de 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Adicionar caixa de seleção de aprovação prévia de análise de mídia na Ext
 
 **Correções**
 
-* Problema com a análise de sequência de caracteres de entrada da extensão de ativação preOptInApprovals da ECID.
+* Problema com a análise de string de entrada da extensão de ativação preOptInApprovals da ECID.
 * Queda de desempenho quando o trackingServer está em uso.
 
 ## Versão 4.4 {#version-4point4}
@@ -31,7 +31,7 @@ Adicionar caixa de seleção de aprovação prévia de análise de mídia na Ext
 
 **Correções, melhorias, aprimoramentos**
 
-* Fizemos uma atualização de configuração no `cookieDomain`. A biblioteca ECID agora filtra a sequência vazia `cookieDomain` e `initConfig` e usa o domínio do cookie de nível superior, retornado pelo método getDomain.
+* Fizemos uma atualização de configuração no `cookieDomain`. A biblioteca ECID agora filtra a string vazia `cookieDomain` e `initConfig` e usa o domínio do cookie de nível superior, retornado pelo método getDomain.
 * Corrigimos um erro relacionado ao `getVisitorValues` no `localVisitor`.
 * Corrigimos um erro em que havia uma inconsistência no valor MCOPTOUT no navegador Safari, retornado pelo método `getVisitorValue`.
 * Atualizamos a biblioteca de aceitação adicionando `optIn.off` para cancelar a inscrição nos eventos.
@@ -55,7 +55,7 @@ Suporte para o plug-in do Audience Manager para IAB TCF, disponível por meio do
 
 * Falha do IAB + OptIn em obter o MID para clientes retornantes.
 * Corrigido o erro na configuração de aceitação do doesOptInApply no DTM.
-* A opção de não participação ECID desativa sincronizações de ID.
+* A opção de não participação ECID desabilita sincronizações de ID.
 
 ## Versão 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 

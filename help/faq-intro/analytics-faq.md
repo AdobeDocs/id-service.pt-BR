@@ -5,8 +5,8 @@ title: Perguntas frequentes do Analytics e do serviço de identidade
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 99%
 
 ---
 
@@ -90,4 +90,3 @@ Há três cenários possíveis em que isso afeta os dados do Analytics para novo
 >[!MORELIKETHIS]
 >
 >* [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
-

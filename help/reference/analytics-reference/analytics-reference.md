@@ -21,4 +21,4 @@ Recursos ou funcionalidade do serviço de ID exclusivos do Adobe Analytics.
 + [Solicitações do Analytics e da Experience Cloud ID](legacy-analytics.md)
 + [Implementação do lado do servidor combinada com JavaScript](server-side.md)
 + [Período de carência do serviço de ID](grace-period.md)
-   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+  <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->

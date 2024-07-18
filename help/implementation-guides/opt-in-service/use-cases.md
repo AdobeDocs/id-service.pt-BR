@@ -5,7 +5,7 @@ exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
 
 * A inicialização do JS do Visitante é síncrona e é executada no carregamento da página. Se você estiver interagindo com uma persistência de permissões ou CMP que tenha alta latência, talvez seja preferível usar as funções assíncronas descritas em [Configuração de aceitação](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047).
 * O Opt-in é uma implementação por domínio. Ele não lidará com implementações entre domínios.
-* Para desativar chamadas de terceiros para uma biblioteca específica, será necessário configurar essa preferência em cada biblioteca separadamente.
+* Para desabilitar chamadas de terceiros para uma biblioteca específica, será necessário configurar essa preferência em cada biblioteca separadamente.
 
 ## Cenários de opt-in {#section-1178053c065c430bba26f82ef383a71c}
 

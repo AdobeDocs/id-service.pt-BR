@@ -5,8 +5,8 @@ title: Pontos de decisão da migração do serviço de identidade da Experience 
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 94%
 
 ---
 
