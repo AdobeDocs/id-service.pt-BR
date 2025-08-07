@@ -1,24 +1,24 @@
 ---
-description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam listas de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios da Adobe listados aqui às suas listas brancas de CSP.
+description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Incluir na lista de permissões Revise esta seção se você usar o serviço de ID e tiver CSPs rigorosas que usam para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas listas de permissões CSP.
 keywords: Serviço de ID
 title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
+source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 80%
+ht-degree: 62%
 
 ---
 
 # Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud {#content-security-policies-and-the-experience-cloud-id-service}
 
-Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam listas de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios da Adobe listados aqui às suas listas brancas de CSP.
+Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Incluir na lista de permissões Revise esta seção se você usar o serviço de ID e tiver CSPs rigorosas que usam para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas listas de permissões CSP.
 
 ## Análise da CSP {#section-5fde5c00a678455c914b8307a8caab82}
 
 As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo de recursos que os navegadores aceitam ou carregam em uma página. A aplicação de um CSP pode ajudá-lo a evitar:
 
-* O carregamento de arquivos JavaScript se a fonte for desconhecida ou não estiver incluída em uma lista de permissões.
+* o carregamento de arquivos JavaScript incluir na lista de permissões se a origem for desconhecida ou não estiver incluída em um arquivo de pesquisa.
 * Ataques de script entre sites (XXS).
 * Ataques de injeção de dados.
 * Ataques de deformação do site.
@@ -26,7 +26,7 @@ As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo d
 
 A utilização de documentos de estratégia por país é comum e bem compreendida. Não é objetivo desta documentação explicar em detalhes os documentos de estratégia por país (para mais informações, consulte os links de informação relacionadas abaixo). É importante saber quais nomes de domínio da Adobe você deve adicionar a uma CSP se você os utilizar e tiver políticas de segurança restritas. A adição desses domínios permite que os navegadores de visitantes que acessam seu site façam essas chamadas importantes para os recursos da Experience Cloud que você usa.
 
-## Domínios do Experience Cloud para listas de permissões {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domínios Experience Cloud para Incluir na lista de permissões {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço da lista da Experience Cloud que você usa.
 
@@ -87,12 +87,12 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
     <p><b>Advertising Analytics</b></p>
    </td>
    <td colname="col2">
-    <p>Se você restringir os parâmetros da string de consulta, inclua os seguintes parâmetros na lista de permissões:</p>
+    <p>Se você restringir os parâmetros da cadeia de caracteres de consulta, incluirá na lista de permissões os seguintes parâmetros:</p>
     <ul>
      <li><code>s_kwcid</code> (que usa <code>!</code>)</li>
      <li><code>ef_id</code> (que usa <code>:</code>)</li>
     </ul>
-    <p>Se você bloquear o caractere <code>!</code> em URLs, inclua-o na lista de permissões.</p>
+    <p>Se você bloquear o caractere <code>!</code> em URLs, também o incluirá na lista de permissões.</p>
     <p>O Advertising Analytics usa somente <code>s_kwcid</code>, mas o Advertising Search, Social, &amp; Commerce e Advertising DSP também usam <code>ef_id</code>.</p>
    </td>
   </tr>
