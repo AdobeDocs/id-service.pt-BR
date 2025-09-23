@@ -4,10 +4,10 @@ user-guide-title: Ajuda do serviço de identidade da Experience Cloud
 breadcrumb-title: Guia do Serviço de identidade
 user-guide-description: O Serviço de identidade da Adobe Experience Cloud fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções da Experience Cloud. Ele ajuda a substituir o código de geração de ID herdado para soluções e serviços da Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
+source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 98%
 
 ---
 
@@ -118,3 +118,4 @@ ht-degree: 100%
    + [Notas de versão de 2016](release-notes/notes-2016.md)
    + [Notas de versão de 2015](release-notes/notes-2015.md)
 + [Teste de análise oculto do sumário](analytics-test-file-hidetoc.md)
++ [Arquivo de teste oculto](hidden-file.md)
