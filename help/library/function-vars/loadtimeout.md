@@ -3,10 +3,10 @@ description: Define um intervalo de tempo limite em milissegundos. Usado para in
 keywords: Serviço de ID
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
 
-**Sintaxe:** ` loadTimeout: *`intervalo em milissegundos`*`
+**Sintaxe:** `loadTimeout: *`intervalo em milissegundos`*`
 
 O valor padrão é de 30.000 milissegundos (30 segundos). É altamente recomendável que você *não* altere o valor padrão.
 

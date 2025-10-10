@@ -3,10 +3,10 @@ description: Estas instruções são para clientes do Analytics e do Audience Ma
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Etapa 7: adicionar o código da API do visitante à página {#section-c2bd096a3e484872a72967b6468d3673}
 
-Insira o ` [!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página. Ao anexar o `VisitorAPI.js` arquivo à página:
+Insira o `[!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página. Ao anexar o `VisitorAPI.js` arquivo à página:
 
 * Coloque-o no início da `<head>` seção para que apareça antes de outras tags de solução.
 * É necessário executar antes do AppMeasurement e do código de outras soluções da [!DNL Experience Cloud].
@@ -200,7 +200,7 @@ Para verificar o encaminhamento do lado do servidor, consulte [Como verificar a 
 
 Implante o código depois que ele passar no teste.
 
-Se você ativou um período de carência:
+Se você habilitou um período de carência:
 
 * Garanta que a ID do Analytics (AID) e a MID estejam presentes na solicitação de imagem.
 * Lembre-se de desabilitar o período de carência após atender os critérios para a descontinuação.

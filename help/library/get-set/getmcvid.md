@@ -3,10 +3,10 @@ description: getMarketingCloudVisitorID retorna a ID de visitante da Experience 
 keywords: Serviço de ID
 title: getMarketingCloudVisitorID
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 getMarketingCloudVisitorID retorna a ID de visitante da Experience Cloud.
 
-**Sintaxe:** ` var *`nome da variável`* = visitor.getMarketingCloudVisitorID()`
+**Sintaxe:** `var *`nome da variável`* = visitor.getMarketingCloudVisitorID()`
 
 Normalmente, esse método é usado com soluções personalizadas que exigem a leitura da ID de visitante. Ela não é usada em uma implementação padrão. `getMarketingCloudVisitorID` também funciona com funções de retorno de chamada para ler as [!DNL Analytics] IDs do e trazê-las para o sistema ou aplicativo.
 

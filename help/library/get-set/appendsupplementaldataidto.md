@@ -1,12 +1,12 @@
 ---
 description: Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
 keywords: Serviço de ID
-title: appendSupplementalDataIDTo
+title: 'appendSupplementalDataIDTo '
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Conteúdo:
 
 ## Sintaxe e amostra de código {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Sintaxe:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**Sintaxe:** `appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Amostra de código**
 
@@ -54,7 +54,7 @@ A configuração de [sdidParamExpiry](../../library/function-vars/sdidparamexpir
 
 Se for necessário alterar o tempo limite da SDID padrão, adicione `sdidParamExpiry` à `Visitor.getInstance` função com a seguinte sintaxe:
 
-**Sintaxe:** ` sdidParamExpiry: *`tempo em segundos`*`
+**Sintaxe:** `sdidParamExpiry: *`tempo em segundos`*`
 
 **Amostra de código**
 

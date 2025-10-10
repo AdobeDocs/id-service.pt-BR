@@ -3,7 +3,7 @@ description: Esta é uma API assíncrona que retorna os identificadores para o A
 keywords: Serviço de ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 95%
@@ -25,12 +25,12 @@ Conteúdo:
 
 ## Sintaxe {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-Essa função usa a seguinte sintaxe (itálico representa um espaço reservado para uma variável): ` var *`valores`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`tipo de ID`*, visitor.FIELDS. *`tipo de ID`*]);`
+Essa função usa a seguinte sintaxe (itálico representa um espaço reservado para uma variável): `var *`valores`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`tipo de ID`*, visitor.FIELDS. *`tipo de ID`*]);`
 
 Nos parâmetros da função:
 
-* O ` *`retorno de chamada`*` representa seu próprio código de retorno de chamada que recebe as IDs retornadas.
-* *(Opcional)* ` visitor.FIELDS. *`Tipo de ID`*` é um enum que permite especificar quais [valores de ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja que a função retorne.
+* O `*`retorno de chamada`*` representa seu próprio código de retorno de chamada que recebe as IDs retornadas.
+* *(Opcional)* `visitor.FIELDS. *`Tipo de ID`*` é um enum que permite especificar quais [valores de ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) você deseja que a função retorne.
 
 Consulte os casos de uso e as definições a seguir para obter mais informações.
 
@@ -61,7 +61,7 @@ Na resposta de amostra padrão, alguns valores foram encurtados para fins de dem
 
 ## Caso de uso 2: solicitar um conjunto de dados personalizado {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Esse código usa uma matriz para retornar um conjunto específico de IDs usando o `visitor.FIELDS` enum. Nesse caso, desejamos apenas a Experience Cloud ID (MCID) e a Analytics ID (MCAID) do visitante. Sua solicitação e resposta podem ser semelhantes aos exemplos a seguir.
+Esse código usa uma matriz para retornar um conjunto específico de IDs usando a enumeração `visitor.FIELDS`. Nesse caso, desejamos apenas a Experience Cloud ID (MCID) e a Analytics ID (MCAID) do visitante. Sua solicitação e resposta podem ser semelhantes aos exemplos a seguir.
 
 ```js
 //Call the ID service 
@@ -83,7 +83,7 @@ A resposta de amostra personalizada retorna somente as IDs especificadas na soli
 
 ## Parâmetros de resposta definidos {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores no `visitor.FIELDS` enum. Observe que esse método retornará uma string vazia se não houver valores para uma variável específica.
+A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os valores na enumeração `visitor.FIELDS`. Observe que esse método retornará uma string vazia se não houver valores para uma variável específica.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 

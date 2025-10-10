@@ -2,7 +2,7 @@
 title: Alterações na rotulagem do Google Chrome SameSite
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 99%
@@ -117,6 +117,8 @@ Somente os cookies padrão comuns de visitante estão listados na tabela abaixo.
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Primário do lado do cliente | Sem valor adicionado *O padrão do Chrome é a configuração `lax` | Configurável para páginas externas |
 
->  cookies de terceiros Adobe estão definidos no lado do servidor.
+>
+>
+>Cookies de terceiros do Adobe são definidos no lado do servidor.
 
 Para mais informações, consulte o documento sobre as [Políticas do SameSite do Google Chrome no Target](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=pt-BR).

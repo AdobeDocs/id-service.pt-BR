@@ -3,7 +3,7 @@ description: Essa função permite que você compartilhe a Experience Cloud ID d
 keywords: Serviço de ID
 title: appendVisitorIDsTo (rastreamento entre domínios)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: f185ae10dac686b6986b171aef8a46a574484283
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 88%
@@ -35,9 +35,9 @@ O serviço de ID grava cookies próprios e de terceiros no navegador quando uma 
 * Gerar novamente o identificador exclusivo do visitante do site quando eles navegarem para outro domínio.
 * Rastrear visitantes em diferentes domínios pertencentes à sua organização.
 
-Para ajudar a resolver esse problema, implemente ` Visitor.appendVisitorIDsTo( *`URL`*)`. Essa propriedade permite que o serviço de ID rastreie visitantes do site em vários domínios, mesmo quando os navegadores bloqueiam cookies de terceiros. Funciona assim:
+Para ajudar a resolver esse problema, implemente `Visitor.appendVisitorIDsTo( *`URL`*)`. Essa propriedade permite que o serviço de ID rastreie visitantes do site em vários domínios, mesmo quando os navegadores bloqueiam cookies de terceiros. Funciona assim:
 
-* À medida que um visitante navega em outros domínios, o ` Visitor.appendVisitorIDsTo( *`URL`*)` anexa a MID como um parâmetro de consulta no redirecionamento de URL do domínio original para o domínio de destino.
+* À medida que um visitante navega em outros domínios, o `Visitor.appendVisitorIDsTo( *`URL`*)` anexa a MID como um parâmetro de consulta no redirecionamento de URL do domínio original para o domínio de destino.
 * O código do serviço de ID no domínio de destino extrai a MID do URL em vez de enviar uma solicitação da ID de visitante para a Adobe. Essa solicitação inclui a ID do cookie de terceiros, que não está disponível nesse caso.
 * O código do serviço de ID na página de destino usa a MID passada para rastrear o visitante.
 
@@ -77,7 +77,7 @@ adbeDomains.forEach(function(domain) {
 >
 >In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
-The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. When implemented properly, your JavaScript code could look similar to the following example.
+The following example can help you get started with `Visitor.appendVisitorIDsTo( *`url`*)`. When implemented properly, your JavaScript code could look similar to the following example.
 
 ```js
 //Code on Domain A 
@@ -111,8 +111,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=pt-BR" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=pt-BR" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

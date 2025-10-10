@@ -1,17 +1,17 @@
 ---
-description: Depois de ativar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
+description: Depois de habilitar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
 title: Validação do serviço de Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 94%
+source-wordcount: '434'
+ht-degree: 96%
 
 ---
 
 # Validação do serviço de Opt-in{#validating-opt-in-service}
 
-Depois de ativar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
+Depois de habilitar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
 
 ## Caso de uso 1: Ativar o Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
@@ -43,13 +43,13 @@ Você não deve ver solicitações para servidores da Adobe:
 >
 >Você poderá ver uma chamada para `http://dpm.demdex.net/optOutStatus`, que é um ponto de extremidade SOMENTE LEITURA usado para recuperar o status de Opt-in do visitante. Esse endpoint não resultará na criação de cookies de terceiros e não coletará informações da página.
 
-Você não deve ver cookies criados pelas tags Adobe: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+Você não deve ver cookies criados pelas marcas da Adobe: (`AMCV_{{YOUR_ORG_ID}}`, `mbox`, `demdex`, `s_cc`, `s_sq`, `everest_g_v2`, `everest_session_v2`)
 
 No Chrome, acesse a guia *Aplicativo*, expanda a seção *Cookies* em *Armazenamento* e selecione o nome de domínio do seu site:
 
 ![](assets/use_case_1_2.png)
 
-## Caso de uso 2: Ativar o Opt-in e o armazenamento {#section-bd28326f52474fa09a2addca23ccdc0f}
+## Caso de uso 2: Habilitar o Opt-in e o armazenamento {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -60,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 A única diferença no caso de uso 2 é que você verá *um novo cookie* que conterá as permissões de aceitação fornecidas pelo visitante: **adobeujs-optin**
 
-## Caso de uso 3: Ativar o Opt-in e pré-aprovar o Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
+## Caso de uso 3: Habilitar o Opt-in e pré-aprovar o Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -80,7 +80,7 @@ e você verá os cookies do Analytics na guia Aplicativo:
 
 ![](assets/use_case_3_2.png)
 
-## Caso de uso 4: Ativar o Opt-in e o IAB {#section-64331998954d4892960dcecd744a6d88}
+## Caso de uso 4: Habilitar o Opt-in e o IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
