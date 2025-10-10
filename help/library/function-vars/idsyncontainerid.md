@@ -81,7 +81,7 @@ Dependendo da situação, pode ser ou não necessário adicionar essa configura�
 
 ## Definir IDs de contêineres ao usar DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Você implantou [!UICONTROL DIL ]* e* VisitorAPI.js na mesma página:
+Você implantou [!UICONTROL DIL &#x200B;]* e* VisitorAPI.js na mesma página:
 
 * O código do serviço de ID do visitante tem prioridade sobre o DIL para sincronizações de ID.
 * Defina a `idSyncContainerID` configuração de somente no código do serviço de ID.
