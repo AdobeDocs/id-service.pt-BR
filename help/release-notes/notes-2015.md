@@ -37,7 +37,7 @@ Agosto de 2015
   Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
    * Utilização do serviço de ID.
-   * Ativação de um [período de carência ](../reference/analytics-reference/grace-period.md)*ou* utilização de cookies primários, além de usuários que bloquearam os cookies de terceiros.
+   * Ativação de um [período de carência &#x200B;](../reference/analytics-reference/grace-period.md)*ou* utilização de cookies primários, além de usuários que bloquearam os cookies de terceiros.
 
    * Páginas com domínios multiparte e nível superior.
 
