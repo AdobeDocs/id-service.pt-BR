@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isto é similar à função [`s_gi()` ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=pt-BR) em [!DNL AppMeasurement].
+Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isto é similar à função [`s_gi()` &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=pt-BR) em [!DNL AppMeasurement].
 
 **Uso comum**
 
