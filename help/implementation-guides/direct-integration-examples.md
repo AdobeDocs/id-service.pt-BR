@@ -52,7 +52,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
-   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Observe como a chamada de amostra contém a: </p> 
+   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Observe como a chamada de amostra contém a: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID ingressada em seu identificador exclusivo do visitante: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,7 +87,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
-   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Observe como a chamada de amostra contém sua ID da organização, <span class="codeph">d_orgid=5555</span>. Isso retornaria uma <span class="keyword">Experience Cloud</span> ID para esse visitante. </p> </td> 
+   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Observe como a chamada de amostra contém sua ID da organização, <span class="codeph">d_orgid=5555</span>. Isso retornaria uma <span class="keyword">Experience Cloud</span> ID para esse visitante. </p> </td> 
   </tr> 
  </tbody> 
 </table>
