@@ -3,10 +3,10 @@ description: Estas instruções são para clientes do Analytics, Audience Manage
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1443'
+ht-degree: 98%
 
 ---
 
@@ -37,8 +37,8 @@ A migração para o encaminhamento do lado do servidor requer planejamento e coo
 
 O serviço de ID exige a `VisitorAPI.js` biblioteca de código. Para baixar a biblioteca de código:
 
-1. Acesse **[!UICONTROL Administração > Gerenciamento de código]**.
-1. No Gerenciamento de código, clique em **[!UICONTROL JavaScript (Novo)]** ou **[!UICONTROL JavaScript (Herdado)]**. As bibliotecas de código comprimidas serão baixadas.
+1. Vá para **[!UICONTROL Admin > Code Manager]**.
+1. No Gerenciador de código, clique em **[!UICONTROL JavaScrpt (New)]** ou **[!UICONTROL JavaScript (Legacy)]**. As bibliotecas de código comprimidas serão baixadas.
 
 1. Descomprima o arquivo de código e abra o `VisitorAPI.js` arquivo.
 
@@ -130,7 +130,7 @@ Caso não tenha certeza de como encontrar o servidor de rastreamento, consulte [
 
 ## Etapa 6: atualizar o arquivo AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Essa etapa exige o [!UICONTROL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
+Essa etapa requer o [!UICONTROL AppMeasurement]. Não é possível continuar se você estiver usando o s_code.
 
 Adicione a `Visitor.getInstance` função mostrada abaixo ao `AppMeasurement.js` arquivo. Insira-o na seção que contém configurações, como `linkInternalFilters`, `charSet`, `trackDownloads`, etc.:
 
@@ -158,7 +158,7 @@ Insira o `[!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página.
 
 ## Etapa 8: configurar um período de carência (opcional) {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](../reference/analytics-reference/grace-period.md) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
+Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um período de carência temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -206,7 +206,7 @@ Verifique o identificador SDID na solicitação do JavaScript. O SDID do Analyti
 Se os testes retornarem uma AID, isso indica uma destas opções:
 
 * Você é um visitante constante no processo de migração de IDs herdadas do [!DNL Analytics].
-* O [período de carência](../reference/analytics-reference/grace-period.md) está habilitado.
+* O [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) está habilitado.
 
 Ao observar uma AID, compare o valor com a mboxMCAVID do [!DNL Target]. Esses valores são idênticos quando o serviço de ID é implementado corretamente.
 

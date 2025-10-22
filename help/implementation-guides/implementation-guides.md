@@ -5,9 +5,9 @@ solution: Experience Cloud
 title: Guias de implementação
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '171'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ Uma implementação padrão usa o [Adobe Exprience Platform Launch](https://expe
 
 * [Métodos de implementação](implementation-methods.md)
 * [Implementar com Experience Platform Launch](ecid-implement-with-launch.md)
-* [Implementar o serviço de identidade da Experience Cloud para Analytics](setup-analytics.md)
 * [Implementar o serviço de identidade da Experience Cloud para Target](setup-target.md)
 * [Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager](setup-aam-analytics.md)
 * [Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target](setup-aam-analytics-target.md)
