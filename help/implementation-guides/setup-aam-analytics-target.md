@@ -206,7 +206,7 @@ Verifique o identificador SDID na solicitação do JavaScript. O SDID do Analyti
 Se os testes retornarem uma AID, isso indica uma destas opções:
 
 * Você é um visitante constante no processo de migração de IDs herdadas do [!DNL Analytics].
-* O [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) está habilitado.
+* O [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) está habilitado.
 
 Ao observar uma AID, compare o valor com a mboxMCAVID do [!DNL Target]. Esses valores são idênticos quando o serviço de ID é implementado corretamente.
 

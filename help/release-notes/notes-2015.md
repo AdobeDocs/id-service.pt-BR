@@ -37,7 +37,7 @@ Agosto de 2015
   Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
    * Utilização do serviço de ID.
-   * Habilitados um [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
+   * Habilitados um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
    * Páginas com domínios multiparte e nível superior.
 
 As revisões de documentação desta versão incluem:
