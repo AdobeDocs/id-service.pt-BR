@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Um sinalizador booleano opcional que impede o serviço de ID de efetuar chamadas para outros domínios.
 
-**Sintaxe:** ` `disableThirdPartyCalls: true false`` (o padrão é `false`.)
+**Sintaxe:** ` `disableThirdPartyCalls: true false&grave;&grave; (o padrão é `false`.)
 
 Quando `disableThirdPartyCalls: true`, o serviço de ID não fará chamadas para outros domínios.
 
