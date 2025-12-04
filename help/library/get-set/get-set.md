@@ -3,7 +3,7 @@ description: Métodos públicos que permitem a você interagir com o serviço de
 keywords: Serviço de ID
 title: Métodos
 exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 100%
@@ -33,3 +33,4 @@ Artigos relacionados:
 + [getVisitorValues](getvisitorvalues.md)
 + [isClientSideMarketingCloudVisitorID](client-side-id.md)
 + [resetState](resetstate.md)
+

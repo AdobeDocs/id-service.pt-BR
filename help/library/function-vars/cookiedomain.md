@@ -3,10 +3,10 @@ description: Necessário para domínios de alto nível e com muitas partes, em q
 keywords: Serviço de ID
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '58'
+ht-degree: 100%
 
 ---
 
@@ -36,3 +36,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieDomain:"example.com.uk" 
 });
 ```
+

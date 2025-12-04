@@ -3,7 +3,7 @@ description: Consulte esta seção para verificar se você está usando as solu�
 keywords: Serviço de ID
 title: Requisitos do serviço de identidade da Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Para usar o serviço de ID, a empresa deve estar habilitada para a [!DNL Experie
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Ativado</b> </p> </td> 
+   <td colname="col1"> <p> <b>Habilitado</b> </p> </td> 
    <td colname="col2"> <p>Se sua empresa estiver habilitada para a <span class="keyword">Experience Cloud</span>, mas você não tiver a ID da organização, consulte as <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR" format="https" scope="external">IDs organizacionais</a> (role para baixo até a seção <i>Localizar a ID da sua organização</i>). </p> </td> 
   </tr> 
   <tr> 
@@ -135,3 +135,4 @@ O código do SDK deve ser habilitado para o serviço de ID. Habilite e baixe o c
 >[!MORELIKETHIS]
 >
 >* [Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
+

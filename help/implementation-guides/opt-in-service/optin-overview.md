@@ -2,7 +2,7 @@
 description: O serviço de Opt-in permite configurar os protocolos para o visitante a fim de determinar se você pode adicionar um cookie no dispositivo ou no navegador do usuário quando ele visitar o site.
 title: Serviço de Opt-in
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
@@ -45,3 +45,4 @@ Usando o serviço de Opt-in, você pode configurar o site para permitir que algu
 ![](assets/Opt-in-approval.png)
 
 As soluções da Adobe podem verificar se a tag foi aprovada, assinar as alterações e recuperar todos os clientes que aderiram. O serviço de Opt-in permite obter as permissões diretamente das bibliotecas JavaScript da solução ou pela ECID, se tiver sido implementada.
+

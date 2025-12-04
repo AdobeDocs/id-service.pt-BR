@@ -3,10 +3,10 @@ description: Essa variável permite que você substitua o intervalo padrão do c
 keywords: Serviço de ID
 title: cookieLifetime
 exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '50'
+ht-degree: 100%
 
 ---
 
@@ -33,3 +33,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieLifetime:31536000 
 });
 ```
+

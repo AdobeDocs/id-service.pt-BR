@@ -3,7 +3,7 @@ description: Notas de versão e atualizações de 2015.
 keywords: Serviço de ID
 title: Notas de versão de 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 96%
@@ -37,7 +37,7 @@ Agosto de 2015
   Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
    * Utilização do serviço de ID.
-   * Habilitados um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
+   * Habilitados um [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
    * Páginas com domínios multiparte e nível superior.
 
 As revisões de documentação desta versão incluem:
@@ -76,3 +76,4 @@ Correção do tratamento do tempo limite em solicitações para AAM Blob e Dica 
 Janeiro de 2015
 
 A `<head>/<body>` pesquisa de tag retrabalhada para o contêiner de tag da solicitação JSONP `<script>`, assim como a criação da tag `<script>` para cuidar de diferentes implantações DOM (HTML vs. XHTML), com a possibilidade de diferentes configurações que diferenciam caracteres maiúsculos e minúsculos. (AN-9355)
+

@@ -1,9 +1,9 @@
 ---
-description: O Serviço de identidade da Experience Cloud ativa a estrutura de identificação comum para aplicativos e serviços da Experience Cloud. Ele atribui uma ID exclusiva e contínua conhecida como Experience Cloud ID (ECID) a um visitante do site.
+description: O Serviço de identidade da Experience Cloud habilita a estrutura de identificação comum para aplicativos e serviços da Experience Cloud. Ele atribui uma ID exclusiva e contínua conhecida como Experience Cloud ID (ECID) a um visitante do site.
 keywords: Serviço de ID; Serviço de identidade; Serviço de identidade da Experience Cloud
 title: Serviço de identidade da Experience Cloud
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 507b5c9fed0d6d16828522c0fd9c7db4fdeefe3d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 95%
@@ -12,7 +12,7 @@ ht-degree: 95%
 
 # Serviço de identidade da Adobe Experience Cloud {#experience-cloud-id-service}
 
-O Serviço de identidade da Experience Cloud ativa a estrutura de identificação comum para aplicativos e serviços da Experience Cloud. Ele atribui uma ID exclusiva e contínua conhecida como Experience Cloud ID (ECID) a um visitante do site.
+O Serviço de identidade da Experience Cloud habilita a estrutura de identificação comum para aplicativos e serviços da Experience Cloud. Ele atribui uma ID exclusiva e contínua conhecida como Experience Cloud ID (ECID) a um visitante do site.
 
 ## Compreensão dos principais elementos da identidade
 
@@ -57,3 +57,4 @@ Para entender melhor como o Adobe ajuda a identificar de forma exclusiva os visi
   </tr> 
  </tbody> 
 </table>
+

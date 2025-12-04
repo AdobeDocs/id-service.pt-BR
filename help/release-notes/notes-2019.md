@@ -3,10 +3,10 @@ description: Lançamentos, atualizações ou mudanças futuras do serviço de id
 keywords: Serviço de ID
 title: Notas de versão de 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Adicionar caixa de seleção de aprovação prévia de análise de mídia na Ext
 
 **Suporte para ITP 2.1**. Se um servidor de rastreamento estiver definido em um CNAME próprio, um novo cookie (s_ecid) será colocado com o valor ECID. A biblioteca ECID faz referência ao valor para manter a ID além de 7 dias. Consulte [Métodos de biblioteca da ECID em um mundo da ITP Safari](/help/reference/ecid-library-methods.md).
 
-**Correção de bug para a configuração secureCookie.**
+**Correção de erro para a configuração secureCookie.**
 
 ## Versão 4.1
 
@@ -67,3 +67,4 @@ Suporte para o plug-in do Audience Manager para IAB TCF, disponível por meio do
 |---|---|
 | O sinalizador `disableIdSyncs` não está funcionando ao passar uma string. | Fixo. Os valores definidos no `disableidSyncs` parâmetro para a `getInstance` função agora são honrados. |
 | IFrames de terceiros não obtêm a ECID | Correção da ECID no Safari Mobile e ACIDs em vários iFrames que não estavam funcionando. |
+

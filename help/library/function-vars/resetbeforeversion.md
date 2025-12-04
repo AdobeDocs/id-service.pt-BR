@@ -3,10 +3,10 @@ description: Essa configuração permite limpar Experience Cloud IDs (ECIDs) ór
 keywords: Serviço de ID
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -42,3 +42,4 @@ var visitor = Visitor.getInstance ("Insert Marketing Cloud organization ID here"
     resetBeforeVersion: "3.3" 
 });
 ```
+

@@ -3,10 +3,10 @@ description: Altere o nome de domínio padrão usado pelas chamadas do serviço 
 keywords: Serviço de ID
 title: audienceManagerServer e audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '210'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Normalmente, o serviço da [!DNL Experience Cloud] ID faz chamadas para a [!DNL 
 Essas configurações exigem:
 
 * O nome do [!DNL Audience Manager] subdomínio do registrado da sua empresa. Verifique ou obtenha esse nome de seu consultor.
-* O nome do subdomínio associado à [!UICONTROL ID de organização].
+* O nome do subdomínio associado à [!UICONTROL Organization ID]
 * *Ambos* os parâmetros de configuração com o mesmo nome de subdomínio.
 
 **Amostra de código**
@@ -45,3 +45,4 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
      } 
 );
 ```
+

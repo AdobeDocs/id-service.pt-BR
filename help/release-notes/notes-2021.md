@@ -3,7 +3,7 @@ description: Lançamentos, atualizações ou mudanças futuras do serviço de id
 keywords: Serviço de ID
 title: Notas de versão de 2021
 exl-id: 56bffb6f-a4fc-40df-8bb2-17e43772fe60
-source-git-commit: 52956b38c59f60507aaf236b152ce41fc1229d14
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
@@ -33,3 +33,4 @@ visitorInstance.onReceiveEcid(callback(ecid){
  console.log(ecid)
 })
 ```
+

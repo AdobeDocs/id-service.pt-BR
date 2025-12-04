@@ -3,10 +3,10 @@ description: Essa propriedade define a ID do contêiner de origem dos dados que 
 keywords: Serviço de ID
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: d8b230331d983bc95f96516243c3a65037dea7f0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 90%
+source-wordcount: '319'
+ht-degree: 91%
 
 ---
 
@@ -81,7 +81,8 @@ Dependendo da situação, pode ser ou não necessário adicionar essa configura�
 
 ## Definir IDs de contêineres ao usar DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Você implantou o [!UICONTROL DIL] *e* VisitorAPI.js na mesma página:
+Você implantou [!UICONTROL DIL] *e* VisitorAPI.js na mesma página:
 
 * O código do serviço de ID do visitante tem prioridade sobre o DIL para sincronizações de ID.
 * Defina a `idSyncContainerID` configuração de somente no código do serviço de ID.
+

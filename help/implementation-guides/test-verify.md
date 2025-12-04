@@ -3,9 +3,9 @@ description: Essas instruções, ferramentas e procedimentos ajudam você a dete
 keywords: Serviço de ID
 title: Testar e verificar o serviço de identidade da Experience Cloud
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
@@ -78,13 +78,13 @@ Consulte esta seção para obter informações sobre o que e onde procurar, ao u
 
 **Solicitações de serviço de ID com sucesso no Charles**
 
-O código do serviço de ID está funcionando adequadamente quando a função `Visitor.getInstance` efetua uma chamada de JavaScript para `dpm.demdex.net`. Uma solicitação bem sucedida inclui a [ID da organização](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). A ID da empresa é passada como um par de valores chave que utiliza a sintaxe: `d_orgid= *`ID da organização`*`. Procure `dpm.demdex.net` e as chamadas de JavaScript na guia [!UICONTROL Estrutura]. Procure pela ID da organização na guia [!UICONTROL Solicitação].
+O código do serviço de ID está funcionando adequadamente quando a função `Visitor.getInstance` efetua uma chamada de JavaScript para `dpm.demdex.net`. Uma solicitação bem sucedida inclui a [ID da organização](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). A ID da empresa é passada como um par de valores chave que utiliza a sintaxe: `d_orgid= *`ID da organização`*`. Procure o `dpm.demdex.net` e as chamadas de JavaScript na guia [!UICONTROL Structure]. Procure a ID da organização na guia [!UICONTROL Request].
 
 ![](assets/charles_request.png)
 
 **Solicitações do serviço de ID com sucesso no Charles**
 
-Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=pt-BR) (DCS) retornar uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Procure a MID na guia [!UICONTROL Resposta], como mostrado abaixo.
+Sua conta recebe corretamente o serviço de ID quando a resposta dos [Servidores de coleta de dados](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=pt-BR) (DCS) retornar uma MID. A MID é retornada em um par de valores chave que usa a sintaxe: `d_mid: *`Experience Cloud ID do visitante`*`. Procure a MID na guia [!UICONTROL Response], como mostrado abaixo.
 
 ![](assets/charles_response_success.png)
 
@@ -95,3 +95,4 @@ A conta não foi provisionada adequadamente se a MID estiver faltando na respost
 ![](assets/charles_response_unsuccessful.png)
 
 Para obter mais informações sobre os códigos de erro, consulte [Códigos de erro, mensagens e exemplos de DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=pt-BR).
+

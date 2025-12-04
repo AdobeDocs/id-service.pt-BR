@@ -2,7 +2,7 @@
 description: Depois de habilitar o Opt-in no site, use os métodos de validação para testar se o serviço funciona conforme o esperado usando as ferramentas de desenvolvedor do seu navegador.
 title: Validação do serviço de Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 96%
@@ -113,3 +113,4 @@ Se um dos itens a seguir não for válido, você não verá solicitações para 
 
 * As finalidades 1, 2 OU 5 não são aprovadas.
 * A ID do fornecedor do Audience Manager não foi aprovada.
+

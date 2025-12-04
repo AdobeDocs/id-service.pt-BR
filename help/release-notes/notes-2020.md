@@ -3,7 +3,7 @@ description: Lançamentos, atualizações ou mudanças futuras do serviço de id
 keywords: Serviço de ID
 title: Notas de versão de 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 99%
@@ -47,3 +47,4 @@ Correção de um problema de desempenho em `Internet-Explorer (IE) 11` que a ECI
 * Correção de um problema em que o opt-in é configurado como `doesOptInApply=false` e `isIabContext=true`.
 
 Consulte as [notas de versão da Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR) para ver as notas de versão mensais de todos os produtos.
+

@@ -3,7 +3,7 @@ description: Essa configuração permite substituir o intervalo de expiração p
 keywords: Serviço de ID
 title: sdidParamExpiry
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 96%
@@ -35,3 +35,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
 ```
+

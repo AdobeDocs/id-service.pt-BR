@@ -3,7 +3,7 @@ description: Lançamentos, atualizações ou alterações de recursos do serviç
 keywords: Serviço de ID
 title: Notas de versão de 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 99%
@@ -100,7 +100,7 @@ Julho de 2017
 
 **Correções de erros e outras alterações**
 
-* Correção de um bug no VisitorAPI.js v2.2 que impedia o serviço de ID e o Target de trabalharem juntos no Internet Explorer.
+* Correção de um erro no VisitorAPI.js v2.2 que impedia o serviço de ID e o Target de trabalharem juntos no Internet Explorer.
 * Código revisado para ajudar a melhorar como o serviço de ID envia dados para o Destination Publishing iFrame. Isso ajuda a reduzir o uso da CPU.
 
 ## Versão 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
@@ -187,7 +187,7 @@ Data de lançamento: de fevereiro de 2017
 
 **Correções**
 
-Correção de um bug que fazia com que o serviço de ID fizesse chamadas redundantes de servidor para uma ID em vez de usar a ID armazenada no cookie AMCV. (MCID-296)
+Correção de um erro que fazia com que o serviço de ID fizesse chamadas redundantes de servidor para uma ID em vez de usar a ID armazenada no cookie AMCV. (MCID-296)
 
 **Nova documentação**
 
@@ -203,10 +203,11 @@ Janeiro de 2017
 
 **Correções e melhorias**
 
-* Correção de um bug que impedia o AppMeasurement de fazer chamadas de rastreamento para o Analytics. (MCID-254, MCID-256, MCID-286)
-* Correção de um bug que prevenia a falha imediata do serviço de ID caso o bloqueador de anúncios do visitante estivesse ativado e configurado para excluir o domínio demdex.net. Esse bug é raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
+* Correção de um erro que impedia o AppMeasurement de fazer chamadas de rastreamento para o Analytics. (MCID-254, MCID-256, MCID-286)
+* Correção de um erro que prevenia a falha imediata do serviço de ID caso o bloqueador de anúncios do visitante estivesse habilitado e configurado para excluir o domínio demdex.net. Esse erro é raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
 * Correção de um erro causado pelas interações entre o código do serviço de ID e um script personalizado no site de um cliente. Esse problema impedia que o Internet Explorer 9 carregasse páginas da Web. (MCID-206)
 
 ## Anos anteriores {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Notas de versão antigas do serviço de ID.
+

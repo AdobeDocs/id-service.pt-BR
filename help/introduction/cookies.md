@@ -3,7 +3,7 @@ description: O serviço de ID usa a ID da organização, o cookie AMCV da Experi
 keywords: playstation, serviço de ID
 title: Cookies e o serviço de identidade da Experience Cloud
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 100%
@@ -138,3 +138,4 @@ A tabela a seguir descreve os sinalizadores para Cookies da Experience Cloud:
 ## Próximas etapas {#section-8db1727a63bc4ff68b495f270315d453}
 
 Consulte [Como o serviço de identidade da Experience Cloud solicita e define IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+

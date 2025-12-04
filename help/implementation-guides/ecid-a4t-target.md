@@ -3,10 +3,10 @@ description: Essas instruções se aplicam aos clientes da A4T com implementaç�
 keywords: Serviço de ID
 title: Usar o serviço de ID com o A4T e uma implementação do lado do servidor do Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
+source-wordcount: '803'
+ht-degree: 96%
 
 ---
 
@@ -152,10 +152,10 @@ Response.send("
 
 **Configurações do DTM**
 
-Adicione esses pares de valor de nome à seção **[!UICONTROL Geral > Configurações]** da instância do serviço de ID:
+Adicione esses pares de valor de nome à seção **[!UICONTROL General > Settings]** da instância do serviço de ID:
 
-* **[!UICONTROL Nome:]** serverState
-* **[!UICONTROL Valor:]** %serverState%
+* **[!UICONTROL Name:]** serverState
+* **[!UICONTROL Value:]** %serverState%
 
   >[!IMPORTANT]
   >
@@ -196,4 +196,5 @@ Nesse ponto, o servidor da Web envia conteúdo da página para o navegador do vi
 
 >[!MORELIKETHIS]
 >
->* [Pacote de serviço de ID do lado do servidor do Gerenciador de pacote de nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Pacote de serviço de ID do lado do servidor do Gerenciador de pacotes do Node](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+

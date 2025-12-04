@@ -3,7 +3,7 @@ description: Estas instruções são para clientes do Analytics, Audience Manage
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 98%
@@ -206,7 +206,7 @@ Verifique o identificador SDID na solicitação do JavaScript. O SDID do Analyti
 Se os testes retornarem uma AID, isso indica uma destas opções:
 
 * Você é um visitante constante no processo de migração de IDs herdadas do [!DNL Analytics].
-* O [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) está habilitado.
+* O [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) está habilitado.
 
 Ao observar uma AID, compare o valor com a mboxMCAVID do [!DNL Target]. Esses valores são idênticos quando o serviço de ID é implementado corretamente.
 
@@ -238,3 +238,4 @@ Se você habilitou um período de carência:
 
 * Garanta que a ID do Analytics (AID) e a MID estejam presentes na solicitação de imagem.
 * Lembre-se de desabilitar o período de carência após atender os [critérios para a descontinuação](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).
+

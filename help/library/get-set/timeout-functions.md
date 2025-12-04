@@ -3,7 +3,7 @@ description: Chame essas funções do serviço de ID para determinar o status do
 keywords: Serviço de ID
 title: Métodos de callTimeOut
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 98%
@@ -51,7 +51,7 @@ Chame essas funções do serviço de ID para determinar o status do tempo limite
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> TRUE</span> </p> </td> 
-   <td colname="col2"> <p>O serviço de ID enviou uma solicitação e ela atingiu o tempo limite. </p> </td> 
+   <td colname="col2"> <p>O serviço de ID enviou uma solicitação e ela expirou. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> FALSE</span> </p> </td> 
@@ -63,3 +63,4 @@ Chame essas funções do serviço de ID para determinar o status do tempo limite
   </tr> 
  </tbody> 
 </table>
+

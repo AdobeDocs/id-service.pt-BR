@@ -2,10 +2,10 @@
 title: Métodos de biblioteca da ECID em um mundo da ITP Safari
 description: Documentação da biblioteca da Adobe ECID (serviço de ID).
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ A seguir, é mostrado como a biblioteca ECID se comporta com a ITP 2.1 e as alte
 
 **Projeto**
 
-Depois que uma solicitação de ID é feita para demdex.net e uma ECID é recuperada, se um servidor de rastreamento for definido em sua biblioteca ECID, uma solicitação de ID será feita ao domínio do cliente. Esse ponto de extremidade lê o parâmetro de ECID da string de consulta e define um novo [cookie](/help/introduction/cookies.md) que abrange apenas a ECID e uma data de validade de dois anos. Sempre que esse ponto de extremidade é chamado dessa forma, o `s_ecid` cookie é regravado com uma data de validade de dois anos a partir da hora da chamada. A biblioteca da ECID precisa ser atualizada para v 4.3.0 para que o valor desse cookie possa ser recuperado.
+Depois que uma solicitação de ID é feita para demdex.net e uma ECID é recuperada, se um servidor de rastreamento for definido em sua biblioteca ECID, uma solicitação de ID será feita ao domínio do cliente. Esse ponto de extremidade lê o parâmetro de ECID da string de consulta e define um novo [cookie](/help/introduction/cookies.md) que abrange apenas a ECID e uma data de expiração de dois anos. Sempre que esse ponto de extremidade é chamado dessa forma, o `s_ecid` cookie é regravado com uma data de expiração de dois anos a partir da hora da chamada. A biblioteca da ECID precisa ser atualizada para v 4.3.0 para que o valor desse cookie possa ser recuperado.
 
 >[!IMPORTANT]
 >
@@ -77,3 +77,4 @@ Essa função permite que você compartilhe a ECID de um visitante entre domíni
   >Se a página de destino já tiver uma ECID das visitas anteriores, a decisão de sobregravar o cookie existente é controlada por esta configuração overwriteCrossDomainMCIDAndAID. Para obter detalhes sobre essa configuração, consulte [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
   >
   >Para obter mais detalhes sobre este método, consulte a página de referência [appendVisitorIDsTo (Rastreamento entre domínios)](/help/library/get-set/appendvisitorid.md).
+

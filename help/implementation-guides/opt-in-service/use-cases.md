@@ -2,10 +2,10 @@
 description: Casos de uso de amostra e soluções para gerenciar o serviço de Opt-in.
 title: Casos de uso de opt-in
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 90%
 
 ---
 
@@ -33,18 +33,18 @@ Esses casos de uso são exemplos para usar o serviço de Opt-in.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>O Analytics pode coletar no estado de pré-consentimento, mas todas as outras bibliotecas só podem ser carregadas depois que o consentimento é recebido </p> </td> 
-   <td colname="col2"> <p>Usar a aceitação para ativar a categoria do Analytics no estado de pré-consentimento </p> </td> 
+   <td colname="col1"> <p>O Analytics pode coletar no estado de pré-consentimento, mas todas as outras bibliotecas não podem ser carregadas até que o consentimento seja recebido </p> </td> 
+   <td colname="col2"> <p>Usar a aceitação para habilitar a categoria do Analytics no estado de pré-consentimento </p> </td> 
    <td colname="col3"> <p>O Analytics usa seu próprio identificador e não a ECID para coletar em pré-consentimento. Depois que a ECID for aprovada, um novo identificador será usado, e o visitante receberá uma ECID que poderá ser usada para ativação e integrações. </p> <p>É esperada a fragmentação do visitante no estado pré/pós-consentimento. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>A medição própria pode coletar no estado pré-consentimento. Todos os outros tipos de uso de dados são impedidos até que o consentimento seja recebido. </p> </td> 
-   <td colname="col2"> <p>Use a aceitação para ativar as bibliotecas do Analytics + ECID no estado de pré-consentimento. </p> <p>Adicionar a configuração "disablethirdpartycookies" à biblioteca da ECID para bloquear cookies de terceiros + sincronizações de ID no estado de pré-consentimento </p> </td> 
+   <td colname="col2"> <p>Use a aceitação para habilitar as bibliotecas do Analytics + ECID no estado de pré-consentimento. </p> <p>Adicione a configuração "disablethirdpartycookies" à biblioteca da ECID para bloquear cookies de terceiros + sincronizações de ID no estado pré-consentimento </p> </td> 
    <td colname="col3"> <p>A chamada Demdex da Adobe acionará a recuperação da ECID, mas nenhum cookie Demdex, cookie de terceiros ou sincronização de ID estará presente. </p> <p>Mantém o visitante no estado pré/pós-consentimento consistente para o Analytics. A coleção no estado de pré-consentimento será vinculada à coleção de dados após o consentimento. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Medição própria e direcionamento são aceitáveis em um estado pré-consentimento. Todos os outros tipos de uso de dados são impedidos até que o consentimento seja recebido. </p> </td> 
-   <td colname="col2"> <p>Use a aceitação para ativar as bibliotecas do Analytics + ECID + Target no estado de pré-consentimento. </p> <p>Adicione a configuração <span class="codeph">isablethirdpartycookies</span> à biblioteca da ECID para bloquear cookies de terceiros + sincronizações de ID no estado pré-consentimento. Remova o sinalizador no estado de pós-consentimento. </p> </td> 
+   <td colname="col2"> <p>Use a aceitação para habilitar as bibliotecas do Analytics + ECID + Target no estado de pré-consentimento. </p> <p>Adicione a configuração <span class="codeph">isablethirdpartycookies</span> à biblioteca da ECID para bloquear cookies de terceiros + sincronizações de ID no estado pré-consentimento. Remova o sinalizador no estado de pós-consentimento. </p> </td> 
    <td colname="col3"> <p>A chamada Adobe Demdex acionará a recuperação da ECID, mas nenhum cookie Demdex, cookie de terceiros ou sincronização de ID estará presente. </p> <p>Mantém o visitante no estado pré/pós-consentimento consistente para soluções de próprias. A coleção no estado de pré-consentimento será vinculada à coleção de dados após o consentimento. </p> </td> 
   </tr> 
   <tr> 
@@ -54,3 +54,4 @@ Esses casos de uso são exemplos para usar o serviço de Opt-in.
   </tr> 
  </tbody> 
 </table>
+

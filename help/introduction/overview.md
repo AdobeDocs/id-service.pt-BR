@@ -2,7 +2,7 @@
 description: A função do serviço de identidade da Experience Cloud na Adobe Experience Cloud.
 title: Visão geral do Serviço de identidade da Experience Cloud
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Visão geral do Serviço de identidade da Experience Cloud
 
-O Serviço de identidade da Experience Cloud ativa a estrutura de identificação comum para os serviços de aplicativos da Experience Cloud. Você pode usar o Serviço de identidade da Experience Cloud para definir a [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=pt-BR).
+O Serviço de identidade da Experience Cloud habilita a estrutura de identificação comum para os serviços de aplicativos da Experience Cloud. Você pode usar o Serviço de identidade da Experience Cloud para definir a [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=pt-BR).
 
 A ECID é um namespace de identidade compartilhada usado em aplicativos da Adobe Experience Platform e Experience Cloud para rastrear o comportamento do visitante e garantir que cada dispositivo tenha um identificador exclusivo que possa ser mantido em várias sessões.
 
@@ -50,3 +50,4 @@ Sua solução e outras bibliotecas de código da Adobe devem atender a [certos r
 * [Cookies e o Serviço de identidade da Experience Cloud](cookies.md): o Serviço de identidade da Experience Cloud usa a ID da sua organização, o cookie AMCV da Experience Cloud e o cookie demdex para criar e armazenar identificadores contínuos e exclusivos para os visitantes do site. Esses cookies permitem que o Serviço de identidade rastreie os visitantes em domínios diferentes e permite o compartilhamento de dados entre diferentes soluções da Experience Cloud.
 * [Como o serviço de identidade da Experience Cloud solicita e define IDs](id-request.md): uma visão geral do processo de solicitação e resposta de ID. Esses exemplos cobrem a atribuição de ID em sites individuais, em sites diferentes e para sites gerenciados por clientes diversos da Experience Cloud com suas próprias IDs da organização.
 * [Entendendo a sincronização de ID e taxas de correspondência](match-rates.md): uma visão geral dos processos de sincronização de ID e taxas de correspondência no Serviço de identidade da Experience Cloud, incluindo o Adobe Media Optimizer e o Serviço de identidade.
+

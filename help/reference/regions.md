@@ -3,10 +3,10 @@ description: O cookie AMCV contém a Experience Cloud ID (MID) e uma ID de regi�
 keywords: Serviço de ID
 title: Obter as IDs de região e usuário do cookie AMCV ou do serviço de ID
 exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '206'
+ht-degree: 90%
 
 ---
 
@@ -19,3 +19,4 @@ Para obter mais informações, consulte [Obter IDs de usuário e regiões por me
 Se você for um [!DNL Audience Manager] cliente do, é possível obter a ID da região da resposta enviada pelo Servidor de coleta de dados (DCS). Consulte [Obter IDs de usuário e regiões de uma resposta de DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html?lang=pt-BR).
 
 Também é possível obter a ID da região com um `GET` método fornecido pelo serviço de ID. Consulte [Obter IDs de região (Dica de localização)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
+

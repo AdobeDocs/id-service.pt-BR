@@ -2,7 +2,7 @@
 description: Referência de ajustes da API da biblioteca de Opt-in e das configurações.
 title: Referência de opt-in
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 99%
@@ -88,7 +88,7 @@ Função que nega ou faz opt-out do visitante de todas as categoria especificada
 
 `adobe.optIn.complete()`
 
-Função que dispara a agregação das chamadas procedentes para approve() e deny() em uma única solicitação para definir as preferências de um visitante. Ao se inscrever nas alterações de Opt-in (consulte `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) abaixo, o retorno de chamada será disparado somente quando essa função for chamada.
+Função que aciona a agregação das chamadas procedentes para approve() e deny() em uma única solicitação para definir as preferências de um visitante. Ao se inscrever nas alterações de Opt-in (consulte `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) abaixo, o retorno de chamada será disparado somente quando essa função for chamada.
 
 ## Parâmetros de permissões de Opt-in do visitante {#section-7fe57279b5b44b4f8fe47e336df60155}
 
@@ -158,7 +158,7 @@ Verifique se uma ou mais categorias foram aprovadas pelo cliente. (Se foram tran
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-A API assíncrona recupera a lista de permissões. A chamada de retorno é recebida com a lista de permissões após a conclusão do processo de concessão/negação de permissões. **`shouldAutoSubscribe`:** um utilitário assistente inscreverá automaticamente essa chamada de retorno a todos os eventos futuros. Isso significa que a chamada de retorno será recebido sempre que uma aprovação ou negação for disparada no Opt-in. Dessa forma, você está sempre atualizado sem se inscrever nos eventos.
+A API assíncrona recupera a lista de permissões. A chamada de retorno é recebida com a lista de permissões após a conclusão do processo de concessão/negação de permissões. **`shouldAutoSubscribe`:** um utilitário assistente inscreverá automaticamente essa chamada de retorno a todos os eventos futuros. Isso significa que a chamada de retorno será recebida sempre que uma aprovação ou negação for acionada no Opt-in. Dessa forma, você está sempre atualizado sem se inscrever nos eventos.
 
 **Exemplo**
 
@@ -205,7 +205,7 @@ Negue todas as Categorias existentes.
 
 **`complete`:**
 
-Conclui os disparos de eventos quando o processo de aprovação for concluído. Se você chamar aprovar/negar sem passar `shouldWaitForComplete` ou `approveAll`/ `denyAll`, esse evento será disparado. Ou, se você passar `shouldWaitForComplete`, esse evento será disparado quando `complete` for chamado.
+Conclui os disparos de eventos quando o processo de aprovação for concluído. Se você chamar aprovar/negar sem passar `shouldWaitForComplete` ou `approveAll`/ `denyAll`, esse evento será acionado. Ou, se você passar `shouldWaitForComplete`, esse evento será acionado quando `complete` for chamado.
 
 **Exemplo**
 
@@ -214,3 +214,4 @@ Conclui os disparos de eventos quando o processo de aprovação for concluído. 
   adobe.optIn.on("complete", callback); 
 </codeph>
 ```
+

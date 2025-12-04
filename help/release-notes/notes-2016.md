@@ -5,10 +5,10 @@ title: Notas de versão de 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Agosto de 2016
 
 * Adicionado o recuso compatível com o rastreamento de [!DNL Experience Cloud] IDs por domínios, aplicativos nativos e híbridos em transições da Web. Consulte [Função de ajuda Anexar ID do visitante](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* Adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante do lado do cliente ou do lado do servidor, ou se as chamadas atingiram o tempo limite. Consulte [Funções de rastreamento de tempo limite](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
+* Foram adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante do lado do cliente ou do lado do servidor, ou se as chamadas expiraram. Consulte [Funções de rastreamento de tempo limite](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
 
 **Documentação nova e revisada**
 
@@ -218,3 +218,5 @@ Janeiro de 2016
   </tr> 
  </tbody> 
 </table>
+
+

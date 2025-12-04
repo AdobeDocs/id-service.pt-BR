@@ -3,10 +3,10 @@ description: Um sinalizador booleano opcional que impede o serviço de ID de efe
 keywords: rastreamento entre domínios, serviço de ID
 title: disableThirdPartyCalls
 exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,3 +45,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableThirdPartyCalls: true 
 }); 
 ```
+

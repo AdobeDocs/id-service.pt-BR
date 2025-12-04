@@ -3,7 +3,7 @@ description: Esta é uma API assíncrona que retorna os identificadores para o A
 keywords: Serviço de ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 95%
@@ -119,3 +119,4 @@ A tabela a seguir lista e define os parâmetros de resposta. Esses são todos os
   </tr> 
  </tbody> 
 </table>
+

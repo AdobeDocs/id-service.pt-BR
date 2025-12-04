@@ -3,7 +3,7 @@ description: O serviço de Experience Cloud ID (ECID) é compatível com o algor
 keywords: Serviço de ID
 title: Suporte a hash SHA256 para setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 97%
@@ -100,3 +100,4 @@ setCustomerIDs(Ingeration code: {
 ```
 
 De modo semelhante ao método `setCustomerIDs` descrito na primeira seção, isso resulta em uma chamada com o serviço da Experience Cloud ID, além do parâmetro `d_cid_ic` de consulta.
+

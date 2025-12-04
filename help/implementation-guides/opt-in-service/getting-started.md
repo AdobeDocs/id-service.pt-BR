@@ -2,10 +2,10 @@
 description: Implemente o serviço de Opt-in como o único ponto de referência usado pelas soluções da Experience Cloud (referido como Categorias no Opt-in) para determinar se os cookies devem ser criados no dispositivo de um visitante.
 title: Configuração do serviço de Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ O serviço de Opt-in permite especificar se um visitante pode aderir às soluç�
    For IAB, see here for additional pre-reqs.
    -->
 
-1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o GDPR. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado de pré-consentimento.
+1. Os requisitos de privacidade da sua empresa serão específicos quanto à maneira como você permanece em conformidade com o RGPD. Saiba quais bibliotecas as equipes de privacidade da sua empresa aceitam usar em um estado de pré-consentimento.
 
 Se estiver usando as [tags da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR), utilize a [extensão de aceitação](../../implementation-guides/opt-in-service/launch.md) para configurar o serviço de aceitação.
 
@@ -143,3 +143,4 @@ O `adobe.optIn` objeto não tem estado e não fornece um mecanismo de armazename
 
 * Se sua solução de persistência de consentimento, seja ela um CMP ou um cookie no navegador do visitante, permitir a recuperação oportuna das preferências do visitante, você poderá fornecê-las ao serviço de Opt-in durante a inicialização do Visitante.
 * No entanto, se a recuperação demorar muito ou puder ser realizada melhor como um processo assíncrono, você pode usar a `approve()` função do serviço para fornecer as configurações depois de serem carregadas com sucesso.
+

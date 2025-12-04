@@ -1,9 +1,9 @@
 ---
-description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Incluir na lista de permissões Revise esta seção se você usar o serviço de ID e tiver CSPs rigorosas que usam para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas listas de permissões CSP.
+description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam incluis na lista de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas incluis na lista de permissões da CSP.
 keywords: Serviço de ID
 title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 62%
@@ -12,13 +12,13 @@ ht-degree: 62%
 
 # Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud {#content-security-policies-and-the-experience-cloud-id-service}
 
-Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Incluir na lista de permissões Revise esta seção se você usar o serviço de ID e tiver CSPs rigorosas que usam para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas listas de permissões CSP.
+Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam incluis na lista de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas incluis na lista de permissões da CSP.
 
 ## Análise da CSP {#section-5fde5c00a678455c914b8307a8caab82}
 
 As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo de recursos que os navegadores aceitam ou carregam em uma página. A aplicação de um CSP pode ajudá-lo a evitar:
 
-* o carregamento de arquivos JavaScript incluir na lista de permissões se a origem for desconhecida ou não estiver incluída em um arquivo de pesquisa.
+* o carregamento de arquivos JavaScript se a origem for desconhecida ou não estiver incluída em um incluo na lista de permissões.
 * Ataques de script entre sites (XXS).
 * Ataques de injeção de dados.
 * Ataques de deformação do site.
@@ -87,12 +87,12 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
     <p><b>Advertising Analytics</b></p>
    </td>
    <td colname="col2">
-    <p>Se você restringir os parâmetros da cadeia de caracteres de consulta, incluirá na lista de permissões os seguintes parâmetros:</p>
+    <p>Se você restringir os parâmetros da string de consulta, inclua na lista de permissões os seguintes parâmetros:</p>
     <ul>
      <li><code>s_kwcid</code> (que usa <code>!</code>)</li>
      <li><code>ef_id</code> (que usa <code>:</code>)</li>
     </ul>
-    <p>Se você bloquear o caractere <code>!</code> em URLs, também o incluirá na lista de permissões.</p>
+    <p>Se você bloquear o caractere <code>!</code> em URLs, inclua na lista de permissões-o também.</p>
     <p>O Advertising Analytics usa somente <code>s_kwcid</code>, mas o Advertising Search, Social, &amp; Commerce e Advertising DSP também usam <code>ef_id</code>.</p>
    </td>
   </tr>
@@ -116,3 +116,4 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
 >* [Referência da política de segurança de conteúdo](https://content-security-policy.com/)
 >* [MDN: política de segurança de conteúdo](https://developer.mozilla.org/pt/docs/Web/HTTP/CSP)
 >* [Wikipedia: política de segurança de conteúdo](https://en.wikipedia.org/wiki/Content_Security_Policy)
+

@@ -5,7 +5,7 @@ title: Heartbeat de vídeo e o serviço de identidade da Experience Cloud
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%
@@ -18,4 +18,5 @@ O heartbeat de vídeo exige o serviço de identidade da Experience Cloud. Ao med
 
 >[!MORELIKETHIS]
 >
->* [Avaliação de áudio e vídeo no Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=pt-BR)
+>* [Avaliação de áudio e vídeo no Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=pt-BR)
+

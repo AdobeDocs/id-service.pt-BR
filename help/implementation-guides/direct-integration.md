@@ -3,7 +3,7 @@ description: Essa implementação permite que os clientes usem o serviço de ID 
 keywords: Serviço de ID
 title: Integração direta com o serviço de identidade da Experience Cloud
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 98%
@@ -122,3 +122,4 @@ Alguns parâmetros de resposta fazem parte da solicitação e foram definidos na
   </tr> 
  </tbody> 
 </table>
+

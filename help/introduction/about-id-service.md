@@ -3,7 +3,7 @@ description: A função do serviço de identidade da Experience Cloud na Adobe E
 keywords: Serviço de ID
 title: Visão geral
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 96%
@@ -34,7 +34,8 @@ Resumindo, o serviço de ID:
 
 * Cria uma chave comum ou ID que pode ser usada para vincular perfis e identidades.
 * Identifica com exclusividade um dispositivo em várias soluções.
-* Define um cookie próprio no domínio do cliente para garantir o rastreamento no mesmo domínio. Consulte [Experience Cloud](../introduction/cookies.md).
+* Define um cookie primário no domínio do cliente para garantir o rastreamento no mesmo domínio. Consulte [Experience Cloud](../introduction/cookies.md).
 * Recebe aliases e mapeamentos de ID de [!DNL Experience Cloud] clientes e parceiros.
 * Gerencia a sincronização de ID na [!DNL Experience Cloud].
 * Oferece suporte à sincronização de ID com terceiros diferentes no ecossistema de tecnologia de anúncios.
+

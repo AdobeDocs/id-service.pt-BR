@@ -3,9 +3,9 @@ description: Essas configurações permitem que diferentes instâncias do códig
 keywords: Serviço de ID
 title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '859'
 ht-degree: 98%
 
 ---
@@ -42,14 +42,14 @@ Ambos os elementos de configuração são necessários ao usar esse código.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "Domínio do iFrame","Domínio do iFrame", "Domínio do iFrame" </span>] </span> </p> </td> 
-   <td colname="col2"> <p>Aceita um ou mais nomes de domínio do iFrame passados como um array. </p> </td> 
+   <td colname="col2"> <p>Aceita um ou mais nomes de domínio do iFrame passados como matriz. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Amostra de código {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-O código do [!UICONTROL serviço de ID] configurado é semelhante ao deste exemplo.
+O [!UICONTROL ID service] código configurado é semelhante ao deste exemplo.
 
 ```js
 //Instantiate Visitor 
@@ -184,3 +184,4 @@ O serviço de ID oferece suporte a um conjunto limitado de métodos de API públ
   </tr> 
  </tbody> 
 </table>
+

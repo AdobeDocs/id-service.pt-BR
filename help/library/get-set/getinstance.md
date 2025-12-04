@@ -3,9 +3,9 @@ description: getInstance retorna um objeto de ID de visitante para a ID de empre
 keywords: Serviço de ID
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
@@ -32,7 +32,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*Não* instancie a função Visitante com `var visitor = new Visitor`. Você deve usar a chamada de função adequada descrita aqui. Aplicável a biblioteca de códigos [!UICONTROL VisitorAPI.js] v3.0 ou posterior.
+>*Não* instancie a função Visitante com `var visitor = new Visitor`. Você deve usar a chamada de função adequada descrita aqui. Aplicável à [!UICONTROL VisitorAPI.js] biblioteca de código v3.0 ou posterior de.
 
 **ActionScript/Flash**
 
@@ -50,10 +50,11 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isto é similar à função [`s_gi()` &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=pt-BR) em [!DNL AppMeasurement].
+Se `getInstance` não encontrar uma instância existente, uma nova instância é criada e retornada. Isto é similar à função [`s_gi()` ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=pt-BR) em [!DNL AppMeasurement].
 
 **Uso comum**
 
 A API do serviço da [!DNL Experience Cloud] ID mantém uma lista de todas as instâncias criadas para cada [!DNL Adobe Experience Cloud] ID de empresa da. Se o aplicativo com a API do serviço de ID não estiver passando uma referência para a instância, ele pode encontrar a instância chamando `getInstance` em vez de criar uma nova. Isso também oferece suporte a diversas instâncias e para diferentes empresas na mesma página da Web ou aplicativo.
 
 Isso é útil para aplicativos que não possuem uma `init` fase definida, mas precisam verificar a API do serviço de ID em vários lugares. É possível chamar `getInstance` em todos esses lugares, e a primeira execução criará a instância. A instância existente será retornada por chamadas subsequentes.
+

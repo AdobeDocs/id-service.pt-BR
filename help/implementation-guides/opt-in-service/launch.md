@@ -1,8 +1,8 @@
 ---
-description: Simplifique a ativação da solução da Experience Cloud para Opt-in usando o Adobe Experience Platform Launch.
+description: Simplifique a habilitação da solução de aceitação da Experience Cloud usando o Adobe Experience Platform Launch.
 title: Configuração do Opt-in com o Launch
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
-source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Configuração da aceitação no Experience Platform Launch {#configuring-opt-in-with-launch}
 
-Simplifique a ativação da solução de aceitação da Experience Cloud usando o Adobe Experience Platform Launch.
+Simplifique a habilitação da solução de aceitação da Experience Cloud usando o Adobe Experience Platform Launch.
 
 ## Configurar um cenário de aceitação com o Experience Platform Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
@@ -26,3 +26,4 @@ Para configurar a extensão, abra a guia *Extensões* e passe o mouse sobre a ex
 Para obter mais informações de referência, leia a [Visão geral da extensão do serviço de identidade da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=pt-BR).
 
 ![](assets/optin-launch.jpg)
+

@@ -2,10 +2,10 @@
 title: Identificação dos visitantes únicos
 description: Documentação para Adobe ECID (serviço de ID)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
-source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,3 +25,4 @@ O método para identificar visitantes únicos entre vários contextos inclui uma
 {style="table-layout:auto"}
 
 Para obter informações sobre como os visitantes únicos são relatados, consulte [Visitantes únicos no Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR).
+

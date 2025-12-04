@@ -3,7 +3,7 @@ description: Estas instruções são para clientes do Analytics e do Audience Ma
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud para o Analytics e o Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 98%
@@ -158,7 +158,7 @@ Insira o `[!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página.
 
 ## Etapa 8: configurar um período de carência (opcional) {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
+Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
@@ -204,3 +204,4 @@ Se você habilitou um período de carência:
 
 * Garanta que a ID do Analytics (AID) e a MID estejam presentes na solicitação de imagem.
 * Lembre-se de desabilitar o período de carência após atender os critérios para a descontinuação.
+

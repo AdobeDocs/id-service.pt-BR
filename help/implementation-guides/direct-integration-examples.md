@@ -3,10 +3,10 @@ description: Esses exemplos abordam dois casos de uso comuns relacionados a uma 
 keywords: Serviço de ID
 title: Casos de uso da integração direta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 81%
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
 >* Para obter mais informações sobre a MID, consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md).
 >
 
-## Caso de uso 1: tenho uma ID de Experience Cloud (MID), mas quero passar minhas IDs de visitante e definir um estado de autenticação {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso de uso 1: tenho uma Experience Cloud ID (MID), mas quero passar minhas IDs de visitante e definir um estado de autenticação {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -48,11 +48,11 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">A ID do provedor de dados. É um identificador exclusivo atribuído à sua empresa. Vamos chamar essa ID de 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">A ID para o visitante (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Opcional)</i> Uma ID de status para definir o estado de autenticação desse visitante. </li> 
-    </ul> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
+    </ul> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.), não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
-   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Observe como a chamada de amostra contém a: </p> 
+   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Observe como a chamada de amostra contém a: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID ingressada em seu identificador exclusivo do visitante: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -83,11 +83,12 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ações</b> </p> </td> 
-   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o serviço de ID que inclua a ID da organização. </p> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
+   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o serviço de ID que inclua a ID da organização. </p> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.), não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
-   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Observe como a chamada de amostra contém sua ID da organização, <span class="codeph">d_orgid=5555</span>. Isso retornaria uma <span class="keyword">Experience Cloud</span> ID para esse visitante. </p> </td> 
+   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Observe como a chamada de amostra contém sua ID da organização, <span class="codeph">d_orgid=5555</span>. Isso retornaria uma <span class="keyword">Experience Cloud</span> ID para esse visitante. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+

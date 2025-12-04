@@ -5,7 +5,7 @@ solution: Experience Cloud
 title: Guias de implementação
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
@@ -36,3 +36,4 @@ Uma implementação padrão usa o [Adobe Exprience Platform Launch](https://expe
 * [Casos de uso da integração direta](direct-integration-examples.md)
 * [Testar e verificar o serviço de identidade da Experience Cloud](test-verify.md)
 * [Visão geral do serviço de Opt-in](opt-in-service/optin-overview.md)
+
