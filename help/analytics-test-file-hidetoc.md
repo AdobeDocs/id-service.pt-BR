@@ -1,9 +1,8 @@
 ---
 title: Arquivo de teste
 description: Este é um arquivo de teste para coleta de análises. Ignore-o.
-hidefromtoc: true
 exl-id: d764e055-9644-473b-ab0a-e5007319dbc7
-source-git-commit: 024a897ebbe8f134096f2ab7575d5627019c3fa7
+source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 50%
