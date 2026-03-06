@@ -4,10 +4,10 @@ user-guide-title: Ajuda do serviço de identidade da Experience Cloud
 breadcrumb-title: Guia do Serviço de identidade
 user-guide-description: O Serviço de identidade da Adobe Experience Cloud fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções da Experience Cloud. Ele ajuda a substituir o código de geração de ID herdado para soluções e serviços da Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
    + [Métodos de implementação](implementation-guides/implementation-methods.md)
    + [Guias de implementação](implementation-guides/implementation-guides.md)
    + [Implementar com as tags da Experience Platform](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementar para o Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/overview){target=_blank}
+   + [Implementar para o Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Implementar para o Target](implementation-guides/setup-target.md)
    + [Implementar para o Analytics e o Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementar para o Analytics, Audience Manager e Target](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 98%
    + [Notas de versão de 2017](release-notes/notes-2017.md)
    + [Notas de versão de 2016](release-notes/notes-2016.md)
    + [Notas de versão de 2015](release-notes/notes-2015.md)
-+ [Teste de análise oculto do sumário](analytics-test-file-hidetoc.md)
-+ [Arquivo de teste oculto](hidden-file.md)
++ {hide-from-toc}[Teste de análise oculto do sumário](analytics-test-file-hidetoc.md)
++ {hide-from-toc}[Arquivo de teste oculto](hidden-file.md)
