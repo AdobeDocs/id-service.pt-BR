@@ -3,9 +3,9 @@ description: Uma visão geral da solicitação de ID e do processo de resposta. 
 keywords: Serviço de ID
 title: Como o serviço de identidade da Experience Cloud solicita e define IDs
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 96fb9d7fe7d8527d1689e20503722e9b1674e921
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '759'
 ht-degree: 100%
 
 ---
@@ -58,4 +58,3 @@ Depois que o DCS recebe a ID de organização e a ID demdex, ele cria e retorna 
 Neste exemplo, nosso visitante deixa os sites da Food Company e navega até o site de futebol pertencente à Sports Company. Quando o visitante chega ao site de futebol, o processo de solicitação e verificação de ID funciona da mesma forma descrita nos exemplos anteriores. No entanto, como a Sports Company tem sua própria ID de empresa, o serviço de ID retorna uma MID diferente. A nova MID é exclusiva ao domínio controlado pela Sports Company e permite que a empresa rastreie e compartilhe os dados do visitante em todas as soluções da [!DNL Experience Cloud]. A ID demdex permanece a mesma para esse visitante porque ela está contida no cookie de terceiros e continua por diferentes domínios.
 
 ![](assets/req_resp.png)
-
