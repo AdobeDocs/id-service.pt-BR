@@ -3,10 +3,10 @@ description: O Serviço de identidade da Experience Cloud habilita a estrutura d
 keywords: Serviço de ID; Serviço de identidade; Serviço de identidade da Experience Cloud
 title: Serviço de identidade da Experience Cloud
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 96%
 
 ---
 
@@ -39,10 +39,11 @@ Para entender melhor como o Adobe ajuda a identificar de forma exclusiva os visi
       <li id="li_9E512C6DD15C46C3ABD06ACD60D97E4A"> <a href="faq-intro/faq-intro.md" format="dita" scope="local"> Perguntas frequentes </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
-     <!-- 
+     <!--
      <p> <b>Announcements:</b> </p> 
      <p> <p>Important:  ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release. </p> </p> 
-     --> </td> 
+     -->
+   </td> 
    <td colname="col2"> <p> <b>Notas de versão</b> </p> <p><b>A versão 4.4</b> de 17 de julho 2019 inclui suporte para o <a href="reference/hashing-support.md" format="dita" scope="local">algoritmo de hash SHA-256</a> que permite a transmissão de IDs do cliente ou endereços de email e de IDs com hash.</p><p><b>A Versão 4.0 de</b> 12 de fevereiro de 2019 inclui o <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">serviço de Opt-in</a> usado para identificar se você pode colocar um cookie no dispositivo ou no navegador de um usuário ao visitar o site. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Consulte as <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR" format="https" scope="external">Notas de versão da Experience Cloud</a> para obter novos recursos e correções. </li> 

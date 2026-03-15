@@ -3,10 +3,10 @@ description: Lançamentos, atualizações ou alterações de recursos do serviç
 keywords: Serviço de ID
 title: Notas de versão de 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 99%
+source-wordcount: '734'
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,8 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * O serviço de ID agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
 * Adição de nova documentação, [Políticas de segurança de conteúdo e Serviço de identidade da Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como colocar chamadas na lista de permissões para domínios da Adobe usados pelo serviço de ID.
 
-<!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+<!--
+## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
 August, 2017
 
@@ -73,7 +74,8 @@ August, 2017
 
 **Revised Documentation**
 
-Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. -->
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. 
+-->
 
 ## Versão 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
