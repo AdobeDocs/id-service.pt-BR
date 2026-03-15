@@ -3,10 +3,10 @@ description: Os navegadores usam o CORS (Cross Origin Resource Sharing, Comparti
 keywords: Serviço de ID
 title: Suporte ao CORS no serviço de identidade da Experience Cloud
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 96%
+source-wordcount: '630'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Os navegadores usam o CORS (Cross Origin Resource Sharing, Compartilhamento de r
 As políticas de mesma origem são controles ou restrições de segurança aplicadas por um navegador. Quando aplicado nesse nível, o próprio navegador da web determina se uma solicitação de recursos feita de uma página para outra será permitida ou bloqueada. Para determinar se uma solicitação tem a mesma origem, o navegador compara:
 
 * Identificadores de recursos uniformes (URIs)
-* Nomes de host (por exemplo, http://www.my-webpage-example.com)
+* Nomes de host (por exemplo, `http://www.my-webpage-example.com`)
 * Números de porta (por exemplo, porta 80 e 440 para solicitações HTTP e HTTPS)
 
 O navegador permite que uma solicitação seja bem-sucedida se ambas as páginas compartilharem essas características e bloquearem solicitações de recursos.
@@ -31,7 +31,7 @@ O CORS fornece uma maneira segura e eficaz de solicitar recursos em diferentes d
 * `Origin`: um cabeçalho de solicitação que identifica a origem de uma solicitação.
 * `Access-Control-Allow-Origin`: um cabeçalho de resposta que indica se um recurso pode ser compartilhado com o solicitante.
 
-Vamos analisar como esses cabeçalhos funcionam. Neste exemplo, considere uma empresa de serviços financeiros que implementou o serviço da [!DNL Experience Cloud] ID no seu site, www.finance-website.com. A tabela a seguir define como a solicitação do CORS e os cabeçalhos de resposta verificam o acesso a um recurso.
+Vamos analisar como esses cabeçalhos funcionam. Neste exemplo, considere uma empresa de serviços financeiros que implementou o serviço de ID [!DNL Experience Cloud] no site `www.finance-website.com`. A tabela a seguir define como a solicitação do CORS e os cabeçalhos de resposta verificam o acesso a um recurso.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -45,7 +45,7 @@ Vamos analisar como esses cabeçalhos funcionam. Neste exemplo, considere uma em
    <td colname="col1"> <p> <b>Solicitação</b> </p> </td> 
    <td colname="col2"> <p>Enquanto a página da empresa de finanças é carregada, o navegador faz uma solicitação para <span class="codeph">dpm.demdex.net</span>. Essa é uma chamada para o domínio dos servidores de coleção de dados (DCS) usados pelo serviço de ID. Essa solicitação entre domínios inclui o cabeçalho: </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin:https://www.finance-website.com</span> </li> 
+      <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
