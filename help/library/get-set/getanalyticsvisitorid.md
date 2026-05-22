@@ -58,7 +58,7 @@ O parâmetro `aid` é visto em uma string de consulta quando:
 
 **Caso 2**
 
-Você verá o `aid` parâmetro em uma string de consulta quando a empresa estiver usando um [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) antes de implementar totalmente o serviço de ID. Se um novo usuário visitar seu site e você não usar um período de carência, ele receberá o parâmetro `mid`([!DNL Experience Cloud] ID).
+Você verá o `aid` parâmetro em uma string de consulta quando a empresa estiver usando um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) antes de implementar totalmente o serviço de ID. Se um novo usuário visitar seu site e você não usar um período de carência, ele receberá o parâmetro `mid`([!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >
