@@ -5,10 +5,24 @@ title: Notas de versão de 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/u91aLAt-ycKk1U1A1yhAVUAonGhV6fHWNRVTZB0QAXI
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 1131
+ht-degree: 97%
 
 ---
 
@@ -73,7 +87,7 @@ Agosto de 2016
 
 * Adicionado o recuso compatível com o rastreamento de [!DNL Experience Cloud] IDs por domínios, aplicativos nativos e híbridos em transições da Web. Consulte [Função de ajuda Anexar ID do visitante](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* Foram adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante do lado do cliente ou do lado do servidor, ou se as chamadas expiraram. Consulte [Funções de rastreamento de tempo limite](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
+* Foram adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante do lado do cliente ou do lado do servidor, ou se as chamadas expiraram. Consulte [Funções de rastreamento de tempo-limite](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
 
 **Documentação nova e revisada**
 
@@ -89,7 +103,7 @@ Julho de 2016
 
 >[!IMPORTANT]
 >
->A versão 1.6.0 do serviço de [!DNL Experience Cloud] ID *exige* o AppMeasurement para JavaScript versão 1.6.2. Se você atualizar para o serviço de ID versão 1.6.0, use a versão adequada do código do AppMeasurement.
+>A versão 1.6.0 do serviço de ID *do [!DNL Experience Cloud] requer* o AppMeasurement para JavaScript versão 1.6.2. Se você atualizar para o serviço de ID versão 1.6.0, use a versão correta do código do AppMeasurement.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 

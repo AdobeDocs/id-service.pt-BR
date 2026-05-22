@@ -3,9 +3,19 @@ description: Esses exemplos abordam dois casos de uso comuns relacionados a uma 
 keywords: Serviço de ID
 title: Casos de uso da integração direta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: 457
 ht-degree: 78%
 
 ---
@@ -48,7 +58,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">A ID do provedor de dados. É um identificador exclusivo atribuído à sua empresa. Vamos chamar essa ID de 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">A ID para o visitante (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Opcional)</i> Uma ID de status para definir o estado de autenticação desse visitante. </li> 
-    </ul> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.), não há problema em passá-los também. </p> </td> 
+    </ul> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
@@ -83,7 +93,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ações</b> </p> </td> 
-   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o serviço de ID que inclua a ID da organização. </p> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.), não há problema em passá-los também. </p> </td> 
+   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o serviço de ID que inclua a ID da organização. </p> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
