@@ -3,10 +3,14 @@ description: Notas de versão e atualizações de 2015.
 keywords: Serviço de ID
 title: Notas de versão de 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 96%
+source-wordcount: 449
+ht-degree: 94%
 
 ---
 
@@ -37,7 +41,7 @@ Agosto de 2015
   Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
    * Utilização do serviço de ID.
-   * Habilitados um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
+   * Habilitados um [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
    * Páginas com domínios multiparte e nível superior.
 
 As revisões de documentação desta versão incluem:
@@ -69,7 +73,7 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 Fevereiro de 2015
 
-Correção do tratamento do tempo limite em solicitações para AAM Blob e Dica de local. Agora, quando o tempo limite for atingido, o sistema deixará esses campos em branco para a página atual e fará todos os retornos de chamada. O tempo limite é tratado como uma condição de erro, portanto, ele tentará novamente na próxima página. (AN-94473, AN-94474)
+Correção do tratamento do tempo-limite em solicitações para AAM Blob e Dica de local. Agora, quando o tempo-limite for atingido, o sistema deixará esses campos em branco para a página atual e fará todos os retornos de chamada. O tempo-limite é tratado como uma condição de erro, portanto, ele tentará novamente na próxima página. (AN-94473, AN-94474)
 
 ## Versão 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 

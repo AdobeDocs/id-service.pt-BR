@@ -3,9 +3,12 @@ description: É possível associar outras IDs do cliente e um status de autentic
 keywords: Serviço de ID
 title: Estados de autenticação e IDs do cliente
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/0z2HaRyNYcuJhE6WMkTZVXK-DiPu2S5bdnOiYsZwxYg
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: 642
 ht-degree: 97%
 
 ---
@@ -212,7 +215,7 @@ Object customerIDs = visitor.getCustomerIDs();
 O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação do cliente em nosso código de SDK para Android e iOS. Consulte as seguintes bibliotecas de código:
 
 * [Métodos do SDK para Android](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=pt-BR)
-* [Métodos do SDK para iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=pt-BR)
+* [Métodos do iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=pt-BR)
 
 ## Aviso aos clientes do Analytics e do Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 

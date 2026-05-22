@@ -1,18 +1,21 @@
 ---
-description: Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
+description: Define um intervalo de tempo-limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
 keywords: Serviço de ID
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/w0-c0ROMsYRLqlHQuBfSAdardHnMfaJ8oTLf1xwL9QQ
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: 143
 ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-Define um intervalo de tempo limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
+Define um intervalo de tempo-limite em milissegundos. Usado para informar outras soluções (por exemplo, Analytics, Audience Manager, Target etc.) por quanto tempo esperar uma resposta do serviço de ID.
 
 **Sintaxe:** `loadTimeout: *`intervalo em milissegundos`*`
 
@@ -20,7 +23,7 @@ O valor padrão é de 30.000 milissegundos (30 segundos). É altamente recomend�
 
 >[!NOTE]
 >
->As chamadas para o serviço de ID são assíncronas em relação ao código que não seja da Adobe na página. Como resultado, aumentar ou diminuir o intervalo de tempo limite não altera a taxa na qual a página renderiza o conteúdo. No entanto, longos intervalos de tempo limite podem afetar o tempo de carregamento da página, conforme medido pelas ferramentas de monitoramento de rede comuns, mas o tempo de renderização não é afetado.
+>As chamadas para o serviço de ID são assíncronas em relação ao código que não seja da Adobe na página. Como resultado, aumentar ou diminuir o intervalo de tempo-limite não altera a taxa na qual a página renderiza o conteúdo. No entanto, longos intervalos de tempo-limite podem afetar o tempo de carregamento da página, conforme medido pelas ferramentas de monitoramento de rede comuns, mas o tempo de renderização não é afetado.
 
 **Amostra de código**
 

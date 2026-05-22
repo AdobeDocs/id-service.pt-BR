@@ -3,10 +3,14 @@ description: Um sinalizador booleano opcional que impede o serviço de ID de efe
 keywords: rastreamento entre domínios, serviço de ID
 title: disableThirdPartyCalls
 exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/mv00QfToxSqeITADmY1LbihbtJNHf1zzQef9uKDu-dc
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 200
+ht-degree: 100%
 
 ---
 
@@ -14,7 +18,7 @@ ht-degree: 0%
 
 Um sinalizador booleano opcional que impede o serviço de ID de efetuar chamadas para outros domínios.
 
-**Sintaxe:** ` `disableThirdPartyCalls: true false&grave;&grave; (o padrão é `false`.)
+**Sintaxe:** ` `disableThirdPartyCalls: true false`` (o padrão é `false`.)
 
 Quando `disableThirdPartyCalls: true`, o serviço de ID não fará chamadas para outros domínios.
 

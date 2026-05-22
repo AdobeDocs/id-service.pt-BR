@@ -3,10 +3,14 @@ description: Estas instruções são para clientes do Analytics, Audience Manage
 keywords: Serviço de ID
 title: Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/wGjBgvbWkETj-JmZ4MYFXiheoS0ctiycXvKIncTZpJw
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 98%
+source-wordcount: 1562
+ht-degree: 97%
 
 ---
 
@@ -206,7 +210,7 @@ Verifique o identificador SDID na solicitação do JavaScript. O SDID do Analyti
 Se os testes retornarem uma AID, isso indica uma destas opções:
 
 * Você é um visitante constante no processo de migração de IDs herdadas do [!DNL Analytics].
-* O [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) está habilitado.
+* O [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) está habilitado.
 
 Ao observar uma AID, compare o valor com a mboxMCAVID do [!DNL Target]. Esses valores são idênticos quando o serviço de ID é implementado corretamente.
 
