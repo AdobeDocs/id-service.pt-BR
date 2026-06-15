@@ -15,8 +15,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 97%
+source-wordcount: 216
+ht-degree: 91%
 
 ---
 
@@ -48,8 +48,8 @@ Para obter mais informações sobre esses valores de atributos, visite [web.dev]
 ## Versão 4.6
 
 * Ativar `loadSSL` sinalizador por padrão. Todas as chamadas para o Serviço de identidade serão ativadas `https` por padrão.  Os clientes podem defini-lo como falso se quiserem chamar os Serviços de identidade no http a partir de suas `non-ssl` páginas.
-* Atualização da função usada para detectar a `Internet-Explorer (IE)` versão para corrigir um problema reportado por `ESLint`.
-Correção de um problema de desempenho em `Internet-Explorer (IE) 11` que a ECID recebe o opt-in `pre-approval` e é atualizada posteriormente.
+* Atualização da função usada para detectar a versão `Internet-Explorer (IE)`, para corrigir um problema relatado por `ESLint`.
+Correção de um problema de desempenho em `Internet-Explorer (IE) 11` quando a ECID recebe o opt-in `pre-approval` e é atualizada posteriormente.
 
 ## Versão 4.5
 

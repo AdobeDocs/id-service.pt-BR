@@ -37,7 +37,7 @@ As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo d
 
 A utilização de documentos de estratégia por país é comum e bem compreendida. Não é objetivo desta documentação explicar em detalhes os documentos de estratégia por país (para mais informações, consulte os links de informação relacionadas abaixo). É importante saber quais nomes de domínio da Adobe você deve adicionar a uma CSP se você os utilizar e tiver políticas de segurança restritas. A adição desses domínios permite que os navegadores de visitantes que acessam seu site façam essas chamadas importantes para os recursos da Experience Cloud que você usa.
 
-## Domínios Experience Cloud para Incluir na lista de permissões {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domínios da Experience Cloud para monitoramento {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço da lista da Experience Cloud que você usa.
 

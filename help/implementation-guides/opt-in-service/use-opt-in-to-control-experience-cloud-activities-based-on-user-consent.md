@@ -26,7 +26,7 @@ O Adobe [!UICONTROL Opt-in] Object é uma extensão do Adobe [!UICONTROL Experie
 
 ## Noções básicas do [!UICONTROL Opt-In]
 
-Um aspecto importante das regras de privacidade é a aquisição e a transmissão do consentimento dos utilizadores sobre a forma como os seus dados pessoais podem ser utilizados e por quem. A versão mais recente do [!UICONTROL Identity Service] inclui uma funcionalidade que fornece um disparo condicional (como pré e pós-consentimento) das marcas de solução da Experience Cloud, com base no consentimento do usuário final. Esse processo é mostrado na imagem a seguir:
+Um aspecto importante das regras de privacidade é a aquisição e a transmissão do consentimento dos utilizadores sobre a forma como os seus dados pessoais podem ser utilizados e por quem. A versão mais recente do [!UICONTROL Identity Service] inclui uma funcionalidade que fornece um disparo condicional (como pré e pós-consentimento) das marcas da solução da Experience Cloud, com base no consentimento do usuário final. Esse processo é mostrado na imagem a seguir:
 
 ![Diagrama de como [!UICONTROL Opt-in] funciona](assets/opt-in.png)
 
