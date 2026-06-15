@@ -172,7 +172,7 @@ Insira o `[!UICONTROL VisitorAPI.js]` arquivo nas tags `<head>` de cada página.
 
 ## Etapa 8: configurar um período de carência (opcional) {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
+Se algum desses casos de uso se aplicar à sua situação, peça ao [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para configurar um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) temporário. Os períodos de carência podem durar até 180 dias. Você pode renovar um período de carência, se necessário.
 
 **Implementação parcial**
 
