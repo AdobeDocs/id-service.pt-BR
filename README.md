@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Grandes alterações dos funcionários da Adobe
 
-Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução CX Enterprise e seu trabalho for criar artigos técnicos, deverá usar o repositório privado em `https://github.com/Adobe-Enterprise-Docs/id-service.en`.
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução CX Enterprise e seu trabalho for criar artigos técnicos, deverá usar o repositório privado em `https://github.com/Adobe-Enterprise-Docs/id-service.pt-BR`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
