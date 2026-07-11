@@ -1,24 +1,15 @@
 ---
 title: Alterações na rotulagem do Google Chrome SameSite
-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
+description: Documentação da biblioteca Adobe ECID (Serviço de ID do visitante).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 TQID: https://experienceleague.adobe.com/VlmpxMM0Jm4ExEL1WdjeA3h9brGBslGoJCqgQ-xFaRs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 1125
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +31,7 @@ Visite o [documento padrão de cookie](https://tools.ietf.org/html/draft-ietf-ht
 | `lax` | Os cookies com essa configuração só são enviados quando o domínio exibido no URL do navegador corresponde ao domínio do cookie. Este é o novo padrão para cookies no Chrome. |
 | `none` | Os cookies com essa configuração estão disponíveis para acesso externo ou de terceiros, como “entre sites”. Antes dessa alteração, `none` era a configuração padrão do SameSite para cookies, ou seja, usar essa configuração faz com que um cookie se comporte de forma mais semelhante à forma tradicional. No entanto, o Google exige que qualquer cookie com essa configuração agora especifique o sinalizador seguro, significando que o cookie só será criado e enviado com solicitações em HTTPS. Todos os cookies entre sites sem o sinalizador seguro serão rejeitados pelo Google. |
 
-## O que você precisa saber como cliente da Adobe Experience Cloud
+## O que você precisa saber como cliente corporativo do Adobe CX
 
 **Não é necessária nenhuma atualização do JavaScript**
 
@@ -48,7 +39,7 @@ A Adobe já lançou atualizações do lado do servidor para definir cookies de t
 
 **Verifique se os pontos de extremidade de terceiros usam HTTPS**
 
-Todos os clientes do Analytics devem confirmar se a configuração JavaScript usa HTTPS para as chamadas com os serviços da Adobe. O Target, o Audience Manager e o Serviço de identidade da Experience Cloud (ECID) redirecionam chamadas HTTP de terceiros para seus respectivos pontos de extremidade HTTPS, o que pode aumentar a latência. Isso significa que você não precisa alterar sua configuração. Os clientes do Analytics devem atualizar suas implementações para usar exclusivamente HTTPS, já que os redirecionamentos específicos do Analytics podem causar perda de dados.
+Todos os clientes do Analytics devem confirmar se a configuração JavaScript usa HTTPS para as chamadas com os serviços da Adobe. O Target, o Audience Manager e o Serviço de ID de visitante (ECID) redirecionam chamadas HTTP de terceiros para seus respectivos pontos de extremidade HTTPS, o que pode aumentar a latência. Isso significa que você não precisa alterar sua configuração. Os clientes do Analytics devem atualizar suas implementações para usar exclusivamente HTTPS, já que os redirecionamentos específicos do Analytics podem causar perda de dados.
 
 **Cookies rotulados corretamente devem coletar dados conforme planejado**
 

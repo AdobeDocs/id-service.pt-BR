@@ -1,36 +1,30 @@
 ---
-description: Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à Experience Cloud ID (MID). A MID é um identificador exclusivo contínuo para os visitantes do site.
-keywords: Serviço de ID
+description: Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à ECID. A MID é um identificador exclusivo contínuo para os visitantes do site.
+keywords: Serviço de ID de visitante
 title: Casos de uso da integração direta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 457
-ht-degree: 78%
+source-wordcount: 456
+ht-degree: 50%
 
 ---
 
 # Casos de uso da integração direta {#direct-integration-use-cases}
 
-Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à Experience Cloud ID (ECID ou MID). Este é um identificador exclusivo contínuo para os visitantes de seu site.
+Esses exemplos abordam dois casos de uso comuns relacionados a uma integração direta e à ECID (também chamada de MID). Este é um identificador exclusivo contínuo para os visitantes de seu site.
 
 >[!TIP]
 >
 >* Analise e entenda a [sintaxe de código e as variáveis](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) antes de mergulhar nos casos de uso.
->* Para obter mais informações sobre a MID, consulte [Cookies e o serviço de identidade da Experience Cloud](../introduction/cookies.md).
+>* Para obter mais informações sobre a MID, consulte [Cookies e o Serviço de ID de visitante](../introduction/cookies.md).
 >
 
-## Caso de uso 1: tenho uma Experience Cloud ID (MID), mas quero passar minhas IDs de visitante e definir um estado de autenticação {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso de uso 1: tenho uma ECID, mas quero passar minhas IDs de visitante e definir um estado de autenticação {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -52,7 +46,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ações</b> </p> </td> 
-   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o serviço de ID que inclua: </p> 
+   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o Serviço de ID do visitante que inclua: </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">A MID (1234). </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">A ID do provedor de dados. É um identificador exclusivo atribuído à sua empresa. Vamos chamar essa ID de 4444. </li> 
@@ -62,7 +56,7 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
-   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Observe como a chamada de amostra contém a: </p> 
+   <td colname="col2"> <p>Formate a chamada para o Serviço de ID de visitante desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Observe como a chamada de amostra contém a: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID ingressada em seu identificador exclusivo do visitante: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,17 +81,17 @@ Esses exemplos abordam dois casos de uso comuns relacionados a uma integração 
    <td colname="col2"> <p>Este caso de uso supõe que você: </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
      <li id="li_E658AE0671D14558B65FDD8992F25996">Não tem uma MID para o visitante do site. </li> 
-     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">Precisa solicitar uma MID ao serviço de ID. </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Conhece sua <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">ID da organização</a>. Vamos chamá-la de 5555. </li> 
+     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">É necessário solicitar uma MID do Serviço de ID de visitante. </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Conhece sua <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local"> ID da Organização IMS</a>. Vamos chamá-la de 5555. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ações</b> </p> </td> 
-   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o serviço de ID que inclua a ID da organização. </p> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
+   <td colname="col2"> <p>Dadas essas condições, faça uma chamada para o Serviço de ID do visitante que inclua a ID da organização IMS. </p> <p>E, se você listou outros parâmetros no <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guia de integração direta</a> (por exemplo, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span> etc.) não há problema em passá-los também. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solução e amostra de código</b> </p> </td> 
-   <td colname="col2"> <p>Formate a chamada para o serviço de ID desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Observe como a chamada de amostra contém sua ID da organização, <span class="codeph">d_orgid=5555</span>. Isso retornaria uma <span class="keyword">Experience Cloud</span> ID para esse visitante. </p> </td> 
+   <td colname="col2"> <p>Formate a chamada para o Serviço de ID de visitante desta forma: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Observe como a chamada de amostra contém sua ID da Organização IMS, <span class="codeph">d_orgid=5555</span>. Isso retornaria uma ECID para esse visitante. </p> </td> 
   </tr> 
  </tbody> 
 </table>

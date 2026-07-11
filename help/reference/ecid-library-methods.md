@@ -1,22 +1,15 @@
 ---
 title: Métodos de biblioteca da ECID em um mundo da ITP Safari
-description: Documentação da biblioteca da Adobe ECID (serviço de ID).
+description: Documentação da biblioteca Adobe ECID (Serviço de ID do visitante).
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 833
-ht-degree: 93%
+source-wordcount: 830
+ht-degree: 75%
 
 ---
 
@@ -28,7 +21,7 @@ ht-degree: 93%
 
 À medida que o Safari reforça o rastreamento entre domínios por meio do ITP, a Adobe deve manter as práticas recomendadas para as bibliotecas que oferecem suporte aos clientes, além da privacidade e escolha do consumidor.
 
-A partir de 10 de novembro de 2020, todos os cookies persistentes primários definidos pela API document.cookie, geralmente conhecidos como cookies &quot;do lado do cliente&quot;, e os cookies definidos por meio de implementações CNAME primárias em navegadores Safari e iOS móveis têm sua expiração limitada a sete dias. Os cookies de terceiros continuarão bloqueados conforme indicado nas versões anteriores da ITP. Para obter mais detalhes sobre a ITP 2.1 e o impacto das soluções da Adobe, leia [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+A partir de 10 de novembro de 2020, todos os cookies persistentes primários definidos pela API document.cookie, geralmente conhecidos como cookies &quot;do lado do cliente&quot;, e os cookies definidos por meio de implementações CNAME primárias em navegadores Safari e iOS móveis têm sua expiração limitada a sete dias. Os cookies de terceiros continuarão bloqueados conforme indicado nas versões anteriores da ITP. Para obter mais detalhes sobre a ITP 2.1 e o impacto das soluções da Adobe, leia [Impacto do Safari ITP 2.1 em clientes da Adobe Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
 ## Alterações, configurações e métodos relacionados à ITP
 
@@ -42,7 +35,7 @@ Veja abaixo os esforços relacionados ao uso da biblioteca ITP e ECID.
 
 ## Comportamento atual da biblioteca ECID com a ITP e o WebKit da Apple
 
-O ITP 2.1 dificulta a capacidade de gravar cookies do lado do cliente, o que prejudica a capacidade de fornecer informações precisas de rastreamento do visitante para os clientes. Dessa forma, uma alteração está sendo introduzida nos servidores de rastreamento CNAME da Adobe para armazenar a Experience Cloud ID (ECID) do visitante em um cookie primário.
+O ITP 2.1 dificulta a capacidade de gravar cookies do lado do cliente, o que prejudica a capacidade de fornecer informações precisas de rastreamento do visitante para os clientes. Dessa forma, uma alteração está sendo introduzida nos servidores de rastreamento CNAME da Adobe para armazenar a ECID do visitante em um cookie primário.
 
 Essa alteração é útil apenas para clientes da ECID que utilizam um CNAME do Analytics no contexto próprio. Se você for um cliente do Analytics que não utiliza CNAME ou até mesmo se não for um cliente do Analytics, ainda é possível se qualificar para um registro CNAME. Entre em contato com o Atendimento ao cliente ou seu representante de conta para iniciar o processo de registro em um [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=pt-BR).
 
@@ -70,7 +63,7 @@ Se você optar por não aproveitar esse método, adicione a seguinte configuraç
 
 ## Use o método appendVisitorIDsTo para rastreamento entre domínios (em vários domínios da sua própria empresa)
 
-Essa função permite que você compartilhe a ECID de um visitante entre domínios quando os navegadores bloqueiam cookies de terceiros. Para usar essa função, é necessário implementar o serviço de ID, bem como ser o proprietário dos domínios de origem e destino. Disponível em VisitorAPI.js versão 1.7.0 ou posterior (mas não na versão 1.10.0).
+Essa função permite que você compartilhe a ECID de um visitante entre domínios quando os navegadores bloqueiam cookies de terceiros. Para usar essa função, é necessário implementar o Serviço de ID de visitante e ser o proprietário dos domínios de origem e destino. Disponível em `VisitorAPI.js` versão 1.7.0 ou superior (mas não na versão 1.10.0).
 
 **Projeto**
 
@@ -78,14 +71,14 @@ Essa função permite que você compartilhe a ECID de um visitante entre domíni
 
   Use esse URL para redirecionar do domínio original para o domínio de destino.
 
-* O código do serviço de ID no domínio de destino extrai a ECID do URL em vez de enviar uma solicitação da ID de visitante para a Adobe.
+* O código do Serviço de ID de visitante no domínio de destino extrai a ECID do URL em vez de enviar uma solicitação da ID de visitante para a Adobe.
 
   Essa solicitação inclui a ID do cookie de terceiros, que não está disponível nesse caso.
 
-* O código do serviço de ID na página de destino usa a ECID passada para rastrear o visitante.
+* O código do Serviço de ID de visitante na página de destino usa a ECID passada para rastrear o visitante.
 
   >[!NOTE]
-  >Se a página de destino já tiver uma ECID das visitas anteriores, a decisão de sobregravar o cookie existente é controlada por esta configuração overwriteCrossDomainMCIDAndAID. Para obter detalhes sobre essa configuração, consulte [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
+  >Se a página de destino já tiver uma ECID das visitas anteriores, a decisão de sobregravar o cookie existente será controlada por essa configuração overwriteCrossDomainMCIDAndAID. Para obter detalhes sobre essa configuração, consulte [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
   >
   >Para obter mais detalhes sobre este método, consulte a página de referência [appendVisitorIDsTo (Rastreamento entre domínios)](/help/library/get-set/appendvisitorid.md).
 

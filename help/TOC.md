@@ -1,50 +1,49 @@
 ---
 audience: end-user
-user-guide-title: Ajuda do serviço de identidade da Experience Cloud
-breadcrumb-title: Guia do Serviço de identidade
-user-guide-description: O Serviço de identidade da Adobe Experience Cloud fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções da Experience Cloud. Ele ajuda a substituir o código de geração de ID herdado para soluções e serviços da Experience Cloud.
+user-guide-title: Ajuda do Serviço de ID de visitante da Adobe
+breadcrumb-title: Guia de serviço de ID de visitante
+user-guide-description: O Serviço de ID de visitante da Adobe fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções da CX Enterprise. Ele ajuda a substituir o código de geração de ID herdado para soluções e serviços da CX Enterprise.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
+source-git-commit: 7621dc8925235bd3cf159a404741bd02fc9b6a77
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 93%
+source-wordcount: '372'
+ht-degree: 45%
 
 ---
 
 
-# Ajuda do serviço de identidade da Experience Cloud {#using}
+# Ajuda do Serviço de ID de visitante da Adobe {#using}
 
-+ [Ajuda do Serviço de identidade](home.md)
++ [Ajuda do Serviço de ID de visitante](home.md)
 + Visão geral {#intro}
    + [Visão geral](introduction/overview.md)
-   + [Sobre o serviço de ID](introduction/about-id-service.md)
-   + [Cookies e o serviço de ID](introduction/cookies.md)
-   + [Como o serviço de ID solicita e define IDs](introduction/id-request.md)
+   + [Sobre o serviço de ID de visitante](introduction/about-id-service.md)
+   + [Cookies e o serviço de ID de visitante](introduction/cookies.md)
+   + [Como o serviço de ID de visitante solicita e define IDs](introduction/id-request.md)
    + [Como entender a sincronização e taxas de correspondência](introduction/match-rates.md)
 + Implementação {#implementation}
    + [Métodos de implementação](implementation-guides/implementation-methods.md)
    + [Guias de implementação](implementation-guides/implementation-guides.md)
-   + [Implementar com as tags da Experience Platform](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementação do Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/overview){target=_blank}
+   + [Implementar com tags](implementation-guides/ecid-implement-with-launch.md)
+   + [Implementação do Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Implementar para o Target](implementation-guides/setup-target.md)
    + [Implementar para o Analytics e o Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementar para o Analytics, Audience Manager e Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Usar o serviço de ID com o A4T e uma implementação do lado do servidor do Target](implementation-guides/ecid-a4t-target.md)
-   + [Integração direta com o serviço de ID](implementation-guides/direct-integration.md)
+   + [Usar o Serviço de ID de visitante com A4T e uma implementação do lado do servidor do Target](implementation-guides/ecid-a4t-target.md)
+   + [Integração direta com o serviço de ID do visitante](implementation-guides/direct-integration.md)
    + [Casos de uso da integração direta](implementation-guides/direct-integration-examples.md)
-   + [Teste e verifique o serviço de ID](implementation-guides/test-verify.md)
+   + [Teste e verifique o Serviço de ID do visitante](implementation-guides/test-verify.md)
    + Serviço de Opt-in {#opt-in-service}
       + [Visão geral do serviço de Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configuração do serviço de Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Validação do serviço de Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configuração do Opt-in com a Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
-      + [Configuração do Opt-in com o DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Controlar atividades da Experience Cloud com base no consentimento do usuário](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [Configuração do Opt-in com tags](implementation-guides/opt-in-service/launch.md)
+      + [Controlar atividades corporativas do CX com base no consentimento do usuário](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [Casos de uso de Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Referência de Opt-in](implementation-guides/opt-in-service/api.md)
       + [Utilização dos serviços de Opt-in com a Estrutura IAB](implementation-guides/opt-in-service/iab.md)
-+ API do serviço de ID {#id-service-api}
-   + [Visão geral da API do serviço de ID](library/library.md)
++ API do serviço de ID de visitante {#id-service-api}
+   + [Visão geral da API do serviço de ID do visitante](library/library.md)
    + Configuração {#configurations}
       + [Visão geral das configurações](library/function-vars/function-vars.md)
       + [audienceManagerServer e audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -82,22 +81,21 @@ ht-degree: 93%
 + Referência {#reference}
    + [Visão geral da referência](reference/reference.md)
    + [Alterações na rotulagem do SameSite no Google Chrome](reference/chrome-samesite-labelling.md)
-   + [Políticas de segurança de conteúdo e o serviço de ID](reference/csp.md)
-   + [Suporte para COPPA no serviço de ID](reference/coppa.md)
-   + [Suporte para CORS no serviço de ID](reference/cors.md)
+   + [Políticas de segurança de conteúdo e o serviço de ID do visitante](reference/csp.md)
+   + [Suporte para COPPA no serviço de ID do visitante](reference/coppa.md)
+   + [Suporte para CORS no serviço de ID de visitante](reference/cors.md)
    + [Estados de autenticação e IDs do cliente](reference/authenticated-state.md)
    + [Métodos de biblioteca da ECID em um mundo de ITP do Safari](reference/ecid-library-methods.md)
    + [Identificação dos visitantes únicos](reference/unique-vis-method.md)
-   + [Obter as IDs de região e usuário do cookie AMCV ou do serviço de ID](reference/regions.md)
-   + [Requisitos para o serviço de ID](reference/requirements.md)
-   + [Video Heartbeat e o serviço de ID](reference/heartbeat.md)
-   + [Data Workbench e o serviço de ID](reference/dwb.md)
+   + [Obter as IDs de região e usuário do cookie AMCV ou do serviço de ID de visitante](reference/regions.md)
+   + [Requisitos para o serviço de ID de visitante](reference/requirements.md)
+   + [Pulsação de vídeo e o serviço de ID do visitante](reference/heartbeat.md)
    + [Suporte a hash SHA-256 para setCustomerIDs](reference/hashing-support.md)
 + Perguntas frequentes {#faqs}
    + [Visão geral das perguntas frequentes](faq-intro/faq-intro.md)
-   + [Perguntas frequentes sobre o serviço de ID](faq-intro/faq.md)
-   + [Perguntas frequentes de outras soluções da Experience Cloud](faq-intro/other-faq.md)
-+ Notas de versão do serviço de ID {#release-notes}
+   + [Perguntas frequentes do Serviço de ID de visitante](faq-intro/faq.md)
+   + [Perguntas frequentes de outras soluções corporativas da CX](faq-intro/other-faq.md)
++ Notas de versão do Serviço de ID de visitante {#release-notes}
    + [Notas de versão de 2022](release-notes/notes-2022.md)
    + [Notas de versão de 2021](release-notes/notes-2021.md)
    + [Notas de versão de 2020](release-notes/notes-2020.md)
@@ -106,5 +104,3 @@ ht-degree: 93%
    + [Notas de versão de 2017](release-notes/notes-2017.md)
    + [Notas de versão de 2016](release-notes/notes-2016.md)
    + [Notas de versão de 2015](release-notes/notes-2015.md)
-+ {hide-from-toc}[Teste de análise oculto do sumário](analytics-test-file-hidetoc.md)
-+ {hide-from-toc}[Arquivo de teste oculto](hidden-file.md)

@@ -1,42 +1,35 @@
 ---
-description: Essas instruções se aplicam aos clientes da A4T com implementações mistas do lado do servidor e do lado cliente para o Target, o Analytics e o serviço de ID. Os clientes que precisam executar o serviço de ID em um ambiente NodeJS ou Rhino também devem consultar essas informações. Essa instância do serviço de ID usa uma versão reduzida da biblioteca de códigos VisitorAPI.js, que você pode baixar e instalar no NPM (Gerenciador de pacotes de nós). Consulte esta seção para obter instruções de instalação e outros requisitos de configuração.
-keywords: Serviço de ID
-title: Usar o serviço de ID com o A4T e uma implementação do lado do servidor do Target
+description: Estas instruções são para clientes da A4T com implementações mistas do lado do servidor e do lado cliente para o Target, o Analytics e o Serviço de ID do visitante. Os clientes que precisam executar o Serviço de ID de visitante em um ambiente NodeJS ou Rhino também devem consultar essas informações. Essa instância do Serviço de ID de visitante usa uma versão reduzida da biblioteca de códigos VisitorAPI.js, que você pode baixar e instalar no NPM (Gerenciador de pacotes de nós). Consulte esta seção para obter instruções de instalação e outros requisitos de configuração.
+keywords: Serviço de ID de visitante
+title: Uso do Serviço de ID do visitante com A4T e uma implementação do lado do servidor do Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 TQID: https://experienceleague.adobe.com/NQKu4J9BE0pnMswSHCtE7Hi8FJGDXmInvSEKTNuM80M
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 846
-ht-degree: 96%
+source-wordcount: 774
+ht-degree: 30%
 
 ---
 
-# Usar o serviço de ID com o A4T e uma implementação do lado do servidor do Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
+# Uso do Serviço de ID do visitante com A4T e uma implementação do lado do servidor do Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-Essas instruções se aplicam aos clientes da A4T com implementações mistas do lado do servidor e do lado cliente para o Target, o Analytics e o serviço de ID. Os clientes que precisam executar o serviço de ID em um ambiente NodeJS ou Rhino também devem consultar essas informações. Essa instância do serviço de ID usa uma versão reduzida da biblioteca de códigos VisitorAPI.js, que você pode baixar e instalar no NPM (Gerenciador de pacotes de nós). Consulte esta seção para obter instruções de instalação e outros requisitos de configuração.
+Estas instruções são para clientes da A4T com implementações mistas do lado do servidor e do lado cliente para o Target, o Analytics e o Serviço de ID do visitante. Os clientes que precisam executar o Serviço de ID de visitante em um ambiente NodeJS ou Rhino também devem consultar essas informações. Essa instância do Serviço de ID de Visitante usa uma versão reduzida da biblioteca de códigos do `VisitorAPI.js`, que você pode baixar e instalar no NPM (Gerenciador de Pacotes de Nós). Consulte esta seção para obter instruções de instalação e outros requisitos de configuração.
 
 ## Introdução {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
-O A4T (e outros clientes) pode usar essa versão do serviço de ID quando for necessário:
+O A4T (e outros clientes) pode usar essa versão do Serviço de ID de visitante quando for necessário:
 
 * Renderize o conteúdo da página da Web em seus servidores e o transmita a um navegador para exibição final.
-* Efetuar chamadas do [!DNL Target] do lado do servidor.
-* Efetuar chamadas do lado do cliente (no navegador) para o [!DNL Analytics].
-* Sincronizar IDs separadas do [!DNL Target] e do [!DNL Analytics] para determinar se um visitante visualizado por uma solução é a mesma pessoa visualizada por outra solução.
+* Efetuar chamadas do Target do lado do servidor.
+* Fazer chamadas do lado do cliente (no navegador) para o Analytics.
+* Sincronize IDs separadas do Target e do Analytics para determinar se um visitante visualizado por uma solução é a mesma pessoa visualizada por outra solução.
 
 ## Download do código e interfaces fornecidas {#section-32d75561438b4c3dba8861be6557be8a}
 
-Consulte o [repositório NPM do serviço de ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server) para baixar o pacote de códigos do lado do servidor e verificar as interfaces incluídas na versão atual.
+Consulte o [repositório NPM do Serviço de ID de Visitante](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server) para baixar o pacote de códigos do lado do servidor e consultar as interfaces incluídas na versão atual.
 
 ## Fluxo de trabalho {#section-56b01017922046ed96536404239a272b}
 
@@ -46,27 +39,27 @@ O diagrama e as seções abaixo descrevem o que ocorre e o que é necessário co
 
 ## Etapa 1: solicitar página {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-A atividade do lado do servidor começa quando um visitante faz uma solicitação HTTP para carregar uma página da Web. Durante essa etapa, o servidor recebe essa solicitação e verifica o [cookie AMCV](../introduction/cookies.md). O cookie AMCV contém a [!DNL Experience Cloud] ID (MID) do visitante.
+A atividade do lado do servidor começa quando um visitante faz uma solicitação HTTP para carregar uma página da Web. Durante essa etapa, o servidor recebe essa solicitação e verifica o [cookie AMCV](../introduction/cookies.md). O cookie AMCV contém a ECID do visitante.
 
-## Etapa 2: gerar carga do serviço de ID {#section-c86531863db24bd9a5b761c1a2e0d964}
+## Etapa 2: gerar carga do Serviço de ID de visitante {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-Em seguida, é necessário criar um *`payload request`* do lado do servidor para o serviço de ID. Uma solicitação de carga:
+Em seguida, é necessário criar um *`payload request`* do lado do servidor para o Serviço de ID de visitante. Uma solicitação de carga:
 
-* Passa o cookie AMCV para o serviço de ID.
+* Passa o cookie AMCV para o Serviço de ID do visitante.
 * Solicita dados exigidos pelo Target e Analytics em etapas subsequentes descritas abaixo.
 
 >[!NOTE]
 >
->Esse método solicita uma única mbox do [!DNL Target]. Se precisar solicitar várias mboxes em uma única chamada, consulte [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Esse método solicita uma única mbox do Target. Se precisar solicitar várias mboxes em uma única chamada, consulte [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 A solicitação de carga deve ser semelhante ao seguinte exemplo de código. No exemplo de código, a função `visitor.setCustomerIDs` é opcional. Consulte [IDs do cliente e Estados de autenticação](../reference/authenticated-state.md) para obter mais informações.
 
 ```js
-//Import the ID service server package 
+//Import the Visitor ID Service server package 
 var Visitor = require("@adobe-mcid/visitor-js-server"); 
  
-//Pass in your Organization ID to instantiate Visitor 
-var visitor = new Visitor("Insert Experience Cloud ID here"); 
+//Pass in your IMS org ID to instantiate Visitor 
+var visitor = new Visitor("Insert ECID here"); 
  
 // 
 <i>(Optional)</i> Set a custom customer ID 
@@ -89,7 +82,7 @@ var visitorPayload = visitor.generatePayload({
 });
 ```
 
-O serviço de ID retorna a carga em um objeto JSON semelhante ao seguinte exemplo. Os dados de carga são exigidos pelo [!DNL Target].
+O Serviço de ID de visitante retorna a carga em um objeto JSON semelhante ao exemplo a seguir. Os dados de carga são exigidos pelo Target.
 
 ```js
 { 
@@ -112,7 +105,7 @@ Se o visitante não tiver um cookie AMCV, a carga omite os pares de valores chav
 
 ## Etapa 3: adicionar carga à chamada do Target {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
 
-Depois que o servidor receber dados de carga do serviço de ID, é necessário instanciar mais códigos para mesclá-los aos dados passados ao [!DNL Target]. O objeto JSON final passado para o [!DNL Target] deve ser semelhante a:
+Depois que o servidor receber dados de carga do Serviço de ID de visitante, é necessário instanciar mais códigos para mesclá-los aos dados passados ao Target. O objeto JSON final passado para o Target seria semelhante a:
 
 ```js
 { 
@@ -132,53 +125,11 @@ Depois que o servidor receber dados de carga do serviço de ID, é necessário i
 } 
 ```
 
-## Etapa 4: obter o estado do servidor para o serviço de ID {#section-8ebfd177d42941c1893bfdde6e514280}
+## Etapa 4: obter o estado do servidor para o Serviço de ID de visitante {#section-8ebfd177d42941c1893bfdde6e514280}
 
-Os dados de estado do servidor contêm informações sobre o trabalho concluído no servidor. O código do serviço de ID do lado do cliente exige essas informações. Os clientes que implementaram o serviço de ID pelo [!DNL Dynamic Tag Manager] (DTM) podem configurar o DTM a fim de passar dados de estado do servidor pela ferramenta. Se você configurou o serviço de ID por um processo não padrão, é necessário retornar o estado do servidor com seu próprio código. O serviço de ID do lado do cliente e o código do [!DNL Analytics] passam dados de estado para a Adobe quando a página é carregada.
+Os dados de estado do servidor contêm informações sobre o trabalho concluído no servidor. O código do Serviço de ID de visitante do lado do cliente exige essas informações. Se você configurou o Serviço de ID de visitante por um processo não padrão, será necessário retornar o estado do servidor com seu próprio código. O Serviço de ID de visitante do lado do cliente e o código do Analytics transmitem dados de estado para o Adobe quando a página é carregada.
 
-**Obter o estado do servidor pelo DTM**
-
-Se você implementou o serviço de ID no DTM, é necessário adicionar código à página e especificar um par de valores de nome nas configurações do DTM.
-
-**Código da Página**
-
-Adicionar esse código à tag `<head>` da página HTML:
-
-```js
-//Get server state 
-var serverState = visitor.getState(); 
- 
-Response.send(" 
-... 
-<head> 
-     <script> 
-          //Add 'serverState' as a stringified JSON global variable. 
-          "var serverState = "+ JSON.stringify(serverState) +";  
-     </script> 
-     <script src = "DTM script (satellite JS)"> 
-     </script> 
-</head> 
-...
-```
-
-**Configurações do DTM**
-
-Adicione esses pares de valor de nome à seção **[!UICONTROL General > Settings]** da instância do serviço de ID:
-
-* **[!UICONTROL Name:]** serverState
-* **[!UICONTROL Value:]** %serverState%
-
-  >[!IMPORTANT]
-  >
-  >O nome do valor deve corresponder ao nome da variável definido para `serverState` no código da página.
-
-As configurações definidas devem ter esta aparência:
-
-![](assets/server_side_dtm.png)
-
-**Obter o estado do servidor sem o DTM**
-
-Se você tem uma implementação não padrão do serviço de ID, é necessário configurar esse código para funcionar no servidor enquanto monta a página solicitada:
+Se você tiver uma implementação não padrão do Serviço de ID do visitante, é necessário configurar esse código para ser executado no servidor enquanto monta a página solicitada:
 
 ```js
 //Get server state 
@@ -197,15 +148,15 @@ Response.send("
 ...
 ```
 
-## Etapa 5: servir uma página e retornar dados da Experience Cloud {#section-4b5631a0d75a41febd6f43f8c214c263}
+## Etapa 5: servir uma página e retornar dados do CX Enterprise {#section-4b5631a0d75a41febd6f43f8c214c263}
 
-Nesse ponto, o servidor da Web envia conteúdo da página para o navegador do visitante. A partir desse ponto, o navegador (e não o servidor) efetua as chamadas restantes do serviço de ID e do [!DNL Analytics]. Por exemplo, no navegador:
+Nesse ponto, o servidor da Web envia conteúdo da página para o navegador do visitante. A partir desse ponto, o navegador (e não o servidor) faz todas as chamadas restantes do Serviço de ID de visitante e do Analytics. Por exemplo, no navegador:
 
-* O serviço de ID recebe dados de estado do servidor e passa a SDID para o AppMeasurement.
-* O AppMeasurement envia dados sobre a ocorrência da página para o [!DNL Analytics], incluindo a SDID.
-* O [!DNL Analytics] e o [!DNL Target] comparam SDIDs para esse visitante. Com uma SDID idêntica, o [!DNL Target] e o [!DNL Analytics] unem a chamada do lado do servidor e do lado do cliente. Nesse momento, ambas as soluções agora reconhecem o visitante como a mesma pessoa.
+* O Serviço de ID do visitante recebe dados de estado do servidor e passa a SDID para a AppMeasurement.
+* O AppMeasurement envia dados sobre a ocorrência da página para o Analytics, incluindo a SDID.
+* O Analytics e o Target comparam SDIDs para esse visitante. Com uma SDID idêntica, o Target e o Analytics unem a chamada do lado do servidor e do lado do cliente. Nesse momento, ambas as soluções agora reconhecem o visitante como a mesma pessoa.
 
 >[!MORELIKETHIS]
 >
->* [Pacote de serviço de ID do lado do servidor do Gerenciador de pacotes do Node](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Pacote de Serviço de ID de Visitante do Lado do Servidor do Gerenciador de Pacote de Nós](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 

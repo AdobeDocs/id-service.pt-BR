@@ -1,26 +1,21 @@
 ---
-description: Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
-keywords: Serviço de ID
+description: Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o Serviço de ID de visitante com a mesma ID da organização IMS nos domínios de origem e destino.
+keywords: Serviço de ID de visitante
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 TQID: https://experienceleague.adobe.com/oR2LCiVk5N-Xnt3wTOKMt7UYFXzwEGFwJpKoz-ikzh8
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 345
-ht-degree: 100%
+source-wordcount: 354
+ht-degree: 61%
 
 ---
 
 # appendSupplementalDataIDTo{#appendsupplementaldataidto}
 
-Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o serviço de ID com a mesma ID da organização nos domínios de origem e destino.
+Este método público anexa a ID de Dados Suplementares (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Isso é útil ao usar o A4T e é necessário manter a SDID de uma página para outra e unir essas visitas separadas. Para usar essa função, é necessário implementar o Serviço de ID de visitante com a mesma ID da organização IMS nos domínios de origem e destino.
 
 Conteúdo:
 
@@ -38,7 +33,7 @@ Conteúdo:
 **Amostra de código**
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"); 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE"); 
 
 //Get current supplemental data id
 var theCurrentSDID = visitor._supplementalDataIDCurrent ? visitor._supplementalDataIDCurrent : "";
@@ -50,7 +45,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## Saída de exemplo {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
-Como mostrado abaixo, o redirecionamento do URL contém a SDID do visitante, a ID da organização e um carimbo de data e hora UNIX na chamada para a página de destino.
+Como mostrado abaixo, o redirecionamento do URL contém a SDID do visitante, a ID da organização IMS e um carimbo de data e hora UNIX na chamada para a página de destino.
 
 <ul class="simplelist"> 
  <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
@@ -58,7 +53,7 @@ Como mostrado abaixo, o redirecionamento do URL contém a SDID do visitante, a I
 
 ## Alterar o tempo-limite da SDID com sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-A configuração de [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) permite que você substitua o intervalo de expiração da ID de dados suplementares (SDID) padrão ao passá-la de uma página para outra usando a função auxiliar `appendSupplementalDataIDTo`. Por padrão, o código do serviço de ID na página de recebimento tem 30 segundos para obter a SDID do URL enviado pela página de referência. Se o código do serviço de ID na página de recebimento não conseguir recuperar a SDID em menos de 30 segundos, ele solicitará uma nova SDID. Essa funcionalidade destina-se principalmente a clientes do A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo-limite.
+A configuração de [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) permite que você substitua o intervalo de expiração da ID de dados suplementares (SDID) padrão ao passá-la de uma página para outra usando a função auxiliar `appendSupplementalDataIDTo`. Por padrão, o código do Serviço de ID de visitante na página de recebimento tem 30 segundos para obter a SDID do URL enviado pela página de referência. Se o código do Serviço de ID de visitante na página de recebimento não conseguir recuperar a SDID em menos de 30 segundos, ele solicitará uma nova SDID. Essa funcionalidade destina-se principalmente a clientes do A4T que precisam passar a SDID de uma página para outra e desejam controlar esse intervalo de tempo-limite.
 
 Se for necessário alterar o tempo-limite da SDID padrão, adicione `sdidParamExpiry` à `Visitor.getInstance` função com a seguinte sintaxe:
 
@@ -66,10 +61,10 @@ Se for necessário alterar o tempo-limite da SDID padrão, adicione `sdidParamEx
 
 **Amostra de código**
 
-Quando configurado, o código do serviço de ID pode ser semelhante a este exemplo. Essa amostra define o tempo-limite de SDID como 15 segundos.
+Quando configurado, o código do Serviço de ID de visitante pode ser semelhante a este exemplo. Essa amostra define o tempo-limite de SDID como 15 segundos.
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Change the default SDID timeout to 15 seconds 
    sdidParamExpiry: 15 

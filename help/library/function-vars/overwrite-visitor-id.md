@@ -1,26 +1,21 @@
 ---
-description: Essa propriedade substitui as IDs da Experience Cloud e do Analytics de um visitante durante a navegação de um domínio para outro. Para substituir uma ID, você deve ser o proprietário e ter implementado o serviço de ID em cada domínio. Esse código não permite substituir IDs em domínios que você não controla.
-keywords: Serviço de ID
+description: Essa propriedade substitui as IDs ECID e Analytics de um visitante durante a navegação de um domínio para outro. Para substituir uma ID, você deve ser o proprietário e ter implementado o Serviço de ID de visitante em cada domínio. Esse código não permite substituir IDs em domínios que você não controla.
+keywords: Serviço de ID de visitante
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
 TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 401
-ht-degree: 100%
+source-wordcount: 404
+ht-degree: 71%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-Essa propriedade substitui as IDs da Experience Cloud e do Analytics de um visitante durante a navegação de um domínio para outro. Para substituir uma ID, você deve ser o proprietário e ter implementado o serviço de ID em cada domínio. Esse código não permite substituir IDs em domínios que você não controla.
+Essa propriedade substitui as IDs ECID e Analytics de um visitante durante a navegação de um domínio para outro. Para substituir uma ID, você deve ser o proprietário e ter implementado o Serviço de ID de visitante em cada domínio. Esse código não permite substituir IDs em domínios que você não controla.
 
 **Sintaxe:** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (o padrão é `false`)
 
@@ -29,7 +24,7 @@ Essa propriedade substitui as IDs da Experience Cloud e do Analytics de um visit
 O código JavaScript pode ser semelhante ao exemplo a seguir.
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", { 
      ... 
  
@@ -40,7 +35,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **Casos de uso**
 
-Para rastrear visitantes do site, o serviço de ID grava uma [!DNL Experience Cloud] ID (ou MID) no cookie do navegador. A tabela a seguir lista e descreve os casos de uso comuns em que convém substituir uma MID existente definida pelo serviço de ID em outro domínio.
+Para rastrear visitantes do site, o Serviço de ID de visitante grava uma ECID (ou MID) no cookie do navegador. A tabela a seguir lista e descreve os casos de uso comuns em que convém substituir uma MID existente definida pelo Serviço de ID de visitante em outro domínio.
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 

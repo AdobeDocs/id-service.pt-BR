@@ -1,36 +1,26 @@
 ---
-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
-keywords: Serviço de ID
+description: Lançamentos, atualizações ou alterações de recursos do Serviço de ID do visitante para 2016.
+keywords: Serviço de ID de visitante
 title: Notas de versão de 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 TQID: https://experienceleague.adobe.com/u91aLAt-ycKk1U1A1yhAVUAonGhV6fHWNRVTZB0QAXI
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 1131
-ht-degree: 97%
+source-wordcount: 1114
+ht-degree: 47%
 
 ---
 
 # Notas de versão de 2016 {#release-notes}
 
-Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2016.
+Lançamentos, atualizações ou alterações de recursos do Serviço de ID do visitante para 2016.
 
-Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR).
+Essas alterações também são capturadas nas [notas de versão do CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR).
 
 ## Versão 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -39,21 +29,21 @@ Novembro de 2016
 >[!IMPORTANT]
 >
 >* A versão 1.10 requer [!UICONTROL AppMeasurement] 1.8.0.
->* Por padrão, a sincronização de ID começa para o Adobe Media Optimizer ao usar a Biblioteca 2.0.0+ do Serviço de identidade da Experience Cloud. Consulte [Entender sincronização de ID e taxas de correspondência](/help/introduction/match-rates.md).
+>* Por padrão, a sincronização de ID começa para o Adobe Media Otimizer ao usar a Biblioteca 2.0.0+ do serviço de ID de visitante. Consulte [Entender sincronização de ID e taxas de correspondência](/help/introduction/match-rates.md).
 
 **Correções e melhorias**
 
-* Adicionadas instruções sobre como implementar o serviço de ID em um ambiente do lado do servidor.
-* Adicionada `Visitor.overwriteCrossDomainMCIDAndAID`, uma função booleana que permite substituir as IDs da Experience Cloud e Analytics em outros domínios pertencentes a você. Consulte [Substituir a ID do visitante](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
+* Adição de instruções sobre como implementar o Serviço de ID de visitante em um ambiente do lado do servidor.
+* Adição de `Visitor.overwriteCrossDomainMCIDAndAID`, uma função booleana que permite substituir a ECID e as IDs do Analytics em outros domínios pertencentes a você. Consulte [Substituir a ID do visitante](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
 
-* Adição do `TS = UTC`carimbo de data e hora como a propriedade da função `visitor.appendVisitorIDsTo`. O serviço de ID usa o carimbo de data e hora para determinar se é preciso usar as IDs no URL de redirecionamento com base em um intervalo de 5 minutos. Consulte [Função Anexar ID do visitante](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* Adição do `TS = UTC`carimbo de data e hora como a propriedade da função `visitor.appendVisitorIDsTo`. O Serviço de ID de visitante usa o carimbo de data e hora para determinar se deve usar as IDs no URL de redirecionamento com base em um intervalo de 5 minutos. Consulte [Função Anexar ID do visitante](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
 * Adição de uma nova função `Visitor.getLocationHint,` que retorna uma ID de região. Consulte [Obter IDs de região (Dica de localização)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 
 * Adicionadas `idSyncByURL` e `idSyncByDataSource`, 2 funções que permitem implementar manualmente uma sincronização de ID no iFrame de publicação de destino. Consulte [Sincronização de ID por URL ou Fonte de dados](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48).
 
 * Corrigido um problema que bloqueava a chamada de rastreamento do AppMeasurement se `disableThirdPartyCalls:true`.
-* Corrigido um erro que impedia o serviço de ID de passar a Experience Cloud ID (MID) para domínios diferentes.
+* Correção de um bug que impedia o Serviço de ID do visitante de passar a ECID para domínios diferentes.
 
 ## Versão 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
@@ -61,9 +51,9 @@ Outubro de 2016
 
 **Correções e melhorias**
 
-* Correção de um erro que transmitia identificadores de usuário único do Audience Manager (AAMUUIDs) como Experience Cloud IDs para o serviço de ID.
-* Se a vida útil (TTL) de um cookie AMCV tiver expirado, o serviço de ID retornará essa informação ao servidor, desde que o cookie contenha uma Experience Cloud ID. Após esta chamada, o serviço de ID faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a melhorar o desempenho, pois o serviço de ID não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
-* O serviço de ID sincroniza automaticamente as Experience Cloud IDs (MIDs) com o Adobe Media Optimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a melhorar as taxas de correspondência do Media Optimizer. Aplicável ao VisitorAPI.js versão 1.8 ou mais recente. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+* Correção de um bug que transmitia identificadores de usuário único da Audience Manager (AAMUUIDs) como ECIDs para o Serviço de ID do visitante.
+* Se a vida útil (TTL) de um cookie AMCV tiver expirado, o Serviço de ID de visitante retornará essa informação ao servidor, desde que o cookie contenha uma ECID. Após esta chamada, o Serviço de ID do visitante faz uma chamada assíncrona para atualizar o cookie. Isso ajuda a melhorar o desempenho, pois o Serviço de ID do visitante não precisa aguardar uma resposta do servidor. Ele pode usar valores de cookies AMCV já existentes e solicitar uma atualização.
+* O Serviço de ID de visitante sincroniza automaticamente as ECIDs (MIDs) com o Adobe Media Otimizer e outros domínios internos da Adobe diretamente na página. A sincronização automática está habilitada para todas as contas atuais e novas. Isso ajuda a melhorar as taxas de correspondência do Media Optimizer. Aplica-se a `VisitorAPI.js` versão 1.8 ou superior. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Documentação nova e revisada**
 
@@ -75,7 +65,7 @@ Setembro de 2016
 
 **Correções e melhorias**
 
-Adicionado `disableThirdPartyCalls` como um sinalizador booleano opcional, que pode ser definido na função `Visitor.getInstance`. Quando `disableThirdPartyCalls= true`, o serviço de ID não fará chamadas para outros domínios. Por padrão, `disableThirdPartyCalls= false` Consulte [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b).
+Adicionado `disableThirdPartyCalls` como um sinalizador booleano opcional, que pode ser definido na função `Visitor.getInstance`. Quando `disableThirdPartyCalls= true`, o Serviço de ID do visitante não fará chamadas para outros domínios. Por padrão, `disableThirdPartyCalls= false` Consulte [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b).
 
 ## Versão 1.7.0 {#section-f7d59104de6644fca3691480383d4644}
 
@@ -83,19 +73,19 @@ Agosto de 2016
 
 **Correções e melhorias**
 
-* Adicionado `idSyncAttachIframeOnWindowLoad` como um sinalizador booleano que pode ser definido na função `Visitor.getInstance`. Quando `idSyncAttachIframeOnWindowLoad= true`, o serviço de ID carrega o iFrame de sincronização de ID na janela. Por padrão, o serviço de ID carrega o iFrame o mais rápido possível. Esse sinalizador *substitui* `idSyncAttachIframeASAP`, que está obsoleto. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
+* Adicionado `idSyncAttachIframeOnWindowLoad` como um sinalizador booleano que pode ser definido na função `Visitor.getInstance`. Quando `idSyncAttachIframeOnWindowLoad= true`, o Serviço de ID do Visitante carrega o iFrame de sincronização de ID no carregamento da janela. Por padrão, o Serviço de ID de visitante carrega o iFrame o mais rápido possível. Esse sinalizador *substitui* `idSyncAttachIframeASAP`, que está obsoleto. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
 
-* Adicionado o recuso compatível com o rastreamento de [!DNL Experience Cloud] IDs por domínios, aplicativos nativos e híbridos em transições da Web. Consulte [Função de ajuda Anexar ID do visitante](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* Adição de funcionalidade para oferecer suporte ao rastreamento de ECIDs em domínios, aplicativos nativos e híbridos em transições da Web. Consulte [Função de ajuda Anexar ID do visitante](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* Foram adicionadas funções ao código visitorAPI.js que especificam se o serviço de ID gerou a [!DNL Experience Cloud] ID de visitante do lado do cliente ou do lado do servidor, ou se as chamadas expiraram. Consulte [Funções de rastreamento de tempo-limite](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
+* Adicionadas funções ao código `VisitorAPI.js` que determinam se o Serviço de ID do visitante gerou a ECID do visitante do lado do cliente ou do lado do servidor, ou se as chamadas atingiram o tempo limite. Consulte [Funções de rastreamento de tempo-limite](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Rastreamento da geração de ID de visitante do lado do cliente](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
 
 **Documentação nova e revisada**
 
-Revisão: [Requisitos do serviço de identidade da Experience Cloud](../reference/requirements.md)
+Revisão: [Requisitos para o Serviço de ID de Visitante](../reference/requirements.md)
 
 **Problemas conhecidos**
 
-Clientes que usarem os códigos DIL do [!DNL Audience Manager] e visitorAPI.js na mesma página deverão definir a variável DIL como `secureDataCollection= false`. Consulte [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=pt-BR).
+Clientes que usarem os códigos DIL do Audience Manager e `VisitorAPI.js` na mesma página deverão definir a variável do DIL `secureDataCollection= false`. Consulte [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=pt-BR).
 
 ## Versão 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -103,7 +93,7 @@ Julho de 2016
 
 >[!IMPORTANT]
 >
->A versão 1.6.0 do serviço de ID *do [!DNL Experience Cloud] requer* o AppMeasurement para JavaScript versão 1.6.2. Se você atualizar para o serviço de ID versão 1.6.0, use a versão correta do código do AppMeasurement.
+>A versão 1.6.0 do Serviço de ID de Visitante *requer* o AppMeasurement para JavaScript versão 1.6.2. Se você atualizar para a versão 1.6.0 do Serviço de ID do visitante, verifique se está usando a versão correta do código AppMeasurement.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -115,9 +105,9 @@ Julho de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Compartilhamento de recursos entre origens (CORS) </p> </td> 
-   <td colname="col2"> <p>O CORS permite que os navegadores solicitem recursos de um domínio diferente do atual. O serviço de identidade da Experience Cloud oferece suporte às normas da CORS para permitir solicitações de recursos entre origens e do lado do cliente. O serviço de ID reverte solicitações JSONP em navegadores incompatíveis com CORS. </p> <p>Consulte: </p> 
+   <td colname="col2"> <p>O CORS permite que os navegadores solicitem recursos de um domínio diferente do atual. O Serviço de ID de visitante é compatível com os padrões CORS para permitir solicitações de recursos de várias origens do cliente. O Serviço de ID de visitante reverte solicitações JSONP em navegadores incompatíveis com CORS. </p> <p>Consulte: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Suporte ao CORS no serviço de identidade da Experience Cloud</a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Suporte ao CORS no Serviço de ID de Visitante </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -127,8 +117,8 @@ Julho de 2016
 
 * Adição de um parâmetro `d_fieldgroup` para chamadas de sincronização de ID para `dpm.demdex.net`. Esse novo parâmetro é usado para fins internos de solução de problemas e depuração.
 
-* Adição de um atributo de título ao iFrame do serviço de ID. O título de um iFrame ajuda os leitores de tela a fornecerem informações de página para os usuários que precisam de assistência ao interagirem com o conteúdo online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
-* Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando definido como `true`, o serviço de ID carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi projetado para ajudar a melhorar as taxas de correspondência da sincronização de ID. Por padrão, o serviço de ID carrega o iFrame na janela. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
+* Adição de um atributo de título ao iFrame do serviço de ID de visitante. O título de um iFrame ajuda os leitores de tela a fornecerem informações de página para os usuários que precisam de assistência ao interagirem com o conteúdo online. O atributo de título do iFrame está definido como `Adobe ID Syncing iFrame`.
+* Adição do `idSyncAttachIframeASAP: true` como um sinalizador opcional que pode ser definido na função `Visitor.getInstance`. Quando `true`, o Serviço de ID de visitante carrega o iFrame de sincronização de ID da maneira mais rápida possível. Isso foi projetado para ajudar a melhorar as taxas de correspondência da sincronização de ID. Por padrão, o Serviço de ID de visitante carrega o iFrame na janela. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * Corrigido um erro com uma função de retorno de chamada que provocava um loop infinito no AppMeasurement.
 * Alterado o intervalo padrão de `loadTimeout` de 500 milissegundos para 30.000 milissegundos. Consulte as [Variáveis de função de Visitor.getInstance](../library/function-vars/function-vars.md).
@@ -137,12 +127,12 @@ Julho de 2016
 
 **Novo menu**
 
-* [Implementar o serviço de identidade da Experience Cloud no Analytics, no Audience Manager e no Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Implementar o serviço de ID de visitante do Analytics, Audience Manager e Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Revisado**
 
-* [Requisitos do serviço de identidade da Experience Cloud](../reference/requirements.md)
-* [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md)
+* [Requisitos para o Serviço de ID de Visitante](../reference/requirements.md)
+* [Testar e verificar o serviço de ID de visitante](../implementation-guides/test-verify.md)
 
 ## Versão 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -158,11 +148,11 @@ Junho de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Alterações no atributo <span class="codeph">iframe.sandbox</span> </p> </td> 
-   <td colname="col2"> <p>Agora, o iFrame fica configurado da seguinte maneira: <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>A permissão de apenas estes dois tokens ajuda a melhorar a segurança, além de oferecer o serviço de ID com o recurso básico necessário para a sincronização de ID. </p> <p>O atributo sandbox não é compatível com o Internet Explorer versão 9 ou anterior. Para obter mais informações, consulte a seção Atributos na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe" format="https" scope="external">Documentação do iFrame</a>. </p> </td> 
+   <td colname="col2"> <p>Agora, o iFrame fica configurado da seguinte maneira: <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>A permissão de apenas esses dois tokens ajuda a melhorar a segurança e fornece ao Serviço de ID do visitante a funcionalidade básica necessária para a sincronização de ID. </p> <p>O atributo sandbox não é compatível com o Internet Explorer versão 9 ou anterior. Para obter mais informações, consulte a seção Atributos na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe" format="https" scope="external">Documentação do iFrame</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Codificação da Experience Cloud ID (MID) </p> </td> 
-   <td colname="col2"> <p>O serviço de ID codifica o valor MID originado do servidor ou quando ele está configurado pela função <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Para obter mais informações sobre o MID, consulte <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e Experience Cloud ID</a>. </p> </td> 
+   <td colname="col1"> <p>Codificação da ECID </p> </td> 
+   <td colname="col2"> <p>O Serviço de ID de visitante codifica o valor MID originado do servidor ou quando ele está configurado pela função </span> <span class="codeph"> visitor.setMarketingCloudVisitorID(). Para obter mais informações sobre a MID, consulte <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies e a ECID </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -178,8 +168,7 @@ Maio de 2016
 **Atualizações de documentação**
 
 * [Requisitos do SDK para Android e iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench e o serviço de identidade da Experience Cloud](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Testar e verificar o serviço de identidade da Experience Cloud](../implementation-guides/test-verify.md)
+* [Testar e verificar o serviço de ID de visitante](../implementation-guides/test-verify.md)
 
 ## Versão 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -187,7 +176,7 @@ Abril de 2016
 
 **Atualizações de documentação**
 
-[Implementar o serviço de identidade da Experience Cloud para Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Implementar o serviço de ID de visitante do Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Versão 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -203,11 +192,11 @@ Março de 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Suporte para recusa </p> </td> 
-   <td colname="col2"> <p>O serviço da <span class="keyword">Experience Cloud</span> ID é compatível com solicitações de recusa do visitante. </p> </td> 
+   <td colname="col2"> <p>O Serviço de ID de visitante é compatível com solicitações de recusa do visitante. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> Alteração do intervalo de sincronização de ID </p> </td> 
-   <td colname="col2"> <p>O serviço da <span class="keyword">Experience Cloud ID</span> agora faz chamadas de sincronização de ID em cada chamada para os servidores de coleta de dados. Antes, o serviço de ID realizava apenas uma solicitação durante a primeira chamada para a obtenção de uma <span class="keyword">Experience Cloud</span> ID. </p> </td> 
+   <td colname="col2"> <p>O Serviço de ID do visitante agora faz chamadas de sincronização de ID em cada chamada para os servidores de coleta de dados. Antes, o Serviço de ID de visitante realizava apenas uma solicitação durante a primeira chamada para a obtenção de uma ECID. </p> </td> 
   </tr> 
  </tbody> 
 </table>

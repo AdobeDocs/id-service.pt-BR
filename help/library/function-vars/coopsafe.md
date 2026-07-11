@@ -1,18 +1,18 @@
 ---
-description: Uma configuração booleana opcional que determina se o serviço de ID envia (ou não) dados ao Adobe Experience Cloud Device Co-op.
-keywords: Serviço de ID
+description: Uma configuração booleana opcional que determina se o Serviço de ID do visitante envia (ou não) dados ao Adobe Device Co-op.
+keywords: Serviço de ID de visitante
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 98%
+source-wordcount: '618'
+ht-degree: 68%
 
 ---
 
 # isCoopSafe{#iscoopsafe}
 
-Uma configuração booleana opcional que determina se o serviço de ID envia (ou não) dados ao Adobe Experience Cloud Device Co-op.
+Uma configuração booleana opcional que determina se o Serviço de ID do visitante envia (ou não) dados ao Adobe Device Co-op.
 
 Conteúdo:
 
@@ -28,10 +28,10 @@ Conteúdo:
 
 Para usar o `isCoopSafe` é necessário:
 
-* Usar o código do serviço de ID versão 2.4 ou posterior.
-* Participe da [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=pt-BR). Os membros em potencial também devem consultar essa documentação para determinar se `isCoopSafe` responde possíveis dúvidas sobre como os dados são usados para criar o gráfico do dispositivo.
+* Usar o código do Serviço de ID de visitante versão 2.4 ou superior.
+* Participe da [Adobe Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=pt-BR). Os membros em potencial também devem consultar essa documentação para determinar se `isCoopSafe` responde possíveis dúvidas sobre como os dados são usados para criar o gráfico do dispositivo.
 
-* Trabalhe com seu consultor da [!DNL Adobe] para definir um sinalizador de lista de permissões ou lista de bloqueios na conta do Device Co-op. Não há um caminho de autoatendimento para habilitar esses sinalizadores.
+* Trabalhe com seu consultor da Adobe para definir um sinalizador de lista de permissões ou lista de bloqueios na conta do Device Co-op. Não há um caminho de autoatendimento para habilitar esses sinalizadores.
 
 ## Casos de uso {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -47,11 +47,11 @@ Para usar o `isCoopSafe` é necessário:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Visitantes autenticados</b> </p> </td> 
-   <td colname="col2"> <p>Adicione <span class="codeph">isCoopSafe</span> ao seu código do serviço de ID para controlar como os dados para visitantes autenticados que aceitaram ou não os contratos de termos de uso são usados pelo Device Co-op para criar o gráfico do dispositivo. </p> </td> 
+   <td colname="col2"> <p>Adicione <span class="codeph"> isCoopSafe </span> ao seu código do Serviço de ID do visitante para controlar como os dados para visitantes autenticados que aceitaram ou não os contratos de termos de uso são usados pelo Device Co-op para criar o gráfico do dispositivo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>DIL em sites de terceiros</b> </p> </td> 
-   <td colname="col2"> <p>Adicione <span class="codeph">isCoopSafe</span> ao seu código do serviço de ID para uso em sites de terceiros nos quais você: </p> <p> 
+   <td colname="col2"> <p>Adicione <span class="codeph"> isCoopSafe </span> ao seu código do Serviço de ID de visitante para uso em sites de terceiros nos quais você: </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Não é possível garantir que visitantes autenticados tenham ou não aceitos contratos de termo de uso. </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">É necessário controlar como esses dados são usados pelo Device Co-op para criar o gráfico do dispositivo. </li> 
@@ -72,10 +72,10 @@ As opções booleanas determinam como os dados do cliente são usados ou não pe
 
 **Amostra de código**
 
-Defina isso quando o código do serviço de ID instanciar:
+Defina isso quando o código do Serviço de ID do visitante instanciar:
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
      ... 
      isCoopSafe: true 
 });
@@ -83,12 +83,12 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## Parâmetros POST da chamada de evento {#section-fcd441933506493faefaa6b51f194a17}
 
-Dependendo do sinalizador definido (`true` ou `false`), o serviço de ID converte `isCoopSafe` nesses parâmetros de POST e os envia para a [!DNL Adobe] em uma chamada de evento:
+Dependendo do sinalizador definido ( `true` ou `false`), o Serviço de ID de Visitante converte `isCoopSafe` nesses parâmetros de POST e os envia para a Adobe em uma chamada de evento:
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-Os parâmetros de POST informam o [!DNL Experience Cloud] Device Co-op se é possível incluir ou não os dados do usuário no gráfico do dispositivo. A tabela abaixo define a relação entre os sinalizadores booleanos `isCoopSafe` e os parâmetros POST passados em uma chamada de evento. Se você não usar `isCoopSafe`, nenhum é passado em uma chamada de evento.
+Os parâmetros de POST informam o Adobe Device Co-op se é possível incluir ou não os dados do usuário no gráfico do dispositivo. A tabela abaixo define a relação entre os sinalizadores booleanos `isCoopSafe` e os parâmetros POST passados em uma chamada de evento. Se você não usar `isCoopSafe`, nenhum é passado em uma chamada de evento.
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 

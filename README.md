@@ -1,8 +1,8 @@
 ---
-source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 98%
+source-wordcount: '440'
+ht-degree: 91%
 
 ---
 # Contribuir com o artigo
@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Grandes alterações dos funcionários da Adobe
 
-Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos para uma solução da [!UICONTROL Adobe Experience Cloud] e seu trabalho for criar artigos técnicos, deverá usar o repositório privado em `https://git.corp.adobe.com/AdobeDocs`.
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução CX Enterprise e seu trabalho for criar artigos técnicos, deverá usar o repositório privado em `https://github.com/Adobe-Enterprise-Docs/id-service.en`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -52,7 +52,7 @@ Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/
 Todos os artigos deste repositório usam GitHub Flavored Markdown. Se você não estiver familiarizado com o Markdown, consulte:
 
 * [Noções básicas sobre o Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Página de consulta do Markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Folha de consulta do markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Rótulos
 

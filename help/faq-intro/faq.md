@@ -1,60 +1,54 @@
 ---
-description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do serviço de ID.
-keywords: Serviço de ID
-title: Perguntas frequentes do serviço de ID
+description: Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Serviço de ID de visitante.
+keywords: Serviço de ID de visitante
+title: Perguntas frequentes do Serviço de ID de visitante
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 801
-ht-degree: 96%
+source-wordcount: 824
+ht-degree: 53%
 
 ---
 
-# Perguntas frequentes do serviço de ID{#id-service-faqs}
+# Perguntas frequentes do Serviço de ID de visitante{#id-service-faqs}
 
-Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do serviço de ID.
+Perguntas frequentes sobre recursos, funcionalidades e problemas relacionados ao uso do Serviço de ID de visitante.
 
 ## Funcionalidade {#section-659e89f8b9a74cb8afff35587dc96836}
 
-**Qual tipo de funcionalidade ou capacidade o serviço de ID fornece?**
+**Que tipo de funcionalidade ou capacidade o Serviço de ID de Visitante fornece?**
 
 Consulte a [Visão geral](../introduction/overview.md).
 
-**Por que o serviço de ID não está fazendo uma chamada para recuperar a Experience Cloud ID?**
+**Por que o Serviço de ID do visitante não está fazendo uma chamada para recuperar a ECID?**
 
-Isso pode ser difícil de diagnosticar. Uma coisa que você pode verificar são os cabeçalhos da política de segurança de conteúdo no seu site. Se você tiver uma política de segurança rigorosa, essas configurações poderão bloquear as chamadas de terceiros feitas pelo serviço de ID. Consulte [Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Isso pode ser difícil de diagnosticar. Uma coisa que você pode verificar são os cabeçalhos da política de segurança de conteúdo no seu site. Se você tiver uma política de segurança rigorosa, essas configurações poderão bloquear as chamadas de terceiros feitas pelo Serviço de ID de visitante. Consulte [Políticas de Segurança de Conteúdo e o Serviço de ID de Visitante](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
-**Armazenamento de arquivo VisitorAPI.js**
+**`VisitorAPI.js`armazenamento de arquivos**
 
-Você pode ter problemas se hospedar o arquivo VisitorAPI.js como um arquivo local em aplicativos para dispositivos móveis. Recomendamos que você hospede o arquivo em um servidor da Web.
+Você pode ter problemas se hospedar o `VisitorAPI.js` como um arquivo local em aplicativos móveis. Recomendamos que você hospede o arquivo em um servidor da Web.
 
 ## Tempos de carregamento e latência da página {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
-**Como a biblioteca VisitorAPI.js do serviço de ID afeta o tempo de carregamento da página?**
+**Como a biblioteca `VisitorAPI.js` do Serviço de ID do Visitante afeta o tempo de carregamento da página?**
 
-Coloque a biblioteca VisitorAPI.js na parte superior da página na `<head>` seção do código. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
+Coloque a biblioteca `VisitorAPI.js` na parte superior da página na seção `<head>` do código. Isso ajuda a garantir que a chamada de uma ID sai antes do corpo da página começar a carregar e maximiza a probabilidade da ID ser retornada com sucesso.
 
-A chamada do serviço de ID é assíncrona e é a única chamada para o [domínio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR). A chamada do serviço de ID não impede o carregamento de outros elementos na página.
+A chamada do Serviço de ID de Visitante é assíncrona e é a única chamada para o [domínio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR). A chamada do Serviço de ID do visitante não impede o carregamento de outros elementos na página.
 
-Para [!DNL Target] clientes do, ao inserir o código do serviço de ID no `<body>` da página é possível aumentar a probabilidade de bloquear uma chamada do [!DNL Target]. É necessário inserir o código do serviço de ID no corpo na página. Ele deve ser inserido após a tag aberta `<body>`.
+Para clientes do Target, ao colocar o código do Serviço de ID de visitante no `<body>` da página é possível aumentar a probabilidade de bloquear uma chamada do Target. É necessário inserir o código do Serviço de ID de visitante no corpo da página. Ele deve ser inserido após a tag aberta `<body>`.
 
-**O serviço de ID faz uma chamada de servidor com cada carregamento de página?**
+**O Serviço de ID do Visitante faz uma chamada de servidor com cada carregamento de página?**
 
-Não, essa chamada só ocorrerá na primeira vez que a página for renderizada e depois uma vez a cada 7 dias. Enquanto isso, as chamadas do servidor não são obrigatórias. O serviço de ID opera no modo lado do cliente e não precisa fazer uma chamada de servidor para retornar uma ID.
+Não, essa chamada só ocorrerá na primeira vez que a página for renderizada e depois uma vez a cada 7 dias. Enquanto isso, as chamadas do servidor não são obrigatórias. O Serviço de ID de visitante opera no modo lado do cliente e não precisa fazer uma chamada de servidor para retornar uma ID.
 
 Consulte [Visão geral](../introduction/overview.md).
 
-**Ao usar o serviço de ID, o que pode causar tempos lentos de carregamento de página ou afetar a experiência do usuário?**
+**Ao usar o Serviço de ID de Visitante, o que pode causar tempos lentos de carregamento de página ou afetar a experiência do usuário?**
 
 É difícil catalogar todas as condições possíveis. Bilhões de clientes consumidores conectam-se aos nossos serviços e à grande variedade de onde e como eles se conectam afetam o desempenho. Por exemplo:
 
@@ -76,23 +70,23 @@ Essa alteração melhora o desempenho para clientes que usam o Visitor 2.3.0+ e 
 
 As solicitações de recursos com CORS geralmente são mais preferíveis do que com JSONP. Com o JSONP, alguns navegadores fazem fila e não priorizam solicitações em relação a outras chamadas síncronas e assíncronas na página. O CORS ajuda a garantir que essas solicitações sejam tratadas com prioridade mais alta na pilha de chamadas do navegador.
 
-Consulte [Suporte ao CORS no serviço de identidade da Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Consulte o [Suporte para CORS no Serviço de ID de Visitante](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Segurança {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
-**O serviço de ID suporta o CORS?**
+**O Serviço de ID do Visitante oferece suporte ao CORS?**
 
-Sim. Consulte [Suporte ao CORS no serviço de identidade da Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Sim. Consulte o [Suporte para CORS no Serviço de ID de Visitante](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **O que é o CORS?**
 
-*`Cross-Origin Resource Sharing`* ou CORS, é um método que os navegadores usam para solicitar recursos. O serviço de ID sempre solicita recursos usando o CORS em navegadores compatíveis. O serviço de ID solicita recursos com JSON-P em navegadores mais antigos que não suportam o CORS. Consulte [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`* ou CORS, é um método que os navegadores usam para solicitar recursos. O Serviço de ID de visitante sempre solicita recursos usando o CORS em navegadores compatíveis. O Serviço de ID de visitante solicita recursos com JSON-P em navegadores mais antigos que não são compatíveis com o CORS. Consulte o [Suporte para CORS no Serviço de ID de Visitante](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **O que acontece se meus requisitos de segurança são estritos demais e eu desejar não usar JSONP?**
 
-Se você tiver requisitos de segurança estritos, defina a configuração da API do serviço de ID como `useCORSOnly: true`. Você só deve ativar esse modo se estiver confiante de que os visitantes do site usam navegadores compatíveis com o CORS.
+Se você tiver requisitos de segurança estritos, defina a configuração da API do Serviço de ID de visitante como `useCORSOnly: true`. Você só deve ativar esse modo se estiver confiante de que os visitantes do site usam navegadores compatíveis com o CORS.
 
-Consulte [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Consulte o [Suporte para CORS no Serviço de ID de Visitante](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORELIKETHIS]
 >
