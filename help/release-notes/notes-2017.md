@@ -1,6 +1,6 @@
 ---
-description: Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
-keywords: Serviço de ID
+description: Lançamentos, atualizações ou alterações de recursos do Serviço de ID do visitante para 2017.
+keywords: Serviço de ID de visitante
 title: Notas de versão de 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 TQID: https://experienceleague.adobe.com/lt0zISb6FrqIuziYTt8pA6VZyU4XQkVsIha19v-LU7w
@@ -16,22 +16,22 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 734
-ht-degree: 97%
+source-wordcount: 751
+ht-degree: 47%
 
 ---
 
 # Notas de versão de 2017 {#release-notes}
 
-Lançamentos, atualizações ou alterações de recursos do serviço de identidade da Experience Cloud para 2017.
+Lançamentos, atualizações ou alterações de recursos do Serviço de ID do visitante para 2017.
 
-Essas alterações também são capturadas nas [Notas de versão da Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR).
+Essas alterações também são capturadas nas [notas de versão do CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR).
 
 >[!NOTE]
 >
->Não existem notas de versão do cliente ou alterações no código para março, abril, maio e outubro de 2017. Para esses meses, o código do serviço de ID permanece inalterado na v2.1.
+>Não existem notas de versão do cliente ou alterações no código para março, abril, maio e outubro de 2017. Para esses meses, o código do Serviço de ID de visitante permaneceu inalterado na v2.1.
 
 ## Versão 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -40,7 +40,7 @@ Setembro de 2017
 <!--
 <p>
 <note type="important">
-ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
+Visitor ID Service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
 </note> </p>
 -->
 
@@ -54,16 +54,16 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Esta é uma API assíncrona que retorna os identificadores para o Analytics, o serviço de ID, o cancelamento da coleta de dados, a localização geográfica e o conteúdo “blob” de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional <span class="codeph">visitor.FIELDS</span>. Consulte <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>Esta é uma API assíncrona que retorna os identificadores para o Analytics, o Serviço de ID do visitante, o cancelamento da coleta de dados, a localização geográfica e o conteúdo "blob" de metadados por padrão. Além disso, você pode controlar quais IDs deseja retornar com a enumeração opcional <span class="codeph">visitor.FIELDS</span>. Consulte <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Correções de erros e outras alterações**
 
-* Correção de um erro relacionado ao Chrome que fazia com que o serviço de ID exibisse um erro ao clicar no botão Voltar nesse navegador.
-* O serviço de ID agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
-* Adição de nova documentação, [Políticas de segurança de conteúdo e Serviço de identidade da Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como colocar chamadas na lista de permissões para domínios da Adobe usados pelo serviço de ID.
+* Correção de um bug relacionado ao Chrome que fazia com que o Serviço de ID do visitante exibisse um erro ao clicar no botão Voltar nesse navegador.
+* O Serviço de ID do visitante agora rearquiva sincronizações de ID quando a ID da região na resposta da chamada do evento muda.
+* Adição de nova documentação, [Políticas de segurança de conteúdo e Serviço de ID do visitante](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), que explica como adicionar chamadas para domínios da Adobe usados pelo Serviço de ID do visitante à lista de permissões.
 
 <!--
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
@@ -80,14 +80,14 @@ August, 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the Visitor ID Service sends (or does not send) data to the Adobe Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Revised Documentation**
 
-Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. 
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different CX Enterprise solutions. 
 -->
 
 ## Versão 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
@@ -115,8 +115,8 @@ Julho de 2017
 
 **Correções de erros e outras alterações**
 
-* Correção de um erro no VisitorAPI.js v2.2 que impedia o serviço de ID e o Target de trabalharem juntos no Internet Explorer.
-* Código revisado para ajudar a melhorar como o serviço de ID envia dados para o Destination Publishing iFrame. Isso ajuda a reduzir o uso da CPU.
+* Correção de um bug no `VisitorAPI.js` v2.2 que impedia que o Serviço de ID do visitante e o Target trabalhassem juntos no Internet Explorer.
+* Código revisado para ajudar a melhorar como o Serviço de ID do visitante envia dados para o Destination Publishing iFrame. Isso ajuda a reduzir o uso da CPU.
 
 ## Versão 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -132,7 +132,7 @@ Data de lançamento: de junho de 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain e whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Essas configurações permitem que diferentes instâncias do código do serviço de ID implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com 2 casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do serviço de ID sendo carregado no iFrame de um domínio sob seu controle. </p> </td> 
+   <td colname="col2"> <p>Essas configurações permitem que diferentes instâncias do código do Serviço de ID de visitante implementado em um iFrame e na página pai se comuniquem entre si. Foram projetadas para ajudar a resolver problemas com casos de uso específicos onde pode-se ou não controlar a página ou o domínio principal e onde há código do Serviço de ID do visitante sendo carregado no iFrame de um domínio sob seu controle. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +170,7 @@ Data de lançamento: de junho de 2017
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Como entender a sincronização de ID e taxas de correspondência </a> </p> </td> 
-   <td colname="col2"> <p>Seção <span class="keyword">Media Optimizer</span> revisada para descrever a chamada para <span class="codeph">cm.eversttech.net</span>. Essa é a sincronização de ID automática que o serviço de ID executa com o <span class="keyword">Media Optimizer</span>. Esse recurso foi lançado em janeiro de 2017. Consulte a <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">Versão 2.0</a> abaixo. </p> </td> 
+   <td colname="col2"> <p>Seção <span class="keyword">Media Optimizer</span> revisada para descrever a chamada para <span class="codeph">cm.eversttech.net</span>. Esta é a sincronização de ID automática que o Serviço de ID do visitante executa com o <span class="keyword"> Media Otimizer</span>. Esse recurso foi lançado em janeiro de 2017. Consulte a <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">Versão 2.0</a> abaixo. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -190,11 +190,11 @@ Data de lançamento: de fevereiro de 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> Propriedade da API do serviço de ID, <span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> Propriedade da API do Serviço de ID de Visitante, <span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Essa propriedade configura a ID de contêiner usada pelo <span class="keyword">Audience Manager</span> para sincronizações de ID. Consulte <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Método API de serviço de ID, <span class="codeph">appendSupplementalDataIDTo(<span class="varname">URL</span>, <span class="varname">SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>Método API do Serviço de ID de Visitante, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Este método público anexa a <span class="wintitle">ID de Dados Suplementares</span> (SDID) como um parâmetro de string de consulta a um URL de redirecionamento. Consulte <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -202,11 +202,11 @@ Data de lançamento: de fevereiro de 2017
 
 **Correções**
 
-Correção de um erro que fazia com que o serviço de ID fizesse chamadas redundantes de servidor para uma ID em vez de usar a ID armazenada no cookie AMCV. (MCID-296)
+Correção de um bug que fazia com que o Serviço de ID do visitante fizesse chamadas redundantes de servidor para uma ID em vez de usar a ID armazenada no cookie AMCV. (MCID-296)
 
 **Nova documentação**
 
-[Uso da pré-busca DNS com diferentes Soluções e Serviços da Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=pt-BR)
+[Usando a pré-busca DNS com diferentes Soluções e Serviços Corporativos da CX](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=pt-BR)
 
 ## Versão 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -214,15 +214,15 @@ Janeiro de 2017
 
 >[!IMPORTANT]
 >
->O serviço de ID da v2.0 sincroniza IDs automaticamente com o Adobe Media Optimizer por padrão. Isso significa que você visualizará uma chamada da página para `cm.eversttech.net`, que é uma domínio herdado do [!DNL Media Optimizer] controlado pela [!DNL Adobe]. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>O código Serviço de ID de visitante v2.0 sincroniza IDs automaticamente com o Adobe Media Otimizer por padrão. Isso significa que você visualizará uma chamada da página para `cm.eversttech.net`, que é um domínio herdado do Media Otimizer controlado pela Adobe. Consulte também [Como entender a sincronização de IDs e as taxas de correspondência](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Correções e melhorias**
 
 * Correção de um erro que impedia o AppMeasurement de fazer chamadas de rastreamento para o Analytics. (MCID-254, MCID-256, MCID-286)
-* Correção de um erro que prevenia a falha imediata do serviço de ID caso o bloqueador de anúncios do visitante estivesse habilitado e configurado para excluir o domínio demdex.net. Esse erro é raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
-* Correção de um erro causado pelas interações entre o código do serviço de ID e um script personalizado no site de um cliente. Esse problema impedia que o Internet Explorer 9 carregasse páginas da Web. (MCID-206)
+* Correção de um bug que prevenia a falha imediata do Serviço de ID do visitante caso o bloqueador de anúncios do visitante estivesse ativado e configurado para excluir o domínio demdex.net. Esse erro é raro e incomum, pois a maioria das ferramentas de bloqueio de anúncios não bloqueia o domínio demdex.net. (MCID-233)
+* Correção de um bug causado pelas interações entre o código do Serviço de ID do visitante e um script personalizado no site de um cliente. Esse problema impedia que o Internet Explorer 9 carregasse páginas da Web. (MCID-206)
 
 ## Anos anteriores {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
-Notas de versão antigas do serviço de ID.
+Notas de versão anteriores do Serviço de ID de visitante.
 

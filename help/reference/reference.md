@@ -1,6 +1,6 @@
 ---
-description: Informações sobre outros recursos e funções do serviço de identidade da Experience Cloud.
-keywords: Serviço de ID
+description: Informações sobre outros recursos e funções do Serviço de ID de visitante.
+keywords: Serviço de ID de visitante
 title: Referência
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
 TQID: https://experienceleague.adobe.com/9Dl-jPqZLzHgsyh6-rS8fvp5JKgvYKpfm9arD55B8jc
@@ -13,23 +13,22 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 90
-ht-degree: 100%
+source-wordcount: 77
+ht-degree: 12%
 
 ---
 
 # Referência {#reference}
 
-Informações sobre outros recursos e funções do serviço de identidade da Experience Cloud.
+Informações sobre outros recursos e funções do Serviço de ID de visitante.
 
-* [Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud](csp.md)
-* [Suporte para COPPA no serviço de identidade da Experience Cloud](coppa.md)
-* [Suporte ao CORS no serviço de identidade da Experience Cloud](cors.md)
+* [Políticas de segurança de conteúdo e o serviço de ID do visitante](csp.md)
+* [Suporte para COPPA no serviço de ID do visitante](coppa.md)
+* [Suporte para CORS no serviço de ID de visitante](cors.md)
 * [Estados de autenticação e IDs do cliente](authenticated-state.md)
-* [Obter as IDs de região e usuário do cookie AMCV ou do serviço de ID](regions.md)
-* [Requisitos do serviço de identidade da Experience Cloud](requirements.md)
-* [Heartbeat de vídeo e o serviço de identidade da Experience Cloud](heartbeat.md)
-* [Data Workbench e o serviço de identidade da Experience Cloud](dwb.md)
+* [Obter as IDs de região e usuário do cookie AMCV ou do serviço de ID de visitante](regions.md)
+* [Requisitos para o serviço de ID de visitante](requirements.md)
+* [Pulsação de vídeo e o serviço de ID do visitante](heartbeat.md)
 

@@ -1,6 +1,6 @@
 ---
-description: A Adobe Experience Platform Launch é a ferramenta principal usada para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
-title: Implementar com o Launch
+description: As tags são a ferramenta principal usada para configurar, implantar e integrar o Serviço de ID de visitante às outras soluções da CX Enterprise.
+title: Implementar com tags de coleção de dados
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
@@ -14,22 +14,22 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 179
-ht-degree: 100%
+source-wordcount: 170
+ht-degree: 23%
 
 ---
 
-# Implementar com as tags da Experience Platform{#implement-with-launch}
+# Implementar com tags de coleção de dados{#implement-with-launch}
 
-As tags da Adobe Experience Platform são a principal ferramenta usada para configurar, implantar e integrar o serviço de identidade da Experience Cloud às outras soluções da Experience Cloud.
+As tags são a ferramenta principal usada para configurar, implantar e integrar o serviço de ID de visitante às outras soluções da CX Enterprise.
 
-## Sobre as tags da Experience Platform {#section-611711602854464ea351a4af80a8dafe}
+## Sobre tags de coleção de dados {#section-611711602854464ea351a4af80a8dafe}
 
-As [tags da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) são a próxima geração do recurso de gerenciamento de tags da Adobe que está integrado à Adobe Experience Cloud. As tags da Platform permitem que o cliente:
+[Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) da Coleção de dados da Adobe Experience Platform é a próxima geração do recurso de gerenciamento de tags da Adobe e está integrado ao Adobe CX Enterprise. As tags permitem que os clientes:
 
 * Implante produtos da web do lado do cliente usando integrações chamadas de _extensões_.
 * Capture, defina, gerencie e compartilhe dados de maneira consistente entre os produtos de marketing e publicidade de outros fornecedores e da Adobe.
-* As tags da Platform são um sistema avançado de entrega de JavaScript que avalia as condições e ações executadas para implantar bibliotecas e produtos do lado do cliente de maneira eficiente e eficaz. As tags fornecem uma abordagem extremamente escalável para gerenciar e criar extensões, além de um conjunto robusto de APIs para uma interação programática com a Adobe Experience Cloud.
+* As tags são um sistema avançado de entrega de JavaScript que avalia as condições e ações executadas para implantar bibliotecas e produtos do lado do cliente de maneira eficiente e eficaz. As tags fornecem uma abordagem extremamente escalável para gerenciar e criar extensões, além de um conjunto robusto de APIs para uma interação programática com o Adobe CX Enterprise.
 

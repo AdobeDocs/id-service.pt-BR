@@ -1,7 +1,7 @@
 ---
-description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam incluis na lista de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas incluis na lista de permissões da CSP.
-keywords: Serviço de ID
-title: Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud
+description: Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o Serviço de ID de visitante e tiver CSPs restritas que usam incluis na lista de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas incluis na lista de permissões da CSP.
+keywords: Serviço de ID de visitante
+title: Políticas de segurança de conteúdo e o serviço de ID de visitante da Adobe
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 TQID: https://experienceleague.adobe.com/UX0RWE7v912XEHJCJE49yt1sy13t1P0I0I79gG9Z7m8
 product_v2:
@@ -14,16 +14,16 @@ role_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 530
-ht-degree: 64%
+source-wordcount: 527
+ht-degree: 49%
 
 ---
 
-# Políticas de segurança de conteúdo e o serviço de identidade da Experience Cloud {#content-security-policies-and-the-experience-cloud-id-service}
+# Políticas de segurança de conteúdo e o serviço de ID de visitante da Adobe {#content-security-policies-and-the-experience-cloud-id-service}
 
-Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o serviço de ID e tiver CSPs restritas que usam incluis na lista de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas incluis na lista de permissões da CSP.
+Uma Política de Segurança de Conteúdo (CSP) é um cabeçalho HTTP e um recurso de segurança que fornece aos navegadores controle sobre que tipo de recursos são carregados em uma página da Web. Revise esta seção se você usar o Serviço de ID de visitante e tiver CSPs restritas que usam incluis na lista de permissões para aceitar recursos de domínios confiáveis. Será necessário adicionar os domínios do Adobe listados aqui às suas incluis na lista de permissões da CSP.
 
 ## Análise da CSP {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -35,16 +35,16 @@ As CSPs usam o cabeçalho HTTP `Content-Security-Policy` para controlar o tipo d
 * Ataques de deformação do site.
 * Distribuição de malware.
 
-A utilização de documentos de estratégia por país é comum e bem compreendida. Não é objetivo desta documentação explicar em detalhes os documentos de estratégia por país (para mais informações, consulte os links de informação relacionadas abaixo). É importante saber quais nomes de domínio da Adobe você deve adicionar a uma CSP se você os utilizar e tiver políticas de segurança restritas. A adição desses domínios permite que os navegadores de visitantes que acessam seu site façam essas chamadas importantes para os recursos da Experience Cloud que você usa.
+A utilização de documentos de estratégia por país é comum e bem compreendida. Não é objetivo desta documentação explicar em detalhes os documentos de estratégia por país (para mais informações, consulte os links de informação relacionadas abaixo). É importante saber quais nomes de domínio da Adobe você deve adicionar a uma CSP se você os utilizar e tiver políticas de segurança restritas. A adição desses domínios permite que os navegadores de visitantes que acessam seu site façam essas chamadas importantes para os recursos do CX Enterprise que você usa.
 
-## Domínios da Experience Cloud para monitoramento {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domínios corporativos CX para o Incluir na lista de permissões {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço da lista da Experience Cloud que você usa.
+Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço corporativo da lista CX que você usa.
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
  <thead>
   <tr>
-   <th colname="col1" class="entry">Solução ou serviço da Experience Cloud</th>
+   <th colname="col1" class="entry">Solução ou serviço corporativo CX</th>
    <th colname="col2" class="entry">Descrição</th>
   </tr>
  </thead>
@@ -71,7 +71,7 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Serviço da Experience Cloud ID e Audience Manager</b></p>
+    <p><b>Serviço de ID de visitante e Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>Modifique sua CSP para incluir os domínios abaixo.</p>
@@ -80,9 +80,9 @@ Adicione esses nomes de domínio ou URLs à CSP para cada solução ou serviço 
      <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-     <li>Se você usar o Adobe Launch para implantar tags, também precisará adicionar <code>https://assets.adobedtm.com</code> à lista de domínios.</li>
+     <li>Se você usar marcas, também precisará adicionar <code>https://assets.adobedtm.com</code> à lista de domínios.</li>
     </ul>
-    <p>As chamadas para o domínio <span class="codeph">demdex.net</span> são usadas para gerar os <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o Serviço de Identidade da Experience Cloud</a> e para sincronizações de ID. Consulte também <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>.</p>
+    <p>As chamadas para o domínio <span class="codeph">demdex.net</span> são usadas para gerar os <a href="../introduction/cookies.md" format="dita" scope="local">Cookies e o Serviço de ID do Visitante</a> e para sincronizações de ID. Consulte também <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=pt-BR" format="https" scope="external">Compreender as chamadas para o domínio Demdex</a>.</p>
    </td>
   </tr>
   <tr>

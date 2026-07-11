@@ -1,6 +1,6 @@
 ---
 description: Notas de versão e atualizações de 2015.
-keywords: Serviço de ID
+keywords: Serviço de ID de visitante
 title: Notas de versão de 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
@@ -15,10 +15,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 94%
+source-wordcount: 457
+ht-degree: 60%
 
 ---
 
@@ -30,38 +30,38 @@ Notas de versão e atualizações de 2015.
 
 Novembro de 2015
 
-A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código de serviço da [!DNL Experience Cloud] ID, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. Consulte [Suporte ao COPPA no serviço de identidade da Experience Cloud](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
+A lei americana de privacidade infantil Children’s Online Privacy Protection Act (COPPA) proíbe a coleta de informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Os clientes com preocupações relacionadas à COPPA podem adicionar uma variável opcional ao código do Serviço de ID de visitante, de modo a evitar a definição de cookies no domínio de terceiros em um navegador. Consulte o [Suporte para COPPA no Serviço de ID de Visitante](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Para a versão 1.5.3 ou posterior.
 
 ## Versão 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Setembro de 2015
 
 * Correção de um erro no navegador Safari que impedia o funcionamento dos serviços de sincronização quando os usuários bloqueavam cookies de terceiros. (AAM-20764)
-* As chamadas ao serviço de ID agora incluem a ID da versão no parâmetro `d_visid_ver=`. A ID retornada ajuda as equipes internas a solucionar problemas e questões de suporte. (AAM-20824)
+* As chamadas ao Serviço de ID do Visitante agora incluem a ID da versão no parâmetro `d_visid_ver=`. A ID retornada ajuda as equipes internas a solucionar problemas e questões de suporte. (AAM-20824)
 
 ## Versão 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Agosto de 2015
 
-* Correção de um erro que impedia o serviço de ID de solicitar um iframe quando não havia dados para sincronizar ou acionar. (AAM-20164)
-* Correção de um erro que impedia o serviço de ID de configurar apropriadamente um cookie de domínio multiparte e de nível superior. Por exemplo, se você tem um domínio como `my_company.co.uk`, em determinadas circunstâncias o serviço de ID definiria um cookie somente em `co.uk`. (AN-104683)
+* Correção de um bug que impedia o Serviço de ID do visitante de solicitar um iframe quando não havia dados para sincronizar ou acionar. (AAM-20164)
+* Correção de um bug que impedia o Serviço de ID do visitante de configurar apropriadamente um cookie de domínio multiparte e de nível superior. Por exemplo, se você tem um domínio como `my_company.co.uk`, em determinadas circunstâncias o Serviço de ID do visitante definiria um cookie somente em `co.uk`. (AN-104683)
 
   Esse problema afetou apenas alguns clientes que atendiam a *todos* os seguintes critérios:
 
-   * Utilização do serviço de ID.
+   * Uso do Serviço de ID de visitante.
    * Habilitados um [período de carência](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/migration) *ou* que estão usando cookies primários e os usuários bloqueiam cookies de terceiros.
    * Páginas com domínios multiparte e nível superior.
 
 As revisões de documentação desta versão incluem:
 
 * [Métodos de API e Biblioteca de código](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganização de conteúdo e texto. Na maior parte dos casos, cada método recebe sua própria página.
-* [Requisitos do serviço de identidade da Experience Cloud](../reference/requirements.md): Conteúdo revisado e texto reorganizado.
+* [Requisitos do Serviço de ID do Visitante](../reference/requirements.md): conteúdo revisado e texto reorganizado.
 
 ## Versão 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Julho de 2015
 
-O serviço da [!DNL Experience Cloud] ID oferece suporte a diversas IDs e estados de autenticação. Essa alteração também remove o suporte obsoleto para o mapeamento [!DNL Audience Manager] DPID do às IDs de usuários usadas pela `setCustomerIDs`função. Consulte [IDs do cliente e Estados de autenticação](../reference/authenticated-state.md)
+O Serviço de ID do visitante oferece suporte a várias IDs e estados de autenticação. Essa alteração também remove o suporte obsoleto aos mapeamentos DPID do Audience Manager para as IDs de usuário usadas pela função `setCustomerIDs`. Consulte [IDs do cliente e Estados de autenticação](../reference/authenticated-state.md)
 
 ## Versão 1.4 {#section-f5c596f355b14da28f45c798df513572}
 

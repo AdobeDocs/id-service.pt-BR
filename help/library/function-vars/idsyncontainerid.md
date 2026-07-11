@@ -1,6 +1,6 @@
 ---
 description: Essa propriedade define a ID do contêiner de origem dos dados que você deseja usar para sincronizações de ID.
-keywords: Serviço de ID
+keywords: Serviço de ID de visitante
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 91%
+source-wordcount: 328
+ht-degree: 57%
 
 ---
 
@@ -37,7 +37,7 @@ Conteúdo:
 **Amostra de código:**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Set container ID 
    idSyncContainerID:80 
@@ -48,16 +48,16 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **Contêineres**
 
-Os contêineres são objetos criados pelo [!DNL Audience Manager]. Embora não sejam acessíveis externamente, esses containers listam todas as fontes de dados que:
+Os contêineres são objetos criados pelo Audience Manager. Embora não sejam acessíveis externamente, esses containers listam todas as fontes de dados que:
 
 * Estão disponíveis para você, mas não são usadas na sincronização de ID.
 * Estão sendo usadas para sincronização de ID.
 
-Mesmo se você não for um [!DNL Audience Manager] cliente do, sua conta terá esses contêineres se estiver trocando IDs com diferentes fontes de dados em páginas diferentes do seu domínio. Isso ocorre porque o [!DNL Audience Manager] fornece a tecnologia e a funcionalidade de back-end que permite a sincronização de ID.
+Mesmo se você não for um cliente do Audience Manager, sua conta terá esses contêineres se estiver trocando IDs com diferentes fontes de dados em páginas diferentes do seu domínio. Isso ocorre porque o Audience Manager fornece a tecnologia e a funcionalidade de back-end que permite a sincronização de ID.
 
 **Casos de uso**
 
-Dependendo da situação, pode ser ou não necessário adicionar essa configuração ao código do serviço de ID.
+Dependendo da situação, pode ser ou não necessário adicionar essa configuração ao código do Serviço de ID de visitante.
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -71,7 +71,7 @@ Dependendo da situação, pode ser ou não necessário adicionar essa configura�
    <td colname="col1"> <p> <b>Não é necessário</b> </p> </td> 
    <td colname="col2"> <p>Não é necessário usar essa configuração se: </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Você usa o serviço de ID com qualquer solução da <span class="keyword">Experience Cloud</span> e não executa sincronizações de ID com outras fontes de dados. Nesse caso, sua conta tem um container padrão com ID 0 e nenhuma ação é necessária. </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Você usa o Serviço de ID de visitante com qualquer solução CX Enterprise e não executa sincronizações de ID com outras fontes de dados. Nesse caso, sua conta tem um container padrão com ID 0 e nenhuma ação é necessária. </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">Todas as suas fontes de dados estão em um único container. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,10 +87,10 @@ Dependendo da situação, pode ser ou não necessário adicionar essa configura�
  </tbody> 
 </table>
 
-## Definir IDs de contêineres ao usar DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Definindo IDs de Contêineres ao Usar o DIL e o `VisitorAPI.js` {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Você implantou [!UICONTROL DIL] *e* VisitorAPI.js na mesma página:
+Se você implantou [!UICONTROL DIL] *e* `VisitorAPI.js` na mesma página:
 
-* O código do serviço de ID do visitante tem prioridade sobre o DIL para sincronizações de ID.
-* Defina a `idSyncContainerID` configuração de somente no código do serviço de ID.
+* O código do Serviço de ID do visitante tem prioridade sobre o DIL para sincronizações de ID.
+* Defina a configuração `idSyncContainerID` somente no código do Serviço de ID de visitante.
 

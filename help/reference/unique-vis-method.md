@@ -1,6 +1,6 @@
 ---
 title: Identificação dos visitantes únicos
-description: Documentação para Adobe ECID (serviço de ID)
+description: Documentação para Adobe ECID (Serviço de ID de visitante)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 TQID: https://experienceleague.adobe.com/1iZMkBA6-SnhhVmqp8qrFuk-Ev-tKOae5FAduivghXM
 product_v2:
@@ -14,10 +14,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 251
-ht-degree: 100%
+source-wordcount: 257
+ht-degree: 80%
 
 ---
 
@@ -28,8 +28,8 @@ O método para identificar visitantes únicos entre vários contextos inclui uma
 | Pedido usado | Parâmetro da consulta (método de coleta) | Valor da coluna post_visid_type | Apresentar quando |
 |---|---|---|---|
 |  1  | vid [s.visitorID](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html?lang=pt-BR)  | 0  | `s.visitorID` está definida. |
-|  2  | aid  [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=pt-BR#section-5d50a078de444d12b7d927d68ff3b679)  | 3  | O visitante tinha um cookie s_vi antes de implantar o serviço de ID de visitante ou você tem um [período de carência](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=pt-BR) de ID de visitante configurado.  |
-|  3  | mid [cookie AMCV_ definido pelo Serviço de identidade](../introduction/cookies.md)  |  5  |  O navegador do visitante aceita cookies (primários), e o [!DNL Identity Service] é implantado.  |
+|  2  | aid  [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=pt-BR#section-5d50a078de444d12b7d927d68ff3b679)  | 3  | O visitante tinha um cookie s_vi antes de implantar o Serviço de ID de visitante ou você tem um [período de carência](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=pt-BR) de ID de visitante configurado.  |
+|  3  | mid [cookie AMCV_ definido pelo Serviço de ID do Visitante](../introduction/cookies.md)  |  5  |  O navegador do visitante aceita cookies (primários), e o Serviço de ID do visitante é implantado.  |
 |  4  | fid [cookie de fallback no H.25.3 ou mais recente ou AppMeasurement para JavaScript](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=pt-BR#section-65e33f9bfc264959ac1513e2f4b10ac7)  |  4  |  O navegador do visitante aceita cookies (primários).  |
 |  5  |  [Cabeçalho do assinante do HTTP Mobile](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR)  |  2  |  O dispositivo é reconhecido como um dispositivo móvel.  |
 |  6  |  [Endereço IP, Agente do usuário, Endereço IP de gateway](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR)  |  1  |  O navegador do visitante não aceita cookies. |

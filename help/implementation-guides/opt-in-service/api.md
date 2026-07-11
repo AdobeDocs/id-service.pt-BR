@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 916
-ht-degree: 98%
+source-wordcount: 928
+ht-degree: 91%
 
 ---
 
@@ -36,13 +36,13 @@ adobe.OptInCategories = {
 
 ## Parâmetros de configuração de opt-in {#section-d66018342baf401389f248bb381becbf}
 
-Essa seção discute o uso da API para configurar o Opt-in. A maior parte da configuração e implementação pode ser feita usando a extensão da Experience Platform Launch.
+Essa seção discute o uso da API para configurar o Opt-in. A maior parte da configuração e implementação pode ser feita usando a extensão de tag.
 
 As configurações de Opt-in são fornecidas na função `getInstance()` do JavaScript do visitante, que instancia o objeto global `adobe`. Abaixo encontram-se as configurações do JS do Visitante relacionadas ao serviço de Opt-in.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
-Se falso, indica que os visitantes não precisam aceitar. Resulta na criação de cookies pela Experience Cloud, independentemente das categorias aderidas ou não. Essa configuração habilita ou desabilita a aceitação de forma holística.
+Se falso, indica que os visitantes não precisam aceitar. Resulta na criação de cookies pelo CX Enterprise, independentemente das categorias aderidas ou não. Essa configuração habilita ou desabilita a aceitação de forma holística.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -106,7 +106,7 @@ Colete as permissões de Opt-in para um visitante a qualquer momento usando uma 
 
 `adobe.optIn.permissions`
 
-Um objeto que lista todas as soluções da Experience Cloud, como categorias, que foram concedidas ou negadas pelo visitante.
+Um objeto que lista todas as soluções CX Enterprise, como categorias, que foram concedidas ou negadas pelo visitante.
 
 `adobe.optIn.isApproved(categories)`
 
@@ -118,7 +118,7 @@ Recupera a lista de permissões de maneira assíncrona. A chamada de retorno é 
 
 **`permissions`**
 
-Um objeto que lista todas as soluções da Experience Cloud, como categorias, que foram concedidas ou negadas pelo visitante. Exemplo: `{ aa: true, ecid: false, aam: true... }`
+Um objeto listando todas as soluções CX Enterprise, como categorias, que foram concedidas ou negadas pelo visitante. Exemplo: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
